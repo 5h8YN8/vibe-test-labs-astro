@@ -1,0 +1,50 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  schema?: object | object[];
+  ogImage?: string;
+  noindex?: boolean;
+}
+const { title, description, canonical, schema, ogImage, noindex = false } = Astro.props;
+const siteUrl = 'https://vibe-test-labs.pages.dev';
+const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonicalUrl} />
+  {noindex && <meta name="robots" content="noindex, nofollow" />}
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonicalUrl} />
+  {ogImage && <meta property="og:image" content={ogImage} />}
+  <meta name="twitter:card" content="summary_large_image" />
+  {schema && <script type="application/ld+json" set:html={JSON.stringify(Array.isArray(schema) ? {"@context":"https://schema.org","@graph":schema} : schema)} />}
+  <style>
+    *,*::before,*::after{box-sizing:border-box}
+    body{font-family:system-ui,-
+cat > ~/vibe-test-labs-astro/src/pages/index.astro << 'EOF'
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Vibe Test Labs",
+  "url": "https://vibe-test-labs.pages.dev",
+  "description": "Independent product reviews and buying guides."
+};
+---
+<BaseLayout title="Vibe Test Labs — Honest Product Reviews" description="Independent product reviews and buying guides. No fluff, no filler." schema={schema}>
+  <nav class="breadcrumb"><a href="/">Vibe Test Labs</a></nav>
+  <h1>Vibe Test Labs</h1>
+  <p class="lead">Honest product reviews and buying guides — we test it so you don't have to.</p>
+  <h2>How We Review</h2>
+  <p>Every product is researched independently with honest pros and cons, common buyer questions, and price comparisons.</p>
+  <a class="cta-button" href="https://vibe-test-lab.myshopify.com?utm_source=aeo&utm_medium=content&utm_campaign=homepage">Shop All Products →</a>
+</BaseLayout>

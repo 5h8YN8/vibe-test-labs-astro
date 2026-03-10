@@ -1,0 +1,12 @@
+# Vibe Test Labs Content Hub
+
+## About
+Independent product reviews and buying guides. Shop at vibe-test-lab.myshopify.com.
+
+## Structure
+- /products/* — product reviews with specs and purchase links
+- /compare/* — head-to-head comparisons
+- /guides/* — buying guides
+
+## Sitemap
+https://vibe-test-labs.pages.dev/sitemap-index.xml
