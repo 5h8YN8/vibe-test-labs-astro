@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Product Review — Vibe Test Labs"
+  description="Read our full review of Product Review at Vibe Test Labs."
+  canonical="https://vibe-test-labs.pages.dev/products/product-review"
+>
+<script type="application/ld+json">
+{JSON.stringify(generateJsonLd(product))}
+</script>
+  <nav class="breadcrumb"><a href="/">Vibe Test Labs</a> › Product Review</nav>
+  <h1>Product Review</h1>
+  <p class="lead">Read our full review of Product Review at Vibe Test Labs.</p>
+  <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/product-review?utm_source=aeo&utm_medium=content&utm_campaign=product-review">Buy Product Review →</a>
+  <!-- TODO: add product content here -->
+</BaseLayout>
