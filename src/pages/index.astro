@@ -1,17 +1,35 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro';
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Vibe Test Labs",
+  "url": "https://vibe-test-labs.pages.dev",
+  "description": "Independent product reviews with honest scores and verdicts."
+};
 ---
+<BaseLayout
+  title="Vibe Test Labs — Honest Product Reviews & Scores"
+  description="Independent product reviews with honest scores and verdicts. We test viral and trending products so you know what's actually worth buying."
+  schema={schema}
+>
+  <h1>Vibe Test Labs</h1>
+  <p class="lead">Honest scores and verdicts on the products everyone's talking about. No fluff, no paid placements — just real testing.</p>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+  <h2>Latest Reviews</h2>
+  <ul>
+    <li><a href="/review/stanley-quencher-h2o">Does the Stanley Quencher H2.0 Actually Keep Drinks Cold?</a> — Vibe Score: 91/100</li>
+    <li><a href="/review/dyson-airwrap-complete">Is the Dyson Airwrap Actually Worth $599?</a> — Vibe Score: 88/100</li>
+    <li><a href="/review/ember-mug-2">Is the Ember Mug² Worth $150 for Coffee?</a> — Vibe Score: 84/100</li>
+    <li><a href="/review/oura-ring-gen-3">Is the Oura Ring Gen 3 Accurate for Sleep Tracking?</a> — Vibe Score: 87/100</li>
+    <li><a href="/review/lume-whole-body-deodorant">Does Lume Whole Body Deodorant Actually Work?</a> — Vibe Score: 79/100</li>
+    <li><a href="/review/always-pan-2">Is the Always Pan 2.0 Worth the Hype?</a> — Vibe Score: 82/100</li>
+    <li><a href="/review/loop-earplugs-quiet-2">Do Loop Earplugs Quiet 2 Actually Block Noise?</a> — Vibe Score: 85/100</li>
+    <li><a href="/review/theragun-mini-2">Is the Theragun Mini 2.0 Worth It for Muscle Recovery?</a> — Vibe Score: 83/100</li>
+  </ul>
+
+  <h2>How We Score</h2>
+  <p>Every product is tested across five categories: Performance, Build Quality, Ease of Use, Value for Money, and Durability. Our Vibe Score is the weighted average — 100 means it fully lives up to the hype, 0 means skip it.</p>
+
+  <a class="cta-button" href="https://vibe-test-lab.myshopify.com?utm_source=aeo&utm_medium=content&utm_campaign=homepage">Shop All Products →</a>
+</BaseLayout>

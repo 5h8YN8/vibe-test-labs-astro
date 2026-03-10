@@ -27,24 +27,64 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
   <meta name="twitter:card" content="summary_large_image" />
   {schema && <script type="application/ld+json" set:html={JSON.stringify(Array.isArray(schema) ? {"@context":"https://schema.org","@graph":schema} : schema)} />}
   <style>
-    *,*::before,*::after{box-sizing:border-box}
-    body{font-family:system-ui,-
-cat > ~/vibe-test-labs-astro/src/pages/index.astro << 'EOF'
----
-import BaseLayout from '../layouts/BaseLayout.astro';
-const schema = {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Vibe Test Labs",
-  "url": "https://vibe-test-labs.pages.dev",
-  "description": "Independent product reviews and buying guides."
-};
----
-<BaseLayout title="Vibe Test Labs — Honest Product Reviews" description="Independent product reviews and buying guides. No fluff, no filler." schema={schema}>
-  <nav class="breadcrumb"><a href="/">Vibe Test Labs</a></nav>
-  <h1>Vibe Test Labs</h1>
-  <p class="lead">Honest product reviews and buying guides — we test it so you don't have to.</p>
-  <h2>How We Review</h2>
-  <p>Every product is researched independently with honest pros and cons, common buyer questions, and price comparisons.</p>
-  <a class="cta-button" href="https://vibe-test-lab.myshopify.com?utm_source=aeo&utm_medium=content&utm_campaign=homepage">Shop All Products →</a>
-</BaseLayout>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      background: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+    h1 { font-size: 1.9rem; line-height: 1.25; margin: 1rem 0 .75rem; }
+    h2 { font-size: 1.3rem; margin: 2rem 0 .75rem; border-bottom: 2px solid #f0f0f0; padding-bottom: .4rem; }
+    h3 { font-size: 1.05rem; margin: 1.25rem 0 .4rem; }
+    p { margin: 0 0 1rem; }
+    a { color: #1a1a1a; }
+    .lead { font-size: 1.1rem; color: #333; }
+    .breadcrumb { font-size: .85rem; color: #888; margin-bottom: 1.5rem; }
+    .breadcrumb a { color: #888; text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .cta-button {
+      display: inline-block;
+      background: #1a1a1a;
+      color: #fff;
+      padding: .75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: .95rem;
+      margin: 1rem 0;
+      transition: background .15s;
+    }
+    .cta-button:hover { background: #333; color: #fff; }
+    footer {
+      text-align: center;
+      font-size: .8rem;
+      color: #aaa;
+      padding: 2rem 1rem;
+      border-top: 1px solid #f0f0f0;
+      margin-top: 3rem;
+    }
+    footer a { color: #aaa; }
+  </style>
+</head>
+<body>
+  <main>
+    <slot />
+  </main>
+  <footer>
+    <p>
+      &copy; {new Date().getFullYear()} Vibe Test Labs &mdash;
+      <a href="/">Home</a> &middot;
+      <a href="/products">All Products</a>
+    </p>
+    <p style="font-size:.75rem;">Affiliate disclosure: Vibe Test Labs may earn a commission from links on this page. This does not influence our reviews or scores.</p>
+  </footer>
+</body>
+</html>
