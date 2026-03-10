@@ -84,26 +84,32 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 }
 </script>
 
-
 <nav class="breadcrumb">
-  <a href="/">Vibe Test Labs</a> ›
-  <a href="/products">Products</a> ›
+  <a href="/">Vibe Test Lab</a> ›
+  <a href="/">Reviews</a> ›
   Theragun Mini 2.0
 </nav>
 
-<div style="display:flex;align-items:center;gap:.75rem;margin-bottom:.5rem;">
-  <span style="font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;color:#888;">Fitness</span>
-  <span style="color:#ccc;">·</span>
-  <span style="font-size:.8rem;color:#888;">Therabody</span>
-  <span style="color:#ccc;">·</span>
-  <span style="font-size:.8rem;color:#888;">Tested 2026-03-01</span>
+<img
+  src="https://images.unsplash.com/photo-1576678927484-cc907957088c?w=600&h=600&fit=crop"
+  alt="Theragun Mini 2.0"
+  style="width:100%;height:320px;object-fit:cover;border-radius:var(--radius);margin-bottom:1.5rem;"
+  loading="eager"
+/>
+
+<div style="display:flex;align-items:center;gap:.6rem;margin-bottom:.75rem;flex-wrap:wrap;">
+  <span style="font-size:.7rem;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.12em;color:var(--muted-foreground);">Fitness</span>
+  <span style="color:var(--border);">·</span>
+  <span style="font-size:.7rem;font-family:var(--font-mono);color:var(--muted-foreground);">Therabody</span>
+  <span style="color:var(--border);">·</span>
+  <span style="font-size:.7rem;font-family:var(--font-mono);color:var(--muted-foreground);">Tested 2026-03-01</span>
 </div>
 
 <h1>Is the Theragun Mini 2.0 Worth It for Muscle Recovery?</h1>
 
 <div class="answer-box">
   <span class="verdict-badge verdict-badge-worth-it">Worth It</span>
-  <div class="vibe-score mid">82<span style="font-size:1.5rem;font-weight:400;color:#888;">/100</span></div>
+  <div class="vibe-score mid">82<span style="font-size:1.5rem;font-weight:400;color:var(--muted-foreground);">/100</span></div>
   <p class="lead">Yes — the Theragun Mini 2.0 delivers surprising percussion power in a compact, portable form factor. It's effective for post-workout recovery and everyday muscle tension. It works best for people who want percussive therapy on the go without the bulk of a full-size device. Overall it earns a Vibe Score of 82/100.</p>
 </div>
 
@@ -175,15 +181,15 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <h2>Pros & Cons</h2>
 <div class="pros-cons">
-  <div>
-    <h3>✅ Pros</h3>
+  <div class="pros-cons-box">
+    <h3>Pros</h3>
     <ul>    <li>✅ Genuinely portable — fits in a gym bag or large pocket</li>
     <li>✅ Powerful percussion despite compact size</li>
     <li>✅ Battery exceeds advertised life (180 vs 150 minutes)</li>
     <li>✅ Quiet operation compared to competitors</li></ul>
   </div>
-  <div>
-    <h3>❌ Cons</h3>
+  <div class="pros-cons-box">
+    <h3>Cons</h3>
     <ul>    <li>❌ Only one attachment head included</li>
     <li>❌ Premium price for a mini device</li>
     <li>❌ Three speed settings may be limiting for advanced users</li>
@@ -193,7 +199,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <h2>Final Verdict</h2>
 <div class="answer-box">
-  <div class="vibe-score mid">82<span style="font-size:1.5rem;font-weight:400;color:#888;">/100</span></div>
+  <div class="vibe-score mid">82<span style="font-size:1.5rem;font-weight:400;color:var(--muted-foreground);">/100</span></div>
   <span class="verdict-badge verdict-badge-worth-it">Worth It</span>
   <p>The Theragun Mini 2.0 is the best portable massage gun we've tested. It's not a replacement for a full-size percussive device, but for on-the-go recovery and everyday muscle tension, it's excellent. The price is steep for a mini device, but the build quality justifies it.</p>
 </div>
@@ -226,12 +232,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 <div class="buy-box">
   <div>
     <strong>Theragun Mini 2.0</strong><br/>
-    <span style="color:#888;font-size:.9rem;">$179–$199 · Therabody</span>
+    <span style="font-size:.85rem;color:var(--muted-foreground);">$179–$199 · Therabody</span>
   </div>
-  <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/theragun-mini-2?utm_source=aeo&utm_medium=content&utm_campaign=theragun-mini-2" style="margin:0">
+  <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/theragun-mini-2?utm_source=aeo&utm_medium=content&utm_campaign=theragun-mini-2" style="margin:0;">
     Check Price →
   </a>
 </div>
-<p style="font-size:.8rem;color:#aaa;font-style:italic;">Vibe Test Lab may earn a commission from affiliate links. This does not influence our testing or scores.</p>
+<p class="disclaimer">Vibe Test Lab may earn a commission from affiliate links. This does not influence our testing or scores.</p>
 
 </BaseLayout>

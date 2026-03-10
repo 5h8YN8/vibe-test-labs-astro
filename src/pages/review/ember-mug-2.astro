@@ -84,26 +84,32 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 }
 </script>
 
-
 <nav class="breadcrumb">
-  <a href="/">Vibe Test Labs</a> ›
-  <a href="/products">Products</a> ›
+  <a href="/">Vibe Test Lab</a> ›
+  <a href="/">Reviews</a> ›
   Ember Mug² 14oz
 </nav>
 
-<div style="display:flex;align-items:center;gap:.75rem;margin-bottom:.5rem;">
-  <span style="font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;color:#888;">Tech</span>
-  <span style="color:#ccc;">·</span>
-  <span style="font-size:.8rem;color:#888;">Ember</span>
-  <span style="color:#ccc;">·</span>
-  <span style="font-size:.8rem;color:#888;">Tested 2026-03-06</span>
+<img
+  src="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=600&h=600&fit=crop"
+  alt="Ember Mug² 14oz"
+  style="width:100%;height:320px;object-fit:cover;border-radius:var(--radius);margin-bottom:1.5rem;"
+  loading="eager"
+/>
+
+<div style="display:flex;align-items:center;gap:.6rem;margin-bottom:.75rem;flex-wrap:wrap;">
+  <span style="font-size:.7rem;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.12em;color:var(--muted-foreground);">Tech</span>
+  <span style="color:var(--border);">·</span>
+  <span style="font-size:.7rem;font-family:var(--font-mono);color:var(--muted-foreground);">Ember</span>
+  <span style="color:var(--border);">·</span>
+  <span style="font-size:.7rem;font-family:var(--font-mono);color:var(--muted-foreground);">Tested 2026-03-06</span>
 </div>
 
 <h1>Is the Ember Mug 2 Worth $149 for Keeping Coffee Hot?</h1>
 
 <div class="answer-box">
   <span class="verdict-badge verdict-badge-overhyped">Overhyped</span>
-  <div class="vibe-score mid">72<span style="font-size:1.5rem;font-weight:400;color:#888;">/100</span></div>
+  <div class="vibe-score mid">72<span style="font-size:1.5rem;font-weight:400;color:var(--muted-foreground);">/100</span></div>
   <p class="lead">It depends. The Ember Mug² genuinely keeps coffee at your exact preferred temperature, which is a game-changer for slow sippers. However, the 80-minute battery life off the charging coaster severely limits its usefulness. It works best for desk workers who keep the mug on its coaster all day. Overall it earns a Vibe Score of 72/100.</p>
 </div>
 
@@ -175,15 +181,15 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <h2>Pros & Cons</h2>
 <div class="pros-cons">
-  <div>
-    <h3>✅ Pros</h3>
+  <div class="pros-cons-box">
+    <h3>Pros</h3>
     <ul>    <li>✅ Precise temperature control actually works as advertised</li>
     <li>✅ Sleek, premium design that looks great on a desk</li>
     <li>✅ Unlimited use when kept on the charging coaster</li>
     <li>✅ App allows custom presets for different beverages</li></ul>
   </div>
-  <div>
-    <h3>❌ Cons</h3>
+  <div class="pros-cons-box">
+    <h3>Cons</h3>
     <ul>    <li>❌ 80-minute battery life off the coaster is very limiting</li>
     <li>❌ Not dishwasher-safe — hand wash only</li>
     <li>❌ Expensive for what is essentially a heated mug</li>
@@ -194,7 +200,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <h2>Final Verdict</h2>
 <div class="answer-box">
-  <div class="vibe-score mid">72<span style="font-size:1.5rem;font-weight:400;color:#888;">/100</span></div>
+  <div class="vibe-score mid">72<span style="font-size:1.5rem;font-weight:400;color:var(--muted-foreground);">/100</span></div>
   <span class="verdict-badge verdict-badge-overhyped">Overhyped</span>
   <p>The Ember Mug² is a clever product that solves a real (if minor) problem. If you work at a desk and leave your mug on the coaster all day, it's genuinely delightful. But the short battery life, hand-wash requirement, and premium price make it hard to recommend broadly. It's a luxury, not a necessity.</p>
 </div>
@@ -227,12 +233,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 <div class="buy-box">
   <div>
     <strong>Ember Mug² 14oz</strong><br/>
-    <span style="color:#888;font-size:.9rem;">$129–$149 · Ember</span>
+    <span style="font-size:.85rem;color:var(--muted-foreground);">$129–$149 · Ember</span>
   </div>
-  <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/ember-mug-2?utm_source=aeo&utm_medium=content&utm_campaign=ember-mug-2" style="margin:0">
+  <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/ember-mug-2?utm_source=aeo&utm_medium=content&utm_campaign=ember-mug-2" style="margin:0;">
     Check Price →
   </a>
 </div>
-<p style="font-size:.8rem;color:#aaa;font-style:italic;">Vibe Test Lab may earn a commission from affiliate links. This does not influence our testing or scores.</p>
+<p class="disclaimer">Vibe Test Lab may earn a commission from affiliate links. This does not influence our testing or scores.</p>
 
 </BaseLayout>

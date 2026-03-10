@@ -84,26 +84,32 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 }
 </script>
 
-
 <nav class="breadcrumb">
-  <a href="/">Vibe Test Labs</a> ›
-  <a href="/products">Products</a> ›
+  <a href="/">Vibe Test Lab</a> ›
+  <a href="/">Reviews</a> ›
   Oura Ring Gen 3
 </nav>
 
-<div style="display:flex;align-items:center;gap:.75rem;margin-bottom:.5rem;">
-  <span style="font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;color:#888;">Wearables</span>
-  <span style="color:#ccc;">·</span>
-  <span style="font-size:.8rem;color:#888;">Oura</span>
-  <span style="color:#ccc;">·</span>
-  <span style="font-size:.8rem;color:#888;">Tested 2026-03-05</span>
+<img
+  src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600&h=600&fit=crop"
+  alt="Oura Ring Gen 3"
+  style="width:100%;height:320px;object-fit:cover;border-radius:var(--radius);margin-bottom:1.5rem;"
+  loading="eager"
+/>
+
+<div style="display:flex;align-items:center;gap:.6rem;margin-bottom:.75rem;flex-wrap:wrap;">
+  <span style="font-size:.7rem;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.12em;color:var(--muted-foreground);">Wearables</span>
+  <span style="color:var(--border);">·</span>
+  <span style="font-size:.7rem;font-family:var(--font-mono);color:var(--muted-foreground);">Oura</span>
+  <span style="color:var(--border);">·</span>
+  <span style="font-size:.7rem;font-family:var(--font-mono);color:var(--muted-foreground);">Tested 2026-03-05</span>
 </div>
 
 <h1>Is the Oura Ring Gen 3 the Best Sleep Tracker?</h1>
 
 <div class="answer-box">
   <span class="verdict-badge verdict-badge-worth-it">Worth It</span>
-  <div class="vibe-score">85<span style="font-size:1.5rem;font-weight:400;color:#888;">/100</span></div>
+  <div class="vibe-score">85<span style="font-size:1.5rem;font-weight:400;color:var(--muted-foreground);">/100</span></div>
   <p class="lead">Yes — the Oura Ring Gen 3 is the most accurate and comfortable sleep tracker we've tested. It tracks sleep stages, heart rate variability, and body temperature with clinical-grade accuracy. It works best for people who prioritize sleep optimization and want a discreet wearable. Overall it earns a Vibe Score of 85/100.</p>
 </div>
 
@@ -175,15 +181,15 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <h2>Pros & Cons</h2>
 <div class="pros-cons">
-  <div>
-    <h3>✅ Pros</h3>
+  <div class="pros-cons-box">
+    <h3>Pros</h3>
     <ul>    <li>✅ Most accurate sleep tracker in a consumer wearable</li>
     <li>✅ Extremely comfortable — you forget it's there</li>
     <li>✅ 7-day battery life</li>
     <li>✅ Water-resistant to 100m</li></ul>
   </div>
-  <div>
-    <h3>❌ Cons</h3>
+  <div class="pros-cons-box">
+    <h3>Cons</h3>
     <ul>    <li>❌ $6/month subscription required for full features</li>
     <li>❌ No display — fully dependent on the phone app</li>
     <li>❌ Limited fitness tracking compared to smartwatches</li>
@@ -193,7 +199,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <h2>Final Verdict</h2>
 <div class="answer-box">
-  <div class="vibe-score">85<span style="font-size:1.5rem;font-weight:400;color:#888;">/100</span></div>
+  <div class="vibe-score">85<span style="font-size:1.5rem;font-weight:400;color:var(--muted-foreground);">/100</span></div>
   <span class="verdict-badge verdict-badge-worth-it">Worth It</span>
   <p>The Oura Ring Gen 3 is the best sleep tracker you can buy. Its accuracy, comfort, and battery life are unmatched. The subscription model is the biggest drawback — you're paying $300+ for hardware and then $6/month for the data it collects. If sleep optimization matters to you, it's worth it.</p>
 </div>
@@ -226,12 +232,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 <div class="buy-box">
   <div>
     <strong>Oura Ring Gen 3</strong><br/>
-    <span style="color:#888;font-size:.9rem;">$299–$549 · Oura</span>
+    <span style="font-size:.85rem;color:var(--muted-foreground);">$299–$549 · Oura</span>
   </div>
-  <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/oura-ring-gen-3?utm_source=aeo&utm_medium=content&utm_campaign=oura-ring-gen-3" style="margin:0">
+  <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/oura-ring-gen-3?utm_source=aeo&utm_medium=content&utm_campaign=oura-ring-gen-3" style="margin:0;">
     Check Price →
   </a>
 </div>
-<p style="font-size:.8rem;color:#aaa;font-style:italic;">Vibe Test Lab may earn a commission from affiliate links. This does not influence our testing or scores.</p>
+<p class="disclaimer">Vibe Test Lab may earn a commission from affiliate links. This does not influence our testing or scores.</p>
 
 </BaseLayout>

@@ -84,26 +84,32 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 }
 </script>
 
-
 <nav class="breadcrumb">
-  <a href="/">Vibe Test Labs</a> ›
-  <a href="/products">Products</a> ›
+  <a href="/">Vibe Test Lab</a> ›
+  <a href="/">Reviews</a> ›
   Always Pan 2.0
 </nav>
 
-<div style="display:flex;align-items:center;gap:.75rem;margin-bottom:.5rem;">
-  <span style="font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;color:#888;">Kitchen</span>
-  <span style="color:#ccc;">·</span>
-  <span style="font-size:.8rem;color:#888;">Our Place</span>
-  <span style="color:#ccc;">·</span>
-  <span style="font-size:.8rem;color:#888;">Tested 2026-03-03</span>
+<img
+  src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=600&fit=crop"
+  alt="Always Pan 2.0"
+  style="width:100%;height:320px;object-fit:cover;border-radius:var(--radius);margin-bottom:1.5rem;"
+  loading="eager"
+/>
+
+<div style="display:flex;align-items:center;gap:.6rem;margin-bottom:.75rem;flex-wrap:wrap;">
+  <span style="font-size:.7rem;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.12em;color:var(--muted-foreground);">Kitchen</span>
+  <span style="color:var(--border);">·</span>
+  <span style="font-size:.7rem;font-family:var(--font-mono);color:var(--muted-foreground);">Our Place</span>
+  <span style="color:var(--border);">·</span>
+  <span style="font-size:.7rem;font-family:var(--font-mono);color:var(--muted-foreground);">Tested 2026-03-03</span>
 </div>
 
 <h1>Can the Always Pan Actually Replace 8 Pieces of Cookware?</h1>
 
 <div class="answer-box">
   <span class="verdict-badge verdict-badge-hidden-gem">Hidden Gem</span>
-  <div class="vibe-score mid">78<span style="font-size:1.5rem;font-weight:400;color:#888;">/100</span></div>
+  <div class="vibe-score mid">78<span style="font-size:1.5rem;font-weight:400;color:var(--muted-foreground);">/100</span></div>
   <p class="lead">Not quite, but it comes close. The Always Pan 2.0 is a versatile, well-designed pan that handles most daily cooking tasks well. It excels at sautéing, simmering, and steaming but can't replace specialized tools like a wok or cast iron. It works best for small kitchens and everyday cooks. Overall it earns a Vibe Score of 78/100.</p>
 </div>
 
@@ -175,15 +181,15 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <h2>Pros & Cons</h2>
 <div class="pros-cons">
-  <div>
-    <h3>✅ Pros</h3>
+  <div class="pros-cons-box">
+    <h3>Pros</h3>
     <ul>    <li>✅ Beautiful design that looks great in any kitchen</li>
     <li>✅ Genuinely versatile for everyday cooking</li>
     <li>✅ Included steamer basket is a nice touch</li>
     <li>✅ Lightweight and easy to handle</li></ul>
   </div>
-  <div>
-    <h3>❌ Cons</h3>
+  <div class="pros-cons-box">
+    <h3>Cons</h3>
     <ul>    <li>❌ Ceramic coating degrades faster than traditional nonstick</li>
     <li>❌ Can't handle high-heat searing</li>
     <li>❌ Premium price for mid-range performance</li>
@@ -193,7 +199,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <h2>Final Verdict</h2>
 <div class="answer-box">
-  <div class="vibe-score mid">78<span style="font-size:1.5rem;font-weight:400;color:#888;">/100</span></div>
+  <div class="vibe-score mid">78<span style="font-size:1.5rem;font-weight:400;color:var(--muted-foreground);">/100</span></div>
   <span class="verdict-badge verdict-badge-hidden-gem">Hidden Gem</span>
   <p>The Always Pan 2.0 is a well-designed, versatile pan that's perfect for everyday cooking in small kitchens. It won't replace a full cookware set, but it handles 80% of daily tasks beautifully. The ceramic coating lifespan is the main concern.</p>
 </div>
@@ -226,12 +232,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 <div class="buy-box">
   <div>
     <strong>Always Pan 2.0</strong><br/>
-    <span style="color:#888;font-size:.9rem;">$130–$165 · Our Place</span>
+    <span style="font-size:.85rem;color:var(--muted-foreground);">$130–$165 · Our Place</span>
   </div>
-  <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/always-pan-2?utm_source=aeo&utm_medium=content&utm_campaign=always-pan-2" style="margin:0">
+  <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/always-pan-2?utm_source=aeo&utm_medium=content&utm_campaign=always-pan-2" style="margin:0;">
     Check Price →
   </a>
 </div>
-<p style="font-size:.8rem;color:#aaa;font-style:italic;">Vibe Test Lab may earn a commission from affiliate links. This does not influence our testing or scores.</p>
+<p class="disclaimer">Vibe Test Lab may earn a commission from affiliate links. This does not influence our testing or scores.</p>
 
 </BaseLayout>

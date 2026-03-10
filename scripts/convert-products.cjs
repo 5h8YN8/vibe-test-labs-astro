@@ -127,6 +127,9 @@ function generateProductPage(product) {
       <p>${f.answer}</p>
     </div>`).join('\n');
 
+  const verdictClass = product.verdictBadge === 'Worth It' ? 'worth-it' : product.verdictBadge === 'Hidden Gem' ? 'hidden-gem' : 'overhyped';
+  const scoreClass = product.vibeScore >= 85 ? '' : product.vibeScore >= 70 ? ' mid' : ' low';
+
   return `---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
@@ -144,46 +147,32 @@ ${reviewSchema}
 ${faqSchema}
 </script>
 
-<style>
-  .verdict-badge { display:inline-block; background:#1a1a1a; color:white; padding:.25rem .75rem; border-radius:999px; font-size:.8rem; font-weight:700; margin-bottom:1rem; }
-  .vibe-score { font-size:3rem; font-weight:900; color:#1a1a1a; }
-  .answer-box { background:#f8f8f8; border-left:4px solid #1a1a1a; padding:1.25rem 1.5rem; border-radius:0 8px 8px 0; margin:1.5rem 0; }
-  .test-result { background:#f8f8f8; border-radius:8px; padding:1rem 1.25rem; margin:.75rem 0; }
-  .test-header { display:flex; justify-content:space-between; margin-bottom:.5rem; }
-  .test-category { font-weight:700; font-size:.9rem; text-transform:uppercase; letter-spacing:.05em; }
-  .test-score { font-weight:900; }
-  .score-bar { background:#e0e0e0; border-radius:999px; height:8px; margin:.5rem 0; }
-  .score-fill { background:#1a1a1a; border-radius:999px; height:8px; }
-  .pros-cons { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin:1rem 0; }
-  .pros-cons ul { list-style:none; padding:0; margin:0; }
-  .pros-cons li { padding:.35rem 0; font-size:.95rem; }
-  .pros-cons h3 { font-size:.85rem; text-transform:uppercase; letter-spacing:.1em; margin-bottom:.75rem; }
-  .faq-item { border-bottom:1px solid #eee; padding:1rem 0; }
-  .faq-item h3 { font-size:1rem; font-weight:700; margin-bottom:.5rem; }
-  .faq-item p { color:#555; margin:0; }
-  .buy-box { background:#f8f8f8; border-radius:8px; padding:1.5rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; margin:2rem 0; }
-  @media(max-width:600px) { .pros-cons { grid-template-columns:1fr; } }
-</style>
-
 <nav class="breadcrumb">
-  <a href="/">Vibe Test Labs</a> ›
-  <a href="/products">Products</a> ›
+  <a href="/">Vibe Test Lab</a> ›
+  <a href="/">Reviews</a> ›
   ${product.name}
 </nav>
 
-<div style="display:flex;align-items:center;gap:.75rem;margin-bottom:.5rem;">
-  <span style="font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;color:#888;">${product.category}</span>
-  <span style="color:#ccc;">·</span>
-  <span style="font-size:.8rem;color:#888;">${product.brand}</span>
-  <span style="color:#ccc;">·</span>
-  <span style="font-size:.8rem;color:#888;">Tested ${product.date}</span>
+<img
+  src="${product.image}"
+  alt="${product.name}"
+  style="width:100%;height:320px;object-fit:cover;border-radius:var(--radius);margin-bottom:1.5rem;"
+  loading="eager"
+/>
+
+<div style="display:flex;align-items:center;gap:.6rem;margin-bottom:.75rem;flex-wrap:wrap;">
+  <span style="font-size:.7rem;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.12em;color:var(--muted-foreground);">${product.category}</span>
+  <span style="color:var(--border);">·</span>
+  <span style="font-size:.7rem;font-family:var(--font-mono);color:var(--muted-foreground);">${product.brand}</span>
+  <span style="color:var(--border);">·</span>
+  <span style="font-size:.7rem;font-family:var(--font-mono);color:var(--muted-foreground);">Tested ${product.date}</span>
 </div>
 
 <h1>${product.questionHeadline}</h1>
 
 <div class="answer-box">
-  <span class="verdict-badge">${product.verdictBadge}</span>
-  <div class="vibe-score">${product.vibeScore}<span style="font-size:1.5rem;font-weight:400;color:#888;">/100</span></div>
+  <span class="verdict-badge verdict-badge-${verdictClass}">${product.verdictBadge}</span>
+  <div class="vibe-score${scoreClass}">${product.vibeScore}<span style="font-size:1.5rem;font-weight:400;color:var(--muted-foreground);">/100</span></div>
   <p class="lead">${product.answerSnippet}</p>
 </div>
 
@@ -208,20 +197,20 @@ ${testResultsHtml}
 
 <h2>Pros & Cons</h2>
 <div class="pros-cons">
-  <div>
-    <h3>✅ Pros</h3>
+  <div class="pros-cons-box">
+    <h3>Pros</h3>
     <ul>${prosHtml}</ul>
   </div>
-  <div>
-    <h3>❌ Cons</h3>
+  <div class="pros-cons-box">
+    <h3>Cons</h3>
     <ul>${consHtml}</ul>
   </div>
 </div>
 
 <h2>Final Verdict</h2>
 <div class="answer-box">
-  <div class="vibe-score">${product.vibeScore}<span style="font-size:1.5rem;font-weight:400;color:#888;">/100</span></div>
-  <span class="verdict-badge">${product.verdictBadge}</span>
+  <div class="vibe-score${scoreClass}">${product.vibeScore}<span style="font-size:1.5rem;font-weight:400;color:var(--muted-foreground);">/100</span></div>
+  <span class="verdict-badge verdict-badge-${verdictClass}">${product.verdictBadge}</span>
   <p>${product.finalVerdictSummary}</p>
 </div>
 
@@ -234,13 +223,13 @@ ${faqHtml}
 <div class="buy-box">
   <div>
     <strong>${product.name}</strong><br/>
-    <span style="color:#888;font-size:.9rem;">${product.priceRange} · ${product.brand}</span>
+    <span style="font-size:.85rem;color:var(--muted-foreground);">${product.priceRange} · ${product.brand}</span>
   </div>
-  <a class="cta-button" href="${shopifyUrl}" style="margin:0">
+  <a class="cta-button" href="${shopifyUrl}" style="margin:0;">
     Check Price →
   </a>
 </div>
-<p style="font-size:.8rem;color:#aaa;font-style:italic;">Vibe Test Lab may earn a commission from affiliate links. This does not influence our testing or scores.</p>
+<p class="disclaimer">Vibe Test Lab may earn a commission from affiliate links. This does not influence our testing or scores.</p>
 
 </BaseLayout>
 `;

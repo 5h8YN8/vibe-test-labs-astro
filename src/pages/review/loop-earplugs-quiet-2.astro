@@ -84,26 +84,32 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 }
 </script>
 
-
 <nav class="breadcrumb">
-  <a href="/">Vibe Test Labs</a> ›
-  <a href="/products">Products</a> ›
+  <a href="/">Vibe Test Lab</a> ›
+  <a href="/">Reviews</a> ›
   Loop Earplugs Quiet 2
 </nav>
 
-<div style="display:flex;align-items:center;gap:.75rem;margin-bottom:.5rem;">
-  <span style="font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;color:#888;">Wellness</span>
-  <span style="color:#ccc;">·</span>
-  <span style="font-size:.8rem;color:#888;">Loop</span>
-  <span style="color:#ccc;">·</span>
-  <span style="font-size:.8rem;color:#888;">Tested 2026-03-02</span>
+<img
+  src="https://images.unsplash.com/photo-1590658268037-6bf12f032f55?w=600&h=600&fit=crop"
+  alt="Loop Earplugs Quiet 2"
+  style="width:100%;height:320px;object-fit:cover;border-radius:var(--radius);margin-bottom:1.5rem;"
+  loading="eager"
+/>
+
+<div style="display:flex;align-items:center;gap:.6rem;margin-bottom:.75rem;flex-wrap:wrap;">
+  <span style="font-size:.7rem;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.12em;color:var(--muted-foreground);">Wellness</span>
+  <span style="color:var(--border);">·</span>
+  <span style="font-size:.7rem;font-family:var(--font-mono);color:var(--muted-foreground);">Loop</span>
+  <span style="color:var(--border);">·</span>
+  <span style="font-size:.7rem;font-family:var(--font-mono);color:var(--muted-foreground);">Tested 2026-03-02</span>
 </div>
 
 <h1>Are Loop Earplugs Quiet 2 Actually Good for Sleep?</h1>
 
 <div class="answer-box">
   <span class="verdict-badge verdict-badge-worth-it">Worth It</span>
-  <div class="vibe-score">93<span style="font-size:1.5rem;font-weight:400;color:#888;">/100</span></div>
+  <div class="vibe-score">93<span style="font-size:1.5rem;font-weight:400;color:var(--muted-foreground);">/100</span></div>
   <p class="lead">Absolutely. Loop Earplugs Quiet 2 are the most comfortable noise-blocking earplugs we've tested. They reduce noise by up to 24dB while remaining comfortable enough for all-night wear. They work best for light sleepers, people in noisy environments, and anyone who needs focus in open offices. Overall they earn a Vibe Score of 93/100.</p>
 </div>
 
@@ -175,16 +181,16 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <h2>Pros & Cons</h2>
 <div class="pros-cons">
-  <div>
-    <h3>✅ Pros</h3>
+  <div class="pros-cons-box">
+    <h3>Pros</h3>
     <ul>    <li>✅ Exceptional comfort for extended wear including all-night sleep</li>
     <li>✅ Effective 24dB noise reduction without muffled sound</li>
     <li>✅ Reusable and easy to clean</li>
     <li>✅ Stylish design you can wear in public</li>
     <li>✅ Outstanding value at $27</li></ul>
   </div>
-  <div>
-    <h3>❌ Cons</h3>
+  <div class="pros-cons-box">
+    <h3>Cons</h3>
     <ul>    <li>❌ Finding the right ear tip size requires trial and error</li>
     <li>❌ Not as effective as foam plugs for extremely loud environments (concerts, construction)</li>
     <li>❌ Can work loose during very active sleep if fit isn't perfect</li></ul>
@@ -193,7 +199,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <h2>Final Verdict</h2>
 <div class="answer-box">
-  <div class="vibe-score">93<span style="font-size:1.5rem;font-weight:400;color:#888;">/100</span></div>
+  <div class="vibe-score">93<span style="font-size:1.5rem;font-weight:400;color:var(--muted-foreground);">/100</span></div>
   <span class="verdict-badge verdict-badge-worth-it">Worth It</span>
   <p>Loop Quiet 2 are our highest-rated product this season. They deliver on every promise — effective noise reduction, all-day comfort, and a design you don't need to hide. At $27, they're an easy recommendation for anyone dealing with noise.</p>
 </div>
@@ -226,12 +232,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 <div class="buy-box">
   <div>
     <strong>Loop Earplugs Quiet 2</strong><br/>
-    <span style="color:#888;font-size:.9rem;">$25–$30 · Loop</span>
+    <span style="font-size:.85rem;color:var(--muted-foreground);">$25–$30 · Loop</span>
   </div>
-  <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/loop-earplugs-quiet-2?utm_source=aeo&utm_medium=content&utm_campaign=loop-earplugs-quiet-2" style="margin:0">
+  <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/loop-earplugs-quiet-2?utm_source=aeo&utm_medium=content&utm_campaign=loop-earplugs-quiet-2" style="margin:0;">
     Check Price →
   </a>
 </div>
-<p style="font-size:.8rem;color:#aaa;font-style:italic;">Vibe Test Lab may earn a commission from affiliate links. This does not influence our testing or scores.</p>
+<p class="disclaimer">Vibe Test Lab may earn a commission from affiliate links. This does not influence our testing or scores.</p>
 
 </BaseLayout>

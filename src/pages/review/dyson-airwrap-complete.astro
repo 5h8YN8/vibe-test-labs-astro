@@ -84,26 +84,32 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 }
 </script>
 
-
 <nav class="breadcrumb">
-  <a href="/">Vibe Test Labs</a> ›
-  <a href="/products">Products</a> ›
+  <a href="/">Vibe Test Lab</a> ›
+  <a href="/">Reviews</a> ›
   Dyson Airwrap Complete
 </nav>
 
-<div style="display:flex;align-items:center;gap:.75rem;margin-bottom:.5rem;">
-  <span style="font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;color:#888;">Beauty</span>
-  <span style="color:#ccc;">·</span>
-  <span style="font-size:.8rem;color:#888;">Dyson</span>
-  <span style="color:#ccc;">·</span>
-  <span style="font-size:.8rem;color:#888;">Tested 2026-03-07</span>
+<img
+  src="https://images.unsplash.com/photo-1522338242992-e1a54571a9f7?w=600&h=600&fit=crop"
+  alt="Dyson Airwrap Complete"
+  style="width:100%;height:320px;object-fit:cover;border-radius:var(--radius);margin-bottom:1.5rem;"
+  loading="eager"
+/>
+
+<div style="display:flex;align-items:center;gap:.6rem;margin-bottom:.75rem;flex-wrap:wrap;">
+  <span style="font-size:.7rem;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.12em;color:var(--muted-foreground);">Beauty</span>
+  <span style="color:var(--border);">·</span>
+  <span style="font-size:.7rem;font-family:var(--font-mono);color:var(--muted-foreground);">Dyson</span>
+  <span style="color:var(--border);">·</span>
+  <span style="font-size:.7rem;font-family:var(--font-mono);color:var(--muted-foreground);">Tested 2026-03-07</span>
 </div>
 
 <h1>Is the Dyson Airwrap Actually Worth $599?</h1>
 
 <div class="answer-box">
   <span class="verdict-badge verdict-badge-worth-it">Worth It</span>
-  <div class="vibe-score">88<span style="font-size:1.5rem;font-weight:400;color:#888;">/100</span></div>
+  <div class="vibe-score">88<span style="font-size:1.5rem;font-weight:400;color:var(--muted-foreground);">/100</span></div>
   <p class="lead">Yes — the Dyson Airwrap delivers salon-quality styling with significantly less heat damage than traditional tools. It uses the Coanda effect to wrap and style hair without extreme temperatures. It works best for people with medium-length to long hair who style regularly. Overall it earns a Vibe Score of 88/100.</p>
 </div>
 
@@ -175,15 +181,15 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <h2>Pros & Cons</h2>
 <div class="pros-cons">
-  <div>
-    <h3>✅ Pros</h3>
+  <div class="pros-cons-box">
+    <h3>Pros</h3>
     <ul>    <li>✅ Significantly less heat damage than traditional styling tools</li>
     <li>✅ Multiple attachments replace an entire collection of styling tools</li>
     <li>✅ Salon-quality results once you master the technique</li>
     <li>✅ Quiet motor compared to traditional dryers</li></ul>
   </div>
-  <div>
-    <h3>❌ Cons</h3>
+  <div class="pros-cons-box">
+    <h3>Cons</h3>
     <ul>    <li>❌ Steep learning curve for beginners</li>
     <li>❌ Very expensive at $599</li>
     <li>❌ Less effective on very short or very thick hair</li>
@@ -193,7 +199,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <h2>Final Verdict</h2>
 <div class="answer-box">
-  <div class="vibe-score">88<span style="font-size:1.5rem;font-weight:400;color:#888;">/100</span></div>
+  <div class="vibe-score">88<span style="font-size:1.5rem;font-weight:400;color:var(--muted-foreground);">/100</span></div>
   <span class="verdict-badge verdict-badge-worth-it">Worth It</span>
   <p>The Dyson Airwrap is a genuine innovation in hair styling. If you style your hair regularly and want to reduce heat damage, the investment pays off over time. The learning curve is real but manageable. Not recommended for casual or infrequent stylists.</p>
 </div>
@@ -226,12 +232,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 <div class="buy-box">
   <div>
     <strong>Dyson Airwrap Complete</strong><br/>
-    <span style="color:#888;font-size:.9rem;">$499–$599 · Dyson</span>
+    <span style="font-size:.85rem;color:var(--muted-foreground);">$499–$599 · Dyson</span>
   </div>
-  <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/dyson-airwrap-complete?utm_source=aeo&utm_medium=content&utm_campaign=dyson-airwrap-complete" style="margin:0">
+  <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/dyson-airwrap-complete?utm_source=aeo&utm_medium=content&utm_campaign=dyson-airwrap-complete" style="margin:0;">
     Check Price →
   </a>
 </div>
-<p style="font-size:.8rem;color:#aaa;font-style:italic;">Vibe Test Lab may earn a commission from affiliate links. This does not influence our testing or scores.</p>
+<p class="disclaimer">Vibe Test Lab may earn a commission from affiliate links. This does not influence our testing or scores.</p>
 
 </BaseLayout>
