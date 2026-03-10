@@ -72,6 +72,26 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
       margin-top: 3rem;
     }
     footer a { color: #aaa; }
+
+    /* ── Review page components ── */
+    .verdict-badge { display:inline-block; background:#1a1a1a; color:white; padding:.25rem .75rem; border-radius:999px; font-size:.8rem; font-weight:700; margin-bottom:1rem; }
+    .vibe-score { font-size:3rem; font-weight:900; color:#1a1a1a; }
+    .answer-box { background:#f8f8f8; border-left:4px solid #1a1a1a; padding:1.25rem 1.5rem; border-radius:0 8px 8px 0; margin:1.5rem 0; }
+    .test-result { background:#f8f8f8; border-radius:8px; padding:1rem 1.25rem; margin:.75rem 0; }
+    .test-header { display:flex; justify-content:space-between; margin-bottom:.5rem; }
+    .test-category { font-weight:700; font-size:.9rem; text-transform:uppercase; letter-spacing:.05em; }
+    .test-score { font-weight:900; }
+    .score-bar { background:#e0e0e0; border-radius:999px; height:8px; margin:.5rem 0; }
+    .score-fill { background:#1a1a1a; border-radius:999px; height:8px; }
+    .pros-cons { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin:1rem 0; }
+    .pros-cons ul { list-style:none; padding:0; margin:0; }
+    .pros-cons li { padding:.35rem 0; font-size:.95rem; }
+    .pros-cons h3 { font-size:.85rem; text-transform:uppercase; letter-spacing:.1em; margin-bottom:.75rem; }
+    .faq-item { border-bottom:1px solid #eee; padding:1rem 0; }
+    .faq-item h3 { font-size:1rem; font-weight:700; margin-bottom:.5rem; }
+    .faq-item p { color:#555; margin:0; }
+    .buy-box { background:#f8f8f8; border-radius:8px; padding:1.5rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; margin:2rem 0; }
+    @media(max-width:600px) { .pros-cons { grid-template-columns:1fr; } }
   </style>
 </head>
 <body>
