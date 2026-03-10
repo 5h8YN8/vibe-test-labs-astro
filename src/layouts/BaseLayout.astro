@@ -27,84 +27,260 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
   <meta name="twitter:card" content="summary_large_image" />
   {schema && <script type="application/ld+json" set:html={JSON.stringify(Array.isArray(schema) ? {"@context":"https://schema.org","@graph":schema} : schema)} />}
   <style is:global>
+    /* ── Reset & base ── */
     *, *::before, *::after { box-sizing: border-box; }
+    :root {
+      --color-bg: #0f0f0f;
+      --color-surface: #1a1a1a;
+      --color-surface-2: #242424;
+      --color-border: #2e2e2e;
+      --color-text: #f0f0f0;
+      --color-text-muted: #888;
+      --color-primary: #7c5cfc;
+      --color-primary-light: #9d82fd;
+      --grad-high: linear-gradient(135deg, #00c48c, #00e5a0);
+      --grad-mid: linear-gradient(135deg, #f7b731, #ffd22e);
+      --grad-low: linear-gradient(135deg, #ff4757, #ff6b81);
+      --radius: 10px;
+      --max-w: 800px;
+    }
+    html { scroll-behavior: smooth; }
     body {
-      font-family: system-ui, -apple-system, sans-serif;
-      line-height: 1.6;
-      color: #1a1a1a;
-      background: #fff;
+      font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+      line-height: 1.65;
+      color: var(--color-text);
+      background: var(--color-bg);
       margin: 0;
       padding: 0;
     }
-    main {
-      max-width: 780px;
-      margin: 0 auto;
-      padding: 2rem 1.25rem 4rem;
+
+    /* ── Nav ── */
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(15,15,15,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--color-border);
+      padding: 0 1.5rem;
     }
-    h1 { font-size: 1.9rem; line-height: 1.25; margin: 1rem 0 .75rem; }
-    h2 { font-size: 1.3rem; margin: 2rem 0 .75rem; border-bottom: 2px solid #f0f0f0; padding-bottom: .4rem; }
-    h3 { font-size: 1.05rem; margin: 1.25rem 0 .4rem; }
-    p { margin: 0 0 1rem; }
-    a { color: #1a1a1a; }
-    .lead { font-size: 1.1rem; color: #333; }
-    .breadcrumb { font-size: .85rem; color: #888; margin-bottom: 1.5rem; }
-    .breadcrumb a { color: #888; text-decoration: none; }
-    .breadcrumb a:hover { text-decoration: underline; }
+    .site-nav-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+      gap: 1rem;
+    }
+    .site-nav-logo {
+      font-family: 'Courier New', monospace;
+      font-weight: 900;
+      font-size: 1rem;
+      color: var(--color-text);
+      text-decoration: none;
+      letter-spacing: -.02em;
+    }
+    .site-nav-logo span { color: var(--color-primary); }
+    .site-nav-links { display: flex; gap: 1.5rem; align-items: center; }
+    .site-nav-links a {
+      font-size: .85rem;
+      color: var(--color-text-muted);
+      text-decoration: none;
+      transition: color .15s;
+    }
+    .site-nav-links a:hover { color: var(--color-text); }
+    .nav-cta {
+      background: var(--color-primary) !important;
+      color: #fff !important;
+      padding: .4rem .9rem !important;
+      border-radius: 6px !important;
+      font-weight: 600 !important;
+    }
+    .nav-cta:hover { background: var(--color-primary-light) !important; }
+
+    /* ── Main content ── */
+    main {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 5rem;
+    }
+
+    /* ── Typography ── */
+    h1 {
+      font-family: 'Courier New', monospace;
+      font-size: clamp(1.5rem, 4vw, 2rem);
+      line-height: 1.2;
+      margin: .75rem 0 1rem;
+      color: var(--color-text);
+    }
+    h2 {
+      font-family: 'Courier New', monospace;
+      font-size: 1.15rem;
+      margin: 2.5rem 0 .75rem;
+      color: var(--color-text);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      padding-bottom: .5rem;
+      border-bottom: 1px solid var(--color-border);
+    }
+    h3 { font-size: 1rem; margin: 1.25rem 0 .4rem; color: var(--color-text); }
+    p { margin: 0 0 1rem; color: var(--color-text-muted); }
+    a { color: var(--color-primary-light); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul, ol { color: var(--color-text-muted); padding-left: 1.5rem; }
+    li { margin-bottom: .35rem; }
+    .lead { font-size: 1.1rem; color: var(--color-text); line-height: 1.6; }
+
+    /* ── Breadcrumb ── */
+    .breadcrumb { font-size: .8rem; color: var(--color-text-muted); margin-bottom: 1.5rem; display: flex; gap: .4rem; align-items: center; flex-wrap: wrap; }
+    .breadcrumb a { color: var(--color-text-muted); }
+    .breadcrumb a:hover { color: var(--color-text); text-decoration: none; }
+
+    /* ── CTA button ── */
     .cta-button {
-      display: inline-block;
-      background: #1a1a1a;
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      background: var(--color-primary);
       color: #fff;
       padding: .75rem 1.5rem;
-      border-radius: 8px;
+      border-radius: var(--radius);
       text-decoration: none;
       font-weight: 700;
       font-size: .95rem;
       margin: 1rem 0;
-      transition: background .15s;
+      transition: background .15s, transform .1s;
     }
-    .cta-button:hover { background: #333; color: #fff; }
-    footer {
-      text-align: center;
-      font-size: .8rem;
-      color: #aaa;
-      padding: 2rem 1rem;
-      border-top: 1px solid #f0f0f0;
-      margin-top: 3rem;
-    }
-    footer a { color: #aaa; }
+    .cta-button:hover { background: var(--color-primary-light); color: #fff; text-decoration: none; transform: translateY(-1px); }
 
     /* ── Review page components ── */
-    .verdict-badge { display:inline-block; background:#1a1a1a; color:white; padding:.25rem .75rem; border-radius:999px; font-size:.8rem; font-weight:700; margin-bottom:1rem; }
-    .vibe-score { font-size:3rem; font-weight:900; color:#1a1a1a; }
-    .answer-box { background:#f8f8f8; border-left:4px solid #1a1a1a; padding:1.25rem 1.5rem; border-radius:0 8px 8px 0; margin:1.5rem 0; }
-    .test-result { background:#f8f8f8; border-radius:8px; padding:1rem 1.25rem; margin:.75rem 0; }
-    .test-header { display:flex; justify-content:space-between; margin-bottom:.5rem; }
-    .test-category { font-weight:700; font-size:.9rem; text-transform:uppercase; letter-spacing:.05em; }
-    .test-score { font-weight:900; }
-    .score-bar { background:#e0e0e0; border-radius:999px; height:8px; margin:.5rem 0; }
-    .score-fill { background:#1a1a1a; border-radius:999px; height:8px; }
-    .pros-cons { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin:1rem 0; }
-    .pros-cons ul { list-style:none; padding:0; margin:0; }
-    .pros-cons li { padding:.35rem 0; font-size:.95rem; }
-    .pros-cons h3 { font-size:.85rem; text-transform:uppercase; letter-spacing:.1em; margin-bottom:.75rem; }
-    .faq-item { border-bottom:1px solid #eee; padding:1rem 0; }
-    .faq-item h3 { font-size:1rem; font-weight:700; margin-bottom:.5rem; }
-    .faq-item p { color:#555; margin:0; }
-    .buy-box { background:#f8f8f8; border-radius:8px; padding:1.5rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; margin:2rem 0; }
-    @media(max-width:600px) { .pros-cons { grid-template-columns:1fr; } }
+    .verdict-badge {
+      display: inline-block;
+      padding: .3rem .85rem;
+      border-radius: 999px;
+      font-size: .75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      margin-bottom: .75rem;
+    }
+    .verdict-badge-worth-it { background: rgba(0,196,140,.15); color: #00e5a0; border: 1px solid rgba(0,196,140,.3); }
+    .verdict-badge-hidden-gem { background: rgba(124,92,252,.15); color: var(--color-primary-light); border: 1px solid rgba(124,92,252,.3); }
+    .verdict-badge-overhyped { background: rgba(255,71,87,.15); color: #ff6b81; border: 1px solid rgba(255,71,87,.3); }
+
+    .vibe-score {
+      font-family: 'Courier New', monospace;
+      font-size: 4rem;
+      font-weight: 900;
+      line-height: 1;
+      background: var(--grad-high);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .vibe-score.mid { background: var(--grad-mid); -webkit-background-clip: text; background-clip: text; }
+    .vibe-score.low { background: var(--grad-low); -webkit-background-clip: text; background-clip: text; }
+
+    .answer-box {
+      background: var(--color-surface);
+      border-left: 3px solid var(--color-primary);
+      padding: 1.5rem;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      margin: 1.5rem 0;
+    }
+    .answer-box p { color: var(--color-text); margin: .5rem 0 0; }
+
+    .test-result {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      margin: .75rem 0;
+    }
+    .test-header { display: flex; justify-content: space-between; margin-bottom: .4rem; align-items: center; }
+    .test-category { font-weight: 700; font-size: .8rem; text-transform: uppercase; letter-spacing: .08em; color: var(--color-text); }
+    .test-score { font-weight: 900; font-size: .9rem; color: var(--color-text); }
+    .test-result p { font-size: .875rem; margin: .4rem 0 0; }
+    .score-bar { background: var(--color-border); border-radius: 999px; height: 6px; margin: .5rem 0 .25rem; }
+    .score-fill { background: linear-gradient(90deg, var(--color-primary), var(--color-primary-light)); border-radius: 999px; height: 6px; }
+
+    .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin: 1rem 0; }
+    .pros-cons-box { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius); padding: 1.25rem; }
+    .pros-cons h3 { font-size: .75rem; text-transform: uppercase; letter-spacing: .1em; margin: 0 0 .75rem; }
+    .pros-cons ul { list-style: none; padding: 0; margin: 0; }
+    .pros-cons li { padding: .35rem 0; font-size: .9rem; border-bottom: 1px solid var(--color-border); }
+    .pros-cons li:last-child { border-bottom: none; }
+
+    .faq { margin: .5rem 0; }
+    .faq-item { border-bottom: 1px solid var(--color-border); padding: 1.1rem 0; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-item h3 { font-size: .95rem; font-weight: 700; margin: 0 0 .4rem; color: var(--color-text); }
+    .faq-item p { font-size: .9rem; margin: 0; }
+
+    .buy-box {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    .buy-box strong { color: var(--color-text); display: block; margin-bottom: .2rem; }
+
+    .disclaimer { font-size: .75rem; color: #555; font-style: italic; }
+
+    /* ── Footer ── */
+    .site-footer {
+      border-top: 1px solid var(--color-border);
+      margin-top: 4rem;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+    }
+    .site-footer-inner { max-width: var(--max-w); margin: 0 auto; }
+    .site-footer p { color: var(--color-text-muted); font-size: .8rem; margin: 0 0 .4rem; }
+    .site-footer a { color: var(--color-text-muted); }
+    .site-footer a:hover { color: var(--color-text); }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      .pros-cons { grid-template-columns: 1fr; }
+      h1 { font-size: 1.4rem; }
+      .vibe-score { font-size: 3rem; }
+      .site-nav-links .nav-hide-mobile { display: none; }
+    }
   </style>
 </head>
 <body>
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a href="/" class="site-nav-logo">Vibe<span>Test</span>Lab</a>
+      <div class="site-nav-links">
+        <a href="/" class="nav-hide-mobile">Reviews</a>
+        <a href="/products" class="nav-hide-mobile">All Products</a>
+        <a href="https://vibe-test-lab.myshopify.com?utm_source=aeo&utm_medium=nav&utm_campaign=nav" class="nav-cta">Shop →</a>
+      </div>
+    </div>
+  </nav>
+
   <main>
     <slot />
   </main>
-  <footer>
-    <p>
-      &copy; {new Date().getFullYear()} Vibe Test Labs &mdash;
-      <a href="/">Home</a> &middot;
-      <a href="/products">All Products</a>
-    </p>
-    <p style="font-size:.75rem;">Affiliate disclosure: Vibe Test Labs may earn a commission from links on this page. This does not influence our reviews or scores.</p>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <p>
+        <a href="/">Vibe Test Lab</a> &nbsp;·&nbsp;
+        <a href="/products">All Products</a> &nbsp;·&nbsp;
+        <a href="https://vibe-test-lab.myshopify.com">Shop</a>
+      </p>
+      <p>&copy; {new Date().getFullYear()} Vibe Test Lab. Independent product reviews.</p>
+      <p>Affiliate disclosure: We may earn a commission from links on this page. It does not influence our scores or reviews.</p>
+    </div>
   </footer>
 </body>
 </html>
