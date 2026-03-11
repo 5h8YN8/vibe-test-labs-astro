@@ -26,6 +26,41 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
   <meta property="og:url" content={canonicalUrl} />
   {ogImage && <meta property="og:image" content={ogImage} />}
   <meta name="twitter:card" content="summary_large_image" />
+  <!-- Base org schema — emitted on every page -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": `${siteUrl}#organization`,
+        "name": "Vibe Test Lab",
+        "url": siteUrl,
+        "logo": { "@type": "ImageObject", "url": `${siteUrl}/favicon.svg` },
+        "description": "Independent product testing lab reviewing viral and trending consumer products. Honest scores, real-world tests.",
+        "sameAs": []
+      },
+      {
+        "@type": "Person",
+        "@id": `${siteUrl}#author`,
+        "name": "Vibe Test Lab Team",
+        "worksFor": { "@id": `${siteUrl}#organization` }
+      },
+      {
+        "@type": "WebSite",
+        "@id": `${siteUrl}#website`,
+        "url": siteUrl,
+        "name": "Vibe Test Lab",
+        "description": "Independent product testing lab reviewing viral and trending consumer products.",
+        "publisher": { "@id": `${siteUrl}#organization` },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": `${siteUrl}/products?q={search_term_string}`,
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ]
+  })} />
+  <!-- Page-specific schema -->
   {schema && <script type="application/ld+json" set:html={JSON.stringify(Array.isArray(schema) ? {"@context":"https://schema.org","@graph":schema} : schema)} />}
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

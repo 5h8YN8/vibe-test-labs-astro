@@ -2,17 +2,55 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { products, categories } from '../data/products';
 
-const orgSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Vibe Test Lab",
-  "url": "https://vibe-test-labs.pages.dev",
-  "description": "Independent product testing. We test viral products so you don't waste your money."
-};
-
+const siteUrl  = 'https://vibe-test-labs.pages.dev';
 const trending = products.filter(p => p.trending);
 const topRated = [...products].sort((a, b) => b.vibeScore - a.vibeScore).slice(0, 4);
 const latest   = [...products].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 4);
+
+// Page-specific schema — BaseLayout always provides Organization + WebSite + Author
+const pageSchema = [
+  {
+    "@type": "WebPage",
+    "@id": `${siteUrl}/#webpage`,
+    "url": siteUrl,
+    "name": "Vibe Test Lab — We Test Viral Products",
+    "description": "Independent product testing. Real tests, honest reviews of viral and trending consumer products.",
+    "isPartOf": { "@id": `${siteUrl}#website` },
+    "publisher": { "@id": `${siteUrl}#organization` },
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".hero-content", ".answer-summary"]
+    }
+  },
+  {
+    "@type": "ItemList",
+    "@id": `${siteUrl}/#featured`,
+    "name": "Top Rated Products — Vibe Test Lab",
+    "description": "The highest-scoring products from our independent lab tests.",
+    "url": `${siteUrl}/top-rated`,
+    "numberOfItems": topRated.length,
+    "itemListElement": topRated.map((p, i) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "name": p.name,
+      "url": `${siteUrl}/review/${p.slug}`,
+      "item": {
+        "@type": "Product",
+        "name": p.name,
+        "url": `${siteUrl}/review/${p.slug}`,
+        "image": p.image,
+        "brand": { "@type": "Brand", "name": p.brand },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": p.vibeScore.toString(),
+          "bestRating": "100",
+          "worstRating": "0",
+          "ratingCount": "1"
+        }
+      }
+    }))
+  }
+];
 
 function scoreClass(s: number) { return s >= 85 ? 'high' : s >= 70 ? 'mid' : 'low'; }
 function slugify(n: string) { return n.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,''); }
@@ -23,7 +61,7 @@ const catColors = ['cat-a','cat-b','cat-c','cat-a','cat-b','cat-c','cat-a','cat-
 <BaseLayout
   title="Vibe Test Lab — We Test Viral Products"
   description="Vibe Test Lab tests trending viral products so you don't waste your money. Real tests, real results, honest reviews."
-  schema={orgSchema}
+  schema={pageSchema}
   fullWidth={true}
 >
 
