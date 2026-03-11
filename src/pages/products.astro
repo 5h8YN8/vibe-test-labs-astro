@@ -1,14 +1,52 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { products } from '../data/products';
+
+function scoreClass(s: number) { return s >= 85 ? 'high' : s >= 70 ? 'mid' : 'low'; }
+function badgeClass(v: string) { return v === 'Worth It' ? 'worth-it' : v === 'Hidden Gem' ? 'hidden-gem' : 'overhyped'; }
+
+const orgSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "All Products — Vibe Test Lab",
+  "url": "https://vibe-test-labs.pages.dev/products"
+};
 ---
+
 <BaseLayout
-  title="Products — Vibe Test Labs"
-  description="Read our full review of Products at Vibe Test Labs."
-  canonical="https://vibe-test-labs.pages.dev/products/products"
+  title="All Products — Honest Scores & Verdicts | Vibe Test Lab"
+  description="Every product we've tested, with honest scores and verdicts."
+  canonical="https://vibe-test-labs.pages.dev/products"
+  schema={orgSchema}
+  fullWidth={true}
 >
-  <nav class="breadcrumb"><a href="/">Vibe Test Labs</a> › Products</nav>
-  <h1>Products</h1>
-  <p class="lead">Read our full review of Products at Vibe Test Labs.</p>
-  <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/products?utm_source=aeo&utm_medium=content&utm_campaign=products">Buy Products →</a>
-  <!-- TODO: add product content here -->
+
+<section class="page-section">
+  <div style="margin-bottom:3rem;">
+    <span class="section-label">Product Index</span>
+    <h1 style="font-size:clamp(1.6rem,4vw,2.2rem);margin:.25rem 0 .75rem;">All Products</h1>
+    <p style="font-size:1.05rem;max-width:520px;">Every product we've tested, with honest scores and verdicts.</p>
+  </div>
+
+  <div class="grid-4">
+    {products.map(product => (
+      <a href={`/review/${product.slug}`} class="product-grid-card">
+        <img src={product.image} alt={product.name} class="product-grid-img" loading="lazy" />
+        <div class="product-grid-body">
+          <div class="product-grid-meta">
+            <span class="product-grid-category">{product.category}</span>
+            <span class={`verdict-badge verdict-badge-${badgeClass(product.verdictBadge)}`}>{product.verdictBadge}</span>
+          </div>
+          <p class="product-grid-name">{product.name}</p>
+          <p class="product-grid-verdict">{product.verdict}</p>
+          <div class="product-grid-footer">
+            <span class={`product-grid-score text-gradient-score-${scoreClass(product.vibeScore)}`}>{product.vibeScore}</span>
+            <span class="product-grid-price">{product.price}</span>
+          </div>
+        </div>
+      </a>
+    ))}
+  </div>
+</section>
+
 </BaseLayout>

@@ -12,7 +12,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   "@context": "https://schema.org",
   "@type": "Review",
   "name": "Can the Always Pan Actually Replace 8 Pieces of Cookware?",
-  "reviewBody": "Not quite, but it comes close. The Always Pan 2.0 is a versatile, well-designed pan that handles most daily cooking tasks well. It excels at sautéing, simmering, and steaming but can't replace specialized tools like a wok or cast iron. It works best for small kitchens and everyday cooks. Overall it earns a Vibe Score of 78/100.",
+  "reviewBody": "The Always Pan 2.0 is a well-designed, versatile pan that's perfect for everyday cooking in small kitchens. It won't replace a full cookware set, but it handles 80% of daily tasks beautifully. The ceramic coating lifespan is the main concern.",
   "author": {
     "@type": "Organization",
     "name": "Vibe Test Lab"
@@ -77,167 +77,203 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       "name": "How long does the Always Pan last?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "With proper care, 12–18 months before the nonstick coating starts to degrade. Our Place offers a limited warranty."
+        "text": "With proper care, 12\u201318 months before the nonstick coating starts to degrade. Our Place offers a limited warranty."
       }
     }
   ]
 }
 </script>
 
-<nav class="breadcrumb">
-  <a href="/">Vibe Test Lab</a> ›
-  <a href="/">Reviews</a> ›
-  Always Pan 2.0
-</nav>
+<a href="/" class="back-link">&larr; Back to Lab</a>
 
-<img
-  src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=600&fit=crop"
-  alt="Always Pan 2.0"
-  style="width:100%;height:320px;object-fit:cover;border-radius:var(--radius);margin-bottom:1.5rem;"
-  loading="eager"
-/>
-
-<div style="display:flex;align-items:center;gap:.6rem;margin-bottom:.75rem;flex-wrap:wrap;">
-  <span style="font-size:.7rem;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.12em;color:var(--muted-foreground);">Kitchen</span>
-  <span style="color:var(--border);">·</span>
-  <span style="font-size:.7rem;font-family:var(--font-mono);color:var(--muted-foreground);">Our Place</span>
-  <span style="color:var(--border);">·</span>
-  <span style="font-size:.7rem;font-family:var(--font-mono);color:var(--muted-foreground);">Tested 2026-03-03</span>
+<div style="display:flex;align-items:center;gap:.75rem;margin-bottom:1rem;flex-wrap:wrap;">
+  <span style="font-size:.7rem;font-family:var(--font-sans);font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--primary);">Kitchen</span>
+  <span style="color:var(--border);">&middot;</span>
+  <span style="font-size:.7rem;color:var(--muted-foreground);">Our Place</span>
+  <span style="color:var(--border);">&middot;</span>
+  <span style="font-size:.7rem;color:var(--muted-foreground);">Tested 2026-03-03</span>
 </div>
 
-<h1>Can the Always Pan Actually Replace 8 Pieces of Cookware?</h1>
+<!-- 1. QUESTION & ANSWER SNIPPET -->
+<section style="margin-bottom:3rem;">
+  <h1>Can the Always Pan Actually Replace 8 Pieces of Cookware?</h1>
+  <div class="answer-box">
+    <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:1rem;flex-wrap:wrap;">
+      <span class="verdict-badge verdict-badge-hidden-gem">Hidden Gem</span>
+      <div class="vibe-score-wrap">
+        <span class="vibe-score-label">Vibe Score</span>
+        <span class="vibe-score sm mid">78</span>
+      </div>
+    </div>
+    <p class="lead">Not quite, but it comes close. The Always Pan 2.0 is a versatile, well-designed pan that handles most daily cooking tasks well. It excels at sautéing, simmering, and steaming but can't replace specialized tools like a wok or cast iron. It works best for small kitchens and everyday cooks. Overall it earns a Vibe Score of 78/100.</p>
+  </div>
+</section>
 
-<div class="answer-box">
-  <span class="verdict-badge verdict-badge-hidden-gem">Hidden Gem</span>
-  <div class="vibe-score mid">78<span style="font-size:1.5rem;font-weight:400;color:var(--muted-foreground);">/100</span></div>
-  <p class="lead">Not quite, but it comes close. The Always Pan 2.0 is a versatile, well-designed pan that handles most daily cooking tasks well. It excels at sautéing, simmering, and steaming but can't replace specialized tools like a wok or cast iron. It works best for small kitchens and everyday cooks. Overall it earns a Vibe Score of 78/100.</p>
+<!-- Image -->
+<div style="margin-bottom:3rem;overflow:hidden;border-radius:var(--radius);">
+  <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop" alt="Always Pan 2.0" style="width:100%;height:380px;object-fit:cover;" loading="eager" />
 </div>
 
-<a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/always-pan-2?utm_source=aeo&utm_medium=content&utm_campaign=always-pan-2">
-  Buy Always Pan 2.0 — $150 →
-</a>
+<!-- 2. PROBLEM -->
+<section style="margin-bottom:3rem;">
+  <h2>Why People Are Buying Always Pan 2.0</h2>
+  <p>Kitchen clutter is real. Many people have too many pots and pans that they rarely use, especially in small apartments. The Always Pan became popular because it promises to replace eight pieces of cookware with one beautiful pan.</p>
+</section>
 
-<h2>Why People Are Buying Always Pan 2.0</h2>
-<p>Kitchen clutter is real. Many people have too many pots and pans that they rarely use, especially in small apartments. The Always Pan became popular because it promises to replace eight pieces of cookware with one beautiful pan.</p>
+<div class="divider-gradient" style="margin-bottom:3rem;"></div>
 
-<h2>What Is Always Pan 2.0?</h2>
-<p>The Always Pan 2.0 is a 10.5-inch ceramic-coated pan with a steamer basket, built-in spoon rest, and pour spouts. It's designed for braising, searing, steaming, straining, sautéing, frying, boiling, and serving. It went viral through Instagram aesthetic appeal and influencer partnerships.</p>
-<p><strong>Why it went viral:</strong> Instagram aesthetics and minimalist kitchen trend appeal</p>
+<!-- 3. SOLUTION -->
+<section style="margin-bottom:3rem;">
+  <h2>What Is Always Pan 2.0?</h2>
+  <p>The Always Pan 2.0 is a 10.5-inch ceramic-coated pan with a steamer basket, built-in spoon rest, and pour spouts. It's designed for braising, searing, steaming, straining, sautéing, frying, boiling, and serving. It went viral through Instagram aesthetic appeal and influencer partnerships.</p>
+  <p style="margin-top:1rem;display:flex;align-items:center;gap:.5rem;">
+    <span style="font-size:.75rem;font-family:var(--font-sans);text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);">Why it went viral:</span>
+    <span style="color:var(--accent);font-size:.875rem;">Instagram aesthetics and minimalist kitchen trend appeal</span>
+  </p>
+</section>
 
-<h2>How to Use Always Pan 2.0</h2>
-<ol>
-    <li><strong>1.</strong> Season the pan by heating a thin layer of oil over medium heat for 2 minutes before first use</li>
-    <li><strong>2.</strong> Cook on low to medium heat — ceramic coating doesn't require high heat for nonstick performance</li>
-    <li><strong>3.</strong> Use the included steamer basket for vegetables, dumplings, or reheating</li>
-    <li><strong>4.</strong> Hand wash with a soft sponge — avoid abrasive cleaners to preserve the ceramic coating</li>
-</ol>
+<div class="divider-gradient" style="margin-bottom:3rem;"></div>
 
-<h2>Our Vibe Test Results</h2>
+<!-- 4. HOW TO USE -->
+<section style="margin-bottom:3rem;">
+  <h2>How to Use Always Pan 2.0</h2>
+  <ol class="how-to-steps">
+    <li class="how-to-step"><span class="step-number">1</span><span class="step-text">Season the pan by heating a thin layer of oil over medium heat for 2 minutes before first use</span></li>
+    <li class="how-to-step"><span class="step-number">2</span><span class="step-text">Cook on low to medium heat — ceramic coating doesn't require high heat for nonstick performance</span></li>
+    <li class="how-to-step"><span class="step-number">3</span><span class="step-text">Use the included steamer basket for vegetables, dumplings, or reheating</span></li>
+    <li class="how-to-step"><span class="step-number">4</span><span class="step-text">Hand wash with a soft sponge — avoid abrasive cleaners to preserve the ceramic coating</span></li>
+  </ol>
+</section>
 
+<div class="divider-gradient" style="margin-bottom:3rem;"></div>
+
+<!-- 5. VIBE TEST RESULTS -->
+<section style="margin-bottom:3rem;">
+  <span class="section-label">Lab Report</span>
+  <h2 style="margin:.25rem 0 1.5rem;">Our Vibe Test Results</h2>
     <div class="test-result">
       <div class="test-header">
         <span class="test-category">Performance</span>
-        <span class="test-score">80/100</span>
+        <span class="test-score mid">80</span>
       </div>
-      <div class="score-bar"><div class="score-fill" style="width:80%"></div></div>
+      <div class="score-bar"><div class="score-fill mid" style="width:80%"></div></div>
       <p>Excellent for everyday cooking tasks. Good heat distribution. Struggles with high-heat searing compared to cast iron or stainless steel.</p>
     </div>
-
     <div class="test-result">
       <div class="test-header">
         <span class="test-category">Build Quality</span>
-        <span class="test-score">82/100</span>
+        <span class="test-score mid">82</span>
       </div>
-      <div class="score-bar"><div class="score-fill" style="width:82%"></div></div>
+      <div class="score-bar"><div class="score-fill mid" style="width:82%"></div></div>
       <p>Beautiful design with a premium feel. The ceramic coating is smooth and genuinely nonstick when properly maintained.</p>
     </div>
-
     <div class="test-result">
       <div class="test-header">
         <span class="test-category">Ease of Use</span>
-        <span class="test-score">85/100</span>
+        <span class="test-score high">85</span>
       </div>
-      <div class="score-bar"><div class="score-fill" style="width:85%"></div></div>
+      <div class="score-bar"><div class="score-fill high" style="width:85%"></div></div>
       <p>Lightweight with a comfortable handle. The steamer basket and spoon rest are genuinely useful additions.</p>
     </div>
-
     <div class="test-result">
       <div class="test-header">
         <span class="test-category">Value for Money</span>
-        <span class="test-score">72/100</span>
+        <span class="test-score mid">72</span>
       </div>
-      <div class="score-bar"><div class="score-fill" style="width:72%"></div></div>
+      <div class="score-bar"><div class="score-fill mid" style="width:72%"></div></div>
       <p>At $150, you're paying a premium for aesthetics. A quality nonstick pan with steamer insert can be found for half the price.</p>
     </div>
-
     <div class="test-result">
       <div class="test-header">
         <span class="test-category">Durability</span>
-        <span class="test-score">68/100</span>
+        <span class="test-score low">68</span>
       </div>
-      <div class="score-bar"><div class="score-fill" style="width:68%"></div></div>
+      <div class="score-bar"><div class="score-fill low" style="width:68%"></div></div>
       <p>The ceramic coating begins to degrade after 12–18 months of daily use. Not as long-lasting as traditional nonstick.</p>
     </div>
+</section>
 
-<h2>Pros & Cons</h2>
-<div class="pros-cons">
-  <div class="pros-cons-box">
-    <h3>Pros</h3>
-    <ul>    <li>✅ Beautiful design that looks great in any kitchen</li>
-    <li>✅ Genuinely versatile for everyday cooking</li>
-    <li>✅ Included steamer basket is a nice touch</li>
-    <li>✅ Lightweight and easy to handle</li></ul>
+<div class="divider-gradient" style="margin-bottom:3rem;"></div>
+
+<!-- 6. PROS & CONS -->
+<section style="margin-bottom:3rem;">
+  <h2>Pros &amp; Cons</h2>
+  <div class="pros-cons">
+    <div class="pros-cons-box">
+      <h3 class="pros-cons-title pros-title">Pros</h3>
+      <ul>
+      <li>&#10003; Beautiful design that looks great in any kitchen</li>
+      <li>&#10003; Genuinely versatile for everyday cooking</li>
+      <li>&#10003; Included steamer basket is a nice touch</li>
+      <li>&#10003; Lightweight and easy to handle</li>
+      </ul>
+    </div>
+    <div class="pros-cons-box">
+      <h3 class="pros-cons-title cons-title">Cons</h3>
+      <ul>
+      <li>&#10007; Ceramic coating degrades faster than traditional nonstick</li>
+      <li>&#10007; Can't handle high-heat searing</li>
+      <li>&#10007; Premium price for mid-range performance</li>
+      <li>&#10007; Not a true replacement for specialized cookware</li>
+      </ul>
+    </div>
   </div>
-  <div class="pros-cons-box">
-    <h3>Cons</h3>
-    <ul>    <li>❌ Ceramic coating degrades faster than traditional nonstick</li>
-    <li>❌ Can't handle high-heat searing</li>
-    <li>❌ Premium price for mid-range performance</li>
-    <li>❌ Not a true replacement for specialized cookware</li></ul>
+</section>
+
+<div class="divider-gradient" style="margin-bottom:3rem;"></div>
+
+<!-- 7. FINAL VERDICT -->
+<section style="margin-bottom:3rem;">
+  <div class="verdict-card">
+    <p class="section-label" style="text-align:center;margin-bottom:1rem;">Final Verdict</p>
+    <div style="display:flex;justify-content:center;margin-bottom:1.5rem;">
+      <div class="vibe-score-wrap" style="align-items:center;">
+        <span class="vibe-score-label">Vibe Score</span>
+        <span class="vibe-score lg mid">78</span>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:center;margin-bottom:1.5rem;">
+      <span class="verdict-badge verdict-badge-hidden-gem lg">Hidden Gem</span>
+    </div>
+    <p style="color:var(--foreground);opacity:.85;font-size:1rem;line-height:1.7;max-width:520px;margin:0 auto;text-align:center;">The Always Pan 2.0 is a well-designed, versatile pan that's perfect for everyday cooking in small kitchens. It won't replace a full cookware set, but it handles 80% of daily tasks beautifully. The ceramic coating lifespan is the main concern.</p>
   </div>
-</div>
+</section>
 
-<h2>Final Verdict</h2>
-<div class="answer-box">
-  <div class="vibe-score mid">78<span style="font-size:1.5rem;font-weight:400;color:var(--muted-foreground);">/100</span></div>
-  <span class="verdict-badge verdict-badge-hidden-gem">Hidden Gem</span>
-  <p>The Always Pan 2.0 is a well-designed, versatile pan that's perfect for everyday cooking in small kitchens. It won't replace a full cookware set, but it handles 80% of daily tasks beautifully. The ceramic coating lifespan is the main concern.</p>
-</div>
-
-<h2>Frequently Asked Questions</h2>
-<div class="faq">
-
+<!-- 8. FAQ -->
+<section style="margin-bottom:3rem;">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq">
     <div class="faq-item">
       <h3>Does the Always Pan replace 8 pieces of cookware?</h3>
       <p>Not literally, but it handles most daily cooking tasks. You'll still want a pot for large batches and cast iron for searing.</p>
     </div>
-
     <div class="faq-item">
       <h3>Is the Always Pan worth $150?</h3>
       <p>For small kitchens or minimalists, yes. For serious cooks, a quality nonstick pan plus a cast iron skillet is better value.</p>
     </div>
-
     <div class="faq-item">
       <h3>What are alternatives to the Always Pan?</h3>
       <p>The Caraway Fry Pan, GreenPan Valencia Pro, and a basic T-fal nonstick are popular alternatives at various price points.</p>
     </div>
-
     <div class="faq-item">
       <h3>How long does the Always Pan last?</h3>
       <p>With proper care, 12–18 months before the nonstick coating starts to degrade. Our Place offers a limited warranty.</p>
     </div>
-</div>
-
-<h2>Where to Buy Always Pan 2.0</h2>
-<div class="buy-box">
-  <div>
-    <strong>Always Pan 2.0</strong><br/>
-    <span style="font-size:.85rem;color:var(--muted-foreground);">$130–$165 · Our Place</span>
   </div>
-  <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/always-pan-2?utm_source=aeo&utm_medium=content&utm_campaign=always-pan-2" style="margin:0;">
-    Check Price →
-  </a>
-</div>
-<p class="disclaimer">Vibe Test Lab may earn a commission from affiliate links. This does not influence our testing or scores.</p>
+</section>
+
+<div class="divider-gradient" style="margin-bottom:3rem;"></div>
+
+<!-- 9. WHERE TO BUY -->
+<section style="margin-bottom:3rem;">
+  <div class="buy-box">
+    <div>
+      <strong>Always Pan 2.0</strong>
+      <span style="font-size:.85rem;color:var(--muted-foreground);">$130–$165 &middot; Our Place</span>
+    </div>
+    <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/always-pan-2?utm_source=aeo&utm_medium=content&utm_campaign=always-pan-2">Check Price &#8599;</a>
+  </div>
+  <p class="disclaimer">Vibe Test Lab may earn a commission from affiliate links. This does not influence our testing or scores.</p>
+</section>
 
 </BaseLayout>

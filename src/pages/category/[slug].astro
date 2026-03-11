@@ -1,0 +1,73 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { products, categories } from '../../data/products';
+
+export function getStaticPaths() {
+  function slugify(n: string) { return n.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,''); }
+  return categories
+    .filter(c => c !== 'All')
+    .map(cat => ({ params: { slug: slugify(cat) }, props: { category: cat } }));
+}
+
+const { category } = Astro.props;
+const { slug } = Astro.params;
+
+function slugify(n: string) { return n.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,''); }
+function scoreClass(s: number) { return s >= 85 ? 'high' : s >= 70 ? 'mid' : 'low'; }
+function badgeClass(v: string) { return v === 'Worth It' ? 'worth-it' : v === 'Hidden Gem' ? 'hidden-gem' : 'overhyped'; }
+
+const filtered = products.filter(p => p.category === category).sort((a, b) => b.vibeScore - a.vibeScore);
+---
+
+<BaseLayout
+  title={`${category} Products — Tested & Scored | Vibe Test Lab`}
+  description={`Browse all ${category} products tested by Vibe Test Lab. Honest scores, real results.`}
+  canonical={`https://vibe-test-labs.pages.dev/category/${slug}`}
+  fullWidth={true}
+>
+
+<section class="page-section">
+  <a href="/products" class="back-link">&larr; All Products</a>
+
+  <div style="margin-bottom:2.5rem;">
+    <span class="section-label">Category</span>
+    <h1 style="font-size:clamp(1.6rem,4vw,2.2rem);margin:.25rem 0 .75rem;">{category}</h1>
+    <p style="font-size:1.05rem;">{filtered.length} product{filtered.length !== 1 ? 's' : ''} tested in {category}</p>
+  </div>
+
+  <!-- Category filter pills -->
+  <div style="display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:2.5rem;">
+    {categories.filter(c => c !== 'All').map(c => (
+      <a
+        href={`/category/${slugify(c)}`}
+        class={`filter-pill ${c === category ? 'active' : 'inactive'}`}
+      >{c}</a>
+    ))}
+  </div>
+
+  {filtered.length === 0 ? (
+    <p>No products tested in this category yet.</p>
+  ) : (
+    <div class="grid-3">
+      {filtered.map(product => (
+        <a href={`/review/${product.slug}`} class="product-grid-card">
+          <img src={product.image} alt={product.name} class="product-grid-img" loading="lazy" />
+          <div class="product-grid-body">
+            <div class="product-grid-meta">
+              <span class="product-grid-category">{product.category}</span>
+              <span class={`verdict-badge verdict-badge-${badgeClass(product.verdictBadge)}`}>{product.verdictBadge}</span>
+            </div>
+            <p class="product-grid-name">{product.name}</p>
+            <p class="product-grid-verdict">{product.verdict}</p>
+            <div class="product-grid-footer">
+              <span class={`product-grid-score text-gradient-score-${scoreClass(product.vibeScore)}`}>{product.vibeScore}</span>
+              <span class="product-grid-price">{product.price}</span>
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+  )}
+</section>
+
+</BaseLayout>

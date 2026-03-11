@@ -1,14 +1,50 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { products } from '../data/products';
+
+const sorted = [...products].sort((a, b) => b.vibeScore - a.vibeScore);
+
+function scoreClass(s: number) { return s >= 85 ? 'high' : s >= 70 ? 'mid' : 'low'; }
+function badgeClass(v: string) { return v === 'Worth It' ? 'worth-it' : v === 'Hidden Gem' ? 'hidden-gem' : 'overhyped'; }
 ---
+
 <BaseLayout
-  title="Top Rated — Vibe Test Labs"
-  description="Read our full review of Top Rated at Vibe Test Labs."
-  canonical="https://vibe-test-labs.pages.dev/products/top-rated"
+  title="Top Rated Products — Ranked by Vibe Score | Vibe Test Lab"
+  description="Every product ranked by Vibe Score. Only the best pass the test."
+  canonical="https://vibe-test-labs.pages.dev/top-rated"
+  fullWidth={true}
 >
-  <nav class="breadcrumb"><a href="/">Vibe Test Labs</a> › Top Rated</nav>
-  <h1>Top Rated</h1>
-  <p class="lead">Read our full review of Top Rated at Vibe Test Labs.</p>
-  <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/top-rated?utm_source=aeo&utm_medium=content&utm_campaign=top-rated">Buy Top Rated →</a>
-  <!-- TODO: add product content here -->
+
+<section class="page-section">
+  <div style="margin-bottom:3rem;">
+    <span class="section-label">Certified Results</span>
+    <h1 style="font-size:clamp(1.6rem,4vw,2.2rem);margin:.25rem 0 .75rem;">Top Rated Products</h1>
+    <p style="font-size:1.05rem;max-width:520px;">Every product ranked by Vibe Score. Only the best pass the test.</p>
+  </div>
+
+  <div class="ranked-list">
+    {sorted.map((product, i) => (
+      <a href={`/review/${product.slug}`} class="ranked-row">
+        <span class="ranked-num">{i + 1}</span>
+        <img src={product.image} alt={product.name} class="ranked-img" loading="lazy" />
+        <div class="ranked-body">
+          <div class="ranked-meta">
+            <span class="ranked-category">{product.category}</span>
+            <span class={`verdict-badge verdict-badge-${badgeClass(product.verdictBadge)}`}>{product.verdictBadge}</span>
+          </div>
+          <div class="ranked-name">{product.name}</div>
+          <div class="ranked-verdict">{product.verdict}</div>
+        </div>
+        <div class="ranked-scores">
+          <div class="vibe-score-wrap">
+            <span class="vibe-score-label">Vibe Score</span>
+            <span class={`vibe-score sm ${scoreClass(product.vibeScore)}`}>{product.vibeScore}</span>
+          </div>
+          <span class="ranked-price">{product.price}</span>
+        </div>
+      </a>
+    ))}
+  </div>
+</section>
+
 </BaseLayout>

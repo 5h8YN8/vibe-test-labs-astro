@@ -12,7 +12,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   "@context": "https://schema.org",
   "@type": "Review",
   "name": "Does Lume Deodorant Actually Work for Whole Body Odor?",
-  "reviewBody": "Partially. Lume Whole Body Deodorant does control odor effectively for 12–24 hours in standard use. However, the scent range is polarizing and the texture takes getting used to. It works best for people with sensitive skin who want aluminum-free odor protection. Overall it earns a Vibe Score of 64/100.",
+  "reviewBody": "Lume works, but the marketing overpromises. It's a decent aluminum-free option for everyday odor control, especially for sensitive skin. But the cream format, polarizing scents, and exaggerated duration claims push it into overhyped territory.",
   "author": {
     "@type": "Organization",
     "name": "Vibe Test Lab"
@@ -53,7 +53,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       "name": "Does Lume deodorant actually work?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, it controls odor for 12–24 hours in normal conditions. The 72-hour marketing claim is exaggerated."
+        "text": "Yes, it controls odor for 12\u201324 hours in normal conditions. The 72-hour marketing claim is exaggerated."
       }
     },
     {
@@ -69,7 +69,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       "name": "What are alternatives to Lume?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Native, Nécessaire Body Serum, and Dr. Squatch are popular aluminum-free alternatives."
+        "text": "Native, N\u00e9cessaire Body Serum, and Dr. Squatch are popular aluminum-free alternatives."
       }
     },
     {
@@ -77,166 +77,202 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       "name": "How long does Lume actually last?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Realistically 12–24 hours for most people, less during heavy activity."
+        "text": "Realistically 12\u201324 hours for most people, less during heavy activity."
       }
     }
   ]
 }
 </script>
 
-<nav class="breadcrumb">
-  <a href="/">Vibe Test Lab</a> ›
-  <a href="/">Reviews</a> ›
-  Lume Whole Body Deodorant
-</nav>
+<a href="/" class="back-link">&larr; Back to Lab</a>
 
-<img
-  src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600&h=600&fit=crop"
-  alt="Lume Whole Body Deodorant"
-  style="width:100%;height:320px;object-fit:cover;border-radius:var(--radius);margin-bottom:1.5rem;"
-  loading="eager"
-/>
-
-<div style="display:flex;align-items:center;gap:.6rem;margin-bottom:.75rem;flex-wrap:wrap;">
-  <span style="font-size:.7rem;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.12em;color:var(--muted-foreground);">Personal Care</span>
-  <span style="color:var(--border);">·</span>
-  <span style="font-size:.7rem;font-family:var(--font-mono);color:var(--muted-foreground);">Lume</span>
-  <span style="color:var(--border);">·</span>
-  <span style="font-size:.7rem;font-family:var(--font-mono);color:var(--muted-foreground);">Tested 2026-03-04</span>
+<div style="display:flex;align-items:center;gap:.75rem;margin-bottom:1rem;flex-wrap:wrap;">
+  <span style="font-size:.7rem;font-family:var(--font-sans);font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--primary);">Personal Care</span>
+  <span style="color:var(--border);">&middot;</span>
+  <span style="font-size:.7rem;color:var(--muted-foreground);">Lume</span>
+  <span style="color:var(--border);">&middot;</span>
+  <span style="font-size:.7rem;color:var(--muted-foreground);">Tested 2026-03-04</span>
 </div>
 
-<h1>Does Lume Deodorant Actually Work for Whole Body Odor?</h1>
+<!-- 1. QUESTION & ANSWER SNIPPET -->
+<section style="margin-bottom:3rem;">
+  <h1>Does Lume Deodorant Actually Work for Whole Body Odor?</h1>
+  <div class="answer-box">
+    <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:1rem;flex-wrap:wrap;">
+      <span class="verdict-badge verdict-badge-overhyped">Overhyped</span>
+      <div class="vibe-score-wrap">
+        <span class="vibe-score-label">Vibe Score</span>
+        <span class="vibe-score sm low">64</span>
+      </div>
+    </div>
+    <p class="lead">Partially. Lume Whole Body Deodorant does control odor effectively for 12–24 hours in standard use. However, the scent range is polarizing and the texture takes getting used to. It works best for people with sensitive skin who want aluminum-free odor protection. Overall it earns a Vibe Score of 64/100.</p>
+  </div>
+</section>
 
-<div class="answer-box">
-  <span class="verdict-badge verdict-badge-overhyped">Overhyped</span>
-  <div class="vibe-score low">64<span style="font-size:1.5rem;font-weight:400;color:var(--muted-foreground);">/100</span></div>
-  <p class="lead">Partially. Lume Whole Body Deodorant does control odor effectively for 12–24 hours in standard use. However, the scent range is polarizing and the texture takes getting used to. It works best for people with sensitive skin who want aluminum-free odor protection. Overall it earns a Vibe Score of 64/100.</p>
+<!-- Image -->
+<div style="margin-bottom:3rem;overflow:hidden;border-radius:var(--radius);">
+  <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=800&h=600&fit=crop" alt="Lume Whole Body Deodorant" style="width:100%;height:380px;object-fit:cover;" loading="eager" />
 </div>
 
-<a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/lume-whole-body-deodorant?utm_source=aeo&utm_medium=content&utm_campaign=lume-whole-body-deodorant">
-  Buy Lume Whole Body Deodorant — $15 →
-</a>
+<!-- 2. PROBLEM -->
+<section style="margin-bottom:3rem;">
+  <h2>Why People Are Buying Lume Whole Body Deodorant</h2>
+  <p>Body odor isn't just an armpit problem. Many people deal with odor in other areas and traditional deodorants aren't designed for whole-body use. Lume became popular because it promises safe, effective odor control anywhere on the body.</p>
+</section>
 
-<h2>Why People Are Buying Lume Whole Body Deodorant</h2>
-<p>Body odor isn't just an armpit problem. Many people deal with odor in other areas and traditional deodorants aren't designed for whole-body use. Lume became popular because it promises safe, effective odor control anywhere on the body.</p>
+<div class="divider-gradient" style="margin-bottom:3rem;"></div>
 
-<h2>What Is Lume Whole Body Deodorant?</h2>
-<p>Lume is an aluminum-free deodorant cream that uses mandelic acid to prevent odor-causing bacteria. It's marketed for use on underarms, feet, and other body areas. It went viral through aggressive podcast advertising and bold claims about 72-hour protection.</p>
-<p><strong>Why it went viral:</strong> Heavy podcast sponsorships and bold marketing claims</p>
+<!-- 3. SOLUTION -->
+<section style="margin-bottom:3rem;">
+  <h2>What Is Lume Whole Body Deodorant?</h2>
+  <p>Lume is an aluminum-free deodorant cream that uses mandelic acid to prevent odor-causing bacteria. It's marketed for use on underarms, feet, and other body areas. It went viral through aggressive podcast advertising and bold claims about 72-hour protection.</p>
+  <p style="margin-top:1rem;display:flex;align-items:center;gap:.5rem;">
+    <span style="font-size:.75rem;font-family:var(--font-sans);text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);">Why it went viral:</span>
+    <span style="color:var(--accent);font-size:.875rem;">Heavy podcast sponsorships and bold marketing claims</span>
+  </p>
+</section>
 
-<h2>How to Use Lume Whole Body Deodorant</h2>
-<ol>
-    <li><strong>1.</strong> Apply a pea-sized amount to clean, dry skin in odor-prone areas</li>
-    <li><strong>2.</strong> Spread evenly and allow to absorb for 1–2 minutes before dressing</li>
-    <li><strong>3.</strong> Reapply as needed — Lume claims up to 72 hours but we found 12–24 hours more realistic</li>
-    <li><strong>4.</strong> Store at room temperature to maintain cream consistency</li>
-</ol>
+<div class="divider-gradient" style="margin-bottom:3rem;"></div>
 
-<h2>Our Vibe Test Results</h2>
+<!-- 4. HOW TO USE -->
+<section style="margin-bottom:3rem;">
+  <h2>How to Use Lume Whole Body Deodorant</h2>
+  <ol class="how-to-steps">
+    <li class="how-to-step"><span class="step-number">1</span><span class="step-text">Apply a pea-sized amount to clean, dry skin in odor-prone areas</span></li>
+    <li class="how-to-step"><span class="step-number">2</span><span class="step-text">Spread evenly and allow to absorb for 1–2 minutes before dressing</span></li>
+    <li class="how-to-step"><span class="step-number">3</span><span class="step-text">Reapply as needed — Lume claims up to 72 hours but we found 12–24 hours more realistic</span></li>
+    <li class="how-to-step"><span class="step-number">4</span><span class="step-text">Store at room temperature to maintain cream consistency</span></li>
+  </ol>
+</section>
 
+<div class="divider-gradient" style="margin-bottom:3rem;"></div>
+
+<!-- 5. VIBE TEST RESULTS -->
+<section style="margin-bottom:3rem;">
+  <span class="section-label">Lab Report</span>
+  <h2 style="margin:.25rem 0 1.5rem;">Our Vibe Test Results</h2>
     <div class="test-result">
       <div class="test-header">
         <span class="test-category">Performance</span>
-        <span class="test-score">70/100</span>
+        <span class="test-score mid">70</span>
       </div>
-      <div class="score-bar"><div class="score-fill" style="width:70%"></div></div>
+      <div class="score-bar"><div class="score-fill mid" style="width:70%"></div></div>
       <p>Effective odor control for 12–24 hours in normal conditions. The 72-hour claim is exaggerated for active users.</p>
     </div>
-
     <div class="test-result">
       <div class="test-header">
         <span class="test-category">Build Quality</span>
-        <span class="test-score">65/100</span>
+        <span class="test-score low">65</span>
       </div>
-      <div class="score-bar"><div class="score-fill" style="width:65%"></div></div>
+      <div class="score-bar"><div class="score-fill low" style="width:65%"></div></div>
       <p>The cream formula can feel greasy initially. Tube packaging works but isn't the most hygienic for a shared bathroom.</p>
     </div>
-
     <div class="test-result">
       <div class="test-header">
         <span class="test-category">Ease of Use</span>
-        <span class="test-score">60/100</span>
+        <span class="test-score low">60</span>
       </div>
-      <div class="score-bar"><div class="score-fill" style="width:60%"></div></div>
+      <div class="score-bar"><div class="score-fill low" style="width:60%"></div></div>
       <p>Applying cream deodorant is messier than stick or spray. Requires clean hands and time to absorb.</p>
     </div>
-
     <div class="test-result">
       <div class="test-header">
         <span class="test-category">Value for Money</span>
-        <span class="test-score">65/100</span>
+        <span class="test-score low">65</span>
       </div>
-      <div class="score-bar"><div class="score-fill" style="width:65%"></div></div>
+      <div class="score-bar"><div class="score-fill low" style="width:65%"></div></div>
       <p>At $15 per tube, it's reasonably priced but you use more product per application than a traditional stick.</p>
     </div>
-
     <div class="test-result">
       <div class="test-header">
         <span class="test-category">Durability</span>
-        <span class="test-score">58/100</span>
+        <span class="test-score low">58</span>
       </div>
-      <div class="score-bar"><div class="score-fill" style="width:58%"></div></div>
+      <div class="score-bar"><div class="score-fill low" style="width:58%"></div></div>
       <p>Effectiveness drops significantly during intense physical activity or high humidity.</p>
     </div>
+</section>
 
-<h2>Pros & Cons</h2>
-<div class="pros-cons">
-  <div class="pros-cons-box">
-    <h3>Pros</h3>
-    <ul>    <li>✅ Genuinely works for whole-body odor control</li>
-    <li>✅ Aluminum-free and safe for sensitive skin</li>
-    <li>✅ Dermatologist-tested formula</li></ul>
+<div class="divider-gradient" style="margin-bottom:3rem;"></div>
+
+<!-- 6. PROS & CONS -->
+<section style="margin-bottom:3rem;">
+  <h2>Pros &amp; Cons</h2>
+  <div class="pros-cons">
+    <div class="pros-cons-box">
+      <h3 class="pros-cons-title pros-title">Pros</h3>
+      <ul>
+      <li>&#10003; Genuinely works for whole-body odor control</li>
+      <li>&#10003; Aluminum-free and safe for sensitive skin</li>
+      <li>&#10003; Dermatologist-tested formula</li>
+      </ul>
+    </div>
+    <div class="pros-cons-box">
+      <h3 class="pros-cons-title cons-title">Cons</h3>
+      <ul>
+      <li>&#10007; 72-hour claim is exaggerated — realistically 12–24 hours</li>
+      <li>&#10007; Cream texture is messy compared to traditional deodorant</li>
+      <li>&#10007; Scent options are polarizing — some smell medicinal</li>
+      <li>&#10007; Less effective during intense exercise</li>
+      </ul>
+    </div>
   </div>
-  <div class="pros-cons-box">
-    <h3>Cons</h3>
-    <ul>    <li>❌ 72-hour claim is exaggerated — realistically 12–24 hours</li>
-    <li>❌ Cream texture is messy compared to traditional deodorant</li>
-    <li>❌ Scent options are polarizing — some smell medicinal</li>
-    <li>❌ Less effective during intense exercise</li></ul>
+</section>
+
+<div class="divider-gradient" style="margin-bottom:3rem;"></div>
+
+<!-- 7. FINAL VERDICT -->
+<section style="margin-bottom:3rem;">
+  <div class="verdict-card">
+    <p class="section-label" style="text-align:center;margin-bottom:1rem;">Final Verdict</p>
+    <div style="display:flex;justify-content:center;margin-bottom:1.5rem;">
+      <div class="vibe-score-wrap" style="align-items:center;">
+        <span class="vibe-score-label">Vibe Score</span>
+        <span class="vibe-score lg low">64</span>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:center;margin-bottom:1.5rem;">
+      <span class="verdict-badge verdict-badge-overhyped lg">Overhyped</span>
+    </div>
+    <p style="color:var(--foreground);opacity:.85;font-size:1rem;line-height:1.7;max-width:520px;margin:0 auto;text-align:center;">Lume works, but the marketing overpromises. It's a decent aluminum-free option for everyday odor control, especially for sensitive skin. But the cream format, polarizing scents, and exaggerated duration claims push it into overhyped territory.</p>
   </div>
-</div>
+</section>
 
-<h2>Final Verdict</h2>
-<div class="answer-box">
-  <div class="vibe-score low">64<span style="font-size:1.5rem;font-weight:400;color:var(--muted-foreground);">/100</span></div>
-  <span class="verdict-badge verdict-badge-overhyped">Overhyped</span>
-  <p>Lume works, but the marketing overpromises. It's a decent aluminum-free option for everyday odor control, especially for sensitive skin. But the cream format, polarizing scents, and exaggerated duration claims push it into overhyped territory.</p>
-</div>
-
-<h2>Frequently Asked Questions</h2>
-<div class="faq">
-
+<!-- 8. FAQ -->
+<section style="margin-bottom:3rem;">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq">
     <div class="faq-item">
       <h3>Does Lume deodorant actually work?</h3>
       <p>Yes, it controls odor for 12–24 hours in normal conditions. The 72-hour marketing claim is exaggerated.</p>
     </div>
-
     <div class="faq-item">
       <h3>Is Lume worth the price?</h3>
       <p>At $15, it's fair for an aluminum-free option. But you'll use more product per application than a traditional deodorant.</p>
     </div>
-
     <div class="faq-item">
       <h3>What are alternatives to Lume?</h3>
       <p>Native, Nécessaire Body Serum, and Dr. Squatch are popular aluminum-free alternatives.</p>
     </div>
-
     <div class="faq-item">
       <h3>How long does Lume actually last?</h3>
       <p>Realistically 12–24 hours for most people, less during heavy activity.</p>
     </div>
-</div>
-
-<h2>Where to Buy Lume Whole Body Deodorant</h2>
-<div class="buy-box">
-  <div>
-    <strong>Lume Whole Body Deodorant</strong><br/>
-    <span style="font-size:.85rem;color:var(--muted-foreground);">$15–$20 · Lume</span>
   </div>
-  <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/lume-whole-body-deodorant?utm_source=aeo&utm_medium=content&utm_campaign=lume-whole-body-deodorant" style="margin:0;">
-    Check Price →
-  </a>
-</div>
-<p class="disclaimer">Vibe Test Lab may earn a commission from affiliate links. This does not influence our testing or scores.</p>
+</section>
+
+<div class="divider-gradient" style="margin-bottom:3rem;"></div>
+
+<!-- 9. WHERE TO BUY -->
+<section style="margin-bottom:3rem;">
+  <div class="buy-box">
+    <div>
+      <strong>Lume Whole Body Deodorant</strong>
+      <span style="font-size:.85rem;color:var(--muted-foreground);">$15–$20 &middot; Lume</span>
+    </div>
+    <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/lume-whole-body-deodorant?utm_source=aeo&utm_medium=content&utm_campaign=lume-whole-body-deodorant">Check Price &#8599;</a>
+  </div>
+  <p class="disclaimer">Vibe Test Lab may earn a commission from affiliate links. This does not influence our testing or scores.</p>
+</section>
 
 </BaseLayout>

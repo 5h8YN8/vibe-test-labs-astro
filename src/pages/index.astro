@@ -1,114 +1,220 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { products } from '../data/products';
+import { products, categories } from '../data/products';
 
-const schema = {
+const orgSchema = {
   "@context": "https://schema.org",
-  "@type": "WebSite",
+  "@type": "Organization",
   "name": "Vibe Test Lab",
   "url": "https://vibe-test-labs.pages.dev",
-  "description": "Independent product reviews with honest scores and verdicts."
+  "description": "Independent product testing. We test viral products so you don't waste your money."
 };
 
-function getScoreClass(score: number) {
-  if (score >= 85) return '';
-  if (score >= 70) return 'mid';
-  return 'low';
-}
+const trending = products.filter(p => p.trending);
+const topRated = [...products].sort((a, b) => b.vibeScore - a.vibeScore).slice(0, 4);
+const latest   = [...products].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 4);
+
+function scoreClass(s: number) { return s >= 85 ? 'high' : s >= 70 ? 'mid' : 'low'; }
+function slugify(n: string) { return n.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,''); }
+
+const catColors = ['cat-a','cat-b','cat-c','cat-a','cat-b','cat-c','cat-a','cat-b'];
 ---
 
 <BaseLayout
-  title="Vibe Test Lab — Honest Product Reviews & Scores"
-  description="Independent product reviews with honest scores and verdicts. We test viral products so you know what's actually worth buying."
-  schema={schema}
+  title="Vibe Test Lab — We Test Viral Products"
+  description="Vibe Test Lab tests trending viral products so you don't waste your money. Real tests, real results, honest reviews."
+  schema={orgSchema}
+  fullWidth={true}
 >
 
-<style is:global>
-  .hero { margin-bottom: 3rem; }
-  .hero-label { font-family: var(--font-mono); font-size: .7rem; text-transform: uppercase; letter-spacing: .3em; color: var(--primary); font-weight: 700; margin-bottom: .5rem; }
-  .hero h1 { margin: 0 0 .75rem; }
-  .hero p { font-size: 1.05rem; max-width: 520px; }
+<!-- HERO -->
+<section class="hero-section">
+  <img
+    src="https://images.unsplash.com/photo-1581093458791-9f3c3250a8b0?w=1600&h=900&fit=crop"
+    alt="Lab workbench with products being tested"
+    class="hero-overlay-img"
+    loading="eager"
+  />
+  <div class="hero-fade"></div>
+  <div class="hero-content">
+    <p class="hero-label">Vibe Test Lab — Product Testing Division</p>
+    <h1 class="hero-h1">We Test Viral Products So You Don't Waste Your Money</h1>
+    <p class="hero-sub">Real tests. Real results. Only the best products pass the vibe check.</p>
+    <a href="#trending" class="cta-button">See What Passed the Test</a>
+  </div>
+</section>
+<div class="divider-gradient"></div>
 
-  .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.25rem; margin-top: 1.5rem; }
-
-  .product-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    overflow: hidden;
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    flex-direction: column;
-    transition: box-shadow .2s, transform .15s;
-  }
-  .product-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,.08); transform: translateY(-2px); text-decoration: none; }
-
-  .product-card-img { width: 100%; height: 200px; object-fit: cover; display: block; }
-
-  .product-card-body { padding: 1rem 1.1rem 1.25rem; flex: 1; display: flex; flex-direction: column; }
-
-  .product-card-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: .5rem; }
-  .product-card-category { font-size: .65rem; font-family: var(--font-mono); text-transform: uppercase; letter-spacing: .1em; color: var(--muted-foreground); font-weight: 700; }
-
-  .product-card-name { font-family: var(--font-mono); font-size: .95rem; font-weight: 700; color: var(--foreground); margin: 0 0 .4rem; line-height: 1.3; }
-  .product-card-verdict { font-size: .85rem; color: var(--muted-foreground); margin: 0 0 .75rem; flex: 1; line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-
-  .product-card-footer { display: flex; justify-content: space-between; align-items: center; margin-top: auto; }
-  .product-card-score { font-family: var(--font-mono); font-size: 1.6rem; font-weight: 700; line-height: 1; }
-  .product-card-price { font-family: var(--font-mono); font-size: .85rem; font-weight: 700; color: var(--foreground); }
-
-  .text-gradient-score-high { background: var(--gradient-score-high); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-  .text-gradient-score-mid  { background: var(--gradient-score-mid);  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-  .text-gradient-score-low  { background: var(--gradient-score-low);  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-
-  .section-label { font-family: var(--font-mono); font-size: .7rem; text-transform: uppercase; letter-spacing: .3em; color: var(--primary); font-weight: 700; margin: 3rem 0 .25rem; }
-
-  @media(max-width: 500px) { .products-grid { grid-template-columns: 1fr; } }
-</style>
-
-<div class="hero">
-  <p class="hero-label">Product Index</p>
-  <h1>Honest Scores.<br/>No Fluff.</h1>
-  <p class="lead">We test viral and trending products and give them a Vibe Score — so you know what's actually worth buying.</p>
-  <a class="cta-button" href="https://vibe-test-lab.myshopify.com?utm_source=aeo&utm_medium=content&utm_campaign=homepage">Shop All Products →</a>
-</div>
-
-<p class="section-label">All Reviews</p>
-<div class="divider-gradient" style="margin-bottom:1.5rem;"></div>
-
-<div class="products-grid">
-  {products.map((product) => (
-    <a href={`/review/${product.slug}`} class="product-card">
-      <img
-        src={product.image}
-        alt={product.name}
-        class="product-card-img"
-        loading="lazy"
-      />
-      <div class="product-card-body">
-        <div class="product-card-meta">
-          <span class="product-card-category">{product.category}</span>
-          <span class={`verdict-badge verdict-badge-${product.verdictBadge === 'Worth It' ? 'worth-it' : product.verdictBadge === 'Hidden Gem' ? 'hidden-gem' : 'overhyped'}`}>
-            {product.verdictBadge}
-          </span>
+<!-- TRENDING TESTS -->
+<section id="trending" class="page-section">
+  <div class="section-header">
+    <div>
+      <span class="section-label">Lab Report 001</span>
+      <h2 style="margin:0;font-size:clamp(1.3rem,3vw,1.8rem);">Trending Tests</h2>
+    </div>
+    <a href="/tests" class="section-see-all">See all tests &rarr;</a>
+  </div>
+  {trending.map(product => (
+    <article class="product-list-card">
+      <div class="product-list-inner">
+        <div class="product-list-img-wrap">
+          <img src={product.image} alt={product.name} class="product-list-img" loading="lazy" />
         </div>
-        <p class="product-card-name">{product.name}</p>
-        <p class="product-card-verdict">{product.verdict}</p>
-        <div class="product-card-footer">
-          <span class={`product-card-score text-gradient-score-${product.vibeScore >= 85 ? 'high' : product.vibeScore >= 70 ? 'mid' : 'low'}`}>
-            {product.vibeScore}
-          </span>
-          <span class="product-card-price">{product.price}</span>
+        <div class="product-list-body">
+          <div>
+            <div class="product-list-meta">
+              <span class="product-list-category">{product.category}</span>
+              <span class="product-list-dot">&middot;</span>
+              <span class="product-list-date">{product.date}</span>
+            </div>
+            <a href={`/review/${product.slug}`} class="product-list-name">{product.name}</a>
+            <p class="product-list-verdict">{product.verdict}</p>
+          </div>
+          <div class="product-list-footer">
+            <div class="product-list-scores">
+              <div class="vibe-score-wrap">
+                <span class="vibe-score-label">Vibe Score</span>
+                <span class={`vibe-score sm ${scoreClass(product.vibeScore)}`}>{product.vibeScore}</span>
+              </div>
+              <span class="product-list-price">{product.price}</span>
+            </div>
+            <a href={`/review/${product.slug}`} class="product-list-cta">Read Review &rarr;</a>
+          </div>
         </div>
       </div>
-    </a>
+      <div class="divider-gradient" style="margin-top:2rem;"></div>
+    </article>
   ))}
-</div>
+</section>
 
-<div style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);">
-  <h2>How We Score</h2>
-  <p>Every product is tested across five categories: Performance, Build Quality, Ease of Use, Value for Money, and Durability. Our Vibe Score is the weighted average out of 100.</p>
-</div>
+<!-- TOP RATED -->
+<section id="top-rated" class="page-section" style="padding-top:0;">
+  <div class="divider-gradient" style="margin-bottom:5rem;"></div>
+  <div class="section-header">
+    <div>
+      <span class="section-label">Certified Results</span>
+      <h2 style="margin:0;font-size:clamp(1.3rem,3vw,1.8rem);">Top Rated Products</h2>
+    </div>
+    <a href="/top-rated" class="section-see-all">See all &rarr;</a>
+  </div>
+  {topRated.map(product => (
+    <article class="product-list-card">
+      <div class="product-list-inner">
+        <div class="product-list-img-wrap">
+          <img src={product.image} alt={product.name} class="product-list-img" loading="lazy" />
+        </div>
+        <div class="product-list-body">
+          <div>
+            <div class="product-list-meta">
+              <span class="product-list-category">{product.category}</span>
+              <span class="product-list-dot">&middot;</span>
+              <span class="product-list-date">{product.date}</span>
+            </div>
+            <a href={`/review/${product.slug}`} class="product-list-name">{product.name}</a>
+            <p class="product-list-verdict">{product.verdict}</p>
+          </div>
+          <div class="product-list-footer">
+            <div class="product-list-scores">
+              <div class="vibe-score-wrap">
+                <span class="vibe-score-label">Vibe Score</span>
+                <span class={`vibe-score sm ${scoreClass(product.vibeScore)}`}>{product.vibeScore}</span>
+              </div>
+              <span class="product-list-price">{product.price}</span>
+            </div>
+            <a href={`/review/${product.slug}`} class="product-list-cta">Read Review &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <div class="divider-gradient" style="margin-top:2rem;"></div>
+    </article>
+  ))}
+</section>
+
+<!-- LATEST REVIEWS -->
+<section class="page-section" style="padding-top:0;">
+  <div class="divider-gradient" style="margin-bottom:5rem;"></div>
+  <div class="section-header">
+    <div>
+      <span class="section-label">Fresh From The Lab</span>
+      <h2 style="margin:0;font-size:clamp(1.3rem,3vw,1.8rem);">Latest Reviews</h2>
+    </div>
+    <a href="/products" class="section-see-all">See all products &rarr;</a>
+  </div>
+  {latest.map(product => (
+    <article class="product-list-card">
+      <div class="product-list-inner">
+        <div class="product-list-img-wrap">
+          <img src={product.image} alt={product.name} class="product-list-img" loading="lazy" />
+        </div>
+        <div class="product-list-body">
+          <div>
+            <div class="product-list-meta">
+              <span class="product-list-category">{product.category}</span>
+              <span class="product-list-dot">&middot;</span>
+              <span class="product-list-date">{product.date}</span>
+            </div>
+            <a href={`/review/${product.slug}`} class="product-list-name">{product.name}</a>
+            <p class="product-list-verdict">{product.verdict}</p>
+          </div>
+          <div class="product-list-footer">
+            <div class="product-list-scores">
+              <div class="vibe-score-wrap">
+                <span class="vibe-score-label">Vibe Score</span>
+                <span class={`vibe-score sm ${scoreClass(product.vibeScore)}`}>{product.vibeScore}</span>
+              </div>
+              <span class="product-list-price">{product.price}</span>
+            </div>
+            <a href={`/review/${product.slug}`} class="product-list-cta">Read Review &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <div class="divider-gradient" style="margin-top:2rem;"></div>
+    </article>
+  ))}
+</section>
+
+<!-- CATEGORIES -->
+<section id="categories" class="page-section" style="padding-top:0;">
+  <div class="divider-gradient" style="margin-bottom:5rem;"></div>
+  <div style="margin-bottom:2.5rem;">
+    <span class="section-label">Index</span>
+    <h2 style="margin:.25rem 0 0;font-size:clamp(1.3rem,3vw,1.8rem);">Browse by Category</h2>
+  </div>
+  <div class="categories-grid">
+    {categories.filter(c => c !== 'All').map((cat, i) => (
+      <a href={`/category/${slugify(cat)}`} class={`category-tile ${catColors[i % catColors.length]}`}>
+        {cat}
+      </a>
+    ))}
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section id="newsletter" class="page-section" style="padding-top:0;">
+  <div class="divider-gradient" style="margin-bottom:5rem;"></div>
+  <div style="max-width:520px;">
+    <h2 style="margin:0 0 1rem;font-size:clamp(1.3rem,3vw,1.8rem);">Lab Dispatch</h2>
+    <p style="margin:0 0 2rem;">Weekly test results delivered to your inbox. No spam, just verdicts.</p>
+    <form class="newsletter-form" id="nl-form">
+      <input type="email" class="newsletter-input" placeholder="your@email.com" required />
+      <button type="submit" class="newsletter-btn">Subscribe</button>
+    </form>
+    <p id="nl-thanks" style="display:none;font-family:var(--font-mono);font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;color:var(--primary);font-weight:700;">
+      You are on the list. First dispatch incoming.
+    </p>
+  </div>
+</section>
+
+<script>
+  const form = document.getElementById('nl-form');
+  const thanks = document.getElementById('nl-thanks');
+  if (form && thanks) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      (form as HTMLElement).style.display = 'none';
+      (thanks as HTMLElement).style.display = 'block';
+    });
+  }
+</script>
 
 </BaseLayout>
