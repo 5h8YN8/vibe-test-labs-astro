@@ -17,6 +17,8 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
   <title>{title}</title>
   <meta name="description" content={description} />
   <link rel="canonical" href={canonicalUrl} />
@@ -35,7 +37,7 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
         "@id": `${siteUrl}#organization`,
         "name": "Vibe Test Lab",
         "url": siteUrl,
-        "logo": { "@type": "ImageObject", "url": `${siteUrl}/favicon.svg` },
+        "logo": { "@type": "ImageObject", "url": `${siteUrl}/logo.png` },
         "description": "Independent product testing lab reviewing viral and trending consumer products. Honest scores, real-world tests.",
         "sameAs": []
       },
@@ -120,11 +122,10 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
     }
     @media(min-width:768px){ .site-nav-inner { padding: 0 4rem; } }
     .site-nav-logo {
-      font-family: var(--font-mono); font-weight: 700; font-size: .88rem;
-      color: var(--foreground); text-decoration: none;
-      letter-spacing: .2em; text-transform: uppercase;
+      display: flex; align-items: center; text-decoration: none;
     }
-    .site-nav-logo:hover { text-decoration: none; color: var(--foreground); }
+    .site-nav-logo:hover { text-decoration: none; }
+    .nav-logo-img { height: 32px; width: auto; display: block; }
     .site-nav-links { display: flex; gap: 2rem; align-items: center; }
     .site-nav-links a {
       font-family: var(--font-sans); font-size: .75rem; text-transform: uppercase;
@@ -408,7 +409,9 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
 <body>
   <nav class="site-nav">
     <div class="site-nav-inner">
-      <a href="/" class="site-nav-logo">Vibe Test Lab</a>
+      <a href="/" class="site-nav-logo" aria-label="Vibe Test Lab">
+        <img src="/logo.png" alt="Vibe Test Lab" class="nav-logo-img" />
+      </a>
       <div class="site-nav-links">
         <a href="/tests" class="nav-hide-mobile">Tests</a>
         <a href="/top-rated" class="nav-hide-mobile">Top Rated</a>
@@ -427,7 +430,7 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
     <div class="site-footer-inner">
       <div>
         <div class="footer-brand">🧪 Vibe Test Lab</div>
-        <p class="footer-tagline">Independent product testing. Affiliate supported.</p>
+        <p class="footer-tagline">Independent product testing. Real results, honest scores.</p>
       </div>
       <p class="footer-copy">© {new Date().getFullYear()} Vibe Test Lab. All rights reserved.</p>
     </div>
