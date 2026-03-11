@@ -3,153 +3,221 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 <BaseLayout
   title="Does Lume Deodorant Actually Work for Whole Body Odor? | Vibe Test Lab"
-  description="Partially. Lume Whole Body Deodorant does control odor effectively for 12–24 hours in standard use. However, the scent range is polarizing and the texture "
+  description="Partially. Lume Whole Body Deodorant does control odor effectively for 12–24 hours in standard use. However, the scent range is polarizing and the texture takes"
   canonical="https://vibe-test-labs.pages.dev/review/lume-whole-body-deodorant"
 >
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Review",
-  "name": "Does Lume Deodorant Actually Work for Whole Body Odor?",
-  "reviewBody": "Lume works, but the marketing overpromises. It's a decent aluminum-free option for everyday odor control, especially for sensitive skin. But the cream format, polarizing scents, and exaggerated duration claims push it into overhyped territory.",
-  "author": {
-    "@type": "Organization",
-    "name": "Vibe Test Lab",
-    "url": "https://vibe-test-labs.pages.dev"
-  },
-  "datePublished": "2026-03-04",
-  "url": "https://vibe-test-labs.pages.dev/review/lume-whole-body-deodorant",
-  "itemReviewed": {
-    "@type": "Product",
-    "name": "Lume Whole Body Deodorant",
-    "brand": {
-      "@type": "Brand",
-      "name": "Lume"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://vibe-test-labs.pages.dev#organization",
+      "name": "Vibe Test Lab",
+      "url": "https://vibe-test-labs.pages.dev",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://vibe-test-labs.pages.dev/favicon.svg"
+      }
     },
-    "image": "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600&h=600&fit=crop",
-    "offers": {
+    {
+      "@type": "Person",
+      "@id": "https://vibe-test-labs.pages.dev#author",
+      "name": "Vibe Test Lab Team",
+      "worksFor": {
+        "@id": "https://vibe-test-labs.pages.dev#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://vibe-test-labs.pages.dev/review/lume-whole-body-deodorant#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Vibe Test Lab",
+          "item": "https://vibe-test-labs.pages.dev"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Personal Care",
+          "item": "https://vibe-test-labs.pages.dev/category/personal-care"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Lume Whole Body Deodorant",
+          "item": "https://vibe-test-labs.pages.dev/review/lume-whole-body-deodorant"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://vibe-test-labs.pages.dev/review/lume-whole-body-deodorant#webpage",
+      "url": "https://vibe-test-labs.pages.dev/review/lume-whole-body-deodorant",
+      "name": "Does Lume Deodorant Actually Work for Whole Body Odor?",
+      "description": "Partially. Lume Whole Body Deodorant does control odor effectively for 12\u201324 hours in standard use. However, the scent range is polarizing and the texture takes getting used to. It works best for peop",
+      "publisher": {
+        "@id": "https://vibe-test-labs.pages.dev#organization"
+      },
+      "author": {
+        "@id": "https://vibe-test-labs.pages.dev#author"
+      },
+      "mentions": [
+        {
+          "@type": "WebPage",
+          "@id": "https://vibe-test-labs.pages.dev/review/loop-earplugs-quiet-2"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://vibe-test-labs.pages.dev/review/stanley-quencher-h2o"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://vibe-test-labs.pages.dev/review/dyson-airwrap-complete"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://vibe-test-labs.pages.dev/category/personal-care"
+        }
+      ],
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".answer-box",
+          ".verdict-card",
+          ".faq",
+          ".supporting-questions"
+        ]
+      }
+    },
+    {
+      "@type": "Review",
+      "@id": "https://vibe-test-labs.pages.dev/review/lume-whole-body-deodorant#review",
+      "mainEntityOfPage": {
+        "@id": "https://vibe-test-labs.pages.dev/review/lume-whole-body-deodorant#webpage"
+      },
+      "name": "Does Lume Deodorant Actually Work for Whole Body Odor?",
+      "reviewBody": "Lume works, but the marketing overpromises. It's a decent aluminum-free option for everyday odor control, especially for sensitive skin. But the cream format, polarizing scents, and exaggerated duration claims push it into overhyped territory.",
+      "author": {
+        "@id": "https://vibe-test-labs.pages.dev#author"
+      },
+      "publisher": {
+        "@id": "https://vibe-test-labs.pages.dev#organization"
+      },
+      "datePublished": "2026-03-04",
+      "dateModified": "2026-03-04",
+      "url": "https://vibe-test-labs.pages.dev/review/lume-whole-body-deodorant",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": 64,
+        "bestRating": 100,
+        "worstRating": 0
+      },
+      "itemReviewed": {
+        "@id": "https://vibe-test-labs.pages.dev/review/lume-whole-body-deodorant#product"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://vibe-test-labs.pages.dev/review/lume-whole-body-deodorant#product",
+      "name": "Lume Whole Body Deodorant",
+      "description": "Partially. Lume Whole Body Deodorant does control odor effectively for 12\u201324 hours in standard use. However, the scent range is polarizing and the texture takes getting used to. It works best for peop",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lume"
+      },
+      "image": "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600&h=600&fit=crop",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "64",
+        "bestRating": "100",
+        "worstRating": "0",
+        "ratingCount": "1"
+      }
+    },
+    {
       "@type": "Offer",
+      "@id": "https://vibe-test-labs.pages.dev/review/lume-whole-body-deodorant#offer",
+      "itemOffered": {
+        "@id": "https://vibe-test-labs.pages.dev/review/lume-whole-body-deodorant#product"
+      },
+      "url": "https://vibe-test-lab.myshopify.com/products/lume-whole-body-deodorant?utm_source=aeo&utm_medium=content&utm_campaign=lume-whole-body-deodorant",
       "price": "15",
       "priceCurrency": "USD",
-      "url": "https://vibe-test-lab.myshopify.com/products/lume-whole-body-deodorant?utm_source=aeo&utm_medium=content&utm_campaign=lume-whole-body-deodorant",
       "availability": "https://schema.org/InStock"
     },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "64",
-      "bestRating": "100",
-      "worstRating": "0",
-      "ratingCount": "1"
-    }
-  },
-  "reviewRating": {
-    "@type": "Rating",
-    "ratingValue": 64,
-    "bestRating": 100,
-    "worstRating": 0
-  }
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
     {
-      "@type": "Question",
-      "name": "Does Lume deodorant actually work?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, it controls odor for 12\u201324 hours in normal conditions. The 72-hour marketing claim is exaggerated."
-      }
+      "@type": "HowTo",
+      "@id": "https://vibe-test-labs.pages.dev/review/lume-whole-body-deodorant#howto",
+      "name": "How to Use Lume Whole Body Deodorant",
+      "description": "Step-by-step guide to using the Lume Whole Body Deodorant.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Apply a pea-sized amount to clean, dry skin in odor-prone areas",
+          "text": "Apply a pea-sized amount to clean, dry skin in odor-prone areas"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Spread evenly and allow to absorb for 1\u20132 minutes before dressing",
+          "text": "Spread evenly and allow to absorb for 1\u20132 minutes before dressing"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Reapply as needed \u2014 Lume claims up to 72 hours but we found 12\u201324 hours more realistic",
+          "text": "Reapply as needed \u2014 Lume claims up to 72 hours but we found 12\u201324 hours more realistic"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Store at room temperature to maintain cream consistency",
+          "text": "Store at room temperature to maintain cream consistency"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Is Lume worth the price?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "At $15, it's fair for an aluminum-free option. But you'll use more product per application than a traditional deodorant."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What are alternatives to Lume?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Native, N\u00e9cessaire Body Serum, and Dr. Squatch are popular aluminum-free alternatives."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long does Lume actually last?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Realistically 12\u201324 hours for most people, less during heavy activity."
-      }
-    }
-  ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  "name": "How to Use Lume Whole Body Deodorant",
-  "description": "Step-by-step guide to using the Lume Whole Body Deodorant.",
-  "step": [
-    {
-      "@type": "HowToStep",
-      "position": 1,
-      "name": "Apply a pea-sized amount to clean, dry skin in odor-prone ar",
-      "text": "Apply a pea-sized amount to clean, dry skin in odor-prone areas"
-    },
-    {
-      "@type": "HowToStep",
-      "position": 2,
-      "name": "Spread evenly and allow to absorb for 1\u20132 minutes before dre",
-      "text": "Spread evenly and allow to absorb for 1\u20132 minutes before dressing"
-    },
-    {
-      "@type": "HowToStep",
-      "position": 3,
-      "name": "Reapply as needed \u2014 Lume claims up to 72 hours but we found ",
-      "text": "Reapply as needed \u2014 Lume claims up to 72 hours but we found 12\u201324 hours more realistic"
-    },
-    {
-      "@type": "HowToStep",
-      "position": 4,
-      "name": "Store at room temperature to maintain cream consistency",
-      "text": "Store at room temperature to maintain cream consistency"
-    }
-  ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Vibe Test Lab",
-      "item": "https://vibe-test-labs.pages.dev"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Personal Care",
-      "item": "https://vibe-test-labs.pages.dev/category/personal care"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Lume Whole Body Deodorant",
-      "item": "https://vibe-test-labs.pages.dev/review/lume-whole-body-deodorant"
+      "@type": "FAQPage",
+      "@id": "https://vibe-test-labs.pages.dev/review/lume-whole-body-deodorant#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does Lume deodorant actually work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, it controls odor for 12\u201324 hours in normal conditions. The 72-hour marketing claim is exaggerated."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Lume worth the price?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At $15, it's fair for an aluminum-free option. But you'll use more product per application than a traditional deodorant."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are alternatives to Lume?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Native, N\u00e9cessaire Body Serum, and Dr. Squatch are popular aluminum-free alternatives."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does Lume actually last?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Realistically 12\u201324 hours for most people, less during heavy activity."
+          }
+        }
+      ]
     }
   ]
 }
@@ -164,7 +232,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <!-- Meta row -->
 <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:1rem;flex-wrap:wrap;">
-  <span style="font-size:.7rem;font-family:var(--font-sans);font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--primary);">Personal Care</span>
+  <a href="/category/personal-care" style="font-size:.7rem;font-family:var(--font-sans);font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--primary);text-decoration:none;">Personal Care</a>
   <span style="color:var(--border);">&middot;</span>
   <span style="font-size:.7rem;color:var(--muted-foreground);">Lume</span>
   <span style="color:var(--border);">&middot;</span>
@@ -188,7 +256,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <!-- ═══ BUY NOW (top) ════════════════════════════════════════ -->
 <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-bottom:2.5rem;">
-  <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/lume-whole-body-deodorant?utm_source=aeo&utm_medium=content&utm_campaign=lume-whole-body-deodorant">Buy Now — $15 &rarr;</a>
+  <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/lume-whole-body-deodorant?utm_source=aeo&utm_medium=content&utm_campaign=lume-whole-body-deodorant">Buy Now &mdash; $15 &rarr;</a>
   <span style="font-size:.75rem;color:var(--muted-foreground);">$15–$20 &middot; Lume</span>
 </div>
 
@@ -196,6 +264,11 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 <div class="gallery-wrap" style="margin-bottom:3rem;">
   <div class="gallery-main">
     <img id="gallery-hero" src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=800&h=600&fit=crop" alt="Lume Whole Body Deodorant" loading="eager" />
+  </div>
+  <div class="gallery-thumbs">
+      <button class="gallery-thumb active" onclick="galSwitch(this, 'https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=800&h=600&fit=crop')" aria-label="View image 1">
+        <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=800&h=600&fit=crop" alt="Lume Whole Body Deodorant view 1" loading="lazy" />
+      </button>
   </div>
 </div>
 
@@ -209,7 +282,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       </tr>
       <tr style="border-bottom:1px solid var(--border);">
         <td style="padding:.75rem 1.25rem;font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);">Category</td>
-        <td style="padding:.75rem 1.25rem;color:var(--foreground);font-weight:600;">Personal Care</td>
+        <td style="padding:.75rem 1.25rem;"><a href="/category/personal-care" style="color:var(--primary);text-decoration:none;font-weight:600;">Personal Care</a></td>
       </tr>
       <tr style="border-bottom:1px solid var(--border);">
         <td style="padding:.75rem 1.25rem;font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);">Price</td>
@@ -258,16 +331,15 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <div style="background:rgba(50,180,140,.08);border:1px solid rgba(50,180,140,.25);border-radius:var(--radius);padding:1.25rem;">
       <p style="font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:hsl(170,65%,35%);font-weight:700;margin:0 0 .75rem;">Buy it if you want</p>
       <ul style="list-style:none;padding:0;margin:0;">
-        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10003; Genuinely works for whole-body odor control</li><li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10003; Aluminum-free and safe for sensitive skin</li><li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10003; Dermatologist-tested formula</li>
-      </ul>
+        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10003; Genuinely works for whole-body odor control</li>        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10003; Aluminum-free and safe for sensitive skin</li>        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10003; Dermatologist-tested formula</li>      </ul>
     </div>
     <div style="background:rgba(255,130,80,.06);border:1px solid rgba(255,130,80,.2);border-radius:var(--radius);padding:1.25rem;">
       <p style="font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:hsl(20,60%,45%);font-weight:700;margin:0 0 .75rem;">Skip it if you</p>
       <ul style="list-style:none;padding:0;margin:0;">
-        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10007; 72-hour claim is exaggerated — realistically 12–24 hours</li><li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10007; Cream texture is messy compared to traditional deodorant</li><li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10007; Scent options are polarizing — some smell medicinal</li>
-      </ul>
+        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10007; 72-hour claim is exaggerated — realistically 12–24 hours</li>        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10007; Cream texture is messy compared to traditional deodorant</li>        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10007; Scent options are polarizing — some smell medicinal</li>      </ul>
     </div>
   </div>
+  <p style="margin-top:1rem;font-size:.875rem;color:var(--muted-foreground);">Not sure? See how it compares: <a href="/review/loop-earplugs-quiet-2" style="color:var(--primary);">Loop Earplugs Quiet 2</a> · <a href="/review/stanley-quencher-h2o" style="color:var(--primary);">Stanley Quencher H2.0</a> · <a href="/review/dyson-airwrap-complete" style="color:var(--primary);">Dyson Airwrap Complete</a></p>
 </section>
 
 <div class="divider-gradient" style="margin-bottom:3rem;"></div>
@@ -384,35 +456,73 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 </section>
 
 <!-- ═══ 12. FAQ ════════════════════════════════════════════════ -->
-<section style="margin-bottom:3rem;">
+<section style="margin-bottom:3rem;" class="supporting-questions">
   <h2>Frequently Asked Questions About Lume Whole Body Deodorant</h2>
   <div class="faq">
     <div class="faq-item">
       <h3>Does Lume deodorant actually work?</h3>
-      <p>Yes, it controls odor for 12–24 hours in normal conditions. The 72-hour marketing claim is exaggerated.</p>
+      <p class="supporting-questions">Yes, it controls odor for 12–24 hours in normal conditions. The 72-hour marketing claim is exaggerated.</p>
     </div>
     <div class="faq-item">
       <h3>Is Lume worth the price?</h3>
-      <p>At $15, it's fair for an aluminum-free option. But you'll use more product per application than a traditional deodorant.</p>
+      <p class="supporting-questions">At $15, it's fair for an aluminum-free option. But you'll use more product per application than a traditional deodorant.</p>
     </div>
     <div class="faq-item">
       <h3>What are alternatives to Lume?</h3>
-      <p>Native, Nécessaire Body Serum, and Dr. Squatch are popular aluminum-free alternatives.</p>
+      <p class="supporting-questions">Native, Nécessaire Body Serum, and Dr. Squatch are popular aluminum-free alternatives.</p>
     </div>
     <div class="faq-item">
       <h3>How long does Lume actually last?</h3>
-      <p>Realistically 12–24 hours for most people, less during heavy activity.</p>
+      <p class="supporting-questions">Realistically 12–24 hours for most people, less during heavy activity.</p>
     </div>
   </div>
 <div style="background:var(--muted);border-radius:var(--radius);padding:1.25rem 1.5rem;margin:1.5rem 0;">
   <p style="font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted-foreground);font-weight:700;margin:0 0 .4rem;">Looking for alternatives?</p>
-  <p style="margin:0;font-size:.9rem;">Native, Nécessaire Body Serum, and Dr. Squatch are popular aluminum-free alternatives.</p>
+  <p style="margin:0 0 .75rem;font-size:.9rem;">Native, Nécessaire Body Serum, and Dr. Squatch are popular aluminum-free alternatives.</p>
+  <div style="display:flex;flex-wrap:wrap;gap:.5rem;">    <a href="/review/loop-earplugs-quiet-2" style="font-size:.8rem;padding:.25rem .75rem;background:var(--card);border:1px solid var(--border);border-radius:999px;color:var(--foreground);text-decoration:none;">Loop Earplugs Quiet 2</a>
+    <a href="/review/stanley-quencher-h2o" style="font-size:.8rem;padding:.25rem .75rem;background:var(--card);border:1px solid var(--border);border-radius:999px;color:var(--foreground);text-decoration:none;">Stanley Quencher H2.0</a>
+    <a href="/review/dyson-airwrap-complete" style="font-size:.8rem;padding:.25rem .75rem;background:var(--card);border:1px solid var(--border);border-radius:999px;color:var(--foreground);text-decoration:none;">Dyson Airwrap Complete</a>
+  </div>
 </div>
 </section>
 
 <div class="divider-gradient" style="margin-bottom:3rem;"></div>
 
-<!-- ═══ 13. WHERE TO BUY (Buy Now) ════════════════════════════ -->
+<!-- ═══ 13. ALSO TESTED ═══════════════════════════════════════ -->
+<section style="margin-bottom:3rem;">
+  <h2>Also Tested by Vibe Test Lab</h2>
+  <p style="font-size:.875rem;color:var(--muted-foreground);margin-bottom:1.25rem;">See how Lume Whole Body Deodorant compares to other products we've put through our lab.</p>
+  <div class="related-products-grid">
+    <a class="related-product-card" href="/review/loop-earplugs-quiet-2">
+      <img src="https://images.unsplash.com/photo-1590658268037-6bf12f032f55?w=600&h=600&fit=crop" alt="Loop Earplugs Quiet 2" loading="lazy" />
+      <div class="related-product-info">
+        <span class="verdict-badge verdict-badge-worth-it" style="font-size:.6rem;padding:.2rem .5rem;">Worth It</span>
+        <strong>Loop Earplugs Quiet 2</strong>
+        <span class="text-gradient-score-high" style="font-family:var(--font-mono);font-size:.9rem;font-weight:700;">93/100</span>
+      </div>
+    </a>
+    <a class="related-product-card" href="/review/stanley-quencher-h2o">
+      <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=600&h=600&fit=crop" alt="Stanley Quencher H2.0" loading="lazy" />
+      <div class="related-product-info">
+        <span class="verdict-badge verdict-badge-worth-it" style="font-size:.6rem;padding:.2rem .5rem;">Worth It</span>
+        <strong>Stanley Quencher H2.0</strong>
+        <span class="text-gradient-score-high" style="font-family:var(--font-mono);font-size:.9rem;font-weight:700;">91/100</span>
+      </div>
+    </a>
+    <a class="related-product-card" href="/review/dyson-airwrap-complete">
+      <img src="https://images.unsplash.com/photo-1522338242992-e1a54571a9f7?w=600&h=600&fit=crop" alt="Dyson Airwrap Complete" loading="lazy" />
+      <div class="related-product-info">
+        <span class="verdict-badge verdict-badge-worth-it" style="font-size:.6rem;padding:.2rem .5rem;">Worth It</span>
+        <strong>Dyson Airwrap Complete</strong>
+        <span class="text-gradient-score-high" style="font-family:var(--font-mono);font-size:.9rem;font-weight:700;">88/100</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<div class="divider-gradient" style="margin-bottom:3rem;"></div>
+
+<!-- ═══ 14. WHERE TO BUY ═══════════════════════════════════════ -->
 <section style="margin-bottom:3rem;">
   <div class="buy-box">
     <div>
@@ -442,6 +552,14 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   .gallery-thumb img { width:100%;height:100%;object-fit:cover; }
   .gallery-thumb.active { border-color:var(--primary); }
   .gallery-thumb:hover { border-color:var(--primary); }
+
+  .related-products-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:1rem; }
+  .related-product-card { display:flex;flex-direction:column;gap:.5rem;padding:1rem;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;transition:border-color .15s; }
+  .related-product-card:hover { border-color:var(--primary); }
+  .related-product-card img { width:100%;height:120px;object-fit:cover;border-radius:calc(var(--radius) - 2px); }
+  .related-product-info { display:flex;flex-direction:column;gap:.3rem; }
+  .related-product-info strong { font-size:.85rem;color:var(--foreground);line-height:1.3; }
+  @media(max-width:640px) { .related-products-grid { grid-template-columns:1fr 1fr; } }
 </style>
 
 </BaseLayout>

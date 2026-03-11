@@ -3,153 +3,221 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 <BaseLayout
   title="Is the Ember Mug 2 Worth $149 for Keeping Coffee Hot? | Vibe Test Lab"
-  description="It depends. The Ember Mug² genuinely keeps coffee at your exact preferred temperature, which is a game-changer for slow sippers. However, the 80-minute bat"
+  description="It depends. The Ember Mug² genuinely keeps coffee at your exact preferred temperature, which is a game-changer for slow sippers. However, the 80-minute battery "
   canonical="https://vibe-test-labs.pages.dev/review/ember-mug-2"
 >
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Review",
-  "name": "Is the Ember Mug 2 Worth $149 for Keeping Coffee Hot?",
-  "reviewBody": "The Ember Mug\u00b2 is a clever product that solves a real (if minor) problem. If you work at a desk and leave your mug on the coaster all day, it's genuinely delightful. But the short battery life, hand-wash requirement, and premium price make it hard to recommend broadly. It's a luxury, not a necessity.",
-  "author": {
-    "@type": "Organization",
-    "name": "Vibe Test Lab",
-    "url": "https://vibe-test-labs.pages.dev"
-  },
-  "datePublished": "2026-03-06",
-  "url": "https://vibe-test-labs.pages.dev/review/ember-mug-2",
-  "itemReviewed": {
-    "@type": "Product",
-    "name": "Ember Mug\u00b2 14oz",
-    "brand": {
-      "@type": "Brand",
-      "name": "Ember"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://vibe-test-labs.pages.dev#organization",
+      "name": "Vibe Test Lab",
+      "url": "https://vibe-test-labs.pages.dev",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://vibe-test-labs.pages.dev/favicon.svg"
+      }
     },
-    "image": "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=600&h=600&fit=crop",
-    "offers": {
+    {
+      "@type": "Person",
+      "@id": "https://vibe-test-labs.pages.dev#author",
+      "name": "Vibe Test Lab Team",
+      "worksFor": {
+        "@id": "https://vibe-test-labs.pages.dev#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://vibe-test-labs.pages.dev/review/ember-mug-2#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Vibe Test Lab",
+          "item": "https://vibe-test-labs.pages.dev"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tech",
+          "item": "https://vibe-test-labs.pages.dev/category/tech"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Ember Mug\u00b2 14oz",
+          "item": "https://vibe-test-labs.pages.dev/review/ember-mug-2"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://vibe-test-labs.pages.dev/review/ember-mug-2#webpage",
+      "url": "https://vibe-test-labs.pages.dev/review/ember-mug-2",
+      "name": "Is the Ember Mug 2 Worth $149 for Keeping Coffee Hot?",
+      "description": "It depends. The Ember Mug\u00b2 genuinely keeps coffee at your exact preferred temperature, which is a game-changer for slow sippers. However, the 80-minute battery life off the charging coaster severely l",
+      "publisher": {
+        "@id": "https://vibe-test-labs.pages.dev#organization"
+      },
+      "author": {
+        "@id": "https://vibe-test-labs.pages.dev#author"
+      },
+      "mentions": [
+        {
+          "@type": "WebPage",
+          "@id": "https://vibe-test-labs.pages.dev/review/loop-earplugs-quiet-2"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://vibe-test-labs.pages.dev/review/stanley-quencher-h2o"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://vibe-test-labs.pages.dev/review/dyson-airwrap-complete"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://vibe-test-labs.pages.dev/category/tech"
+        }
+      ],
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".answer-box",
+          ".verdict-card",
+          ".faq",
+          ".supporting-questions"
+        ]
+      }
+    },
+    {
+      "@type": "Review",
+      "@id": "https://vibe-test-labs.pages.dev/review/ember-mug-2#review",
+      "mainEntityOfPage": {
+        "@id": "https://vibe-test-labs.pages.dev/review/ember-mug-2#webpage"
+      },
+      "name": "Is the Ember Mug 2 Worth $149 for Keeping Coffee Hot?",
+      "reviewBody": "The Ember Mug\u00b2 is a clever product that solves a real (if minor) problem. If you work at a desk and leave your mug on the coaster all day, it's genuinely delightful. But the short battery life, hand-wash requirement, and premium price make it hard to recommend broadly. It's a luxury, not a necessity.",
+      "author": {
+        "@id": "https://vibe-test-labs.pages.dev#author"
+      },
+      "publisher": {
+        "@id": "https://vibe-test-labs.pages.dev#organization"
+      },
+      "datePublished": "2026-03-06",
+      "dateModified": "2026-03-06",
+      "url": "https://vibe-test-labs.pages.dev/review/ember-mug-2",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": 72,
+        "bestRating": 100,
+        "worstRating": 0
+      },
+      "itemReviewed": {
+        "@id": "https://vibe-test-labs.pages.dev/review/ember-mug-2#product"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://vibe-test-labs.pages.dev/review/ember-mug-2#product",
+      "name": "Ember Mug\u00b2 14oz",
+      "description": "It depends. The Ember Mug\u00b2 genuinely keeps coffee at your exact preferred temperature, which is a game-changer for slow sippers. However, the 80-minute battery life off the charging coaster severely l",
+      "brand": {
+        "@type": "Brand",
+        "name": "Ember"
+      },
+      "image": "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=600&h=600&fit=crop",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "72",
+        "bestRating": "100",
+        "worstRating": "0",
+        "ratingCount": "1"
+      }
+    },
+    {
       "@type": "Offer",
+      "@id": "https://vibe-test-labs.pages.dev/review/ember-mug-2#offer",
+      "itemOffered": {
+        "@id": "https://vibe-test-labs.pages.dev/review/ember-mug-2#product"
+      },
+      "url": "https://vibe-test-lab.myshopify.com/products/ember-mug-2?utm_source=aeo&utm_medium=content&utm_campaign=ember-mug-2",
       "price": "149",
       "priceCurrency": "USD",
-      "url": "https://vibe-test-lab.myshopify.com/products/ember-mug-2?utm_source=aeo&utm_medium=content&utm_campaign=ember-mug-2",
       "availability": "https://schema.org/InStock"
     },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "72",
-      "bestRating": "100",
-      "worstRating": "0",
-      "ratingCount": "1"
-    }
-  },
-  "reviewRating": {
-    "@type": "Rating",
-    "ratingValue": 72,
-    "bestRating": 100,
-    "worstRating": 0
-  }
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
     {
-      "@type": "Question",
-      "name": "Does the Ember Mug actually keep coffee hot?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. When on the charging coaster, it maintains your set temperature indefinitely. Off the coaster, it lasts about 80 minutes."
-      }
+      "@type": "HowTo",
+      "@id": "https://vibe-test-labs.pages.dev/review/ember-mug-2#howto",
+      "name": "How to Use Ember Mug\u00b2 14oz",
+      "description": "Step-by-step guide to using the Ember Mug\u00b2 14oz.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Download the Ember app and pair your mug via Bluetooth",
+          "text": "Download the Ember app and pair your mug via Bluetooth"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Set your preferred drinking temperature between 120\u00b0F and 145\u00b0F",
+          "text": "Set your preferred drinking temperature between 120\u00b0F and 145\u00b0F"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Pour your coffee and the mug will heat it to your set temperature within minutes",
+          "text": "Pour your coffee and the mug will heat it to your set temperature within minutes"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Place on the included charging coaster when not carrying to maintain temperature and charge",
+          "text": "Place on the included charging coaster when not carrying to maintain temperature and charge"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Is the Ember Mug worth $149?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Only if you're a desk worker who always forgets their coffee. For most people, a good insulated mug is a better value."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What are alternatives to the Ember Mug?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The VSITOO S3 Pro is a budget alternative at around $40. A quality vacuum-insulated mug keeps drinks hot for hours passively."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long does the Ember Mug battery last?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "About 80 minutes off the charging coaster. On the coaster, it works indefinitely."
-      }
-    }
-  ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  "name": "How to Use Ember Mug\u00b2 14oz",
-  "description": "Step-by-step guide to using the Ember Mug\u00b2 14oz.",
-  "step": [
-    {
-      "@type": "HowToStep",
-      "position": 1,
-      "name": "Download the Ember app and pair your mug via Bluetooth",
-      "text": "Download the Ember app and pair your mug via Bluetooth"
-    },
-    {
-      "@type": "HowToStep",
-      "position": 2,
-      "name": "Set your preferred drinking temperature between 120\u00b0F and 14",
-      "text": "Set your preferred drinking temperature between 120\u00b0F and 145\u00b0F"
-    },
-    {
-      "@type": "HowToStep",
-      "position": 3,
-      "name": "Pour your coffee and the mug will heat it to your set temper",
-      "text": "Pour your coffee and the mug will heat it to your set temperature within minutes"
-    },
-    {
-      "@type": "HowToStep",
-      "position": 4,
-      "name": "Place on the included charging coaster when not carrying to ",
-      "text": "Place on the included charging coaster when not carrying to maintain temperature and charge"
-    }
-  ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Vibe Test Lab",
-      "item": "https://vibe-test-labs.pages.dev"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Tech",
-      "item": "https://vibe-test-labs.pages.dev/category/tech"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Ember Mug\u00b2 14oz",
-      "item": "https://vibe-test-labs.pages.dev/review/ember-mug-2"
+      "@type": "FAQPage",
+      "@id": "https://vibe-test-labs.pages.dev/review/ember-mug-2#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does the Ember Mug actually keep coffee hot?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. When on the charging coaster, it maintains your set temperature indefinitely. Off the coaster, it lasts about 80 minutes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the Ember Mug worth $149?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if you're a desk worker who always forgets their coffee. For most people, a good insulated mug is a better value."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are alternatives to the Ember Mug?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The VSITOO S3 Pro is a budget alternative at around $40. A quality vacuum-insulated mug keeps drinks hot for hours passively."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does the Ember Mug battery last?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "About 80 minutes off the charging coaster. On the coaster, it works indefinitely."
+          }
+        }
+      ]
     }
   ]
 }
@@ -164,7 +232,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <!-- Meta row -->
 <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:1rem;flex-wrap:wrap;">
-  <span style="font-size:.7rem;font-family:var(--font-sans);font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--primary);">Tech</span>
+  <a href="/category/tech" style="font-size:.7rem;font-family:var(--font-sans);font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--primary);text-decoration:none;">Tech</a>
   <span style="color:var(--border);">&middot;</span>
   <span style="font-size:.7rem;color:var(--muted-foreground);">Ember</span>
   <span style="color:var(--border);">&middot;</span>
@@ -188,7 +256,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <!-- ═══ BUY NOW (top) ════════════════════════════════════════ -->
 <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-bottom:2.5rem;">
-  <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/ember-mug-2?utm_source=aeo&utm_medium=content&utm_campaign=ember-mug-2">Buy Now — $149 &rarr;</a>
+  <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/ember-mug-2?utm_source=aeo&utm_medium=content&utm_campaign=ember-mug-2">Buy Now &mdash; $149 &rarr;</a>
   <span style="font-size:.75rem;color:var(--muted-foreground);">$129–$149 &middot; Ember</span>
 </div>
 
@@ -217,7 +285,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       </tr>
       <tr style="border-bottom:1px solid var(--border);">
         <td style="padding:.75rem 1.25rem;font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);">Category</td>
-        <td style="padding:.75rem 1.25rem;color:var(--foreground);font-weight:600;">Tech</td>
+        <td style="padding:.75rem 1.25rem;"><a href="/category/tech" style="color:var(--primary);text-decoration:none;font-weight:600;">Tech</a></td>
       </tr>
       <tr style="border-bottom:1px solid var(--border);">
         <td style="padding:.75rem 1.25rem;font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);">Price</td>
@@ -266,16 +334,15 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <div style="background:rgba(50,180,140,.08);border:1px solid rgba(50,180,140,.25);border-radius:var(--radius);padding:1.25rem;">
       <p style="font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:hsl(170,65%,35%);font-weight:700;margin:0 0 .75rem;">Buy it if you want</p>
       <ul style="list-style:none;padding:0;margin:0;">
-        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10003; Precise temperature control actually works as advertised</li><li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10003; Sleek, premium design that looks great on a desk</li><li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10003; Unlimited use when kept on the charging coaster</li>
-      </ul>
+        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10003; Precise temperature control actually works as advertised</li>        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10003; Sleek, premium design that looks great on a desk</li>        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10003; Unlimited use when kept on the charging coaster</li>      </ul>
     </div>
     <div style="background:rgba(255,130,80,.06);border:1px solid rgba(255,130,80,.2);border-radius:var(--radius);padding:1.25rem;">
       <p style="font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:hsl(20,60%,45%);font-weight:700;margin:0 0 .75rem;">Skip it if you</p>
       <ul style="list-style:none;padding:0;margin:0;">
-        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10007; 80-minute battery life off the coaster is very limiting</li><li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10007; Not dishwasher-safe — hand wash only</li><li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10007; Expensive for what is essentially a heated mug</li>
-      </ul>
+        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10007; 80-minute battery life off the coaster is very limiting</li>        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10007; Not dishwasher-safe — hand wash only</li>        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10007; Expensive for what is essentially a heated mug</li>      </ul>
     </div>
   </div>
+  <p style="margin-top:1rem;font-size:.875rem;color:var(--muted-foreground);">Not sure? See how it compares: <a href="/review/loop-earplugs-quiet-2" style="color:var(--primary);">Loop Earplugs Quiet 2</a> · <a href="/review/stanley-quencher-h2o" style="color:var(--primary);">Stanley Quencher H2.0</a> · <a href="/review/dyson-airwrap-complete" style="color:var(--primary);">Dyson Airwrap Complete</a></p>
 </section>
 
 <div class="divider-gradient" style="margin-bottom:3rem;"></div>
@@ -394,35 +461,73 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 </section>
 
 <!-- ═══ 12. FAQ ════════════════════════════════════════════════ -->
-<section style="margin-bottom:3rem;">
+<section style="margin-bottom:3rem;" class="supporting-questions">
   <h2>Frequently Asked Questions About Ember Mug² 14oz</h2>
   <div class="faq">
     <div class="faq-item">
       <h3>Does the Ember Mug actually keep coffee hot?</h3>
-      <p>Yes. When on the charging coaster, it maintains your set temperature indefinitely. Off the coaster, it lasts about 80 minutes.</p>
+      <p class="supporting-questions">Yes. When on the charging coaster, it maintains your set temperature indefinitely. Off the coaster, it lasts about 80 minutes.</p>
     </div>
     <div class="faq-item">
       <h3>Is the Ember Mug worth $149?</h3>
-      <p>Only if you're a desk worker who always forgets their coffee. For most people, a good insulated mug is a better value.</p>
+      <p class="supporting-questions">Only if you're a desk worker who always forgets their coffee. For most people, a good insulated mug is a better value.</p>
     </div>
     <div class="faq-item">
       <h3>What are alternatives to the Ember Mug?</h3>
-      <p>The VSITOO S3 Pro is a budget alternative at around $40. A quality vacuum-insulated mug keeps drinks hot for hours passively.</p>
+      <p class="supporting-questions">The VSITOO S3 Pro is a budget alternative at around $40. A quality vacuum-insulated mug keeps drinks hot for hours passively.</p>
     </div>
     <div class="faq-item">
       <h3>How long does the Ember Mug battery last?</h3>
-      <p>About 80 minutes off the charging coaster. On the coaster, it works indefinitely.</p>
+      <p class="supporting-questions">About 80 minutes off the charging coaster. On the coaster, it works indefinitely.</p>
     </div>
   </div>
 <div style="background:var(--muted);border-radius:var(--radius);padding:1.25rem 1.5rem;margin:1.5rem 0;">
   <p style="font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted-foreground);font-weight:700;margin:0 0 .4rem;">Looking for alternatives?</p>
-  <p style="margin:0;font-size:.9rem;">The VSITOO S3 Pro is a budget alternative at around $40. A quality vacuum-insulated mug keeps drinks hot for hours passively.</p>
+  <p style="margin:0 0 .75rem;font-size:.9rem;">The VSITOO S3 Pro is a budget alternative at around $40. A quality vacuum-insulated mug keeps drinks hot for hours passively.</p>
+  <div style="display:flex;flex-wrap:wrap;gap:.5rem;">    <a href="/review/loop-earplugs-quiet-2" style="font-size:.8rem;padding:.25rem .75rem;background:var(--card);border:1px solid var(--border);border-radius:999px;color:var(--foreground);text-decoration:none;">Loop Earplugs Quiet 2</a>
+    <a href="/review/stanley-quencher-h2o" style="font-size:.8rem;padding:.25rem .75rem;background:var(--card);border:1px solid var(--border);border-radius:999px;color:var(--foreground);text-decoration:none;">Stanley Quencher H2.0</a>
+    <a href="/review/dyson-airwrap-complete" style="font-size:.8rem;padding:.25rem .75rem;background:var(--card);border:1px solid var(--border);border-radius:999px;color:var(--foreground);text-decoration:none;">Dyson Airwrap Complete</a>
+  </div>
 </div>
 </section>
 
 <div class="divider-gradient" style="margin-bottom:3rem;"></div>
 
-<!-- ═══ 13. WHERE TO BUY (Buy Now) ════════════════════════════ -->
+<!-- ═══ 13. ALSO TESTED ═══════════════════════════════════════ -->
+<section style="margin-bottom:3rem;">
+  <h2>Also Tested by Vibe Test Lab</h2>
+  <p style="font-size:.875rem;color:var(--muted-foreground);margin-bottom:1.25rem;">See how Ember Mug² 14oz compares to other products we've put through our lab.</p>
+  <div class="related-products-grid">
+    <a class="related-product-card" href="/review/loop-earplugs-quiet-2">
+      <img src="https://images.unsplash.com/photo-1590658268037-6bf12f032f55?w=600&h=600&fit=crop" alt="Loop Earplugs Quiet 2" loading="lazy" />
+      <div class="related-product-info">
+        <span class="verdict-badge verdict-badge-worth-it" style="font-size:.6rem;padding:.2rem .5rem;">Worth It</span>
+        <strong>Loop Earplugs Quiet 2</strong>
+        <span class="text-gradient-score-high" style="font-family:var(--font-mono);font-size:.9rem;font-weight:700;">93/100</span>
+      </div>
+    </a>
+    <a class="related-product-card" href="/review/stanley-quencher-h2o">
+      <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=600&h=600&fit=crop" alt="Stanley Quencher H2.0" loading="lazy" />
+      <div class="related-product-info">
+        <span class="verdict-badge verdict-badge-worth-it" style="font-size:.6rem;padding:.2rem .5rem;">Worth It</span>
+        <strong>Stanley Quencher H2.0</strong>
+        <span class="text-gradient-score-high" style="font-family:var(--font-mono);font-size:.9rem;font-weight:700;">91/100</span>
+      </div>
+    </a>
+    <a class="related-product-card" href="/review/dyson-airwrap-complete">
+      <img src="https://images.unsplash.com/photo-1522338242992-e1a54571a9f7?w=600&h=600&fit=crop" alt="Dyson Airwrap Complete" loading="lazy" />
+      <div class="related-product-info">
+        <span class="verdict-badge verdict-badge-worth-it" style="font-size:.6rem;padding:.2rem .5rem;">Worth It</span>
+        <strong>Dyson Airwrap Complete</strong>
+        <span class="text-gradient-score-high" style="font-family:var(--font-mono);font-size:.9rem;font-weight:700;">88/100</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<div class="divider-gradient" style="margin-bottom:3rem;"></div>
+
+<!-- ═══ 14. WHERE TO BUY ═══════════════════════════════════════ -->
 <section style="margin-bottom:3rem;">
   <div class="buy-box">
     <div>
@@ -452,6 +557,14 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   .gallery-thumb img { width:100%;height:100%;object-fit:cover; }
   .gallery-thumb.active { border-color:var(--primary); }
   .gallery-thumb:hover { border-color:var(--primary); }
+
+  .related-products-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:1rem; }
+  .related-product-card { display:flex;flex-direction:column;gap:.5rem;padding:1rem;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;transition:border-color .15s; }
+  .related-product-card:hover { border-color:var(--primary); }
+  .related-product-card img { width:100%;height:120px;object-fit:cover;border-radius:calc(var(--radius) - 2px); }
+  .related-product-info { display:flex;flex-direction:column;gap:.3rem; }
+  .related-product-info strong { font-size:.85rem;color:var(--foreground);line-height:1.3; }
+  @media(max-width:640px) { .related-products-grid { grid-template-columns:1fr 1fr; } }
 </style>
 
 </BaseLayout>

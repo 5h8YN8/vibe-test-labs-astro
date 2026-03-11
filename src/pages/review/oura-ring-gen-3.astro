@@ -3,153 +3,221 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 <BaseLayout
   title="Is the Oura Ring Gen 3 the Best Sleep Tracker? | Vibe Test Lab"
-  description="Yes — the Oura Ring Gen 3 is the most accurate and comfortable sleep tracker we've tested. It tracks sleep stages, heart rate variability, and body tempera"
+  description="Yes — the Oura Ring Gen 3 is the most accurate and comfortable sleep tracker we've tested. It tracks sleep stages, heart rate variability, and body temperature "
   canonical="https://vibe-test-labs.pages.dev/review/oura-ring-gen-3"
 >
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Review",
-  "name": "Is the Oura Ring Gen 3 the Best Sleep Tracker?",
-  "reviewBody": "The Oura Ring Gen 3 is the best sleep tracker you can buy. Its accuracy, comfort, and battery life are unmatched. The subscription model is the biggest drawback \u2014 you're paying $300+ for hardware and then $6/month for the data it collects. If sleep optimization matters to you, it's worth it.",
-  "author": {
-    "@type": "Organization",
-    "name": "Vibe Test Lab",
-    "url": "https://vibe-test-labs.pages.dev"
-  },
-  "datePublished": "2026-03-05",
-  "url": "https://vibe-test-labs.pages.dev/review/oura-ring-gen-3",
-  "itemReviewed": {
-    "@type": "Product",
-    "name": "Oura Ring Gen 3",
-    "brand": {
-      "@type": "Brand",
-      "name": "Oura"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://vibe-test-labs.pages.dev#organization",
+      "name": "Vibe Test Lab",
+      "url": "https://vibe-test-labs.pages.dev",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://vibe-test-labs.pages.dev/favicon.svg"
+      }
     },
-    "image": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600&h=600&fit=crop",
-    "offers": {
+    {
+      "@type": "Person",
+      "@id": "https://vibe-test-labs.pages.dev#author",
+      "name": "Vibe Test Lab Team",
+      "worksFor": {
+        "@id": "https://vibe-test-labs.pages.dev#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://vibe-test-labs.pages.dev/review/oura-ring-gen-3#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Vibe Test Lab",
+          "item": "https://vibe-test-labs.pages.dev"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Wearables",
+          "item": "https://vibe-test-labs.pages.dev/category/wearables"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Oura Ring Gen 3",
+          "item": "https://vibe-test-labs.pages.dev/review/oura-ring-gen-3"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://vibe-test-labs.pages.dev/review/oura-ring-gen-3#webpage",
+      "url": "https://vibe-test-labs.pages.dev/review/oura-ring-gen-3",
+      "name": "Is the Oura Ring Gen 3 the Best Sleep Tracker?",
+      "description": "Yes \u2014 the Oura Ring Gen 3 is the most accurate and comfortable sleep tracker we've tested. It tracks sleep stages, heart rate variability, and body temperature with clinical-grade accuracy. It works b",
+      "publisher": {
+        "@id": "https://vibe-test-labs.pages.dev#organization"
+      },
+      "author": {
+        "@id": "https://vibe-test-labs.pages.dev#author"
+      },
+      "mentions": [
+        {
+          "@type": "WebPage",
+          "@id": "https://vibe-test-labs.pages.dev/review/loop-earplugs-quiet-2"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://vibe-test-labs.pages.dev/review/stanley-quencher-h2o"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://vibe-test-labs.pages.dev/review/dyson-airwrap-complete"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://vibe-test-labs.pages.dev/category/wearables"
+        }
+      ],
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".answer-box",
+          ".verdict-card",
+          ".faq",
+          ".supporting-questions"
+        ]
+      }
+    },
+    {
+      "@type": "Review",
+      "@id": "https://vibe-test-labs.pages.dev/review/oura-ring-gen-3#review",
+      "mainEntityOfPage": {
+        "@id": "https://vibe-test-labs.pages.dev/review/oura-ring-gen-3#webpage"
+      },
+      "name": "Is the Oura Ring Gen 3 the Best Sleep Tracker?",
+      "reviewBody": "The Oura Ring Gen 3 is the best sleep tracker you can buy. Its accuracy, comfort, and battery life are unmatched. The subscription model is the biggest drawback \u2014 you're paying $300+ for hardware and then $6/month for the data it collects. If sleep optimization matters to you, it's worth it.",
+      "author": {
+        "@id": "https://vibe-test-labs.pages.dev#author"
+      },
+      "publisher": {
+        "@id": "https://vibe-test-labs.pages.dev#organization"
+      },
+      "datePublished": "2026-03-05",
+      "dateModified": "2026-03-05",
+      "url": "https://vibe-test-labs.pages.dev/review/oura-ring-gen-3",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": 85,
+        "bestRating": 100,
+        "worstRating": 0
+      },
+      "itemReviewed": {
+        "@id": "https://vibe-test-labs.pages.dev/review/oura-ring-gen-3#product"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://vibe-test-labs.pages.dev/review/oura-ring-gen-3#product",
+      "name": "Oura Ring Gen 3",
+      "description": "Yes \u2014 the Oura Ring Gen 3 is the most accurate and comfortable sleep tracker we've tested. It tracks sleep stages, heart rate variability, and body temperature with clinical-grade accuracy. It works b",
+      "brand": {
+        "@type": "Brand",
+        "name": "Oura"
+      },
+      "image": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600&h=600&fit=crop",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "85",
+        "bestRating": "100",
+        "worstRating": "0",
+        "ratingCount": "1"
+      }
+    },
+    {
       "@type": "Offer",
+      "@id": "https://vibe-test-labs.pages.dev/review/oura-ring-gen-3#offer",
+      "itemOffered": {
+        "@id": "https://vibe-test-labs.pages.dev/review/oura-ring-gen-3#product"
+      },
+      "url": "https://vibe-test-lab.myshopify.com/products/oura-ring-gen-3?utm_source=aeo&utm_medium=content&utm_campaign=oura-ring-gen-3",
       "price": "299",
       "priceCurrency": "USD",
-      "url": "https://vibe-test-lab.myshopify.com/products/oura-ring-gen-3?utm_source=aeo&utm_medium=content&utm_campaign=oura-ring-gen-3",
       "availability": "https://schema.org/InStock"
     },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "85",
-      "bestRating": "100",
-      "worstRating": "0",
-      "ratingCount": "1"
-    }
-  },
-  "reviewRating": {
-    "@type": "Rating",
-    "ratingValue": 85,
-    "bestRating": 100,
-    "worstRating": 0
-  }
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
     {
-      "@type": "Question",
-      "name": "Does the Oura Ring actually track sleep accurately?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Studies show it rivals clinical-grade polysomnography for sleep stage detection and HRV measurement."
-      }
+      "@type": "HowTo",
+      "@id": "https://vibe-test-labs.pages.dev/review/oura-ring-gen-3#howto",
+      "name": "How to Use Oura Ring Gen 3",
+      "description": "Step-by-step guide to using the Oura Ring Gen 3.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Order your sizing kit and find your correct ring size",
+          "text": "Order your sizing kit and find your correct ring size"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Download the Oura app and pair the ring via Bluetooth",
+          "text": "Download the Oura app and pair the ring via Bluetooth"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Wear the ring continuously \u2014 it tracks sleep, activity, and recovery automatically",
+          "text": "Wear the ring continuously \u2014 it tracks sleep, activity, and recovery automatically"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Check your daily Readiness, Sleep, and Activity scores each morning in the app",
+          "text": "Check your daily Readiness, Sleep, and Activity scores each morning in the app"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Is the Oura Ring worth the subscription?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The free tier covers basics. The subscription adds trends, educational content, and detailed insights. Worth it for serious optimizers."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What are alternatives to the Oura Ring?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The Whoop 4.0 (subscription-based strap) and Apple Watch Ultra are the main competitors, though both are larger."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long does the Oura Ring battery last?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "About 5\u20137 days depending on usage and features enabled."
-      }
-    }
-  ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  "name": "How to Use Oura Ring Gen 3",
-  "description": "Step-by-step guide to using the Oura Ring Gen 3.",
-  "step": [
-    {
-      "@type": "HowToStep",
-      "position": 1,
-      "name": "Order your sizing kit and find your correct ring size",
-      "text": "Order your sizing kit and find your correct ring size"
-    },
-    {
-      "@type": "HowToStep",
-      "position": 2,
-      "name": "Download the Oura app and pair the ring via Bluetooth",
-      "text": "Download the Oura app and pair the ring via Bluetooth"
-    },
-    {
-      "@type": "HowToStep",
-      "position": 3,
-      "name": "Wear the ring continuously \u2014 it tracks sleep, activity, and ",
-      "text": "Wear the ring continuously \u2014 it tracks sleep, activity, and recovery automatically"
-    },
-    {
-      "@type": "HowToStep",
-      "position": 4,
-      "name": "Check your daily Readiness, Sleep, and Activity scores each ",
-      "text": "Check your daily Readiness, Sleep, and Activity scores each morning in the app"
-    }
-  ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Vibe Test Lab",
-      "item": "https://vibe-test-labs.pages.dev"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Wearables",
-      "item": "https://vibe-test-labs.pages.dev/category/wearables"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Oura Ring Gen 3",
-      "item": "https://vibe-test-labs.pages.dev/review/oura-ring-gen-3"
+      "@type": "FAQPage",
+      "@id": "https://vibe-test-labs.pages.dev/review/oura-ring-gen-3#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does the Oura Ring actually track sleep accurately?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Studies show it rivals clinical-grade polysomnography for sleep stage detection and HRV measurement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the Oura Ring worth the subscription?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The free tier covers basics. The subscription adds trends, educational content, and detailed insights. Worth it for serious optimizers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are alternatives to the Oura Ring?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Whoop 4.0 (subscription-based strap) and Apple Watch Ultra are the main competitors, though both are larger."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does the Oura Ring battery last?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "About 5\u20137 days depending on usage and features enabled."
+          }
+        }
+      ]
     }
   ]
 }
@@ -164,7 +232,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <!-- Meta row -->
 <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:1rem;flex-wrap:wrap;">
-  <span style="font-size:.7rem;font-family:var(--font-sans);font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--primary);">Wearables</span>
+  <a href="/category/wearables" style="font-size:.7rem;font-family:var(--font-sans);font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--primary);text-decoration:none;">Wearables</a>
   <span style="color:var(--border);">&middot;</span>
   <span style="font-size:.7rem;color:var(--muted-foreground);">Oura</span>
   <span style="color:var(--border);">&middot;</span>
@@ -188,7 +256,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <!-- ═══ BUY NOW (top) ════════════════════════════════════════ -->
 <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-bottom:2.5rem;">
-  <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/oura-ring-gen-3?utm_source=aeo&utm_medium=content&utm_campaign=oura-ring-gen-3">Buy Now — $299 &rarr;</a>
+  <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/oura-ring-gen-3?utm_source=aeo&utm_medium=content&utm_campaign=oura-ring-gen-3">Buy Now &mdash; $299 &rarr;</a>
   <span style="font-size:.75rem;color:var(--muted-foreground);">$299–$549 &middot; Oura</span>
 </div>
 
@@ -196,6 +264,11 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 <div class="gallery-wrap" style="margin-bottom:3rem;">
   <div class="gallery-main">
     <img id="gallery-hero" src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&h=600&fit=crop" alt="Oura Ring Gen 3" loading="eager" />
+  </div>
+  <div class="gallery-thumbs">
+      <button class="gallery-thumb active" onclick="galSwitch(this, 'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&h=600&fit=crop')" aria-label="View image 1">
+        <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&h=600&fit=crop" alt="Oura Ring Gen 3 view 1" loading="lazy" />
+      </button>
   </div>
 </div>
 
@@ -209,7 +282,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       </tr>
       <tr style="border-bottom:1px solid var(--border);">
         <td style="padding:.75rem 1.25rem;font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);">Category</td>
-        <td style="padding:.75rem 1.25rem;color:var(--foreground);font-weight:600;">Wearables</td>
+        <td style="padding:.75rem 1.25rem;"><a href="/category/wearables" style="color:var(--primary);text-decoration:none;font-weight:600;">Wearables</a></td>
       </tr>
       <tr style="border-bottom:1px solid var(--border);">
         <td style="padding:.75rem 1.25rem;font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);">Price</td>
@@ -258,16 +331,15 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <div style="background:rgba(50,180,140,.08);border:1px solid rgba(50,180,140,.25);border-radius:var(--radius);padding:1.25rem;">
       <p style="font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:hsl(170,65%,35%);font-weight:700;margin:0 0 .75rem;">Buy it if you want</p>
       <ul style="list-style:none;padding:0;margin:0;">
-        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10003; Most accurate sleep tracker in a consumer wearable</li><li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10003; Extremely comfortable — you forget it's there</li><li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10003; 7-day battery life</li>
-      </ul>
+        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10003; Most accurate sleep tracker in a consumer wearable</li>        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10003; Extremely comfortable — you forget it's there</li>        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10003; 7-day battery life</li>      </ul>
     </div>
     <div style="background:rgba(255,130,80,.06);border:1px solid rgba(255,130,80,.2);border-radius:var(--radius);padding:1.25rem;">
       <p style="font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:hsl(20,60%,45%);font-weight:700;margin:0 0 .75rem;">Skip it if you</p>
       <ul style="list-style:none;padding:0;margin:0;">
-        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10007; $6/month subscription required for full features</li><li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10007; No display — fully dependent on the phone app</li><li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10007; Limited fitness tracking compared to smartwatches</li>
-      </ul>
+        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10007; $6/month subscription required for full features</li>        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10007; No display — fully dependent on the phone app</li>        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10007; Limited fitness tracking compared to smartwatches</li>      </ul>
     </div>
   </div>
+  <p style="margin-top:1rem;font-size:.875rem;color:var(--muted-foreground);">Not sure? See how it compares: <a href="/review/loop-earplugs-quiet-2" style="color:var(--primary);">Loop Earplugs Quiet 2</a> · <a href="/review/stanley-quencher-h2o" style="color:var(--primary);">Stanley Quencher H2.0</a> · <a href="/review/dyson-airwrap-complete" style="color:var(--primary);">Dyson Airwrap Complete</a></p>
 </section>
 
 <div class="divider-gradient" style="margin-bottom:3rem;"></div>
@@ -385,35 +457,73 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 </section>
 
 <!-- ═══ 12. FAQ ════════════════════════════════════════════════ -->
-<section style="margin-bottom:3rem;">
+<section style="margin-bottom:3rem;" class="supporting-questions">
   <h2>Frequently Asked Questions About Oura Ring Gen 3</h2>
   <div class="faq">
     <div class="faq-item">
       <h3>Does the Oura Ring actually track sleep accurately?</h3>
-      <p>Yes. Studies show it rivals clinical-grade polysomnography for sleep stage detection and HRV measurement.</p>
+      <p class="supporting-questions">Yes. Studies show it rivals clinical-grade polysomnography for sleep stage detection and HRV measurement.</p>
     </div>
     <div class="faq-item">
       <h3>Is the Oura Ring worth the subscription?</h3>
-      <p>The free tier covers basics. The subscription adds trends, educational content, and detailed insights. Worth it for serious optimizers.</p>
+      <p class="supporting-questions">The free tier covers basics. The subscription adds trends, educational content, and detailed insights. Worth it for serious optimizers.</p>
     </div>
     <div class="faq-item">
       <h3>What are alternatives to the Oura Ring?</h3>
-      <p>The Whoop 4.0 (subscription-based strap) and Apple Watch Ultra are the main competitors, though both are larger.</p>
+      <p class="supporting-questions">The Whoop 4.0 (subscription-based strap) and Apple Watch Ultra are the main competitors, though both are larger.</p>
     </div>
     <div class="faq-item">
       <h3>How long does the Oura Ring battery last?</h3>
-      <p>About 5–7 days depending on usage and features enabled.</p>
+      <p class="supporting-questions">About 5–7 days depending on usage and features enabled.</p>
     </div>
   </div>
 <div style="background:var(--muted);border-radius:var(--radius);padding:1.25rem 1.5rem;margin:1.5rem 0;">
   <p style="font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted-foreground);font-weight:700;margin:0 0 .4rem;">Looking for alternatives?</p>
-  <p style="margin:0;font-size:.9rem;">The Whoop 4.0 (subscription-based strap) and Apple Watch Ultra are the main competitors, though both are larger.</p>
+  <p style="margin:0 0 .75rem;font-size:.9rem;">The Whoop 4.0 (subscription-based strap) and Apple Watch Ultra are the main competitors, though both are larger.</p>
+  <div style="display:flex;flex-wrap:wrap;gap:.5rem;">    <a href="/review/loop-earplugs-quiet-2" style="font-size:.8rem;padding:.25rem .75rem;background:var(--card);border:1px solid var(--border);border-radius:999px;color:var(--foreground);text-decoration:none;">Loop Earplugs Quiet 2</a>
+    <a href="/review/stanley-quencher-h2o" style="font-size:.8rem;padding:.25rem .75rem;background:var(--card);border:1px solid var(--border);border-radius:999px;color:var(--foreground);text-decoration:none;">Stanley Quencher H2.0</a>
+    <a href="/review/dyson-airwrap-complete" style="font-size:.8rem;padding:.25rem .75rem;background:var(--card);border:1px solid var(--border);border-radius:999px;color:var(--foreground);text-decoration:none;">Dyson Airwrap Complete</a>
+  </div>
 </div>
 </section>
 
 <div class="divider-gradient" style="margin-bottom:3rem;"></div>
 
-<!-- ═══ 13. WHERE TO BUY (Buy Now) ════════════════════════════ -->
+<!-- ═══ 13. ALSO TESTED ═══════════════════════════════════════ -->
+<section style="margin-bottom:3rem;">
+  <h2>Also Tested by Vibe Test Lab</h2>
+  <p style="font-size:.875rem;color:var(--muted-foreground);margin-bottom:1.25rem;">See how Oura Ring Gen 3 compares to other products we've put through our lab.</p>
+  <div class="related-products-grid">
+    <a class="related-product-card" href="/review/loop-earplugs-quiet-2">
+      <img src="https://images.unsplash.com/photo-1590658268037-6bf12f032f55?w=600&h=600&fit=crop" alt="Loop Earplugs Quiet 2" loading="lazy" />
+      <div class="related-product-info">
+        <span class="verdict-badge verdict-badge-worth-it" style="font-size:.6rem;padding:.2rem .5rem;">Worth It</span>
+        <strong>Loop Earplugs Quiet 2</strong>
+        <span class="text-gradient-score-high" style="font-family:var(--font-mono);font-size:.9rem;font-weight:700;">93/100</span>
+      </div>
+    </a>
+    <a class="related-product-card" href="/review/stanley-quencher-h2o">
+      <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=600&h=600&fit=crop" alt="Stanley Quencher H2.0" loading="lazy" />
+      <div class="related-product-info">
+        <span class="verdict-badge verdict-badge-worth-it" style="font-size:.6rem;padding:.2rem .5rem;">Worth It</span>
+        <strong>Stanley Quencher H2.0</strong>
+        <span class="text-gradient-score-high" style="font-family:var(--font-mono);font-size:.9rem;font-weight:700;">91/100</span>
+      </div>
+    </a>
+    <a class="related-product-card" href="/review/dyson-airwrap-complete">
+      <img src="https://images.unsplash.com/photo-1522338242992-e1a54571a9f7?w=600&h=600&fit=crop" alt="Dyson Airwrap Complete" loading="lazy" />
+      <div class="related-product-info">
+        <span class="verdict-badge verdict-badge-worth-it" style="font-size:.6rem;padding:.2rem .5rem;">Worth It</span>
+        <strong>Dyson Airwrap Complete</strong>
+        <span class="text-gradient-score-high" style="font-family:var(--font-mono);font-size:.9rem;font-weight:700;">88/100</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<div class="divider-gradient" style="margin-bottom:3rem;"></div>
+
+<!-- ═══ 14. WHERE TO BUY ═══════════════════════════════════════ -->
 <section style="margin-bottom:3rem;">
   <div class="buy-box">
     <div>
@@ -443,6 +553,14 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   .gallery-thumb img { width:100%;height:100%;object-fit:cover; }
   .gallery-thumb.active { border-color:var(--primary); }
   .gallery-thumb:hover { border-color:var(--primary); }
+
+  .related-products-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:1rem; }
+  .related-product-card { display:flex;flex-direction:column;gap:.5rem;padding:1rem;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;transition:border-color .15s; }
+  .related-product-card:hover { border-color:var(--primary); }
+  .related-product-card img { width:100%;height:120px;object-fit:cover;border-radius:calc(var(--radius) - 2px); }
+  .related-product-info { display:flex;flex-direction:column;gap:.3rem; }
+  .related-product-info strong { font-size:.85rem;color:var(--foreground);line-height:1.3; }
+  @media(max-width:640px) { .related-products-grid { grid-template-columns:1fr 1fr; } }
 </style>
 
 </BaseLayout>

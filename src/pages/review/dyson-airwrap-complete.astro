@@ -3,153 +3,221 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 <BaseLayout
   title="Is the Dyson Airwrap Actually Worth $599? | Vibe Test Lab"
-  description="Yes — the Dyson Airwrap delivers salon-quality styling with significantly less heat damage than traditional tools. It uses the Coanda effect to wrap and st"
+  description="Yes — the Dyson Airwrap delivers salon-quality styling with significantly less heat damage than traditional tools. It uses the Coanda effect to wrap and style h"
   canonical="https://vibe-test-labs.pages.dev/review/dyson-airwrap-complete"
 >
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Review",
-  "name": "Is the Dyson Airwrap Actually Worth $599?",
-  "reviewBody": "The Dyson Airwrap is a genuine innovation in hair styling. If you style your hair regularly and want to reduce heat damage, the investment pays off over time. The learning curve is real but manageable. Not recommended for casual or infrequent stylists.",
-  "author": {
-    "@type": "Organization",
-    "name": "Vibe Test Lab",
-    "url": "https://vibe-test-labs.pages.dev"
-  },
-  "datePublished": "2026-03-07",
-  "url": "https://vibe-test-labs.pages.dev/review/dyson-airwrap-complete",
-  "itemReviewed": {
-    "@type": "Product",
-    "name": "Dyson Airwrap Complete",
-    "brand": {
-      "@type": "Brand",
-      "name": "Dyson"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://vibe-test-labs.pages.dev#organization",
+      "name": "Vibe Test Lab",
+      "url": "https://vibe-test-labs.pages.dev",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://vibe-test-labs.pages.dev/favicon.svg"
+      }
     },
-    "image": "https://images.unsplash.com/photo-1522338242992-e1a54571a9f7?w=600&h=600&fit=crop",
-    "offers": {
+    {
+      "@type": "Person",
+      "@id": "https://vibe-test-labs.pages.dev#author",
+      "name": "Vibe Test Lab Team",
+      "worksFor": {
+        "@id": "https://vibe-test-labs.pages.dev#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://vibe-test-labs.pages.dev/review/dyson-airwrap-complete#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Vibe Test Lab",
+          "item": "https://vibe-test-labs.pages.dev"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Beauty",
+          "item": "https://vibe-test-labs.pages.dev/category/beauty"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Dyson Airwrap Complete",
+          "item": "https://vibe-test-labs.pages.dev/review/dyson-airwrap-complete"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://vibe-test-labs.pages.dev/review/dyson-airwrap-complete#webpage",
+      "url": "https://vibe-test-labs.pages.dev/review/dyson-airwrap-complete",
+      "name": "Is the Dyson Airwrap Actually Worth $599?",
+      "description": "Yes \u2014 the Dyson Airwrap delivers salon-quality styling with significantly less heat damage than traditional tools. It uses the Coanda effect to wrap and style hair without extreme temperatures. It wor",
+      "publisher": {
+        "@id": "https://vibe-test-labs.pages.dev#organization"
+      },
+      "author": {
+        "@id": "https://vibe-test-labs.pages.dev#author"
+      },
+      "mentions": [
+        {
+          "@type": "WebPage",
+          "@id": "https://vibe-test-labs.pages.dev/review/loop-earplugs-quiet-2"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://vibe-test-labs.pages.dev/review/stanley-quencher-h2o"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://vibe-test-labs.pages.dev/review/oura-ring-gen-3"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://vibe-test-labs.pages.dev/category/beauty"
+        }
+      ],
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".answer-box",
+          ".verdict-card",
+          ".faq",
+          ".supporting-questions"
+        ]
+      }
+    },
+    {
+      "@type": "Review",
+      "@id": "https://vibe-test-labs.pages.dev/review/dyson-airwrap-complete#review",
+      "mainEntityOfPage": {
+        "@id": "https://vibe-test-labs.pages.dev/review/dyson-airwrap-complete#webpage"
+      },
+      "name": "Is the Dyson Airwrap Actually Worth $599?",
+      "reviewBody": "The Dyson Airwrap is a genuine innovation in hair styling. If you style your hair regularly and want to reduce heat damage, the investment pays off over time. The learning curve is real but manageable. Not recommended for casual or infrequent stylists.",
+      "author": {
+        "@id": "https://vibe-test-labs.pages.dev#author"
+      },
+      "publisher": {
+        "@id": "https://vibe-test-labs.pages.dev#organization"
+      },
+      "datePublished": "2026-03-07",
+      "dateModified": "2026-03-07",
+      "url": "https://vibe-test-labs.pages.dev/review/dyson-airwrap-complete",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": 88,
+        "bestRating": 100,
+        "worstRating": 0
+      },
+      "itemReviewed": {
+        "@id": "https://vibe-test-labs.pages.dev/review/dyson-airwrap-complete#product"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://vibe-test-labs.pages.dev/review/dyson-airwrap-complete#product",
+      "name": "Dyson Airwrap Complete",
+      "description": "Yes \u2014 the Dyson Airwrap delivers salon-quality styling with significantly less heat damage than traditional tools. It uses the Coanda effect to wrap and style hair without extreme temperatures. It wor",
+      "brand": {
+        "@type": "Brand",
+        "name": "Dyson"
+      },
+      "image": "https://images.unsplash.com/photo-1522338242992-e1a54571a9f7?w=600&h=600&fit=crop",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "88",
+        "bestRating": "100",
+        "worstRating": "0",
+        "ratingCount": "1"
+      }
+    },
+    {
       "@type": "Offer",
+      "@id": "https://vibe-test-labs.pages.dev/review/dyson-airwrap-complete#offer",
+      "itemOffered": {
+        "@id": "https://vibe-test-labs.pages.dev/review/dyson-airwrap-complete#product"
+      },
+      "url": "https://vibe-test-lab.myshopify.com/products/dyson-airwrap-complete?utm_source=aeo&utm_medium=content&utm_campaign=dyson-airwrap-complete",
       "price": "599",
       "priceCurrency": "USD",
-      "url": "https://vibe-test-lab.myshopify.com/products/dyson-airwrap-complete?utm_source=aeo&utm_medium=content&utm_campaign=dyson-airwrap-complete",
       "availability": "https://schema.org/InStock"
     },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "88",
-      "bestRating": "100",
-      "worstRating": "0",
-      "ratingCount": "1"
-    }
-  },
-  "reviewRating": {
-    "@type": "Rating",
-    "ratingValue": 88,
-    "bestRating": 100,
-    "worstRating": 0
-  }
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
     {
-      "@type": "Question",
-      "name": "Does the Dyson Airwrap actually work?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. It creates professional-looking curls and waves with less heat damage. Results last most of the day."
-      }
+      "@type": "HowTo",
+      "@id": "https://vibe-test-labs.pages.dev/review/dyson-airwrap-complete#howto",
+      "name": "How to Use Dyson Airwrap Complete",
+      "description": "Step-by-step guide to using the Dyson Airwrap Complete.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Start with damp, towel-dried hair \u2014 the Airwrap works best on wet-to-dry styling",
+          "text": "Start with damp, towel-dried hair \u2014 the Airwrap works best on wet-to-dry styling"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Select the appropriate attachment for your desired style (barrels for curls, brushes for volume)",
+          "text": "Select the appropriate attachment for your desired style (barrels for curls, brushes for volume)"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Hold sections of hair near the barrel and let the Coanda effect wrap the hair automatically",
+          "text": "Hold sections of hair near the barrel and let the Coanda effect wrap the hair automatically"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Style each section for 10\u201315 seconds, then switch to cool shot to set the curl",
+          "text": "Style each section for 10\u201315 seconds, then switch to cool shot to set the curl"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Is the Dyson Airwrap worth the price?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "For regular stylists, yes. It replaces multiple tools and reduces salon visits. For occasional use, it's harder to justify."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What are alternatives to the Dyson Airwrap?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The Shark FlexStyle is the closest competitor at about half the price, with slightly less polished results."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long do Airwrap curls last?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "On average, curls last 8\u201312 hours. Using the cool shot setting and light hairspray extends hold time."
-      }
-    }
-  ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  "name": "How to Use Dyson Airwrap Complete",
-  "description": "Step-by-step guide to using the Dyson Airwrap Complete.",
-  "step": [
-    {
-      "@type": "HowToStep",
-      "position": 1,
-      "name": "Start with damp, towel-dried hair \u2014 the Airwrap works best o",
-      "text": "Start with damp, towel-dried hair \u2014 the Airwrap works best on wet-to-dry styling"
-    },
-    {
-      "@type": "HowToStep",
-      "position": 2,
-      "name": "Select the appropriate attachment for your desired style (ba",
-      "text": "Select the appropriate attachment for your desired style (barrels for curls, brushes for volume)"
-    },
-    {
-      "@type": "HowToStep",
-      "position": 3,
-      "name": "Hold sections of hair near the barrel and let the Coanda eff",
-      "text": "Hold sections of hair near the barrel and let the Coanda effect wrap the hair automatically"
-    },
-    {
-      "@type": "HowToStep",
-      "position": 4,
-      "name": "Style each section for 10\u201315 seconds, then switch to cool sh",
-      "text": "Style each section for 10\u201315 seconds, then switch to cool shot to set the curl"
-    }
-  ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Vibe Test Lab",
-      "item": "https://vibe-test-labs.pages.dev"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Beauty",
-      "item": "https://vibe-test-labs.pages.dev/category/beauty"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Dyson Airwrap Complete",
-      "item": "https://vibe-test-labs.pages.dev/review/dyson-airwrap-complete"
+      "@type": "FAQPage",
+      "@id": "https://vibe-test-labs.pages.dev/review/dyson-airwrap-complete#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does the Dyson Airwrap actually work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. It creates professional-looking curls and waves with less heat damage. Results last most of the day."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the Dyson Airwrap worth the price?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For regular stylists, yes. It replaces multiple tools and reduces salon visits. For occasional use, it's harder to justify."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are alternatives to the Dyson Airwrap?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Shark FlexStyle is the closest competitor at about half the price, with slightly less polished results."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long do Airwrap curls last?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "On average, curls last 8\u201312 hours. Using the cool shot setting and light hairspray extends hold time."
+          }
+        }
+      ]
     }
   ]
 }
@@ -164,7 +232,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <!-- Meta row -->
 <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:1rem;flex-wrap:wrap;">
-  <span style="font-size:.7rem;font-family:var(--font-sans);font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--primary);">Beauty</span>
+  <a href="/category/beauty" style="font-size:.7rem;font-family:var(--font-sans);font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--primary);text-decoration:none;">Beauty</a>
   <span style="color:var(--border);">&middot;</span>
   <span style="font-size:.7rem;color:var(--muted-foreground);">Dyson</span>
   <span style="color:var(--border);">&middot;</span>
@@ -188,7 +256,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <!-- ═══ BUY NOW (top) ════════════════════════════════════════ -->
 <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-bottom:2.5rem;">
-  <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/dyson-airwrap-complete?utm_source=aeo&utm_medium=content&utm_campaign=dyson-airwrap-complete">Buy Now — $599 &rarr;</a>
+  <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/dyson-airwrap-complete?utm_source=aeo&utm_medium=content&utm_campaign=dyson-airwrap-complete">Buy Now &mdash; $599 &rarr;</a>
   <span style="font-size:.75rem;color:var(--muted-foreground);">$499–$599 &middot; Dyson</span>
 </div>
 
@@ -217,7 +285,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       </tr>
       <tr style="border-bottom:1px solid var(--border);">
         <td style="padding:.75rem 1.25rem;font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);">Category</td>
-        <td style="padding:.75rem 1.25rem;color:var(--foreground);font-weight:600;">Beauty</td>
+        <td style="padding:.75rem 1.25rem;"><a href="/category/beauty" style="color:var(--primary);text-decoration:none;font-weight:600;">Beauty</a></td>
       </tr>
       <tr style="border-bottom:1px solid var(--border);">
         <td style="padding:.75rem 1.25rem;font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);">Price</td>
@@ -266,16 +334,15 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <div style="background:rgba(50,180,140,.08);border:1px solid rgba(50,180,140,.25);border-radius:var(--radius);padding:1.25rem;">
       <p style="font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:hsl(170,65%,35%);font-weight:700;margin:0 0 .75rem;">Buy it if you want</p>
       <ul style="list-style:none;padding:0;margin:0;">
-        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10003; Significantly less heat damage than traditional styling tools</li><li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10003; Multiple attachments replace an entire collection of styling tools</li><li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10003; Salon-quality results once you master the technique</li>
-      </ul>
+        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10003; Significantly less heat damage than traditional styling tools</li>        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10003; Multiple attachments replace an entire collection of styling tools</li>        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10003; Salon-quality results once you master the technique</li>      </ul>
     </div>
     <div style="background:rgba(255,130,80,.06);border:1px solid rgba(255,130,80,.2);border-radius:var(--radius);padding:1.25rem;">
       <p style="font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:hsl(20,60%,45%);font-weight:700;margin:0 0 .75rem;">Skip it if you</p>
       <ul style="list-style:none;padding:0;margin:0;">
-        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10007; Steep learning curve for beginners</li><li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10007; Very expensive at $599</li><li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10007; Less effective on very short or very thick hair</li>
-      </ul>
+        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10007; Steep learning curve for beginners</li>        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10007; Very expensive at $599</li>        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10007; Less effective on very short or very thick hair</li>      </ul>
     </div>
   </div>
+  <p style="margin-top:1rem;font-size:.875rem;color:var(--muted-foreground);">Not sure? See how it compares: <a href="/review/loop-earplugs-quiet-2" style="color:var(--primary);">Loop Earplugs Quiet 2</a> · <a href="/review/stanley-quencher-h2o" style="color:var(--primary);">Stanley Quencher H2.0</a> · <a href="/review/oura-ring-gen-3" style="color:var(--primary);">Oura Ring Gen 3</a></p>
 </section>
 
 <div class="divider-gradient" style="margin-bottom:3rem;"></div>
@@ -393,35 +460,73 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 </section>
 
 <!-- ═══ 12. FAQ ════════════════════════════════════════════════ -->
-<section style="margin-bottom:3rem;">
+<section style="margin-bottom:3rem;" class="supporting-questions">
   <h2>Frequently Asked Questions About Dyson Airwrap Complete</h2>
   <div class="faq">
     <div class="faq-item">
       <h3>Does the Dyson Airwrap actually work?</h3>
-      <p>Yes. It creates professional-looking curls and waves with less heat damage. Results last most of the day.</p>
+      <p class="supporting-questions">Yes. It creates professional-looking curls and waves with less heat damage. Results last most of the day.</p>
     </div>
     <div class="faq-item">
       <h3>Is the Dyson Airwrap worth the price?</h3>
-      <p>For regular stylists, yes. It replaces multiple tools and reduces salon visits. For occasional use, it's harder to justify.</p>
+      <p class="supporting-questions">For regular stylists, yes. It replaces multiple tools and reduces salon visits. For occasional use, it's harder to justify.</p>
     </div>
     <div class="faq-item">
       <h3>What are alternatives to the Dyson Airwrap?</h3>
-      <p>The Shark FlexStyle is the closest competitor at about half the price, with slightly less polished results.</p>
+      <p class="supporting-questions">The Shark FlexStyle is the closest competitor at about half the price, with slightly less polished results.</p>
     </div>
     <div class="faq-item">
       <h3>How long do Airwrap curls last?</h3>
-      <p>On average, curls last 8–12 hours. Using the cool shot setting and light hairspray extends hold time.</p>
+      <p class="supporting-questions">On average, curls last 8–12 hours. Using the cool shot setting and light hairspray extends hold time.</p>
     </div>
   </div>
 <div style="background:var(--muted);border-radius:var(--radius);padding:1.25rem 1.5rem;margin:1.5rem 0;">
   <p style="font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted-foreground);font-weight:700;margin:0 0 .4rem;">Looking for alternatives?</p>
-  <p style="margin:0;font-size:.9rem;">The Shark FlexStyle is the closest competitor at about half the price, with slightly less polished results.</p>
+  <p style="margin:0 0 .75rem;font-size:.9rem;">The Shark FlexStyle is the closest competitor at about half the price, with slightly less polished results.</p>
+  <div style="display:flex;flex-wrap:wrap;gap:.5rem;">    <a href="/review/loop-earplugs-quiet-2" style="font-size:.8rem;padding:.25rem .75rem;background:var(--card);border:1px solid var(--border);border-radius:999px;color:var(--foreground);text-decoration:none;">Loop Earplugs Quiet 2</a>
+    <a href="/review/stanley-quencher-h2o" style="font-size:.8rem;padding:.25rem .75rem;background:var(--card);border:1px solid var(--border);border-radius:999px;color:var(--foreground);text-decoration:none;">Stanley Quencher H2.0</a>
+    <a href="/review/oura-ring-gen-3" style="font-size:.8rem;padding:.25rem .75rem;background:var(--card);border:1px solid var(--border);border-radius:999px;color:var(--foreground);text-decoration:none;">Oura Ring Gen 3</a>
+  </div>
 </div>
 </section>
 
 <div class="divider-gradient" style="margin-bottom:3rem;"></div>
 
-<!-- ═══ 13. WHERE TO BUY (Buy Now) ════════════════════════════ -->
+<!-- ═══ 13. ALSO TESTED ═══════════════════════════════════════ -->
+<section style="margin-bottom:3rem;">
+  <h2>Also Tested by Vibe Test Lab</h2>
+  <p style="font-size:.875rem;color:var(--muted-foreground);margin-bottom:1.25rem;">See how Dyson Airwrap Complete compares to other products we've put through our lab.</p>
+  <div class="related-products-grid">
+    <a class="related-product-card" href="/review/loop-earplugs-quiet-2">
+      <img src="https://images.unsplash.com/photo-1590658268037-6bf12f032f55?w=600&h=600&fit=crop" alt="Loop Earplugs Quiet 2" loading="lazy" />
+      <div class="related-product-info">
+        <span class="verdict-badge verdict-badge-worth-it" style="font-size:.6rem;padding:.2rem .5rem;">Worth It</span>
+        <strong>Loop Earplugs Quiet 2</strong>
+        <span class="text-gradient-score-high" style="font-family:var(--font-mono);font-size:.9rem;font-weight:700;">93/100</span>
+      </div>
+    </a>
+    <a class="related-product-card" href="/review/stanley-quencher-h2o">
+      <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=600&h=600&fit=crop" alt="Stanley Quencher H2.0" loading="lazy" />
+      <div class="related-product-info">
+        <span class="verdict-badge verdict-badge-worth-it" style="font-size:.6rem;padding:.2rem .5rem;">Worth It</span>
+        <strong>Stanley Quencher H2.0</strong>
+        <span class="text-gradient-score-high" style="font-family:var(--font-mono);font-size:.9rem;font-weight:700;">91/100</span>
+      </div>
+    </a>
+    <a class="related-product-card" href="/review/oura-ring-gen-3">
+      <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600&h=600&fit=crop" alt="Oura Ring Gen 3" loading="lazy" />
+      <div class="related-product-info">
+        <span class="verdict-badge verdict-badge-worth-it" style="font-size:.6rem;padding:.2rem .5rem;">Worth It</span>
+        <strong>Oura Ring Gen 3</strong>
+        <span class="text-gradient-score-high" style="font-family:var(--font-mono);font-size:.9rem;font-weight:700;">85/100</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<div class="divider-gradient" style="margin-bottom:3rem;"></div>
+
+<!-- ═══ 14. WHERE TO BUY ═══════════════════════════════════════ -->
 <section style="margin-bottom:3rem;">
   <div class="buy-box">
     <div>
@@ -451,6 +556,14 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   .gallery-thumb img { width:100%;height:100%;object-fit:cover; }
   .gallery-thumb.active { border-color:var(--primary); }
   .gallery-thumb:hover { border-color:var(--primary); }
+
+  .related-products-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:1rem; }
+  .related-product-card { display:flex;flex-direction:column;gap:.5rem;padding:1rem;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;transition:border-color .15s; }
+  .related-product-card:hover { border-color:var(--primary); }
+  .related-product-card img { width:100%;height:120px;object-fit:cover;border-radius:calc(var(--radius) - 2px); }
+  .related-product-info { display:flex;flex-direction:column;gap:.3rem; }
+  .related-product-info strong { font-size:.85rem;color:var(--foreground);line-height:1.3; }
+  @media(max-width:640px) { .related-products-grid { grid-template-columns:1fr 1fr; } }
 </style>
 
 </BaseLayout>
