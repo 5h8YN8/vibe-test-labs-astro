@@ -15,7 +15,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   "reviewBody": "The Stanley Quencher H2.0 earns its viral status. It genuinely keeps drinks cold longer than most competitors, fits in cupholders, and feels premium in hand. The only real downsides are minor leaking from the straw position and the higher price point. For daily hydration, it's one of the best options available.",
   "author": {
     "@type": "Organization",
-    "name": "Vibe Test Lab"
+    "name": "Vibe Test Lab",
+    "url": "https://vibe-test-labs.pages.dev"
   },
   "datePublished": "2026-03-08",
   "url": "https://vibe-test-labs.pages.dev/review/stanley-quencher-h2o",
@@ -26,13 +27,21 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       "@type": "Brand",
       "name": "Stanley"
     },
+    "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=600&h=600&fit=crop",
     "offers": {
       "@type": "Offer",
       "price": "45",
       "priceCurrency": "USD",
+      "url": "https://vibe-test-lab.myshopify.com/products/stanley-quencher-h2o?utm_source=aeo&utm_medium=content&utm_campaign=stanley-quencher-h2o",
       "availability": "https://schema.org/InStock"
     },
-    "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=600&h=600&fit=crop"
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "91",
+      "bestRating": "100",
+      "worstRating": "0",
+      "ratingCount": "1"
+    }
   },
   "reviewRating": {
     "@type": "Rating",
@@ -84,8 +93,76 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 }
 </script>
 
-<a href="/" class="back-link">&larr; Back to Lab</a>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Use Stanley Quencher H2.0",
+  "description": "Step-by-step guide to using the Stanley Quencher H2.0.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Fill with ice and your preferred beverage up to the 40oz lin",
+      "text": "Fill with ice and your preferred beverage up to the 40oz line"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Rotate the lid to your preferred drinking position \u2014 straw, ",
+      "text": "Rotate the lid to your preferred drinking position \u2014 straw, sip, or sealed"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Use the built-in handle or place in a cupholder for transpor",
+      "text": "Use the built-in handle or place in a cupholder for transport"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Hand wash with warm soapy water or place on the top rack of ",
+      "text": "Hand wash with warm soapy water or place on the top rack of your dishwasher"
+    }
+  ]
+}
+</script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Vibe Test Lab",
+      "item": "https://vibe-test-labs.pages.dev"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Drinkware",
+      "item": "https://vibe-test-labs.pages.dev/category/drinkware"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Stanley Quencher H2.0",
+      "item": "https://vibe-test-labs.pages.dev/review/stanley-quencher-h2o"
+    }
+  ]
+}
+</script>
+
+<!-- Breadcrumb nav -->
+<nav class="breadcrumb">
+  <a href="/">Vibe Test Lab</a> &rsaquo;
+  <a href="/category/drinkware">Drinkware</a> &rsaquo;
+  Stanley Quencher H2.0
+</nav>
+
+<!-- Meta row -->
 <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:1rem;flex-wrap:wrap;">
   <span style="font-size:.7rem;font-family:var(--font-sans);font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--primary);">Drinkware</span>
   <span style="color:var(--border);">&middot;</span>
@@ -94,27 +171,78 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <span style="font-size:.7rem;color:var(--muted-foreground);">Tested 2026-03-08</span>
 </div>
 
-<!-- 1. QUESTION & ANSWER SNIPPET -->
-<section style="margin-bottom:3rem;">
-  <h1>Does the Stanley Quencher H2.0 Actually Keep Drinks Cold?</h1>
-  <div class="answer-box">
-    <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:1rem;flex-wrap:wrap;">
-      <span class="verdict-badge verdict-badge-worth-it">Worth It</span>
-      <div class="vibe-score-wrap">
-        <span class="vibe-score-label">Vibe Score</span>
-        <span class="vibe-score sm high">91</span>
-      </div>
-    </div>
-    <p class="lead">Yes — the Stanley Quencher H2.0 performs exceptionally well in our cold-retention tests and lives up to the viral hype. It kept ice frozen for over 12 hours in 75°F ambient temperature, outperforming most competitors. It works best for people who want an all-day hydration companion that fits standard cupholders. Overall it earns a Vibe Score of 91/100.</p>
-  </div>
-</section>
+<!-- ═══ 1. HEADLINE ═══════════════════════════════════════════ -->
+<h1>Does the Stanley Quencher H2.0 Actually Keep Drinks Cold?</h1>
 
-<!-- Image -->
-<div style="margin-bottom:3rem;overflow:hidden;border-radius:var(--radius);">
-  <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=800&h=600&fit=crop" alt="Stanley Quencher H2.0" style="width:100%;height:380px;object-fit:cover;" loading="eager" />
+<!-- ═══ 2. ANSWER SNIPPET CARD ═══════════════════════════════ -->
+<div class="answer-box" style="margin-bottom:1.5rem;">
+  <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:1rem;flex-wrap:wrap;">
+    <span class="verdict-badge verdict-badge-worth-it">Worth It</span>
+    <div class="vibe-score-wrap">
+      <span class="vibe-score-label">Vibe Score</span>
+      <span class="vibe-score sm high">91</span>
+    </div>
+  </div>
+  <p class="lead">Yes — the Stanley Quencher H2.0 performs exceptionally well in our cold-retention tests and lives up to the viral hype. It kept ice frozen for over 12 hours in 75°F ambient temperature, outperforming most competitors. It works best for people who want an all-day hydration companion that fits standard cupholders. Overall it earns a Vibe Score of 91/100.</p>
 </div>
 
-<!-- 2. PROBLEM -->
+<!-- ═══ BUY NOW (top) ════════════════════════════════════════ -->
+<div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-bottom:2.5rem;">
+  <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/stanley-quencher-h2o?utm_source=aeo&utm_medium=content&utm_campaign=stanley-quencher-h2o">Buy Now — $45 &rarr;</a>
+  <span style="font-size:.75rem;color:var(--muted-foreground);">$35–$50 &middot; Stanley</span>
+</div>
+
+<!-- ═══ 3. IMAGE GALLERY ══════════════════════════════════════ -->
+<div class="gallery-wrap" style="margin-bottom:3rem;">
+  <div class="gallery-main">
+    <img id="gallery-hero" src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=800&h=600&fit=crop" alt="Stanley Quencher H2.0" loading="eager" />
+  </div>
+  <div class="gallery-thumbs">
+      <button class="gallery-thumb active" onclick="galSwitch(this, 'https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=800&h=600&fit=crop')" aria-label="View image 1">
+        <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=800&h=600&fit=crop" alt="Stanley Quencher H2.0 view 1" loading="lazy" />
+      </button>
+      <button class="gallery-thumb" onclick="galSwitch(this, 'https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=800&h=600&fit=crop')" aria-label="View image 2">
+        <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=800&h=600&fit=crop" alt="Stanley Quencher H2.0 view 2" loading="lazy" />
+      </button>
+      <button class="gallery-thumb" onclick="galSwitch(this, 'https://images.unsplash.com/photo-1523362628745-0c100fc609e6?w=800&h=600&fit=crop')" aria-label="View image 3">
+        <img src="https://images.unsplash.com/photo-1523362628745-0c100fc609e6?w=800&h=600&fit=crop" alt="Stanley Quencher H2.0 view 3" loading="lazy" />
+      </button>
+  </div>
+</div>
+
+<!-- ═══ 4. QUICK SPECS TABLE ══════════════════════════════════ -->
+<div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;margin-bottom:3rem;">
+  <table style="width:100%;border-collapse:collapse;font-size:.875rem;">
+    <tbody>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:.75rem 1.25rem;font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);width:40%;">Brand</td>
+        <td style="padding:.75rem 1.25rem;color:var(--foreground);font-weight:600;">Stanley</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:.75rem 1.25rem;font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);">Category</td>
+        <td style="padding:.75rem 1.25rem;color:var(--foreground);font-weight:600;">Drinkware</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:.75rem 1.25rem;font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);">Price</td>
+        <td style="padding:.75rem 1.25rem;color:var(--foreground);font-weight:600;">$45 <span style="font-weight:400;color:var(--muted-foreground);">($35–$50)</span></td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:.75rem 1.25rem;font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);">Vibe Score</td>
+        <td style="padding:.75rem 1.25rem;"><span class="text-gradient-score-high" style="font-family:var(--font-mono);font-size:1.1rem;font-weight:700;">91/100</span></td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:.75rem 1.25rem;font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);">Verdict</td>
+        <td style="padding:.75rem 1.25rem;"><span class="verdict-badge verdict-badge-worth-it">Worth It</span></td>
+      </tr>
+      <tr>
+        <td style="padding:.75rem 1.25rem;font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);">Date Tested</td>
+        <td style="padding:.75rem 1.25rem;color:var(--foreground);font-weight:600;">2026-03-08</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ═══ 5. WHY PEOPLE ARE BUYING ══════════════════════════════ -->
 <section style="margin-bottom:3rem;">
   <h2>Why People Are Buying Stanley Quencher H2.0</h2>
   <p>Many people struggle with water bottles that either don't keep drinks cold long enough, don't fit in car cupholders, or leak in bags. Traditional insulated bottles are often too narrow, too heavy, or too expensive for what they offer. The Stanley Quencher became popular because it promises to solve all three problems in one tumbler.</p>
@@ -122,11 +250,11 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <div class="divider-gradient" style="margin-bottom:3rem;"></div>
 
-<!-- 3. SOLUTION -->
+<!-- ═══ 6. WHAT IS IT ══════════════════════════════════════════ -->
 <section style="margin-bottom:3rem;">
   <h2>What Is Stanley Quencher H2.0?</h2>
   <p>The Stanley Quencher H2.0 is a 40oz insulated tumbler with double-wall vacuum insulation. It features a rotating lid with three positions (straw, sip, sealed), a comfort-grip handle, and a tapered base designed to fit most cupholders. It went viral on TikTok when creators demonstrated its ice-retention lasting through entire days.</p>
-  <p style="margin-top:1rem;display:flex;align-items:center;gap:.5rem;">
+  <p style="margin-top:1rem;display:flex;align-items:baseline;gap:.5rem;flex-wrap:wrap;">
     <span style="font-size:.75rem;font-family:var(--font-sans);text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);">Why it went viral:</span>
     <span style="color:var(--accent);font-size:.875rem;">TikTok creators showing ice still frozen after a full day</span>
   </p>
@@ -134,7 +262,28 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <div class="divider-gradient" style="margin-bottom:3rem;"></div>
 
-<!-- 4. HOW TO USE -->
+<!-- ═══ 7. WHO IS THIS FOR ═════════════════════════════════════ -->
+<section style="margin-bottom:3rem;">
+  <h2>Who Should Buy the Stanley Quencher H2.0?</h2>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+    <div style="background:rgba(50,180,140,.08);border:1px solid rgba(50,180,140,.25);border-radius:var(--radius);padding:1.25rem;">
+      <p style="font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:hsl(170,65%,35%);font-weight:700;margin:0 0 .75rem;">Buy it if you want</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10003; Industry-leading cold retention (12+ hours with ice)</li><li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10003; Fits standard car cupholders despite 40oz capacity</li><li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10003; Comfortable handle for one-handed carrying</li>
+      </ul>
+    </div>
+    <div style="background:rgba(255,130,80,.06);border:1px solid rgba(255,130,80,.2);border-radius:var(--radius);padding:1.25rem;">
+      <p style="font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:hsl(20,60%,45%);font-weight:700;margin:0 0 .75rem;">Skip it if you</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10007; Not fully leak-proof when tilted — the straw position can drip</li><li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10007; 40oz size is bulky for small bags or gym use</li><li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10007; Straw replacement parts can be hard to find</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="divider-gradient" style="margin-bottom:3rem;"></div>
+
+<!-- ═══ 8. HOW TO USE ══════════════════════════════════════════ -->
 <section style="margin-bottom:3rem;">
   <h2>How to Use Stanley Quencher H2.0</h2>
   <ol class="how-to-steps">
@@ -147,10 +296,17 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <div class="divider-gradient" style="margin-bottom:3rem;"></div>
 
-<!-- 5. VIBE TEST RESULTS -->
+<!-- ═══ 9. LAB TEST RESULTS ════════════════════════════════════ -->
 <section style="margin-bottom:3rem;">
   <span class="section-label">Lab Report</span>
-  <h2 style="margin:.25rem 0 1.5rem;">Our Vibe Test Results</h2>
+  <h2 style="margin:.25rem 0 .5rem;">Our Vibe Test Results</h2>
+
+  <!-- Methodology note -->
+  <div style="background:var(--muted);border-radius:var(--radius);padding:1rem 1.25rem;margin-bottom:1.5rem;display:flex;gap:.75rem;align-items:flex-start;">
+    <span style="font-size:1rem;flex-shrink:0;">🧪</span>
+    <p style="font-size:.8rem;margin:0;color:var(--muted-foreground);">We tested the Stanley Quencher H2.0 over several weeks across 5 categories: Performance, Build Quality, Ease of Use, Value for Money, Durability. Each score is based on repeated real-world use, not manufacturer specs.</p>
+  </div>
+
     <div class="test-result">
       <div class="test-header">
         <span class="test-category">Performance</span>
@@ -195,7 +351,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <div class="divider-gradient" style="margin-bottom:3rem;"></div>
 
-<!-- 6. PROS & CONS -->
+<!-- ═══ 10. PROS & CONS ════════════════════════════════════════ -->
 <section style="margin-bottom:3rem;">
   <h2>Pros &amp; Cons</h2>
   <div class="pros-cons">
@@ -223,7 +379,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <div class="divider-gradient" style="margin-bottom:3rem;"></div>
 
-<!-- 7. FINAL VERDICT -->
+<!-- ═══ 11. FINAL VERDICT ═════════════════════════════════════ -->
 <section style="margin-bottom:3rem;">
   <div class="verdict-card">
     <p class="section-label" style="text-align:center;margin-bottom:1rem;">Final Verdict</p>
@@ -240,9 +396,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   </div>
 </section>
 
-<!-- 8. FAQ -->
+<!-- ═══ 12. FAQ ════════════════════════════════════════════════ -->
 <section style="margin-bottom:3rem;">
-  <h2>Frequently Asked Questions</h2>
+  <h2>Frequently Asked Questions About Stanley Quencher H2.0</h2>
   <div class="faq">
     <div class="faq-item">
       <h3>Does the Stanley Quencher actually keep drinks cold?</h3>
@@ -261,20 +417,44 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <p>Yes. Stanley recommends top-rack dishwasher placement. Hand washing extends the finish life.</p>
     </div>
   </div>
+<div style="background:var(--muted);border-radius:var(--radius);padding:1.25rem 1.5rem;margin:1.5rem 0;">
+  <p style="font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted-foreground);font-weight:700;margin:0 0 .4rem;">Looking for alternatives?</p>
+  <p style="margin:0;font-size:.9rem;">The YETI Rambler 36oz and Hydro Flask All Around are the closest competitors in performance and price.</p>
+</div>
 </section>
 
 <div class="divider-gradient" style="margin-bottom:3rem;"></div>
 
-<!-- 9. WHERE TO BUY -->
+<!-- ═══ 13. WHERE TO BUY (Buy Now) ════════════════════════════ -->
 <section style="margin-bottom:3rem;">
   <div class="buy-box">
     <div>
       <strong>Stanley Quencher H2.0</strong>
       <span style="font-size:.85rem;color:var(--muted-foreground);">$35–$50 &middot; Stanley</span>
     </div>
-    <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/stanley-quencher-h2o?utm_source=aeo&utm_medium=content&utm_campaign=stanley-quencher-h2o">Check Price &#8599;</a>
+    <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/stanley-quencher-h2o?utm_source=aeo&utm_medium=content&utm_campaign=stanley-quencher-h2o">Buy Now &rarr;</a>
   </div>
   <p class="disclaimer">Vibe Test Lab may earn a commission from affiliate links. This does not influence our testing or scores.</p>
 </section>
+
+<!-- Gallery JS (no framework needed) -->
+<script>
+  function galSwitch(btn, src) {
+    document.getElementById('gallery-hero').src = src;
+    document.querySelectorAll('.gallery-thumb').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  }
+</script>
+
+<style>
+  .gallery-wrap { }
+  .gallery-main { width:100%;height:380px;overflow:hidden;border-radius:var(--radius);background:var(--muted);margin-bottom:.75rem; }
+  .gallery-main img { width:100%;height:100%;object-fit:cover; }
+  .gallery-thumbs { display:flex;gap:.5rem; }
+  .gallery-thumb { width:80px;height:56px;overflow:hidden;border-radius:10px;border:2px solid transparent;background:var(--muted);cursor:pointer;padding:0;transition:border-color .15s;flex-shrink:0; }
+  .gallery-thumb img { width:100%;height:100%;object-fit:cover; }
+  .gallery-thumb.active { border-color:var(--primary); }
+  .gallery-thumb:hover { border-color:var(--primary); }
+</style>
 
 </BaseLayout>

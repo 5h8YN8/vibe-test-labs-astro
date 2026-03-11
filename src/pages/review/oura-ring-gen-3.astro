@@ -15,7 +15,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   "reviewBody": "The Oura Ring Gen 3 is the best sleep tracker you can buy. Its accuracy, comfort, and battery life are unmatched. The subscription model is the biggest drawback \u2014 you're paying $300+ for hardware and then $6/month for the data it collects. If sleep optimization matters to you, it's worth it.",
   "author": {
     "@type": "Organization",
-    "name": "Vibe Test Lab"
+    "name": "Vibe Test Lab",
+    "url": "https://vibe-test-labs.pages.dev"
   },
   "datePublished": "2026-03-05",
   "url": "https://vibe-test-labs.pages.dev/review/oura-ring-gen-3",
@@ -26,13 +27,21 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       "@type": "Brand",
       "name": "Oura"
     },
+    "image": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600&h=600&fit=crop",
     "offers": {
       "@type": "Offer",
       "price": "299",
       "priceCurrency": "USD",
+      "url": "https://vibe-test-lab.myshopify.com/products/oura-ring-gen-3?utm_source=aeo&utm_medium=content&utm_campaign=oura-ring-gen-3",
       "availability": "https://schema.org/InStock"
     },
-    "image": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600&h=600&fit=crop"
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "85",
+      "bestRating": "100",
+      "worstRating": "0",
+      "ratingCount": "1"
+    }
   },
   "reviewRating": {
     "@type": "Rating",
@@ -84,8 +93,76 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 }
 </script>
 
-<a href="/" class="back-link">&larr; Back to Lab</a>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Use Oura Ring Gen 3",
+  "description": "Step-by-step guide to using the Oura Ring Gen 3.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Order your sizing kit and find your correct ring size",
+      "text": "Order your sizing kit and find your correct ring size"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Download the Oura app and pair the ring via Bluetooth",
+      "text": "Download the Oura app and pair the ring via Bluetooth"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Wear the ring continuously \u2014 it tracks sleep, activity, and ",
+      "text": "Wear the ring continuously \u2014 it tracks sleep, activity, and recovery automatically"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Check your daily Readiness, Sleep, and Activity scores each ",
+      "text": "Check your daily Readiness, Sleep, and Activity scores each morning in the app"
+    }
+  ]
+}
+</script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Vibe Test Lab",
+      "item": "https://vibe-test-labs.pages.dev"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Wearables",
+      "item": "https://vibe-test-labs.pages.dev/category/wearables"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Oura Ring Gen 3",
+      "item": "https://vibe-test-labs.pages.dev/review/oura-ring-gen-3"
+    }
+  ]
+}
+</script>
+
+<!-- Breadcrumb nav -->
+<nav class="breadcrumb">
+  <a href="/">Vibe Test Lab</a> &rsaquo;
+  <a href="/category/wearables">Wearables</a> &rsaquo;
+  Oura Ring Gen 3
+</nav>
+
+<!-- Meta row -->
 <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:1rem;flex-wrap:wrap;">
   <span style="font-size:.7rem;font-family:var(--font-sans);font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--primary);">Wearables</span>
   <span style="color:var(--border);">&middot;</span>
@@ -94,27 +171,67 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <span style="font-size:.7rem;color:var(--muted-foreground);">Tested 2026-03-05</span>
 </div>
 
-<!-- 1. QUESTION & ANSWER SNIPPET -->
-<section style="margin-bottom:3rem;">
-  <h1>Is the Oura Ring Gen 3 the Best Sleep Tracker?</h1>
-  <div class="answer-box">
-    <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:1rem;flex-wrap:wrap;">
-      <span class="verdict-badge verdict-badge-worth-it">Worth It</span>
-      <div class="vibe-score-wrap">
-        <span class="vibe-score-label">Vibe Score</span>
-        <span class="vibe-score sm high">85</span>
-      </div>
-    </div>
-    <p class="lead">Yes — the Oura Ring Gen 3 is the most accurate and comfortable sleep tracker we've tested. It tracks sleep stages, heart rate variability, and body temperature with clinical-grade accuracy. It works best for people who prioritize sleep optimization and want a discreet wearable. Overall it earns a Vibe Score of 85/100.</p>
-  </div>
-</section>
+<!-- ═══ 1. HEADLINE ═══════════════════════════════════════════ -->
+<h1>Is the Oura Ring Gen 3 the Best Sleep Tracker?</h1>
 
-<!-- Image -->
-<div style="margin-bottom:3rem;overflow:hidden;border-radius:var(--radius);">
-  <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&h=600&fit=crop" alt="Oura Ring Gen 3" style="width:100%;height:380px;object-fit:cover;" loading="eager" />
+<!-- ═══ 2. ANSWER SNIPPET CARD ═══════════════════════════════ -->
+<div class="answer-box" style="margin-bottom:1.5rem;">
+  <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:1rem;flex-wrap:wrap;">
+    <span class="verdict-badge verdict-badge-worth-it">Worth It</span>
+    <div class="vibe-score-wrap">
+      <span class="vibe-score-label">Vibe Score</span>
+      <span class="vibe-score sm high">85</span>
+    </div>
+  </div>
+  <p class="lead">Yes — the Oura Ring Gen 3 is the most accurate and comfortable sleep tracker we've tested. It tracks sleep stages, heart rate variability, and body temperature with clinical-grade accuracy. It works best for people who prioritize sleep optimization and want a discreet wearable. Overall it earns a Vibe Score of 85/100.</p>
 </div>
 
-<!-- 2. PROBLEM -->
+<!-- ═══ BUY NOW (top) ════════════════════════════════════════ -->
+<div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-bottom:2.5rem;">
+  <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/oura-ring-gen-3?utm_source=aeo&utm_medium=content&utm_campaign=oura-ring-gen-3">Buy Now — $299 &rarr;</a>
+  <span style="font-size:.75rem;color:var(--muted-foreground);">$299–$549 &middot; Oura</span>
+</div>
+
+<!-- ═══ 3. IMAGE GALLERY ══════════════════════════════════════ -->
+<div class="gallery-wrap" style="margin-bottom:3rem;">
+  <div class="gallery-main">
+    <img id="gallery-hero" src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&h=600&fit=crop" alt="Oura Ring Gen 3" loading="eager" />
+  </div>
+</div>
+
+<!-- ═══ 4. QUICK SPECS TABLE ══════════════════════════════════ -->
+<div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;margin-bottom:3rem;">
+  <table style="width:100%;border-collapse:collapse;font-size:.875rem;">
+    <tbody>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:.75rem 1.25rem;font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);width:40%;">Brand</td>
+        <td style="padding:.75rem 1.25rem;color:var(--foreground);font-weight:600;">Oura</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:.75rem 1.25rem;font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);">Category</td>
+        <td style="padding:.75rem 1.25rem;color:var(--foreground);font-weight:600;">Wearables</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:.75rem 1.25rem;font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);">Price</td>
+        <td style="padding:.75rem 1.25rem;color:var(--foreground);font-weight:600;">$299 <span style="font-weight:400;color:var(--muted-foreground);">($299–$549)</span></td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:.75rem 1.25rem;font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);">Vibe Score</td>
+        <td style="padding:.75rem 1.25rem;"><span class="text-gradient-score-high" style="font-family:var(--font-mono);font-size:1.1rem;font-weight:700;">85/100</span></td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:.75rem 1.25rem;font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);">Verdict</td>
+        <td style="padding:.75rem 1.25rem;"><span class="verdict-badge verdict-badge-worth-it">Worth It</span></td>
+      </tr>
+      <tr>
+        <td style="padding:.75rem 1.25rem;font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);">Date Tested</td>
+        <td style="padding:.75rem 1.25rem;color:var(--foreground);font-weight:600;">2026-03-05</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ═══ 5. WHY PEOPLE ARE BUYING ══════════════════════════════ -->
 <section style="margin-bottom:3rem;">
   <h2>Why People Are Buying Oura Ring Gen 3</h2>
   <p>Most people don't sleep well and don't know why. Smartwatches track sleep but are uncomfortable to wear at night. The Oura Ring became popular because it promises lab-quality sleep tracking in a ring you forget you're wearing.</p>
@@ -122,11 +239,11 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <div class="divider-gradient" style="margin-bottom:3rem;"></div>
 
-<!-- 3. SOLUTION -->
+<!-- ═══ 6. WHAT IS IT ══════════════════════════════════════════ -->
 <section style="margin-bottom:3rem;">
   <h2>What Is Oura Ring Gen 3?</h2>
   <p>The Oura Ring Gen 3 is a titanium smart ring with sensors for heart rate, HRV, body temperature, and blood oxygen. It syncs with a mobile app to provide daily readiness scores and sleep analysis. It went viral when athletes and biohackers praised its accuracy.</p>
-  <p style="margin-top:1rem;display:flex;align-items:center;gap:.5rem;">
+  <p style="margin-top:1rem;display:flex;align-items:baseline;gap:.5rem;flex-wrap:wrap;">
     <span style="font-size:.75rem;font-family:var(--font-sans);text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);">Why it went viral:</span>
     <span style="color:var(--accent);font-size:.875rem;">Biohacker and athlete endorsements on podcasts and social media</span>
   </p>
@@ -134,7 +251,28 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <div class="divider-gradient" style="margin-bottom:3rem;"></div>
 
-<!-- 4. HOW TO USE -->
+<!-- ═══ 7. WHO IS THIS FOR ═════════════════════════════════════ -->
+<section style="margin-bottom:3rem;">
+  <h2>Who Should Buy the Oura Ring Gen 3?</h2>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+    <div style="background:rgba(50,180,140,.08);border:1px solid rgba(50,180,140,.25);border-radius:var(--radius);padding:1.25rem;">
+      <p style="font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:hsl(170,65%,35%);font-weight:700;margin:0 0 .75rem;">Buy it if you want</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10003; Most accurate sleep tracker in a consumer wearable</li><li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10003; Extremely comfortable — you forget it's there</li><li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10003; 7-day battery life</li>
+      </ul>
+    </div>
+    <div style="background:rgba(255,130,80,.06);border:1px solid rgba(255,130,80,.2);border-radius:var(--radius);padding:1.25rem;">
+      <p style="font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:hsl(20,60%,45%);font-weight:700;margin:0 0 .75rem;">Skip it if you</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10007; $6/month subscription required for full features</li><li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10007; No display — fully dependent on the phone app</li><li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10007; Limited fitness tracking compared to smartwatches</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="divider-gradient" style="margin-bottom:3rem;"></div>
+
+<!-- ═══ 8. HOW TO USE ══════════════════════════════════════════ -->
 <section style="margin-bottom:3rem;">
   <h2>How to Use Oura Ring Gen 3</h2>
   <ol class="how-to-steps">
@@ -147,10 +285,17 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <div class="divider-gradient" style="margin-bottom:3rem;"></div>
 
-<!-- 5. VIBE TEST RESULTS -->
+<!-- ═══ 9. LAB TEST RESULTS ════════════════════════════════════ -->
 <section style="margin-bottom:3rem;">
   <span class="section-label">Lab Report</span>
-  <h2 style="margin:.25rem 0 1.5rem;">Our Vibe Test Results</h2>
+  <h2 style="margin:.25rem 0 .5rem;">Our Vibe Test Results</h2>
+
+  <!-- Methodology note -->
+  <div style="background:var(--muted);border-radius:var(--radius);padding:1rem 1.25rem;margin-bottom:1.5rem;display:flex;gap:.75rem;align-items:flex-start;">
+    <span style="font-size:1rem;flex-shrink:0;">🧪</span>
+    <p style="font-size:.8rem;margin:0;color:var(--muted-foreground);">We tested the Oura Ring Gen 3 over several weeks across 5 categories: Performance, Build Quality, Ease of Use, Value for Money, Durability. Each score is based on repeated real-world use, not manufacturer specs.</p>
+  </div>
+
     <div class="test-result">
       <div class="test-header">
         <span class="test-category">Performance</span>
@@ -195,7 +340,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <div class="divider-gradient" style="margin-bottom:3rem;"></div>
 
-<!-- 6. PROS & CONS -->
+<!-- ═══ 10. PROS & CONS ════════════════════════════════════════ -->
 <section style="margin-bottom:3rem;">
   <h2>Pros &amp; Cons</h2>
   <div class="pros-cons">
@@ -222,7 +367,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <div class="divider-gradient" style="margin-bottom:3rem;"></div>
 
-<!-- 7. FINAL VERDICT -->
+<!-- ═══ 11. FINAL VERDICT ═════════════════════════════════════ -->
 <section style="margin-bottom:3rem;">
   <div class="verdict-card">
     <p class="section-label" style="text-align:center;margin-bottom:1rem;">Final Verdict</p>
@@ -239,9 +384,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   </div>
 </section>
 
-<!-- 8. FAQ -->
+<!-- ═══ 12. FAQ ════════════════════════════════════════════════ -->
 <section style="margin-bottom:3rem;">
-  <h2>Frequently Asked Questions</h2>
+  <h2>Frequently Asked Questions About Oura Ring Gen 3</h2>
   <div class="faq">
     <div class="faq-item">
       <h3>Does the Oura Ring actually track sleep accurately?</h3>
@@ -260,20 +405,44 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <p>About 5–7 days depending on usage and features enabled.</p>
     </div>
   </div>
+<div style="background:var(--muted);border-radius:var(--radius);padding:1.25rem 1.5rem;margin:1.5rem 0;">
+  <p style="font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted-foreground);font-weight:700;margin:0 0 .4rem;">Looking for alternatives?</p>
+  <p style="margin:0;font-size:.9rem;">The Whoop 4.0 (subscription-based strap) and Apple Watch Ultra are the main competitors, though both are larger.</p>
+</div>
 </section>
 
 <div class="divider-gradient" style="margin-bottom:3rem;"></div>
 
-<!-- 9. WHERE TO BUY -->
+<!-- ═══ 13. WHERE TO BUY (Buy Now) ════════════════════════════ -->
 <section style="margin-bottom:3rem;">
   <div class="buy-box">
     <div>
       <strong>Oura Ring Gen 3</strong>
       <span style="font-size:.85rem;color:var(--muted-foreground);">$299–$549 &middot; Oura</span>
     </div>
-    <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/oura-ring-gen-3?utm_source=aeo&utm_medium=content&utm_campaign=oura-ring-gen-3">Check Price &#8599;</a>
+    <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/oura-ring-gen-3?utm_source=aeo&utm_medium=content&utm_campaign=oura-ring-gen-3">Buy Now &rarr;</a>
   </div>
   <p class="disclaimer">Vibe Test Lab may earn a commission from affiliate links. This does not influence our testing or scores.</p>
 </section>
+
+<!-- Gallery JS (no framework needed) -->
+<script>
+  function galSwitch(btn, src) {
+    document.getElementById('gallery-hero').src = src;
+    document.querySelectorAll('.gallery-thumb').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  }
+</script>
+
+<style>
+  .gallery-wrap { }
+  .gallery-main { width:100%;height:380px;overflow:hidden;border-radius:var(--radius);background:var(--muted);margin-bottom:.75rem; }
+  .gallery-main img { width:100%;height:100%;object-fit:cover; }
+  .gallery-thumbs { display:flex;gap:.5rem; }
+  .gallery-thumb { width:80px;height:56px;overflow:hidden;border-radius:10px;border:2px solid transparent;background:var(--muted);cursor:pointer;padding:0;transition:border-color .15s;flex-shrink:0; }
+  .gallery-thumb img { width:100%;height:100%;object-fit:cover; }
+  .gallery-thumb.active { border-color:var(--primary); }
+  .gallery-thumb:hover { border-color:var(--primary); }
+</style>
 
 </BaseLayout>

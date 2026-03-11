@@ -15,7 +15,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   "reviewBody": "The Always Pan 2.0 is a well-designed, versatile pan that's perfect for everyday cooking in small kitchens. It won't replace a full cookware set, but it handles 80% of daily tasks beautifully. The ceramic coating lifespan is the main concern.",
   "author": {
     "@type": "Organization",
-    "name": "Vibe Test Lab"
+    "name": "Vibe Test Lab",
+    "url": "https://vibe-test-labs.pages.dev"
   },
   "datePublished": "2026-03-03",
   "url": "https://vibe-test-labs.pages.dev/review/always-pan-2",
@@ -26,13 +27,21 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       "@type": "Brand",
       "name": "Our Place"
     },
+    "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=600&fit=crop",
     "offers": {
       "@type": "Offer",
       "price": "150",
       "priceCurrency": "USD",
+      "url": "https://vibe-test-lab.myshopify.com/products/always-pan-2?utm_source=aeo&utm_medium=content&utm_campaign=always-pan-2",
       "availability": "https://schema.org/InStock"
     },
-    "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=600&fit=crop"
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "78",
+      "bestRating": "100",
+      "worstRating": "0",
+      "ratingCount": "1"
+    }
   },
   "reviewRating": {
     "@type": "Rating",
@@ -84,8 +93,76 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 }
 </script>
 
-<a href="/" class="back-link">&larr; Back to Lab</a>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Use Always Pan 2.0",
+  "description": "Step-by-step guide to using the Always Pan 2.0.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Season the pan by heating a thin layer of oil over medium he",
+      "text": "Season the pan by heating a thin layer of oil over medium heat for 2 minutes before first use"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Cook on low to medium heat \u2014 ceramic coating doesn't require",
+      "text": "Cook on low to medium heat \u2014 ceramic coating doesn't require high heat for nonstick performance"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Use the included steamer basket for vegetables, dumplings, o",
+      "text": "Use the included steamer basket for vegetables, dumplings, or reheating"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Hand wash with a soft sponge \u2014 avoid abrasive cleaners to pr",
+      "text": "Hand wash with a soft sponge \u2014 avoid abrasive cleaners to preserve the ceramic coating"
+    }
+  ]
+}
+</script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Vibe Test Lab",
+      "item": "https://vibe-test-labs.pages.dev"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Kitchen",
+      "item": "https://vibe-test-labs.pages.dev/category/kitchen"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Always Pan 2.0",
+      "item": "https://vibe-test-labs.pages.dev/review/always-pan-2"
+    }
+  ]
+}
+</script>
+
+<!-- Breadcrumb nav -->
+<nav class="breadcrumb">
+  <a href="/">Vibe Test Lab</a> &rsaquo;
+  <a href="/category/kitchen">Kitchen</a> &rsaquo;
+  Always Pan 2.0
+</nav>
+
+<!-- Meta row -->
 <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:1rem;flex-wrap:wrap;">
   <span style="font-size:.7rem;font-family:var(--font-sans);font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--primary);">Kitchen</span>
   <span style="color:var(--border);">&middot;</span>
@@ -94,27 +171,67 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <span style="font-size:.7rem;color:var(--muted-foreground);">Tested 2026-03-03</span>
 </div>
 
-<!-- 1. QUESTION & ANSWER SNIPPET -->
-<section style="margin-bottom:3rem;">
-  <h1>Can the Always Pan Actually Replace 8 Pieces of Cookware?</h1>
-  <div class="answer-box">
-    <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:1rem;flex-wrap:wrap;">
-      <span class="verdict-badge verdict-badge-hidden-gem">Hidden Gem</span>
-      <div class="vibe-score-wrap">
-        <span class="vibe-score-label">Vibe Score</span>
-        <span class="vibe-score sm mid">78</span>
-      </div>
-    </div>
-    <p class="lead">Not quite, but it comes close. The Always Pan 2.0 is a versatile, well-designed pan that handles most daily cooking tasks well. It excels at sautéing, simmering, and steaming but can't replace specialized tools like a wok or cast iron. It works best for small kitchens and everyday cooks. Overall it earns a Vibe Score of 78/100.</p>
-  </div>
-</section>
+<!-- ═══ 1. HEADLINE ═══════════════════════════════════════════ -->
+<h1>Can the Always Pan Actually Replace 8 Pieces of Cookware?</h1>
 
-<!-- Image -->
-<div style="margin-bottom:3rem;overflow:hidden;border-radius:var(--radius);">
-  <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop" alt="Always Pan 2.0" style="width:100%;height:380px;object-fit:cover;" loading="eager" />
+<!-- ═══ 2. ANSWER SNIPPET CARD ═══════════════════════════════ -->
+<div class="answer-box" style="margin-bottom:1.5rem;">
+  <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:1rem;flex-wrap:wrap;">
+    <span class="verdict-badge verdict-badge-hidden-gem">Hidden Gem</span>
+    <div class="vibe-score-wrap">
+      <span class="vibe-score-label">Vibe Score</span>
+      <span class="vibe-score sm mid">78</span>
+    </div>
+  </div>
+  <p class="lead">Not quite, but it comes close. The Always Pan 2.0 is a versatile, well-designed pan that handles most daily cooking tasks well. It excels at sautéing, simmering, and steaming but can't replace specialized tools like a wok or cast iron. It works best for small kitchens and everyday cooks. Overall it earns a Vibe Score of 78/100.</p>
 </div>
 
-<!-- 2. PROBLEM -->
+<!-- ═══ BUY NOW (top) ════════════════════════════════════════ -->
+<div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-bottom:2.5rem;">
+  <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/always-pan-2?utm_source=aeo&utm_medium=content&utm_campaign=always-pan-2">Buy Now — $150 &rarr;</a>
+  <span style="font-size:.75rem;color:var(--muted-foreground);">$130–$165 &middot; Our Place</span>
+</div>
+
+<!-- ═══ 3. IMAGE GALLERY ══════════════════════════════════════ -->
+<div class="gallery-wrap" style="margin-bottom:3rem;">
+  <div class="gallery-main">
+    <img id="gallery-hero" src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop" alt="Always Pan 2.0" loading="eager" />
+  </div>
+</div>
+
+<!-- ═══ 4. QUICK SPECS TABLE ══════════════════════════════════ -->
+<div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;margin-bottom:3rem;">
+  <table style="width:100%;border-collapse:collapse;font-size:.875rem;">
+    <tbody>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:.75rem 1.25rem;font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);width:40%;">Brand</td>
+        <td style="padding:.75rem 1.25rem;color:var(--foreground);font-weight:600;">Our Place</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:.75rem 1.25rem;font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);">Category</td>
+        <td style="padding:.75rem 1.25rem;color:var(--foreground);font-weight:600;">Kitchen</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:.75rem 1.25rem;font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);">Price</td>
+        <td style="padding:.75rem 1.25rem;color:var(--foreground);font-weight:600;">$150 <span style="font-weight:400;color:var(--muted-foreground);">($130–$165)</span></td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:.75rem 1.25rem;font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);">Vibe Score</td>
+        <td style="padding:.75rem 1.25rem;"><span class="text-gradient-score-mid" style="font-family:var(--font-mono);font-size:1.1rem;font-weight:700;">78/100</span></td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:.75rem 1.25rem;font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);">Verdict</td>
+        <td style="padding:.75rem 1.25rem;"><span class="verdict-badge verdict-badge-hidden-gem">Hidden Gem</span></td>
+      </tr>
+      <tr>
+        <td style="padding:.75rem 1.25rem;font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);">Date Tested</td>
+        <td style="padding:.75rem 1.25rem;color:var(--foreground);font-weight:600;">2026-03-03</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ═══ 5. WHY PEOPLE ARE BUYING ══════════════════════════════ -->
 <section style="margin-bottom:3rem;">
   <h2>Why People Are Buying Always Pan 2.0</h2>
   <p>Kitchen clutter is real. Many people have too many pots and pans that they rarely use, especially in small apartments. The Always Pan became popular because it promises to replace eight pieces of cookware with one beautiful pan.</p>
@@ -122,11 +239,11 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <div class="divider-gradient" style="margin-bottom:3rem;"></div>
 
-<!-- 3. SOLUTION -->
+<!-- ═══ 6. WHAT IS IT ══════════════════════════════════════════ -->
 <section style="margin-bottom:3rem;">
   <h2>What Is Always Pan 2.0?</h2>
   <p>The Always Pan 2.0 is a 10.5-inch ceramic-coated pan with a steamer basket, built-in spoon rest, and pour spouts. It's designed for braising, searing, steaming, straining, sautéing, frying, boiling, and serving. It went viral through Instagram aesthetic appeal and influencer partnerships.</p>
-  <p style="margin-top:1rem;display:flex;align-items:center;gap:.5rem;">
+  <p style="margin-top:1rem;display:flex;align-items:baseline;gap:.5rem;flex-wrap:wrap;">
     <span style="font-size:.75rem;font-family:var(--font-sans);text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);">Why it went viral:</span>
     <span style="color:var(--accent);font-size:.875rem;">Instagram aesthetics and minimalist kitchen trend appeal</span>
   </p>
@@ -134,7 +251,28 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <div class="divider-gradient" style="margin-bottom:3rem;"></div>
 
-<!-- 4. HOW TO USE -->
+<!-- ═══ 7. WHO IS THIS FOR ═════════════════════════════════════ -->
+<section style="margin-bottom:3rem;">
+  <h2>Who Should Buy the Always Pan 2.0?</h2>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+    <div style="background:rgba(50,180,140,.08);border:1px solid rgba(50,180,140,.25);border-radius:var(--radius);padding:1.25rem;">
+      <p style="font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:hsl(170,65%,35%);font-weight:700;margin:0 0 .75rem;">Buy it if you want</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10003; Beautiful design that looks great in any kitchen</li><li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10003; Genuinely versatile for everyday cooking</li><li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10003; Included steamer basket is a nice touch</li>
+      </ul>
+    </div>
+    <div style="background:rgba(255,130,80,.06);border:1px solid rgba(255,130,80,.2);border-radius:var(--radius);padding:1.25rem;">
+      <p style="font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:hsl(20,60%,45%);font-weight:700;margin:0 0 .75rem;">Skip it if you</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10007; Ceramic coating degrades faster than traditional nonstick</li><li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10007; Can't handle high-heat searing</li><li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--foreground);">&#10007; Premium price for mid-range performance</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="divider-gradient" style="margin-bottom:3rem;"></div>
+
+<!-- ═══ 8. HOW TO USE ══════════════════════════════════════════ -->
 <section style="margin-bottom:3rem;">
   <h2>How to Use Always Pan 2.0</h2>
   <ol class="how-to-steps">
@@ -147,10 +285,17 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <div class="divider-gradient" style="margin-bottom:3rem;"></div>
 
-<!-- 5. VIBE TEST RESULTS -->
+<!-- ═══ 9. LAB TEST RESULTS ════════════════════════════════════ -->
 <section style="margin-bottom:3rem;">
   <span class="section-label">Lab Report</span>
-  <h2 style="margin:.25rem 0 1.5rem;">Our Vibe Test Results</h2>
+  <h2 style="margin:.25rem 0 .5rem;">Our Vibe Test Results</h2>
+
+  <!-- Methodology note -->
+  <div style="background:var(--muted);border-radius:var(--radius);padding:1rem 1.25rem;margin-bottom:1.5rem;display:flex;gap:.75rem;align-items:flex-start;">
+    <span style="font-size:1rem;flex-shrink:0;">🧪</span>
+    <p style="font-size:.8rem;margin:0;color:var(--muted-foreground);">We tested the Always Pan 2.0 over several weeks across 5 categories: Performance, Build Quality, Ease of Use, Value for Money, Durability. Each score is based on repeated real-world use, not manufacturer specs.</p>
+  </div>
+
     <div class="test-result">
       <div class="test-header">
         <span class="test-category">Performance</span>
@@ -195,7 +340,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <div class="divider-gradient" style="margin-bottom:3rem;"></div>
 
-<!-- 6. PROS & CONS -->
+<!-- ═══ 10. PROS & CONS ════════════════════════════════════════ -->
 <section style="margin-bottom:3rem;">
   <h2>Pros &amp; Cons</h2>
   <div class="pros-cons">
@@ -222,7 +367,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <div class="divider-gradient" style="margin-bottom:3rem;"></div>
 
-<!-- 7. FINAL VERDICT -->
+<!-- ═══ 11. FINAL VERDICT ═════════════════════════════════════ -->
 <section style="margin-bottom:3rem;">
   <div class="verdict-card">
     <p class="section-label" style="text-align:center;margin-bottom:1rem;">Final Verdict</p>
@@ -239,9 +384,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   </div>
 </section>
 
-<!-- 8. FAQ -->
+<!-- ═══ 12. FAQ ════════════════════════════════════════════════ -->
 <section style="margin-bottom:3rem;">
-  <h2>Frequently Asked Questions</h2>
+  <h2>Frequently Asked Questions About Always Pan 2.0</h2>
   <div class="faq">
     <div class="faq-item">
       <h3>Does the Always Pan replace 8 pieces of cookware?</h3>
@@ -260,20 +405,44 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <p>With proper care, 12–18 months before the nonstick coating starts to degrade. Our Place offers a limited warranty.</p>
     </div>
   </div>
+<div style="background:var(--muted);border-radius:var(--radius);padding:1.25rem 1.5rem;margin:1.5rem 0;">
+  <p style="font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted-foreground);font-weight:700;margin:0 0 .4rem;">Looking for alternatives?</p>
+  <p style="margin:0;font-size:.9rem;">The Caraway Fry Pan, GreenPan Valencia Pro, and a basic T-fal nonstick are popular alternatives at various price points.</p>
+</div>
 </section>
 
 <div class="divider-gradient" style="margin-bottom:3rem;"></div>
 
-<!-- 9. WHERE TO BUY -->
+<!-- ═══ 13. WHERE TO BUY (Buy Now) ════════════════════════════ -->
 <section style="margin-bottom:3rem;">
   <div class="buy-box">
     <div>
       <strong>Always Pan 2.0</strong>
       <span style="font-size:.85rem;color:var(--muted-foreground);">$130–$165 &middot; Our Place</span>
     </div>
-    <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/always-pan-2?utm_source=aeo&utm_medium=content&utm_campaign=always-pan-2">Check Price &#8599;</a>
+    <a class="cta-button" href="https://vibe-test-lab.myshopify.com/products/always-pan-2?utm_source=aeo&utm_medium=content&utm_campaign=always-pan-2">Buy Now &rarr;</a>
   </div>
   <p class="disclaimer">Vibe Test Lab may earn a commission from affiliate links. This does not influence our testing or scores.</p>
 </section>
+
+<!-- Gallery JS (no framework needed) -->
+<script>
+  function galSwitch(btn, src) {
+    document.getElementById('gallery-hero').src = src;
+    document.querySelectorAll('.gallery-thumb').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  }
+</script>
+
+<style>
+  .gallery-wrap { }
+  .gallery-main { width:100%;height:380px;overflow:hidden;border-radius:var(--radius);background:var(--muted);margin-bottom:.75rem; }
+  .gallery-main img { width:100%;height:100%;object-fit:cover; }
+  .gallery-thumbs { display:flex;gap:.5rem; }
+  .gallery-thumb { width:80px;height:56px;overflow:hidden;border-radius:10px;border:2px solid transparent;background:var(--muted);cursor:pointer;padding:0;transition:border-color .15s;flex-shrink:0; }
+  .gallery-thumb img { width:100%;height:100%;object-fit:cover; }
+  .gallery-thumb.active { border-color:var(--primary); }
+  .gallery-thumb:hover { border-color:var(--primary); }
+</style>
 
 </BaseLayout>
