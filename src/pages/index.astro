@@ -1,9 +1,10 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { products, categories } from '../data/products';
+import { articles } from '../data/articles';
 
 const siteUrl  = 'https://vibe-test-labs.pages.dev';
-const trending = products.filter(p => p.trending);
+const trendingArticles = articles.slice(0, 4);
 const topRated = [...products].sort((a, b) => b.vibeScore - a.vibeScore).slice(0, 4);
 const latest   = [...products].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 4);
 
@@ -92,31 +93,31 @@ const catColors = ['cat-a','cat-b','cat-c','cat-a','cat-b','cat-c','cat-a','cat-
     </div>
     <a href="/tests" class="section-see-all">See all tests &rarr;</a>
   </div>
-  {trending.map(product => (
+  {trendingArticles.map(article => (
     <article class="product-list-card">
       <div class="product-list-inner">
         <div class="product-list-img-wrap">
-          <img src={product.image} alt={product.name} class="product-list-img" loading="lazy" />
+          <img src={article.image} alt={article.question} class="product-list-img" loading="lazy" />
         </div>
         <div class="product-list-body">
           <div>
             <div class="product-list-meta">
-              <span class="product-list-category">{product.category}</span>
+              <span class="product-list-category">{article.category}</span>
               <span class="product-list-dot">&middot;</span>
-              <span class="product-list-date">{product.date}</span>
+              <span class="product-list-date">{article.date}</span>
+              <span class="product-list-dot">&middot;</span>
+              <span class="product-list-date">{article.readTime}</span>
             </div>
-            <a href={`/review/${product.slug}`} class="product-list-name">{product.name}</a>
-            <p class="product-list-verdict">{product.verdict}</p>
+            <a href={`/tests/${article.slug}`} class="product-list-name">{article.question}</a>
+            <p class="product-list-verdict">{article.shortAnswer}</p>
           </div>
           <div class="product-list-footer">
             <div class="product-list-scores">
-              <div class="vibe-score-wrap">
-                <span class="vibe-score-label">Vibe Score</span>
-                <span class={`vibe-score sm ${scoreClass(product.vibeScore)}`}>{product.vibeScore}</span>
-              </div>
-              <span class="product-list-price">{product.price}</span>
+              <span style="font-size:.7rem;font-family:var(--font-sans);font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);">
+                {article.products.length} product{article.products.length !== 1 ? 's' : ''} tested
+              </span>
             </div>
-            <a href={`/review/${product.slug}`} class="product-list-cta">Read Review &rarr;</a>
+            <a href={`/tests/${article.slug}`} class="product-list-cta">Read Test &rarr;</a>
           </div>
         </div>
       </div>
