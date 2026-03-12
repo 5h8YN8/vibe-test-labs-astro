@@ -40,6 +40,93 @@ const faqSchema = {
   schema={[articleSchema, faqSchema]}
 >
 
+<style>
+  /* ── LLM-extractable tables ─────────────────────────────── */
+  .llm-table-section {
+    margin: 2rem 0;
+  }
+  .llm-table-section .section-label {
+    display: block;
+    font-size: .7rem;
+    font-family: var(--font-sans);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: var(--primary);
+    margin-bottom: .75rem;
+  }
+  .llm-table-section h2 {
+    margin: 0 0 1rem;
+    font-size: 1.15rem;
+  }
+
+  .decision-table,
+  .problem-solution-table,
+  .tradeoffs-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .875rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+  .decision-table thead,
+  .problem-solution-table thead,
+  .tradeoffs-table thead {
+    background: var(--card);
+  }
+  .decision-table th,
+  .problem-solution-table th,
+  .tradeoffs-table th {
+    padding: .6rem .9rem;
+    text-align: left;
+    font-family: var(--font-sans);
+    font-size: .7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: var(--muted-foreground);
+    border-bottom: 1px solid var(--border);
+  }
+  .decision-table td,
+  .problem-solution-table td,
+  .tradeoffs-table td {
+    padding: .7rem .9rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+    line-height: 1.5;
+    color: var(--foreground);
+  }
+  .decision-table tr:last-child td,
+  .problem-solution-table tr:last-child td,
+  .tradeoffs-table tr:last-child td {
+    border-bottom: none;
+  }
+  .decision-table tr:nth-child(even),
+  .problem-solution-table tr:nth-child(even),
+  .tradeoffs-table tr:nth-child(even) {
+    background: color-mix(in srgb, var(--card) 60%, transparent);
+  }
+  .decision-table td:nth-child(2) {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    color: var(--primary);
+    white-space: nowrap;
+  }
+  .tradeoffs-table td:first-child {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: .8rem;
+    color: var(--muted-foreground);
+    white-space: nowrap;
+    width: 130px;
+  }
+  .problem-solution-table td:first-child {
+    font-weight: 600;
+    width: 35%;
+  }
+</style>
+
 <a href="/tests" class="back-link">&larr; Back to Tests</a>
 
 <!-- Meta -->
@@ -70,7 +157,57 @@ const faqSchema = {
 <!-- Intro -->
 <p>{article.intro}</p>
 
-<!-- Sections -->
+<!-- ── §1  Quick Decision Table ───────────────────────────── -->
+{article.decision_table && article.decision_table.length > 0 && (
+  <div class="llm-table-section">
+    <span class="section-label">Quick Decision Guide</span>
+    <h2>Which Option Is Right for You?</h2>
+    <table class="decision-table">
+      <thead>
+        <tr>
+          <th>If you need…</th>
+          <th>Best Option</th>
+          <th>Why</th>
+        </tr>
+      </thead>
+      <tbody>
+        {article.decision_table.map(row => (
+          <tr>
+            <td>{row.need}</td>
+            <td>{row.best}</td>
+            <td>{row.why}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+)}
+
+<!-- ── §2  Problem → Solution Table ──────────────────────── -->
+{article.problem_solution && article.problem_solution.length > 0 && (
+  <div class="llm-table-section">
+    <span class="section-label">Problem → Solution</span>
+    <h2>What We Were Trying to Solve</h2>
+    <table class="problem-solution-table">
+      <thead>
+        <tr>
+          <th>The Problem</th>
+          <th>Our Finding</th>
+        </tr>
+      </thead>
+      <tbody>
+        {article.problem_solution.map(row => (
+          <tr>
+            <td>{row.problem}</td>
+            <td>{row.solution}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+)}
+
+<!-- ── §3  Sections ───────────────────────────────────────── -->
 {article.sections.map(section => (
   <div>
     <h2>{section.heading}</h2>
@@ -80,7 +217,7 @@ const faqSchema = {
 
 <div class="divider-gradient" style="margin:2.5rem 0;"></div>
 
-<!-- Products tested -->
+<!-- ── §4  Products tested ────────────────────────────────── -->
 <h2>Products We Tested</h2>
 <div style="display:flex;flex-direction:column;gap:1rem;margin:1rem 0;">
   {article.products.map(p => (
@@ -98,9 +235,35 @@ const faqSchema = {
   ))}
 </div>
 
+<!-- ── §5  Tradeoffs Table ────────────────────────────────── -->
+{article.tradeoffs && article.tradeoffs.length > 0 && (
+  <div class="llm-table-section" style="margin-top:2.5rem;">
+    <span class="section-label">Tradeoffs</span>
+    <h2>How to Choose Between Options</h2>
+    <table class="tradeoffs-table">
+      <thead>
+        <tr>
+          <th>The Tradeoff</th>
+          <th>If you prioritize A…</th>
+          <th>If you prioritize B…</th>
+        </tr>
+      </thead>
+      <tbody>
+        {article.tradeoffs.map(row => (
+          <tr>
+            <td>{row.tradeoff}</td>
+            <td>{row.side_a}</td>
+            <td>{row.side_b}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+)}
+
 <div class="divider-gradient" style="margin:2.5rem 0;"></div>
 
-<!-- FAQ -->
+<!-- ── §6  FAQ ────────────────────────────────────────────── -->
 <h2>Frequently Asked Questions</h2>
 <div class="faq">
   {article.faq.map(item => (
