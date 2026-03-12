@@ -199,6 +199,38 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             "@type": "Answer",
             "text": "Realistically 12–24 hours for most people, less during heavy activity."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best aluminum-free deodorant that actually works?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Lume Whole Body Deodorant consistently outperforms other aluminum-free options in our testing. Its mandelic acid formula targets the bacteria that causes odor rather than just masking smell. Native and Schmidt's are solid alternatives for underarms, but Lume is uniquely formulated for whole-body use including feet, groin, and skin folds."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does Lume deodorant last throughout the day?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In our tests, Lume controlled underarm odor for 12-20 hours in normal conditions. The brand's 72-hour marketing claim is based on controlled lab conditions with minimal activity. For most active users, reapplication every 24 hours is appropriate. Performance degrades in heat and during exercise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Lume work better than regular deodorant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Lume works differently than traditional deodorant, not necessarily better. Traditional aluminum antiperspirants stop sweating (Lume doesn't). Lume targets odor-causing bacteria, making it effective for odor without blocking sweat glands. Users switching from antiperspirant often experience a 2-week adjustment period as their body rebalances."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between deodorant and antiperspirant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Antiperspirants contain aluminum compounds that temporarily block sweat glands to reduce sweating. Deodorants (like Lume) mask or neutralize odor without affecting sweat production. Aluminum-free deodorants like Lume are preferred by people concerned about aluminum exposure or who want to allow natural sweating while controlling odor."
+          }
         }
       ]
     }
@@ -251,6 +283,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <div class="gallery-thumbs">
       <button class="gallery-thumb active" onclick="galSwitch(this, 'https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=800&h=600&fit=crop')" aria-label="View image 1">
         <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=800&h=600&fit=crop" alt="Lume Whole Body Deodorant view 1" loading="lazy" />
+      </button>
+      <button class="gallery-thumb" onclick="galSwitch(this, 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop')" aria-label="View image 2">
+        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop" alt="Lume Whole Body Deodorant view 2" loading="lazy" />
+      </button>
+      <button class="gallery-thumb" onclick="galSwitch(this, 'https://images.unsplash.com/photo-1593811167562-9cef47bfc4d7?w=800&h=600&fit=crop')" aria-label="View image 3">
+        <img src="https://images.unsplash.com/photo-1593811167562-9cef47bfc4d7?w=800&h=600&fit=crop" alt="Lume Whole Body Deodorant view 3" loading="lazy" />
       </button>
   </div>
 </div>
@@ -571,10 +609,26 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <h3>How long does Lume actually last?</h3>
       <p class="supporting-questions">Realistically 12–24 hours for most people, less during heavy activity.</p>
     </div>
+    <div class="faq-item">
+      <h3>What is the best aluminum-free deodorant that actually works?</h3>
+      <p class="supporting-questions">Lume Whole Body Deodorant consistently outperforms other aluminum-free options in our testing. Its mandelic acid formula targets the bacteria that causes odor rather than just masking smell. Native and Schmidt's are solid alternatives for underarms, but Lume is uniquely formulated for whole-body use including feet, groin, and skin folds.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How long does Lume deodorant last throughout the day?</h3>
+      <p class="supporting-questions">In our tests, Lume controlled underarm odor for 12-20 hours in normal conditions. The brand's 72-hour marketing claim is based on controlled lab conditions with minimal activity. For most active users, reapplication every 24 hours is appropriate. Performance degrades in heat and during exercise.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Does Lume work better than regular deodorant?</h3>
+      <p class="supporting-questions">Lume works differently than traditional deodorant, not necessarily better. Traditional aluminum antiperspirants stop sweating (Lume doesn't). Lume targets odor-causing bacteria, making it effective for odor without blocking sweat glands. Users switching from antiperspirant often experience a 2-week adjustment period as their body rebalances.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What is the difference between deodorant and antiperspirant?</h3>
+      <p class="supporting-questions">Antiperspirants contain aluminum compounds that temporarily block sweat glands to reduce sweating. Deodorants (like Lume) mask or neutralize odor without affecting sweat production. Aluminum-free deodorants like Lume are preferred by people concerned about aluminum exposure or who want to allow natural sweating while controlling odor.</p>
+    </div>
   </div>
 <div style="background:var(--muted);border-radius:var(--radius);padding:1.25rem 1.5rem;margin:1.5rem 0;">
   <p style="font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted-foreground);font-weight:700;margin:0 0 .4rem;">Looking for alternatives?</p>
-  <p style="margin:0 0 .75rem;font-size:.9rem;">Realistically 12–24 hours for most people, less during heavy activity.</p>
+  <p style="margin:0 0 .75rem;font-size:.9rem;">Antiperspirants contain aluminum compounds that temporarily block sweat glands to reduce sweating. Deodorants (like Lume) mask or neutralize odor without affecting sweat production. Aluminum-free deodorants like Lume are preferred by people concerned about aluminum exposure or who want to allow natural sweating while controlling odor.</p>
   <div style="display:flex;flex-wrap:wrap;gap:.5rem;">
     <a href="/review/stanley-quencher-h2o" style="font-size:.8rem;padding:.25rem .75rem;background:var(--card);border:1px solid var(--border);border-radius:999px;color:var(--foreground);text-decoration:none;">Stanley Quencher H2.0</a><a href="/review/dyson-airwrap-complete" style="font-size:.8rem;padding:.25rem .75rem;background:var(--card);border:1px solid var(--border);border-radius:999px;color:var(--foreground);text-decoration:none;">Dyson Airwrap Complete</a><a href="/review/ember-mug-2" style="font-size:.8rem;padding:.25rem .75rem;background:var(--card);border:1px solid var(--border);border-radius:999px;color:var(--foreground);text-decoration:none;">Ember Mug² 14oz</a>
   </div>

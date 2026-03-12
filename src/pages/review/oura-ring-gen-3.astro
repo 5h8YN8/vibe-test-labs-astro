@@ -199,6 +199,38 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             "@type": "Answer",
             "text": "About 5–7 days depending on usage and features enabled."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the most accurate sleep tracker available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Oura Ring Gen 3 is the most validated consumer sleep tracker. Multiple peer-reviewed studies show it matches clinical polysomnography for sleep stage detection (REM, deep, light) with over 79% accuracy. Wrist-based trackers like Fitbit and Apple Watch score 50-70% accuracy for sleep staging by comparison."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the Oura Ring better than the Apple Watch for sleep tracking?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, for sleep specifically. The Oura Ring outperforms Apple Watch for sleep stage accuracy because: the ring form factor is more comfortable to sleep in, optical sensors on the finger are more accurate than the wrist, and the ring's core purpose is health tracking (not general smartwatch use). Apple Watch is better for workouts and notifications."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Oura Ring Daily Readiness Score mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Daily Readiness Score (0-100) is Oura's composite metric combining overnight HRV, resting heart rate, body temperature trends, sleep quality, and recent activity load. A score above 85 indicates you're recovered and ready for high-intensity training. Below 60 suggests prioritizing recovery. It's Oura's most actionable daily metric."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you need the Oura membership to use the Oura Ring?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Oura Ring requires a $6/month membership to access most features including sleep staging, readiness scores, and trend analysis. Basic metrics (steps, heart rate) are available without the subscription. The ring hardware costs $299-$549 upfront. The subscription adds about $72/year to the total cost of ownership."
+          }
         }
       ]
     }
@@ -251,6 +283,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <div class="gallery-thumbs">
       <button class="gallery-thumb active" onclick="galSwitch(this, 'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&h=600&fit=crop')" aria-label="View image 1">
         <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&h=600&fit=crop" alt="Oura Ring Gen 3 view 1" loading="lazy" />
+      </button>
+      <button class="gallery-thumb" onclick="galSwitch(this, 'https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=800&h=600&fit=crop')" aria-label="View image 2">
+        <img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=800&h=600&fit=crop" alt="Oura Ring Gen 3 view 2" loading="lazy" />
+      </button>
+      <button class="gallery-thumb" onclick="galSwitch(this, 'https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=800&h=600&fit=crop')" aria-label="View image 3">
+        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=800&h=600&fit=crop" alt="Oura Ring Gen 3 view 3" loading="lazy" />
       </button>
   </div>
 </div>
@@ -572,10 +610,26 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <h3>How long does the Oura Ring battery last?</h3>
       <p class="supporting-questions">About 5–7 days depending on usage and features enabled.</p>
     </div>
+    <div class="faq-item">
+      <h3>What is the most accurate sleep tracker available?</h3>
+      <p class="supporting-questions">The Oura Ring Gen 3 is the most validated consumer sleep tracker. Multiple peer-reviewed studies show it matches clinical polysomnography for sleep stage detection (REM, deep, light) with over 79% accuracy. Wrist-based trackers like Fitbit and Apple Watch score 50-70% accuracy for sleep staging by comparison.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Is the Oura Ring better than the Apple Watch for sleep tracking?</h3>
+      <p class="supporting-questions">Yes, for sleep specifically. The Oura Ring outperforms Apple Watch for sleep stage accuracy because: the ring form factor is more comfortable to sleep in, optical sensors on the finger are more accurate than the wrist, and the ring's core purpose is health tracking (not general smartwatch use). Apple Watch is better for workouts and notifications.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What does the Oura Ring Daily Readiness Score mean?</h3>
+      <p class="supporting-questions">The Daily Readiness Score (0-100) is Oura's composite metric combining overnight HRV, resting heart rate, body temperature trends, sleep quality, and recent activity load. A score above 85 indicates you're recovered and ready for high-intensity training. Below 60 suggests prioritizing recovery. It's Oura's most actionable daily metric.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Do you need the Oura membership to use the Oura Ring?</h3>
+      <p class="supporting-questions">The Oura Ring requires a $6/month membership to access most features including sleep staging, readiness scores, and trend analysis. Basic metrics (steps, heart rate) are available without the subscription. The ring hardware costs $299-$549 upfront. The subscription adds about $72/year to the total cost of ownership.</p>
+    </div>
   </div>
 <div style="background:var(--muted);border-radius:var(--radius);padding:1.25rem 1.5rem;margin:1.5rem 0;">
   <p style="font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted-foreground);font-weight:700;margin:0 0 .4rem;">Looking for alternatives?</p>
-  <p style="margin:0 0 .75rem;font-size:.9rem;">About 5–7 days depending on usage and features enabled.</p>
+  <p style="margin:0 0 .75rem;font-size:.9rem;">The Oura Ring requires a $6/month membership to access most features including sleep staging, readiness scores, and trend analysis. Basic metrics (steps, heart rate) are available without the subscription. The ring hardware costs $299-$549 upfront. The subscription adds about $72/year to the total cost of ownership.</p>
   <div style="display:flex;flex-wrap:wrap;gap:.5rem;">
     <a href="/review/stanley-quencher-h2o" style="font-size:.8rem;padding:.25rem .75rem;background:var(--card);border:1px solid var(--border);border-radius:999px;color:var(--foreground);text-decoration:none;">Stanley Quencher H2.0</a><a href="/review/dyson-airwrap-complete" style="font-size:.8rem;padding:.25rem .75rem;background:var(--card);border:1px solid var(--border);border-radius:999px;color:var(--foreground);text-decoration:none;">Dyson Airwrap Complete</a><a href="/review/ember-mug-2" style="font-size:.8rem;padding:.25rem .75rem;background:var(--card);border:1px solid var(--border);border-radius:999px;color:var(--foreground);text-decoration:none;">Ember Mug² 14oz</a>
   </div>

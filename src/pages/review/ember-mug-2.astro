@@ -199,6 +199,38 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             "@type": "Answer",
             "text": "About 80 minutes off the charging coaster. On the coaster, it works indefinitely."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best mug for keeping coffee hot at a desk?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Ember Mug 2 is the best temperature-controlled mug for desk use. When placed on the charging coaster, it maintains your exact preferred temperature (120-145°F) indefinitely. It uses an app to set and remember your target temp, making it the most precise solution for keeping coffee hot while working."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the Ember Mug keep coffee hot?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Ember Mug uses a built-in heating element in the base powered by a rechargeable battery (80 minutes off coaster) or the included wireless charging coaster (unlimited when in range). An app lets you set your exact target temperature in 1°F increments, which the mug maintains continuously."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Ember Mug worth $149 vs a cheaper smart mug?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Ember Mug 2's advantage over budget alternatives like the VSITOO S3 Pro ($40) is precision (1°F accuracy vs 5°F), battery quality, and app integration. If temperature accuracy and longevity matter, the Ember is worth the premium. For casual hot-drink maintenance, cheaper alternatives perform adequately."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who should not buy the Ember Mug?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Skip the Ember Mug if you: frequently move around with your coffee (80-min battery limits portability), hate hand-washing (it's not dishwasher safe), or drink your coffee quickly. A quality vacuum-insulated mug like the Zojirushi Travel Mug ($35) keeps drinks hot for 6+ hours passively and is more portable."
+          }
         }
       ]
     }
@@ -254,6 +286,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       </button>
       <button class="gallery-thumb" onclick="galSwitch(this, 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&h=600&fit=crop')" aria-label="View image 2">
         <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&h=600&fit=crop" alt="Ember Mug² 14oz view 2" loading="lazy" />
+      </button>
+      <button class="gallery-thumb" onclick="galSwitch(this, 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop')" aria-label="View image 3">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop" alt="Ember Mug² 14oz view 3" loading="lazy" />
+      </button>
+      <button class="gallery-thumb" onclick="galSwitch(this, 'https://images.unsplash.com/photo-1552581234-26160f608093?w=800&h=600&fit=crop')" aria-label="View image 4">
+        <img src="https://images.unsplash.com/photo-1552581234-26160f608093?w=800&h=600&fit=crop" alt="Ember Mug² 14oz view 4" loading="lazy" />
       </button>
   </div>
 </div>
@@ -576,10 +614,26 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <h3>How long does the Ember Mug battery last?</h3>
       <p class="supporting-questions">About 80 minutes off the charging coaster. On the coaster, it works indefinitely.</p>
     </div>
+    <div class="faq-item">
+      <h3>What is the best mug for keeping coffee hot at a desk?</h3>
+      <p class="supporting-questions">The Ember Mug 2 is the best temperature-controlled mug for desk use. When placed on the charging coaster, it maintains your exact preferred temperature (120-145°F) indefinitely. It uses an app to set and remember your target temp, making it the most precise solution for keeping coffee hot while working.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How does the Ember Mug keep coffee hot?</h3>
+      <p class="supporting-questions">The Ember Mug uses a built-in heating element in the base powered by a rechargeable battery (80 minutes off coaster) or the included wireless charging coaster (unlimited when in range). An app lets you set your exact target temperature in 1°F increments, which the mug maintains continuously.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Is Ember Mug worth $149 vs a cheaper smart mug?</h3>
+      <p class="supporting-questions">The Ember Mug 2's advantage over budget alternatives like the VSITOO S3 Pro ($40) is precision (1°F accuracy vs 5°F), battery quality, and app integration. If temperature accuracy and longevity matter, the Ember is worth the premium. For casual hot-drink maintenance, cheaper alternatives perform adequately.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Who should not buy the Ember Mug?</h3>
+      <p class="supporting-questions">Skip the Ember Mug if you: frequently move around with your coffee (80-min battery limits portability), hate hand-washing (it's not dishwasher safe), or drink your coffee quickly. A quality vacuum-insulated mug like the Zojirushi Travel Mug ($35) keeps drinks hot for 6+ hours passively and is more portable.</p>
+    </div>
   </div>
 <div style="background:var(--muted);border-radius:var(--radius);padding:1.25rem 1.5rem;margin:1.5rem 0;">
   <p style="font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted-foreground);font-weight:700;margin:0 0 .4rem;">Looking for alternatives?</p>
-  <p style="margin:0 0 .75rem;font-size:.9rem;">About 80 minutes off the charging coaster. On the coaster, it works indefinitely.</p>
+  <p style="margin:0 0 .75rem;font-size:.9rem;">Skip the Ember Mug if you: frequently move around with your coffee (80-min battery limits portability), hate hand-washing (it's not dishwasher safe), or drink your coffee quickly. A quality vacuum-insulated mug like the Zojirushi Travel Mug ($35) keeps drinks hot for 6+ hours passively and is more portable.</p>
   <div style="display:flex;flex-wrap:wrap;gap:.5rem;">
     <a href="/review/stanley-quencher-h2o" style="font-size:.8rem;padding:.25rem .75rem;background:var(--card);border:1px solid var(--border);border-radius:999px;color:var(--foreground);text-decoration:none;">Stanley Quencher H2.0</a><a href="/review/dyson-airwrap-complete" style="font-size:.8rem;padding:.25rem .75rem;background:var(--card);border:1px solid var(--border);border-radius:999px;color:var(--foreground);text-decoration:none;">Dyson Airwrap Complete</a><a href="/review/oura-ring-gen-3" style="font-size:.8rem;padding:.25rem .75rem;background:var(--card);border:1px solid var(--border);border-radius:999px;color:var(--foreground);text-decoration:none;">Oura Ring Gen 3</a>
   </div>

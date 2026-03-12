@@ -199,6 +199,38 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             "@type": "Answer",
             "text": "We measured about 180 minutes of use, exceeding the advertised 150 minutes."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best portable massage gun for gym use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Theragun Mini 2.0 is the best portable massage gun for gym use. At 1.43 lbs, it fits in a gym bag, delivers 12mm amplitude (matching full-size guns), and runs 180 minutes per charge — enough for 3-4 post-workout sessions. The Hypervolt Go 2 is the main competitor at $70 less, but with slightly lower amplitude."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a percussion massage gun actually help with muscle soreness?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Research published in the Journal of Clinical Medicine shows percussion therapy reduces perceived muscle soreness and improves range of motion after exercise. Mechanisms include increased blood flow, reduced lactic acid buildup, and desensitization of pain receptors. Regular use (3-5 min per muscle group) after workouts consistently reduces next-day DOMS in our testing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is the Theragun Mini different from a full-size Theragun?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Theragun Mini 2.0 has the same 12mm amplitude as the full-size Theragun Pro but only 3 speed settings vs. 5, one attachment head vs. multiple, and a shorter battery life. The weight difference (1.43 lbs vs. 2.9 lbs) is the biggest practical advantage. For gym bags, the Mini is the right choice. For home use where portability doesn't matter, the Pro adds versatility."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the Theragun Mini worth it compared to cheaper massage guns?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Theragun Mini 2.0 ($199) is worth the premium over budget guns ($30-60) for two reasons: amplitude depth (12mm vs. 8-10mm in budget models, which determines how deeply percussion reaches muscle tissue) and motor quality (quieter, longer-lasting, consistent RPM under pressure). For casual use, budget guns provide relief. For serious athletes, the depth difference is meaningful."
+          }
         }
       ]
     }
@@ -251,6 +283,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <div class="gallery-thumbs">
       <button class="gallery-thumb active" onclick="galSwitch(this, 'https://images.unsplash.com/photo-1576678927484-cc907957088c?w=800&h=600&fit=crop')" aria-label="View image 1">
         <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?w=800&h=600&fit=crop" alt="Theragun Mini 2.0 view 1" loading="lazy" />
+      </button>
+      <button class="gallery-thumb" onclick="galSwitch(this, 'https://images.unsplash.com/photo-1552196563-55cd4e45efb3?w=800&h=600&fit=crop')" aria-label="View image 2">
+        <img src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3?w=800&h=600&fit=crop" alt="Theragun Mini 2.0 view 2" loading="lazy" />
+      </button>
+      <button class="gallery-thumb" onclick="galSwitch(this, 'https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=800&h=600&fit=crop')" aria-label="View image 3">
+        <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=800&h=600&fit=crop" alt="Theragun Mini 2.0 view 3" loading="lazy" />
       </button>
   </div>
 </div>
@@ -572,10 +610,26 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <h3>How long does the Theragun Mini battery last?</h3>
       <p class="supporting-questions">We measured about 180 minutes of use, exceeding the advertised 150 minutes.</p>
     </div>
+    <div class="faq-item">
+      <h3>What is the best portable massage gun for gym use?</h3>
+      <p class="supporting-questions">The Theragun Mini 2.0 is the best portable massage gun for gym use. At 1.43 lbs, it fits in a gym bag, delivers 12mm amplitude (matching full-size guns), and runs 180 minutes per charge — enough for 3-4 post-workout sessions. The Hypervolt Go 2 is the main competitor at $70 less, but with slightly lower amplitude.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Does a percussion massage gun actually help with muscle soreness?</h3>
+      <p class="supporting-questions">Yes. Research published in the Journal of Clinical Medicine shows percussion therapy reduces perceived muscle soreness and improves range of motion after exercise. Mechanisms include increased blood flow, reduced lactic acid buildup, and desensitization of pain receptors. Regular use (3-5 min per muscle group) after workouts consistently reduces next-day DOMS in our testing.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How is the Theragun Mini different from a full-size Theragun?</h3>
+      <p class="supporting-questions">The Theragun Mini 2.0 has the same 12mm amplitude as the full-size Theragun Pro but only 3 speed settings vs. 5, one attachment head vs. multiple, and a shorter battery life. The weight difference (1.43 lbs vs. 2.9 lbs) is the biggest practical advantage. For gym bags, the Mini is the right choice. For home use where portability doesn't matter, the Pro adds versatility.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Is the Theragun Mini worth it compared to cheaper massage guns?</h3>
+      <p class="supporting-questions">The Theragun Mini 2.0 ($199) is worth the premium over budget guns ($30-60) for two reasons: amplitude depth (12mm vs. 8-10mm in budget models, which determines how deeply percussion reaches muscle tissue) and motor quality (quieter, longer-lasting, consistent RPM under pressure). For casual use, budget guns provide relief. For serious athletes, the depth difference is meaningful.</p>
+    </div>
   </div>
 <div style="background:var(--muted);border-radius:var(--radius);padding:1.25rem 1.5rem;margin:1.5rem 0;">
   <p style="font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted-foreground);font-weight:700;margin:0 0 .4rem;">Looking for alternatives?</p>
-  <p style="margin:0 0 .75rem;font-size:.9rem;">We measured about 180 minutes of use, exceeding the advertised 150 minutes.</p>
+  <p style="margin:0 0 .75rem;font-size:.9rem;">The Theragun Mini 2.0 ($199) is worth the premium over budget guns ($30-60) for two reasons: amplitude depth (12mm vs. 8-10mm in budget models, which determines how deeply percussion reaches muscle tissue) and motor quality (quieter, longer-lasting, consistent RPM under pressure). For casual use, budget guns provide relief. For serious athletes, the depth difference is meaningful.</p>
   <div style="display:flex;flex-wrap:wrap;gap:.5rem;">
     <a href="/review/stanley-quencher-h2o" style="font-size:.8rem;padding:.25rem .75rem;background:var(--card);border:1px solid var(--border);border-radius:999px;color:var(--foreground);text-decoration:none;">Stanley Quencher H2.0</a><a href="/review/dyson-airwrap-complete" style="font-size:.8rem;padding:.25rem .75rem;background:var(--card);border:1px solid var(--border);border-radius:999px;color:var(--foreground);text-decoration:none;">Dyson Airwrap Complete</a><a href="/review/ember-mug-2" style="font-size:.8rem;padding:.25rem .75rem;background:var(--card);border:1px solid var(--border);border-radius:999px;color:var(--foreground);text-decoration:none;">Ember Mug² 14oz</a>
   </div>

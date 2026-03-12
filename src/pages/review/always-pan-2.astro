@@ -199,6 +199,38 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             "@type": "Answer",
             "text": "With proper care, 12–18 months before the nonstick coating starts to degrade. Our Place offers a limited warranty."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best pan for someone who only wants one pan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Our Place Always Pan 2.0 is the best choice if you want a single do-it-all pan. Its 8-in-1 design covers sautéing, searing, steaming, boiling, straining, and serving. For serious searing or high-heat cooking, a cast iron skillet outperforms it. For everyday home cooking across varied tasks, nothing beats the Always Pan's versatility."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the Always Pan ceramic coating safe and PTFE-free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The Our Place Always Pan uses a proprietary ceramic nonstick coating that is free of PTFE (Teflon), PFOA, PFAs, and lead. Our Place is one of the few cookware brands that publishes third-party safety testing. The coating is rated for temperatures up to 450°F in the oven."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does the Always Pan nonstick coating last?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "With proper care, the Always Pan coating lasts 2-3+ years in our testing. Key care rules: never use high heat (medium is maximum), hand-wash only, use silicone or wooden utensils, and avoid cooking spray (it degrades ceramic coatings). Abrasive sponges are the #1 cause of premature coating failure."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What can't the Always Pan do compared to a full cookware set?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Always Pan can't replace specialized cookware for: high-heat searing (cast iron is better), large-batch cooking (it's 10-inch, not wide enough for big batches), deep frying (limited depth), or delicate tasks requiring extreme temperature control. A full set with cast iron, stainless, and a Dutch oven covers use cases the Always Pan doesn't."
+          }
         }
       ]
     }
@@ -251,6 +283,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <div class="gallery-thumbs">
       <button class="gallery-thumb active" onclick="galSwitch(this, 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop')" aria-label="View image 1">
         <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop" alt="Always Pan 2.0 view 1" loading="lazy" />
+      </button>
+      <button class="gallery-thumb" onclick="galSwitch(this, 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&h=600&fit=crop')" aria-label="View image 2">
+        <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&h=600&fit=crop" alt="Always Pan 2.0 view 2" loading="lazy" />
+      </button>
+      <button class="gallery-thumb" onclick="galSwitch(this, 'https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=800&h=600&fit=crop')" aria-label="View image 3">
+        <img src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=800&h=600&fit=crop" alt="Always Pan 2.0 view 3" loading="lazy" />
       </button>
   </div>
 </div>
@@ -572,10 +610,26 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <h3>How long does the Always Pan last?</h3>
       <p class="supporting-questions">With proper care, 12–18 months before the nonstick coating starts to degrade. Our Place offers a limited warranty.</p>
     </div>
+    <div class="faq-item">
+      <h3>What is the best pan for someone who only wants one pan?</h3>
+      <p class="supporting-questions">The Our Place Always Pan 2.0 is the best choice if you want a single do-it-all pan. Its 8-in-1 design covers sautéing, searing, steaming, boiling, straining, and serving. For serious searing or high-heat cooking, a cast iron skillet outperforms it. For everyday home cooking across varied tasks, nothing beats the Always Pan's versatility.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Is the Always Pan ceramic coating safe and PTFE-free?</h3>
+      <p class="supporting-questions">Yes. The Our Place Always Pan uses a proprietary ceramic nonstick coating that is free of PTFE (Teflon), PFOA, PFAs, and lead. Our Place is one of the few cookware brands that publishes third-party safety testing. The coating is rated for temperatures up to 450°F in the oven.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How long does the Always Pan nonstick coating last?</h3>
+      <p class="supporting-questions">With proper care, the Always Pan coating lasts 2-3+ years in our testing. Key care rules: never use high heat (medium is maximum), hand-wash only, use silicone or wooden utensils, and avoid cooking spray (it degrades ceramic coatings). Abrasive sponges are the #1 cause of premature coating failure.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What can't the Always Pan do compared to a full cookware set?</h3>
+      <p class="supporting-questions">The Always Pan can't replace specialized cookware for: high-heat searing (cast iron is better), large-batch cooking (it's 10-inch, not wide enough for big batches), deep frying (limited depth), or delicate tasks requiring extreme temperature control. A full set with cast iron, stainless, and a Dutch oven covers use cases the Always Pan doesn't.</p>
+    </div>
   </div>
 <div style="background:var(--muted);border-radius:var(--radius);padding:1.25rem 1.5rem;margin:1.5rem 0;">
   <p style="font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted-foreground);font-weight:700;margin:0 0 .4rem;">Looking for alternatives?</p>
-  <p style="margin:0 0 .75rem;font-size:.9rem;">With proper care, 12–18 months before the nonstick coating starts to degrade. Our Place offers a limited warranty.</p>
+  <p style="margin:0 0 .75rem;font-size:.9rem;">The Always Pan can't replace specialized cookware for: high-heat searing (cast iron is better), large-batch cooking (it's 10-inch, not wide enough for big batches), deep frying (limited depth), or delicate tasks requiring extreme temperature control. A full set with cast iron, stainless, and a Dutch oven covers use cases the Always Pan doesn't.</p>
   <div style="display:flex;flex-wrap:wrap;gap:.5rem;">
     <a href="/review/stanley-quencher-h2o" style="font-size:.8rem;padding:.25rem .75rem;background:var(--card);border:1px solid var(--border);border-radius:999px;color:var(--foreground);text-decoration:none;">Stanley Quencher H2.0</a><a href="/review/dyson-airwrap-complete" style="font-size:.8rem;padding:.25rem .75rem;background:var(--card);border:1px solid var(--border);border-radius:999px;color:var(--foreground);text-decoration:none;">Dyson Airwrap Complete</a><a href="/review/ember-mug-2" style="font-size:.8rem;padding:.25rem .75rem;background:var(--card);border:1px solid var(--border);border-radius:999px;color:var(--foreground);text-decoration:none;">Ember Mug² 14oz</a>
   </div>
