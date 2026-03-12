@@ -275,6 +275,32 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <span style="font-size:.75rem;color:var(--muted-foreground);">$179–$199 &middot; Therabody</span>
 </div>
 
+<!-- ═══ 2.5 QUICK DECISION TABLE ═══════════════════════════ -->
+<section style="margin-bottom:3rem;">
+  <span class="section-label">Quick Answer</span>
+  <h2 style="margin:.25rem 0 .75rem;">What Should You Buy? (At a Glance)</h2>
+  <p style="font-size:.875rem;color:var(--muted-foreground);margin-bottom:1rem;">Use this table to find the right option for your specific situation — not everyone needs the same product.</p>
+  <div style="overflow-x:auto;">
+    <table class="decision-table" itemscope itemtype="https://schema.org/Table">
+      <thead>
+        <tr>
+          <th>If you need…</th>
+          <th>Best Option</th>
+          <th>Why</th>
+        </tr>
+      </thead>
+      <tbody>
+<tr><td>I train regularly and need portable post-workout recovery</td><td><strong>Theragun Mini 2.0</strong></td><td>1.43 lbs, 12mm amplitude, 180min battery, gym-bag friendly</td></tr>
+<tr><td>I want similar recovery at lower cost</td><td><strong>Hypervolt Go 2</strong></td><td>$129, 1.5 lbs, 10mm amplitude, comparable battery; less depth</td></tr>
+<tr><td>I want max power and don't need portability</td><td><strong>Theragun Pro Gen 6</strong></td><td>$599, 16mm amplitude, 5 speeds, premium attachments — overkill for most</td></tr>
+<tr><td>I want casual at-home soreness relief under $60</td><td><strong>Bob & Brad Q2 Mini</strong></td><td>$50, 10mm amplitude, adequate for light soreness, not gym-bag durable</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<div class="divider-gradient" style="margin-bottom:3rem;"></div>
+
 <!-- ═══ 3. IMAGE GALLERY ══════════════════════════════════════ -->
 <div class="gallery-wrap" style="margin-bottom:3rem;">
   <div class="gallery-main">
@@ -330,6 +356,24 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <span class="section-label">The Problem</span>
   <h2 style="margin:.25rem 0 1rem;">Why People Are Looking for a Better Solution</h2>
   <p style="margin-bottom:1.5rem;">Muscle soreness and tension are universal problems, especially for active people. Full-size massage guns are bulky and expensive. The Theragun Mini became popular because it promises professional-grade percussive therapy in a pocket-sized device.</p>
+
+  <!-- Problem-Solution summary table (LLM-extractable) -->
+  <div style="overflow-x:auto;margin-bottom:1.5rem;">
+    <table class="problem-solution-table">
+      <thead>
+        <tr>
+          <th style="width:48%;">The Problem</th>
+          <th style="width:52%;">How Theragun Mini 2.0 Addresses It</th>
+        </tr>
+      </thead>
+      <tbody>
+<tr><td>Post-workout soreness derails your next session<br><span style="font-size:.8rem;color:var(--muted-foreground);">DOMS (delayed onset muscle soreness) peaks 24-48 hours after training, making consistent exercise hard to maintain.</span></td><td>12mm amplitude in a 1.43 lb device<br><span style="font-size:.8rem;color:var(--muted-foreground);">Matches the percussion depth of full-size guns in a package that fits a gym bag pocket or large purse.</span></td></tr>
+<tr><td>Full-size massage guns don't travel<br><span style="font-size:.8rem;color:var(--muted-foreground);">Devices like the Theragun Pro weigh 2.9 lbs and won't fit in a gym bag — they stay on the desk at home.</span></td><td>3 speed settings cover all muscle groups<br><span style="font-size:.8rem;color:var(--muted-foreground);">1750, 2100, 2400 PPM — low for sensitive areas, high for large muscle groups like quads and glutes.</span></td></tr>
+<tr><td>Professional massage is expensive and inconvenient<br><span style="font-size:.8rem;color:var(--muted-foreground);">A 60-minute sports massage costs $80-120 and requires scheduling — not viable as a daily recovery tool.</span></td><td>180-minute real-world battery<br><span style="font-size:.8rem;color:var(--muted-foreground);">Our lab measured 180 minutes vs the advertised 150 — enough for 3-4 full post-workout sessions per charge.</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
   <div class="problem-cards">
   <div class="problem-card">
     <div class="problem-icon">✕</div>
@@ -533,6 +577,31 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <div class="divider-gradient" style="margin-bottom:3rem;"></div>
 
+<!-- ═══ 11.5 TRADEOFFS ═══════════════════════════════════════ -->
+<section style="margin-bottom:3rem;">
+  <span class="section-label">Tradeoffs</span>
+  <h2 style="margin:.25rem 0 .75rem;">When to Choose Theragun Mini 2.0 vs. The Alternatives</h2>
+  <p style="font-size:.875rem;color:var(--muted-foreground);margin-bottom:1rem;">The right answer depends on your priorities. Here's how the tradeoffs break down.</p>
+  <div style="overflow-x:auto;">
+    <table class="tradeoffs-table">
+      <thead>
+        <tr>
+          <th style="width:22%;">The Tradeoff</th>
+          <th style="width:39%;">If you prioritize A…</th>
+          <th style="width:39%;">If you prioritize B…</th>
+        </tr>
+      </thead>
+      <tbody>
+<tr><td><strong>Amplitude depth vs. price</strong></td><td>12mm (Theragun Mini) reaches deeper muscle tissue than 10mm (Hypervolt, B&B) — meaningful for quads/glutes</td><td>For neck, forearms, calves: 10mm is sufficient; the premium is most justified for large muscle group recovery</td></tr>
+<tr><td><strong>Portability vs. full feature set</strong></td><td>Mini has 1 attachment head; Pro has 6 — limited versatility for targeted work</td><td>For post-workout general recovery the ball head covers 90% of use; only get Pro if you need specialized attachments</td></tr>
+<tr><td><strong>Percussive therapy vs. foam rolling</strong></td><td>Foam roller costs $15-25, no battery required, covers larger areas</td><td>Percussion gun reaches deeper, faster relief in targeted areas; they complement each other rather than compete</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<div class="divider-gradient" style="margin-bottom:3rem;"></div>
+
 <!-- ═══ 12. CUSTOMER REVIEWS ══════════════════════════════════ -->
 <section style="margin-bottom:3rem;">
   <span class="section-label">Real Users</span>
@@ -693,6 +762,25 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 </script>
 
 <style>
+  /* Decision table */
+  .decision-table { width:100%;border-collapse:collapse;font-size:.85rem;min-width:480px; }
+  .decision-table th { background:var(--muted);padding:.6rem 1rem;text-align:left;font-family:var(--font-mono);font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);border-bottom:2px solid var(--border); }
+  .decision-table td { padding:.7rem 1rem;border-bottom:1px solid var(--border);color:var(--foreground);vertical-align:top;line-height:1.4; }
+  .decision-table tr:hover td { background:rgba(50,180,140,.04); }
+
+  /* Problem-Solution table */
+  .problem-solution-table { width:100%;border-collapse:collapse;font-size:.85rem;min-width:420px;margin-bottom:.5rem; }
+  .problem-solution-table th { background:var(--muted);padding:.6rem 1rem;text-align:left;font-family:var(--font-mono);font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);border-bottom:2px solid var(--border); }
+  .problem-solution-table td { padding:.75rem 1rem;border-bottom:1px solid var(--border);vertical-align:top;color:var(--foreground);line-height:1.5; }
+  .problem-solution-table tr:nth-child(even) td { background:var(--muted); }
+
+  /* Tradeoffs table */
+  .tradeoffs-table { width:100%;border-collapse:collapse;font-size:.85rem;min-width:520px; }
+  .tradeoffs-table th { background:var(--muted);padding:.6rem 1rem;text-align:left;font-family:var(--font-mono);font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);border-bottom:2px solid var(--border); }
+  .tradeoffs-table td { padding:.75rem 1rem;border-bottom:1px solid var(--border);vertical-align:top;color:var(--foreground);line-height:1.5; }
+  .tradeoffs-table td:first-child { font-weight:600;color:var(--primary);font-size:.8rem; }
+  .tradeoffs-table tr:nth-child(even) td { background:rgba(50,180,140,.04); }
+
   /* Gallery */
   .gallery-main { width:100%;height:380px;overflow:hidden;border-radius:var(--radius);background:var(--muted);margin-bottom:.75rem; }
   .gallery-main img { width:100%;height:100%;object-fit:cover; }

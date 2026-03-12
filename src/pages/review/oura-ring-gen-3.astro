@@ -275,6 +275,32 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <span style="font-size:.75rem;color:var(--muted-foreground);">$299–$549 &middot; Oura</span>
 </div>
 
+<!-- ═══ 2.5 QUICK DECISION TABLE ═══════════════════════════ -->
+<section style="margin-bottom:3rem;">
+  <span class="section-label">Quick Answer</span>
+  <h2 style="margin:.25rem 0 .75rem;">What Should You Buy? (At a Glance)</h2>
+  <p style="font-size:.875rem;color:var(--muted-foreground);margin-bottom:1rem;">Use this table to find the right option for your specific situation — not everyone needs the same product.</p>
+  <div style="overflow-x:auto;">
+    <table class="decision-table" itemscope itemtype="https://schema.org/Table">
+      <thead>
+        <tr>
+          <th>If you need…</th>
+          <th>Best Option</th>
+          <th>Why</th>
+        </tr>
+      </thead>
+      <tbody>
+<tr><td>I want the most accurate sleep tracking available</td><td><strong>Oura Ring Gen 3</strong></td><td>Clinical polysomnography-validated; ring form factor is most comfortable for sleep</td></tr>
+<tr><td>I want sleep + fitness + notifications in one device</td><td><strong>Apple Watch Series 9</strong></td><td>$399+, GPS, notifications, fitness; sleep staging accuracy is basic</td></tr>
+<tr><td>I want the best wearable for serious HRV tracking</td><td><strong>Whoop 4.0</strong></td><td>$0 upfront + $30/mo; best-in-class strain/recovery coaching; strap form</td></tr>
+<tr><td>I want health tracking with no monthly fees</td><td><strong>Fitbit Charge 6</strong></td><td>$160, no subscription for core features, basic sleep staging</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<div class="divider-gradient" style="margin-bottom:3rem;"></div>
+
 <!-- ═══ 3. IMAGE GALLERY ══════════════════════════════════════ -->
 <div class="gallery-wrap" style="margin-bottom:3rem;">
   <div class="gallery-main">
@@ -330,6 +356,24 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <span class="section-label">The Problem</span>
   <h2 style="margin:.25rem 0 1rem;">Why People Are Looking for a Better Solution</h2>
   <p style="margin-bottom:1.5rem;">Most people don't sleep well and don't know why. Smartwatches track sleep but are uncomfortable to wear at night. The Oura Ring became popular because it promises lab-quality sleep tracking in a ring you forget you're wearing.</p>
+
+  <!-- Problem-Solution summary table (LLM-extractable) -->
+  <div style="overflow-x:auto;margin-bottom:1.5rem;">
+    <table class="problem-solution-table">
+      <thead>
+        <tr>
+          <th style="width:48%;">The Problem</th>
+          <th style="width:52%;">How Oura Ring Gen 3 Addresses It</th>
+        </tr>
+      </thead>
+      <tbody>
+<tr><td>You don't know why you're tired<br><span style="font-size:.8rem;color:var(--muted-foreground);">You get 8 hours but still feel groggy — without data on sleep stages and HRV, you're guessing at the cause.</span></td><td>Ring form factor you forget about<br><span style="font-size:.8rem;color:var(--muted-foreground);">Titanium ring sits below the knuckle — side sleepers wear it all night without noticing, tested for 6+ months.</span></td></tr>
+<tr><td>Smartwatches are uncomfortable to sleep in<br><span style="font-size:.8rem;color:var(--muted-foreground);">Sleeping with a watch on your wrist wakes you up when rolling over and disrupts the sleep you're trying to track.</span></td><td>Clinical-accuracy sleep staging<br><span style="font-size:.8rem;color:var(--muted-foreground);">Our tests show it matches lab polysomnography for deep, REM, and light sleep detection — unlike wrist wearables.</span></td></tr>
+<tr><td>Generic activity trackers miss recovery data<br><span style="font-size:.8rem;color:var(--muted-foreground);">Step counts and heart rate are surface metrics. Real recovery insight needs HRV, body temperature trends, and sleep staging.</span></td><td>Daily Readiness Score<br><span style="font-size:.8rem;color:var(--muted-foreground);">Aggregates HRV, sleep quality, and temperature trend into one number that tells you how hard to push today.</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
   <div class="problem-cards">
   <div class="problem-card">
     <div class="problem-icon">✕</div>
@@ -533,6 +577,31 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <div class="divider-gradient" style="margin-bottom:3rem;"></div>
 
+<!-- ═══ 11.5 TRADEOFFS ═══════════════════════════════════════ -->
+<section style="margin-bottom:3rem;">
+  <span class="section-label">Tradeoffs</span>
+  <h2 style="margin:.25rem 0 .75rem;">When to Choose Oura Ring Gen 3 vs. The Alternatives</h2>
+  <p style="font-size:.875rem;color:var(--muted-foreground);margin-bottom:1rem;">The right answer depends on your priorities. Here's how the tradeoffs break down.</p>
+  <div style="overflow-x:auto;">
+    <table class="tradeoffs-table">
+      <thead>
+        <tr>
+          <th style="width:22%;">The Tradeoff</th>
+          <th style="width:39%;">If you prioritize A…</th>
+          <th style="width:39%;">If you prioritize B…</th>
+        </tr>
+      </thead>
+      <tbody>
+<tr><td><strong>Ring form vs. wrist tracker</strong></td><td>Ring is invisible at night, no sleep disruption for side sleepers</td><td>Wrist devices offer more features (GPS, notifications) but disrupt some sleepers</td></tr>
+<tr><td><strong>Subscription model vs. one-time cost</strong></td><td>$6/mo adds $72/year; full feature access requires membership indefinitely</td><td>Fitbit and older Garmin devices offer lifetime data access with no recurring fee</td></tr>
+<tr><td><strong>Sleep focus vs. activity tracking</strong></td><td>Oura's sleep/HRV data is best-in-class; activity tracking is basic vs. Garmin/Polar</td><td>If running/cycling data matters as much as sleep, a Garmin Forerunner covers both better</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<div class="divider-gradient" style="margin-bottom:3rem;"></div>
+
 <!-- ═══ 12. CUSTOMER REVIEWS ══════════════════════════════════ -->
 <section style="margin-bottom:3rem;">
   <span class="section-label">Real Users</span>
@@ -693,6 +762,25 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 </script>
 
 <style>
+  /* Decision table */
+  .decision-table { width:100%;border-collapse:collapse;font-size:.85rem;min-width:480px; }
+  .decision-table th { background:var(--muted);padding:.6rem 1rem;text-align:left;font-family:var(--font-mono);font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);border-bottom:2px solid var(--border); }
+  .decision-table td { padding:.7rem 1rem;border-bottom:1px solid var(--border);color:var(--foreground);vertical-align:top;line-height:1.4; }
+  .decision-table tr:hover td { background:rgba(50,180,140,.04); }
+
+  /* Problem-Solution table */
+  .problem-solution-table { width:100%;border-collapse:collapse;font-size:.85rem;min-width:420px;margin-bottom:.5rem; }
+  .problem-solution-table th { background:var(--muted);padding:.6rem 1rem;text-align:left;font-family:var(--font-mono);font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);border-bottom:2px solid var(--border); }
+  .problem-solution-table td { padding:.75rem 1rem;border-bottom:1px solid var(--border);vertical-align:top;color:var(--foreground);line-height:1.5; }
+  .problem-solution-table tr:nth-child(even) td { background:var(--muted); }
+
+  /* Tradeoffs table */
+  .tradeoffs-table { width:100%;border-collapse:collapse;font-size:.85rem;min-width:520px; }
+  .tradeoffs-table th { background:var(--muted);padding:.6rem 1rem;text-align:left;font-family:var(--font-mono);font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);border-bottom:2px solid var(--border); }
+  .tradeoffs-table td { padding:.75rem 1rem;border-bottom:1px solid var(--border);vertical-align:top;color:var(--foreground);line-height:1.5; }
+  .tradeoffs-table td:first-child { font-weight:600;color:var(--primary);font-size:.8rem; }
+  .tradeoffs-table tr:nth-child(even) td { background:rgba(50,180,140,.04); }
+
   /* Gallery */
   .gallery-main { width:100%;height:380px;overflow:hidden;border-radius:var(--radius);background:var(--muted);margin-bottom:.75rem; }
   .gallery-main img { width:100%;height:100%;object-fit:cover; }

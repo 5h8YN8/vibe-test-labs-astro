@@ -275,6 +275,32 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <span style="font-size:.75rem;color:var(--muted-foreground);">$499–$599 &middot; Dyson</span>
 </div>
 
+<!-- ═══ 2.5 QUICK DECISION TABLE ═══════════════════════════ -->
+<section style="margin-bottom:3rem;">
+  <span class="section-label">Quick Answer</span>
+  <h2 style="margin:.25rem 0 .75rem;">What Should You Buy? (At a Glance)</h2>
+  <p style="font-size:.875rem;color:var(--muted-foreground);margin-bottom:1rem;">Use this table to find the right option for your specific situation — not everyone needs the same product.</p>
+  <div style="overflow-x:auto;">
+    <table class="decision-table" itemscope itemtype="https://schema.org/Table">
+      <thead>
+        <tr>
+          <th>If you need…</th>
+          <th>Best Option</th>
+          <th>Why</th>
+        </tr>
+      </thead>
+      <tbody>
+<tr><td>I style hair 5+ times/week and want low heat damage</td><td><strong>Dyson Airwrap Complete</strong></td><td>Coanda effect keeps temp under 302°F; replaces 4+ tools</td></tr>
+<tr><td>I want similar tech at half the price</td><td><strong>Shark FlexStyle</strong></td><td>$300, same Coanda principle, slightly less refined results</td></tr>
+<tr><td>I mostly need a great blowout, not curls</td><td><strong>Dyson Supersonic Dryer</strong></td><td>$429, same heat tech, faster drying, no styling attachments</td></tr>
+<tr><td>I curl hair occasionally, budget under $60</td><td><strong>Revlon One-Step Styler</strong></td><td>High heat damage risk, no Coanda, acceptable for infrequent use</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<div class="divider-gradient" style="margin-bottom:3rem;"></div>
+
 <!-- ═══ 3. IMAGE GALLERY ══════════════════════════════════════ -->
 <div class="gallery-wrap" style="margin-bottom:3rem;">
   <div class="gallery-main">
@@ -333,6 +359,24 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <span class="section-label">The Problem</span>
   <h2 style="margin:.25rem 0 1rem;">Why People Are Looking for a Better Solution</h2>
   <p style="margin-bottom:1.5rem;">Many people damage their hair with high-heat styling tools like flat irons and curling wands. Traditional blow dryers require skill to achieve a polished look, and salon visits are expensive. The Dyson Airwrap became popular because it promises professional results with less heat damage at home.</p>
+
+  <!-- Problem-Solution summary table (LLM-extractable) -->
+  <div style="overflow-x:auto;margin-bottom:1.5rem;">
+    <table class="problem-solution-table">
+      <thead>
+        <tr>
+          <th style="width:48%;">The Problem</th>
+          <th style="width:52%;">How Dyson Airwrap Complete Addresses It</th>
+        </tr>
+      </thead>
+      <tbody>
+<tr><td>Heat damage from daily styling<br><span style="font-size:.8rem;color:var(--muted-foreground);">Flat irons and curling wands operate at 400°F+ — damaging the hair cuticle with repeated use.</span></td><td>Coanda airflow instead of direct heat<br><span style="font-size:.8rem;color:var(--muted-foreground);">Hair wraps around the barrel using air, not a clamp — temperatures stay under 302°F to protect the cuticle.</span></td></tr>
+<tr><td>Salon results require salon skill<br><span style="font-size:.8rem;color:var(--muted-foreground);">Achieving bouncy curls with a traditional wand takes years of practice. Most attempts end in frustration.</span></td><td>Self-wrapping barrels<br><span style="font-size:.8rem;color:var(--muted-foreground);">You hold the section near the barrel and it does the work — no technique required after a few practice sessions.</span></td></tr>
+<tr><td>Maintaining a full tool collection<br><span style="font-size:.8rem;color:var(--muted-foreground);">A complete styling setup (wand, dryer, smoothing brush) costs $300+ and takes up an entire drawer.</span></td><td>One tool, six attachments<br><span style="font-size:.8rem;color:var(--muted-foreground);">Curl barrels, smoothing brushes, and a blow-dry head replace your entire collection in one case.</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
   <div class="problem-cards">
   <div class="problem-card">
     <div class="problem-icon">✕</div>
@@ -536,6 +580,31 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <div class="divider-gradient" style="margin-bottom:3rem;"></div>
 
+<!-- ═══ 11.5 TRADEOFFS ═══════════════════════════════════════ -->
+<section style="margin-bottom:3rem;">
+  <span class="section-label">Tradeoffs</span>
+  <h2 style="margin:.25rem 0 .75rem;">When to Choose Dyson Airwrap Complete vs. The Alternatives</h2>
+  <p style="font-size:.875rem;color:var(--muted-foreground);margin-bottom:1rem;">The right answer depends on your priorities. Here's how the tradeoffs break down.</p>
+  <div style="overflow-x:auto;">
+    <table class="tradeoffs-table">
+      <thead>
+        <tr>
+          <th style="width:22%;">The Tradeoff</th>
+          <th style="width:39%;">If you prioritize A…</th>
+          <th style="width:39%;">If you prioritize B…</th>
+        </tr>
+      </thead>
+      <tbody>
+<tr><td><strong>Curl performance vs. budget</strong></td><td>$599 Airwrap outperforms all alternatives for curls; gap narrows for blowouts</td><td>FlexStyle at $300 closes the gap for blowouts but falls short on tight curls</td></tr>
+<tr><td><strong>Learning curve vs. immediacy</strong></td><td>Airwrap requires 3-5 sessions to see results — frustrating for first-timers</td><td>Traditional wands give instant feedback; Airwrap rewards patience</td></tr>
+<tr><td><strong>All-in-one vs. specialist tools</strong></td><td>Airwrap replaces your full kit; single case for travel</td><td>Dedicated tools (Pro dryer + wand) beat Airwrap on each individual task at $400+ combined</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<div class="divider-gradient" style="margin-bottom:3rem;"></div>
+
 <!-- ═══ 12. CUSTOMER REVIEWS ══════════════════════════════════ -->
 <section style="margin-bottom:3rem;">
   <span class="section-label">Real Users</span>
@@ -696,6 +765,25 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 </script>
 
 <style>
+  /* Decision table */
+  .decision-table { width:100%;border-collapse:collapse;font-size:.85rem;min-width:480px; }
+  .decision-table th { background:var(--muted);padding:.6rem 1rem;text-align:left;font-family:var(--font-mono);font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);border-bottom:2px solid var(--border); }
+  .decision-table td { padding:.7rem 1rem;border-bottom:1px solid var(--border);color:var(--foreground);vertical-align:top;line-height:1.4; }
+  .decision-table tr:hover td { background:rgba(50,180,140,.04); }
+
+  /* Problem-Solution table */
+  .problem-solution-table { width:100%;border-collapse:collapse;font-size:.85rem;min-width:420px;margin-bottom:.5rem; }
+  .problem-solution-table th { background:var(--muted);padding:.6rem 1rem;text-align:left;font-family:var(--font-mono);font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);border-bottom:2px solid var(--border); }
+  .problem-solution-table td { padding:.75rem 1rem;border-bottom:1px solid var(--border);vertical-align:top;color:var(--foreground);line-height:1.5; }
+  .problem-solution-table tr:nth-child(even) td { background:var(--muted); }
+
+  /* Tradeoffs table */
+  .tradeoffs-table { width:100%;border-collapse:collapse;font-size:.85rem;min-width:520px; }
+  .tradeoffs-table th { background:var(--muted);padding:.6rem 1rem;text-align:left;font-family:var(--font-mono);font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);border-bottom:2px solid var(--border); }
+  .tradeoffs-table td { padding:.75rem 1rem;border-bottom:1px solid var(--border);vertical-align:top;color:var(--foreground);line-height:1.5; }
+  .tradeoffs-table td:first-child { font-weight:600;color:var(--primary);font-size:.8rem; }
+  .tradeoffs-table tr:nth-child(even) td { background:rgba(50,180,140,.04); }
+
   /* Gallery */
   .gallery-main { width:100%;height:380px;overflow:hidden;border-radius:var(--radius);background:var(--muted);margin-bottom:.75rem; }
   .gallery-main img { width:100%;height:100%;object-fit:cover; }

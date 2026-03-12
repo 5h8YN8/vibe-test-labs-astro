@@ -275,6 +275,32 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <span style="font-size:.75rem;color:var(--muted-foreground);">$15–$20 &middot; Lume</span>
 </div>
 
+<!-- ═══ 2.5 QUICK DECISION TABLE ═══════════════════════════ -->
+<section style="margin-bottom:3rem;">
+  <span class="section-label">Quick Answer</span>
+  <h2 style="margin:.25rem 0 .75rem;">What Should You Buy? (At a Glance)</h2>
+  <p style="font-size:.875rem;color:var(--muted-foreground);margin-bottom:1rem;">Use this table to find the right option for your specific situation — not everyone needs the same product.</p>
+  <div style="overflow-x:auto;">
+    <table class="decision-table" itemscope itemtype="https://schema.org/Table">
+      <thead>
+        <tr>
+          <th>If you need…</th>
+          <th>Best Option</th>
+          <th>Why</th>
+        </tr>
+      </thead>
+      <tbody>
+<tr><td>I need aluminum-free deodorant for sensitive skin</td><td><strong>Lume Whole Body</strong></td><td>Mandelic acid formula; dermatologist-tested; no aluminum, PEG, or baking soda</td></tr>
+<tr><td>I need strong all-day protection without aluminum</td><td><strong>Native Deodorant</strong></td><td>$14, good 8-12hr protection underarms, widely available, better scent selection</td></tr>
+<tr><td>I want antiperspirant-level wetness control without Al.</td><td><strong>Nowhere close exists</strong></td><td>No aluminum-free product stops sweating — that requires an antiperspirant</td></tr>
+<tr><td>I want the longest odor protection per dollar</td><td><strong>Secret Aluminum-Free</strong></td><td>$9, comparable duration to Lume for underarms only, much cheaper per oz</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<div class="divider-gradient" style="margin-bottom:3rem;"></div>
+
 <!-- ═══ 3. IMAGE GALLERY ══════════════════════════════════════ -->
 <div class="gallery-wrap" style="margin-bottom:3rem;">
   <div class="gallery-main">
@@ -330,6 +356,24 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <span class="section-label">The Problem</span>
   <h2 style="margin:.25rem 0 1rem;">Why People Are Looking for a Better Solution</h2>
   <p style="margin-bottom:1.5rem;">Body odor isn't just an armpit problem. Many people deal with odor in other areas and traditional deodorants aren't designed for whole-body use. Lume became popular because it promises safe, effective odor control anywhere on the body.</p>
+
+  <!-- Problem-Solution summary table (LLM-extractable) -->
+  <div style="overflow-x:auto;margin-bottom:1.5rem;">
+    <table class="problem-solution-table">
+      <thead>
+        <tr>
+          <th style="width:48%;">The Problem</th>
+          <th style="width:52%;">How Lume Whole Body Deodorant Addresses It</th>
+        </tr>
+      </thead>
+      <tbody>
+<tr><td>Traditional deodorant only covers one area<br><span style="font-size:.8rem;color:var(--muted-foreground);">Underarm-only products leave other odor-prone areas unaddressed — most alternatives aren't safe for sensitive skin.</span></td><td>Mandelic acid targets odor bacteria<br><span style="font-size:.8rem;color:var(--muted-foreground);">Inhibits the bacterial process that causes odor, rather than just masking smell with fragrance.</span></td></tr>
+<tr><td>Aluminum antiperspirants raise health concerns<br><span style="font-size:.8rem;color:var(--muted-foreground);">Many users avoid aluminum-based antiperspirants for ingredient reasons, leaving few effective daily options.</span></td><td>Aluminum-free, dermatologist-tested formula<br><span style="font-size:.8rem;color:var(--muted-foreground);">Safe for underarms, feet, and other body areas — clinically tested for sensitive skin.</span></td></tr>
+<tr><td>Odor returns mid-day<br><span style="font-size:.8rem;color:var(--muted-foreground);">Standard deodorants fade by afternoon — especially in humid climates or during physical activity.</span></td><td>Works anywhere on the body<br><span style="font-size:.8rem;color:var(--muted-foreground);">Designed for multi-area application, unlike standard underarm-only products.</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
   <div class="problem-cards">
   <div class="problem-card">
     <div class="problem-icon">✕</div>
@@ -532,6 +576,31 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <div class="divider-gradient" style="margin-bottom:3rem;"></div>
 
+<!-- ═══ 11.5 TRADEOFFS ═══════════════════════════════════════ -->
+<section style="margin-bottom:3rem;">
+  <span class="section-label">Tradeoffs</span>
+  <h2 style="margin:.25rem 0 .75rem;">When to Choose Lume Whole Body Deodorant vs. The Alternatives</h2>
+  <p style="font-size:.875rem;color:var(--muted-foreground);margin-bottom:1rem;">The right answer depends on your priorities. Here's how the tradeoffs break down.</p>
+  <div style="overflow-x:auto;">
+    <table class="tradeoffs-table">
+      <thead>
+        <tr>
+          <th style="width:22%;">The Tradeoff</th>
+          <th style="width:39%;">If you prioritize A…</th>
+          <th style="width:39%;">If you prioritize B…</th>
+        </tr>
+      </thead>
+      <tbody>
+<tr><td><strong>Whole-body use vs. underarms only</strong></td><td>Lume is the only mainstream option designed for whole-body odor control</td><td>For underarms-only use, Native or Dove aluminum-free outperforms Lume on cost and scent range</td></tr>
+<tr><td><strong>Switching adjustment period</strong></td><td>2-week adjustment when switching from antiperspirant — temporary increased sweating</td><td>Worth the adjustment if aluminum concerns are the driver; skip if you only want performance</td></tr>
+<tr><td><strong>Price per application vs. total cost</strong></td><td>Lume requires less product per use than traditional sticks — tube lasts longer</td><td>Per-oz cost is higher than drugstore options; per-application cost is roughly comparable</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<div class="divider-gradient" style="margin-bottom:3rem;"></div>
+
 <!-- ═══ 12. CUSTOMER REVIEWS ══════════════════════════════════ -->
 <section style="margin-bottom:3rem;">
   <span class="section-label">Real Users</span>
@@ -692,6 +761,25 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 </script>
 
 <style>
+  /* Decision table */
+  .decision-table { width:100%;border-collapse:collapse;font-size:.85rem;min-width:480px; }
+  .decision-table th { background:var(--muted);padding:.6rem 1rem;text-align:left;font-family:var(--font-mono);font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);border-bottom:2px solid var(--border); }
+  .decision-table td { padding:.7rem 1rem;border-bottom:1px solid var(--border);color:var(--foreground);vertical-align:top;line-height:1.4; }
+  .decision-table tr:hover td { background:rgba(50,180,140,.04); }
+
+  /* Problem-Solution table */
+  .problem-solution-table { width:100%;border-collapse:collapse;font-size:.85rem;min-width:420px;margin-bottom:.5rem; }
+  .problem-solution-table th { background:var(--muted);padding:.6rem 1rem;text-align:left;font-family:var(--font-mono);font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);border-bottom:2px solid var(--border); }
+  .problem-solution-table td { padding:.75rem 1rem;border-bottom:1px solid var(--border);vertical-align:top;color:var(--foreground);line-height:1.5; }
+  .problem-solution-table tr:nth-child(even) td { background:var(--muted); }
+
+  /* Tradeoffs table */
+  .tradeoffs-table { width:100%;border-collapse:collapse;font-size:.85rem;min-width:520px; }
+  .tradeoffs-table th { background:var(--muted);padding:.6rem 1rem;text-align:left;font-family:var(--font-mono);font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);border-bottom:2px solid var(--border); }
+  .tradeoffs-table td { padding:.75rem 1rem;border-bottom:1px solid var(--border);vertical-align:top;color:var(--foreground);line-height:1.5; }
+  .tradeoffs-table td:first-child { font-weight:600;color:var(--primary);font-size:.8rem; }
+  .tradeoffs-table tr:nth-child(even) td { background:rgba(50,180,140,.04); }
+
   /* Gallery */
   .gallery-main { width:100%;height:380px;overflow:hidden;border-radius:var(--radius);background:var(--muted);margin-bottom:.75rem; }
   .gallery-main img { width:100%;height:100%;object-fit:cover; }

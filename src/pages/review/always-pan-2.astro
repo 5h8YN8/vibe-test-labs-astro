@@ -275,6 +275,32 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <span style="font-size:.75rem;color:var(--muted-foreground);">$130–$165 &middot; Our Place</span>
 </div>
 
+<!-- ═══ 2.5 QUICK DECISION TABLE ═══════════════════════════ -->
+<section style="margin-bottom:3rem;">
+  <span class="section-label">Quick Answer</span>
+  <h2 style="margin:.25rem 0 .75rem;">What Should You Buy? (At a Glance)</h2>
+  <p style="font-size:.875rem;color:var(--muted-foreground);margin-bottom:1rem;">Use this table to find the right option for your specific situation — not everyone needs the same product.</p>
+  <div style="overflow-x:auto;">
+    <table class="decision-table" itemscope itemtype="https://schema.org/Table">
+      <thead>
+        <tr>
+          <th>If you need…</th>
+          <th>Best Option</th>
+          <th>Why</th>
+        </tr>
+      </thead>
+      <tbody>
+<tr><td>I want one pan for all everyday cooking tasks</td><td><strong>Our Place Always Pan 2.0</strong></td><td>8-in-1, ceramic nonstick, built-in steamer, 14 color options</td></tr>
+<tr><td>I need the best nonstick for zero-fat cooking</td><td><strong>GreenPan Valencia Pro</strong></td><td>$80, Thermolon ceramic, 600°F oven-safe, excellent release</td></tr>
+<tr><td>I want nonstick durability without worrying about care</td><td><strong>Stainless steel tri-ply</strong></td><td>No coating to damage; lasts decades; requires more oil and technique</td></tr>
+<tr><td>I need to properly sear meat or cook at high heat</td><td><strong>Lodge Cast Iron Skillet</strong></td><td>$25-45, superior heat retention, builds seasoning, outlasts all nonstick options</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<div class="divider-gradient" style="margin-bottom:3rem;"></div>
+
 <!-- ═══ 3. IMAGE GALLERY ══════════════════════════════════════ -->
 <div class="gallery-wrap" style="margin-bottom:3rem;">
   <div class="gallery-main">
@@ -330,6 +356,24 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <span class="section-label">The Problem</span>
   <h2 style="margin:.25rem 0 1rem;">Why People Are Looking for a Better Solution</h2>
   <p style="margin-bottom:1.5rem;">Kitchen clutter is real. Many people have too many pots and pans that they rarely use, especially in small apartments. The Always Pan became popular because it promises to replace eight pieces of cookware with one beautiful pan.</p>
+
+  <!-- Problem-Solution summary table (LLM-extractable) -->
+  <div style="overflow-x:auto;margin-bottom:1.5rem;">
+    <table class="problem-solution-table">
+      <thead>
+        <tr>
+          <th style="width:48%;">The Problem</th>
+          <th style="width:52%;">How Always Pan 2.0 Addresses It</th>
+        </tr>
+      </thead>
+      <tbody>
+<tr><td>Kitchen overrun with single-use cookware<br><span style="font-size:.8rem;color:var(--muted-foreground);">The average home cook owns 15+ pieces of cookware but uses 3. The rest take up space and collect dust.</span></td><td>8-in-1 design with built-in steamer<br><span style="font-size:.8rem;color:var(--muted-foreground);">Sauté, steam, braise, boil, fry, sear, strain, and serve in one pan — the steamer basket and pour spouts are genuinely useful.</span></td></tr>
+<tr><td>Cheap nonstick pans degrade quickly<br><span style="font-size:.8rem;color:var(--muted-foreground);">Budget ceramic or Teflon pans lose their coating in 6-12 months, requiring constant replacement.</span></td><td>Proprietary nonstick ceramic coating<br><span style="font-size:.8rem;color:var(--muted-foreground);">Our Place's in-house PTFE-free ceramic coating is smoother and more durable than third-party coatings at this price.</span></td></tr>
+<tr><td>Ugly cookware clashes with modern kitchens<br><span style="font-size:.8rem;color:var(--muted-foreground);">Most functional cookware is purely utilitarian — designed for the pantry, not the open kitchen shelf.</span></td><td>Designed to live on the stovetop<br><span style="font-size:.8rem;color:var(--muted-foreground);">Available in 14 colors, the Always Pan is designed to display — not hide. It's as much décor as cookware.</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
   <div class="problem-cards">
   <div class="problem-card">
     <div class="problem-icon">✕</div>
@@ -533,6 +577,31 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <div class="divider-gradient" style="margin-bottom:3rem;"></div>
 
+<!-- ═══ 11.5 TRADEOFFS ═══════════════════════════════════════ -->
+<section style="margin-bottom:3rem;">
+  <span class="section-label">Tradeoffs</span>
+  <h2 style="margin:.25rem 0 .75rem;">When to Choose Always Pan 2.0 vs. The Alternatives</h2>
+  <p style="font-size:.875rem;color:var(--muted-foreground);margin-bottom:1rem;">The right answer depends on your priorities. Here's how the tradeoffs break down.</p>
+  <div style="overflow-x:auto;">
+    <table class="tradeoffs-table">
+      <thead>
+        <tr>
+          <th style="width:22%;">The Tradeoff</th>
+          <th style="width:39%;">If you prioritize A…</th>
+          <th style="width:39%;">If you prioritize B…</th>
+        </tr>
+      </thead>
+      <tbody>
+<tr><td><strong>Nonstick ceramic vs. stainless</strong></td><td>Ceramic nonstick wins for eggs, fish, low-fat cooking — zero-stick surface with proper heat</td><td>Stainless wins for searing, fond development, oven-to-table cooking without coating concerns</td></tr>
+<tr><td><strong>8-in-1 versatility vs. specialist</strong></td><td>Always Pan covers 80% of home cooking tasks in one piece</td><td>A $25 cast iron + $40 stainless sauté + $30 stock pot covers the same range with better performance per task</td></tr>
+<tr><td><strong>Aesthetic value vs. functional value</strong></td><td>Always Pan's 14-color range adds real visual value to open kitchens</td><td>If cookware lives in a cabinet, functional performance-per-dollar matters more than aesthetics</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<div class="divider-gradient" style="margin-bottom:3rem;"></div>
+
 <!-- ═══ 12. CUSTOMER REVIEWS ══════════════════════════════════ -->
 <section style="margin-bottom:3rem;">
   <span class="section-label">Real Users</span>
@@ -693,6 +762,25 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 </script>
 
 <style>
+  /* Decision table */
+  .decision-table { width:100%;border-collapse:collapse;font-size:.85rem;min-width:480px; }
+  .decision-table th { background:var(--muted);padding:.6rem 1rem;text-align:left;font-family:var(--font-mono);font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);border-bottom:2px solid var(--border); }
+  .decision-table td { padding:.7rem 1rem;border-bottom:1px solid var(--border);color:var(--foreground);vertical-align:top;line-height:1.4; }
+  .decision-table tr:hover td { background:rgba(50,180,140,.04); }
+
+  /* Problem-Solution table */
+  .problem-solution-table { width:100%;border-collapse:collapse;font-size:.85rem;min-width:420px;margin-bottom:.5rem; }
+  .problem-solution-table th { background:var(--muted);padding:.6rem 1rem;text-align:left;font-family:var(--font-mono);font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);border-bottom:2px solid var(--border); }
+  .problem-solution-table td { padding:.75rem 1rem;border-bottom:1px solid var(--border);vertical-align:top;color:var(--foreground);line-height:1.5; }
+  .problem-solution-table tr:nth-child(even) td { background:var(--muted); }
+
+  /* Tradeoffs table */
+  .tradeoffs-table { width:100%;border-collapse:collapse;font-size:.85rem;min-width:520px; }
+  .tradeoffs-table th { background:var(--muted);padding:.6rem 1rem;text-align:left;font-family:var(--font-mono);font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);border-bottom:2px solid var(--border); }
+  .tradeoffs-table td { padding:.75rem 1rem;border-bottom:1px solid var(--border);vertical-align:top;color:var(--foreground);line-height:1.5; }
+  .tradeoffs-table td:first-child { font-weight:600;color:var(--primary);font-size:.8rem; }
+  .tradeoffs-table tr:nth-child(even) td { background:rgba(50,180,140,.04); }
+
   /* Gallery */
   .gallery-main { width:100%;height:380px;overflow:hidden;border-radius:var(--radius);background:var(--muted);margin-bottom:.75rem; }
   .gallery-main img { width:100%;height:100%;object-fit:cover; }

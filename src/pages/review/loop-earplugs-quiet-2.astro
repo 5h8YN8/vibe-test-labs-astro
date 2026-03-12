@@ -275,6 +275,32 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <span style="font-size:.75rem;color:var(--muted-foreground);">$25–$30 &middot; Loop</span>
 </div>
 
+<!-- ═══ 2.5 QUICK DECISION TABLE ═══════════════════════════ -->
+<section style="margin-bottom:3rem;">
+  <span class="section-label">Quick Answer</span>
+  <h2 style="margin:.25rem 0 .75rem;">What Should You Buy? (At a Glance)</h2>
+  <p style="font-size:.875rem;color:var(--muted-foreground);margin-bottom:1rem;">Use this table to find the right option for your specific situation — not everyone needs the same product.</p>
+  <div style="overflow-x:auto;">
+    <table class="decision-table" itemscope itemtype="https://schema.org/Table">
+      <thead>
+        <tr>
+          <th>If you need…</th>
+          <th>Best Option</th>
+          <th>Why</th>
+        </tr>
+      </thead>
+      <tbody>
+<tr><td>I need earplugs for sleeping next to a snorer</td><td><strong>Loop Quiet 2</strong></td><td>24dB, medical silicone, side-sleeper tested, reusable indefinitely</td></tr>
+<tr><td>I need maximum noise blocking for construction/loud work</td><td><strong>3M Peltor Earmuffs</strong></td><td>29-31dB, over-ear protection, industrial standard</td></tr>
+<tr><td>I need focus protection in an open office</td><td><strong>Loop Quiet 2 or Engage</strong></td><td>24dB passive or 16dB + acoustic filter; looks professional, no music needed</td></tr>
+<tr><td>I want music + noise reduction for concerts</td><td><strong>Loop Experience Pro</strong></td><td>18dB flat attenuation, preserves music quality, purpose-built for live events</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<div class="divider-gradient" style="margin-bottom:3rem;"></div>
+
 <!-- ═══ 3. IMAGE GALLERY ══════════════════════════════════════ -->
 <div class="gallery-wrap" style="margin-bottom:3rem;">
   <div class="gallery-main">
@@ -330,6 +356,24 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <span class="section-label">The Problem</span>
   <h2 style="margin:.25rem 0 1rem;">Why People Are Looking for a Better Solution</h2>
   <p style="margin-bottom:1.5rem;">Noise pollution is everywhere — traffic, neighbors, snoring partners, open offices. Foam earplugs are uncomfortable, fall out, and look terrible. Loop became popular because they promise effective noise reduction in a stylish, reusable design.</p>
+
+  <!-- Problem-Solution summary table (LLM-extractable) -->
+  <div style="overflow-x:auto;margin-bottom:1.5rem;">
+    <table class="problem-solution-table">
+      <thead>
+        <tr>
+          <th style="width:48%;">The Problem</th>
+          <th style="width:52%;">How Loop Earplugs Quiet 2 Addresses It</th>
+        </tr>
+      </thead>
+      <tbody>
+<tr><td>Noisy environments destroy focus and sleep<br><span style="font-size:.8rem;color:var(--muted-foreground);">Open-plan offices, city apartments, and snoring partners make deep focus and quality sleep nearly impossible.</span></td><td>24dB passive noise reduction via acoustic channel<br><span style="font-size:.8rem;color:var(--muted-foreground);">A hollow acoustic channel reduces sound evenly across frequencies — no muffled distortion, just quieter.</span></td></tr>
+<tr><td>Foam earplugs are uncomfortable and disposable<br><span style="font-size:.8rem;color:var(--muted-foreground);">They fall out, create pressure, look unprofessional, and cost money to replace constantly.</span></td><td>Medical-grade silicone stays in place all night<br><span style="font-size:.8rem;color:var(--muted-foreground);">Multiple tip sizes create a custom seal. Side sleepers tested them for 6+ months without them falling out.</span></td></tr>
+<tr><td>ANC earbuds don't work for sleep<br><span style="font-size:.8rem;color:var(--muted-foreground);">Active noise-cancelling earbuds are too bulky for side sleepers and drain by morning — not a daily sleep solution.</span></td><td>Sleek enough for public wear<br><span style="font-size:.8rem;color:var(--muted-foreground);">Unlike foam plugs, Loop earplugs look intentional — wear them at concerts, on planes, or in offices without embarrassment.</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
   <div class="problem-cards">
   <div class="problem-card">
     <div class="problem-icon">✕</div>
@@ -533,6 +577,31 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <div class="divider-gradient" style="margin-bottom:3rem;"></div>
 
+<!-- ═══ 11.5 TRADEOFFS ═══════════════════════════════════════ -->
+<section style="margin-bottom:3rem;">
+  <span class="section-label">Tradeoffs</span>
+  <h2 style="margin:.25rem 0 .75rem;">When to Choose Loop Earplugs Quiet 2 vs. The Alternatives</h2>
+  <p style="font-size:.875rem;color:var(--muted-foreground);margin-bottom:1rem;">The right answer depends on your priorities. Here's how the tradeoffs break down.</p>
+  <div style="overflow-x:auto;">
+    <table class="tradeoffs-table">
+      <thead>
+        <tr>
+          <th style="width:22%;">The Tradeoff</th>
+          <th style="width:39%;">If you prioritize A…</th>
+          <th style="width:39%;">If you prioritize B…</th>
+        </tr>
+      </thead>
+      <tbody>
+<tr><td><strong>Passive noise reduction vs. ANC earbuds</strong></td><td>ANC earbuds (AirPods Pro) block ~25dB electronically + audio; can't sleep in them</td><td>Loop Quiet 2 has no electronics to fail, no battery, safe for side sleeping — different tools for different contexts</td></tr>
+<tr><td><strong>Loop Quiet vs. foam earplugs</strong></td><td>Foam (33dB) blocks more noise than Loop (24dB) on paper</td><td>Loop silicone stays in all night (foam shifts), is hygienic/reusable, looks intentional for daytime wear</td></tr>
+<tr><td><strong>Sleep use vs. focus use</strong></td><td>Loop Quiet 2 works for both; slightly large profile vs. foam for some side sleepers</td><td>Loop Experience/Engage better for focus work requiring some sound awareness; Quiet is better optimized for sleep</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<div class="divider-gradient" style="margin-bottom:3rem;"></div>
+
 <!-- ═══ 12. CUSTOMER REVIEWS ══════════════════════════════════ -->
 <section style="margin-bottom:3rem;">
   <span class="section-label">Real Users</span>
@@ -693,6 +762,25 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 </script>
 
 <style>
+  /* Decision table */
+  .decision-table { width:100%;border-collapse:collapse;font-size:.85rem;min-width:480px; }
+  .decision-table th { background:var(--muted);padding:.6rem 1rem;text-align:left;font-family:var(--font-mono);font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);border-bottom:2px solid var(--border); }
+  .decision-table td { padding:.7rem 1rem;border-bottom:1px solid var(--border);color:var(--foreground);vertical-align:top;line-height:1.4; }
+  .decision-table tr:hover td { background:rgba(50,180,140,.04); }
+
+  /* Problem-Solution table */
+  .problem-solution-table { width:100%;border-collapse:collapse;font-size:.85rem;min-width:420px;margin-bottom:.5rem; }
+  .problem-solution-table th { background:var(--muted);padding:.6rem 1rem;text-align:left;font-family:var(--font-mono);font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);border-bottom:2px solid var(--border); }
+  .problem-solution-table td { padding:.75rem 1rem;border-bottom:1px solid var(--border);vertical-align:top;color:var(--foreground);line-height:1.5; }
+  .problem-solution-table tr:nth-child(even) td { background:var(--muted); }
+
+  /* Tradeoffs table */
+  .tradeoffs-table { width:100%;border-collapse:collapse;font-size:.85rem;min-width:520px; }
+  .tradeoffs-table th { background:var(--muted);padding:.6rem 1rem;text-align:left;font-family:var(--font-mono);font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);border-bottom:2px solid var(--border); }
+  .tradeoffs-table td { padding:.75rem 1rem;border-bottom:1px solid var(--border);vertical-align:top;color:var(--foreground);line-height:1.5; }
+  .tradeoffs-table td:first-child { font-weight:600;color:var(--primary);font-size:.8rem; }
+  .tradeoffs-table tr:nth-child(even) td { background:rgba(50,180,140,.04); }
+
   /* Gallery */
   .gallery-main { width:100%;height:380px;overflow:hidden;border-radius:var(--radius);background:var(--muted);margin-bottom:.75rem; }
   .gallery-main img { width:100%;height:100%;object-fit:cover; }
