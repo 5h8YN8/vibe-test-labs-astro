@@ -351,12 +351,12 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
     /* ── Hero ── */
     .hero-section { position: relative; height: 70vh; min-height: 500px; overflow: hidden; background: var(--gradient-hero); }
     .hero-overlay-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
-    .hero-fade { position: absolute; inset: 0; background: linear-gradient(to top, var(--background) 0%, rgba(0,0,0,0.55) 40%, rgba(0,0,0,0.45) 100%); }
+    .hero-fade { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.55) 45%, rgba(0,0,0,0.25) 100%); }
     .hero-content { position: relative; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; padding: 0 1.5rem 4rem; max-width: 900px; }
     @media(min-width:768px){ .hero-content { padding: 0 4rem 4rem; } }
     .hero-label { font-family: var(--font-mono); font-size: .7rem; text-transform: uppercase; letter-spacing: .3em; color: var(--primary); font-weight: 700; margin: 0 0 1.5rem; }
-    .hero-h1 { font-family: var(--font-mono); font-weight: 700; line-height: 1.1; margin: 0 0 1.5rem; color: var(--foreground); font-size: clamp(1.6rem, 5vw, 3rem); max-width: 760px; }
-    .hero-sub { font-family: var(--font-sans); font-size: clamp(1rem, 2vw, 1.15rem); color: var(--muted-foreground); margin: 0 0 2rem; max-width: 520px; line-height: 1.6; }
+    .hero-h1 { font-family: var(--font-mono); font-weight: 700; line-height: 1.1; margin: 0 0 1.5rem; color: #ffffff; text-shadow: 0 2px 12px rgba(0,0,0,0.4); font-size: clamp(1.6rem, 5vw, 3rem); max-width: 760px; }
+    .hero-sub { font-family: var(--font-sans); font-size: clamp(1rem, 2vw, 1.15rem); color: rgba(255,255,255,0.88); text-shadow: 0 1px 6px rgba(0,0,0,0.5); margin: 0 0 2rem; max-width: 520px; line-height: 1.6; }
 
     /* ── Page sections (full-width pages) ── */
     .page-section { padding: 5rem 1.5rem; }
