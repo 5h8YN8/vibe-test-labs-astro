@@ -406,6 +406,95 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
     .filter-pill.active { background: var(--foreground); color: var(--background); }
     .filter-pill.inactive { background: var(--muted); color: var(--muted-foreground); }
     .filter-pill.inactive:hover { background: rgba(50,180,140,.15); color: var(--primary); }
+
+    /* ── Mobile-optimized tables ────────────────────────────── */
+    @media (max-width: 640px) {
+      /* Convert all named tables to stacked card layout on mobile */
+      .decision-table,
+      .problem-solution-table,
+      .tradeoffs-table,
+      .comp-table {
+        display: block !important;
+        min-width: 0 !important;
+        width: 100% !important;
+      }
+
+      /* Hide column headers — content is self-explanatory in card layout */
+      .decision-table thead,
+      .problem-solution-table thead,
+      .tradeoffs-table thead,
+      .comp-table thead {
+        display: none !important;
+      }
+
+      /* tbody and tr become block containers */
+      .decision-table tbody,
+      .decision-table tr,
+      .problem-solution-table tbody,
+      .problem-solution-table tr,
+      .tradeoffs-table tbody,
+      .tradeoffs-table tr,
+      .comp-table tbody,
+      .comp-table tr {
+        display: block !important;
+      }
+
+      /* Each row becomes a card */
+      .decision-table tbody tr,
+      .problem-solution-table tbody tr,
+      .tradeoffs-table tbody tr,
+      .comp-table tbody tr {
+        border: 1px solid var(--border) !important;
+        border-radius: var(--radius) !important;
+        margin-bottom: .75rem !important;
+        overflow: hidden !important;
+        background: var(--card) !important;
+      }
+
+      /* Each cell is a full-width block row */
+      .decision-table td,
+      .problem-solution-table td,
+      .tradeoffs-table td,
+      .comp-table td {
+        display: block !important;
+        padding: .6rem .85rem !important;
+        border-bottom: 1px solid var(--border) !important;
+        width: 100% !important;
+        white-space: normal !important;
+        font-size: .875rem !important;
+        line-height: 1.5 !important;
+        box-sizing: border-box !important;
+      }
+
+      /* No border on the last cell in each card */
+      .decision-table td:last-child,
+      .problem-solution-table td:last-child,
+      .tradeoffs-table td:last-child,
+      .comp-table td:last-child {
+        border-bottom: none !important;
+      }
+
+      /* Remove alternating row backgrounds — they look odd in card layout */
+      .decision-table tr:nth-child(even) td,
+      .problem-solution-table tr:nth-child(even) td,
+      .tradeoffs-table tr:nth-child(even) td,
+      .comp-table tr:nth-child(even) td {
+        background: transparent !important;
+      }
+
+      /* Highlight row in comp-table still pops */
+      .comp-row-highlight td {
+        background: rgba(50,180,140,.07) !important;
+      }
+
+      /* Remove overflow-x:auto scroll containers since we no longer need them */
+      .decision-table,
+      .problem-solution-table,
+      .tradeoffs-table,
+      .comp-table {
+        overflow: visible !important;
+      }
+    }
   </style>
 </head>
 <body>

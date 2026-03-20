@@ -125,6 +125,20 @@ const faqSchema = {
     font-weight: 600;
     width: 35%;
   }
+
+  /* ── Mobile overrides ──────────────────────────────────── */
+  @media (max-width: 640px) {
+    .decision-table td:nth-child(2) {
+      white-space: normal;
+    }
+    .tradeoffs-table td:first-child {
+      white-space: normal;
+      width: auto;
+    }
+    .problem-solution-table td:first-child {
+      width: auto;
+    }
+  }
 </style>
 
 <a href="/tests" class="back-link">&larr; Back to Tests</a>
