@@ -35,3 +35,5 @@ export interface Product {
 }
 
 export const products: Product[] = [];
+
+export const categories: string[] = ['All', 'Kitchen & Dining'];
