@@ -271,6 +271,9 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
     .buy-box strong { color: var(--foreground); display: block; font-family: var(--font-mono); font-size: 1.05rem; margin-bottom: .2rem; }
     .disclaimer { font-size: .75rem; color: var(--muted-foreground); font-style: italic; }
 
+    /* ── Shopify Buy Button centering ── */
+    [id^="product-component"] > iframe { display: block; margin: 0 auto; }
+
     /* ── Footer ── */
     .site-footer { padding: 0 1.5rem 2.5rem; }
     @media(min-width:768px){ .site-footer { padding: 0 4rem 2.5rem; } }
