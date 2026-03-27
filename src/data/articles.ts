@@ -230,6 +230,154 @@ export const articles: Article[] = [
       { problem: "Core aerator rentals cost $60–95 per use", solution: "One-time $44.99 purchase, reusable every season — pays for itself after one use" },
       { problem: "Lawn services charge $80–200+ for aeration", solution: "Aerate a typical small yard yourself in 20–30 minutes with no scheduling required" }
     ]
+  },
+  {
+    id: "a4",
+    slug: "knitted-weighted-blanket",
+    question: "Do Knitted Weighted Blankets Actually Help You Sleep Better?",
+    shortAnswer: "Yes — knitted weighted blankets provide the same deep pressure stimulation as bead-filled options but with better breathability and zero bead-leakage risk. The LAGRATY ($290) uses chunky yarn density instead of glass beads, making it machine washable, pet-safe, and decorative. The tradeoff: it's 3-4x pricier than traditional weighted blankets and only comes in 7lbs, which may be too light for adults over 200 lbs.",
+    category: "Sleepmaxxing",
+    date: "2026-03-27",
+    readTime: "7 min read",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/f8005e5a4b29aad14305a9bf3786.jpg?v=1774539126",
+    intro: "Traditional weighted blankets have two persistent complaints: they trap heat and the glass beads leak. Knitted weighted blankets solve both by using dense yarn as the weight source — no beads, open-knit holes for airflow, and a decorative look you'd actually leave on the couch. But that engineering comes at a premium price.",
+    sections: [
+      { heading: "Why Do Weighted Blankets Help with Sleep?", body: "Weighted blankets provide deep pressure stimulation (DPS) — consistent, gentle pressure across the body that triggers the parasympathetic nervous system. This promotes serotonin and melatonin production while reducing cortisol. The effect is similar to being hugged, which is why weighted blankets help with anxiety, restlessness, and sleep onset." },
+      { heading: "What Makes Knitted Weighted Blankets Different?", body: "Instead of glass beads sewn into pockets, knitted weighted blankets use thick, dense yarn where the weight comes from the yarn itself. This means no beads to leak, no shifting weight, natural breathability through the open knit holes, and the ability to machine wash without worrying about bead damage. The LAGRATY uses a braided crochet pattern at 7lbs in a 50x60 inch throw size." },
+      { heading: "Who Should Buy a Knitted Weighted Blanket?", body: "Best for hot sleepers who find traditional weighted blankets too warm, pet owners worried about bead ingestion, and anyone who wants a weighted blanket that doubles as living room decor. Skip if you need a blanket heavier than 7lbs, want full-bed coverage, or find the $290 price hard to justify when bead-filled options start at $40-60." }
+    ],
+    products: [
+      {
+        name: "LAGRATY Knitted Weighted Blanket",
+        slug: "knitted-weighted-blanket",
+        vibeScore: 74,
+        price: "$290.20",
+        image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/f8005e5a4b29aad14305a9bf3786.jpg?v=1774539126",
+        verdict: "Clever bead-free design at a premium price",
+        verdictBadge: "Hidden Gem",
+        affiliateUrl: "https://fwaqf1-er.myshopify.com/products/lagraty-knitted-weighted-blanket-50x60-7lbs-cooling-chunky-knit-heavy-blanket-for-adults-braided-crochet-throw-thick-cable-yarn-knit-decorative-blanket-no-beads-evenly-weighted-machine-washable?utm_source=aeo&utm_medium=content&utm_campaign=knitted-weighted-blanket"
+      }
+    ],
+    faq: [
+      { question: "Do knitted weighted blankets work as well as bead-filled ones?", answer: "Yes — the deep pressure stimulation is the same. The weight comes from yarn density instead of glass beads, so the calming effect is equivalent. Knitted versions are more breathable but limited in maximum weight." },
+      { question: "Is 7 pounds heavy enough for an adult?", answer: "For most adults under 200 lbs, yes. The standard recommendation is 7-12% of body weight. If you weigh over 200 lbs, look for a 12-15 lb option." },
+      { question: "Can I machine wash a knitted weighted blanket?", answer: "Yes — cold water, gentle cycle, air dry flat. Do not tumble dry. Drying takes 24-48 hours due to the dense yarn." },
+      { question: "Are knitted weighted blankets safe for pets?", answer: "Yes — no glass beads means no risk of ingestion if a pet chews or scratches the blanket. This is one of the main advantages over bead-filled options." },
+      { question: "How long does shipping take?", answer: "Standard shipping typically takes 7-14 business days. Orders are fulfilled within 1-2 business days of purchase." }
+    ],
+    decision_table: [
+      { need: "Breathable weighted blanket for hot sleepers", best: "LAGRATY Knitted Weighted Blanket", why: "Open-knit holes allow airflow — cooler than any bead-filled option" },
+      { need: "Heaviest possible weighted blanket (15+ lbs)", best: "Traditional bead-filled blanket", why: "Knitted blankets max out around 7-10 lbs due to yarn weight limits" },
+      { need: "Budget weighted blanket under $60", best: "Standard glass-bead weighted blanket", why: "Bead-filled options start at $40 — knitted designs are 3-5x more" }
+    ],
+    tradeoffs: [
+      { tradeoff: "Construction", side_a: "Knitted yarn — no beads, breathable, pet-safe, decorative", side_b: "Glass beads — heavier options available, cheaper, full-bed sizes" },
+      { tradeoff: "Price vs Features", side_a: "$290 for bead-free, machine washable, breathable design", side_b: "$40-80 for traditional weighted blankets with more weight options" }
+    ],
+    problem_solution: [
+      { problem: "Traditional weighted blankets trap body heat, causing night sweats", solution: "Open-knit holes in chunky yarn allow air to circulate directly — noticeably cooler than bead-filled blankets" },
+      { problem: "Glass beads leak through stitching and scatter across the bed", solution: "Weight comes from yarn density, not beads — zero leakage risk, ever" },
+      { problem: "Pets chew weighted blankets and risk ingesting glass beads", solution: "No beads means no ingestion danger — safe for cats and dogs" }
+    ]
+  },
+  {
+    id: "a5",
+    slug: "kids-weighted-blanket",
+    question: "Are Weighted Blankets Safe for Kids — and Do They Actually Help?",
+    shortAnswer: "For children over 3 years old and 30+ pounds, yes — properly sized weighted blankets are safe and can help with sleep onset, restlessness, and anxiety. The Yescool ($140) uses a dual-sided design with minky dots for sensory comfort and a 7-layer glass bead system. It's effective but expensive — budget kids weighted blankets deliver similar core functionality for $25-40.",
+    category: "Sleepmaxxing",
+    date: "2026-03-27",
+    readTime: "7 min read",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/42d355e44b27910a958e389bc73e.jpg?v=1774539135",
+    intro: "Bedtime battles are real. Kids who can't settle, who toss and turn, or who experience nighttime anxiety often benefit from deep pressure stimulation — the same calming mechanism behind swaddling infants. A weighted blanket sized for kids provides that gentle, even pressure. But safety matters: weight, age, and supervision guidelines exist for a reason.",
+    sections: [
+      { heading: "When Are Weighted Blankets Safe for Kids?", body: "Weighted blankets are NOT recommended for children under 2 years old or under 20 pounds. For kids ages 3+ weighing 30 pounds or more, a blanket weighing 7-10% of body weight is the standard guideline. The 3lb Yescool targets kids roughly 30-50 lbs. Always consult your pediatrician before introducing a weighted blanket, especially for children with respiratory or motor conditions." },
+      { heading: "How Does the Dual-Sided Design Work?", body: "The Yescool has two distinct sides: a minky dot plush side that provides tactile sensory input (great for sensory-seeking kids), and a smooth microfiber side that feels cooler for warm nights. The 7-layer construction locks glass beads in small individual pockets so they can't shift to one side. This even distribution is critical for both comfort and safety." },
+      { heading: "Is $140 Worth It for a Kids Weighted Blanket?", body: "The dual-sided design and minky texture justify a premium over the cheapest options, but $140 is 3-5x what budget kids weighted blankets cost on Amazon. If the sensory minky dots and all-season versatility matter to your child, the Yescool is a good pick. If you just need basic weighted pressure, a $30-40 option will do the job." }
+    ],
+    products: [
+      {
+        name: "Yescool Kids Weighted Blanket",
+        slug: "kids-weighted-blanket",
+        vibeScore: 72,
+        price: "$139.57",
+        image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/42d355e44b27910a958e389bc73e.jpg?v=1774539135",
+        verdict: "Great sensory design, but overpriced for the category",
+        verdictBadge: "Hidden Gem",
+        affiliateUrl: "https://fwaqf1-er.myshopify.com/products/yescool-weighted-blanket-kids-3-lb-christmas-green-warm-weighted-throw-blanket-minky-plush-heavy-blanket-microfiber-small-fleece-blanket-cooling-heating-weighted-comforter-36-48in?utm_source=aeo&utm_medium=content&utm_campaign=kids-weighted-blanket"
+      }
+    ],
+    faq: [
+      { question: "Are weighted blankets safe for toddlers?", answer: "No — weighted blankets are NOT recommended for children under 2 years old or under 20 lbs due to suffocation risk. Always consult your pediatrician." },
+      { question: "How heavy should a kids weighted blanket be?", answer: "7-10% of the child's body weight. The 3lb Yescool is appropriate for kids weighing 30-50 lbs, roughly ages 3-8." },
+      { question: "Will the glass beads leak out?", answer: "The 7-layer pocket design makes bead leakage unlikely with normal use. If the fabric tears or is chewed through, beads can escape. Supervise young children and inspect the blanket regularly." },
+      { question: "Can I machine wash it?", answer: "Hand washing is recommended. If machine washing, use cold water on gentle cycle and air dry. Fabric may pill after multiple washes." },
+      { question: "What does the minky dot side do?", answer: "The raised minky dots provide tactile sensory input that many kids find calming. It's particularly helpful for sensory-seeking children or those who fidget at bedtime." }
+    ],
+    decision_table: [
+      { need: "Sensory-seeking child who needs tactile comfort", best: "Yescool Kids Weighted Blanket", why: "Minky dot texture provides extra sensory input beyond just weight" },
+      { need: "Budget weighted blanket for kids", best: "Amazon Basics Kids Weighted Blanket ($25-40)", why: "Delivers weighted pressure at a fraction of the price" },
+      { need: "Weighted pressure for an adult", best: "LAGRATY Knitted Weighted Blanket", why: "7lb adult-sized throw with no beads and better breathability" }
+    ],
+    tradeoffs: [
+      { tradeoff: "Sensory Features", side_a: "Yescool minky dots — extra tactile stimulation, dual-sided for seasons", side_b: "Budget blankets — weight only, single-sided, less sensory appeal" },
+      { tradeoff: "Price", side_a: "$140 for premium dual-sided construction", side_b: "$25-40 for basic bead-weighted blankets that provide the same core function" }
+    ],
+    problem_solution: [
+      { problem: "Kids toss and turn, can't settle at bedtime", solution: "3lb weighted blanket provides deep pressure stimulation that triggers the calming nervous system response" },
+      { problem: "Child is a sensory seeker who fidgets with textures", solution: "Minky dot plush side gives tactile input that channels fidgeting into calming touch" },
+      { problem: "Weighted blanket is too hot in summer, too cold in winter", solution: "Dual-sided design: cool microfiber for summer, warm minky plush for winter" }
+    ]
+  },
+  {
+    id: "a6",
+    slug: "melatonin-chocolate-kids",
+    question: "What's the Best Way to Help Kids Fall Asleep Naturally?",
+    shortAnswer: "For parents whose kids refuse gummies and pills, melatonin chocolate is a game-changer. Good Day Chocolate ($50 for 50 pieces) uses just 1mg melatonin plus chamomile in fair-trade milk chocolate — a low, appropriate dose in a format kids actually want to take. It's 2-3x pricier than gummies, but compliance is the whole point. Always consult your pediatrician before starting melatonin.",
+    category: "Sleepmaxxing",
+    date: "2026-03-27",
+    readTime: "7 min read",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/b1b7abf2440ca6213ddcbb4dff1f.jpg?v=1774550179",
+    intro: "The biggest problem with kids' melatonin isn't the melatonin — it's getting kids to take it. Gummies get refused, pills get spit out, and liquid drops taste terrible. Good Day Chocolate reframes the whole interaction: it's a piece of chocolate that happens to contain 1mg melatonin and chamomile. Kids ask for it instead of fighting it.",
+    sections: [
+      { heading: "Why Do Kids Struggle to Fall Asleep?", body: "Irregular bedtime routines, screen time before bed, and natural circadian rhythm shifts all contribute to kids' difficulty falling asleep. Melatonin supplements can help reset the sleep-wake cycle, but only if the child actually takes them consistently. Format compliance — whether the child will willingly take the supplement — is the single biggest factor in effectiveness." },
+      { heading: "What Makes Chocolate Melatonin Different from Gummies?", body: "Good Day Chocolate uses fair-trade milk chocolate as the delivery vehicle instead of gelatin gummies. The 1mg dose is lower than most competitors (which often use 3-5mg, unnecessarily high for children). Chamomile adds a mild calming effect. Each piece has 2g sugar — less than a single gummy bear. The key advantage: kids treat it as a bedtime treat, not medicine." },
+      { heading: "Is $1 Per Piece Worth It?", body: "At $50 for 50 pieces, you're paying roughly $1 per night vs $0.30-0.50 for gummy melatonin. The premium buys you format compliance — a child who takes the supplement willingly instead of fighting it. For families where bedtime melatonin is a nightly battle, the chocolate format pays for itself in reduced stress. For kids who take gummies fine, there's no reason to switch." }
+    ],
+    products: [
+      {
+        name: "Good Day Chocolate Melatonin for Kids",
+        slug: "melatonin-chocolate-kids",
+        vibeScore: 80,
+        price: "$49.99",
+        image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/b1b7abf2440ca6213ddcbb4dff1f.jpg?v=1774550179",
+        verdict: "The only melatonin format kids actually want to take",
+        verdictBadge: "Worth It",
+        affiliateUrl: "https://fwaqf1-er.myshopify.com/products/good-day-chocolate-melatonin-kids?utm_source=aeo&utm_medium=content&utm_campaign=melatonin-chocolate-kids"
+      }
+    ],
+    faq: [
+      { question: "Is melatonin safe for kids?", answer: "Low-dose melatonin (0.5-1mg) is generally considered safe for short-term use in children ages 3+. It is a supplement, not FDA-approved specifically for children. Always consult your pediatrician before starting any supplement." },
+      { question: "How much melatonin is in each piece?", answer: "1mg per chocolate piece — appropriately low. Many competing products use 3-5mg, which is unnecessarily high for most children." },
+      { question: "Does it contain allergens?", answer: "Yes — milk chocolate contains dairy. Not suitable for children with dairy allergies. The product is non-GMO with no artificial colors or flavors." },
+      { question: "How much sugar per piece?", answer: "2 grams of sugar per piece — less than a single gummy bear." },
+      { question: "Can kids become dependent on melatonin?", answer: "Current research does not indicate melatonin causes dependency. It's best used 2-4 nights per week as part of a broader sleep routine rather than every single night." },
+      { question: "How long does shipping take?", answer: "Standard shipping typically takes 7-14 business days. Orders ship within 1-2 business days of purchase." }
+    ],
+    decision_table: [
+      { need: "Child refuses gummies and pills", best: "Good Day Chocolate Melatonin", why: "Chocolate format — kids ask for it, no fighting" },
+      { need: "Budget kids melatonin", best: "Gummy melatonin ($8-15 for 60+)", why: "2-3x cheaper per dose, effective if your child takes gummies willingly" },
+      { need: "Melatonin-free sleep aid", best: "Weighted blanket + bedtime routine", why: "Deep pressure stimulation without any supplements" }
+    ],
+    tradeoffs: [
+      { tradeoff: "Format", side_a: "Chocolate — highest compliance, kids want to take it", side_b: "Gummies/liquid — cheaper, more widely available, but often refused" },
+      { tradeoff: "Cost", side_a: "$1/piece for guaranteed compliance", side_b: "$0.30-0.50/piece for gummies that may be wasted if refused" }
+    ],
+    problem_solution: [
+      { problem: "Kids refuse gummy melatonin supplements", solution: "Chocolate format turns supplement time into a bedtime treat — compliance goes from battle to reward" },
+      { problem: "Many kids' melatonin products overdose at 3-5mg", solution: "1mg per piece is an appropriately low dose for children, with chamomile for added calming" },
+      { problem: "Parents worry about artificial ingredients in kids' supplements", solution: "Non-GMO, fair-trade milk chocolate, no artificial colors or flavors, natural chamomile" }
+    ]
   }
 
 ];
