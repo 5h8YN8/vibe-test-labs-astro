@@ -180,10 +180,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <div class="vibe-score lg mid">72</div>
   <p class="lead">Pillow sprays won't knock you out — but they do work as a sensory cue that tells your brain it's time to wind down. The Serene Sleep Spray blends lavender, chamomile, and sandalwood into a scent that's calming without being overpowering. Used as part of a consistent bedtime routine, it measurably reduced our testers' time-to-sleep. At $31 for a bottle that lasts 2+ months, it's a low-risk addition to your sleep stack.</p>
 </div>
-
-<!-- §5 Buy Now (top CTA) — Shopify Buy Button -->
-<div style="margin:1.5rem 0;text-align:center;">
-  <div id='product-component-1774038423200'></div>
+<!-- Buy Now (top CTA) -->
+<div class="buy-button-wrap">
+  <div id='product-component-133598544701'></div>
   <script type="text/javascript" is:inline>
   (function () {
     var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
@@ -194,15 +193,14 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       ShopifyBuy.UI.onReady(client).then(function (ui) {
         ui.createComponent('product', {
           id: '10151335985447',
-          node: document.getElementById('product-component-1774038423200'),
+          node: document.getElementById('product-component-133598544701'),
           moneyFormat: '%24%7B%7Bamount%7D%7D',
-          options: { "product": { "contents": { "img": false, "title": false, "price": false }, "styles": { "product": { "text-align": "center" }, "button": { "max-width": "400px", "margin-left": "auto", "margin-right": "auto", ":hover": { "background-color": "#111111" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#111111" } } }, "text": { "button": "Add to cart" } }, "cart": { "styles": { "product": { "text-align": "center" }, "button": { "max-width": "400px", "margin-left": "auto", "margin-right": "auto", ":hover": { "background-color": "#111111" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#111111" } } }, "text": { "total": "Subtotal", "button": "Checkout" } }, "toggle": { "styles": { "toggle": { "background-color": "#0a0a0a", ":hover": { "background-color": "#111111" }, ":focus": { "background-color": "#111111" } } } } }
+          options: { "product": { "contents": { "img": false, "title": false, "price": false }, "styles": { "product": { "@media (min-width: 601px)": { "max-width": "100%", "margin-left": "auto", "margin-right": "auto" } }, "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "letter-spacing": "0.02em", "padding": "14px 28px", "border-radius": "10px", "width": "100%", "max-width": "400px", "margin-left": "auto", "margin-right": "auto", "display": "block", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "button": "Add to Cart" } }, "cart": { "styles": { "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "border-radius": "10px", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "total": "Subtotal", "button": "Checkout" } }, "toggle": { "styles": { "toggle": { "background-color": "#0a0a0a", ":hover": { "background-color": "#222222" }, ":focus": { "background-color": "#222222" } } } } }
         });
       });
     }
   })();
   </script>
-  <p style="font-size:.75rem;color:var(--muted-foreground);margin-top:.5rem;">$30.99</p>
 </div>
 
 <!-- §6 Image gallery — uses .product-gallery classes from BaseLayout (1:1 square, mobile-first) -->
@@ -231,30 +229,28 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </tbody>
   </table>
 </div>
-
 <!-- Buy Now (middle CTA) -->
-<div style="margin:2rem 0;text-align:center;">
-  <div id='product-component-1774038423203'></div>
+<div class="buy-button-wrap">
+  <div id='product-component-133598544702'></div>
   <script type="text/javascript" is:inline>
   (function () {
     var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-    if (window.ShopifyBuy) { if (window.ShopifyBuy.UI) { ShopifyBuyInit3(); } else { loadScript3(); } } else { loadScript3(); }
-    function loadScript3() { var script = document.createElement('script'); script.async = true; script.src = scriptURL; (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script); script.onload = ShopifyBuyInit3; }
-    function ShopifyBuyInit3() {
+    if (window.ShopifyBuy) { if (window.ShopifyBuy.UI) { ShopifyBuyInit2(); } else { loadScript2(); } } else { loadScript2(); }
+    function loadScript2() { var script = document.createElement('script'); script.async = true; script.src = scriptURL; (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script); script.onload = ShopifyBuyInit2; }
+    function ShopifyBuyInit2() {
       var client = ShopifyBuy.buildClient({ domain: 'fwaqf1-er.myshopify.com', storefrontAccessToken: '4706c336d25a9168835827f0170b56f0' });
       ShopifyBuy.UI.onReady(client).then(function (ui) {
         ui.createComponent('product', {
           id: '10151335985447',
-          node: document.getElementById('product-component-1774038423203'),
+          node: document.getElementById('product-component-133598544702'),
           moneyFormat: '%24%7B%7Bamount%7D%7D',
-          options: { "product": { "contents": { "img": false, "title": false, "price": false }, "styles": { "product": { "text-align": "center" }, "button": { "max-width": "400px", "margin-left": "auto", "margin-right": "auto", ":hover": { "background-color": "#111111" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#111111" } } }, "text": { "button": "Add to cart" } }, "cart": { "styles": { "product": { "text-align": "center" }, "button": { "max-width": "400px", "margin-left": "auto", "margin-right": "auto", ":hover": { "background-color": "#111111" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#111111" } } }, "text": { "total": "Subtotal", "button": "Checkout" } }, "toggle": { "styles": { "toggle": { "background-color": "#0a0a0a", ":hover": { "background-color": "#111111" }, ":focus": { "background-color": "#111111" } } } } }
+          options: { "product": { "contents": { "img": false, "title": false, "price": false }, "styles": { "product": { "@media (min-width: 601px)": { "max-width": "100%", "margin-left": "auto", "margin-right": "auto" } }, "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "letter-spacing": "0.02em", "padding": "14px 28px", "border-radius": "10px", "width": "100%", "max-width": "400px", "margin-left": "auto", "margin-right": "auto", "display": "block", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "button": "Add to Cart" } }, "cart": { "styles": { "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "border-radius": "10px", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "total": "Subtotal", "button": "Checkout" } }, "toggle": { "styles": { "toggle": { "background-color": "#0a0a0a", ":hover": { "background-color": "#222222" }, ":focus": { "background-color": "#222222" } } } } }
         });
       });
     }
   })();
   </script>
 </div>
-
 
 <!-- §8 Why people are buying — problem this solves -->
 <h2>Why Sleep Onset Latency Matters More Than You Think</h2>
@@ -364,6 +360,28 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </tbody>
   </table>
 </div>
+<!-- Buy Now (post-review CTA) -->
+<div class="buy-button-wrap">
+  <div id='product-component-133598544703'></div>
+  <script type="text/javascript" is:inline>
+  (function () {
+    var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+    if (window.ShopifyBuy) { if (window.ShopifyBuy.UI) { ShopifyBuyInit3(); } else { loadScript3(); } } else { loadScript3(); }
+    function loadScript3() { var script = document.createElement('script'); script.async = true; script.src = scriptURL; (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script); script.onload = ShopifyBuyInit3; }
+    function ShopifyBuyInit3() {
+      var client = ShopifyBuy.buildClient({ domain: 'fwaqf1-er.myshopify.com', storefrontAccessToken: '4706c336d25a9168835827f0170b56f0' });
+      ShopifyBuy.UI.onReady(client).then(function (ui) {
+        ui.createComponent('product', {
+          id: '10151335985447',
+          node: document.getElementById('product-component-133598544703'),
+          moneyFormat: '%24%7B%7Bamount%7D%7D',
+          options: { "product": { "contents": { "img": false, "title": false, "price": false }, "styles": { "product": { "@media (min-width: 601px)": { "max-width": "100%", "margin-left": "auto", "margin-right": "auto" } }, "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "letter-spacing": "0.02em", "padding": "14px 28px", "border-radius": "10px", "width": "100%", "max-width": "400px", "margin-left": "auto", "margin-right": "auto", "display": "block", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "button": "Add to Cart" } }, "cart": { "styles": { "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "border-radius": "10px", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "total": "Subtotal", "button": "Checkout" } }, "toggle": { "styles": { "toggle": { "background-color": "#0a0a0a", ":hover": { "background-color": "#222222" }, ":focus": { "background-color": "#222222" } } } } }
+        });
+      });
+    }
+  })();
+  </script>
+</div>
 
 <!-- §14 Final verdict -->
 
@@ -388,31 +406,36 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <a href="/products/breazy-mouth-tape" class="related-product-card"><img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/06459f6b49a5ae647200169730bb.png?v=1774462086" alt="Breazy Mouth Tape" /><div class="related-product-info"><strong>Breazy Mouth Tape</strong><span class="verdict-badge verdict-badge-worth-it">Worth It</span></div><span class="related-product-cta">Check It Out</span></a>
   <a href="/products/melatonin-gummies" class="related-product-card"><img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/b9f913854dc5bb12350191234064.jpg?v=1774538918" alt="Natrol Melatonin Gummies" /><div class="related-product-info"><strong>Natrol Melatonin Gummies</strong><span class="verdict-badge verdict-badge-hidden-gem">Hidden Gem</span></div><span class="related-product-cta">Check It Out</span></a>
   <a href="/products/bluetooth-sleep-mask" class="related-product-card"><img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/bluetooth-sleep-mask-hero.jpg" alt="Bluetooth Sleep Mask" /><div class="related-product-info"><strong>Bluetooth Sleep Mask</strong><span class="verdict-badge verdict-badge-hidden-gem">Hidden Gem</span></div><span class="related-product-cta">Check It Out</span></a>
-</div><!-- Buy Now (bottom) -->
+</div><!-- BUYBUTTON_BOTTOM_REMOVED -->
+</div>
+
+<!-- Buy Now (bottom) -->
 <div class="buy-box" style="margin-top:2.5rem;text-align:center;">
   <div>
     <div style="font-family:var(--font-mono);font-weight:700;font-size:1.05rem;">Serene Sleep Spray</div>
-    <div style="font-size:.85rem;color:var(--muted-foreground);margin-top:.2rem;">$30.99</div>
+    <div style="font-size:.85rem;color:var(--muted-foreground);margin-top:.2rem;"></div>
   </div>
-  <div id='product-component-1774038423201'></div>
+<div class="buy-button-wrap">
+  <div id='product-component-133598544704'></div>
   <script type="text/javascript" is:inline>
   (function () {
     var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-    if (window.ShopifyBuy) { if (window.ShopifyBuy.UI) { ShopifyBuyInit2(); } else { loadScript2(); } } else { loadScript2(); }
-    function loadScript2() { var script = document.createElement('script'); script.async = true; script.src = scriptURL; (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script); script.onload = ShopifyBuyInit2; }
-    function ShopifyBuyInit2() {
+    if (window.ShopifyBuy) { if (window.ShopifyBuy.UI) { ShopifyBuyInit4(); } else { loadScript4(); } } else { loadScript4(); }
+    function loadScript4() { var script = document.createElement('script'); script.async = true; script.src = scriptURL; (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script); script.onload = ShopifyBuyInit4; }
+    function ShopifyBuyInit4() {
       var client = ShopifyBuy.buildClient({ domain: 'fwaqf1-er.myshopify.com', storefrontAccessToken: '4706c336d25a9168835827f0170b56f0' });
       ShopifyBuy.UI.onReady(client).then(function (ui) {
         ui.createComponent('product', {
           id: '10151335985447',
-          node: document.getElementById('product-component-1774038423201'),
+          node: document.getElementById('product-component-133598544704'),
           moneyFormat: '%24%7B%7Bamount%7D%7D',
-          options: { "product": { "contents": { "img": false, "title": false, "price": false }, "styles": { "product": { "text-align": "center" }, "button": { "max-width": "400px", "margin-left": "auto", "margin-right": "auto", ":hover": { "background-color": "#111111" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#111111" } } }, "text": { "button": "Add to cart" } }, "cart": { "styles": { "product": { "text-align": "center" }, "button": { "max-width": "400px", "margin-left": "auto", "margin-right": "auto", ":hover": { "background-color": "#111111" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#111111" } } }, "text": { "total": "Subtotal", "button": "Checkout" } }, "toggle": { "styles": { "toggle": { "background-color": "#0a0a0a", ":hover": { "background-color": "#111111" }, ":focus": { "background-color": "#111111" } } } } }
+          options: { "product": { "contents": { "img": false, "title": false, "price": false }, "styles": { "product": { "@media (min-width: 601px)": { "max-width": "100%", "margin-left": "auto", "margin-right": "auto" } }, "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "letter-spacing": "0.02em", "padding": "14px 28px", "border-radius": "10px", "width": "100%", "max-width": "400px", "margin-left": "auto", "margin-right": "auto", "display": "block", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "button": "Add to Cart" } }, "cart": { "styles": { "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "border-radius": "10px", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "total": "Subtotal", "button": "Checkout" } }, "toggle": { "styles": { "toggle": { "background-color": "#0a0a0a", ":hover": { "background-color": "#222222" }, ":focus": { "background-color": "#222222" } } } } }
         });
       });
     }
   })();
   </script>
+</div>
 </div>
 
 </BaseLayout>

@@ -165,10 +165,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <div class="vibe-score lg mid">82</div>
   <p class="lead">Yes — stainless steel wine glasses are worth it if you drink wine outdoors, near a pool, or anywhere a glass stem is an accident waiting to happen. Starting at $38.09 for a single glass and available in Golden, Stainless Steel, and Rose Gold finishes, these hold temperature well and are fully shatterproof. The main tradeoff: you can't see the wine's color or clarity, which matters to serious tasters.</p>
 </div>
-
-<!-- §5 Buy Now (top CTA) — Shopify Buy Button -->
-<div style="margin:1.5rem 0;text-align:center;">
-  <div id='product-component-1774044000000'></div>
+<!-- Buy Now (top CTA) -->
+<div class="buy-button-wrap">
+  <div id='product-component-620114154301'></div>
   <script type="text/javascript" is:inline>
   (function () {
     var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
@@ -179,15 +178,14 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       ShopifyBuy.UI.onReady(client).then(function (ui) {
         ui.createComponent('product', {
           id: '10146201141543',
-          node: document.getElementById('product-component-1774044000000'),
+          node: document.getElementById('product-component-620114154301'),
           moneyFormat: '%24%7B%7Bamount%7D%7D',
-          options: { "product": { "contents": { "img": false, "title": false, "price": false }, "styles": { "product": { "text-align": "center" }, "button": { "max-width": "400px", "margin-left": "auto", "margin-right": "auto", ":hover": { "background-color": "#111111" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#111111" } } }, "text": { "button": "Add to cart" } }, "cart": { "styles": { "product": { "text-align": "center" }, "button": { "max-width": "400px", "margin-left": "auto", "margin-right": "auto", ":hover": { "background-color": "#111111" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#111111" } } }, "text": { "total": "Subtotal", "button": "Checkout" } }, "toggle": { "styles": { "toggle": { "background-color": "#0a0a0a", ":hover": { "background-color": "#111111" }, ":focus": { "background-color": "#111111" } } } } }
+          options: { "product": { "contents": { "img": false, "title": false, "price": false }, "styles": { "product": { "@media (min-width: 601px)": { "max-width": "100%", "margin-left": "auto", "margin-right": "auto" } }, "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "letter-spacing": "0.02em", "padding": "14px 28px", "border-radius": "10px", "width": "100%", "max-width": "400px", "margin-left": "auto", "margin-right": "auto", "display": "block", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "button": "Add to Cart" } }, "cart": { "styles": { "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "border-radius": "10px", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "total": "Subtotal", "button": "Checkout" } }, "toggle": { "styles": { "toggle": { "background-color": "#0a0a0a", ":hover": { "background-color": "#222222" }, ":focus": { "background-color": "#222222" } } } } }
         });
       });
     }
   })();
   </script>
-  <p style="font-size:.75rem;color:var(--muted-foreground);margin-top:.5rem;">$38.09 – $220.05 depending on color &amp; set size</p>
 </div>
 
 <!-- §6 Image gallery -->
@@ -217,30 +215,28 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </tbody>
   </table>
 </div>
-
 <!-- Buy Now (middle CTA) -->
-<div style="margin:2rem 0;text-align:center;">
-  <div id='product-component-1774044000003'></div>
+<div class="buy-button-wrap">
+  <div id='product-component-620114154302'></div>
   <script type="text/javascript" is:inline>
   (function () {
     var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-    if (window.ShopifyBuy) { if (window.ShopifyBuy.UI) { ShopifyBuyInit3(); } else { loadScript3(); } } else { loadScript3(); }
-    function loadScript3() { var script = document.createElement('script'); script.async = true; script.src = scriptURL; (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script); script.onload = ShopifyBuyInit3; }
-    function ShopifyBuyInit3() {
+    if (window.ShopifyBuy) { if (window.ShopifyBuy.UI) { ShopifyBuyInit2(); } else { loadScript2(); } } else { loadScript2(); }
+    function loadScript2() { var script = document.createElement('script'); script.async = true; script.src = scriptURL; (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script); script.onload = ShopifyBuyInit2; }
+    function ShopifyBuyInit2() {
       var client = ShopifyBuy.buildClient({ domain: 'fwaqf1-er.myshopify.com', storefrontAccessToken: '4706c336d25a9168835827f0170b56f0' });
       ShopifyBuy.UI.onReady(client).then(function (ui) {
         ui.createComponent('product', {
           id: '10146201141543',
-          node: document.getElementById('product-component-1774044000003'),
+          node: document.getElementById('product-component-620114154302'),
           moneyFormat: '%24%7B%7Bamount%7D%7D',
-          options: { "product": { "contents": { "img": false, "title": false, "price": false }, "styles": { "product": { "text-align": "center" }, "button": { "max-width": "400px", "margin-left": "auto", "margin-right": "auto", ":hover": { "background-color": "#111111" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#111111" } } }, "text": { "button": "Add to cart" } }, "cart": { "styles": { "product": { "text-align": "center" }, "button": { "max-width": "400px", "margin-left": "auto", "margin-right": "auto", ":hover": { "background-color": "#111111" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#111111" } } }, "text": { "total": "Subtotal", "button": "Checkout" } }, "toggle": { "styles": { "toggle": { "background-color": "#0a0a0a", ":hover": { "background-color": "#111111" }, ":focus": { "background-color": "#111111" } } } } }
+          options: { "product": { "contents": { "img": false, "title": false, "price": false }, "styles": { "product": { "@media (min-width: 601px)": { "max-width": "100%", "margin-left": "auto", "margin-right": "auto" } }, "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "letter-spacing": "0.02em", "padding": "14px 28px", "border-radius": "10px", "width": "100%", "max-width": "400px", "margin-left": "auto", "margin-right": "auto", "display": "block", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "button": "Add to Cart" } }, "cart": { "styles": { "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "border-radius": "10px", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "total": "Subtotal", "button": "Checkout" } }, "toggle": { "styles": { "toggle": { "background-color": "#0a0a0a", ":hover": { "background-color": "#222222" }, ":focus": { "background-color": "#222222" } } } } }
         });
       });
     }
   })();
   </script>
 </div>
-
 
 <!-- §8 Why people are buying — problem this solves -->
 <h2>Why Do Wine Glasses Keep Breaking — and What's the Fix?</h2>
@@ -365,6 +361,28 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </tbody>
   </table>
 </div>
+<!-- Buy Now (post-review CTA) -->
+<div class="buy-button-wrap">
+  <div id='product-component-620114154303'></div>
+  <script type="text/javascript" is:inline>
+  (function () {
+    var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+    if (window.ShopifyBuy) { if (window.ShopifyBuy.UI) { ShopifyBuyInit3(); } else { loadScript3(); } } else { loadScript3(); }
+    function loadScript3() { var script = document.createElement('script'); script.async = true; script.src = scriptURL; (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script); script.onload = ShopifyBuyInit3; }
+    function ShopifyBuyInit3() {
+      var client = ShopifyBuy.buildClient({ domain: 'fwaqf1-er.myshopify.com', storefrontAccessToken: '4706c336d25a9168835827f0170b56f0' });
+      ShopifyBuy.UI.onReady(client).then(function (ui) {
+        ui.createComponent('product', {
+          id: '10146201141543',
+          node: document.getElementById('product-component-620114154303'),
+          moneyFormat: '%24%7B%7Bamount%7D%7D',
+          options: { "product": { "contents": { "img": false, "title": false, "price": false }, "styles": { "product": { "@media (min-width: 601px)": { "max-width": "100%", "margin-left": "auto", "margin-right": "auto" } }, "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "letter-spacing": "0.02em", "padding": "14px 28px", "border-radius": "10px", "width": "100%", "max-width": "400px", "margin-left": "auto", "margin-right": "auto", "display": "block", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "button": "Add to Cart" } }, "cart": { "styles": { "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "border-radius": "10px", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "total": "Subtotal", "button": "Checkout" } }, "toggle": { "styles": { "toggle": { "background-color": "#0a0a0a", ":hover": { "background-color": "#222222" }, ":focus": { "background-color": "#222222" } } } } }
+        });
+      });
+    }
+  })();
+  </script>
+</div>
 
 <!-- §14 Final verdict -->
 
@@ -403,31 +421,36 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/f674113147449a39d81f57f57f06_800x800.png?v=1774019732" alt="Crystal Wine Glass Set" />
     <div class="related-product-info"><strong>Crystal Wine Glass Set</strong><span style="font-size:.75rem;color:var(--muted-foreground);">Coming soon</span></div>
   <span class="related-product-cta">Check It Out</span></a>
-</div><!-- Buy Now (bottom) -->
+</div><!-- BUYBUTTON_BOTTOM_REMOVED -->
+</div>
+
+<!-- Buy Now (bottom) -->
 <div class="buy-box" style="margin-top:2.5rem;text-align:center;">
   <div>
     <div style="font-family:var(--font-mono);font-weight:700;font-size:1.05rem;">Stainless Steel Wine Glass</div>
-    <div style="font-size:.85rem;color:var(--muted-foreground);margin-top:.2rem;">$38.09 – $220.05 depending on color &amp; set size</div>
+    <div style="font-size:.85rem;color:var(--muted-foreground);margin-top:.2rem;"></div>
   </div>
-  <div id='product-component-1774044000001'></div>
+<div class="buy-button-wrap">
+  <div id='product-component-620114154304'></div>
   <script type="text/javascript" is:inline>
   (function () {
     var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-    if (window.ShopifyBuy) { if (window.ShopifyBuy.UI) { ShopifyBuyInit2(); } else { loadScript2(); } } else { loadScript2(); }
-    function loadScript2() { var script = document.createElement('script'); script.async = true; script.src = scriptURL; (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script); script.onload = ShopifyBuyInit2; }
-    function ShopifyBuyInit2() {
+    if (window.ShopifyBuy) { if (window.ShopifyBuy.UI) { ShopifyBuyInit4(); } else { loadScript4(); } } else { loadScript4(); }
+    function loadScript4() { var script = document.createElement('script'); script.async = true; script.src = scriptURL; (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script); script.onload = ShopifyBuyInit4; }
+    function ShopifyBuyInit4() {
       var client = ShopifyBuy.buildClient({ domain: 'fwaqf1-er.myshopify.com', storefrontAccessToken: '4706c336d25a9168835827f0170b56f0' });
       ShopifyBuy.UI.onReady(client).then(function (ui) {
         ui.createComponent('product', {
           id: '10146201141543',
-          node: document.getElementById('product-component-1774044000001'),
+          node: document.getElementById('product-component-620114154304'),
           moneyFormat: '%24%7B%7Bamount%7D%7D',
-          options: { "product": { "contents": { "img": false, "title": false, "price": false }, "styles": { "product": { "text-align": "center" }, "button": { "max-width": "400px", "margin-left": "auto", "margin-right": "auto", ":hover": { "background-color": "#111111" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#111111" } } }, "text": { "button": "Add to cart" } }, "cart": { "styles": { "product": { "text-align": "center" }, "button": { "max-width": "400px", "margin-left": "auto", "margin-right": "auto", ":hover": { "background-color": "#111111" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#111111" } } }, "text": { "total": "Subtotal", "button": "Checkout" } }, "toggle": { "styles": { "toggle": { "background-color": "#0a0a0a", ":hover": { "background-color": "#111111" }, ":focus": { "background-color": "#111111" } } } } }
+          options: { "product": { "contents": { "img": false, "title": false, "price": false }, "styles": { "product": { "@media (min-width: 601px)": { "max-width": "100%", "margin-left": "auto", "margin-right": "auto" } }, "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "letter-spacing": "0.02em", "padding": "14px 28px", "border-radius": "10px", "width": "100%", "max-width": "400px", "margin-left": "auto", "margin-right": "auto", "display": "block", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "button": "Add to Cart" } }, "cart": { "styles": { "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "border-radius": "10px", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "total": "Subtotal", "button": "Checkout" } }, "toggle": { "styles": { "toggle": { "background-color": "#0a0a0a", ":hover": { "background-color": "#222222" }, ":focus": { "background-color": "#222222" } } } } }
         });
       });
     }
   })();
   </script>
+</div>
 </div>
 
 </BaseLayout>

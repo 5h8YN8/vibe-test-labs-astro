@@ -271,8 +271,10 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
     .buy-box strong { color: var(--foreground); display: block; font-family: var(--font-mono); font-size: 1.05rem; margin-bottom: .2rem; }
     .disclaimer { font-size: .75rem; color: var(--muted-foreground); font-style: italic; }
 
-    /* ── Shopify Buy Button centering ── */
-    [id^="product-component"] > iframe { display: block; margin: 0 auto; }
+    /* ── Shopify Buy Button centering + wrapper ── */
+    .buy-button-wrap { display:flex;justify-content:center;margin:2rem 0; }
+    .buy-button-wrap > div { width:100%;max-width:400px; }
+    [id^="product-component"] > iframe { display:block;margin:0 auto;width:100% !important; }
 
     /* ── Related product cards (Also Tested) ── */
     .related-product-info { display:flex;flex-direction:column;gap:.4rem;flex:1; }
