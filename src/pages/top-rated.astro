@@ -24,7 +24,7 @@ function badgeClass(v: string) { return v === 'Worth It' ? 'worth-it' : v === 'H
 
   <div class="ranked-list">
     {sorted.map((product, i) => (
-      <a href={`/review/${product.slug}`} class="ranked-row">
+      <a href={`/products/${product.slug}`} class="ranked-row">
         <span class="ranked-num">{i + 1}</span>
         <img src={product.image} alt={product.name} class="ranked-img" loading="lazy" />
         <div class="ranked-body">

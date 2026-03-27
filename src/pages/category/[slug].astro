@@ -50,7 +50,7 @@ const filtered = products.filter(p => p.category === category).sort((a, b) => b.
   ) : (
     <div class="grid-3">
       {filtered.map(product => (
-        <a href={`/review/${product.slug}`} class="product-grid-card">
+        <a href={`/products/${product.slug}`} class="product-grid-card">
           <img src={product.image} alt={product.name} class="product-grid-img" loading="lazy" />
           <div class="product-grid-body">
             <div class="product-grid-meta">

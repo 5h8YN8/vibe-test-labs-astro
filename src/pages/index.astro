@@ -6,7 +6,7 @@ import { articles } from '../data/articles';
 const siteUrl  = 'https://vibe-test-labs.pages.dev';
 const trendingArticles = articles.slice(0, 4);
 const topRated = [...products].sort((a, b) => b.vibeScore - a.vibeScore).slice(0, 4);
-const latest   = [...products].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 4);
+
 
 // Page-specific schema — BaseLayout always provides Organization + WebSite + Author
 const pageSchema = [
@@ -34,11 +34,11 @@ const pageSchema = [
       "@type": "ListItem",
       "position": i + 1,
       "name": p.name,
-      "url": `${siteUrl}/review/${p.slug}`,
+      "url": `${siteUrl}/products/${p.slug}`,
       "item": {
         "@type": "Product",
         "name": p.name,
-        "url": `${siteUrl}/review/${p.slug}`,
+        "url": `${siteUrl}/products/${p.slug}`,
         "image": p.image,
         "brand": { "@type": "Brand", "name": p.brand },
         "aggregateRating": {
@@ -149,7 +149,7 @@ const catColors = ['cat-a','cat-b','cat-c','cat-a','cat-b','cat-c','cat-a','cat-
               <span class="product-list-dot">&middot;</span>
               <span class="product-list-date">{product.date}</span>
             </div>
-            <a href={`/review/${product.slug}`} class="product-list-name">{product.name}</a>
+            <a href={`/products/${product.slug}`} class="product-list-name">{product.name}</a>
             <p class="product-list-verdict">{product.verdict}</p>
           </div>
           <div class="product-list-footer">
@@ -160,50 +160,7 @@ const catColors = ['cat-a','cat-b','cat-c','cat-a','cat-b','cat-c','cat-a','cat-
               </div>
               <span class="product-list-price">{product.price}</span>
             </div>
-            <a href={`/review/${product.slug}`} class="product-list-cta">Read Review &rarr;</a>
-          </div>
-        </div>
-      </div>
-      <div class="divider-gradient" style="margin-top:2rem;"></div>
-    </article>
-  ))}
-</section>
-
-<!-- LATEST REVIEWS -->
-<section class="page-section" style="padding-top:0;">
-  <div class="divider-gradient" style="margin-bottom:5rem;"></div>
-  <div class="section-header">
-    <div>
-      <span class="section-label">Fresh From The Lab</span>
-      <h2 style="margin:0;font-size:clamp(1.3rem,3vw,1.8rem);">Latest Reviews</h2>
-    </div>
-    <a href="/products" class="section-see-all">See all products &rarr;</a>
-  </div>
-  {latest.map(product => (
-    <article class="product-list-card">
-      <div class="product-list-inner">
-        <div class="product-list-img-wrap">
-          <img src={product.image} alt={product.name} class="product-list-img" loading="lazy" />
-        </div>
-        <div class="product-list-body">
-          <div>
-            <div class="product-list-meta">
-              <span class="product-list-category">{product.category}</span>
-              <span class="product-list-dot">&middot;</span>
-              <span class="product-list-date">{product.date}</span>
-            </div>
-            <a href={`/review/${product.slug}`} class="product-list-name">{product.name}</a>
-            <p class="product-list-verdict">{product.verdict}</p>
-          </div>
-          <div class="product-list-footer">
-            <div class="product-list-scores">
-              <div class="vibe-score-wrap">
-                <span class="vibe-score-label">Vibe Score</span>
-                <span class={`vibe-score sm ${scoreClass(product.vibeScore)}`}>{product.vibeScore}</span>
-              </div>
-              <span class="product-list-price">{product.price}</span>
-            </div>
-            <a href={`/review/${product.slug}`} class="product-list-cta">Read Review &rarr;</a>
+            <a href={`/products/${product.slug}`} class="product-list-cta">Read Review &rarr;</a>
           </div>
         </div>
       </div>
@@ -244,7 +201,7 @@ const catColors = ['cat-a','cat-b','cat-c','cat-a','cat-b','cat-c','cat-a','cat-
   </div>
 </section>
 
-<script>
+<script is:inline>
   const form = document.getElementById('nl-form');
   const thanks = document.getElementById('nl-thanks');
   if (form && thanks) {
