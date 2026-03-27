@@ -683,6 +683,82 @@ export const products: Product[] = [
       { question: "How long does shipping take?", answer: "Standard shipping typically takes 7-14 business days. Orders are fulfilled within 1-2 business days of purchase." }
     ],
     viralReason: "Parents on TikTok discovered chocolate melatonin ends the bedtime supplement battle — kids ask for it instead of refusing it."
+  },
+  {
+    id: "p19",
+    slug: "sunset-rainbow-projector",
+    name: "USB Sunset Rainbow Projector",
+    brand: "Vibe Test Lab",
+    category: "Room Vibes",
+    vibeScore: 68,
+    verdict: "A $25 mood lamp that looks great on camera — no app, no rotation, just plug-and-glow ambiance.",
+    verdictBadge: "Hidden Gem",
+    price: "$25.50",
+    priceRange: "$25.50",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/f88f023046afbc46b9f10a559bac.webp?v=1774564764",
+    images: ["https://cdn.shopify.com/s/files/1/0958/6710/9671/files/23c4d2ba4760b5e2015cb4f31e4d.webp?v=1774564765", "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/207fbd3b4290a3508fb655d9ab47.webp?v=1774564774"],
+    trending: true,
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/usb-sunset-rainbow-projector-led-night-light-decor?utm_source=aeo&utm_medium=content&utm_campaign=sunset-rainbow-projector",
+    questionHeadline: "Are Sunset Lamp Projectors Actually Worth the TikTok Hype?",
+    answerSnippet: "For $25, yes — USB sunset projectors cast a warm color glow that looks great on camera. No app or rotation, just simple plug-and-play ambiance.",
+    problemSection: "Overhead lighting is harsh and rooms lack atmosphere",
+    solutionSection: "USB-powered sunset lamp projects warm color gradients onto walls and ceilings for instant mood lighting",
+    howToUse: ["Plug the USB cable into any USB port or adapter", "Point the lens toward the wall or ceiling", "Enjoy the color cycling — no app needed"],
+    testResults: [
+      { category: "Color Quality", score: 72, summary: "16 warm colors cycle smoothly — looks great in photos and on camera" },
+      { category: "Light Coverage", score: 60, summary: "Best within 3-5 feet of a wall — fades at distance" },
+      { category: "Build Quality", score: 55, summary: "Plastic body feels like a $25 product — functional but not premium" },
+      { category: "Value", score: 85, summary: "Hard to beat at $25 for the aesthetic effect you get" }
+    ],
+    pros: ["Incredibly affordable at $25", "16 color options", "Looks great on camera/TikTok", "USB-powered — works with any USB port", "Compact at 70x70x90mm"],
+    cons: ["No app control — colors auto-cycle", "No rotation mechanism", "Limited throw distance (3-5 ft optimal)", "Plastic build quality", "Can't lock on a single color"],
+    finalVerdictSummary: "The cheapest way to get the sunset lamp aesthetic. Perfect for content creators and dorm rooms. If you want app control and rotation, spend $62 on the Galaxy Star Projector instead.",
+    faq: [
+      { question: "Can you pick a single color or does it auto-cycle?", answer: "It auto-cycles through 16 colors. You cannot lock on one specific color." },
+      { question: "How does it compare to the app-controlled star projector?", answer: "The star projector ($62) has Wi-Fi, app control, rotation, and Alexa integration. This sunset lamp ($25) is simpler — just plug in and enjoy the glow." },
+      { question: "Is it bright enough to light a room?", answer: "No — it's accent lighting, not a room light. Best used in a dim or dark room for ambiance." },
+      { question: "Does it get hot?", answer: "Slightly warm after extended use but not hot — safe for bedside use. Operating voltage is ≤36V." }
+    ],
+    viralReason: "Sunset lamp TikTok aesthetic — the $25 way to make any room look like a golden hour content studio."
+  },
+  {
+    id: "p20",
+    slug: "neon-light-wall-decor",
+    name: "LED Neon Light Wall Decor",
+    brand: "Vibe Test Lab",
+    category: "Room Vibes",
+    vibeScore: 72,
+    verdict: "A floating neon wall accent that looks custom but comes in 3 preset styles — good value at $49-57.",
+    verdictBadge: "Hidden Gem",
+    price: "$49.42",
+    priceRange: "$49.42 - $56.87",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/5cda851d42d793971710eedbe737.png?v=1774566864",
+    images: ["https://cdn.shopify.com/s/files/1/0958/6710/9671/files/ba3480584a9896f6813a6469c8fe.png?v=1774566865", "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/6c86235449a6a39b4ecf84e34227.png?v=1774566875"],
+    trending: false,
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/led-transparent-backboard-neon-light-wall-decor?utm_source=aeo&utm_medium=content&utm_campaign=neon-light-wall-decor",
+    questionHeadline: "Are LED Neon Signs Worth It for Bedroom Wall Decor?",
+    answerSnippet: "For $49-57, yes — LED neon signs on transparent backboards give the floating neon look without the custom price tag. 500,000 hour lifespan, USB-powered.",
+    problemSection: "Bare walls look boring and custom neon signs cost $100-300+",
+    solutionSection: "Pre-made LED neon on transparent acrylic backboard creates a floating glow effect at a fraction of custom pricing",
+    howToUse: ["Mount on the wall using included hardware", "Plug the USB cable into any USB port or adapter", "Enjoy the neon glow — no setup or app needed"],
+    testResults: [
+      { category: "Light Quality", score: 78, summary: "Even glow with good color saturation — transparent backboard creates a floating effect" },
+      { category: "Build Quality", score: 75, summary: "Durable acrylic, IP42 rated — solid for indoor use" },
+      { category: "Ambiance Impact", score: 80, summary: "Instant room personality — looks custom and expensive" },
+      { category: "Value", score: 72, summary: "Good deal at $49-57 compared to custom neon ($100-300+)" }
+    ],
+    pros: ["Transparent backboard = floating neon effect", "500,000 hour lifespan (57+ years)", "USB-powered — no electrician needed", "3 style options", "IP42 rated for indoor durability"],
+    cons: ["Only 3 preset styles — no customization", "Requires USB power source near the wall", "Indoor use only (IP42)", "Not dimmable"],
+    finalVerdictSummary: "The best way to get the custom neon look without the custom neon price. Pick one of the 3 styles, mount it, and plug in. Just don't expect customization.",
+    faq: [
+      { question: "How do you mount it on the wall?", answer: "Mounting hardware is included. Use screws or adhesive strips depending on your wall type." },
+      { question: "Can you customize the design?", answer: "No — it comes in 3 preset styles. For custom designs, you'd need a custom neon shop ($100-300+)." },
+      { question: "Does it get hot?", answer: "No — LED neon runs cool, unlike real glass neon. Safe to touch even after hours of use." },
+      { question: "How long does it last?", answer: "Rated for 500,000 hours — that's over 57 years of continuous use." }
+    ],
+    viralReason: "Neon wall decor went viral as the instant apartment personality upgrade — looks expensive, costs under $60."
   }
 ];
 

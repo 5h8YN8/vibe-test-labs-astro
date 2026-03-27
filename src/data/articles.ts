@@ -378,6 +378,104 @@ export const articles: Article[] = [
       { problem: "Many kids' melatonin products overdose at 3-5mg", solution: "1mg per piece is an appropriately low dose for children, with chamomile for added calming" },
       { problem: "Parents worry about artificial ingredients in kids' supplements", solution: "Non-GMO, fair-trade milk chocolate, no artificial colors or flavors, natural chamomile" }
     ]
+  },
+  {
+    id: "a7",
+    slug: "sunset-rainbow-projector",
+    question: "Are Sunset Lamp Projectors Actually Worth the TikTok Hype?",
+    shortAnswer: "For $25, the USB Sunset Rainbow Projector delivers solid mood lighting that photographs beautifully. It cycles through 16 warm colors and plugs into any USB port — no app, no Wi-Fi, no setup. The tradeoff: you can't lock on a single color, there's no rotation, and the throw distance is limited to 3-5 feet. If you want serious room atmosphere with app control, the $62 Galaxy Star Projector is the better pick.",
+    category: "Room Vibes",
+    date: "2026-03-27",
+    readTime: "5 min read",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/f88f023046afbc46b9f10a559bac.webp?v=1774564764",
+    intro: "Sunset lamp projectors flooded TikTok as the instant room aesthetic upgrade. The concept is simple: point a lens at your wall and let warm color gradients do the rest. At $25, the USB Sunset Rainbow Projector is the cheapest way in — but cheap can mean corners were cut.",
+    sections: [
+      { heading: "What Does a Sunset Projector Actually Do?", body: "A sunset projector casts warm, gradient-colored light onto a wall or ceiling. Unlike star projectors that create pinpoint patterns, sunset lamps produce smooth, blended color washes — think golden hour glow. The USB Sunset Rainbow Projector cycles through 16 colors automatically. You plug it in, point it at a wall, and the colors shift on their own." },
+      { heading: "Who Should Buy a Sunset Projector?", body: "Content creators who need good background lighting on a budget. Dorm room residents who want ambiance without overhead lights. Anyone who wants their room to look like a TikTok golden hour shot for under $30. Skip if you want app control, a single locked color, or projection that fills a large room — upgrade to the Galaxy Star Projector instead." },
+      { heading: "How Does It Compare to the Galaxy Star Projector?", body: "The Galaxy Star Projector ($62) has Wi-Fi, an app, Alexa integration, rotation, and 16 million colors you can mix. The Sunset Projector ($25) has none of that — it's a USB-powered lamp with 16 cycling colors. The star projector is the serious room vibes product; the sunset projector is the budget impulse buy that still looks great on camera." }
+    ],
+    products: [
+      {
+        name: "USB Sunset Rainbow Projector",
+        slug: "sunset-rainbow-projector",
+        vibeScore: 68,
+        price: "$25.50",
+        image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/f88f023046afbc46b9f10a559bac.webp?v=1774564764",
+        verdict: "Budget mood lighting that photographs well",
+        verdictBadge: "Hidden Gem",
+        affiliateUrl: "https://fwaqf1-er.myshopify.com/products/usb-sunset-rainbow-projector-led-night-light-decor?utm_source=aeo&utm_medium=content&utm_campaign=sunset-rainbow-projector"
+      }
+    ],
+    faq: [
+      { question: "Can you pick a single color?", answer: "No — the projector auto-cycles through 16 colors. You cannot lock on one specific color." },
+      { question: "How does it compare to the Galaxy Star Projector?", answer: "The star projector ($62) has Wi-Fi, app control, rotation, and Alexa. The sunset lamp ($25) is plug-and-play with auto-cycling colors — much simpler, much cheaper." },
+      { question: "Is it bright enough to light a room?", answer: "No — it's accent lighting for ambiance, not a functional room light. Best in a dim or dark room." },
+      { question: "Does it get hot?", answer: "Slightly warm after extended use but not hot. Operating voltage is ≤36V — safe for bedside use." },
+      { question: "What USB power source does it need?", answer: "Any USB-A port — laptop, phone charger, power bank, or USB wall adapter. Cable is included." }
+    ],
+    decision_table: [
+      { need: "Budget room ambiance under $30", best: "USB Sunset Rainbow Projector", why: "$25 plug-and-play, 16 colors, great on camera" },
+      { need: "App-controlled room atmosphere", best: "Galaxy Star Projector ($62)", why: "Wi-Fi, app, Alexa, rotation, 16M color mixing" },
+      { need: "Wall accent art that glows", best: "LED Neon Light Wall Decor ($49)", why: "Permanent floating neon effect, 500K hour lifespan" }
+    ],
+    tradeoffs: [
+      { tradeoff: "Control", side_a: "Sunset projector — zero setup, auto-cycles, $25", side_b: "Star projector — full app control, custom colors, $62" },
+      { tradeoff: "Effect Type", side_a: "Smooth color gradient washes on walls", side_b: "Rotating starfield and nebula clouds on ceiling" }
+    ],
+    problem_solution: [
+      { problem: "Overhead lighting is harsh and kills the vibe", solution: "Sunset projector casts warm color gradients for instant golden-hour ambiance" },
+      { problem: "Room looks boring in photos and videos", solution: "16 cycling colors create photogenic backdrops for content creation" },
+      { problem: "Quality projectors cost $60+ and require apps", solution: "USB-powered at $25 — just plug in and point at a wall, no setup" }
+    ]
+  },
+  {
+    id: "a8",
+    slug: "neon-light-wall-decor",
+    question: "Are LED Neon Signs Worth It for Bedroom Wall Decor?",
+    shortAnswer: "For $49-57, LED neon signs on transparent acrylic backboards give you the custom neon look without the custom price. The transparent mounting creates a floating glow effect that looks far more expensive than it is. The catch: only 3 preset styles — you can't customize the design. If you want a specific word or shape, you'll need a custom neon shop at $100-300+. But for instant wall personality, this is a great value.",
+    category: "Room Vibes",
+    date: "2026-03-27",
+    readTime: "5 min read",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/5cda851d42d793971710eedbe737.png?v=1774566864",
+    intro: "Custom neon signs look incredible but cost $100-300+ and take weeks to arrive. LED neon alternatives on transparent acrylic backboards give you 90% of the look at a fraction of the cost. The transparent mounting is what makes them work — the light appears to float on the wall instead of sitting on a visible board.",
+    sections: [
+      { heading: "What Makes LED Neon Different from Real Neon?", body: "Real neon uses glass tubes filled with gas — fragile, hot, expensive, and requires professional installation. LED neon uses flexible silicone tubes with LED strips inside — shatterproof, cool to touch, USB-powered, and mountable in minutes. The transparent acrylic backboard is the key design element: it lets the wall color show through, making the light appear to float." },
+      { heading: "Who Should Buy an LED Neon Wall Sign?", body: "Anyone who wants instant wall personality without committing to custom neon. Great for bedrooms, dorm rooms, home offices, or content creation backdrops. The 3 available styles work for general decor. Skip if you need a specific custom design — this isn't customizable." },
+      { heading: "Is $49-57 a Good Price for LED Neon?", body: "Compared to custom neon ($100-300+), this is a strong value. Compared to basic LED strip lights ($15-25), you're paying for the neon form factor and transparent backboard design. The 500,000-hour lifespan means you'll likely move before it burns out." }
+    ],
+    products: [
+      {
+        name: "LED Neon Light Wall Decor",
+        slug: "neon-light-wall-decor",
+        vibeScore: 72,
+        price: "$49.42",
+        image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/5cda851d42d793971710eedbe737.png?v=1774566864",
+        verdict: "Floating neon look without the custom price",
+        verdictBadge: "Hidden Gem",
+        affiliateUrl: "https://fwaqf1-er.myshopify.com/products/led-transparent-backboard-neon-light-wall-decor?utm_source=aeo&utm_medium=content&utm_campaign=neon-light-wall-decor"
+      }
+    ],
+    faq: [
+      { question: "Can you customize the design?", answer: "No — it comes in 3 preset styles. For custom text or shapes, you'd need a custom neon shop at $100-300+." },
+      { question: "Does it get hot like real neon?", answer: "No — LED neon runs cool to the touch, even after hours of use. Safe for bedrooms and near curtains." },
+      { question: "How long does it last?", answer: "Rated for 500,000 hours — over 57 years of continuous use. You'll move before it burns out." },
+      { question: "What power source does it need?", answer: "USB-powered. You'll need a USB port or adapter near where you mount it — plan your cable routing." },
+      { question: "Is it waterproof?", answer: "IP42 rated — splash-resistant for indoor use only. Not suitable for bathrooms or outdoor mounting." }
+    ],
+    decision_table: [
+      { need: "Instant wall personality under $60", best: "LED Neon Light Wall Decor", why: "Floating neon effect, 3 styles, USB-powered, 500K hour lifespan" },
+      { need: "Custom text or shape neon sign", best: "Custom neon shop ($100-300+)", why: "Fully customizable but 3-5x the price and longer lead time" },
+      { need: "Ambient room lighting on a budget", best: "USB Sunset Projector ($25)", why: "Cheaper, 16 cycling colors, but temporary — not wall-mounted art" }
+    ],
+    tradeoffs: [
+      { tradeoff: "Customization", side_a: "Pre-made LED neon — 3 styles, instant delivery, $49-57", side_b: "Custom neon — any design, 2-4 week lead time, $100-300+" },
+      { tradeoff: "Type of Light", side_a: "Neon wall sign — permanent accent piece, always on", side_b: "Projector — adjustable, more versatile, but not wall art" }
+    ],
+    problem_solution: [
+      { problem: "Bare walls look boring and impersonal", solution: "LED neon on transparent acrylic instantly adds personality and a focal point" },
+      { problem: "Custom neon signs cost $100-300+ and take weeks", solution: "Pre-made LED neon delivers 90% of the look at $49-57, ships immediately" },
+      { problem: "Real neon is fragile, hot, and requires professional installation", solution: "LED neon is shatterproof, cool to touch, USB-powered — mount it yourself in minutes" }
+    ]
   }
 
 ];
