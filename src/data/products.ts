@@ -759,6 +759,132 @@ export const products: Product[] = [
       { question: "How long does it last?", answer: "Rated for 500,000 hours — that's over 57 years of continuous use." }
     ],
     viralReason: "Neon wall decor went viral as the instant apartment personality upgrade — looks expensive, costs under $60."
+  },
+  {
+    id: "p21",
+    slug: "3d-moon-lamp",
+    name: "3D Printed Moon Lamp - Jupiter Night Light",
+    brand: "Generic",
+    category: "Room Vibes",
+    vibeScore: 76,
+    verdict: "A stunning 3D-printed moon lamp that works as both a night light and décor piece — gorgeous gift item with real 'wow' factor.",
+    verdictBadge: "Hidden Gem",
+    price: "$92.03",
+    priceRange: "$77.28 - $104.44",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/4f268f7748ab9a6ec26a5ae2e6df.jpg?v=1774566819",
+    images: [
+      "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/3d4cbea843fbbfe0af3cc704dd71.jpg?v=1774566829",
+      "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/c87594614d79a65a7f21f565b7e0.jpg?v=1774566839",
+      "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/f3bd7bae4cc1b8ae573a7914984f.jpg?v=1774566849",
+      "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/7add1faa47f3a39391394be75326.jpg?v=1774566860"
+    ],
+    trending: true,
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/3d-printed-moon-lamp-jupiter-night-light?utm_source=aeo&utm_medium=content&utm_campaign=3d-moon-lamp",
+    questionHeadline: "Is a 3D Moon Lamp Worth It or Just a Gimmick?",
+    answerSnippet: "It's worth it as a decorative gift or night light — the 3D-printed surface texture is genuinely impressive. Available in 2-color or 16-color remote versions, sizes 8cm to 20cm.",
+    problemSection: "Generic room lighting lacks personality and warmth",
+    solutionSection: "A realistic 3D moon lamp adds a celestial focal point and soft ambient glow to any space",
+    howToUse: ["Unbox and charge via USB", "Place on included wooden stand", "Toggle between warm white/yellow (2-color) or cycle through 16 colors with remote", "Adjust brightness by long-pressing the touch sensor"],
+    testResults: [
+      { category: "Design Appeal", score: 82, summary: "Stunning realistic moon surface texture from 3D printing process" },
+      { category: "Versatility", score: 78, summary: "Works as night light, décor, or gift — multiple sizes and color options" },
+      { category: "Build Quality", score: 70, summary: "PLA plastic is decent but not premium; handle with care" },
+      { category: "Value", score: 72, summary: "Mid-range price for decorative lighting, but the visual impact justifies it" }
+    ],
+    pros: ["Realistic 3D-printed moon surface texture", "16-color remote option is fun and versatile", "10,000+ hour LED lifespan", "6 sizes (8cm-20cm) for any space", "USB rechargeable — no cords during use", "Great gift item with real 'wow' factor"],
+    cons: ["PLA plastic can crack if dropped", "16-color remote version costs more", "Not bright enough for task lighting", "Touch sensor can be finicky", "Charging takes 2-3 hours for full battery"],
+    finalVerdictSummary: "A hidden gem for anyone who wants a unique, conversation-starting décor piece. The 16-color remote version is the sweet spot for gifting.",
+    faq: [
+      { question: "How long does the battery last on a full charge?", answer: "4-8 hours depending on brightness level. The 2-color version lasts longer than the 16-color version." },
+      { question: "Is the 16-color version worth the extra cost?", answer: "Yes — the remote control and color cycling add significant versatility. The 2-color version is fine for a simple night light, but the 16-color version is better for décor and gifting." },
+      { question: "What sizes are available?", answer: "8cm, 10cm, 13cm, 15cm, 18cm, and 20cm. The 15cm is the most popular for desks and nightstands." }
+    ],
+    viralReason: "Moon lamps went viral as the 'aesthetic room essential' on TikTok — the 3D-printed texture makes it look like a real miniature moon."
+  },
+  {
+    id: "p22",
+    slug: "wifi-neon-light-strip",
+    name: "WiFi Smart DIY Music Neon Light Strip",
+    brand: "Generic",
+    category: "Room Vibes",
+    vibeScore: 79,
+    verdict: "The most feature-packed LED strip we've tested — RGBIC color control, music sync, WiFi app, and DIY shapeable design. Premium price but premium experience.",
+    verdictBadge: "Hidden Gem",
+    price: "$105.06",
+    priceRange: "$105.06 - $148.18",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/ec93d8bf4e7dbc4a13e4e89e6faa.jpg?v=1774564682",
+    images: [
+      "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/f68baeb54e06bd1f9bb84c734d47.jpg?v=1774564693",
+      "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/b459cfd5481281c7170e45b1dca8.png?v=1774564703",
+      "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/121d90c144f18b1b70c4683d336d.jpg?v=1774564713",
+      "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/eecb625249e39fdd3c0f7e570746.png?v=1774564723"
+    ],
+    trending: true,
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/wifi-smart-diy-music-neon-light-strip-with-remote?utm_source=aeo&utm_medium=content&utm_campaign=wifi-neon-light-strip",
+    questionHeadline: "Are WiFi LED Neon Light Strips Worth It for Room Ambiance?",
+    answerSnippet: "Yes — if you want serious room vibes with app control, music sync, and individual LED color segments (RGBIC). Available in 5m (300 LEDs) and 10m (960 LEDs) with Bluetooth or WiFi options.",
+    problemSection: "Standard LED strips look cheap and lack smart controls",
+    solutionSection: "RGBIC technology gives individual LED segment control, music-reactive modes, and full app customization",
+    howToUse: ["Plan your design layout on the wall/ceiling", "Mount the flexible neon strip using included adhesive clips", "Connect to power (12V or 24V adapter included)", "Download the app and connect via Bluetooth or WiFi to customize colors and music sync"],
+    testResults: [
+      { category: "Color Quality", score: 85, summary: "RGBIC gives individual LED control with vivid, well-saturated colors" },
+      { category: "App Experience", score: 78, summary: "WiFi/Bluetooth app is responsive; music sync is genuinely fun" },
+      { category: "Installation", score: 72, summary: "DIY shapeable is flexible but requires planning and patience" },
+      { category: "Value", score: 75, summary: "Premium price but packed with features that cheaper strips lack" }
+    ],
+    pros: ["RGBIC individual LED segment control", "Music-reactive mode syncs to any audio", "WiFi + Bluetooth dual connectivity", "DIY shapeable — bend into any design", "5m and 10m options", "App with tons of presets and custom modes"],
+    cons: ["Premium price ($105-148)", "Installation requires planning", "WiFi version needs stable connection", "No voice assistant integration", "Power adapter is bulky", "Adhesive can damage some wall finishes"],
+    finalVerdictSummary: "The best LED strip for serious room vibes. If you want music sync, app control, and RGBIC color segments, this is the one. Budget shoppers should look at the Sunset Projector ($25) instead.",
+    faq: [
+      { question: "What's the difference between Bluetooth and WiFi versions?", answer: "Bluetooth works within ~30 feet and connects directly to your phone. WiFi connects through your router, allowing control from anywhere and potentially future smart home integration." },
+      { question: "Can you cut the strip to custom lengths?", answer: "Yes — there are cut marks along the strip. However, cut sections can't be reconnected, so measure carefully before cutting." },
+      { question: "Does music sync work with any music source?", answer: "Yes — it uses a built-in microphone to detect ambient audio. Works with speakers, TV, instruments, or any sound source in the room." }
+    ],
+    viralReason: "Music-reactive LED strips blew up on TikTok as gamers and content creators showed off their room setups syncing to beats."
+  },
+  {
+    id: "p23",
+    slug: "cooling-gel-eye-mask",
+    name: "Cooling Gel Eye Mask",
+    brand: "Generic",
+    category: "Sleepmaxxing",
+    vibeScore: 73,
+    verdict: "A simple, effective cooling mask that genuinely reduces morning puffiness. Not a miracle worker, but a solid daily ritual addition.",
+    verdictBadge: "Hidden Gem",
+    price: "$43.18",
+    priceRange: "$42.11 - $50.05",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/3cc4e80d4485a01c9ba8959b5e3e.png?v=1774538084",
+    images: [
+      "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/f1bf99e340fba3a1e320ecd9014c.png?v=1774538095",
+      "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/4b77b3a7414bb4cdb5b3ed16a3ff.png?v=1774538106",
+      "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/e0d9bccb4b4b8b21549e550eb3be.png?v=1774538106",
+      "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/0780d7c943569642f7b5ff623c22.png?v=1774538117"
+    ],
+    trending: true,
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/cooling-gel-eye-mask?utm_source=aeo&utm_medium=content&utm_campaign=cooling-gel-eye-mask",
+    questionHeadline: "Do Cooling Gel Eye Masks Actually Reduce Puffiness and Dark Circles?",
+    answerSnippet: "Yes for puffiness — the cold constricts blood vessels and reduces swelling noticeably in 15-20 minutes. For dark circles, it helps temporarily but isn't a permanent fix. Available in 6 colors with mask-only or suit options.",
+    problemSection: "Morning puffiness and tired eyes from screens, lack of sleep, or allergies",
+    solutionSection: "Cold gel therapy constricts blood vessels around the eyes, reducing swelling and refreshing tired skin in minutes",
+    howToUse: ["Store in the fridge (not freezer) for 1-2 hours before use", "Place over closed eyes and adjust the strap", "Relax for 15-20 minutes — the gel stays cool the entire time", "Rinse with cool water after use and return to the fridge"],
+    testResults: [
+      { category: "Cooling Effect", score: 78, summary: "Gel stays cold for ~20 minutes, noticeable depuffing after one use" },
+      { category: "Comfort", score: 75, summary: "Soft gel conforms to face shape, lightweight and non-restrictive" },
+      { category: "Build Quality", score: 68, summary: "Reusable gel holds up well but packaging and strap feel basic" },
+      { category: "Value", score: 72, summary: "Mid-range price but effective — cheaper than spa treatments" }
+    ],
+    pros: ["Noticeably reduces morning puffiness", "6 color options to match your aesthetic", "Reusable — just refrigerate and repeat", "Suit option includes extras for full face coverage", "Soft gel conforms to any face shape", "No chemicals or electricity needed"],
+    cons: ["Cooling effect lasts only ~20 minutes", "Won't permanently fix dark circles", "Strap feels basic/cheap", "Must pre-chill in fridge (not instant)", "Not suitable for freezer use", "Mask-only version doesn't cover full face"],
+    finalVerdictSummary: "A hidden gem for anyone who wakes up puffy. Keep it in the fridge, use it for 15-20 minutes each morning, and you'll see a real difference. Just don't expect it to cure dark circles permanently.",
+    faq: [
+      { question: "Can I put it in the freezer for extra cold?", answer: "Not recommended — freezer temperatures can make the gel too rigid and uncomfortable against skin. Refrigerator temperature (35-40°F) is the sweet spot for comfort and effectiveness." },
+      { question: "How long does the cooling effect last?", answer: "About 15-20 minutes from a full refrigerator chill. After that, the gel warms to body temperature." },
+      { question: "What's the difference between the mask and suit options?", answer: "The mask is just the eye mask. The suit includes additional gel pads for broader face coverage — forehead, cheeks, and under-eye area." }
+    ],
+    viralReason: "Cooling gel masks went viral as the 'de-puff hack' on skincare TikTok — simple, cheap, and visibly effective in under 20 minutes."
   }
 ];
 

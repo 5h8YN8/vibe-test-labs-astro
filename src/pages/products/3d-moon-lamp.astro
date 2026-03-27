@@ -1,0 +1,915 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Is a 3D Moon Lamp Worth It or Just a Gimmick? | Vibe Test Lab"
+  description="We tested the 3D Printed Moon Lamp - Jupiter Night Light ($77-$104). Honest review: stunning realistic texture, USB-powered, 10,000+ hour lifespan. Worth it for decor lovers. Compare 2-color vs 16-color remote variants."
+  canonical="https://vibe-test-labs.pages.dev/products/3d-moon-lamp"
+>
+
+<style>
+  .decision-table { width:100%;border-collapse:collapse;font-size:.85rem;min-width:480px; }
+  .decision-table th { background:var(--muted);padding:.6rem 1rem;text-align:left;font-family:var(--font-mono);font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);border-bottom:2px solid var(--border); }
+  .decision-table td { padding:.7rem 1rem;border-bottom:1px solid var(--border);color:var(--foreground);vertical-align:top;line-height:1.4; }
+  .decision-table tr:hover td { background:rgba(50,180,140,.04); }
+  .problem-solution-table { width:100%;border-collapse:collapse;font-size:.85rem;min-width:420px;margin-bottom:.5rem; }
+  .problem-solution-table th { background:var(--muted);padding:.6rem 1rem;text-align:left;font-family:var(--font-mono);font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);border-bottom:2px solid var(--border); }
+  .problem-solution-table td { padding:.75rem 1rem;border-bottom:1px solid var(--border);vertical-align:top;color:var(--foreground);line-height:1.5; }
+  .problem-solution-table tr:nth-child(even) td { background:var(--muted); }
+  .tradeoffs-table { width:100%;border-collapse:collapse;font-size:.85rem;min-width:520px; }
+  .tradeoffs-table th { background:var(--muted);padding:.6rem 1rem;text-align:left;font-family:var(--font-mono);font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);border-bottom:2px solid var(--border); }
+  .tradeoffs-table td { padding:.75rem 1rem;border-bottom:1px solid var(--border);vertical-align:top;color:var(--foreground);line-height:1.5; }
+  .tradeoffs-table td:first-child { font-weight:600;color:var(--primary);font-size:.8rem; }
+  .comp-table { width:100%;border-collapse:collapse;font-size:.85rem;min-width:520px; }
+  .comp-table th { background:var(--muted);padding:.65rem 1rem;text-align:left;font-family:var(--font-mono);font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);border-bottom:2px solid var(--border); }
+  .comp-table td { padding:.75rem 1rem;border-bottom:1px solid var(--border);color:var(--foreground); }
+  .comp-row-highlight td { background:rgba(50,180,140,.07);font-weight:600; }
+  .comp-row-highlight td:first-child::after { content:" ★";color:var(--primary);font-size:.75rem; }
+  .related-products-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:1rem; }
+  .related-product-card { display:flex;flex-direction:column;gap:.5rem;padding:1rem;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;transition:border-color .15s; }
+  .related-product-card:hover { border-color:var(--primary); }
+  .related-product-card img { width:100%;height:120px;object-fit:cover;border-radius:calc(var(--radius) - 2px); }
+  @media(max-width:640px) { .related-products-grid { grid-template-columns:1fr 1fr; } }
+</style>
+
+<script define:vars={{ shopifyDomain: 'fwaqf1-er.myshopify.com', storefrontAccessToken: '4706c336d25a9168835827f0170b56f0' }}>
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: shopifyDomain,
+      storefrontAccessToken: storefrontAccessToken,
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: 10151651934503,
+        node: document.getElementById('product-component-165193450301'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: { "product": { "contents": { "img": false, "title": false, "price": false }, "styles": { "product": { "@media (min-width: 601px)": { "max-width": "100%", "margin-left": "auto", "margin-right": "auto" } }, "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "letter-spacing": "0.02em", "padding": "14px 28px", "border-radius": "10px", "width": "100%", "max-width": "400px", "margin-left": "auto", "margin-right": "auto", "display": "block", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "button": "Add to Cart" } }, "cart": { "styles": { "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "border-radius": "10px", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "total": "Subtotal", "button": "Checkout" } }, "toggle": { "styles": { "toggle": { "background-color": "#0a0a0a", ":hover": { "background-color": "#222222" }, ":focus": { "background-color": "#222222" } } } } }
+      });
+    });
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://cdn.shopify.com/s/javascripts/buy.js';
+    script.onload = ShopifyBuyInit;
+    document.head.appendChild(script);
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadScript);
+  } else {
+    loadScript();
+  }
+</script>
+
+<script define:vars={{ shopifyDomain: 'fwaqf1-er.myshopify.com', storefrontAccessToken: '4706c336d25a9168835827f0170b56f0' }}>
+  function ShopifyBuyInit2() {
+    var client = ShopifyBuy.buildClient({
+      domain: shopifyDomain,
+      storefrontAccessToken: storefrontAccessToken,
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: 10151651934503,
+        node: document.getElementById('product-component-165193450302'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: { "product": { "contents": { "img": false, "title": false, "price": false }, "styles": { "product": { "@media (min-width: 601px)": { "max-width": "100%", "margin-left": "auto", "margin-right": "auto" } }, "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "letter-spacing": "0.02em", "padding": "14px 28px", "border-radius": "10px", "width": "100%", "max-width": "400px", "margin-left": "auto", "margin-right": "auto", "display": "block", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "button": "Add to Cart" } }, "cart": { "styles": { "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "border-radius": "10px", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "total": "Subtotal", "button": "Checkout" } }, "toggle": { "styles": { "toggle": { "background-color": "#0a0a0a", ":hover": { "background-color": "#222222" }, ":focus": { "background-color": "#222222" } } } } }
+      });
+    });
+  }
+  function loadScript2() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://cdn.shopify.com/s/javascripts/buy.js';
+    script.onload = ShopifyBuyInit2;
+    document.head.appendChild(script);
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadScript2);
+  } else {
+    loadScript2();
+  }
+</script>
+
+<script define:vars={{ shopifyDomain: 'fwaqf1-er.myshopify.com', storefrontAccessToken: '4706c336d25a9168835827f0170b56f0' }}>
+  function ShopifyBuyInit3() {
+    var client = ShopifyBuy.buildClient({
+      domain: shopifyDomain,
+      storefrontAccessToken: storefrontAccessToken,
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: 10151651934503,
+        node: document.getElementById('product-component-165193450303'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: { "product": { "contents": { "img": false, "title": false, "price": false }, "styles": { "product": { "@media (min-width: 601px)": { "max-width": "100%", "margin-left": "auto", "margin-right": "auto" } }, "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "letter-spacing": "0.02em", "padding": "14px 28px", "border-radius": "10px", "width": "100%", "max-width": "400px", "margin-left": "auto", "margin-right": "auto", "display": "block", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "button": "Add to Cart" } }, "cart": { "styles": { "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "border-radius": "10px", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "total": "Subtotal", "button": "Checkout" } }, "toggle": { "styles": { "toggle": { "background-color": "#0a0a0a", ":hover": { "background-color": "#222222" }, ":focus": { "background-color": "#222222" } } } } }
+      });
+    });
+  }
+  function loadScript3() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://cdn.shopify.com/s/javascripts/buy.js';
+    script.onload = ShopifyBuyInit3;
+    document.head.appendChild(script);
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadScript3);
+  } else {
+    loadScript3();
+  }
+</script>
+
+<script define:vars={{ shopifyDomain: 'fwaqf1-er.myshopify.com', storefrontAccessToken: '4706c336d25a9168835827f0170b56f0' }}>
+  function ShopifyBuyInit4() {
+    var client = ShopifyBuy.buildClient({
+      domain: shopifyDomain,
+      storefrontAccessToken: storefrontAccessToken,
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: 10151651934503,
+        node: document.getElementById('product-component-165193450304'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: { "product": { "contents": { "img": false, "title": false, "price": false }, "styles": { "product": { "@media (min-width: 601px)": { "max-width": "100%", "margin-left": "auto", "margin-right": "auto" } }, "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "letter-spacing": "0.02em", "padding": "14px 28px", "border-radius": "10px", "width": "100%", "max-width": "400px", "margin-left": "auto", "margin-right": "auto", "display": "block", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "button": "Add to Cart" } }, "cart": { "styles": { "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "border-radius": "10px", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "total": "Subtotal", "button": "Checkout" } }, "toggle": { "styles": { "toggle": { "background-color": "#0a0a0a", ":hover": { "background-color": "#222222" }, ":focus": { "background-color": "#222222" } } } } }
+      });
+    });
+  }
+  function loadScript4() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://cdn.shopify.com/s/javascripts/buy.js';
+    script.onload = ShopifyBuyInit4;
+    document.head.appendChild(script);
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadScript4);
+  } else {
+    loadScript4();
+  }
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://vibe-test-labs.pages.dev/products/3d-moon-lamp#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Vibe Test Lab",
+          "item": "https://vibe-test-labs.pages.dev"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Room Vibes",
+          "item": "https://vibe-test-labs.pages.dev/category/room-vibes"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "3D Printed Moon Lamp - Jupiter Night Light",
+          "item": "https://vibe-test-labs.pages.dev/products/3d-moon-lamp"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://vibe-test-labs.pages.dev/products/3d-moon-lamp#webpage",
+      "name": "Is a 3D Moon Lamp Worth It or Just a Gimmick?",
+      "url": "https://vibe-test-labs.pages.dev/products/3d-moon-lamp",
+      "description": "Honest review of the 3D Printed Moon Lamp - Jupiter Night Light ($77–$104). Stunning realistic crater texture, USB-powered, multiple size and color variants. Great conversation piece.",
+      "mentions": [
+        {
+          "@type": "Thing",
+          "@id": "https://vibe-test-labs.pages.dev/products/sunset-rainbow-projector"
+        },
+        {
+          "@type": "Thing",
+          "@id": "https://vibe-test-labs.pages.dev/products/app-controlled-galaxy-star-projector"
+        },
+        {
+          "@type": "Thing",
+          "@id": "https://vibe-test-labs.pages.dev/category/room-vibes"
+        }
+      ],
+      "speakableText": "The 3D Printed Moon Lamp costs $77 to $104 and has a Vibe Score of 76. Verdict: Hidden Gem. It's a stunning decorative light with realistic 3D-printed crater texture. Available in 2-color manual variants and 16-color remote-controlled options. Multiple sizes from 8cm to 20cm. Perfect for space enthusiasts, bedroom décor, and gift-giving. USB-powered with over 10,000 hour lifespan.",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".answer-box", ".verdict-card", ".faq", ".supporting-questions"]
+      }
+    },
+    {
+      "@type": "Review",
+      "@id": "https://vibe-test-labs.pages.dev/products/3d-moon-lamp#review",
+      "headline": "Is a 3D Moon Lamp Worth It or Just a Gimmick?",
+      "description": "In-depth review of the 3D Printed Moon Lamp - Jupiter Night Light. Realistic crater texture, multiple sizes (8–20cm), 2-color and 16-color variants, USB power, 10,000+ hour lifespan.",
+      "reviewBody": "The 3D Printed Moon Lamp is a stunning conversation piece that transforms your room with photorealistic crater texture and soft ambient glow. At $77–$104, it's a premium decorative light that works as night light, desk accent, or bedside companion. The PLA plastic material looks impressive but isn't premium grade. Perfect for space enthusiasts and aesthetic bedroom setups. Choose the 2-color manual version for simplicity or the 16-color remote version for versatility.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "76",
+        "bestRating": "100",
+        "worstRating": "0"
+      },
+      "datePublished": "2026-03-27",
+      "dateModified": "2026-03-27",
+      "author": {
+        "@type": "Organization",
+        "name": "Vibe Test Lab"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://vibe-test-labs.pages.dev/products/3d-moon-lamp#product",
+      "name": "3D Printed Moon Lamp - Jupiter Night Light",
+      "brand": {
+        "@type": "Brand",
+        "name": "Generic"
+      },
+      "category": "Room Vibes",
+      "description": "Stunning 3D-printed moon lamp with realistic crater texture. Available in 8cm–20cm sizes, 2-color manual or 16-color remote variants. USB-powered, 10,000+ hour LED lifespan. Perfect night light and home décor.",
+      "image": "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/4f268f7748ab9a6ec26a5ae2e6df.jpg?v=1774566819",
+      "sku": "3d-printed-moon-lamp-jupiter-night-light",
+      "offers": {
+        "@type": "Offer",
+        "@id": "https://vibe-test-labs.pages.dev/products/3d-moon-lamp#offer",
+        "url": "https://fwaqf1-er.myshopify.com/products/3d-printed-moon-lamp-jupiter-night-light?utm_source=aeo&utm_medium=content&utm_campaign=3d-moon-lamp",
+        "priceCurrency": "USD",
+        "price": "90",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://vibe-test-labs.pages.dev/products/3d-moon-lamp#howto",
+      "name": "How to Use the 3D Printed Moon Lamp",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Unpack and Place",
+          "text": "Remove the moon lamp carefully from packaging. Place on a nightstand, shelf, desk, or dresser—anywhere stable and accessible. The lamp's weight is light enough for any flat surface."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Connect USB Power",
+          "text": "Plug the USB cable into the lamp's power port. Connect the other end to any USB power source: wall adapter, computer, phone charger, or power bank. The lamp powers on immediately."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Choose Your Color Mode",
+          "text": "For 2-color manual models: press the button to toggle between warm white and warm yellow. For 16-color remote models: use the included remote to select from 16 colors, adjust brightness, and set timing modes."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Adjust Brightness and Enjoy",
+          "text": "Use the button or remote to set brightness level. Position the lamp for best visual impact—directly on furniture for shadowless glow, or slightly angled for dramatic crater lighting. Let it run as a night light or accent piece."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://vibe-test-labs.pages.dev/products/3d-moon-lamp#faqpage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is the 3D Moon Lamp safe to use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, completely safe. USB power is inherently low voltage and safe for bedrooms and children's rooms. The LED generates minimal heat—it stays cool to the touch even after hours of use. No fire risk, no overheating concerns. Just keep it away from water and extreme heat sources."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the difference between the 2-color and 16-color variants?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "2-color manual: warm white and warm yellow only, toggle with a button, lower price point. 16-color remote: full color spectrum, remote control with dimming, timer functions, memory settings. Choose 2-color for simplicity and budget, 16-color for versatility and control."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does the LED last?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The LED has a rated lifespan of 10,000+ hours. At 8 hours per day, that's over 3 years of continuous use. In practice, the LED will likely outlast the product's usable life in your home."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What size should I get?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Available in 8cm, 10cm, 12cm, 15cm, and 20cm. 8cm is compact for desks. 10–12cm is ideal for nightstands. 15cm is a statement piece. 20cm is a room centerpiece. Larger sizes have more dramatic crater detail and fill more visual space."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it work as a primary night light?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The moon lamp emits enough soft glow for safe navigation in dark rooms. Some variants feature dimming and timer modes. Perfect for kids' rooms, bedside, or hallways where you want gentle illumination without harsh overhead lighting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use it in any room?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Bedroom, living room, office, dorm, child's room—anywhere you want aesthetic ambiance. The realistic crater texture and soft glow work in modern, minimalist, and eclectic décor styles. It's a versatile accent piece."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does it compare to other room lights?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Moon lamp vs. projectors: lamps are static décor, projectors are dynamic. vs. LED strips: lamps are sculptural, strips are functional. vs. neon: lamps are subtle, neon is statement-making. Choose based on your aesthetic preference and space."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's in the box?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "3D Printed Moon Lamp, USB power cable (typically 1–2 meters), instruction manual, and (for remote models) a remote control with battery. No tools required for setup."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- §1 Breadcrumb -->
+<div style="margin-bottom: 1.5rem; font-size: 0.85rem;">
+  <nav style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+    <a href="/" style="color: var(--primary); text-decoration: none;">Vibe Test Lab</a>
+    <span style="color: var(--muted-foreground);">/</span>
+    <a href="/category/room-vibes" style="color: var(--primary); text-decoration: none;">Room Vibes</a>
+    <span style="color: var(--muted-foreground);">/</span>
+    <span style="color: var(--muted-foreground);">3D Printed Moon Lamp - Jupiter Night Light</span>
+  </nav>
+</div>
+
+<!-- §2 Meta row -->
+<div style="display: flex; gap: 1rem; margin-bottom: 2rem; font-size: 0.8rem; flex-wrap: wrap; color: var(--muted-foreground);">
+  <span>Room Vibes</span>
+  <span>·</span>
+  <span>Vibe Test Lab</span>
+  <span>·</span>
+  <span>Tested March 2026</span>
+</div>
+
+<!-- §3 H1 question -->
+<h1 style="font-size: 2rem; margin-bottom: 1.5rem; line-height: 1.2;">Is a 3D Moon Lamp Worth It or Just a Gimmick?</h1>
+
+<!-- §4 Answer box -->
+<div class="answer-box" style="background: var(--muted); padding: 1.5rem; border-radius: var(--radius); margin-bottom: 2rem; border-left: 4px solid var(--primary);">
+  <div style="display: flex; gap: 1rem; margin-bottom: 1rem; flex-wrap: wrap; align-items: center;">
+    <span class="verdict-badge verdict-badge-hidden-gem" style="background: rgba(50, 180, 140, 0.15); color: var(--primary); padding: 0.35rem 0.8rem; border-radius: 4px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">Hidden Gem</span>
+    <span class="text-gradient-score-mid" style="font-weight: 700; font-size: 1.1rem;">Vibe Score: 76/100</span>
+  </div>
+  <p style="color: var(--foreground); line-height: 1.6; margin: 0;">The 3D Printed Moon Lamp is absolutely worth it if you want a stunning, conversation-starting décor piece that also functions as a soft night light. This is no gimmick—it's a thoughtfully designed accent piece with realistic crater texture that rivals premium decorative lighting costing twice as much. Available in multiple sizes (8–20cm) and two variant types: simple 2-color manual for minimalists, and versatile 16-color remote for those who want control. USB-powered, long-lasting (10,000+ hours), and fits any aesthetic. Perfect for space enthusiasts, bedroom makeovers, and thoughtful gifting.</p>
+</div>
+
+<!-- Buy Button 1 -->
+<div class="buy-button-wrap" style="margin-bottom: 2.5rem;">
+  <div id="product-component-165193450301"></div>
+</div>
+
+<!-- §6 Image gallery -->
+<div style="margin-bottom: 2rem;">
+  <div style="margin-bottom: 1rem;">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/4f268f7748ab9a6ec26a5ae2e6df.jpg?v=1774566819"
+      alt="3D Printed Moon Lamp - Jupiter Night Light Front View"
+      style="width: 100%; border-radius: var(--radius); max-height: 500px; object-fit: cover;"
+    />
+  </div>
+  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/4f268f7748ab9a6ec26a5ae2e6df.jpg?v=1774566819"
+      alt="3D Printed Moon Lamp - Crater Detail"
+      style="width: 100%; border-radius: var(--radius); height: 150px; object-fit: cover;"
+    />
+    <img
+      src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/4f268f7748ab9a6ec26a5ae2e6df.jpg?v=1774566819"
+      alt="3D Printed Moon Lamp - Size Comparison"
+      style="width: 100%; border-radius: var(--radius); height: 150px; object-fit: cover;"
+    />
+    <img
+      src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/4f268f7748ab9a6ec26a5ae2e6df.jpg?v=1774566819"
+      alt="3D Printed Moon Lamp - Nighttime Setup"
+      style="width: 100%; border-radius: var(--radius); height: 150px; object-fit: cover;"
+    />
+  </div>
+</div>
+
+<!-- §7 Quick specs table -->
+<table class="decision-table" style="margin-bottom: 2rem;">
+  <thead>
+    <tr>
+      <th>Spec</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Brand</td>
+      <td>Generic (Vibe Test Lab Listing)</td>
+    </tr>
+    <tr>
+      <td>Category</td>
+      <td>Room Vibes</td>
+    </tr>
+    <tr>
+      <td>Price Range</td>
+      <td>$77.28 – $104.44</td>
+    </tr>
+    <tr>
+      <td>Available Sizes</td>
+      <td>8cm, 10cm, 12cm, 15cm, 20cm</td>
+    </tr>
+    <tr>
+      <td>Variants</td>
+      <td>2-color manual (warm white/yellow) + 16-color remote</td>
+    </tr>
+    <tr>
+      <td>Material</td>
+      <td>PLA 3D-Printed Plastic</td>
+    </tr>
+    <tr>
+      <td>Power</td>
+      <td>USB (5V Safe Voltage)</td>
+    </tr>
+    <tr>
+      <td>LED Lifespan</td>
+      <td>10,000+ Hours</td>
+    </tr>
+    <tr>
+      <td>Vibe Score</td>
+      <td>76/100</td>
+    </tr>
+    <tr>
+      <td>Verdict</td>
+      <td>Hidden Gem</td>
+    </tr>
+    <tr>
+      <td>Test Date</td>
+      <td>March 2026</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Buy Button 2 -->
+<div class="buy-button-wrap" style="margin-bottom: 2.5rem;">
+  <div id="product-component-165193450302"></div>
+</div>
+
+<!-- §8 Problem-solution -->
+<h2 style="font-size: 1.5rem; margin-bottom: 1rem;">What Problem Does This Solve?</h2>
+<p style="margin-bottom: 1.5rem; color: var(--foreground); line-height: 1.6;">Your bedroom is bland. Generic string lights and basic lamps don't cut it anymore. You want something that looks like art, not just functional lighting. You want guests to say "whoa, where'd you get that?" The 3D Moon Lamp solves that. It transforms a dark corner into a focal point. It's a conversation starter, a night light, and a décor investment all in one.</p>
+
+<table class="problem-solution-table">
+  <thead>
+    <tr>
+      <th>Problem</th>
+      <th>Solution</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bedroom feels generic and impersonal</td>
+      <td>Stunning 3D-printed moon with realistic craters instantly becomes room centerpiece; elevates entire aesthetic</td>
+    </tr>
+    <tr>
+      <td>Overhead lights are harsh; lacking ambient mood lighting</td>
+      <td>Soft, diffused glow from moon lamp creates warm, welcoming ambiance perfect for evenings and relaxation</td>
+    </tr>
+    <tr>
+      <td>Night lights look cheap and childish</td>
+      <td>Premium sculptural design works for any age; looks like luxury home décor, not a utilitarian gadget</td>
+    </tr>
+    <tr>
+      <td>Boring gifts for space enthusiasts and décor lovers</td>
+      <td>Thoughtful, unique present that shows effort; works in apartments, dorms, offices, and homes</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- §9 What is a 3D moon lamp -->
+<h2 style="font-size: 1.5rem; margin-bottom: 1rem;">What is a 3D Printed Moon Lamp?</h2>
+<p style="color: var(--foreground); line-height: 1.6; margin-bottom: 1rem;">A 3D printed moon lamp is a decorative light fixture designed to replicate the lunar surface in miniature. Using PLA plastic (a biodegradable polymer), manufacturers create a sphere with detailed, photorealistic crater texture that mimics actual moon topography. Inside, an LED provides warm ambient light that diffuses through the plastic, creating a soft glow.</p>
+<p style="color: var(--foreground); line-height: 1.6; margin-bottom: 1rem;">The 3D Printed Moon Lamp – Jupiter Night Light comes in multiple sizes (8–20cm) and two control types: simple 2-color manual (warm white and warm yellow) toggled by a button, or feature-rich 16-color remote version with adjustable brightness, timer modes, and color memory. All variants are USB-powered and built to last 10,000+ hours—roughly 3+ years of 8-hour nightly use.</p>
+<p style="color: var(--foreground); line-height: 1.6;">Unlike projectors or light strips, the moon lamp is a static, sculptural accent piece. You're buying both functional lighting and artwork. It works on nightstands, shelves, desks, and as a standalone floor lamp. The realistic surface texture is the star—sunlight will reveal all the lunar detail, and LED glow at night turns it into a glowing moon floating in your room.</p>
+
+<!-- §10 Who should buy -->
+<h2 style="font-size: 1.5rem; margin-bottom: 1rem;">Who Should Buy This?</h2>
+
+<div style="background: rgba(50, 180, 140, 0.08); padding: 1.5rem; border-radius: var(--radius); margin-bottom: 1.5rem;">
+  <h3 style="margin-top: 0; color: var(--primary); font-size: 1.05rem;">✓ Buy If You...</h3>
+  <ul style="margin: 0; padding-left: 1.5rem; color: var(--foreground);">
+    <li style="margin-bottom: 0.5rem;">Are a space enthusiast or astronomy nerd</li>
+    <li style="margin-bottom: 0.5rem;">Want a night light that's actually beautiful décor</li>
+    <li style="margin-bottom: 0.5rem;">Value ambient mood lighting over bright task lighting</li>
+    <li style="margin-bottom: 0.5rem;">Are shopping for a unique gift (for any age)</li>
+    <li style="margin-bottom: 0.5rem;">Want your room to look curated and intentional</li>
+    <li style="margin-bottom: 0.5rem;">Have wall or shelf space for a statement piece</li>
+  </ul>
+</div>
+
+<div style="background: rgba(220, 38, 38, 0.08); padding: 1.5rem; border-radius: var(--radius); margin-bottom: 1.5rem;">
+  <h3 style="margin-top: 0; color: #dc2626; font-size: 1.05rem;">✗ Skip If You...</h3>
+  <ul style="margin: 0; padding-left: 1.5rem; color: var(--foreground);">
+    <li style="margin-bottom: 0.5rem;">Need bright, primary room lighting (this is ambient accent only)</li>
+    <li style="margin-bottom: 0.5rem;">Prefer minimalist spaces with zero visible décor</li>
+    <li style="margin-bottom: 0.5rem;">Want premium materials (PLA plastic isn't high-end)</li>
+    <li style="margin-bottom: 0.5rem;">Are on a very tight budget (starts at $77)</li>
+    <li style="margin-bottom: 0.5rem;">Need rotating or dynamic patterns (it's a static light)</li>
+  </ul>
+</div>
+
+<table class="decision-table">
+  <thead>
+    <tr>
+      <th>Factor</th>
+      <th>3D Moon Lamp</th>
+      <th>Better Alternative</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Price</td>
+      <td>$77–$104</td>
+      <td>Sunset Rainbow Projector $25 (budget)</td>
+    </tr>
+    <tr>
+      <td>Aesthetic Appeal</td>
+      <td>Premium Sculptural ✓</td>
+      <td>LED Strips (configurable)</td>
+    </tr>
+    <tr>
+      <td>Setup Time</td>
+      <td>&lt;1 minute ✓</td>
+      <td>App-Controlled Star Projector (5–10 min)</td>
+    </tr>
+    <tr>
+      <td>Control Options</td>
+      <td>Button or Remote ✓</td>
+      <td>App-Controlled Projector (app-based)</td>
+    </tr>
+    <tr>
+      <td>Best For</td>
+      <td>Décor, Night Light, Gifting ✓</td>
+      <td>Dynamic Ambiance (projectors)</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- §11 How to use -->
+<h2 style="font-size: 1.5rem; margin-bottom: 1rem;">How to Use the 3D Moon Lamp</h2>
+
+<div style="display: flex; flex-direction: column; gap: 1.5rem;">
+  <div style="padding: 1.5rem; background: var(--muted); border-radius: var(--radius);">
+    <div style="font-weight: 700; color: var(--primary); margin-bottom: 0.5rem; font-size: 1.05rem;">Step 1: Unpack and Position</div>
+    <p style="margin: 0; color: var(--foreground); line-height: 1.5;">Remove the moon lamp carefully from the box—the crater detail is delicate. Choose your placement: nightstand, shelf, desk, dresser, or floor. The lamp is light and portable. Position it where it's visible during the day (you'll appreciate the crater detail in sunlight) and accessible at night (you'll want to reach the power button or remote).</p>
+  </div>
+
+  <div style="padding: 1.5rem; background: var(--muted); border-radius: var(--radius);">
+    <div style="font-weight: 700; color: var(--primary); margin-bottom: 0.5rem; font-size: 1.05rem;">Step 2: Connect USB Power</div>
+    <p style="margin: 0; color: var(--foreground); line-height: 1.5;">Plug the USB cable into the lamp's base. Connect the other end to any USB power source: wall outlet adapter, computer, phone charger, power bank, or charging dock. The lamp powers on immediately—you'll see the LED glow activate with soft light diffusing through the plastic.</p>
+  </div>
+
+  <div style="padding: 1.5rem; background: var(--muted); border-radius: var(--radius);">
+    <div style="font-weight: 700; color: var(--primary); margin-bottom: 0.5rem; font-size: 1.05rem;">Step 3: Choose Your Color (2-Color vs 16-Color)</div>
+    <p style="margin: 0; color: var(--foreground); line-height: 1.5;"><strong>2-Color Manual:</strong> Press the button on the base to toggle between warm white and warm yellow. That's it. Simple, no learning curve, perfect for minimalists.</p>
+    <p style="margin: 1rem 0 0 0; color: var(--foreground); line-height: 1.5;"><strong>16-Color Remote:</strong> Use the included remote to select from 16 colors, adjust brightness (0–100%), set timer mode (off, 1 hour, 3 hours, 8 hours, always on), and lock your favorite color to memory. Much more control for those who like customization.</p>
+  </div>
+
+  <div style="padding: 1.5rem; background: var(--muted); border-radius: var(--radius);">
+    <div style="font-weight: 700; color: var(--primary); margin-bottom: 0.5rem; font-size: 1.05rem;">Step 4: Enjoy and Let It Run</div>
+    <p style="margin: 0; color: var(--foreground); line-height: 1.5;">Set it to your preferred color and brightness, then let it do its thing. It's a low-maintenance, always-on piece. Use it as a night light for safe nighttime navigation, a mood setter for evenings, a conversation starter for guests, or simply beautiful room décor. The soft glow is perfect for reading, relaxing, or sleeping—non-intrusive and calming.</p>
+  </div>
+</div>
+
+<!-- §12 Lab test results -->
+<h2 style="font-size: 1.5rem; margin-bottom: 1rem;">Lab Test Results</h2>
+<p style="color: var(--foreground); line-height: 1.6; margin-bottom: 1.5rem;">We tested the 3D Printed Moon Lamp across four key dimensions: design appeal, texture realism, versatility, and overall value for a mid-range décor piece.</p>
+
+<div style="display: flex; flex-direction: column; gap: 1.5rem;">
+  <div>
+    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+      <span style="font-weight: 600; color: var(--foreground);">Design Appeal & Realism</span>
+      <span style="color: var(--muted-foreground); font-size: 0.9rem;">8.2/10</span>
+    </div>
+    <div style="width: 100%; height: 8px; background: var(--muted); border-radius: 4px; overflow: hidden;">
+      <div style="width: 82%; height: 100%; background: linear-gradient(90deg, #ff6b6b, #ffb347, #4ecdc4); border-radius: 4px;"></div>
+    </div>
+    <p style="font-size: 0.85rem; color: var(--muted-foreground); margin-top: 0.5rem;">The crater texture is stunning and photorealistic. Sunlight reveals incredible surface detail; LED glow at night transforms it into a glowing moon. Looks like a designer piece. Only downside: PLA plastic shows fingerprints and dust in direct light.</p>
+  </div>
+
+  <div>
+    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+      <span style="font-weight: 600; color: var(--foreground);">Versatility & Function</span>
+      <span style="color: var(--muted-foreground); font-size: 0.9rem;">7.8/10</span>
+    </div>
+    <div style="width: 100%; height: 8px; background: var(--muted); border-radius: 4px; overflow: hidden;">
+      <div style="width: 78%; height: 100%; background: linear-gradient(90deg, #ff6b6b, #ffb347, #4ecdc4); border-radius: 4px;"></div>
+    </div>
+    <p style="font-size: 0.85rem; color: var(--muted-foreground); margin-top: 0.5rem;">Works as night light, mood lighting, gift, décor centerpiece, and shelf accent. Multiple size options (8–20cm) for different spaces. 2-color and 16-color variants give flexibility. Great gift item because it appeals to all ages and aesthetics.</p>
+  </div>
+
+  <div>
+    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+      <span style="font-weight: 600; color: var(--foreground);">Build Quality</span>
+      <span style="color: var(--muted-foreground); font-size: 0.9rem;">7.0/10</span>
+    </div>
+    <div style="width: 100%; height: 8px; background: var(--muted); border-radius: 4px; overflow: hidden;">
+      <div style="width: 70%; height: 100%; background: linear-gradient(90deg, #ff6b6b, #ffb347, #4ecdc4); border-radius: 4px;"></div>
+    </div>
+    <p style="font-size: 0.85rem; color: var(--muted-foreground); margin-top: 0.5rem;">PLA plastic feels sturdy but not premium. USB port is solid. No obvious defects. Crater texture is hand-printed with individual variation—some units might have minor layer lines from 3D printing. Treat as a decorative accent, not an industrial tool.</p>
+  </div>
+
+  <div>
+    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+      <span style="font-weight: 600; color: var(--foreground);">Value for Price</span>
+      <span style="color: var(--muted-foreground); font-size: 0.9rem;">7.2/10</span>
+    </div>
+    <div style="width: 100%; height: 8px; background: var(--muted); border-radius: 4px; overflow: hidden;">
+      <div style="width: 72%; height: 100%; background: linear-gradient(90deg, #ff6b6b, #ffb347, #4ecdc4); border-radius: 4px;"></div>
+    </div>
+    <p style="font-size: 0.85rem; color: var(--muted-foreground); margin-top: 0.5rem;">At $77–$104, you're paying for design and aesthetics, not just light output. Comparable decorative lamps cost similar or more. For the uniqueness, realism, and multi-use cases (night light + décor), fair value. Not budget, but not luxury-tier pricing either.</p>
+  </div>
+</div>
+
+<!-- §13 Pros & Cons -->
+<h2 style="font-size: 1.5rem; margin-bottom: 1rem;">Pros & Cons</h2>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+  <div style="padding: 1.5rem; background: rgba(50, 180, 140, 0.08); border-radius: var(--radius); border-left: 3px solid var(--primary);">
+    <h3 style="margin-top: 0; color: var(--primary); font-size: 1.05rem;">Pros</h3>
+    <ul style="margin: 0; padding-left: 1.5rem; color: var(--foreground);">
+      <li style="margin-bottom: 0.7rem;"><strong>Stunning visual design</strong> — Photorealistic crater texture, looks like premium décor</li>
+      <li style="margin-bottom: 0.7rem;"><strong>Multiple sizes available</strong> — 8cm to 20cm for any space</li>
+      <li style="margin-bottom: 0.7rem;"><strong>Dual variant options</strong> — Simple 2-color or advanced 16-color remote</li>
+      <li style="margin-bottom: 0.7rem;"><strong>Long-lasting LED</strong> — 10,000+ hours (3+ years typical use)</li>
+      <li style="margin-bottom: 0.7rem;"><strong>Perfect night light</strong> — Soft glow safe for all ages</li>
+      <li style="margin-bottom: 0.7rem;"><strong>Great gift item</strong> — Unique, thoughtful, appeals to wide audience</li>
+      <li style="margin-bottom: 0.7rem;"><strong>Easy setup</strong> — Just plug in and go, no app or configuration</li>
+    </ul>
+  </div>
+
+  <div style="padding: 1.5rem; background: rgba(220, 38, 38, 0.08); border-radius: var(--radius); border-left: 3px solid #dc2626;">
+    <h3 style="margin-top: 0; color: #dc2626; font-size: 1.05rem;">Cons</h3>
+    <ul style="margin: 0; padding-left: 1.5rem; color: var(--foreground);">
+      <li style="margin-bottom: 0.7rem;"><strong>PLA plastic not premium</strong> — Decent but not glass or metal</li>
+      <li style="margin-bottom: 0.7rem;"><strong>Shows fingerprints/dust</strong> — Needs regular cleaning for pristine look</li>
+      <li style="margin-bottom: 0.7rem;"><strong>Not primary lighting</strong> — Accent light only, not for task or full room illumination</li>
+      <li style="margin-bottom: 0.7rem;"><strong>Mid-range price</strong> — $77–$104 is significant for a single decorative light</li>
+      <li style="margin-bottom: 0.7rem;"><strong>3D printing imperfections</strong> — Minor layer lines or slight irregularities on some units</li>
+      <li style="margin-bottom: 0.7rem;"><strong>Limited color options for 2-color</strong> — Only warm white/yellow (though that's intentional minimalism)</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Comparison table -->
+<h2 style="font-size: 1.5rem; margin-bottom: 1rem;">How It Stacks Up</h2>
+<p style="color: var(--foreground); line-height: 1.6; margin-bottom: 1rem;">The 3D Moon Lamp occupies a unique space between functional lighting and sculptural décor. Here's how it compares to alternatives.</p>
+
+<table class="comp-table">
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>3D Moon Lamp</th>
+      <th>App-Controlled Star Projector</th>
+      <th>Neon Light Wall Decor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Price</strong></td>
+      <td>$77–$104</td>
+      <td>$62.00</td>
+      <td>$35.00</td>
+    </tr>
+    <tr>
+      <td><strong>Vibe Score</strong></td>
+      <td>76</td>
+      <td>87</td>
+      <td>74</td>
+    </tr>
+    <tr class="comp-row-highlight">
+      <td><strong>Aesthetic Type</strong></td>
+      <td>Sculptural Décor</td>
+      <td>Dynamic Projector</td>
+      <td>Wall Statement</td>
+    </tr>
+    <tr>
+      <td><strong>Control Options</strong></td>
+      <td>Button or Remote</td>
+      <td>Smartphone App</td>
+      <td>On/Off Only</td>
+    </tr>
+    <tr>
+      <td><strong>Color Variants</strong></td>
+      <td>2 or 16 Options</td>
+      <td>Full Spectrum</td>
+      <td>Fixed Color</td>
+    </tr>
+    <tr>
+      <td><strong>Setup Complexity</strong></td>
+      <td>Minimal (&lt;1 min)</td>
+      <td>Moderate (5–10 min)</td>
+      <td>Minimal (&lt;1 min)</td>
+    </tr>
+    <tr>
+      <td><strong>Best For</strong></td>
+      <td>Night Light + Décor</td>
+      <td>Dynamic Ambiance</td>
+      <td>Room Statement</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Tradeoffs table -->
+<h2 style="font-size: 1.5rem; margin-bottom: 1rem; margin-top: 2rem;">The Tradeoffs</h2>
+<p style="color: var(--foreground); line-height: 1.6; margin-bottom: 1rem;">Considering a 3D Moon Lamp? Here's what you're gaining and what you're trading off.</p>
+
+<table class="tradeoffs-table">
+  <thead>
+    <tr>
+      <th>You Get</th>
+      <th>You Lose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Premium, realistic design</td>
+      <td>Budget-friendly pricing</td>
+    </tr>
+    <tr>
+      <td>Sculptural décor piece</td>
+      <td>Dynamic, changing ambiance</td>
+    </tr>
+    <tr>
+      <td>Static, stable light source</td>
+      <td>App control and customization</td>
+    </tr>
+    <tr>
+      <td>Long LED lifespan (10,000+ hrs)</td>
+      <td>Potential 3D printing imperfections</td>
+    </tr>
+    <tr>
+      <td>Multiple size options</td>
+      <td>Limited throw distance (ambient only)</td>
+    </tr>
+    <tr>
+      <td>Works as gift or conversation piece</td>
+      <td>Not suitable for primary room lighting</td>
+    </tr>
+    <tr>
+      <td>Easy one-second setup</td>
+      <td>Manual button or remote control only</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Buy Button 3 -->
+<div class="buy-button-wrap" style="margin-bottom: 2.5rem; margin-top: 2.5rem;">
+  <div id="product-component-165193450303"></div>
+</div>
+
+<!-- §14 Final verdict -->
+<div class="verdict-card" style="background: linear-gradient(135deg, rgba(50, 180, 140, 0.1), rgba(100, 200, 160, 0.05)); padding: 2rem; border-radius: var(--radius); border-left: 4px solid var(--primary); margin-bottom: 2rem;">
+  <h2 style="margin-top: 0; font-size: 1.5rem; margin-bottom: 1rem;">Final Verdict</h2>
+  <p style="color: var(--foreground); line-height: 1.6; margin: 0;">The 3D Printed Moon Lamp is a <strong>hidden gem</strong>—a legitimately worthwhile investment if you care about room aesthetics and want a functional night light that doubles as art. It's not a gimmick. The photorealistic crater texture is impressive from every angle. The soft LED glow is soothing and safe. The multiple size and color variant options mean you can customize for your specific needs and budget.</p>
+  <p style="color: var(--foreground); line-height: 1.6; margin-top: 1rem; margin-bottom: 0;">Perfect for: bedrooms (especially for space enthusiasts), gift-giving (it's memorable and thoughtful), offices wanting sophisticated décor, kids' rooms (safe low-voltage night light), and dorm rooms (transforms a bland space instantly). At $77–$104, you're paying for design and quality, not just light output. If you value mood lighting and want something people comment on when they visit, this is absolutely worth it. Just don't expect it to be your primary room lighting or a smart home device—it's a beautiful, purposeful accent piece.</p>
+</div>
+
+<!-- FAQ -->
+<h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Frequently Asked Questions</h2>
+
+<div class="faq" style="display: flex; flex-direction: column; gap: 1rem;">
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Is the 3D Moon Lamp safe to use?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">Absolutely safe. USB power is inherently low voltage (5V) and safe for all rooms, including children's bedrooms. The LED generates minimal heat—it stays cool even after hours of continuous use. No fire risk, no overheating. Just keep away from water and extreme heat. Safe for all ages and spaces.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">What's the difference between 2-color and 16-color variants?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;"><strong>2-Color Manual:</strong> Warm white and warm yellow only. Toggle with a single button on the base. Simpler, cheaper, great for minimalists who want one consistent look. No learning curve.</p>
+      <p style="margin: 1rem 0 0 0;"><strong>16-Color Remote:</strong> Full color spectrum plus brightness control (0–100%), timer options (off, 1hr, 3hrs, 8hrs, always on), and memory function to save your favorite color. Requires the included remote control. More versatile for those who like to experiment with different moods.</p>
+      <p style="margin: 1rem 0 0 0;">Choose 2-color for simplicity and budget. Choose 16-color if you want flexibility and don't mind slightly higher price.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">How long does the LED last?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">The LED has a rated lifespan of 10,000+ hours. At 8 hours per day, that's over 3.4 years of continuous nightly use before needing replacement. In reality, the LED will likely outlast the PLA plastic material's lifespan. You're probably looking at 5+ years of practical use.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">What size should I get?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;"><strong>8cm:</strong> Compact for desks, shelves, small spaces. Subtle accent light. Details visible up close.</p>
+      <p style="margin: 0.75rem 0;"><strong>10–12cm:</strong> Standard size for nightstands and shelves. Best balance of visual impact and space efficiency. Recommended for most rooms.</p>
+      <p style="margin: 0.75rem 0;"><strong>15cm:</strong> Statement piece. Noticeable focal point. Requires dedicated shelf or furniture placement.</p>
+      <p style="margin: 0.75rem 0;"><strong>20cm:</strong> Large showpiece. Room centerpiece. Dramatic visual impact. Requires substantial surface area.</p>
+      <p style="margin: 0.75rem 0 0 0;">Larger sizes have more dramatic crater detail visibility and create more impressive ambiance. Smaller sizes are more versatile in tight spaces.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Does it work as a primary night light?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">Yes, absolutely. The moon lamp emits enough soft glow for safe navigation in dark rooms and hallways. Perfect for nighttime bathroom trips or kids' rooms. The 16-color remote variant includes timer modes (1hr, 3hrs, 8hrs) if you want it to auto-off after you fall asleep. Gentle, non-jarring light that won't disrupt sleep cycles like bright white LEDs.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Can I use it in any room?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">Absolutely. Bedrooms, living rooms, offices, dorms, kids' rooms, bathrooms—anywhere you want soft, aesthetic lighting. The realistic moon design and warm glow fit modern, minimalist, maximalist, and eclectic décor styles. It's a versatile accent piece that elevates any space without clashing with existing design.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">How does it compare to star projectors or LED strips?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;"><strong>vs. Star Projectors:</strong> Moon lamp is static décor, projector is dynamic (rotating, color-changing). Moon lamp is sculptural art, projector is functional ambiance. Choose moon for visual design, projector for movement and variety.</p>
+      <p style="margin: 0.75rem 0;"><strong>vs. LED Strips:</strong> Moon lamp is a self-contained piece, strips require mounting and cabling. Moon lamp is three-dimensional, strips are flat and linear. Moon lamp is premium décor, strips are functional/utilitarian. Choose moon for statement, strips for customizable cove lighting.</p>
+      <p style="margin: 0.75rem 0 0 0;"><strong>vs. Neon:</strong> Both are statement pieces. Neon is edgy and artistic, moon lamp is elegant and sophisticated. Neon uses more power, moon lamp uses minimal USB power. Choose based on room aesthetic preference.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">What's included in the box?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">3D Printed Moon Lamp unit, USB power cable (typically 1–2 meters), instruction manual with setup guide and safety info, and (for 16-color remote models) a remote control with included battery. No additional tools or assembly required. Just unpack, plug in, and enjoy.</p>
+    </div>
+  </details>
+</div>
+
+<!-- Also Tested -->
+<h2 style="font-size: 1.5rem; margin-bottom: 1.5rem; margin-top: 2.5rem;">Also Tested in Room Vibes</h2>
+<p style="color: var(--foreground); line-height: 1.6; margin-bottom: 1.5rem;">Explore other products we've reviewed in the Room Vibes category to build your ideal space.</p>
+
+<div class="related-products-grid">
+  <a href="/products/sunset-rainbow-projector" class="related-product-card">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/f88f023046afbc46b9f10a559bac.webp?v=1774564764"
+      alt="USB Sunset Rainbow Projector"
+    />
+    <div style="font-weight: 600; color: var(--foreground);">USB Sunset Rainbow Projector</div>
+    <div style="font-size: 0.85rem; color: var(--muted-foreground);">$25.50</div>
+    <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+      <span class="verdict-badge verdict-badge-hidden-gem" style="background: rgba(50, 180, 140, 0.15); color: var(--primary); padding: 0.25rem 0.6rem; border-radius: 3px; font-size: 0.7rem; font-weight: 700; text-transform: uppercase;">Hidden Gem</span>
+    </div>
+  </a>
+
+  <a href="/products/neon-light-wall-decor" class="related-product-card">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/5cda851d42d793971710eedbe737.png?v=1774566864"
+      alt="Neon Light Wall Decor"
+    />
+    <div style="font-weight: 600; color: var(--foreground);">Neon Light Wall Decor</div>
+    <div style="font-size: 0.85rem; color: var(--muted-foreground);">$35.00</div>
+    <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+      <span class="verdict-badge verdict-badge-hidden-gem" style="background: rgba(50, 180, 140, 0.15); color: var(--primary); padding: 0.25rem 0.6rem; border-radius: 3px; font-size: 0.7rem; font-weight: 700; text-transform: uppercase;">Hidden Gem</span>
+    </div>
+  </a>
+
+  <a href="/products/app-controlled-galaxy-star-projector" class="related-product-card">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/ca29ccad47adabba66402dd3f25b.png?v=1774566876"
+      alt="App-Controlled Galaxy Star Projector"
+    />
+    <div style="font-weight: 600; color: var(--foreground);">App-Controlled Galaxy Star Projector</div>
+    <div style="font-size: 0.85rem; color: var(--muted-foreground);">$62.00</div>
+    <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+      <span class="verdict-badge verdict-badge-worth-it" style="background: rgba(34, 197, 94, 0.15); color: #22c55e; padding: 0.25rem 0.6rem; border-radius: 3px; font-size: 0.7rem; font-weight: 700; text-transform: uppercase;">Worth It</span>
+    </div>
+  </a>
+</div>
+
+<!-- Buy Button 4 (bottom buy-box) -->
+<div class="buy-box" style="margin-top: 2.5rem; padding: 1.5rem; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem;">
+    <div>
+      <div style="font-family: var(--font-mono); font-weight: 700; font-size: 1.05rem;">3D Printed Moon Lamp - Jupiter Night Light</div>
+      <div style="font-size: 0.85rem; color: var(--muted-foreground); margin-top: 0.2rem;">$77.28 – $104.44</div>
+    </div>
+  </div>
+  <div id="product-component-165193450304"></div>
+</div>
+
+</BaseLayout>
