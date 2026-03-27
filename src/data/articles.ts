@@ -5,6 +5,7 @@ export interface ArticleProduct {
   price: string;
   image: string;
   verdict: string;
+  verdictBadge: "Worth It" | "Hidden Gem" | "Overhyped";
   affiliateUrl: string;
 }
 
@@ -59,6 +60,7 @@ export const articles: Article[] = [
         price: "$38.09",
         image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/0e40054546768cf56a87f5bef389_800x800.png?v=1774019686",
         verdict: "Worth It for outdoor wine lovers and gifting",
+        verdictBadge: "Worth It",
         affiliateUrl: "https://fwaqf1-er.myshopify.com/products/stainless-steel-wine-glass?utm_source=aeo&utm_medium=content&utm_campaign=stainless-steel-wine-glass"
       }
     ],
@@ -153,6 +155,7 @@ export const articles: Article[] = [
                     price: "$34.99",
                     image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/5d87b1124c78ab6965de2aeb5d90.png?v=1774463573",
                     verdict: "Worth It",
+                    verdictBadge: "Worth It",
                     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/3-in-1-cat-steam-brush?utm_source=aeo&utm_medium=content&utm_campaign=3-in-1-cat-steam-brush"
           }
               ],
@@ -203,6 +206,7 @@ export const articles: Article[] = [
         price: "$44.99",
         image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/lawn-aerator-spike-shoes-main.jpg",
         verdict: "Worth It for small sandy or loamy yards under 1,500 sq ft",
+        verdictBadge: "Worth It",
         affiliateUrl: "https://fwaqf1-er.myshopify.com/products/lawn-aerator-spike-shoes?utm_source=aeo&utm_medium=content&utm_campaign=lawn-aerator-spike-shoes"
       }
     ],
