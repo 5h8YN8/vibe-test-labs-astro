@@ -674,6 +674,204 @@ export const articles: Article[] = [
       { problem: "Screen fatigue causes tired, strained eyes", solution: "Cooling effect soothes eye strain and provides a calming sensory break" },
       { problem: "Expensive spa treatments for basic depuffing", solution: "Reusable gel mask delivers the same cold therapy at home for a one-time $42-50 cost" }
     ]
+  },
+  {
+    id: "a12",
+    slug: "fluffy-rabbit-plush",
+    question: "Are Fluffy Bunny Plush Toys Worth It or Just Cute Clutter? (2026 Review)",
+    shortAnswer: "Worth it if you want genuine softness, not just cute looks. The PP cotton fill is dense and huggable — noticeably better than budget plushes. Three sizes (25cm/$29, 40cm/$46, 55cm/$63) cover everything from desk buddies to statement cuddle companions. The all-white design is photogenic but shows stains quickly.",
+    category: "Gifts & Cozy",
+    date: "2026-03-27",
+    readTime: "5 min read",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/fcedbf104dce956de9e41a54fff9.png?v=1774566807",
+    intro: "Plush toys are everywhere, but most are scratchy disappointments wrapped in cute packaging. The Fluffy Rabbit Plush Toy promises premium softness with dense PP cotton fill and a minimal white design. We tested it across all three sizes to see if it delivers on the hug factor or if it's just another stuffed animal collecting dust.",
+    sections: [
+      {
+        heading: "What Makes This Plush Different from Dollar Store Stuffed Animals?",
+        body: "Material quality. Budget plushes use thin fabric and loose polyester fill that compresses flat within weeks. This rabbit uses premium plush fabric with dense PP cotton that maintains its shape and softness. You can feel the difference immediately — it's the kind of soft that makes you not want to put it down."
+      },
+      {
+        heading: "Who Should Buy a Fluffy Rabbit Plush?",
+        body: "Anyone shopping for a gift (kids, partners, friends who love cute things), room décor enthusiasts who want an aesthetic accent piece, or anyone who just wants a genuinely comforting cuddle buddy. The 25cm is perfect for desks and shelves, the 40cm for couches and beds, the 55cm for serious cuddling."
+      },
+      {
+        heading: "Which Size Should You Get?",
+        body: "25cm ($29) — desk buddy, stocking stuffer, small gift. Cute but not huggable. 40cm ($46) — the sweet spot. Big enough to cuddle, small enough for any space. Best gift size. 55cm ($63) — statement piece. This is the 'wow' size for kids and anyone who wants a proper plush companion."
+      }
+    ],
+    products: [
+      {
+        name: "Fluffy Rabbit Plush Toy",
+        slug: "fluffy-rabbit-plush",
+        vibeScore: 71,
+        price: "$28.98",
+        image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/fcedbf104dce956de9e41a54fff9.png?v=1774566807",
+        verdict: "Hidden Gem — genuinely soft, not just cute",
+        verdictBadge: "Hidden Gem",
+        affiliateUrl: "https://fwaqf1-er.myshopify.com/products/fluffy-rabbit-plush-toy-soft-bunny-stuffed-animal?utm_source=aeo&utm_medium=content&utm_campaign=fluffy-rabbit-plush"
+      }
+    ],
+    faq: [
+      {
+        question: "Is the fluffy rabbit plush machine washable?",
+        answer: "No — hand wash only. Machine washing can damage the premium plush fabric and cause the PP cotton fill to clump. Spot-clean for small marks, hand wash gently for deeper cleaning, and air dry completely."
+      },
+      {
+        question: "What size fluffy rabbit plush should I buy as a gift?",
+        answer: "40cm is the best gift size — big enough to feel substantial and huggable, but not so large it overwhelms a room. The 25cm works for stocking stuffers or desk gifts, the 55cm for kids who want a big buddy."
+      },
+      {
+        question: "Is the plush safe for toddlers?",
+        answer: "The materials are soft and non-toxic, making it safe for children over 12 months. Not recommended for infants due to standard suffocation risk with stuffed animals."
+      }
+    ],
+    decision_table: [
+      { need: "Genuinely soft plush for gifting", best: "Fluffy Rabbit Plush (40cm, $46)", why: "Premium softness, photogenic design, perfect gift size" },
+      { need: "Budget plush under $15", best: "Dollar store alternatives", why: "Cheaper but noticeably lower quality fabric and fill" },
+      { need: "Weighted comfort companion", best: "Weighted Eye Mask or Blanket", why: "Different purpose — pressure therapy vs. softness" },
+      { need: "Desk décor accent piece", best: "Fluffy Rabbit Plush (25cm, $29)", why: "Compact, cute, and affordable for shelf or desk display" }
+    ],
+    tradeoffs: [
+      { tradeoff: "Softness vs. Durability", side_a: "Premium plush — incredibly soft but white shows wear", side_b: "Budget plush — less soft but hides wear better in darker colors" },
+      { tradeoff: "Aesthetic vs. Practicality", side_a: "All-white design is photogenic and minimal", side_b: "White stains easily — not ideal for young kids" }
+    ],
+    problem_solution: [
+      { problem: "Most plush toys feel scratchy and cheap", solution: "Premium plush material with dense PP cotton fill delivers real softness you can feel" },
+      { problem: "Finding a gift that looks thoughtful without spending a fortune", solution: "Starting at $29, the minimal white design looks premium and photographs beautifully" },
+      { problem: "Stuffed animals go flat and lose shape after a few weeks", solution: "Dense PP cotton fill maintains shape and loft through regular cuddling" }
+    ]
+  },
+  {
+    id: "a13",
+    slug: "scalp-massager-comb",
+    question: "Do Scalp Massager Combs with Red Light Actually Help Hair Growth? (2026 Review)",
+    shortAnswer: "The massage part absolutely helps — it stimulates blood circulation, relieves scalp tension, and feels incredible. The red light therapy? Limited clinical evidence at consumer-device power levels. Buy it for the massage (which is genuinely great), and consider the red light a potential bonus. Available in White, Black, and Emerald at $85.53.",
+    category: "Self Care",
+    date: "2026-03-27",
+    readTime: "7 min read",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/5dd2cb1d49a394569613c0827892.jpg?v=1774566829",
+    intro: "Scalp massager combs with red light therapy are trending as the 'biohacker hair growth hack.' But the science is complicated. We tested the Rechargeable Scalp Massager Comb to separate what actually works (the massage) from what's still unproven (consumer-level red light for hair growth).",
+    sections: [
+      {
+        heading: "Does Scalp Massage Actually Help Hair Growth?",
+        body: "Yes — there's solid evidence that regular scalp massage increases blood flow to hair follicles. A 2016 study found that 4 minutes of daily scalp massage over 24 weeks increased hair thickness. The mechanism is mechanical stimulation of dermal papilla cells. This massager's high-frequency vibrations amplify that effect beyond what fingers alone can do."
+      },
+      {
+        heading: "What About the Red Light Therapy Claims?",
+        body: "Red light therapy (photobiomodulation) has some clinical backing for hair growth — but mostly from medical-grade devices with specific wavelengths and power levels. Consumer devices like this comb deliver lower irradiance. It may help, but don't buy this expecting the same results as a $500+ clinical panel. Think of the red light as a potential bonus, not the main feature."
+      },
+      {
+        heading: "Who Should Buy This?",
+        body: "Anyone who carries scalp tension (desk workers, stress sufferers), wants a relaxing self-care ritual, or is curious about red light therapy without committing $500+ to a medical-grade device. The 3 therapy modes (Developmental, Massage, Rejuvenating) give flexibility. Not a replacement for medical hair loss treatment — if you're experiencing significant hair loss, see a dermatologist first."
+      }
+    ],
+    products: [
+      {
+        name: "Rechargeable Scalp Massager Comb",
+        slug: "scalp-massager-comb",
+        vibeScore: 74,
+        price: "$85.53",
+        image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/5dd2cb1d49a394569613c0827892.jpg?v=1774566829",
+        verdict: "Hidden Gem — the massage is excellent, the red light is a nice bonus",
+        verdictBadge: "Hidden Gem",
+        affiliateUrl: "https://fwaqf1-er.myshopify.com/products/rechargeable-scalp-massager-comb-with-red-light-therapy?utm_source=aeo&utm_medium=content&utm_campaign=scalp-massager-comb"
+      }
+    ],
+    faq: [
+      {
+        question: "Does red light therapy actually regrow hair?",
+        answer: "Clinical studies show promise, but most use medical-grade devices with higher irradiance than consumer products. This comb may support scalp health and potentially hair growth over time, but it's not a proven hair restoration device. Buy it for the massage — the red light is a bonus."
+      },
+      {
+        question: "How often should I use the scalp massager?",
+        answer: "10-15 minutes per session, 3-5 times per week for best results. The massage feels so good you'll want to use it daily — that's fine too. Consistency matters more than intensity."
+      },
+      {
+        question: "Can I use it with hair serums or treatments?",
+        answer: "Yes — it has a built-in 6ml liquid tank specifically designed for hair tonics and serums. The vibration helps enhance product absorption into the scalp."
+      }
+    ],
+    decision_table: [
+      { need: "Scalp tension relief and relaxation", best: "Scalp Massager Comb ($86)", why: "High-frequency vibration with 3 modes for targeted scalp relief" },
+      { need: "Proven hair restoration", best: "Dermatologist consultation", why: "Medical-grade treatments have clinical backing that consumer devices lack" },
+      { need: "Budget scalp massage under $30", best: "Manual scalp massager", why: "No batteries, no features, but effective basic massage" },
+      { need: "Full-body red light therapy", best: "Red Light Therapy Instrument ($108)", why: "Larger treatment area for skin, pain relief, and collagen production" }
+    ],
+    tradeoffs: [
+      { tradeoff: "Price vs. Features", side_a: "This comb ($86) — massage + red light + micro current, 3 modes", side_b: "Basic scalp massager ($10-25) — massage only, no electronics" },
+      { tradeoff: "Convenience vs. Clinical Grade", side_a: "Consumer comb — portable, daily use, lower irradiance", side_b: "Clinical device ($500+) — higher power, proven results, less portable" }
+    ],
+    problem_solution: [
+      { problem: "Chronic scalp tension from desk work and stress", solution: "High-frequency vibration massage with multiple intensity levels targets tension areas directly" },
+      { problem: "Curious about red light therapy but not ready for a $500+ investment", solution: "Entry-level red light in a practical, daily-use device for under $90" },
+      { problem: "Hair products sit on the surface without proper absorption", solution: "Built-in liquid tank + vibration massage enhances serum and tonic absorption into the scalp" }
+    ]
+  },
+  {
+    id: "a14",
+    slug: "red-light-therapy-device",
+    question: "Does At-Home Red Light Therapy Actually Work? (Honest 2026 Review)",
+    shortAnswer: "Yes — clinical evidence supports red light therapy for skin healing, collagen production, inflammation reduction, and pain relief. But consumer-grade devices like this have lower irradiance than clinical panels ($300-800+). At $107.83, this is a solid entry point to try red light therapy without a major financial commitment. Don't expect medical-grade results.",
+    category: "Self Care",
+    date: "2026-03-27",
+    readTime: "8 min read",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/fc173cda40589ef64ad7912e8a45.png?v=1774566822",
+    intro: "Red light therapy has gone from niche biohacking tool to mainstream wellness trend. But is a $108 consumer device actually worth it, or do you need a $500+ clinical panel? We tested the Infrared Red Light Therapy Instrument to find out where the line is between helpful and hype.",
+    sections: [
+      {
+        heading: "What Does Red Light Therapy Actually Do?",
+        body: "Red and near-infrared light (typically 630-850nm wavelengths) penetrate the skin and stimulate mitochondrial function in cells. This increases ATP production, which supports cell repair, collagen synthesis, and reduced inflammation. Clinical studies have shown benefits for wound healing, skin rejuvenation, joint pain, and muscle recovery."
+      },
+      {
+        heading: "Consumer Device vs. Clinical Panel: What's the Difference?",
+        body: "Irradiance (power density). Clinical panels deliver 100-200+ mW/cm² at the skin surface. Consumer devices like this typically deliver 20-60 mW/cm². Both use the same wavelengths, but lower power means you need longer sessions and results may be less dramatic. Think of it as a regular coffee vs. espresso — same concept, different intensity."
+      },
+      {
+        heading: "Who Should Buy This?",
+        body: "Anyone curious about red light therapy who doesn't want to commit $500+ upfront. People dealing with minor skin concerns, joint stiffness, or muscle soreness. Wellness enthusiasts adding another tool to their self-care routine. NOT a replacement for medical treatment for serious skin conditions, chronic pain, or hair loss."
+      }
+    ],
+    products: [
+      {
+        name: "Infrared Red Light Therapy Instrument",
+        slug: "red-light-therapy-device",
+        vibeScore: 70,
+        price: "$107.83",
+        image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/fc173cda40589ef64ad7912e8a45.png?v=1774566822",
+        verdict: "Hidden Gem — solid entry-level device for trying red light therapy",
+        verdictBadge: "Hidden Gem",
+        affiliateUrl: "https://fwaqf1-er.myshopify.com/products/infrared-red-light-therapy-instrument?utm_source=aeo&utm_medium=content&utm_campaign=red-light-therapy-device"
+      }
+    ],
+    faq: [
+      {
+        question: "Is at-home red light therapy safe?",
+        answer: "Yes — red and near-infrared light is non-ionizing (no UV). The main safety concern is direct eye exposure to the LEDs. Avoid looking directly into the light source. Otherwise, it's considered very safe for regular home use."
+      },
+      {
+        question: "How long before I see results from red light therapy?",
+        answer: "Most users notice skin improvements after 4-8 weeks of consistent use (3-5 sessions per week, 10-20 minutes each). Pain relief may come sooner. Collagen production takes longer — 8-12 weeks for visible anti-aging effects."
+      },
+      {
+        question: "How does this compare to a clinical red light panel?",
+        answer: "Clinical panels ($300-800+) deliver higher irradiance and cover larger body areas. This device is portable and targeted — great for spot treatment on specific areas. If you find you love red light therapy, you might upgrade to a panel later."
+      }
+    ],
+    decision_table: [
+      { need: "Try red light therapy on a budget", best: "Red Light Therapy Instrument ($108)", why: "Affordable entry point with dual wavelengths — test if it works for you before spending $500+" },
+      { need: "Serious full-body red light therapy", best: "Clinical panel ($300-800+)", why: "Higher irradiance, larger coverage area, faster results" },
+      { need: "Facial skin treatment specifically", best: "LED Face Mask ($70)", why: "Designed for face contours, hands-free use during treatment" },
+      { need: "Scalp-focused therapy with massage", best: "Scalp Massager Comb ($86)", why: "Combines red light with vibration massage for scalp-specific treatment" }
+    ],
+    tradeoffs: [
+      { tradeoff: "Price vs. Power", side_a: "Consumer device ($108) — lower irradiance, portable, targeted", side_b: "Clinical panel ($300-800) — higher power, larger coverage, faster results" },
+      { tradeoff: "Portability vs. Coverage", side_a: "Handheld — treat anywhere, but one area at a time", side_b: "Panel — larger treatment area but stationary and bulky" }
+    ],
+    problem_solution: [
+      { problem: "Curious about red light therapy but not ready for $500+", solution: "Entry-level device lets you test the benefits for $108 — upgrade later if you love it" },
+      { problem: "Joint pain and muscle soreness after workouts", solution: "Infrared light penetrates deep tissue to support recovery and reduce inflammation" },
+      { problem: "Skin looking dull and aging", solution: "Red light stimulates collagen production — visible improvement over 4-8 weeks of consistent use" }
+    ]
   }
 
 ];

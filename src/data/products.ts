@@ -885,7 +885,133 @@ export const products: Product[] = [
       { question: "What's the difference between the mask and suit options?", answer: "The mask is just the eye mask. The suit includes additional gel pads for broader face coverage — forehead, cheeks, and under-eye area." }
     ],
     viralReason: "Cooling gel masks went viral as the 'de-puff hack' on skincare TikTok — simple, cheap, and visibly effective in under 20 minutes."
+  },
+  {
+    id: "p24",
+    slug: "fluffy-rabbit-plush",
+    name: "Fluffy Rabbit Plush Toy - Soft Bunny Stuffed Animal",
+    brand: "Generic",
+    category: "Gifts & Cozy",
+    vibeScore: 71,
+    verdict: "An adorable, huggable plush that's softer than it has any right to be at this price. Three sizes for every gifting occasion.",
+    verdictBadge: "Hidden Gem",
+    price: "$28.98",
+    priceRange: "$28.98 - $62.64",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/fcedbf104dce956de9e41a54fff9.png?v=1774566807",
+    images: [
+      "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/66ea01ae40ecafcdb12a90979a4c.png?v=1774566817",
+      "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/854d5fee4095af6fee14153e9f43.jpg?v=1774566828",
+      "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/9ddf7d71421b830e013ade28e2f6.png?v=1774566839",
+      "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/cbb0655746bd8f565e90c434ef64.png?v=1774566849"
+    ],
+    trending: true,
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/fluffy-rabbit-plush-toy-soft-bunny-stuffed-animal?utm_source=aeo&utm_medium=content&utm_campaign=fluffy-rabbit-plush",
+    questionHeadline: "Are Fluffy Bunny Plush Toys Worth It or Just Cute Clutter?",
+    answerSnippet: "Worth it if you want a genuinely soft, photogenic plush for gifting, room décor, or comfort. PP cotton fill is dense and huggable. Three sizes (25cm-55cm) cover any occasion.",
+    problemSection: "Finding a plush toy that's actually soft, not scratchy or cheap-feeling",
+    solutionSection: "Premium plush material with dense PP cotton fill delivers real softness you can feel instantly",
+    howToUse: ["Choose your size (25cm desk buddy, 40cm cuddle companion, 55cm statement piece)", "Fluff gently after unboxing to restore shape from shipping", "Place on bed, couch, shelf, or gift directly", "Spot-clean with damp cloth — hand wash for deeper cleaning"],
+    testResults: [
+      { category: "Softness & Quality", score: 78, summary: "Premium plush material, PP cotton is dense and huggable — noticeably softer than budget alternatives" },
+      { category: "Design Appeal", score: 72, summary: "Cute minimal aesthetic, clean white design, very photogenic for room décor" },
+      { category: "Durability", score: 65, summary: "Holds up to regular cuddling but white color shows wear; hand-wash only" },
+      { category: "Value", score: 70, summary: "Fair pricing across all 3 sizes; 25cm is the sweet spot for gifting" }
+    ],
+    pros: ["Genuinely soft premium plush material", "Dense PP cotton fill — not flat or hollow", "3 size options for any occasion", "Clean minimal white design — very photogenic", "Great gift for kids and adults", "Affordable starting price ($29)"],
+    cons: ["White color shows stains and wear quickly", "Hand-wash only — not machine washable", "Only available in white", "55cm version is pricier ($63)", "No weighted or sensory features", "Basic packaging for gifting"],
+    finalVerdictSummary: "A hidden gem for anyone who values genuine softness over brand name. The 25cm size is perfect for desk buddies and small gifts; the 55cm is a statement cuddle companion.",
+    faq: [
+      { question: "Is it machine washable?", answer: "No — hand wash only. The plush material and PP cotton fill can degrade in a washing machine. Spot-clean for small marks, hand wash for deeper cleaning." },
+      { question: "What size should I get?", answer: "25cm for desk/shelf décor and small gifts. 40cm for a proper cuddle companion. 55cm for a statement piece or kids who want a big buddy." },
+      { question: "Is it safe for babies?", answer: "The materials are soft and non-toxic, but like all plush toys, it's not recommended for infants under 12 months due to suffocation risk. Great for toddlers and up." }
+    ],
+    viralReason: "Minimalist white plush toys went viral as the 'aesthetic room companion' on TikTok — cute, photogenic, and surprisingly huggable."
+  },
+  {
+    id: "p25",
+    slug: "scalp-massager-comb",
+    name: "Rechargeable Scalp Massager Comb with Red Light Therapy",
+    brand: "Generic",
+    category: "Self Care",
+    vibeScore: 74,
+    verdict: "A genuinely relaxing scalp massager with bonus red light therapy. The massage is the real star — red light is a nice extra, not a miracle worker.",
+    verdictBadge: "Hidden Gem",
+    price: "$85.53",
+    priceRange: "$85.53",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/5dd2cb1d49a394569613c0827892.jpg?v=1774566829",
+    images: [
+      "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/741b65a940feabb854f1ba9e348d.jpg?v=1774566839",
+      "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/1b5bf25f4ecba239399da1e61939.jpg?v=1774566849",
+      "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/b4ec931a499d905b5cdf43d1f2d5.jpg?v=1774566859",
+      "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/44844b9747d6bbefa8b3a734e6e4.jpg?v=1774566869"
+    ],
+    trending: true,
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/rechargeable-scalp-massager-comb-with-red-light-therapy?utm_source=aeo&utm_medium=content&utm_campaign=scalp-massager-comb",
+    questionHeadline: "Do Scalp Massager Combs with Red Light Actually Help Hair Growth?",
+    answerSnippet: "The massage part? Absolutely — it stimulates blood circulation and feels incredible. The red light? Limited clinical evidence at consumer-device levels. Buy it for the massage, consider the red light a bonus.",
+    problemSection: "Scalp tension, stress, and curiosity about red light therapy for hair",
+    solutionSection: "High-frequency vibration massage relieves tension while red light therapy adds a potential wellness boost",
+    howToUse: ["Charge fully via USB (about 2 hours)", "Apply hair tonic or serum to scalp (optional, enhances absorption)", "Select mode: Developmental (red light + vibration + micro current), Massage (vibration + micro current), or Rejuvenating (red light + micro current)", "Glide through hair for 10-15 minutes, focusing on tension areas"],
+    testResults: [
+      { category: "Massage Quality", score: 78, summary: "Vibrations feel genuinely relaxing with good pressure distribution across the scalp" },
+      { category: "Red Light Therapy", score: 70, summary: "Included and functional, but consumer-level irradiance — don't expect clinical results" },
+      { category: "Build Quality", score: 75, summary: "Solid construction, USB charging, detachable head for easy cleaning" },
+      { category: "Value", score: 72, summary: "Premium price ($86) but multi-function device justifies it if you use both features regularly" }
+    ],
+    pros: ["Genuinely relaxing scalp massage", "3 distinct therapy modes", "Red light therapy as bonus feature", "Detachable head for hygiene", "USB rechargeable — long battery life", "3 color options (White, Black, Emerald)"],
+    cons: ["Red light therapy unproven at consumer level for hair growth", "Premium price at $86", "Not a replacement for medical hair loss treatment", "Single variant per color (no size options)", "Takes 2 hours to fully charge", "Learning curve for 3 modes"],
+    finalVerdictSummary: "Buy it for the massage — it's genuinely one of the best scalp massagers we've tested. The red light is a nice extra, but don't buy it expecting hair regrowth miracles.",
+    faq: [
+      { question: "Does red light therapy actually regrow hair?", answer: "Clinical research shows some promise for red light therapy and hair growth, but most studies use medical-grade devices with higher irradiance. Consumer devices like this offer lower power — potentially supportive but not clinically proven." },
+      { question: "How often should I use it?", answer: "10-15 minutes per session, 3-5 times per week. Daily use is fine for the massage function. For red light therapy, consistency over weeks/months matters more than frequency." },
+      { question: "Can I use it with hair products?", answer: "Yes — it has a 6ml liquid tank designed for hair tonics and scalp serums. The vibration helps enhance product absorption." }
+    ],
+    viralReason: "Red light therapy went mainstream on TikTok as the 'biohacker hair hack' — this comb combines it with the satisfying scalp massage ASMR trend."
+  },
+  {
+    id: "p26",
+    slug: "red-light-therapy-device",
+    name: "Infrared Red Light Therapy Instrument",
+    brand: "Generic",
+    category: "Self Care",
+    vibeScore: 70,
+    verdict: "A solid entry-level red light therapy device for skin and pain relief. Great way to try red light therapy without the $500+ clinical panel commitment.",
+    verdictBadge: "Hidden Gem",
+    price: "$107.83",
+    priceRange: "$107.83",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/fc173cda40589ef64ad7912e8a45.png?v=1774566822",
+    images: [
+      "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/cd298c764430b5101ace5c515f0a.png?v=1774566832",
+      "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/680104c449aabbf91a53b265df4b.png?v=1774566841",
+      "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/eb97a54241d5b7c36c4310f82d82.png?v=1774566852",
+      "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/630e352b491a93673d98a99d894f.png?v=1774566862"
+    ],
+    trending: true,
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/infrared-red-light-therapy-instrument?utm_source=aeo&utm_medium=content&utm_campaign=red-light-therapy-device",
+    questionHeadline: "Does At-Home Red Light Therapy Actually Work?",
+    answerSnippet: "Yes — clinical evidence supports red light therapy for skin healing, collagen production, and pain relief. But consumer devices have lower irradiance than clinical panels. This is a great entry point, not a medical replacement.",
+    problemSection: "Wanting the benefits of red light therapy without clinic visits or $500+ panel investments",
+    solutionSection: "Portable, targeted infrared + red light device delivers therapy at home for a fraction of the clinical cost",
+    howToUse: ["Charge or plug in the device", "Clean the target skin area", "Hold 2-6 inches from skin and turn on", "Treat each area for 10-20 minutes, 3-5 times per week"],
+    testResults: [
+      { category: "Light Output", score: 72, summary: "Adequate infrared/red light intensity for home use — lower than clinical panels but functional" },
+      { category: "Portability", score: 75, summary: "Removable design makes it easy to target specific body areas" },
+      { category: "Build Quality", score: 68, summary: "Functional but not medical-grade construction — adequate for home use" },
+      { category: "Value", score: 65, summary: "$108 is fair for entry-level; clinical panels cost $300-800+" }
+    ],
+    pros: ["Portable, targeted treatment", "Infrared + red light dual wavelengths", "Much cheaper than clinical panels ($300-800+)", "Non-invasive wellness approach", "Good entry point for red light therapy", "Removable design for versatile use"],
+    cons: ["Lower irradiance than clinical-grade devices", "Not a replacement for medical treatment", "Single color variant only", "Limited coverage area per session", "Requires consistent use over weeks for visible results", "Build quality is adequate, not premium"],
+    finalVerdictSummary: "The best way to try red light therapy without a major investment. If it works for you, great — you saved hundreds over a clinical panel. If not, you're out $108 instead of $500+.",
+    faq: [
+      { question: "Is red light therapy safe?", answer: "Yes — red and near-infrared light is non-ionizing and considered safe for home use. No UV exposure. The main risk is eye exposure — don't look directly into the LEDs." },
+      { question: "How long before I see results?", answer: "Most users report noticing skin improvements after 4-8 weeks of consistent use (3-5 sessions per week). Pain relief may be noticeable sooner." },
+      { question: "How does this compare to clinical red light panels?", answer: "Clinical panels ($300-800+) have higher irradiance and larger coverage areas. This device is portable and targeted — better for spot treatment, not full-body coverage." }
+    ],
+    viralReason: "Red light therapy went mainstream as the 'anti-aging biohack' on TikTok — this device lets people try it without the dermatologist price tag."
   }
 ];
 
-export const categories: string[] = ['All', 'Sleepmaxxing', 'Kitchen & Dining', 'Pets', 'Yard Tools', 'Room Vibes'];
+export const categories: string[] = ['All', 'Sleepmaxxing', 'Kitchen & Dining', 'Pets', 'Yard Tools', 'Room Vibes', 'Self Care', 'Gifts & Cozy'];

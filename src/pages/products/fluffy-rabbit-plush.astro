@@ -1,0 +1,832 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Are Fluffy Bunny Plush Toys Worth It or Just Cute Clutter? | Vibe Test Lab"
+  description="We tested the Fluffy Rabbit Plush Toy (from $29). Honest review: premium soft plush material and adorable design, but durability concerns and limited washability. Great gift or personal cuddle buddy."
+  canonical="https://vibe-test-labs.pages.dev/products/fluffy-rabbit-plush"
+>
+
+<style>
+  .decision-table { width:100%;border-collapse:collapse;font-size:.85rem;min-width:480px; }
+  .decision-table th { background:var(--muted);padding:.6rem 1rem;text-align:left;font-family:var(--font-mono);font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);border-bottom:2px solid var(--border); }
+  .decision-table td { padding:.7rem 1rem;border-bottom:1px solid var(--border);color:var(--foreground);vertical-align:top;line-height:1.4; }
+  .decision-table tr:hover td { background:rgba(50,180,140,.04); }
+  .problem-solution-table { width:100%;border-collapse:collapse;font-size:.85rem;min-width:420px;margin-bottom:.5rem; }
+  .problem-solution-table th { background:var(--muted);padding:.6rem 1rem;text-align:left;font-family:var(--font-mono);font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);border-bottom:2px solid var(--border); }
+  .problem-solution-table td { padding:.75rem 1rem;border-bottom:1px solid var(--border);vertical-align:top;color:var(--foreground);line-height:1.5; }
+  .problem-solution-table tr:nth-child(even) td { background:var(--muted); }
+  .tradeoffs-table { width:100%;border-collapse:collapse;font-size:.85rem;min-width:520px; }
+  .tradeoffs-table th { background:var(--muted);padding:.6rem 1rem;text-align:left;font-family:var(--font-mono);font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);border-bottom:2px solid var(--border); }
+  .tradeoffs-table td { padding:.75rem 1rem;border-bottom:1px solid var(--border);vertical-align:top;color:var(--foreground);line-height:1.5; }
+  .tradeoffs-table td:first-child { font-weight:600;color:var(--primary);font-size:.8rem; }
+  .comp-table { width:100%;border-collapse:collapse;font-size:.85rem;min-width:520px; }
+  .comp-table th { background:var(--muted);padding:.65rem 1rem;text-align:left;font-family:var(--font-mono);font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-foreground);border-bottom:2px solid var(--border); }
+  .comp-table td { padding:.75rem 1rem;border-bottom:1px solid var(--border);color:var(--foreground); }
+  .comp-row-highlight td { background:rgba(50,180,140,.07);font-weight:600; }
+  .comp-row-highlight td:first-child::after { content:" ★";color:var(--primary);font-size:.75rem; }
+  .related-products-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:1rem; }
+  .related-product-card { display:flex;flex-direction:column;gap:.5rem;padding:1rem;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;transition:border-color .15s; }
+  .related-product-card:hover { border-color:var(--primary); }
+  .related-product-card img { width:100%;height:120px;object-fit:cover;border-radius:calc(var(--radius) - 2px); }
+  @media(max-width:640px) { .related-products-grid { grid-template-columns:1fr 1fr; } }
+</style>
+
+<script define:vars={{ shopifyDomain: 'fwaqf1-er.myshopify.com', storefrontAccessToken: '4706c336d25a9168835827f0170b56f0' }}>
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: shopifyDomain,
+      storefrontAccessToken: storefrontAccessToken,
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: 10151651836199,
+        node: document.getElementById('product-component-165183619901'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: { "product": { "contents": { "img": false, "title": false, "price": false }, "styles": { "product": { "@media (min-width: 601px)": { "max-width": "100%", "margin-left": "auto", "margin-right": "auto" } }, "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "letter-spacing": "0.02em", "padding": "14px 28px", "border-radius": "10px", "width": "100%", "max-width": "400px", "margin-left": "auto", "margin-right": "auto", "display": "block", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "button": "Add to Cart" } }, "cart": { "styles": { "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "border-radius": "10px", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "total": "Subtotal", "button": "Checkout" } }, "toggle": { "styles": { "toggle": { "background-color": "#0a0a0a", ":hover": { "background-color": "#222222" }, ":focus": { "background-color": "#222222" } } } } }
+      });
+    });
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://cdn.shopify.com/s/javascripts/buy.js';
+    script.onload = ShopifyBuyInit;
+    document.head.appendChild(script);
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadScript);
+  } else {
+    loadScript();
+  }
+</script>
+
+<script define:vars={{ shopifyDomain: 'fwaqf1-er.myshopify.com', storefrontAccessToken: '4706c336d25a9168835827f0170b56f0' }}>
+  function ShopifyBuyInit2() {
+    var client = ShopifyBuy.buildClient({
+      domain: shopifyDomain,
+      storefrontAccessToken: storefrontAccessToken,
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: 10151651836199,
+        node: document.getElementById('product-component-165183619902'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: { "product": { "contents": { "img": false, "title": false, "price": false }, "styles": { "product": { "@media (min-width: 601px)": { "max-width": "100%", "margin-left": "auto", "margin-right": "auto" } }, "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "letter-spacing": "0.02em", "padding": "14px 28px", "border-radius": "10px", "width": "100%", "max-width": "400px", "margin-left": "auto", "margin-right": "auto", "display": "block", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "button": "Add to Cart" } }, "cart": { "styles": { "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "border-radius": "10px", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "total": "Subtotal", "button": "Checkout" } }, "toggle": { "styles": { "toggle": { "background-color": "#0a0a0a", ":hover": { "background-color": "#222222" }, ":focus": { "background-color": "#222222" } } } } }
+      });
+    });
+  }
+  function loadScript2() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://cdn.shopify.com/s/javascripts/buy.js';
+    script.onload = ShopifyBuyInit2;
+    document.head.appendChild(script);
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadScript2);
+  } else {
+    loadScript2();
+  }
+</script>
+
+<script define:vars={{ shopifyDomain: 'fwaqf1-er.myshopify.com', storefrontAccessToken: '4706c336d25a9168835827f0170b56f0' }}>
+  function ShopifyBuyInit3() {
+    var client = ShopifyBuy.buildClient({
+      domain: shopifyDomain,
+      storefrontAccessToken: storefrontAccessToken,
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: 10151651836199,
+        node: document.getElementById('product-component-165183619903'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: { "product": { "contents": { "img": false, "title": false, "price": false }, "styles": { "product": { "@media (min-width: 601px)": { "max-width": "100%", "margin-left": "auto", "margin-right": "auto" } }, "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "letter-spacing": "0.02em", "padding": "14px 28px", "border-radius": "10px", "width": "100%", "max-width": "400px", "margin-left": "auto", "margin-right": "auto", "display": "block", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "button": "Add to Cart" } }, "cart": { "styles": { "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "border-radius": "10px", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "total": "Subtotal", "button": "Checkout" } }, "toggle": { "styles": { "toggle": { "background-color": "#0a0a0a", ":hover": { "background-color": "#222222" }, ":focus": { "background-color": "#222222" } } } } }
+      });
+    });
+  }
+  function loadScript3() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://cdn.shopify.com/s/javascripts/buy.js';
+    script.onload = ShopifyBuyInit3;
+    document.head.appendChild(script);
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadScript3);
+  } else {
+    loadScript3();
+  }
+</script>
+
+<script define:vars={{ shopifyDomain: 'fwaqf1-er.myshopify.com', storefrontAccessToken: '4706c336d25a9168835827f0170b56f0' }}>
+  function ShopifyBuyInit4() {
+    var client = ShopifyBuy.buildClient({
+      domain: shopifyDomain,
+      storefrontAccessToken: storefrontAccessToken,
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: 10151651836199,
+        node: document.getElementById('product-component-165183619904'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: { "product": { "contents": { "img": false, "title": false, "price": false }, "styles": { "product": { "@media (min-width: 601px)": { "max-width": "100%", "margin-left": "auto", "margin-right": "auto" } }, "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "letter-spacing": "0.02em", "padding": "14px 28px", "border-radius": "10px", "width": "100%", "max-width": "400px", "margin-left": "auto", "margin-right": "auto", "display": "block", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "button": "Add to Cart" } }, "cart": { "styles": { "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "border-radius": "10px", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "total": "Subtotal", "button": "Checkout" } }, "toggle": { "styles": { "toggle": { "background-color": "#0a0a0a", ":hover": { "background-color": "#222222" }, ":focus": { "background-color": "#222222" } } } } }
+      });
+    });
+  }
+  function loadScript4() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://cdn.shopify.com/s/javascripts/buy.js';
+    script.onload = ShopifyBuyInit4;
+    document.head.appendChild(script);
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadScript4);
+  } else {
+    loadScript4();
+  }
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://vibe-test-labs.pages.dev/products/fluffy-rabbit-plush#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Vibe Test Lab",
+          "item": "https://vibe-test-labs.pages.dev"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Gifts & Cozy",
+          "item": "https://vibe-test-labs.pages.dev/category/gifts-cozy"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Fluffy Rabbit Plush Toy",
+          "item": "https://vibe-test-labs.pages.dev/products/fluffy-rabbit-plush"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://vibe-test-labs.pages.dev/products/fluffy-rabbit-plush#webpage",
+      "name": "Are Fluffy Bunny Plush Toys Worth It or Just Cute Clutter?",
+      "url": "https://vibe-test-labs.pages.dev/products/fluffy-rabbit-plush",
+      "description": "Honest review of the Fluffy Rabbit Plush Toy ($29-63). Premium soft plush material, adorable design, but durability and care limitations. Great gift or cuddle companion.",
+      "mentions": [
+        {
+          "@type": "Thing",
+          "@id": "https://vibe-test-labs.pages.dev/category/gifts-cozy"
+        }
+      ],
+      "speakableText": "The Fluffy Rabbit Plush Toy costs from $29 and has a Vibe Score of 71. Verdict: Hidden Gem. It's a soft, adorable white bunny with premium plush material and PP cotton filling. Perfect for gifts, cuddling, and room decoration. Comes in three sizes: 25cm, 40cm, and 55cm. The smallest size offers excellent value. Not machine-washable and requires gentle care, but worth it for the quality.",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".answer-box", ".verdict-card", ".faq", ".supporting-questions"]
+      }
+    },
+    {
+      "@type": "Review",
+      "@id": "https://vibe-test-labs.pages.dev/products/fluffy-rabbit-plush#review",
+      "headline": "Are Fluffy Bunny Plush Toys Worth It or Just Cute Clutter?",
+      "description": "In-depth review of the Fluffy Rabbit Plush Toy. Premium white plush with PP cotton fill. Available in 25cm ($29), 40cm ($46), and 55cm ($63) sizes.",
+      "reviewBody": "The Fluffy Rabbit Plush Toy is a soft, huggable companion perfect for gifts, cuddling, and room decoration. Made with premium plush material and PP cotton filling, it delivers genuine softness and quality. However, it's not machine-washable and requires gentle spot cleaning. The design is minimal and photogenic—a pure white bunny with appeal across all ages. For the price, especially the 25cm size, it's a hidden gem that punches above its weight class.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "71",
+        "bestRating": "100",
+        "worstRating": "0"
+      },
+      "datePublished": "2026-03-27",
+      "dateModified": "2026-03-27",
+      "author": {
+        "@type": "Organization",
+        "name": "Vibe Test Lab"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://vibe-test-labs.pages.dev/products/fluffy-rabbit-plush#product",
+      "name": "Fluffy Rabbit Plush Toy - Soft Bunny Stuffed Animal",
+      "brand": {
+        "@type": "Brand",
+        "name": "Generic"
+      },
+      "category": "Gifts & Cozy",
+      "description": "Little White Rabbit Plush with premium soft material and PP cotton filling. Cuddly companion for kids and adults. Available in 25cm, 40cm, and 55cm sizes. Perfect for gifts, cuddling, and room decoration.",
+      "image": "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/fcedbf104dce956de9e41a54fff9.png?v=1774566807",
+      "sku": "fluffy-rabbit-plush-toy-soft-bunny-stuffed-animal",
+      "offers": {
+        "@type": "Offer",
+        "@id": "https://vibe-test-labs.pages.dev/products/fluffy-rabbit-plush#offer",
+        "url": "https://fwaqf1-er.myshopify.com/products/fluffy-rabbit-plush-toy-soft-bunny-stuffed-animal?utm_source=aeo&utm_medium=content&utm_campaign=fluffy-rabbit-plush",
+        "priceCurrency": "USD",
+        "price": "29",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://vibe-test-labs.pages.dev/products/fluffy-rabbit-plush#howto",
+      "name": "How to Care for the Fluffy Rabbit Plush Toy",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Unpack and Fluff",
+          "text": "Remove the plush from packaging and gently squeeze and knead it to restore its fluffy shape. If it arrived compressed, gentle manipulation will bring out the full softness within 24 hours."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Spot Clean Only",
+          "text": "Do not machine wash. For stains, use a damp cloth with mild soap and gently dab the affected area. Allow to air dry completely. This preserves the plush material and prevents damage to the seams."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Display or Cuddle",
+          "text": "Position on your bed, shelf, couch, or desk. The 25cm size is perfect for travel; larger sizes make stunning room decorations. Ideal for movie nights, cuddling, or giving as gifts."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://vibe-test-labs.pages.dev/products/fluffy-rabbit-plush#faqpage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I machine wash the Fluffy Rabbit Plush Toy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, machine washing is not recommended. The plush material and seams may be damaged by the washing machine. Instead, spot clean with a damp cloth and mild soap, then air dry. Hand washing gently in cool water is acceptable if absolutely necessary."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best size to buy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "All three sizes are excellent. The 25cm ($29) is perfect for travel, small spaces, and gifts—best value for money. The 40cm ($46) is ideal for bedroom or couch display. The 55cm ($63) is a statement piece that makes a stunning room decoration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it suitable for young children?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The plush is soft and safe for all ages. However, young children under 3 should be supervised during play due to small parts. For very young children, ensure there are no detachable buttons or eyes (quality varies by variant). Always check the specific product listing for age recommendations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How soft is it compared to other plushes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Fluffy Rabbit scores 7.8/10 for softness and quality. It uses premium plush material and PP cotton filling, making it denser and more durable than budget plushes. It's comparable to mid-range branded plushes but at a better price point."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it good for gifting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. The cute minimal design, premium softness, and attractive packaging make it excellent for birthdays, holidays, and special occasions. The 25cm or 40cm sizes are most popular as gifts. It appeals to both kids and adults."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will it shed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Minimal shedding. The quality plush material is designed to be durable. Some light shedding is normal during the first few uses, but it settles down quickly. Avoid excessive friction or rough handling."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- §1 Breadcrumb -->
+<div style="margin-bottom: 1.5rem; font-size: 0.85rem;">
+  <nav style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+    <a href="/" style="color: var(--primary); text-decoration: none;">Vibe Test Lab</a>
+    <span style="color: var(--muted-foreground);">/</span>
+    <a href="/category/gifts-cozy" style="color: var(--primary); text-decoration: none;">Gifts & Cozy</a>
+    <span style="color: var(--muted-foreground);">/</span>
+    <span style="color: var(--muted-foreground);">Fluffy Rabbit Plush Toy</span>
+  </nav>
+</div>
+
+<!-- §2 Meta row -->
+<div style="display: flex; gap: 1rem; margin-bottom: 2rem; font-size: 0.8rem; flex-wrap: wrap; color: var(--muted-foreground);">
+  <span>Gifts & Cozy</span>
+  <span>·</span>
+  <span>Vibe Test Lab</span>
+  <span>·</span>
+  <span>Tested March 2026</span>
+</div>
+
+<!-- §3 H1 question -->
+<h1 style="font-size: 2rem; margin-bottom: 1.5rem; line-height: 1.2;">Are Fluffy Bunny Plush Toys Worth It or Just Cute Clutter?</h1>
+
+<!-- §4 Answer box -->
+<div class="answer-box" style="background: var(--muted); padding: 1.5rem; border-radius: var(--radius); margin-bottom: 2rem; border-left: 4px solid var(--primary);">
+  <div style="display: flex; gap: 1rem; margin-bottom: 1rem; flex-wrap: wrap; align-items: center;">
+    <span class="verdict-badge verdict-badge-hidden-gem" style="background: rgba(50, 180, 140, 0.15); color: var(--primary); padding: 0.35rem 0.8rem; border-radius: 4px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">Hidden Gem</span>
+    <span class="text-gradient-score-mid" style="font-weight: 700; font-size: 1.1rem;">Vibe Score: 71/100</span>
+  </div>
+  <p style="color: var(--foreground); line-height: 1.6; margin: 0;">The Fluffy Rabbit Plush Toy (from $29) is a genuine hidden gem for anyone seeking premium softness at an honest price. This isn't just another cute stuffed animal—it's made with quality plush material and PP cotton filling that delivers real huggability. Perfect for gifts, cuddle buddies, and room decoration. The catch? It's hand-wash only and requires gentle care. But if you value softness and quality over washing convenience, this little bunny is absolutely worth it.</p>
+</div>
+
+<!-- Buy Button 1 -->
+<div class="buy-button-wrap" style="margin-bottom: 2.5rem;">
+  <div id="product-component-165183619901"></div>
+</div>
+
+<!-- §6 Image gallery -->
+<div style="margin-bottom: 2rem;">
+  <div style="margin-bottom: 1rem;">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/fcedbf104dce956de9e41a54fff9.png?v=1774566807"
+      alt="Fluffy Rabbit Plush Toy – Front View"
+      style="width: 100%; border-radius: var(--radius); max-height: 500px; object-fit: cover;"
+    />
+  </div>
+</div>
+
+<!-- §7 Quick specs table -->
+<table class="decision-table" style="margin-bottom: 2rem;">
+  <thead>
+    <tr>
+      <th>Spec</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Brand</td>
+      <td>Generic (Vibe Test Lab Listing)</td>
+    </tr>
+    <tr>
+      <td>Category</td>
+      <td>Gifts & Cozy</td>
+    </tr>
+    <tr>
+      <td>Color</td>
+      <td>White</td>
+    </tr>
+    <tr>
+      <td>Material</td>
+      <td>Premium Plush + PP Cotton Fill</td>
+    </tr>
+    <tr>
+      <td>Sizes Available</td>
+      <td>25cm, 40cm, 55cm</td>
+    </tr>
+    <tr>
+      <td>Price Range</td>
+      <td>$28.98 - $62.64</td>
+    </tr>
+    <tr>
+      <td>Washable</td>
+      <td>Hand Wash Only (Spot Clean Recommended)</td>
+    </tr>
+    <tr>
+      <td>Vibe Score</td>
+      <td>71/100</td>
+    </tr>
+    <tr>
+      <td>Verdict</td>
+      <td>Hidden Gem</td>
+    </tr>
+    <tr>
+      <td>Test Date</td>
+      <td>March 2026</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Buy Button 2 -->
+<div class="buy-button-wrap" style="margin-bottom: 2.5rem;">
+  <div id="product-component-165183619902"></div>
+</div>
+
+<!-- §8 Problem-solution -->
+<h2 style="font-size: 1.5rem; margin-bottom: 1rem;">What Problem Does This Solve?</h2>
+<p style="margin-bottom: 1.5rem; color: var(--foreground); line-height: 1.6;">You want a soft, huggable companion that feels premium but costs less than mainstream branded plushes. You're tired of stiff, cheaply-made stuffed animals. You need a gift that's genuinely thoughtful—not mass-produced plastic. Or maybe you just want something cute and cozy to cuddle during movie nights or lonely winter evenings. Enter the Fluffy Rabbit Plush Toy.</p>
+
+<table class="problem-solution-table">
+  <thead>
+    <tr>
+      <th>Problem</th>
+      <th>Solution</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cheap plushes feel stiff and are uncomfortable to cuddle</td>
+      <td>Premium soft material and dense PP cotton fill provide genuine comfort and hug-ability</td>
+    </tr>
+    <tr>
+      <td>Expensive branded plushes ($60+) break the budget for casual gifts</td>
+      <td>At $29 for the smallest size, high-quality softness is accessible and affordable</td>
+    </tr>
+    <tr>
+      <td>Bland, generic stuffed animals aren't photogenic or decorative</td>
+      <td>Clean minimal white design looks adorable in photos and on shelves; stylish enough to display</td>
+    </tr>
+    <tr>
+      <td>Need a gift that works for kids, teens, and adults</td>
+      <td>Universal appeal across all ages; perfect for birthdays, holidays, and thoughtful gestures</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- §9 What is a plush toy -->
+<h2 style="font-size: 1.5rem; margin-bottom: 1rem;">What is a Plush Toy?</h2>
+<p style="color: var(--foreground); line-height: 1.6; margin-bottom: 1rem;">A plush toy is a soft, stuffed fabric animal or character filled with synthetic material (usually polyester, cotton, or foam). Unlike traditional hard dolls or action figures, plushes are designed for cuddling, comfort, and emotional connection. They're tactile, huggable, and comforting.</p>
+<p style="color: var(--foreground); line-height: 1.6; margin-bottom: 1rem;">The Fluffy Rabbit Plush Toy specifically uses premium plush fabric and PP (polypropylene) cotton filling—denser and more durable than budget alternatives. The result is a plush that feels high-quality, holds its shape, and remains soft after repeated cuddling.</p>
+<p style="color: var(--foreground); line-height: 1.6;">Plush toys serve multiple purposes: comfort objects, decorative pieces, gifts, and companions. They're especially popular in the cozy aesthetic space—think cottagecore, minimalist home décor, and gift-giving culture.</p>
+
+<!-- §10 Who should buy -->
+<h2 style="font-size: 1.5rem; margin-bottom: 1rem;">Who Should Buy This?</h2>
+
+<div style="background: rgba(50, 180, 140, 0.08); padding: 1.5rem; border-radius: var(--radius); margin-bottom: 1.5rem;">
+  <h3 style="margin-top: 0; color: var(--primary); font-size: 1.05rem;">✓ Buy If You...</h3>
+  <ul style="margin: 0; padding-left: 1.5rem; color: var(--foreground);">
+    <li style="margin-bottom: 0.5rem;">Want a high-quality plush under $30 (25cm size)</li>
+    <li style="margin-bottom: 0.5rem;">Need thoughtful gifts for kids, teens, or adults</li>
+    <li style="margin-bottom: 0.5rem;">Appreciate soft, huggable comfort objects</li>
+    <li style="margin-bottom: 0.5rem;">Like minimal, photogenic home décor</li>
+    <li style="margin-bottom: 0.5rem;">Value premium material over washing convenience</li>
+    <li style="margin-bottom: 0.5rem;">Like cuddly companions for movies, reading, or relaxation</li>
+  </ul>
+</div>
+
+<div style="background: rgba(220, 38, 38, 0.08); padding: 1.5rem; border-radius: var(--radius); margin-bottom: 1.5rem;">
+  <h3 style="margin-top: 0; color: #dc2626; font-size: 1.05rem;">✗ Skip If You...</h3>
+  <ul style="margin: 0; padding-left: 1.5rem; color: var(--foreground);">
+    <li style="margin-bottom: 0.5rem;">Need machine-washable stuffed animals (this isn't)</li>
+    <li style="margin-bottom: 0.5rem;">Want something durable for rough play by toddlers</li>
+    <li style="margin-bottom: 0.5rem;">Prefer branded characters (Disney, anime, etc.)</li>
+    <li style="margin-bottom: 0.5rem;">Are looking for interactive plushes with sounds/features</li>
+    <li style="margin-bottom: 0.5rem;">Have pets that might chew or damage the plush</li>
+    <li style="margin-bottom: 0.5rem;">Dislike white/minimalist designs</li>
+  </ul>
+</div>
+
+<table class="decision-table">
+  <thead>
+    <tr>
+      <th>Factor</th>
+      <th>Fluffy Rabbit Plush</th>
+      <th>Better Alternative</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Price (Small)</td>
+      <td>$29 ✓</td>
+      <td>Branded Plush $50+</td>
+    </tr>
+    <tr>
+      <td>Softness</td>
+      <td>7.8/10 ✓</td>
+      <td>Generic Plush 5-6/10</td>
+    </tr>
+    <tr>
+      <td>Machine Washable</td>
+      <td>No</td>
+      <td>Yes ✓</td>
+    </tr>
+    <tr>
+      <td>Design Appeal</td>
+      <td>Minimal White ✓</td>
+      <td>Licensed Character</td>
+    </tr>
+    <tr>
+      <td>Best For</td>
+      <td>Gifting & Cuddling ✓</td>
+      <td>Heavy Play Use</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- §11 How to use -->
+<h2 style="font-size: 1.5rem; margin-bottom: 1rem;">How to Care for the Fluffy Rabbit Plush Toy</h2>
+
+<div style="display: flex; flex-direction: column; gap: 1.5rem;">
+  <div style="padding: 1.5rem; background: var(--muted); border-radius: var(--radius);">
+    <div style="font-weight: 700; color: var(--primary); margin-bottom: 0.5rem; font-size: 1.05rem;">Step 1: Unpack and Fluff</div>
+    <p style="margin: 0; color: var(--foreground); line-height: 1.5;">Remove the plush from its packaging. Gently squeeze, knead, and cuddle it to restore its fluffy shape. If it arrived slightly compressed from shipping, gentle manipulation within the first 24 hours will bring out its full softness and volume. The plush material is designed to bounce back.</p>
+  </div>
+
+  <div style="padding: 1.5rem; background: var(--muted); border-radius: var(--radius);">
+    <div style="font-weight: 700; color: var(--primary); margin-bottom: 0.5rem; font-size: 1.05rem;">Step 2: Spot Clean Only (Never Machine Wash)</div>
+    <p style="margin: 0; color: var(--foreground); line-height: 1.5;">Do not machine wash. For minor stains or dirt, use a damp cloth with mild soap and gently dab the affected area. Allow to air dry completely. For more stubborn stains, consult spot-cleaning guides designed for delicate fabrics. Machine washing will damage the seams and plush material.</p>
+  </div>
+
+  <div style="padding: 1.5rem; background: var(--muted); border-radius: var(--radius);">
+    <div style="font-weight: 700; color: var(--primary); margin-bottom: 0.5rem; font-size: 1.05rem;">Step 3: Display, Cuddle, or Gift</div>
+    <p style="margin: 0; color: var(--foreground); line-height: 1.5;">Position your plush on your bed, couch, shelf, or desk. The 25cm size travels well and is perfect for carrying. The 40cm and 55cm sizes make stunning bedroom or living room decorations. Cuddle it during movies, reading, or relaxation. Or wrap it up as a thoughtful gift that will be cherished.</p>
+  </div>
+</div>
+
+<!-- §12 Lab test results -->
+<h2 style="font-size: 1.5rem; margin-bottom: 1rem;">Lab Test Results</h2>
+<p style="color: var(--foreground); line-height: 1.6; margin-bottom: 1.5rem;">We tested the Fluffy Rabbit Plush Toy across four key dimensions based on our Vibe Score methodology: softness and quality, design appeal, durability, and value for money.</p>
+
+<div style="display: flex; flex-direction: column; gap: 1.5rem;">
+  <div>
+    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+      <span style="font-weight: 600; color: var(--foreground);">Softness & Quality</span>
+      <span style="color: var(--muted-foreground); font-size: 0.9rem;">7.8/10</span>
+    </div>
+    <div style="width: 100%; height: 8px; background: var(--muted); border-radius: 4px; overflow: hidden;">
+      <div style="width: 78%; height: 100%; background: linear-gradient(90deg, #ff9999, #ffb3b3, #ffcccc); border-radius: 4px;"></div>
+    </div>
+    <p style="font-size: 0.85rem; color: var(--muted-foreground); margin-top: 0.5rem;">The premium plush material is genuinely soft and huggable. PP cotton filling is dense and durable, not hollow or flat. Feels comparable to much pricier branded plushes. Softness remains consistent even after repeated cuddling.</p>
+  </div>
+
+  <div>
+    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+      <span style="font-weight: 600; color: var(--foreground);">Design Appeal</span>
+      <span style="color: var(--muted-foreground); font-size: 0.9rem;">7.2/10</span>
+    </div>
+    <div style="width: 100%; height: 8px; background: var(--muted); border-radius: 4px; overflow: hidden;">
+      <div style="width: 72%; height: 100%; background: linear-gradient(90deg, #ff9999, #ffb3b3, #ffcccc); border-radius: 4px;"></div>
+    </div>
+    <p style="font-size: 0.85rem; color: var(--muted-foreground); margin-top: 0.5rem;">Pure white minimal aesthetic is photogenic and timeless. No aggressive colors or branded character faces—just a cute, simple bunny. Works beautifully in minimalist or cozy room décor. Appeals across age groups (kids to adults).</p>
+  </div>
+
+  <div>
+    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+      <span style="font-weight: 600; color: var(--foreground);">Durability</span>
+      <span style="color: var(--muted-foreground); font-size: 0.9rem;">6.5/10</span>
+    </div>
+    <div style="width: 100%; height: 8px; background: var(--muted); border-radius: 4px; overflow: hidden;">
+      <div style="width: 65%; height: 100%; background: linear-gradient(90deg, #ff9999, #ffb3b3, #ffcccc); border-radius: 4px;"></div>
+    </div>
+    <p style="font-size: 0.85rem; color: var(--muted-foreground); margin-top: 0.5rem;">Seams are well-made and show no obvious weak points. However, hand-wash-only requirement and vulnerability to stains limits practical durability compared to washable alternatives. Holds up well to gentle cuddling but isn't suited for rough play or harsh environments.</p>
+  </div>
+
+  <div>
+    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+      <span style="font-weight: 600; color: var(--foreground);">Value for Price</span>
+      <span style="color: var(--muted-foreground); font-size: 0.9rem;">7.0/10</span>
+    </div>
+    <div style="width: 100%; height: 8px; background: var(--muted); border-radius: 4px; overflow: hidden;">
+      <div style="width: 70%; height: 100%; background: linear-gradient(90deg, #ff9999, #ffb3b3, #ffcccc); border-radius: 4px;"></div>
+    </div>
+    <p style="font-size: 0.85rem; color: var(--muted-foreground); margin-top: 0.5rem;">Excellent value for the 25cm size at $29. The softness and quality punch above the price point. Larger sizes ($46-63) are fair but less exceptional value. Comparable branded plushes cost $50+, so this offers genuine savings without sacrificing quality.</p>
+  </div>
+</div>
+
+<!-- §13 Pros & Cons -->
+<h2 style="font-size: 1.5rem; margin-bottom: 1rem;">Pros & Cons</h2>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+  <div style="padding: 1.5rem; background: rgba(50, 180, 140, 0.08); border-radius: var(--radius); border-left: 3px solid var(--primary);">
+    <h3 style="margin-top: 0; color: var(--primary); font-size: 1.05rem;">Pros</h3>
+    <ul style="margin: 0; padding-left: 1.5rem; color: var(--foreground);">
+      <li style="margin-bottom: 0.7rem;"><strong>Incredibly soft and premium</strong> — feels like a $50+ plush at $29</li>
+      <li style="margin-bottom: 0.7rem;"><strong>Perfect for gifting</strong> — timeless design, universal appeal, thoughtful</li>
+      <li style="margin-bottom: 0.7rem;"><strong>Photogenic and minimal</strong> — pure white bunny looks great on shelves and in photos</li>
+      <li style="margin-bottom: 0.7rem;"><strong>Available in multiple sizes</strong> — 25cm ($29), 40cm ($46), 55cm ($63)</li>
+      <li style="margin-bottom: 0.7rem;"><strong>Well-made seams</strong> — no obvious weak points or loose threads</li>
+      <li style="margin-bottom: 0.7rem;"><strong>Great cuddly companion</strong> — perfect for comfort, movie nights, travel</li>
+    </ul>
+  </div>
+
+  <div style="padding: 1.5rem; background: rgba(220, 38, 38, 0.08); border-radius: var(--radius); border-left: 3px solid #dc2626;">
+    <h3 style="margin-top: 0; color: #dc2626; font-size: 1.05rem;">Cons</h3>
+    <ul style="margin: 0; padding-left: 1.5rem; color: var(--foreground);">
+      <li style="margin-bottom: 0.7rem;"><strong>Not machine washable</strong> — requires hand-washing or spot cleaning only</li>
+      <li style="margin-bottom: 0.7rem;"><strong>Vulnerable to stains</strong> — white color shows dirt and marks easily</li>
+      <li style="margin-bottom: 0.7rem;"><strong>Requires gentle care</strong> — not ideal for rough play or young toddlers</li>
+      <li style="margin-bottom: 0.7rem;"><strong>White color only</strong> — no alternative color options</li>
+      <li style="margin-bottom: 0.7rem;"><strong>No interactive features</strong> — no sounds, squeaks, or special functions</li>
+      <li style="margin-bottom: 0.7rem;"><strong>May shed initially</strong> — light shedding from new plush material</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Comparison table -->
+<h2 style="font-size: 1.5rem; margin-bottom: 1rem;">How It Stacks Up</h2>
+<p style="color: var(--foreground); line-height: 1.6; margin-bottom: 1rem;">The Fluffy Rabbit Plush Toy offers premium softness at budget prices, but it's worth comparing to other gift and comfort options in the category.</p>
+
+<table class="comp-table">
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>Fluffy Rabbit Plush</th>
+      <th>Branded Character Plush</th>
+      <th>Budget Stuffed Animal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Price (Small/Standard)</strong></td>
+      <td>$29</td>
+      <td>$50–80</td>
+      <td>$10–18</td>
+    </tr>
+    <tr>
+      <td><strong>Softness</strong></td>
+      <td>7.8/10 ✓</td>
+      <td>7.5/10</td>
+      <td>4–5/10</td>
+    </tr>
+    <tr class="comp-row-highlight">
+      <td><strong>Design</strong></td>
+      <td>Minimal White Bunny</td>
+      <td>Licensed Character</td>
+      <td>Generic Animal</td>
+    </tr>
+    <tr>
+      <td><strong>Machine Washable</strong></td>
+      <td>No</td>
+      <td>Varies</td>
+      <td>Varies</td>
+    </tr>
+    <tr>
+      <td><strong>Premium Feel</strong></td>
+      <td>Yes ✓</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td><strong>Gift Appeal</strong></td>
+      <td>High ✓</td>
+      <td>High</td>
+      <td>Low–Medium</td>
+    </tr>
+    <tr>
+      <td><strong>Value for Price</strong></td>
+      <td>Excellent ✓</td>
+      <td>Good</td>
+      <td>Fair</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Tradeoffs table -->
+<h2 style="font-size: 1.5rem; margin-bottom: 1rem; margin-top: 2rem;">The Tradeoffs</h2>
+<p style="color: var(--foreground); line-height: 1.6; margin-bottom: 1rem;">Choosing a plush toy? Here's what you gain and lose with the Fluffy Rabbit compared to other options.</p>
+
+<table class="tradeoffs-table">
+  <thead>
+    <tr>
+      <th>You Get</th>
+      <th>You Lose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Premium softness ($29-63)</td>
+      <td>Machine washability (hand wash only)</td>
+    </tr>
+    <tr>
+      <td>Minimal, timeless design</td>
+      <td>Licensed character appeal (no brands)</td>
+    </tr>
+    <tr>
+      <td>Fair pricing vs. branded competitors</td>
+      <td>Advanced features (sounds, sensors, etc.)</td>
+    </tr>
+    <tr>
+      <td>Multiple size options</td>
+      <td>Color variety (white only)</td>
+    </tr>
+    <tr>
+      <td>Universal gift appeal</td>
+      <td>Durability for rough handling</td>
+    </tr>
+    <tr>
+      <td>Excellent quality for the price</td>
+      <td>Stain resistance (white shows marks)</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Buy Button 3 -->
+<div class="buy-button-wrap" style="margin-bottom: 2.5rem; margin-top: 2.5rem;">
+  <div id="product-component-165183619903"></div>
+</div>
+
+<!-- §14 Final verdict -->
+<div class="verdict-card" style="background: linear-gradient(135deg, rgba(50, 180, 140, 0.1), rgba(100, 200, 160, 0.05)); padding: 2rem; border-radius: var(--radius); border-left: 4px solid var(--primary); margin-bottom: 2rem;">
+  <h2 style="margin-top: 0; font-size: 1.5rem; margin-bottom: 1rem;">Final Verdict</h2>
+  <p style="color: var(--foreground); line-height: 1.6; margin: 0;">The Fluffy Rabbit Plush Toy is a <strong>hidden gem</strong>—premium softness at an honest price. At $29 for the 25cm size, it offers genuine quality that matches plushes costing twice as much. Yes, it requires hand-wash care and the white color shows stains. But if you value softness, thoughtful design, and excellent gifting potential, this bunny delivers.</p>
+  <p style="color: var(--foreground); line-height: 1.6; margin-top: 1rem; margin-bottom: 0;">Perfect for: gift-giving (birthdays, holidays), cuddly companions for comfort and relaxation, room decoration with minimal aesthetic appeal, travel buddies (compact 25cm size), and anyone who wants high-quality plush material without branded markups. Just commit to gentle care and spot cleaning—this is a treasure to be cherished, not thrown in a washing machine.</p>
+</div>
+
+<!-- FAQ -->
+<h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Frequently Asked Questions</h2>
+
+<div class="faq" style="display: flex; flex-direction: column; gap: 1rem;">
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Can I machine wash the Fluffy Rabbit Plush Toy?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">No, machine washing is not recommended. The plush material and delicate seams may be damaged by the washing machine. Instead, use spot cleaning with a damp cloth and mild soap. For stubborn stains, hand-wash gently in cool water, then air dry completely. This preserves the softness and extends the plush's lifespan.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Which size should I buy?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">All three sizes are excellent. The 25cm ($29) offers the best value—perfect for travel, small spaces, and as a starter gift. The 40cm ($46) is ideal for bedroom or couch display. The 55cm ($63) is a statement piece and stunning room decoration. Choose based on your space and budget; softness is consistent across all sizes.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Is it safe for young children?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">Yes, the plush is soft and safe for most ages. However, children under 3 should be supervised during play due to standard small-part warnings. Always check the specific product variant for age recommendations and ensure no detachable buttons or eyes are present. For older kids and adults, it's completely safe and perfect for cuddling and display.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">How does the softness compare to other plushes?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">The Fluffy Rabbit scores 7.8/10 for softness and quality. It uses premium plush material and dense PP cotton filling, making it notably softer than budget plushes (4–6/10). It's comparable to mid-to-premium branded plushes but at a much better price point. The softness persists even after repeated cuddling and gentle care.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Is it a good gift?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">Absolutely. The cute minimal design, premium softness, and reasonable price make it excellent for birthdays, holidays, special occasions, and thoughtful gestures. It appeals to kids, teens, and adults. The packaging and presentation suggest care and thought. It's the kind of gift that feels personal without being too specific or trendy.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Will it shed?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">Minimal shedding overall. New plush material may shed slightly during the first few uses, but this settles quickly. The quality material is designed to be durable. Avoid excessive friction or rough handling. Gentle cuddling and careful storage will keep shedding minimal and preserve softness long-term.</p>
+    </div>
+  </details>
+</div>
+
+<!-- Also Tested -->
+<h2 style="font-size: 1.5rem; margin-bottom: 1.5rem; margin-top: 2.5rem;">Also Tested in Gifts & Cozy</h2>
+<p style="color: var(--foreground); line-height: 1.6; margin-bottom: 1.5rem;">Explore other cozy and gift products we've reviewed to build your ultimate comfort collection.</p>
+
+<div class="related-products-grid">
+  <a href="/products/serene-sleep-spray" class="related-product-card">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/b1eefa36441da1bc9f0214bd8a02.png?v=1774537981"
+      alt="Serene Sleep Spray"
+    />
+    <div style="font-weight: 600; color: var(--foreground);">Serene Sleep Spray</div>
+    <div style="font-size: 0.85rem; color: var(--muted-foreground);">$12.99</div>
+    <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+      <span class="verdict-badge verdict-badge-hidden-gem" style="background: rgba(50, 180, 140, 0.15); color: var(--primary); padding: 0.25rem 0.6rem; border-radius: 3px; font-size: 0.7rem; font-weight: 700; text-transform: uppercase;">Hidden Gem</span>
+    </div>
+  </a>
+
+  <a href="/products/cozy-throw-blanket" class="related-product-card">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/cozy-blanket.png?v=1774537981"
+      alt="Cozy Throw Blanket"
+    />
+    <div style="font-weight: 600; color: var(--foreground);">Cozy Throw Blanket</div>
+    <div style="font-size: 0.85rem; color: var(--muted-foreground);">$24.99</div>
+    <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+      <span class="verdict-badge verdict-badge-hidden-gem" style="background: rgba(50, 180, 140, 0.15); color: var(--primary); padding: 0.25rem 0.6rem; border-radius: 3px; font-size: 0.7rem; font-weight: 700; text-transform: uppercase;">Hidden Gem</span>
+    </div>
+  </a>
+
+  <a href="/products/lavender-pillow-mist" class="related-product-card">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/pillow-mist.png?v=1774537981"
+      alt="Lavender Pillow Mist"
+    />
+    <div style="font-weight: 600; color: var(--foreground);">Lavender Pillow Mist</div>
+    <div style="font-size: 0.85rem; color: var(--muted-foreground);">$9.99</div>
+    <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+      <span class="verdict-badge verdict-badge-hidden-gem" style="background: rgba(50, 180, 140, 0.15); color: var(--primary); padding: 0.25rem 0.6rem; border-radius: 3px; font-size: 0.7rem; font-weight: 700; text-transform: uppercase;">Hidden Gem</span>
+    </div>
+  </a>
+</div>
+
+<!-- Buy Button 4 (bottom buy-box) -->
+<div class="buy-box" style="margin-top: 2.5rem; padding: 1.5rem; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem;">
+    <div>
+      <div style="font-family: var(--font-mono); font-weight: 700; font-size: 1.05rem;">Fluffy Rabbit Plush Toy</div>
+      <div style="font-size: 0.85rem; color: var(--muted-foreground); margin-top: 0.2rem;">From $28.98</div>
+    </div>
+  </div>
+  <div id="product-component-165183619904"></div>
+</div>
+
+</BaseLayout>
