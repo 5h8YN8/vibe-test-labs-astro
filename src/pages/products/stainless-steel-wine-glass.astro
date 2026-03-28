@@ -183,37 +183,19 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 <!-- Buy Now (top CTA) -->
 <div class="buy-button-wrap">
   <div id='product-component-620114154301'></div>
-  <script type="text/javascript" is:inline>
-  (function () {
-    var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-    if (window.ShopifyBuy) { if (window.ShopifyBuy.UI) { ShopifyBuyInit(); } else { loadScript(); } } else { loadScript(); }
-    function loadScript() { var script = document.createElement('script'); script.async = true; script.src = scriptURL; (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script); script.onload = ShopifyBuyInit; }
-    function ShopifyBuyInit() {
-      var client = ShopifyBuy.buildClient({ domain: 'fwaqf1-er.myshopify.com', storefrontAccessToken: '4706c336d25a9168835827f0170b56f0' });
-      ShopifyBuy.UI.onReady(client).then(function (ui) {
-        ui.createComponent('product', {
-          id: '10146201141543',
-          node: document.getElementById('product-component-620114154301'),
-          moneyFormat: '%24%7B%7Bamount%7D%7D',
-          options: { "product": { "contents": { "img": false, "title": false, "price": false }, "styles": { "product": { "@media (min-width: 601px)": { "max-width": "100%", "margin-left": "auto", "margin-right": "auto" } }, "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "letter-spacing": "0.02em", "padding": "14px 28px", "border-radius": "10px", "width": "100%", "max-width": "400px", "margin-left": "auto", "margin-right": "auto", "display": "block", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "button": "Add to Cart" } }, "cart": { "styles": { "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "border-radius": "10px", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "total": "Subtotal", "button": "Checkout" } }, "toggle": { "styles": { "toggle": { "background-color": "#0a0a0a", ":hover": { "background-color": "#222222" }, ":focus": { "background-color": "#222222" } } } } }
-        });
-      });
-    }
-  })();
-  </script>
 </div>
 
 <!-- §6 Image gallery -->
 <div class="product-gallery">
   <div class="product-gallery-hero">
-    <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/7910ce784902b74fc8b86651501b_800x800.png?v=1774019676" alt="Stainless Steel Wine Glass" loading="eager" />
+    <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/7910ce784902b74fc8b86651501b_800x800.png?v=1774019676" width="560" height="560" srcset="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/7910ce784902b74fc8b86651501b_800x800.png?v=1774019676&width=400 400w, https://cdn.shopify.com/s/files/1/0958/6710/9671/files/7910ce784902b74fc8b86651501b_800x800.png?v=1774019676&width=560 560w, https://cdn.shopify.com/s/files/1/0958/6710/9671/files/7910ce784902b74fc8b86651501b_800x800.png?v=1774019676&width=800 800w" sizes="(max-width: 768px) 100vw, 560px" alt="Stainless Steel Wine Glass" loading="eager" />
   </div>
   <div class="product-gallery-thumbs">
-    <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/0e40054546768cf56a87f5bef389_800x800.png?v=1774019686" alt="Stainless Steel Wine Glass lifestyle" loading="lazy" />
-    <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/f14228254706a3db5c2b92459ce5_800x800.png?v=1774019687" alt="Stainless Steel Wine Glass in use" loading="lazy" />
-    <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/20d5946747298753212364428860_800x800.png?v=1774019697" alt="Stainless Steel Wine Glass detail" loading="lazy" />
-    <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/94b83c1b460ab293ecf1c863de07_800x800.png?v=1774019708" alt="Stainless Steel Wine Glass Rose Gold" loading="lazy" />
-    <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/71bafeb74065a83f02c6ad8d4445_800x800.png?v=1774019708" alt="Stainless Steel Wine Glass Golden" loading="lazy" />
+    <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/0e40054546768cf56a87f5bef389_800x800.png?v=1774019686" alt="Stainless Steel Wine Glass lifestyle" loading="lazy"  width="160" height="160" />
+    <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/f14228254706a3db5c2b92459ce5_800x800.png?v=1774019687" alt="Stainless Steel Wine Glass in use" loading="lazy"  width="160" height="160" />
+    <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/20d5946747298753212364428860_800x800.png?v=1774019697" alt="Stainless Steel Wine Glass detail" loading="lazy"  width="160" height="160" />
+    <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/94b83c1b460ab293ecf1c863de07_800x800.png?v=1774019708" alt="Stainless Steel Wine Glass Rose Gold" loading="lazy"  width="160" height="160" />
+    <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/71bafeb74065a83f02c6ad8d4445_800x800.png?v=1774019708" alt="Stainless Steel Wine Glass Golden" loading="lazy"  width="160" height="160" />
   </div>
 </div>
 
@@ -233,24 +215,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 <!-- Buy Now (middle CTA) -->
 <div class="buy-button-wrap">
   <div id='product-component-620114154302'></div>
-  <script type="text/javascript" is:inline>
-  (function () {
-    var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-    if (window.ShopifyBuy) { if (window.ShopifyBuy.UI) { ShopifyBuyInit2(); } else { loadScript2(); } } else { loadScript2(); }
-    function loadScript2() { var script = document.createElement('script'); script.async = true; script.src = scriptURL; (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script); script.onload = ShopifyBuyInit2; }
-    function ShopifyBuyInit2() {
-      var client = ShopifyBuy.buildClient({ domain: 'fwaqf1-er.myshopify.com', storefrontAccessToken: '4706c336d25a9168835827f0170b56f0' });
-      ShopifyBuy.UI.onReady(client).then(function (ui) {
-        ui.createComponent('product', {
-          id: '10146201141543',
-          node: document.getElementById('product-component-620114154302'),
-          moneyFormat: '%24%7B%7Bamount%7D%7D',
-          options: { "product": { "contents": { "img": false, "title": false, "price": false }, "styles": { "product": { "@media (min-width: 601px)": { "max-width": "100%", "margin-left": "auto", "margin-right": "auto" } }, "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "letter-spacing": "0.02em", "padding": "14px 28px", "border-radius": "10px", "width": "100%", "max-width": "400px", "margin-left": "auto", "margin-right": "auto", "display": "block", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "button": "Add to Cart" } }, "cart": { "styles": { "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "border-radius": "10px", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "total": "Subtotal", "button": "Checkout" } }, "toggle": { "styles": { "toggle": { "background-color": "#0a0a0a", ":hover": { "background-color": "#222222" }, ":focus": { "background-color": "#222222" } } } } }
-        });
-      });
-    }
-  })();
-  </script>
 </div>
 
 <!-- §8 Why people are buying — problem this solves -->
@@ -379,24 +343,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 <!-- Buy Now (post-review CTA) -->
 <div class="buy-button-wrap">
   <div id='product-component-620114154303'></div>
-  <script type="text/javascript" is:inline>
-  (function () {
-    var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-    if (window.ShopifyBuy) { if (window.ShopifyBuy.UI) { ShopifyBuyInit3(); } else { loadScript3(); } } else { loadScript3(); }
-    function loadScript3() { var script = document.createElement('script'); script.async = true; script.src = scriptURL; (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script); script.onload = ShopifyBuyInit3; }
-    function ShopifyBuyInit3() {
-      var client = ShopifyBuy.buildClient({ domain: 'fwaqf1-er.myshopify.com', storefrontAccessToken: '4706c336d25a9168835827f0170b56f0' });
-      ShopifyBuy.UI.onReady(client).then(function (ui) {
-        ui.createComponent('product', {
-          id: '10146201141543',
-          node: document.getElementById('product-component-620114154303'),
-          moneyFormat: '%24%7B%7Bamount%7D%7D',
-          options: { "product": { "contents": { "img": false, "title": false, "price": false }, "styles": { "product": { "@media (min-width: 601px)": { "max-width": "100%", "margin-left": "auto", "margin-right": "auto" } }, "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "letter-spacing": "0.02em", "padding": "14px 28px", "border-radius": "10px", "width": "100%", "max-width": "400px", "margin-left": "auto", "margin-right": "auto", "display": "block", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "button": "Add to Cart" } }, "cart": { "styles": { "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "border-radius": "10px", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "total": "Subtotal", "button": "Checkout" } }, "toggle": { "styles": { "toggle": { "background-color": "#0a0a0a", ":hover": { "background-color": "#222222" }, ":focus": { "background-color": "#222222" } } } } }
-        });
-      });
-    }
-  })();
-  </script>
 </div>
 
 <!-- §14 Final verdict -->
@@ -451,25 +397,36 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   </div>
 <div class="buy-button-wrap">
   <div id='product-component-620114154304'></div>
-  <script type="text/javascript" is:inline>
-  (function () {
-    var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-    if (window.ShopifyBuy) { if (window.ShopifyBuy.UI) { ShopifyBuyInit4(); } else { loadScript4(); } } else { loadScript4(); }
-    function loadScript4() { var script = document.createElement('script'); script.async = true; script.src = scriptURL; (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script); script.onload = ShopifyBuyInit4; }
-    function ShopifyBuyInit4() {
-      var client = ShopifyBuy.buildClient({ domain: 'fwaqf1-er.myshopify.com', storefrontAccessToken: '4706c336d25a9168835827f0170b56f0' });
-      ShopifyBuy.UI.onReady(client).then(function (ui) {
-        ui.createComponent('product', {
-          id: '10146201141543',
-          node: document.getElementById('product-component-620114154304'),
-          moneyFormat: '%24%7B%7Bamount%7D%7D',
-          options: { "product": { "contents": { "img": false, "title": false, "price": false }, "styles": { "product": { "@media (min-width: 601px)": { "max-width": "100%", "margin-left": "auto", "margin-right": "auto" } }, "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "letter-spacing": "0.02em", "padding": "14px 28px", "border-radius": "10px", "width": "100%", "max-width": "400px", "margin-left": "auto", "margin-right": "auto", "display": "block", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "button": "Add to Cart" } }, "cart": { "styles": { "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "border-radius": "10px", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "total": "Subtotal", "button": "Checkout" } }, "toggle": { "styles": { "toggle": { "background-color": "#0a0a0a", ":hover": { "background-color": "#222222" }, ":focus": { "background-color": "#222222" } } } } }
-        });
-      });
-    }
-  })();
-  </script>
 </div>
 </div>
 
+
+<script type="text/javascript" is:inline>
+  (function() {
+    var buttons = [
+      { node: 'product-component-620114154301', productId: '10146201141543' },
+      { node: 'product-component-620114154302', productId: '10146201141543' },
+      { node: 'product-component-620114154303', productId: '10146201141543' },
+      { node: 'product-component-620114154304', productId: '10146201141543' }
+    ];
+    var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+    var btnOpts = { "product": { "contents": { "img": false, "title": false, "price": false }, "styles": { "product": { "@media (min-width: 601px)": { "max-width": "100%", "margin-left": "auto", "margin-right": "auto" } }, "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "letter-spacing": "0.02em", "padding": "14px 28px", "border-radius": "10px", "width": "100%", "max-width": "400px", "margin-left": "auto", "margin-right": "auto", "display": "block", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "button": "Add to Cart" } }, "cart": { "styles": { "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "border-radius": "10px", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "total": "Subtotal", "button": "Checkout" } }, "toggle": { "styles": { "toggle": { "background-color": "#0a0a0a", ":hover": { "background-color": "#222222" }, ":focus": { "background-color": "#222222" } } } } };
+    function initButtons() {
+      var client = ShopifyBuy.buildClient({ domain: 'fwaqf1-er.myshopify.com', storefrontAccessToken: '4706c336d25a9168835827f0170b56f0' });
+      ShopifyBuy.UI.onReady(client).then(function(ui) {
+        buttons.forEach(function(b) {
+          var el = document.getElementById(b.node);
+          if (el) ui.createComponent('product', { id: b.productId, node: el, moneyFormat: '%24%7B%7Bamount%7D%7D', options: btnOpts });
+        });
+      });
+    }
+    if (window.ShopifyBuy && window.ShopifyBuy.UI) { initButtons(); }
+    else {
+      var s = document.createElement('script');
+      s.async = true; s.defer = true; s.src = scriptURL;
+      s.onload = initButtons;
+      document.body.appendChild(s);
+    }
+  })();
+  </script>
 </BaseLayout>

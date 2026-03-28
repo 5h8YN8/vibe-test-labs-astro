@@ -67,7 +67,12 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
   {schema && <script type="application/ld+json" set:html={JSON.stringify(Array.isArray(schema) ? {"@context":"https://schema.org","@graph":schema} : schema)} />}
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://cdn.shopify.com" crossorigin />
+  <link rel="preconnect" href="https://sdks.shopifycdn.com" crossorigin />
+  <!-- Async font loading — prevents render-blocking on mobile -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" /></noscript>
   <style is:global>
     /* ── CSS variables ── */
     :root {
@@ -99,6 +104,8 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
     *, *::before, *::after { box-sizing: border-box; }
     html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
     body { font-family: var(--font-sans); background: var(--background); color: var(--foreground); margin: 0; padding: 0; line-height: 1.65; }
+    /* Reduce rendering work for off-screen sections on mobile */
+    .faq, .related-products, footer.site-footer { content-visibility: auto; contain-intrinsic-size: auto 500px; }
     h1, h2, h3, h4 { font-family: var(--font-mono); }
     p { margin: 0 0 1rem; color: var(--muted-foreground); }
     a { color: var(--primary); text-decoration: none; }
