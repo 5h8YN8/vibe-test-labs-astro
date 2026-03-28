@@ -305,25 +305,13 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 </div>
 
 <!-- §6 Image gallery -->
-<div style="margin-bottom: 2rem;">
-  <div style="margin-bottom: 1rem;">
-    <img
-      src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/658c81fc4e238c99cb52c5c1a142.jpg?v=1774566813"
-      alt="Douglas Baby Fox Teether Plush – Front View"
-      style="width: 100%; border-radius: var(--radius); max-height: 500px; object-fit: cover;"
-    />
+<div class="product-gallery">
+  <div class="product-gallery-hero">
+    <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/658c81fc4e238c99cb52c5c1a142.jpg?v=1774566813" alt="Douglas Baby Fox Teether Plush – Front View" loading="eager" />
   </div>
-  <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
-    <img
-      src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/74fae0e24bbaaab23e737c3dcae4.jpg?v=1774566823"
-      alt="Douglas Baby Fox Teether Plush – Detail View"
-      style="width: 100%; border-radius: var(--radius); height: 250px; object-fit: cover;"
-    />
-    <img
-      src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/658c81fc4e238c99cb52c5c1a142.jpg?v=1774566813"
-      alt="Douglas Baby Fox Teether Plush – Full Product"
-      style="width: 100%; border-radius: var(--radius); height: 250px; object-fit: cover;"
-    />
+  <div class="product-gallery-thumbs">
+    <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/74fae0e24bbaaab23e737c3dcae4.jpg?v=1774566823" alt="Douglas Baby Fox Teether Plush – Detail View" loading="lazy" />
+    <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/658c81fc4e238c99cb52c5c1a142.jpg?v=1774566813" alt="Douglas Baby Fox Teether Plush – Full Product" loading="lazy" />
   </div>
 </div>
 

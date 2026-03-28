@@ -292,13 +292,15 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <div id="product-component-165219664701"></div>
   </div>
 
-  <!-- §6 Image Gallery -->
-  <div style="margin-bottom: 3rem;">
-    <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/5cda851d42d793971710eedbe737.png?v=1774566864" alt="LED Neon Light Wall Decor hero" style="width: 100%; border-radius: var(--radius); margin-bottom: 1rem;" />
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
-      <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/ba3480584a9896f6813a6469c8fe.png?v=1774566865" alt="LED Neon Light Wall Decor style 2" style="width: 100%; border-radius: var(--radius); cursor: pointer;" />
-      <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/6c86235449a6a39b4ecf84e34227.png?v=1774566875" alt="LED Neon Light Wall Decor style 3" style="width: 100%; border-radius: var(--radius); cursor: pointer;" />
-      <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/1d396b784593ab195884c5b15dfd.png?v=1774566885" alt="LED Neon Light Wall Decor style 4" style="width: 100%; border-radius: var(--radius); cursor: pointer;" />
+  <!-- §6 Image gallery -->
+  <div class="product-gallery">
+    <div class="product-gallery-hero">
+      <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/5cda851d42d793971710eedbe737.png?v=1774566864" alt="LED Neon Light Wall Decor hero" loading="eager" />
+    </div>
+    <div class="product-gallery-thumbs">
+      <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/ba3480584a9896f6813a6469c8fe.png?v=1774566865" alt="LED Neon Light Wall Decor style 2" loading="lazy" />
+      <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/6c86235449a6a39b4ecf84e34227.png?v=1774566875" alt="LED Neon Light Wall Decor style 3" loading="lazy" />
+      <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/1d396b784593ab195884c5b15dfd.png?v=1774566885" alt="LED Neon Light Wall Decor style 4" loading="lazy" />
     </div>
   </div>
 

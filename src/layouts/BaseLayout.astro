@@ -465,10 +465,69 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
     }
     .product-gallery-thumbs img:hover,
     .product-gallery-thumbs img.active { border-color: var(--primary); }
+    /* Hero image cursor — indicates clickable */
+    .product-gallery-hero { cursor: zoom-in; }
+    /* Nav arrows on hero */
+    .product-gallery-nav {
+      display: flex; justify-content: space-between; align-items: center;
+      position: absolute; top: 0; left: 0; right: 0; bottom: 0; pointer-events: none;
+    }
+    .product-gallery { position: relative; }
+    .product-gallery-nav button {
+      pointer-events: auto; background: rgba(0,0,0,.45); color: #fff; border: none;
+      width: 40px; height: 40px; border-radius: 50%; font-size: 1.25rem;
+      cursor: pointer; display: flex; align-items: center; justify-content: center;
+      margin: 0 .5rem; opacity: 0; transition: opacity .2s;
+    }
+    .product-gallery:hover .product-gallery-nav button { opacity: 1; }
+    .product-gallery-nav button:hover { background: rgba(0,0,0,.7); }
+    /* Thumbnail counter badge (shows when >6 thumbs) */
+    .product-gallery-more {
+      display: flex; align-items: center; justify-content: center;
+      min-width: 80px; height: 80px; border-radius: 10px; flex-shrink: 0;
+      background: var(--muted); color: var(--muted-foreground); font-size: .85rem;
+      font-weight: 600; cursor: pointer; border: 2px solid transparent; transition: border-color .15s;
+    }
+    .product-gallery-more:hover { border-color: var(--primary); }
+
+    /* ── Lightbox overlay ─────────────────────────────────── */
+    .vtl-lightbox {
+      display: none; position: fixed; inset: 0; z-index: 9999;
+      background: rgba(0,0,0,.92); align-items: center; justify-content: center;
+      flex-direction: column;
+    }
+    .vtl-lightbox.open { display: flex; }
+    .vtl-lightbox img {
+      max-width: 90vw; max-height: 80vh; object-fit: contain; border-radius: 8px;
+      user-select: none; -webkit-user-select: none;
+    }
+    .vtl-lightbox-close {
+      position: absolute; top: 1rem; right: 1rem; background: rgba(255,255,255,.15);
+      color: #fff; border: none; width: 44px; height: 44px; border-radius: 50%;
+      font-size: 1.5rem; cursor: pointer; display: flex; align-items: center;
+      justify-content: center; transition: background .15s; z-index: 10;
+    }
+    .vtl-lightbox-close:hover { background: rgba(255,255,255,.3); }
+    .vtl-lightbox-prev, .vtl-lightbox-next {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      background: rgba(255,255,255,.15); color: #fff; border: none;
+      width: 48px; height: 48px; border-radius: 50%; font-size: 1.5rem;
+      cursor: pointer; display: flex; align-items: center; justify-content: center;
+      transition: background .15s; z-index: 10;
+    }
+    .vtl-lightbox-prev { left: 1rem; }
+    .vtl-lightbox-next { right: 1rem; }
+    .vtl-lightbox-prev:hover, .vtl-lightbox-next:hover { background: rgba(255,255,255,.3); }
+    .vtl-lightbox-counter {
+      color: rgba(255,255,255,.7); font-size: .85rem; margin-top: 1rem;
+      font-family: var(--font-sans);
+    }
+
     /* Desktop: cap gallery width so square doesn't dominate wide screens */
     @media (min-width: 768px) {
       .product-gallery-hero { max-width: 560px; margin-left: auto; margin-right: auto; }
       .product-gallery-thumbs { max-width: 560px; margin-left: auto; margin-right: auto; }
+      .product-gallery-nav { max-width: 560px; margin-left: auto; margin-right: auto; }
     }
 
     /* ── Mobile-optimized tables ────────────────────────────── */
@@ -594,5 +653,139 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
       <p class="footer-copy">© {new Date().getFullYear()} Vibe Test Lab. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- Lightbox overlay -->
+  <div class="vtl-lightbox" id="vtl-lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
+    <button class="vtl-lightbox-close" aria-label="Close lightbox">&times;</button>
+    <button class="vtl-lightbox-prev" aria-label="Previous image">&#8249;</button>
+    <button class="vtl-lightbox-next" aria-label="Next image">&#8250;</button>
+    <img src="" alt="" id="vtl-lightbox-img" />
+    <div class="vtl-lightbox-counter" id="vtl-lightbox-counter"></div>
+  </div>
+
+  <script is:inline>
+  (function() {
+    /* ── Interactive Gallery + Lightbox ──────────────────── */
+    var galleries = document.querySelectorAll('.product-gallery');
+    var lightbox = document.getElementById('vtl-lightbox');
+    var lbImg = document.getElementById('vtl-lightbox-img');
+    var lbCounter = document.getElementById('vtl-lightbox-counter');
+    var lbClose = lightbox ? lightbox.querySelector('.vtl-lightbox-close') : null;
+    var lbPrev = lightbox ? lightbox.querySelector('.vtl-lightbox-prev') : null;
+    var lbNext = lightbox ? lightbox.querySelector('.vtl-lightbox-next') : null;
+    var currentImages = [];
+    var currentIndex = 0;
+
+    function openLightbox(images, index) {
+      currentImages = images;
+      currentIndex = index;
+      updateLightbox();
+      lightbox.classList.add('open');
+      lightbox.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      lightbox.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    function updateLightbox() {
+      if (!currentImages.length) return;
+      lbImg.src = currentImages[currentIndex].src;
+      lbImg.alt = currentImages[currentIndex].alt || '';
+      lbCounter.textContent = (currentIndex + 1) + ' / ' + currentImages.length;
+    }
+
+    function lbNavigate(dir) {
+      currentIndex = (currentIndex + dir + currentImages.length) % currentImages.length;
+      updateLightbox();
+    }
+
+    if (lbClose) lbClose.addEventListener('click', closeLightbox);
+    if (lbPrev) lbPrev.addEventListener('click', function() { lbNavigate(-1); });
+    if (lbNext) lbNext.addEventListener('click', function() { lbNavigate(1); });
+    if (lightbox) lightbox.addEventListener('click', function(e) {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (!lightbox || !lightbox.classList.contains('open')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') lbNavigate(-1);
+      if (e.key === 'ArrowRight') lbNavigate(1);
+    });
+
+    galleries.forEach(function(gallery) {
+      var hero = gallery.querySelector('.product-gallery-hero');
+      var heroImg = hero ? hero.querySelector('img') : null;
+      var thumbsContainer = gallery.querySelector('.product-gallery-thumbs');
+      var thumbs = thumbsContainer ? Array.from(thumbsContainer.querySelectorAll('img')) : [];
+
+      /* Collect all image sources (hero first, then thumbs) */
+      var allImages = [];
+      if (heroImg) allImages.push({ src: heroImg.src, alt: heroImg.alt });
+      thumbs.forEach(function(t) { allImages.push({ src: t.src, alt: t.alt }); });
+
+      /* Add nav arrows to hero */
+      if (allImages.length > 1 && hero) {
+        var nav = document.createElement('div');
+        nav.className = 'product-gallery-nav';
+        nav.innerHTML = '<button aria-label="Previous image">&#8249;</button><button aria-label="Next image">&#8250;</button>';
+        hero.parentNode.style.position = 'relative';
+        hero.parentNode.insertBefore(nav, hero.nextSibling);
+
+        var heroIndex = 0;
+        var navBtns = nav.querySelectorAll('button');
+        navBtns[0].addEventListener('click', function(e) {
+          e.stopPropagation();
+          heroIndex = (heroIndex - 1 + allImages.length) % allImages.length;
+          heroImg.src = allImages[heroIndex].src;
+          heroImg.alt = allImages[heroIndex].alt || '';
+          updateActiveThumb(thumbs, heroIndex);
+        });
+        navBtns[1].addEventListener('click', function(e) {
+          e.stopPropagation();
+          heroIndex = (heroIndex + 1) % allImages.length;
+          heroImg.src = allImages[heroIndex].src;
+          heroImg.alt = allImages[heroIndex].alt || '';
+          updateActiveThumb(thumbs, heroIndex);
+        });
+
+        /* Click hero to open lightbox */
+        hero.addEventListener('click', function() {
+          openLightbox(allImages, heroIndex);
+        });
+
+        /* Thumb clicks swap hero */
+        thumbs.forEach(function(thumb, i) {
+          thumb.addEventListener('click', function() {
+            heroIndex = i + 1; /* +1 because allImages[0] is hero */
+            heroImg.src = allImages[heroIndex].src;
+            heroImg.alt = allImages[heroIndex].alt || '';
+            updateActiveThumb(thumbs, heroIndex);
+          });
+        });
+      } else if (hero) {
+        /* Single image — still open lightbox on click */
+        hero.addEventListener('click', function() {
+          openLightbox(allImages, 0);
+        });
+      }
+    });
+
+    function updateActiveThumb(thumbs, heroIndex) {
+      thumbs.forEach(function(t, i) {
+        /* heroIndex 0 = hero image (no thumb), heroIndex 1+ maps to thumb i */
+        if (i === heroIndex - 1) {
+          t.classList.add('active');
+        } else {
+          t.classList.remove('active');
+        }
+      });
+    }
+  })();
+  </script>
 </body>
 </html>
