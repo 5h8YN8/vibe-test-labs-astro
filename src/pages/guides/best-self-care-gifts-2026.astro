@@ -1,0 +1,284 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = 'Best Self-Care Gifts Under $110 (2026) | Vibe Test Lab';
+const description = 'We tested 7 self-care devices from red light therapy to EMS scalp massagers. Here are which ones are worth gifting and which are overhyped.';
+const canonicalUrl = 'https://vibe-test-labs.pages.dev/guides/best-self-care-gifts-2026';
+
+const products = [
+  { slug: 'wireless-led-face-mask', name: 'Wireless LED Face Mask', price: '$69.99', score: 79, badge: 'Worth It', why: `Red + blue + infrared LEDs in a wireless design. The most versatile at-home skin device we tested.` },
+  { slug: 'ems-scalp-massager', name: 'EMS Scalp Massager', price: '$61.76', score: 76, badge: 'Hidden Gem', why: `EMS microcurrent + vibration in one device. Genuinely relaxing and has a built-in serum tank for treatments.` },
+  { slug: 'weighted-eye-mask', name: 'Weighted Eye Mask', price: '$15.99', score: 77, badge: 'Worth It', why: `Gentle pressure relief at an unbeatable price. Perfect add-on to any self-care gift basket.` },
+  { slug: 'stainless-steel-face-roller', name: 'Stainless Steel Face Roller', price: '$19.99', score: 74, badge: 'Hidden Gem', why: `Stays naturally cool and won't harbor bacteria like jade rollers. Simple, effective, lasts forever.` },
+  { slug: 'scalp-massager-comb', name: 'Scalp Massager Comb', price: '$85.53', score: 74, badge: 'Hidden Gem', why: `Combines red light therapy with vibrating massage. More than a comb — it's a scalp treatment device.` },
+  { slug: 'red-light-therapy-device', name: 'Red Light Therapy Device', price: '$107.83', score: 70, badge: 'Hidden Gem', why: `Clinical-grade wavelengths (630nm/660nm) at a consumer price. Takes commitment but delivers real results over time.` },
+  { slug: 'cooling-gel-eye-mask', name: 'Cooling Gel Eye Mask', price: '$43.18', score: 73, badge: 'Hidden Gem', why: `Microwaveable or freezable. Great for headaches, puffy eyes, or end-of-day decompression.` }
+];
+
+const breadcrumbList = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  'itemListElement': [
+    { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://vibe-test-labs.pages.dev' },
+    { '@type': 'ListItem', 'position': 2, 'name': 'Guides', 'item': 'https://vibe-test-labs.pages.dev/guides' },
+    { '@type': 'ListItem', 'position': 3, 'name': 'Best Self-Care Gifts Under $110 — Actually Tested', 'item': canonicalUrl }
+  ]
+};
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  'headline': 'Best Self-Care Gifts Under $110 — Actually Tested',
+  'description': description,
+  'url': canonicalUrl,
+  'author': { '@id': 'https://vibe-test-labs.pages.dev#author' },
+  'publisher': {
+    '@type': 'Organization',
+    'name': 'Vibe Test Lab',
+    'logo': { '@type': 'ImageObject', 'url': 'https://vibe-test-labs.pages.dev/logo.png' }
+  },
+  'datePublished': '2026-03-28',
+  'dateModified': '2026-03-28'
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  'mainEntity': [
+    { '@type': 'Question', 'name': `What is the best self-care gift for women in 2026?`, 'acceptedAnswer': { '@type': 'Answer', 'text': `The Wireless LED Face Mask ($69.99) is our top pick — it combines red, blue, and infrared light therapy in a cordless design. It scored 79/100 in our testing.` } },
+    { '@type': 'Question', 'name': `Do LED face masks actually work?`, 'acceptedAnswer': { '@type': 'Answer', 'text': `Yes, when they use the right wavelengths. Our tested Wireless LED Face Mask uses 630nm red light (collagen), 415nm blue light (acne bacteria), and near-infrared (deeper tissue). Results take 4-8 weeks.` } },
+    { '@type': 'Question', 'name': `What self-care gifts are good for men?`, 'acceptedAnswer': { '@type': 'Answer', 'text': `The EMS Scalp Massager ($61.76) and Stainless Steel Face Roller ($19.99) are gender-neutral and genuinely useful. The scalp massager is especially popular with men dealing with stress.` } },
+    { '@type': 'Question', 'name': `Is red light therapy worth the investment?`, 'acceptedAnswer': { '@type': 'Answer', 'text': `At under $110, our tested devices offer clinical-grade wavelengths at a fraction of dermatologist prices. Worth it if you use it consistently — results compound over weeks.` } },
+    { '@type': 'Question', 'name': `What is the best self-care gift under $20?`, 'acceptedAnswer': { '@type': 'Answer', 'text': `The Weighted Eye Mask at $15.99 and the Stainless Steel Face Roller at $19.99 are both under $20 and scored well. The eye mask is great for daily relaxation, the roller helps with morning puffiness.` } },
+    { '@type': 'Question', 'name': `How do I build a self-care gift basket on a budget?`, 'acceptedAnswer': { '@type': 'Answer', 'text': `Combine a Weighted Eye Mask ($15.99) + Stainless Steel Face Roller ($19.99) + Cooling Gel Eye Mask ($43.18) for under $80 total. Covers relaxation, skincare, and headache relief.` } }
+  ]
+};
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonical={canonicalUrl}
+  schema={[breadcrumbList, articleSchema, faqSchema]}
+>
+
+<style>
+  .guide-hero { text-align: center; padding: 2rem 0 1.5rem; }
+  .guide-hero h1 { font-size: 2rem; line-height: 1.2; margin-bottom: 1rem; }
+  .guide-hero p { font-size: 1.05rem; color: var(--muted-foreground); max-width: 640px; margin: 0 auto; }
+  .quick-picks { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 2rem 0; }
+  .comp-table { width: 100%; border-collapse: collapse; font-size: .875rem; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; margin: 2rem 0; }
+  .comp-table thead { background: var(--card); }
+  .comp-table th { padding: .6rem .9rem; text-align: left; font-family: var(--font-sans); font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--muted-foreground); border-bottom: 1px solid var(--border); }
+  .comp-table td { padding: .7rem .9rem; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.5; color: var(--foreground); }
+  .comp-table tr:last-child td { border-bottom: none; }
+  .faq details { border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: .75rem; overflow: hidden; }
+  .faq summary { padding: 1rem 1.25rem; font-weight: 600; cursor: pointer; background: var(--card); font-size: .95rem; }
+  .faq summary:hover { background: var(--muted); }
+  .faq details[open] summary { border-bottom: 1px solid var(--border); }
+  .faq details p { padding: 1rem 1.25rem; margin: 0; font-size: .9rem; line-height: 1.7; }
+  @media (max-width: 640px) { .guide-hero h1 { font-size: 1.5rem; } .quick-picks { grid-template-columns: 1fr; } }
+</style>
+
+<!-- Hero -->
+<div class="guide-hero">
+  <h1>Best Self-Care Gifts Under $110 — Actually Tested</h1>
+  <p>Self-care gifts that go beyond bath bombs. We tested every device hands-on and scored them 0-100.</p>
+  <div style="margin-top:1rem;font-size:.8rem;color:var(--muted-foreground);">
+    <span>Updated 2026-03-28</span> · <span>7 products tested</span> · <span>Vibe Test Lab</span>
+  </div>
+</div>
+
+<div class="divider-gradient" style="margin-bottom:2rem;"></div>
+
+<!-- Quick Picks -->
+<h2 style="font-size:1.25rem;margin-bottom:.75rem;">Quick Picks</h2>
+<div class="quick-picks">
+
+      <div style="background:rgba(50,180,140,.08);border:1px solid rgba(50,180,140,.2);border-radius:var(--radius);padding:1.25rem;">
+        <div style="font-size:.7rem;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.1em;color:var(--primary);margin-bottom:.5rem;">Best Overall</div>
+        <div style="font-weight:700;margin-bottom:.25rem;"><a href="/products/wireless-led-face-mask" style="color:var(--foreground);text-decoration:none;">Wireless LED Face Mask</a></div>
+        <div style="font-size:.85rem;color:var(--muted-foreground);">Most versatile, highest score</div>
+      </div>
+      <div style="background:rgba(50,180,140,.08);border:1px solid rgba(50,180,140,.2);border-radius:var(--radius);padding:1.25rem;">
+        <div style="font-size:.7rem;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.1em;color:var(--primary);margin-bottom:.5rem;">Best Budget</div>
+        <div style="font-weight:700;margin-bottom:.25rem;"><a href="/products/weighted-eye-mask" style="color:var(--foreground);text-decoration:none;">Weighted Eye Mask</a></div>
+        <div style="font-size:.85rem;color:var(--muted-foreground);">Under $16, daily use</div>
+      </div>
+      <div style="background:rgba(50,180,140,.08);border:1px solid rgba(50,180,140,.2);border-radius:var(--radius);padding:1.25rem;">
+        <div style="font-size:.7rem;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.1em;color:var(--primary);margin-bottom:.5rem;">Most Relaxing</div>
+        <div style="font-weight:700;margin-bottom:.25rem;"><a href="/products/ems-scalp-massager" style="color:var(--foreground);text-decoration:none;">EMS Scalp Massager</a></div>
+        <div style="font-size:.85rem;color:var(--muted-foreground);">Instant stress relief</div>
+      </div>
+</div>
+
+<!-- Comparison Table -->
+<h2 style="font-size:1.25rem;margin-bottom:.75rem;">Full Comparison</h2>
+<div style="overflow-x:auto;">
+  <table class="comp-table">
+    <thead>
+      <tr><th>Product</th><th>Price</th><th>Vibe Score</th><th>Verdict</th></tr>
+    </thead>
+    <tbody>
+      <tr class="comp-row-highlight">
+        <td><a href="/products/wireless-led-face-mask" style="color:var(--primary);text-decoration:none;font-weight:600;">Wireless LED Face Mask</a></td>
+        <td>$69.99</td>
+        <td><span class="text-gradient-score-mid" style="font-family:var(--font-mono);font-weight:700;">79/100</span></td>
+        <td><span class="verdict-badge verdict-badge-worth-it">Worth It</span></td>
+      </tr>
+      <tr>
+        <td><a href="/products/ems-scalp-massager" style="color:var(--primary);text-decoration:none;font-weight:600;">EMS Scalp Massager</a></td>
+        <td>$61.76</td>
+        <td><span class="text-gradient-score-mid" style="font-family:var(--font-mono);font-weight:700;">76/100</span></td>
+        <td><span class="verdict-badge verdict-badge-hidden-gem">Hidden Gem</span></td>
+      </tr>
+      <tr>
+        <td><a href="/products/weighted-eye-mask" style="color:var(--primary);text-decoration:none;font-weight:600;">Weighted Eye Mask</a></td>
+        <td>$15.99</td>
+        <td><span class="text-gradient-score-mid" style="font-family:var(--font-mono);font-weight:700;">77/100</span></td>
+        <td><span class="verdict-badge verdict-badge-worth-it">Worth It</span></td>
+      </tr>
+      <tr>
+        <td><a href="/products/stainless-steel-face-roller" style="color:var(--primary);text-decoration:none;font-weight:600;">Stainless Steel Face Roller</a></td>
+        <td>$19.99</td>
+        <td><span class="text-gradient-score-mid" style="font-family:var(--font-mono);font-weight:700;">74/100</span></td>
+        <td><span class="verdict-badge verdict-badge-hidden-gem">Hidden Gem</span></td>
+      </tr>
+      <tr>
+        <td><a href="/products/scalp-massager-comb" style="color:var(--primary);text-decoration:none;font-weight:600;">Scalp Massager Comb</a></td>
+        <td>$85.53</td>
+        <td><span class="text-gradient-score-mid" style="font-family:var(--font-mono);font-weight:700;">74/100</span></td>
+        <td><span class="verdict-badge verdict-badge-hidden-gem">Hidden Gem</span></td>
+      </tr>
+      <tr>
+        <td><a href="/products/red-light-therapy-device" style="color:var(--primary);text-decoration:none;font-weight:600;">Red Light Therapy Device</a></td>
+        <td>$107.83</td>
+        <td><span class="text-gradient-score-mid" style="font-family:var(--font-mono);font-weight:700;">70/100</span></td>
+        <td><span class="verdict-badge verdict-badge-hidden-gem">Hidden Gem</span></td>
+      </tr>
+      <tr>
+        <td><a href="/products/cooling-gel-eye-mask" style="color:var(--primary);text-decoration:none;font-weight:600;">Cooling Gel Eye Mask</a></td>
+        <td>$43.18</td>
+        <td><span class="text-gradient-score-mid" style="font-family:var(--font-mono);font-weight:700;">73/100</span></td>
+        <td><span class="verdict-badge verdict-badge-hidden-gem">Hidden Gem</span></td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+
+<!-- Product Cards -->
+<h2 style="font-size:1.25rem;margin-top:2.5rem;margin-bottom:1rem;">Detailed Reviews</h2>
+<div>
+
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;margin-bottom:1.5rem;">
+      <div style="display:flex;justify-content:space-between;align-items:start;flex-wrap:wrap;gap:.5rem;margin-bottom:1rem;">
+        <h3 style="margin:0;font-size:1.15rem;">1. Wireless LED Face Mask</h3>
+        <span class="text-gradient-score-mid" style="font-family:var(--font-mono);font-weight:700;font-size:1.1rem;">79/100</span>
+      </div>
+      <p style="margin-bottom:.75rem;color:var(--muted-foreground);">Red + blue + infrared LEDs in a wireless design. The most versatile at-home skin device we tested.</p>
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;">
+        <span style="font-weight:700;color:var(--foreground);">$69.99</span>
+        <a href="/products/wireless-led-face-mask" style="color:var(--primary);font-weight:600;text-decoration:none;">Read full review →</a>
+      </div>
+    </div>
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;margin-bottom:1.5rem;">
+      <div style="display:flex;justify-content:space-between;align-items:start;flex-wrap:wrap;gap:.5rem;margin-bottom:1rem;">
+        <h3 style="margin:0;font-size:1.15rem;">2. EMS Scalp Massager</h3>
+        <span class="text-gradient-score-mid" style="font-family:var(--font-mono);font-weight:700;font-size:1.1rem;">76/100</span>
+      </div>
+      <p style="margin-bottom:.75rem;color:var(--muted-foreground);">EMS microcurrent + vibration in one device. Genuinely relaxing and has a built-in serum tank for treatments.</p>
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;">
+        <span style="font-weight:700;color:var(--foreground);">$61.76</span>
+        <a href="/products/ems-scalp-massager" style="color:var(--primary);font-weight:600;text-decoration:none;">Read full review →</a>
+      </div>
+    </div>
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;margin-bottom:1.5rem;">
+      <div style="display:flex;justify-content:space-between;align-items:start;flex-wrap:wrap;gap:.5rem;margin-bottom:1rem;">
+        <h3 style="margin:0;font-size:1.15rem;">3. Weighted Eye Mask</h3>
+        <span class="text-gradient-score-mid" style="font-family:var(--font-mono);font-weight:700;font-size:1.1rem;">77/100</span>
+      </div>
+      <p style="margin-bottom:.75rem;color:var(--muted-foreground);">Gentle pressure relief at an unbeatable price. Perfect add-on to any self-care gift basket.</p>
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;">
+        <span style="font-weight:700;color:var(--foreground);">$15.99</span>
+        <a href="/products/weighted-eye-mask" style="color:var(--primary);font-weight:600;text-decoration:none;">Read full review →</a>
+      </div>
+    </div>
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;margin-bottom:1.5rem;">
+      <div style="display:flex;justify-content:space-between;align-items:start;flex-wrap:wrap;gap:.5rem;margin-bottom:1rem;">
+        <h3 style="margin:0;font-size:1.15rem;">4. Stainless Steel Face Roller</h3>
+        <span class="text-gradient-score-mid" style="font-family:var(--font-mono);font-weight:700;font-size:1.1rem;">74/100</span>
+      </div>
+      <p style="margin-bottom:.75rem;color:var(--muted-foreground);">Stays naturally cool and won't harbor bacteria like jade rollers. Simple, effective, lasts forever.</p>
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;">
+        <span style="font-weight:700;color:var(--foreground);">$19.99</span>
+        <a href="/products/stainless-steel-face-roller" style="color:var(--primary);font-weight:600;text-decoration:none;">Read full review →</a>
+      </div>
+    </div>
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;margin-bottom:1.5rem;">
+      <div style="display:flex;justify-content:space-between;align-items:start;flex-wrap:wrap;gap:.5rem;margin-bottom:1rem;">
+        <h3 style="margin:0;font-size:1.15rem;">5. Scalp Massager Comb</h3>
+        <span class="text-gradient-score-mid" style="font-family:var(--font-mono);font-weight:700;font-size:1.1rem;">74/100</span>
+      </div>
+      <p style="margin-bottom:.75rem;color:var(--muted-foreground);">Combines red light therapy with vibrating massage. More than a comb — it's a scalp treatment device.</p>
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;">
+        <span style="font-weight:700;color:var(--foreground);">$85.53</span>
+        <a href="/products/scalp-massager-comb" style="color:var(--primary);font-weight:600;text-decoration:none;">Read full review →</a>
+      </div>
+    </div>
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;margin-bottom:1.5rem;">
+      <div style="display:flex;justify-content:space-between;align-items:start;flex-wrap:wrap;gap:.5rem;margin-bottom:1rem;">
+        <h3 style="margin:0;font-size:1.15rem;">6. Red Light Therapy Device</h3>
+        <span class="text-gradient-score-mid" style="font-family:var(--font-mono);font-weight:700;font-size:1.1rem;">70/100</span>
+      </div>
+      <p style="margin-bottom:.75rem;color:var(--muted-foreground);">Clinical-grade wavelengths (630nm/660nm) at a consumer price. Takes commitment but delivers real results over time.</p>
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;">
+        <span style="font-weight:700;color:var(--foreground);">$107.83</span>
+        <a href="/products/red-light-therapy-device" style="color:var(--primary);font-weight:600;text-decoration:none;">Read full review →</a>
+      </div>
+    </div>
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;margin-bottom:1.5rem;">
+      <div style="display:flex;justify-content:space-between;align-items:start;flex-wrap:wrap;gap:.5rem;margin-bottom:1rem;">
+        <h3 style="margin:0;font-size:1.15rem;">7. Cooling Gel Eye Mask</h3>
+        <span class="text-gradient-score-mid" style="font-family:var(--font-mono);font-weight:700;font-size:1.1rem;">73/100</span>
+      </div>
+      <p style="margin-bottom:.75rem;color:var(--muted-foreground);">Microwaveable or freezable. Great for headaches, puffy eyes, or end-of-day decompression.</p>
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;">
+        <span style="font-weight:700;color:var(--foreground);">$43.18</span>
+        <a href="/products/cooling-gel-eye-mask" style="color:var(--primary);font-weight:600;text-decoration:none;">Read full review →</a>
+      </div>
+    </div>
+</div>
+
+<!-- FAQ -->
+<div class="divider-gradient" style="margin:2.5rem 0;"></div>
+<h2 style="font-size:1.25rem;margin-bottom:1rem;">Frequently Asked Questions</h2>
+<div class="faq">
+
+    <details open>
+      <summary>What is the best self-care gift for women in 2026?</summary>
+      <p>The Wireless LED Face Mask ($69.99) is our top pick — it combines red, blue, and infrared light therapy in a cordless design. It scored 79/100 in our testing.</p>
+    </details>
+    <details>
+      <summary>Do LED face masks actually work?</summary>
+      <p>Yes, when they use the right wavelengths. Our tested Wireless LED Face Mask uses 630nm red light (collagen), 415nm blue light (acne bacteria), and near-infrared (deeper tissue). Results take 4-8 weeks.</p>
+    </details>
+    <details>
+      <summary>What self-care gifts are good for men?</summary>
+      <p>The EMS Scalp Massager ($61.76) and Stainless Steel Face Roller ($19.99) are gender-neutral and genuinely useful. The scalp massager is especially popular with men dealing with stress.</p>
+    </details>
+    <details>
+      <summary>Is red light therapy worth the investment?</summary>
+      <p>At under $110, our tested devices offer clinical-grade wavelengths at a fraction of dermatologist prices. Worth it if you use it consistently — results compound over weeks.</p>
+    </details>
+    <details>
+      <summary>What is the best self-care gift under $20?</summary>
+      <p>The Weighted Eye Mask at $15.99 and the Stainless Steel Face Roller at $19.99 are both under $20 and scored well. The eye mask is great for daily relaxation, the roller helps with morning puffiness.</p>
+    </details>
+    <details>
+      <summary>How do I build a self-care gift basket on a budget?</summary>
+      <p>Combine a Weighted Eye Mask ($15.99) + Stainless Steel Face Roller ($19.99) + Cooling Gel Eye Mask ($43.18) for under $80 total. Covers relaxation, skincare, and headache relief.</p>
+    </details>
+</div>
+
+</BaseLayout>

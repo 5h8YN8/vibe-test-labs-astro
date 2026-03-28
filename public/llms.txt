@@ -67,10 +67,12 @@ https://vibe-test-labs.pages.dev/methodology
 - /category/yard-tools — Outdoor and yard tools
 - /category/gifts-cozy — Gifts and comfort items
 
-## Buyer Guides (Comparison Pages)
-- /guides/best-sleep-products-2026 — Best Sleep Products of 2026: 14 products tested & compared
-- /guides/best-room-lighting-2026 — Best Room Vibes Lighting of 2026: 5 products tested & compared
-- /guides/best-self-care-devices-2026 — Best Self Care Devices of 2026: 3 devices tested & compared
+## Buyer Guides (TOFU/MOFU Content)
+- /guides/best-birthday-gifts-2026 — Best Birthday Gifts of 2026: 8 products tested & ranked
+- /guides/best-self-care-gifts-2026 — Best Self-Care Gifts Under $110: 7 devices tested & ranked
+- /guides/best-sleep-products-2026 — Best Products for Better Sleep in 2026: 10 products tested & ranked
+- /guides/best-dorm-room-essentials-2026 — Best Dorm Room Essentials 2026: 7 products tested & ranked
+- /guides/best-stress-relief-products-2026 — Best Stress Relief Products That Actually Work: 6 products tested & ranked
 
 ## Site Structure
 - / — Homepage with trending products and latest reviews
