@@ -1011,6 +1011,85 @@ export const products: Product[] = [
       { question: "How does this compare to clinical red light panels?", answer: "Clinical panels ($300-800+) have higher irradiance and larger coverage areas. This device is portable and targeted — better for spot treatment, not full-body coverage." }
     ],
     viralReason: "Red light therapy went mainstream as the 'anti-aging biohack' on TikTok — this device lets people try it without the dermatologist price tag."
+  },
+  {
+    id: "p27",
+    slug: "baby-fox-teether",
+    name: "Douglas Baby Fox Teether Plush Stuffed Animal Toy",
+    brand: "Douglas",
+    category: "Gifts & Cozy",
+    vibeScore: 77,
+    verdict: "A premium baby teether-plush combo that justifies its price through Douglas brand quality, 100% silicone safety, and genuinely adorable woodland design.",
+    verdictBadge: "Hidden Gem",
+    price: "$87.86",
+    priceRange: "$87.86",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/658c81fc4e238c99cb52c5c1a142.jpg?v=1774566813",
+    images: [
+      "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/74fae0e24bbaaab23e737c3dcae4.jpg?v=1774566823"
+    ],
+    trending: true,
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/douglas-baby-fox-teether-plush-stuffed-animal-toy?utm_source=aeo&utm_medium=content&utm_campaign=baby-fox-teether",
+    questionHeadline: "Are Premium Baby Teether Toys Worth the Splurge?",
+    answerSnippet: "Yes — if safety and quality matter to you. The Douglas Fox Teether uses 100% silicone (BPA-free), baby-safe embroidery with no loose parts, and premium plush materials. At $88, it's a splurge vs. $8-15 generic teethers, but the dual comfort + teething function and Douglas brand quality justify it.",
+    problemSection: "Finding a teether that's both safe and comforting — most are plastic-only or plush-only",
+    solutionSection: "Douglas combines a cuddly plush companion with a 100% silicone teether ring in one product",
+    howToUse: ["Inspect the teether for any packaging residue and wash silicone ring with warm soapy water", "Let baby explore the plush textures and silicone ring naturally", "Chill the silicone ring in the fridge (not freezer) for extra soothing on sore gums", "Spot-clean the plush; hand wash silicone ring regularly"],
+    testResults: [
+      { category: "Safety & Materials", score: 85, summary: "100% silicone teether, baby-safe embroidery, no detachable small parts — top marks" },
+      { category: "Design Appeal", score: 78, summary: "Charming woodland fox design appeals to both babies and parents — gift-worthy" },
+      { category: "Functionality", score: 72, summary: "Dual-purpose comfort + teething relief; lightweight enough for baby grip" },
+      { category: "Value", score: 68, summary: "$88 is premium, but Douglas brand quality and safety features justify the investment" }
+    ],
+    pros: ["100% silicone teether ring — BPA-free, safe", "Baby-safe embroidery — no loose parts", "Dual comfort + teething function", "Douglas brand quality and reputation", "Charming woodland fox design", "Part of Shy Little Fox collection"],
+    cons: ["$88 is expensive for a teether-plush", "Only one design/color option", "Not machine washable", "Silicone ring is small — some babies prefer larger surfaces", "Premium price vs. generic alternatives"],
+    finalVerdictSummary: "Worth the splurge for safety-conscious parents and gift-givers. The Douglas brand reputation, 100% silicone, and adorable design make it a standout.",
+    faq: [
+      { question: "Is the teether ring safe for newborns?", answer: "The silicone ring is safe from birth, but the plush should only be used under supervision for babies under 12 months due to standard suffocation risk." },
+      { question: "Can I refrigerate the teether?", answer: "Yes — chilling the silicone ring in the fridge provides extra soothing relief. Do not freeze it." },
+      { question: "How does Douglas compare to Sophie la Girafe?", answer: "Douglas focuses on plush + teether combos with premium materials. Sophie la Girafe ($25) is a standalone rubber teether. Different products for different needs." }
+    ],
+    viralReason: "Premium baby teethers went viral on parent TikTok as the 'worth the splurge' baby registry item — safety + cuteness in one."
+  },
+  {
+    id: "p28",
+    slug: "ems-scalp-massager",
+    name: "Electric Scalp Treatment Massager with Red Light Therapy",
+    brand: "Generic",
+    category: "Self Care",
+    vibeScore: 76,
+    verdict: "The value pick for scalp therapy — EMS micro-current, red light, 10K vibrations/min, IPX5 waterproof, and Type-C fast charging for $24 less than the competition.",
+    verdictBadge: "Hidden Gem",
+    price: "$61.76",
+    priceRange: "$61.76",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/b541cf704fe2975800c81f52f080.jpg?v=1774566791",
+    images: [
+      "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/a419d2c347d29929171d01fe6e65.jpg?v=1774566801",
+      "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/7008ecdb4afb9d0bc13214c13e2f.jpg?v=1774566812"
+    ],
+    trending: true,
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/electric-scalp-treatment-massager-with-red-light-therapy?utm_source=aeo&utm_medium=content&utm_campaign=ems-scalp-massager",
+    questionHeadline: "Is an EMS Scalp Massager Worth It for Hair Health?",
+    answerSnippet: "Yes — the EMS micro-current + 10,000 vibrations/min combination genuinely stimulates blood circulation and feels therapeutic. At $62, it's the value pick over the $86 Scalp Massager Comb, adding IPX5 waterproofing and faster charging.",
+    problemSection: "Scalp tension, poor blood circulation, and wanting to support hair health without clinic visits",
+    solutionSection: "EMS micro-current + high-frequency vibration stimulate blood flow while the 6ml serum tank enhances product absorption",
+    howToUse: ["Charge via Type-C (1 hour full charge)", "Optional: fill 6ml tank with scalp serum", "Select mode: Developmental (red light + vibration + EMS), Massage (vibration + EMS), or Rejuvenating (red light + EMS)", "Glide through hair 10-15 minutes, focusing on tension areas; rinse after use (IPX5 waterproof)"],
+    testResults: [
+      { category: "Massage Quality", score: 80, summary: "10,000 vibrations/min + EMS micro-current delivers genuinely therapeutic scalp stimulation" },
+      { category: "Feature Set", score: 78, summary: "3 modes, liquid tank, IPX5 waterproof, Type-C fast charge — packed for the price" },
+      { category: "Build Quality", score: 72, summary: "82g lightweight, detachable head for cleaning, solid construction" },
+      { category: "Value", score: 75, summary: "$62 for EMS + red light + vibration + serum tank is excellent — $24 less than the competition" }
+    ],
+    pros: ["EMS micro-current for deeper stimulation", "10,000 vibrations/min", "IPX5 waterproof — easy to clean", "Type-C fast charging (1 hour)", "6ml liquid tank for serums", "Only 82g — ultralight", "$24 cheaper than Scalp Massager Comb"],
+    cons: ["Red light therapy unproven at consumer level", "Only one color option (White)", "Not a medical hair loss treatment", "6ml tank is small — needs frequent refilling", "EMS micro-current can feel strange at first"],
+    finalVerdictSummary: "The best value scalp massager we've tested. Saves $24 vs. the Scalp Massager Comb while adding EMS and waterproofing. Buy this if you want the most features per dollar.",
+    faq: [
+      { question: "What does EMS micro-current feel like?", answer: "A gentle tingling or pulsing sensation on your scalp. It's unusual at first but most people find it pleasant after 2-3 uses." },
+      { question: "Is it waterproof enough to use in the shower?", answer: "IPX5 means it handles water jets — safe for rinsing under the tap and light shower use. Don't submerge it." },
+      { question: "How does this compare to the Scalp Massager Comb ($86)?", answer: "This device is $24 cheaper, adds EMS micro-current, has IPX5 waterproofing, and charges faster (1hr vs 2hr). The Comb has a larger 1200mAh battery and comes in 3 colors. Performance is comparable." }
+    ],
+    viralReason: "EMS scalp massagers went viral as the 'budget biohacker' tool on TikTok — visible scalp stimulation at a fraction of clinical treatment costs."
   }
 ];
 
