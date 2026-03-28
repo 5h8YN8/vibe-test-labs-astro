@@ -507,6 +507,10 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
     }
     .product-gallery:hover .product-gallery-nav button { opacity: 1; }
     .product-gallery-nav button:hover { background: rgba(0,0,0,.7); }
+    /* Touch devices: always show nav arrows */
+    @media (hover: none) {
+      .product-gallery-nav button { opacity: 0.85; }
+    }
     /* Thumbnail counter badge (shows when >6 thumbs) */
     .product-gallery-more {
       display: flex; align-items: center; justify-content: center;
@@ -783,9 +787,33 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
           updateActiveThumb(thumbs, heroIndex);
         });
 
-        /* Click hero to open lightbox */
+        /* Touch swipe on collapsed hero */
+        var swipeStartX = 0;
+        var swipeStartY = 0;
+        var swipeMoved = false;
+        hero.addEventListener('touchstart', function(e) {
+          swipeStartX = e.changedTouches[0].clientX;
+          swipeStartY = e.changedTouches[0].clientY;
+          swipeMoved = false;
+        }, { passive: true });
+        hero.addEventListener('touchmove', function(e) {
+          swipeMoved = true;
+        }, { passive: true });
+        hero.addEventListener('touchend', function(e) {
+          var dx = e.changedTouches[0].clientX - swipeStartX;
+          var dy = e.changedTouches[0].clientY - swipeStartY;
+          if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) {
+            e.preventDefault();
+            heroIndex = (heroIndex + (dx < 0 ? 1 : -1) + allImages.length) % allImages.length;
+            heroImg.src = allImages[heroIndex].src;
+            heroImg.alt = allImages[heroIndex].alt || '';
+            updateActiveThumb(thumbs, heroIndex);
+          }
+        });
+
+        /* Click hero to open lightbox (only when not swiping) */
         hero.addEventListener('click', function() {
-          openLightbox(allImages, heroIndex);
+          if (!swipeMoved) openLightbox(allImages, heroIndex);
         });
 
         /* Thumb clicks swap hero */
