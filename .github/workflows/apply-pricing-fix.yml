@@ -1,0 +1,74 @@
+name: Apply Pricing Fix
+
+on:
+  workflow_dispatch:
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Apply fix
+        run: |
+          python3 << 'PY'
+          import os
+          def fix(c):
+            tops = ['<!-- Buy Now (top CTA) -->', '<!-- Buy Button 1 -->']
+            tp = len(c)
+            for t in tops:
+              i = c.find(t)
+              if i != -1 and i < tp: tp = i
+            if tp == len(c): return c, 0
+            cm = '<!-- Price + Urgency + Trust -->'
+            m = c
+            ps = []
+            s = 0
+            while True:
+              i = m.find(cm, s)
+              if i == -1 or i >= tp: break
+              ps.append(i)
+              s = i + len(cm)
+            for i in reversed(ps):
+              d = m.find('<div class="price-urgency-block">', i)
+              if d == -1: continue
+              pos = d + 33
+              depth = 1
+              while pos < len(m) and depth > 0:
+                no = m.find('<div', pos)
+                nc = m.find('</div>', pos)
+                if nc == -1: break
+                if no != -1 and no < nc:
+                  depth += 1
+                  pos = no + 4
+                else:
+                  depth -= 1
+                  pos = nc + 6
+              e = pos
+              if e < len(m) and m[e] == '\n': e += 1
+              rs = i
+              if rs > 0 and m[rs-1] == '\n': rs -= 1
+              m = m[:rs] + m[e:]
+            return m, len(ps)
+          ch = 0
+          for r, ds, fs in os.walk('src/pages/products'):
+            for fn in fs:
+              if not fn.endswith('.astro') or fn.endswith('.backup'): continue
+              fp = os.path.join(r, fn)
+              with open(fp) as f: c = f.read()
+              nc, rm = fix(c)
+              if rm > 0:
+                with open(fp, 'w') as f: f.write(nc)
+                print(f'Fixed {fp}')
+                ch += 1
+          print(f'{ch} files changed')
+          PY
+      - name: Commit
+        run: |
+          git config user.email "bot@github.com"
+          git config user.name "github-actions[bot]"
+          git add src/pages/products/
+          git diff --staged --quiet || (git commit -m "Remove pricing/urgency from top CTA" && git push origin main)
