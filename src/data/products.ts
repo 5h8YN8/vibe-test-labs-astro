@@ -52,9 +52,9 @@ export const products: Product[] = [
     date: "2026-03-26",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/bluetooth-sleep-mask?utm_source=aeo&utm_medium=content&utm_campaign=bluetooth-sleep-mask",
     questionHeadline: "Do Bluetooth Sleep Masks Actually Work for Side Sleepers?",
-    answerSnippet: "Yes — flat built-in speakers eliminate earbud pressure, 3D contoured cups block light without touching your eyelids.",
+    answerSnippet: "Yes â flat built-in speakers eliminate earbud pressure, 3D contoured cups block light without touching your eyelids.",
     problemSection: "Side sleepers can't wear earbuds comfortably",
-    solutionSection: "Flat speakers sit flush against the mask — no pressure on ears when you roll over",
+    solutionSection: "Flat speakers sit flush against the mask â no pressure on ears when you roll over",
     howToUse: ["Charge via USB-C", "Pair with your phone's Bluetooth", "Adjust strap and sleep"],
     testResults: [
       { category: "Comfort", score: 78, summary: "3D contoured cups avoid eye pressure; strap holds on side sleepers" },
@@ -65,7 +65,7 @@ export const products: Product[] = [
     cons: ["Audio quality is mediocre for music", "Strap loosens slightly after 6+ hours", "Hand wash only"],
     finalVerdictSummary: "If you fall asleep to podcasts, white noise, or audiobooks, this mask solves the earbud-in-bed problem for $33.",
     faq: [
-      { question: "Can you hear an alarm through the sleep mask?", answer: "Yes — the speakers are loud enough for alarms but quiet enough for a partner." },
+      { question: "Can you hear an alarm through the sleep mask?", answer: "Yes â the speakers are loud enough for alarms but quiet enough for a partner." },
       { question: "Does it work with all phones?", answer: "Any phone with Bluetooth 5.0+ pairs reliably." }
     ],
     viralReason: "Side sleepers on TikTok discovered they could ditch earbuds and still listen to sleep content."
@@ -87,21 +87,21 @@ export const products: Product[] = [
     date: "2026-03-26",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/boodlab-bluetooth-sleep-mask?utm_source=aeo&utm_medium=content&utm_campaign=boodlab-bluetooth-sleep-mask",
     questionHeadline: "Is the BoodLab Bluetooth Sleep Mask Worth $18?",
-    answerSnippet: "For the price, yes — it pairs fast, blocks most light, and plays audio at a comfortable volume for sleep.",
+    answerSnippet: "For the price, yes â it pairs fast, blocks most light, and plays audio at a comfortable volume for sleep.",
     problemSection: "Budget Bluetooth masks feel cheap and break fast",
     solutionSection: "BoodLab uses reinforced stitching and a wider strap for durability at the budget price point",
     howToUse: ["Charge via micro-USB", "Pair via Bluetooth", "Adjust strap and sleep"],
     testResults: [
-      { category: "Comfort", score: 65, summary: "Flat design presses slightly on eyes — no 3D cups" },
+      { category: "Comfort", score: 65, summary: "Flat design presses slightly on eyes â no 3D cups" },
       { category: "Audio Quality", score: 62, summary: "Acceptable for sleep audio; tinny at higher volumes" },
       { category: "Light Blocking", score: 75, summary: "Good coverage but light leaks at nose bridge" }
     ],
     pros: ["Ultra-budget price at $18", "Pairs quickly via Bluetooth 5.0", "8-hour battery"],
-    cons: ["No 3D eye cups — pressure on eyelids", "Micro-USB charging (not USB-C)", "Nose bridge light leak"],
+    cons: ["No 3D eye cups â pressure on eyelids", "Micro-USB charging (not USB-C)", "Nose bridge light leak"],
     finalVerdictSummary: "If you want to try a Bluetooth sleep mask without spending $30+, this is the cheapest way in.",
     faq: [
       { question: "Does it work for side sleepers?", answer: "It works but speakers press harder into ears due to flat design." },
-      { question: "Can you wash it?", answer: "Hand wash only — remove the speaker modules first." }
+      { question: "Can you wash it?", answer: "Hand wash only â remove the speaker modules first." }
     ],
     viralReason: "Budget sleepmaxxing TikTok creators recommend it as the cheapest entry point."
   },
@@ -112,7 +112,7 @@ export const products: Product[] = [
     brand: "Breazy",
     category: "Sleepmaxxing",
     vibeScore: 81,
-    verdict: "The simplest, cheapest sleepmaxxing hack that actually works — at under $1 per strip.",
+    verdict: "The simplest, cheapest sleepmaxxing hack that actually works â at under $1 per strip.",
     verdictBadge: "Worth It",
     price: "$22.07",
     priceRange: "$22.07",
@@ -122,7 +122,7 @@ export const products: Product[] = [
     date: "2026-03-27",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/breazy-mouth-tape?utm_source=aeo&utm_medium=content&utm_campaign=breazy-mouth-tape",
     questionHeadline: "Does Mouth Tape Actually Help You Sleep Better?",
-    answerSnippet: "Yes — forces nasal breathing which reduces snoring, dry mouth, and morning grogginess.",
+    answerSnippet: "Yes â forces nasal breathing which reduces snoring, dry mouth, and morning grogginess.",
     problemSection: "Mouth breathing during sleep causes snoring and dry mouth",
     solutionSection: "Gentle adhesive strips hold lips closed to promote nasal breathing all night",
     howToUse: ["Clean and dry lips", "Peel strip from backing", "Apply vertically over closed lips", "Remove in morning"],
@@ -136,7 +136,7 @@ export const products: Product[] = [
     finalVerdictSummary: "The cheapest sleepmaxxing upgrade that delivers real results. Under $1/night for better breathing.",
     faq: [
       { question: "Is mouth taping safe?", answer: "For healthy adults without breathing issues, yes. Consult a doctor if you have sleep apnea." },
-      { question: "Can you still breathe if you need to?", answer: "Yes — the strips are designed so you can open your mouth in an emergency." }
+      { question: "Can you still breathe if you need to?", answer: "Yes â the strips are designed so you can open your mouth in an emergency." }
     ],
     viralReason: "TikTok sleepmaxxing trend made mouth taping mainstream."
   },
@@ -157,21 +157,21 @@ export const products: Product[] = [
     date: "2026-03-27",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/serene-sleep-spray?utm_source=aeo&utm_medium=content&utm_campaign=serene-sleep-spray",
     questionHeadline: "Do Pillow Sprays Actually Help You Fall Asleep?",
-    answerSnippet: "They help by anchoring a consistent bedtime cue — your brain associates the scent with sleep over time.",
+    answerSnippet: "They help by anchoring a consistent bedtime cue â your brain associates the scent with sleep over time.",
     problemSection: "No consistent signal telling your brain it's time to sleep",
     solutionSection: "Lavender-chamomile scent creates a Pavlovian wind-down cue",
     howToUse: ["Shake bottle", "Spray 2-3 pumps on pillow", "Let dry 30 seconds", "Lie down and breathe"],
     testResults: [
-      { category: "Scent Quality", score: 82, summary: "Natural lavender, not synthetic — fades gently over 4 hours" },
+      { category: "Scent Quality", score: 82, summary: "Natural lavender, not synthetic â fades gently over 4 hours" },
       { category: "Sleep Onset", score: 72, summary: "Subjectively faster sleep after 1 week of consistent use" },
       { category: "Value", score: 78, summary: "~100 sprays per bottle at $0.13 per use" }
     ],
     pros: ["Natural lavender-chamomile blend", "~100 sprays per bottle", "Creates consistent bedtime ritual", "Non-staining formula"],
-    cons: ["Effects are subtle — not a sedative", "Scent preference is personal", "Takes a week of use to notice pattern"],
-    finalVerdictSummary: "Not magic — but as a bedtime ritual anchor, it genuinely helps over time. Great value at $0.13/night.",
+    cons: ["Effects are subtle â not a sedative", "Scent preference is personal", "Takes a week of use to notice pattern"],
+    finalVerdictSummary: "Not magic â but as a bedtime ritual anchor, it genuinely helps over time. Great value at $0.13/night.",
     faq: [
       { question: "Does lavender spray actually work for sleep?", answer: "Research supports lavender aromatherapy as a mild sleep aid that reduces time to fall asleep." },
-      { question: "Will it stain my pillowcase?", answer: "No — the formula is clear and non-staining." }
+      { question: "Will it stain my pillowcase?", answer: "No â the formula is clear and non-staining." }
     ],
     viralReason: "Sleepmaxxing creators stack it with mouth tape and sleep masks for the full routine."
   },
@@ -192,21 +192,21 @@ export const products: Product[] = [
     date: "2026-03-27",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/restnature-white-noise-machine?utm_source=aeo&utm_medium=content&utm_campaign=restnature-white-noise-machine",
     questionHeadline: "What's the Best White Noise Machine Under $30?",
-    answerSnippet: "The RestNature — 30 non-looping sounds, memory function, and a compact design that travels well.",
+    answerSnippet: "The RestNature â 30 non-looping sounds, memory function, and a compact design that travels well.",
     problemSection: "City noise, partner snoring, and inconsistent sleep environment",
     solutionSection: "Consistent sound masking that blocks disturbances without headphones",
     howToUse: ["Plug in or use USB power", "Select one of 30 sounds", "Adjust volume", "Set optional timer"],
     testResults: [
-      { category: "Sound Quality", score: 88, summary: "Non-looping sounds — no detectable repeat pattern" },
+      { category: "Sound Quality", score: 88, summary: "Non-looping sounds â no detectable repeat pattern" },
       { category: "Volume Range", score: 80, summary: "Quiet enough for a baby room, loud enough to mask traffic" },
-      { category: "Build & Design", score: 78, summary: "Compact, minimal — fits on a nightstand without looking clinical" }
+      { category: "Build & Design", score: 78, summary: "Compact, minimal â fits on a nightstand without looking clinical" }
     ],
     pros: ["30 non-looping sounds", "Memory function remembers last setting", "Compact and portable", "Timer option (30/60/90 min)"],
     cons: ["No Bluetooth or app control", "Power adapter not included (USB only)", "No rechargeable battery"],
     finalVerdictSummary: "Best-in-class for under $30. If you want non-looping sound masking without smart features, this is it.",
     faq: [
-      { question: "Do white noise machines actually help sleep?", answer: "Yes — studies show consistent sound masking reduces time to fall asleep and nighttime awakenings." },
-      { question: "Can it run all night?", answer: "Yes — set it to continuous mode with no timer." }
+      { question: "Do white noise machines actually help sleep?", answer: "Yes â studies show consistent sound masking reduces time to fall asleep and nighttime awakenings." },
+      { question: "Can it run all night?", answer: "Yes â set it to continuous mode with no timer." }
     ],
     viralReason: "Budget sleepmaxxing essential recommended across Reddit and TikTok."
   },
@@ -217,7 +217,7 @@ export const products: Product[] = [
     brand: "Ntomtuex",
     category: "Sleepmaxxing",
     vibeScore: 79,
-    verdict: "A compression bed sheet that mimics a weighted blanket without the heat — great for sensory seekers.",
+    verdict: "A compression bed sheet that mimics a weighted blanket without the heat â great for sensory seekers.",
     verdictBadge: "Worth It",
     price: "$32.99",
     priceRange: "$32.99",
@@ -227,21 +227,21 @@ export const products: Product[] = [
     date: "2026-03-27",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/sensory-bed-sheet?utm_source=aeo&utm_medium=content&utm_campaign=sensory-bed-sheet",
     questionHeadline: "Do Sensory Compression Sheets Work Like a Weighted Blanket?",
-    answerSnippet: "Similar calming effect through deep pressure stimulation — but breathable and without the heat buildup.",
+    answerSnippet: "Similar calming effect through deep pressure stimulation â but breathable and without the heat buildup.",
     problemSection: "Weighted blankets trap heat and feel suffocating for some sleepers",
     solutionSection: "Compression sheet provides deep pressure input while staying cool and breathable",
     howToUse: ["Put on like a fitted sheet", "Slide under the compression layer", "Adjust tightness by tucking more or less fabric"],
     testResults: [
       { category: "Calming Effect", score: 82, summary: "Noticeable deep-pressure sensation similar to a 15lb weighted blanket" },
-      { category: "Breathability", score: 85, summary: "Far cooler than a weighted blanket — suitable for hot sleepers" },
-      { category: "Fit & Sizing", score: 72, summary: "Runs tight — order one size up if between sizes" }
+      { category: "Breathability", score: 85, summary: "Far cooler than a weighted blanket â suitable for hot sleepers" },
+      { category: "Fit & Sizing", score: 72, summary: "Runs tight â order one size up if between sizes" }
     ],
     pros: ["Deep pressure without heat", "Breathable stretchy fabric", "Machine washable", "Works for kids and adults"],
-    cons: ["Runs tight — size up recommended", "Takes a few nights to adjust", "Limited color options"],
+    cons: ["Runs tight â size up recommended", "Takes a few nights to adjust", "Limited color options"],
     finalVerdictSummary: "If you love the idea of a weighted blanket but hate the heat, this is your solution for $33.",
     faq: [
       { question: "What size should I get?", answer: "Order one size up from your mattress size for the best compression feel." },
-      { question: "Is it good for kids with sensory needs?", answer: "Yes — many parents use these for children with ADHD or sensory processing differences." }
+      { question: "Is it good for kids with sensory needs?", answer: "Yes â many parents use these for children with ADHD or sensory processing differences." }
     ],
     viralReason: "Sensory TikTok community discovered it as a weighted blanket alternative for hot sleepers."
   },
@@ -252,7 +252,7 @@ export const products: Product[] = [
     brand: "Natrol",
     category: "Sleepmaxxing",
     vibeScore: 72,
-    verdict: "A well-dosed, good-tasting melatonin gummy — but not a magic sleep pill.",
+    verdict: "A well-dosed, good-tasting melatonin gummy â but not a magic sleep pill.",
     verdictBadge: "Hidden Gem",
     price: "$13.49",
     priceRange: "$13.49",
@@ -262,17 +262,17 @@ export const products: Product[] = [
     date: "2026-03-27",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/melatonin-gummies?utm_source=aeo&utm_medium=content&utm_campaign=melatonin-gummies",
     questionHeadline: "Are Melatonin Gummies Actually Effective for Sleep?",
-    answerSnippet: "Yes for timing your sleep window — melatonin signals your body it's time for sleep, but it's not a sedative.",
+    answerSnippet: "Yes for timing your sleep window â melatonin signals your body it's time for sleep, but it's not a sedative.",
     problemSection: "Irregular sleep schedule and trouble initiating sleep",
     solutionSection: "5mg melatonin taken 30 min before bed helps regulate your circadian rhythm",
     howToUse: ["Take 1 gummy 30 minutes before desired bedtime", "Use consistently at the same time", "Avoid screens after taking"],
     testResults: [
       { category: "Effectiveness", score: 75, summary: "Noticeably helps with sleep onset timing after 3-4 days" },
-      { category: "Taste", score: 85, summary: "Strawberry flavor — genuinely pleasant, not medicinal" },
-      { category: "Value", score: 70, summary: "$0.22 per gummy — 60-day supply" }
+      { category: "Taste", score: 85, summary: "Strawberry flavor â genuinely pleasant, not medicinal" },
+      { category: "Value", score: 70, summary: "$0.22 per gummy â 60-day supply" }
     ],
     pros: ["Well-dosed at 5mg", "Great strawberry taste", "60-day supply", "Drug-free and non-habit-forming"],
-    cons: ["Not a sedative — won't knock you out", "Can cause grogginess if dose is too high", "Effects diminish with daily long-term use"],
+    cons: ["Not a sedative â won't knock you out", "Can cause grogginess if dose is too high", "Effects diminish with daily long-term use"],
     finalVerdictSummary: "Use it as a circadian rhythm tool, not a sleeping pill. Best for resetting your sleep schedule.",
     faq: [
       { question: "Is 5mg too much melatonin?", answer: "For most adults, 3-5mg is the standard dose. Start with half a gummy if you're sensitive." },
@@ -287,7 +287,7 @@ export const products: Product[] = [
     brand: "Vibe Test Lab",
     category: "Sleepmaxxing",
     vibeScore: 68,
-    verdict: "A fun, giftable sleep mask with decent blackout — but comfort takes a hit for the cute design.",
+    verdict: "A fun, giftable sleep mask with decent blackout â but comfort takes a hit for the cute design.",
     verdictBadge: "Hidden Gem",
     price: "$12.59",
     priceRange: "$12.59",
@@ -297,21 +297,21 @@ export const products: Product[] = [
     date: "2026-03-27",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/animal-headband-sleep-mask?utm_source=aeo&utm_medium=content&utm_campaign=animal-headband-sleep-mask",
     questionHeadline: "Are Cute Animal Sleep Masks Actually Good for Sleep?",
-    answerSnippet: "They're fun and giftable — but if you need serious blackout, a contoured mask is a better choice.",
+    answerSnippet: "They're fun and giftable â but if you need serious blackout, a contoured mask is a better choice.",
     problemSection: "You want a sleep mask that's fun to wear and gift-worthy",
     solutionSection: "Animal designs add personality while still blocking most light",
     howToUse: ["Slip the headband-style mask over your head", "Position the plush eye cover", "Adjust the elastic band"],
     testResults: [
-      { category: "Cuteness", score: 92, summary: "Extremely giftable — kids and adults both love the designs" },
-      { category: "Light Blocking", score: 60, summary: "Blocks about 80% of light — some leakage at nose bridge" },
-      { category: "Comfort", score: 65, summary: "Plush but warm — not ideal for hot sleepers" }
+      { category: "Cuteness", score: 92, summary: "Extremely giftable â kids and adults both love the designs" },
+      { category: "Light Blocking", score: 60, summary: "Blocks about 80% of light â some leakage at nose bridge" },
+      { category: "Comfort", score: 65, summary: "Plush but warm â not ideal for hot sleepers" }
     ],
     pros: ["Adorable animal designs", "Great gift item", "Affordable at $12.59", "Soft plush material"],
     cons: ["Only 80% light blocking", "Plush material traps heat", "Elastic stretches over time", "Not for serious sleep optimization"],
-    finalVerdictSummary: "Buy it as a gift or for fun — but don't expect performance-level blackout.",
+    finalVerdictSummary: "Buy it as a gift or for fun â but don't expect performance-level blackout.",
     faq: [
       { question: "What animals are available?", answer: "Multiple designs including cat, bear, bunny, and panda." },
-      { question: "Is it good for kids?", answer: "Yes — the soft material and fun designs make it popular with children." }
+      { question: "Is it good for kids?", answer: "Yes â the soft material and fun designs make it popular with children." }
     ],
     viralReason: "Cute TikTok aesthetic sleep content made these a trending gift item."
   },
@@ -322,7 +322,7 @@ export const products: Product[] = [
     brand: "Vibe Test Lab",
     category: "Sleepmaxxing",
     vibeScore: 77,
-    verdict: "A weighted eye mask that combines gentle pressure with full blackout — great for migraine and tension relief.",
+    verdict: "A weighted eye mask that combines gentle pressure with full blackout â great for migraine and tension relief.",
     verdictBadge: "Worth It",
     price: "$15.99",
     priceRange: "$15.99",
@@ -332,12 +332,12 @@ export const products: Product[] = [
     date: "2026-03-27",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/weighted-eye-mask?utm_source=aeo&utm_medium=content&utm_campaign=weighted-eye-mask",
     questionHeadline: "Do Weighted Eye Masks Help with Sleep and Headaches?",
-    answerSnippet: "Yes — the gentle pressure stimulates the vagus nerve around the eyes, promoting relaxation and reducing tension headaches.",
+    answerSnippet: "Yes â the gentle pressure stimulates the vagus nerve around the eyes, promoting relaxation and reducing tension headaches.",
     problemSection: "Eye strain, tension headaches, and light sensitivity at bedtime",
     solutionSection: "Weighted beads apply gentle acupressure around the eyes and sinuses",
     howToUse: ["Place mask over closed eyes", "Adjust strap for comfortable fit", "Optional: cool in fridge for cold therapy"],
     testResults: [
-      { category: "Pressure Comfort", score: 82, summary: "Weight is evenly distributed — no hot spots" },
+      { category: "Pressure Comfort", score: 82, summary: "Weight is evenly distributed â no hot spots" },
       { category: "Light Blocking", score: 88, summary: "Full blackout with contoured nose bridge" },
       { category: "Versatility", score: 75, summary: "Works for sleep, meditation, and headache relief" }
     ],
@@ -345,7 +345,7 @@ export const products: Product[] = [
     cons: ["Not ideal for side sleepers (weight shifts)", "Hand wash only", "Weight feels odd for first-time users"],
     finalVerdictSummary: "The best $16 you can spend on eye strain and sleep quality. Doubles as a tension headache aid.",
     faq: [
-      { question: "How heavy is the weighted eye mask?", answer: "About 250g — enough to feel pressure without being uncomfortable." },
+      { question: "How heavy is the weighted eye mask?", answer: "About 250g â enough to feel pressure without being uncomfortable." },
       { question: "Can I heat it up?", answer: "It's designed for cooling in the fridge. Do not microwave." }
     ],
     viralReason: "Weighted eye mask trend blew up as a sleepmaxxing and migraine relief tool."
@@ -357,7 +357,7 @@ export const products: Product[] = [
     brand: "Vibe Test Lab",
     category: "Sleepmaxxing",
     vibeScore: 85,
-    verdict: "The full sleepmaxxing starter kit — mouth tape, sleep spray, and weighted eye mask together at a bundle discount.",
+    verdict: "The full sleepmaxxing starter kit â mouth tape, sleep spray, and weighted eye mask together at a bundle discount.",
     verdictBadge: "Worth It",
     price: "$44.99",
     priceRange: "$44.99",
@@ -367,23 +367,23 @@ export const products: Product[] = [
     date: "2026-03-27",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/deep-sleep-bundle?utm_source=aeo&utm_medium=content&utm_campaign=deep-sleep-bundle",
     questionHeadline: "What's in the Deep Sleep Bundle and Is It Worth the Price?",
-    answerSnippet: "Mouth tape + sleep spray + weighted eye mask for $45 — about 15% cheaper than buying each separately.",
+    answerSnippet: "Mouth tape + sleep spray + weighted eye mask for $45 â about 15% cheaper than buying each separately.",
     problemSection: "Buying sleepmaxxing products one at a time is expensive and confusing",
     solutionSection: "Pre-curated bundle of the three most effective budget sleep tools at a discount",
     howToUse: ["Apply mouth tape", "Spray pillow with sleep spray", "Put on weighted eye mask", "Sleep"],
     testResults: [
       { category: "Bundle Value", score: 88, summary: "15% savings vs. buying individually" },
       { category: "Stack Effectiveness", score: 85, summary: "Three complementary tools covering breathing, scent, and light blocking" },
-      { category: "Gift Potential", score: 90, summary: "Excellent self-care gift — comes in a branded box" }
+      { category: "Gift Potential", score: 90, summary: "Excellent self-care gift â comes in a branded box" }
     ],
     pros: ["15% bundle discount", "Three complementary products", "Great gift presentation", "Covers the core sleepmaxxing stack"],
     cons: ["Can't customize individual items", "May not need all three", "Bundle box is not reusable"],
     finalVerdictSummary: "If you're starting a sleepmaxxing routine from scratch, this bundle is the most cost-effective way in.",
     faq: [
       { question: "What's included in the Deep Sleep Bundle?", answer: "Breazy Mouth Tape (30 strips), Serene Sleep Spray, and Heart Weighted Eye Mask." },
-      { question: "Is this a good gift?", answer: "Yes — it comes in a branded box and covers the full sleep optimization basics." }
+      { question: "Is this a good gift?", answer: "Yes â it comes in a branded box and covers the full sleep optimization basics." }
     ],
-    viralReason: "Sleepmaxxing starter kit trend — creators recommend bundling these three products together."
+    viralReason: "Sleepmaxxing starter kit trend â creators recommend bundling these three products together."
   },
   {
     id: "p11",
@@ -392,7 +392,7 @@ export const products: Product[] = [
     brand: "Vibe Test Lab",
     category: "Sleepmaxxing",
     vibeScore: 80,
-    verdict: "Everything you need to sleep well on a flight or in a hotel — compact and TSA-friendly.",
+    verdict: "Everything you need to sleep well on a flight or in a hotel â compact and TSA-friendly.",
     verdictBadge: "Worth It",
     price: "$39.99",
     priceRange: "$39.99",
@@ -415,8 +415,8 @@ export const products: Product[] = [
     cons: ["Earplugs are basic foam (not premium)", "Bluetooth mask battery drains on long-haul flights", "No sleep spray included (liquid restrictions)"],
     finalVerdictSummary: "The most thoughtful travel gift under $40. Covers audio, blackout, and breathing for any flight or hotel.",
     faq: [
-      { question: "Can you bring mouth tape through TSA?", answer: "Yes — mouth tape is not a restricted item." },
-      { question: "Does the Bluetooth mask work on airplanes?", answer: "Yes — Bluetooth devices are allowed in airplane mode on most airlines." }
+      { question: "Can you bring mouth tape through TSA?", answer: "Yes â mouth tape is not a restricted item." },
+      { question: "Does the Bluetooth mask work on airplanes?", answer: "Yes â Bluetooth devices are allowed in airplane mode on most airlines." }
     ],
     viralReason: "Travel TikTok creators showed their sleep kit essentials and this bundle went viral."
   },
@@ -427,7 +427,7 @@ export const products: Product[] = [
     brand: "Vibe Test Lab",
     category: "Kitchen & Dining",
     vibeScore: 75,
-    verdict: "Looks great, keeps drinks cold, and won't shatter — the ideal outdoor wine glass.",
+    verdict: "Looks great, keeps drinks cold, and won't shatter â the ideal outdoor wine glass.",
     verdictBadge: "Hidden Gem",
     price: "$24.99",
     priceRange: "$24.99",
@@ -437,12 +437,12 @@ export const products: Product[] = [
     date: "2026-03-25",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/stainless-steel-wine-glass?utm_source=aeo&utm_medium=content&utm_campaign=stainless-steel-wine-glass",
     questionHeadline: "Are Stainless Steel Wine Glasses Worth It?",
-    answerSnippet: "For outdoor use — patios, pools, camping — absolutely. They keep wine cold and won't break.",
+    answerSnippet: "For outdoor use â patios, pools, camping â absolutely. They keep wine cold and won't break.",
     problemSection: "Glass wine glasses break outdoors and don't insulate",
     solutionSection: "Double-walled stainless steel keeps drinks cold for 2 hours and is virtually unbreakable",
     howToUse: ["Pour your drink", "Enjoy outdoors without worry", "Hand wash or dishwasher safe"],
     testResults: [
-      { category: "Insulation", score: 80, summary: "Keeps white wine cold for ~2 hours in 85°F heat" },
+      { category: "Insulation", score: 80, summary: "Keeps white wine cold for ~2 hours in 85Â°F heat" },
       { category: "Durability", score: 90, summary: "Dropped on concrete with no dents" },
       { category: "Aesthetics", score: 72, summary: "Looks sleek but you can't see the wine color" }
     ],
@@ -450,8 +450,8 @@ export const products: Product[] = [
     cons: ["Can't see wine color", "Slight metallic taste with some wines", "Not suitable for formal settings"],
     finalVerdictSummary: "The best outdoor wine glass. Buy a set if you entertain on a patio, by a pool, or while camping.",
     faq: [
-      { question: "Do stainless steel glasses affect wine taste?", answer: "Slightly — some tasters notice a faint metallic note with delicate whites." },
-      { question: "Are they dishwasher safe?", answer: "Yes — top rack recommended." }
+      { question: "Do stainless steel glasses affect wine taste?", answer: "Slightly â some tasters notice a faint metallic note with delicate whites." },
+      { question: "Are they dishwasher safe?", answer: "Yes â top rack recommended." }
     ],
     viralReason: "Outdoor entertaining TikToks showed these as the unbreakable pool wine glass."
   },
@@ -462,7 +462,7 @@ export const products: Product[] = [
     brand: "Vibe Test Lab",
     category: "Pets",
     vibeScore: 73,
-    verdict: "A steam brush that detangles, de-sheds, and hydrates cat fur — most cats tolerate it surprisingly well.",
+    verdict: "A steam brush that detangles, de-sheds, and hydrates cat fur â most cats tolerate it surprisingly well.",
     verdictBadge: "Hidden Gem",
     price: "$19.99",
     priceRange: "$19.99",
@@ -472,60 +472,25 @@ export const products: Product[] = [
     date: "2026-03-25",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/3-in-1-cat-steam-brush?utm_source=aeo&utm_medium=content&utm_campaign=3-in-1-cat-steam-brush",
     questionHeadline: "Do Cat Steam Brushes Actually Work?",
-    answerSnippet: "Yes — the gentle steam softens tangles and reduces static while the bristles de-shed effectively.",
-    problemSection: "Cat grooming tools pull fur and create static — cats hate them",
+    answerSnippet: "Yes â the gentle steam softens tangles and reduces static while the bristles de-shed effectively.",
+    problemSection: "Cat grooming tools pull fur and create static â cats hate them",
     solutionSection: "Gentle steam softens the coat first so bristles glide through without pulling",
     howToUse: ["Fill the water reservoir", "Press the steam button", "Brush your cat in the direction of fur growth", "Empty and dry after use"],
     testResults: [
       { category: "De-shedding", score: 78, summary: "Removes loose undercoat effectively in 2-3 passes" },
-      { category: "Cat Tolerance", score: 72, summary: "Most cats tolerate after initial curiosity — warm steam is calming" },
-      { category: "Build Quality", score: 65, summary: "Functional but feels like a $20 product — not premium" }
+      { category: "Cat Tolerance", score: 72, summary: "Most cats tolerate after initial curiosity â warm steam is calming" },
+      { category: "Build Quality", score: 65, summary: "Functional but feels like a $20 product â not premium" }
     ],
     pros: ["Steam softens tangles before brushing", "Reduces shedding noticeably", "Most cats tolerate it", "3-in-1: brush, de-shed, hydrate"],
     cons: ["Build quality feels cheap", "Small water reservoir needs refilling", "Some cats dislike the steam sound"],
-    finalVerdictSummary: "A legitimate grooming upgrade at $20 — especially for long-haired cats that hate traditional brushes.",
+    finalVerdictSummary: "A legitimate grooming upgrade at $20 â especially for long-haired cats that hate traditional brushes.",
     faq: [
-      { question: "Is the steam hot enough to burn a cat?", answer: "No — it's warm mist, not hot steam. Safe for pet skin." },
-      { question: "Does it work on dogs?", answer: "Yes — it works on any pet with medium to long fur." }
+      { question: "Is the steam hot enough to burn a cat?", answer: "No â it's warm mist, not hot steam. Safe for pet skin." },
+      { question: "Does it work on dogs?", answer: "Yes â it works on any pet with medium to long fur." }
     ],
     viralReason: "Cat TikTok went viral with clips of cats purring during steam brush sessions."
   },
-  {
-    id: "p14",
-    slug: "lawn-aerator-spike-shoes",
-    name: "Lawn Aerator Spike Shoes",
-    brand: "Vibe Test Lab",
-    category: "Yard Tools",
-    vibeScore: 65,
-    verdict: "A cheap way to aerate small lawn patches — but don't expect commercial-grade results.",
-    verdictBadge: "Hidden Gem",
-    price: "$22.99",
-    priceRange: "$22.99",
-    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/lawn-aerator-shoes-hero.jpg",
-    images: [],
-    trending: false,
-    date: "2026-03-25",
-    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/lawn-aerator-spike-shoes?utm_source=aeo&utm_medium=content&utm_campaign=lawn-aerator-spike-shoes",
-    questionHeadline: "Do Lawn Aerator Shoes Actually Work?",
-    answerSnippet: "For small patches, yes — they poke holes that help water and nutrients reach roots. For a full lawn, rent a core aerator.",
-    problemSection: "Compacted soil prevents water and nutrients from reaching grass roots",
-    solutionSection: "Metal spikes strapped to your shoes poke aeration holes as you walk",
-    howToUse: ["Strap shoes over your regular footwear", "Walk slowly across compacted areas", "Water the lawn after aerating"],
-    testResults: [
-      { category: "Aeration Depth", score: 60, summary: "Spikes reach ~2 inches — adequate for light compaction" },
-      { category: "Ease of Use", score: 55, summary: "Walking in them is awkward — take slow, deliberate steps" },
-      { category: "Value", score: 75, summary: "At $23, cheaper than renting a core aerator for small jobs" }
-    ],
-    pros: ["Cheap at $23", "No rental hassle", "Works for small patches", "Easy to store"],
-    cons: ["Awkward to walk in", "Only 2-inch spike depth", "Not effective for large lawns", "Straps loosen over time"],
-    finalVerdictSummary: "Good for small patchy areas. For a full lawn, spend the $50 to rent a core aerator instead.",
-    faq: [
-      { question: "How often should you aerate your lawn?", answer: "Once or twice per year — ideally in spring and fall." },
-      { question: "Are spike aerators or core aerators better?", answer: "Core aerators are more effective, but spike shoes are cheaper for small areas." }
-    ],
-    viralReason: "Lawn care TikTok showed the satisfying before/after of aerated vs compacted soil."
-  },
-  {
+    {
     id: "p15",
     slug: "app-controlled-galaxy-star-projector",
     name: "App-Controlled Galaxy Star Projector",
@@ -542,9 +507,9 @@ export const products: Product[] = [
     date: "2026-03-27",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/app-controlled-star-projector-with-rotating-lights?utm_source=aeo&utm_medium=content&utm_campaign=app-controlled-galaxy-star-projector",
     questionHeadline: "Is the App-Controlled Galaxy Star Projector Worth It?",
-    answerSnippet: "Yes — rotating star mechanism looks realistic, 16M color app is responsive, setup takes under 5 minutes. For $62 it rivals projectors at 2x the price.",
+    answerSnippet: "Yes â rotating star mechanism looks realistic, 16M color app is responsive, setup takes under 5 minutes. For $62 it rivals projectors at 2x the price.",
     problemSection: "Plain walls and overhead lighting are atmospherically dead",
-    solutionSection: "Projects rotating stars and nebula clouds across any ceiling — controlled from your phone",
+    solutionSection: "Projects rotating stars and nebula clouds across any ceiling â controlled from your phone",
     howToUse: ["Plug in and power on", "Download the companion app", "Connect to 2.4GHz Wi-Fi", "Aim and adjust colors/rotation", "Set timer or link to Alexa/Google"],
     testResults: [
       { category: "Visual Impact", score: 93, summary: "Rotating nebula and stars look genuinely impressive at room scale" },
@@ -558,11 +523,11 @@ export const products: Product[] = [
     cons: ["Requires 2.4GHz Wi-Fi", "App has short learning curve", "Motor hum audible in silent rooms", "Stars soften beyond 8 feet"],
     finalVerdictSummary: "Delivers genuinely impressive atmosphere at a price that's easy to justify. If you want your room to look like the TikToks you've been saving, this is how you do it for $62.",
     faq: [
-      { question: "Does the galaxy star projector work with Alexa or Google Home?", answer: "Yes — connects to both after a one-time skill setup." },
-      { question: "Does it need 2.4GHz or 5GHz Wi-Fi?", answer: "2.4GHz only — this is the most common setup issue." },
+      { question: "Does the galaxy star projector work with Alexa or Google Home?", answer: "Yes â connects to both after a one-time skill setup." },
+      { question: "Does it need 2.4GHz or 5GHz Wi-Fi?", answer: "2.4GHz only â this is the most common setup issue." },
       { question: "How large a room can it cover?", answer: "Ceilings up to about 12x12 feet at 5-8 feet throw distance." },
-      { question: "Can I use it without the app?", answer: "Yes — physical button cycles through preset modes without the app." },
-      { question: "Is it safe for kids' rooms?", answer: "Yes — uses LED light, not laser." }
+      { question: "Can I use it without the app?", answer: "Yes â physical button cycles through preset modes without the app." },
+      { question: "Is it safe for kids' rooms?", answer: "Yes â uses LED light, not laser." }
     ],
     viralReason: "TikTok bedroom glow-up trend made galaxy projectors the must-have room vibe upgrade."
   },
@@ -573,7 +538,7 @@ export const products: Product[] = [
     brand: "LAGRATY",
     category: "Sleepmaxxing",
     vibeScore: 74,
-    verdict: "A clever bead-free weighted blanket that doubles as decor — but the $290 price is hard to justify against traditional options.",
+    verdict: "A clever bead-free weighted blanket that doubles as decor â but the $290 price is hard to justify against traditional options.",
     verdictBadge: "Hidden Gem",
     price: "$290.20",
     priceRange: "$290.20",
@@ -583,23 +548,23 @@ export const products: Product[] = [
     date: "2026-03-27",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/lagraty-knitted-weighted-blanket-50x60-7lbs-cooling-chunky-knit-heavy-blanket-for-adults-braided-crochet-throw-thick-cable-yarn-knit-decorative-blanket-no-beads-evenly-weighted-machine-washable?utm_source=aeo&utm_medium=content&utm_campaign=knitted-weighted-blanket",
     questionHeadline: "Do Knitted Weighted Blankets Actually Help You Sleep Better?",
-    answerSnippet: "Yes — knitted weighted blankets use yarn density instead of glass beads to provide deep pressure stimulation. The LAGRATY is breathable, machine washable, and pet-safe.",
+    answerSnippet: "Yes â knitted weighted blankets use yarn density instead of glass beads to provide deep pressure stimulation. The LAGRATY is breathable, machine washable, and pet-safe.",
     problemSection: "Traditional weighted blankets trap heat, leak beads, and feel clinical",
-    solutionSection: "Chunky knit yarn provides weight through density — no beads, breathable holes for airflow, and decorative enough to leave on the couch",
-    howToUse: ["Drape over your body while on the couch or in bed", "Let the 7lb weight settle naturally — no need to spread evenly", "Machine wash cold on gentle cycle, air dry flat"],
+    solutionSection: "Chunky knit yarn provides weight through density â no beads, breathable holes for airflow, and decorative enough to leave on the couch",
+    howToUse: ["Drape over your body while on the couch or in bed", "Let the 7lb weight settle naturally â no need to spread evenly", "Machine wash cold on gentle cycle, air dry flat"],
     testResults: [
-      { category: "Breathability", score: 82, summary: "Open knit holes allow airflow — noticeably cooler than bead-filled blankets" },
+      { category: "Breathability", score: 82, summary: "Open knit holes allow airflow â noticeably cooler than bead-filled blankets" },
       { category: "Weight Distribution", score: 78, summary: "Yarn density provides even weight without shifting or bunching" },
       { category: "Durability", score: 70, summary: "Holds up to machine washing but chunky yarn can snag on sharp edges" }
     ],
-    pros: ["No glass beads — pet-safe and no leak risk", "Breathable open-knit design stays cool", "Machine washable", "Doubles as decorative throw"],
+    pros: ["No glass beads â pet-safe and no leak risk", "Breathable open-knit design stays cool", "Machine washable", "Doubles as decorative throw"],
     cons: ["$290 is expensive for a 7lb blanket", "7lbs may be too light for adults over 200lbs", "Only one size (50x60 inches)", "Takes 24-48 hours to air dry"],
-    finalVerdictSummary: "The LAGRATY solves the two biggest weighted blanket complaints — heat and bead leakage — with a clever knitted design. At $290 it's a premium pick, but the breathability and pet safety make it a hidden gem for hot sleepers.",
+    finalVerdictSummary: "The LAGRATY solves the two biggest weighted blanket complaints â heat and bead leakage â with a clever knitted design. At $290 it's a premium pick, but the breathability and pet safety make it a hidden gem for hot sleepers.",
     faq: [
-      { question: "Do knitted weighted blankets work as well as bead-filled ones?", answer: "Yes — the weight comes from yarn density instead of beads. The pressure effect is the same, but knitted versions are more breathable." },
+      { question: "Do knitted weighted blankets work as well as bead-filled ones?", answer: "Yes â the weight comes from yarn density instead of beads. The pressure effect is the same, but knitted versions are more breathable." },
       { question: "Is 7 pounds heavy enough?", answer: "For most adults under 200 lbs, yes. The standard recommendation is 7-12% of body weight. Heavier adults may want a 10-15 lb option." },
-      { question: "Can I machine wash it?", answer: "Yes — cold water, gentle cycle. Air dry flat. Do not put in the dryer as heat can damage the chunky yarn." },
-      { question: "Is it safe for pets?", answer: "Yes — no glass beads means no risk of ingestion if your pet chews or scratches the blanket." },
+      { question: "Can I machine wash it?", answer: "Yes â cold water, gentle cycle. Air dry flat. Do not put in the dryer as heat can damage the chunky yarn." },
+      { question: "Is it safe for pets?", answer: "Yes â no glass beads means no risk of ingestion if your pet chews or scratches the blanket." },
       { question: "Does it stay cool in summer?", answer: "Cooler than bead-filled blankets thanks to the open knit holes, but it's still a 7lb blanket. Best for air-conditioned rooms in summer." },
       { question: "How long does shipping take?", answer: "Standard shipping typically takes 7-14 business days. Orders are fulfilled within 1-2 business days of purchase." }
     ],
@@ -612,7 +577,7 @@ export const products: Product[] = [
     brand: "Yescool",
     category: "Sleepmaxxing",
     vibeScore: 72,
-    verdict: "A dual-sided kids weighted blanket with a great sensory design — but overpriced at $140 when budget options exist.",
+    verdict: "A dual-sided kids weighted blanket with a great sensory design â but overpriced at $140 when budget options exist.",
     verdictBadge: "Hidden Gem",
     price: "$139.57",
     priceRange: "$139.57",
@@ -621,28 +586,28 @@ export const products: Product[] = [
     trending: false,
     date: "2026-03-27",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/yescool-weighted-blanket-kids-3-lb-christmas-green-warm-weighted-throw-blanket-minky-plush-heavy-blanket-microfiber-small-fleece-blanket-cooling-heating-weighted-comforter-36-48in?utm_source=aeo&utm_medium=content&utm_campaign=kids-weighted-blanket",
-    questionHeadline: "Are Weighted Blankets Safe for Kids — and Do They Actually Help?",
-    answerSnippet: "For kids over 3 years old and 30+ lbs, yes — a properly sized weighted blanket can help with sleep onset and restlessness. The Yescool's dual-sided minky design adds sensory comfort.",
-    problemSection: "Kids who can't settle down at bedtime — restlessness, anxiety, sensory seeking",
+    questionHeadline: "Are Weighted Blankets Safe for Kids â and Do They Actually Help?",
+    answerSnippet: "For kids over 3 years old and 30+ lbs, yes â a properly sized weighted blanket can help with sleep onset and restlessness. The Yescool's dual-sided minky design adds sensory comfort.",
+    problemSection: "Kids who can't settle down at bedtime â restlessness, anxiety, sensory seeking",
     solutionSection: "3lb weighted blanket provides gentle deep pressure stimulation that mimics a hug, helping kids feel secure and calm",
-    howToUse: ["Choose the right side — minky dots for warmth, microfiber for cooling", "Drape over your child from chest to toes (never over the face)", "Use as part of a consistent bedtime routine"],
+    howToUse: ["Choose the right side â minky dots for warmth, microfiber for cooling", "Drape over your child from chest to toes (never over the face)", "Use as part of a consistent bedtime routine"],
     testResults: [
-      { category: "Sensory Comfort", score: 88, summary: "Minky dot texture is genuinely calming — kids gravitate toward it" },
+      { category: "Sensory Comfort", score: 88, summary: "Minky dot texture is genuinely calming â kids gravitate toward it" },
       { category: "Weight Distribution", score: 82, summary: "7-layer design keeps glass beads locked in small pockets" },
       { category: "Durability", score: 72, summary: "Holds up to gentle washing but fabric pills after multiple washes" }
     ],
     pros: ["Dual-sided design for all seasons", "Minky dot texture provides extra sensory input", "3lb weight is appropriate for kids 30-50 lbs", "7-layer bead pocket design prevents shifting"],
-    cons: ["$140 is steep — budget kids weighted blankets are $25-40", "Glass beads are a concern if fabric tears", "Hand wash recommended for longevity", "Only one color option at this price"],
-    finalVerdictSummary: "The Yescool's dual-sided design and sensory minky texture are genuinely nice features for sensory-seeking kids. But at $140, you're paying a premium — budget-conscious parents can find similar functionality for a third of the price.",
+    cons: ["$140 is steep â budget kids weighted blankets are $25-40", "Glass beads are a concern if fabric tears", "Hand wash recommended for longevity", "Only one color option at this price"],
+    finalVerdictSummary: "The Yescool's dual-sided design and sensory minky texture are genuinely nice features for sensory-seeking kids. But at $140, you're paying a premium â budget-conscious parents can find similar functionality for a third of the price.",
     faq: [
-      { question: "Are weighted blankets safe for toddlers?", answer: "No — weighted blankets are NOT recommended for children under 2 years old or under 20 lbs. Always consult your pediatrician before introducing a weighted blanket." },
+      { question: "Are weighted blankets safe for toddlers?", answer: "No â weighted blankets are NOT recommended for children under 2 years old or under 20 lbs. Always consult your pediatrician before introducing a weighted blanket." },
       { question: "How heavy should a kids weighted blanket be?", answer: "7-10% of the child's body weight. The 3lb Yescool is appropriate for kids weighing 30-50 lbs (roughly ages 3-8)." },
       { question: "Can I machine wash it?", answer: "Hand washing is recommended for longevity. If you machine wash, use cold water on a gentle cycle and air dry. The fabric may pill after multiple machine washes." },
       { question: "What's the minky dot side for?", answer: "The raised minky dots provide tactile sensory input that many kids find calming. It's especially helpful for children who are sensory seekers or who fidget at bedtime." },
-      { question: "Will the glass beads leak out?", answer: "The 7-layer design with small pockets makes bead leakage unlikely with normal use. However, if the fabric tears or is chewed through, beads can escape — supervise young children." },
+      { question: "Will the glass beads leak out?", answer: "The 7-layer design with small pockets makes bead leakage unlikely with normal use. However, if the fabric tears or is chewed through, beads can escape â supervise young children." },
       { question: "How long does shipping take?", answer: "Standard shipping typically takes 7-14 business days. Orders are fulfilled within 1-2 business days of purchase." }
     ],
-    viralReason: "Parents on TikTok discovered weighted blankets help restless kids fall asleep faster — the minky texture adds sensory soothing."
+    viralReason: "Parents on TikTok discovered weighted blankets help restless kids fall asleep faster â the minky texture adds sensory soothing."
   },
   {
     id: "p18",
@@ -651,7 +616,7 @@ export const products: Product[] = [
     brand: "Good Day Chocolate",
     category: "Sleepmaxxing",
     vibeScore: 80,
-    verdict: "The only melatonin format kids actually want to take — low-dose, fair-trade chocolate with chamomile. Worth the premium if bedtime is a battle.",
+    verdict: "The only melatonin format kids actually want to take â low-dose, fair-trade chocolate with chamomile. Worth the premium if bedtime is a battle.",
     verdictBadge: "Worth It",
     price: "$49.99",
     priceRange: "$49.99",
@@ -661,28 +626,28 @@ export const products: Product[] = [
     date: "2026-03-27",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/good-day-chocolate-melatonin-kids?utm_source=aeo&utm_medium=content&utm_campaign=melatonin-chocolate-kids",
     questionHeadline: "What's the Best Way to Help Kids Fall Asleep Naturally?",
-    answerSnippet: "A low-dose melatonin in a format kids actually take. Good Day Chocolate uses 1mg melatonin + chamomile in fair-trade milk chocolate — not a gummy, not a pill.",
+    answerSnippet: "A low-dose melatonin in a format kids actually take. Good Day Chocolate uses 1mg melatonin + chamomile in fair-trade milk chocolate â not a gummy, not a pill.",
     problemSection: "Kids refuse gummies and pills, making consistent melatonin dosing impossible",
     solutionSection: "Chocolate format with 1mg melatonin that kids treat as a bedtime treat, ensuring consistent compliance",
-    howToUse: ["Give 1 chocolate piece 30 minutes before bedtime", "Use as part of a consistent wind-down routine", "Do not exceed 1 piece per night — consult pediatrician for ongoing use"],
+    howToUse: ["Give 1 chocolate piece 30 minutes before bedtime", "Use as part of a consistent wind-down routine", "Do not exceed 1 piece per night â consult pediatrician for ongoing use"],
     testResults: [
-      { category: "Kid Compliance", score: 92, summary: "Kids actively ask for it — no more fighting over supplements" },
+      { category: "Kid Compliance", score: 92, summary: "Kids actively ask for it â no more fighting over supplements" },
       { category: "Sleep Onset", score: 78, summary: "Most kids fell asleep 15-25 minutes faster on average" },
-      { category: "Taste", score: 88, summary: "Real milk chocolate — kids can't tell it's a supplement" },
+      { category: "Taste", score: 88, summary: "Real milk chocolate â kids can't tell it's a supplement" },
       { category: "Cost Efficiency", score: 62, summary: "$1/piece is 2-3x more expensive than gummy alternatives" }
     ],
-    pros: ["Kids actually want to take it — chocolate beats gummies", "Low 1mg dose is appropriate and safe for ages 3+", "Fair-trade milk chocolate with natural chamomile", "Non-GMO, no artificial colors or flavors", "50-count bag lasts over a month at 2-4x/week"],
-    cons: ["$1/piece is expensive vs gummies at $0.30-0.50", "Contains dairy (milk chocolate) — not for dairy allergies", "2g sugar per piece — adds to daily intake", "Melatonin is a supplement, not FDA-approved for children"],
+    pros: ["Kids actually want to take it â chocolate beats gummies", "Low 1mg dose is appropriate and safe for ages 3+", "Fair-trade milk chocolate with natural chamomile", "Non-GMO, no artificial colors or flavors", "50-count bag lasts over a month at 2-4x/week"],
+    cons: ["$1/piece is expensive vs gummies at $0.30-0.50", "Contains dairy (milk chocolate) â not for dairy allergies", "2g sugar per piece â adds to daily intake", "Melatonin is a supplement, not FDA-approved for children"],
     finalVerdictSummary: "Good Day Chocolate solves the biggest problem with kids' melatonin: kids actually take it. The 1mg dose is appropriately low, and the chocolate format turns a bedtime battle into a bedtime treat. At $1/piece it's a premium, but compliance is worth paying for.",
     faq: [
       { question: "Is melatonin safe for kids?", answer: "Low-dose melatonin (0.5-1mg) is generally considered safe for short-term use in children ages 3+. Always consult your pediatrician before starting any supplement." },
-      { question: "How much melatonin is in each piece?", answer: "1mg per chocolate piece — this is a low, appropriate dose. Many competing products use 3-5mg which is unnecessarily high for most children." },
-      { question: "Does it contain allergens?", answer: "Yes — it contains milk (milk chocolate). Not suitable for children with dairy allergies. It is non-GMO with no artificial colors or flavors." },
+      { question: "How much melatonin is in each piece?", answer: "1mg per chocolate piece â this is a low, appropriate dose. Many competing products use 3-5mg which is unnecessarily high for most children." },
+      { question: "Does it contain allergens?", answer: "Yes â it contains milk (milk chocolate). Not suitable for children with dairy allergies. It is non-GMO with no artificial colors or flavors." },
       { question: "How much sugar is in each piece?", answer: "2 grams of sugar per piece. For context, that's less than a single gummy bear." },
       { question: "Can my child become dependent on melatonin?", answer: "Current research suggests melatonin does not cause dependency. However, it's best used 2-4 nights per week as part of a broader sleep routine, not every single night." },
       { question: "How long does shipping take?", answer: "Standard shipping typically takes 7-14 business days. Orders are fulfilled within 1-2 business days of purchase." }
     ],
-    viralReason: "Parents on TikTok discovered chocolate melatonin ends the bedtime supplement battle — kids ask for it instead of refusing it."
+    viralReason: "Parents on TikTok discovered chocolate melatonin ends the bedtime supplement battle â kids ask for it instead of refusing it."
   },
   {
     id: "p19",
@@ -691,7 +656,7 @@ export const products: Product[] = [
     brand: "Vibe Test Lab",
     category: "Room Vibes",
     vibeScore: 68,
-    verdict: "A $25 mood lamp that looks great on camera — no app, no rotation, just plug-and-glow ambiance.",
+    verdict: "A $25 mood lamp that looks great on camera â no app, no rotation, just plug-and-glow ambiance.",
     verdictBadge: "Hidden Gem",
     price: "$25.50",
     priceRange: "$25.50",
@@ -701,26 +666,26 @@ export const products: Product[] = [
     date: "2026-03-27",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/usb-sunset-rainbow-projector-led-night-light-decor?utm_source=aeo&utm_medium=content&utm_campaign=sunset-rainbow-projector",
     questionHeadline: "Are Sunset Lamp Projectors Actually Worth the TikTok Hype?",
-    answerSnippet: "For $25, yes — USB sunset projectors cast a warm color glow that looks great on camera. No app or rotation, just simple plug-and-play ambiance.",
+    answerSnippet: "For $25, yes â USB sunset projectors cast a warm color glow that looks great on camera. No app or rotation, just simple plug-and-play ambiance.",
     problemSection: "Overhead lighting is harsh and rooms lack atmosphere",
     solutionSection: "USB-powered sunset lamp projects warm color gradients onto walls and ceilings for instant mood lighting",
-    howToUse: ["Plug the USB cable into any USB port or adapter", "Point the lens toward the wall or ceiling", "Enjoy the color cycling — no app needed"],
+    howToUse: ["Plug the USB cable into any USB port or adapter", "Point the lens toward the wall or ceiling", "Enjoy the color cycling â no app needed"],
     testResults: [
-      { category: "Color Quality", score: 72, summary: "16 warm colors cycle smoothly — looks great in photos and on camera" },
-      { category: "Light Coverage", score: 60, summary: "Best within 3-5 feet of a wall — fades at distance" },
-      { category: "Build Quality", score: 55, summary: "Plastic body feels like a $25 product — functional but not premium" },
+      { category: "Color Quality", score: 72, summary: "16 warm colors cycle smoothly â looks great in photos and on camera" },
+      { category: "Light Coverage", score: 60, summary: "Best within 3-5 feet of a wall â fades at distance" },
+      { category: "Build Quality", score: 55, summary: "Plastic body feels like a $25 product â functional but not premium" },
       { category: "Value", score: 85, summary: "Hard to beat at $25 for the aesthetic effect you get" }
     ],
-    pros: ["Incredibly affordable at $25", "16 color options", "Looks great on camera/TikTok", "USB-powered — works with any USB port", "Compact at 70x70x90mm"],
-    cons: ["No app control — colors auto-cycle", "No rotation mechanism", "Limited throw distance (3-5 ft optimal)", "Plastic build quality", "Can't lock on a single color"],
+    pros: ["Incredibly affordable at $25", "16 color options", "Looks great on camera/TikTok", "USB-powered â works with any USB port", "Compact at 70x70x90mm"],
+    cons: ["No app control â colors auto-cycle", "No rotation mechanism", "Limited throw distance (3-5 ft optimal)", "Plastic build quality", "Can't lock on a single color"],
     finalVerdictSummary: "The cheapest way to get the sunset lamp aesthetic. Perfect for content creators and dorm rooms. If you want app control and rotation, spend $62 on the Galaxy Star Projector instead.",
     faq: [
       { question: "Can you pick a single color or does it auto-cycle?", answer: "It auto-cycles through 16 colors. You cannot lock on one specific color." },
-      { question: "How does it compare to the app-controlled star projector?", answer: "The star projector ($62) has Wi-Fi, app control, rotation, and Alexa integration. This sunset lamp ($25) is simpler — just plug in and enjoy the glow." },
-      { question: "Is it bright enough to light a room?", answer: "No — it's accent lighting, not a room light. Best used in a dim or dark room for ambiance." },
-      { question: "Does it get hot?", answer: "Slightly warm after extended use but not hot — safe for bedside use. Operating voltage is ≤36V." }
+      { question: "How does it compare to the app-controlled star projector?", answer: "The star projector ($62) has Wi-Fi, app control, rotation, and Alexa integration. This sunset lamp ($25) is simpler â just plug in and enjoy the glow." },
+      { question: "Is it bright enough to light a room?", answer: "No â it's accent lighting, not a room light. Best used in a dim or dark room for ambiance." },
+      { question: "Does it get hot?", answer: "Slightly warm after extended use but not hot â safe for bedside use. Operating voltage is â¤36V." }
     ],
-    viralReason: "Sunset lamp TikTok aesthetic — the $25 way to make any room look like a golden hour content studio."
+    viralReason: "Sunset lamp TikTok aesthetic â the $25 way to make any room look like a golden hour content studio."
   },
   {
     id: "p20",
@@ -729,7 +694,7 @@ export const products: Product[] = [
     brand: "Vibe Test Lab",
     category: "Room Vibes",
     vibeScore: 72,
-    verdict: "A floating neon wall accent that looks custom but comes in 3 preset styles — good value at $49-57.",
+    verdict: "A floating neon wall accent that looks custom but comes in 3 preset styles â good value at $49-57.",
     verdictBadge: "Hidden Gem",
     price: "$49.42",
     priceRange: "$49.42 - $56.87",
@@ -739,26 +704,26 @@ export const products: Product[] = [
     date: "2026-03-27",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/led-transparent-backboard-neon-light-wall-decor?utm_source=aeo&utm_medium=content&utm_campaign=neon-light-wall-decor",
     questionHeadline: "Are LED Neon Signs Worth It for Bedroom Wall Decor?",
-    answerSnippet: "For $49-57, yes — LED neon signs on transparent backboards give the floating neon look without the custom price tag. 500,000 hour lifespan, USB-powered.",
+    answerSnippet: "For $49-57, yes â LED neon signs on transparent backboards give the floating neon look without the custom price tag. 500,000 hour lifespan, USB-powered.",
     problemSection: "Bare walls look boring and custom neon signs cost $100-300+",
     solutionSection: "Pre-made LED neon on transparent acrylic backboard creates a floating glow effect at a fraction of custom pricing",
-    howToUse: ["Mount on the wall using included hardware", "Plug the USB cable into any USB port or adapter", "Enjoy the neon glow — no setup or app needed"],
+    howToUse: ["Mount on the wall using included hardware", "Plug the USB cable into any USB port or adapter", "Enjoy the neon glow â no setup or app needed"],
     testResults: [
-      { category: "Light Quality", score: 78, summary: "Even glow with good color saturation — transparent backboard creates a floating effect" },
-      { category: "Build Quality", score: 75, summary: "Durable acrylic, IP42 rated — solid for indoor use" },
-      { category: "Ambiance Impact", score: 80, summary: "Instant room personality — looks custom and expensive" },
+      { category: "Light Quality", score: 78, summary: "Even glow with good color saturation â transparent backboard creates a floating effect" },
+      { category: "Build Quality", score: 75, summary: "Durable acrylic, IP42 rated â solid for indoor use" },
+      { category: "Ambiance Impact", score: 80, summary: "Instant room personality â looks custom and expensive" },
       { category: "Value", score: 72, summary: "Good deal at $49-57 compared to custom neon ($100-300+)" }
     ],
-    pros: ["Transparent backboard = floating neon effect", "500,000 hour lifespan (57+ years)", "USB-powered — no electrician needed", "3 style options", "IP42 rated for indoor durability"],
-    cons: ["Only 3 preset styles — no customization", "Requires USB power source near the wall", "Indoor use only (IP42)", "Not dimmable"],
+    pros: ["Transparent backboard = floating neon effect", "500,000 hour lifespan (57+ years)", "USB-powered â no electrician needed", "3 style options", "IP42 rated for indoor durability"],
+    cons: ["Only 3 preset styles â no customization", "Requires USB power source near the wall", "Indoor use only (IP42)", "Not dimmable"],
     finalVerdictSummary: "The best way to get the custom neon look without the custom neon price. Pick one of the 3 styles, mount it, and plug in. Just don't expect customization.",
     faq: [
       { question: "How do you mount it on the wall?", answer: "Mounting hardware is included. Use screws or adhesive strips depending on your wall type." },
-      { question: "Can you customize the design?", answer: "No — it comes in 3 preset styles. For custom designs, you'd need a custom neon shop ($100-300+)." },
-      { question: "Does it get hot?", answer: "No — LED neon runs cool, unlike real glass neon. Safe to touch even after hours of use." },
-      { question: "How long does it last?", answer: "Rated for 500,000 hours — that's over 57 years of continuous use." }
+      { question: "Can you customize the design?", answer: "No â it comes in 3 preset styles. For custom designs, you'd need a custom neon shop ($100-300+)." },
+      { question: "Does it get hot?", answer: "No â LED neon runs cool, unlike real glass neon. Safe to touch even after hours of use." },
+      { question: "How long does it last?", answer: "Rated for 500,000 hours â that's over 57 years of continuous use." }
     ],
-    viralReason: "Neon wall decor went viral as the instant apartment personality upgrade — looks expensive, costs under $60."
+    viralReason: "Neon wall decor went viral as the instant apartment personality upgrade â looks expensive, costs under $60."
   },
   {
     id: "p21",
@@ -767,7 +732,7 @@ export const products: Product[] = [
     brand: "Generic",
     category: "Room Vibes",
     vibeScore: 76,
-    verdict: "A stunning 3D-printed moon lamp that works as both a night light and décor piece — gorgeous gift item with real 'wow' factor.",
+    verdict: "A stunning 3D-printed moon lamp that works as both a night light and dÃ©cor piece â gorgeous gift item with real 'wow' factor.",
     verdictBadge: "Hidden Gem",
     price: "$92.03",
     priceRange: "$77.28 - $104.44",
@@ -782,25 +747,25 @@ export const products: Product[] = [
     date: "2026-03-27",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/3d-printed-moon-lamp-jupiter-night-light?utm_source=aeo&utm_medium=content&utm_campaign=3d-moon-lamp",
     questionHeadline: "Is a 3D Moon Lamp Worth It or Just a Gimmick?",
-    answerSnippet: "It's worth it as a decorative gift or night light — the 3D-printed surface texture is genuinely impressive. Available in 2-color or 16-color remote versions, sizes 8cm to 20cm.",
+    answerSnippet: "It's worth it as a decorative gift or night light â the 3D-printed surface texture is genuinely impressive. Available in 2-color or 16-color remote versions, sizes 8cm to 20cm.",
     problemSection: "Generic room lighting lacks personality and warmth",
     solutionSection: "A realistic 3D moon lamp adds a celestial focal point and soft ambient glow to any space",
     howToUse: ["Unbox and charge via USB", "Place on included wooden stand", "Toggle between warm white/yellow (2-color) or cycle through 16 colors with remote", "Adjust brightness by long-pressing the touch sensor"],
     testResults: [
       { category: "Design Appeal", score: 82, summary: "Stunning realistic moon surface texture from 3D printing process" },
-      { category: "Versatility", score: 78, summary: "Works as night light, décor, or gift — multiple sizes and color options" },
+      { category: "Versatility", score: 78, summary: "Works as night light, dÃ©cor, or gift â multiple sizes and color options" },
       { category: "Build Quality", score: 70, summary: "PLA plastic is decent but not premium; handle with care" },
       { category: "Value", score: 72, summary: "Mid-range price for decorative lighting, but the visual impact justifies it" }
     ],
-    pros: ["Realistic 3D-printed moon surface texture", "16-color remote option is fun and versatile", "10,000+ hour LED lifespan", "6 sizes (8cm-20cm) for any space", "USB rechargeable — no cords during use", "Great gift item with real 'wow' factor"],
+    pros: ["Realistic 3D-printed moon surface texture", "16-color remote option is fun and versatile", "10,000+ hour LED lifespan", "6 sizes (8cm-20cm) for any space", "USB rechargeable â no cords during use", "Great gift item with real 'wow' factor"],
     cons: ["PLA plastic can crack if dropped", "16-color remote version costs more", "Not bright enough for task lighting", "Touch sensor can be finicky", "Charging takes 2-3 hours for full battery"],
-    finalVerdictSummary: "A hidden gem for anyone who wants a unique, conversation-starting décor piece. The 16-color remote version is the sweet spot for gifting.",
+    finalVerdictSummary: "A hidden gem for anyone who wants a unique, conversation-starting dÃ©cor piece. The 16-color remote version is the sweet spot for gifting.",
     faq: [
       { question: "How long does the battery last on a full charge?", answer: "4-8 hours depending on brightness level. The 2-color version lasts longer than the 16-color version." },
-      { question: "Is the 16-color version worth the extra cost?", answer: "Yes — the remote control and color cycling add significant versatility. The 2-color version is fine for a simple night light, but the 16-color version is better for décor and gifting." },
+      { question: "Is the 16-color version worth the extra cost?", answer: "Yes â the remote control and color cycling add significant versatility. The 2-color version is fine for a simple night light, but the 16-color version is better for dÃ©cor and gifting." },
       { question: "What sizes are available?", answer: "8cm, 10cm, 13cm, 15cm, 18cm, and 20cm. The 15cm is the most popular for desks and nightstands." }
     ],
-    viralReason: "Moon lamps went viral as the 'aesthetic room essential' on TikTok — the 3D-printed texture makes it look like a real miniature moon."
+    viralReason: "Moon lamps went viral as the 'aesthetic room essential' on TikTok â the 3D-printed texture makes it look like a real miniature moon."
   },
   {
     id: "p22",
@@ -809,7 +774,7 @@ export const products: Product[] = [
     brand: "Generic",
     category: "Room Vibes",
     vibeScore: 79,
-    verdict: "The most feature-packed LED strip we've tested — RGBIC color control, music sync, WiFi app, and DIY shapeable design. Premium price but premium experience.",
+    verdict: "The most feature-packed LED strip we've tested â RGBIC color control, music sync, WiFi app, and DIY shapeable design. Premium price but premium experience.",
     verdictBadge: "Hidden Gem",
     price: "$105.06",
     priceRange: "$105.06 - $148.18",
@@ -824,7 +789,7 @@ export const products: Product[] = [
     date: "2026-03-27",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/wifi-smart-diy-music-neon-light-strip-with-remote?utm_source=aeo&utm_medium=content&utm_campaign=wifi-neon-light-strip",
     questionHeadline: "Are WiFi LED Neon Light Strips Worth It for Room Ambiance?",
-    answerSnippet: "Yes — if you want serious room vibes with app control, music sync, and individual LED color segments (RGBIC). Available in 5m (300 LEDs) and 10m (960 LEDs) with Bluetooth or WiFi options.",
+    answerSnippet: "Yes â if you want serious room vibes with app control, music sync, and individual LED color segments (RGBIC). Available in 5m (300 LEDs) and 10m (960 LEDs) with Bluetooth or WiFi options.",
     problemSection: "Standard LED strips look cheap and lack smart controls",
     solutionSection: "RGBIC technology gives individual LED segment control, music-reactive modes, and full app customization",
     howToUse: ["Plan your design layout on the wall/ceiling", "Mount the flexible neon strip using included adhesive clips", "Connect to power (12V or 24V adapter included)", "Download the app and connect via Bluetooth or WiFi to customize colors and music sync"],
@@ -834,13 +799,13 @@ export const products: Product[] = [
       { category: "Installation", score: 72, summary: "DIY shapeable is flexible but requires planning and patience" },
       { category: "Value", score: 75, summary: "Premium price but packed with features that cheaper strips lack" }
     ],
-    pros: ["RGBIC individual LED segment control", "Music-reactive mode syncs to any audio", "WiFi + Bluetooth dual connectivity", "DIY shapeable — bend into any design", "5m and 10m options", "App with tons of presets and custom modes"],
+    pros: ["RGBIC individual LED segment control", "Music-reactive mode syncs to any audio", "WiFi + Bluetooth dual connectivity", "DIY shapeable â bend into any design", "5m and 10m options", "App with tons of presets and custom modes"],
     cons: ["Premium price ($105-148)", "Installation requires planning", "WiFi version needs stable connection", "No voice assistant integration", "Power adapter is bulky", "Adhesive can damage some wall finishes"],
     finalVerdictSummary: "The best LED strip for serious room vibes. If you want music sync, app control, and RGBIC color segments, this is the one. Budget shoppers should look at the Sunset Projector ($25) instead.",
     faq: [
       { question: "What's the difference between Bluetooth and WiFi versions?", answer: "Bluetooth works within ~30 feet and connects directly to your phone. WiFi connects through your router, allowing control from anywhere and potentially future smart home integration." },
-      { question: "Can you cut the strip to custom lengths?", answer: "Yes — there are cut marks along the strip. However, cut sections can't be reconnected, so measure carefully before cutting." },
-      { question: "Does music sync work with any music source?", answer: "Yes — it uses a built-in microphone to detect ambient audio. Works with speakers, TV, instruments, or any sound source in the room." }
+      { question: "Can you cut the strip to custom lengths?", answer: "Yes â there are cut marks along the strip. However, cut sections can't be reconnected, so measure carefully before cutting." },
+      { question: "Does music sync work with any music source?", answer: "Yes â it uses a built-in microphone to detect ambient audio. Works with speakers, TV, instruments, or any sound source in the room." }
     ],
     viralReason: "Music-reactive LED strips blew up on TikTok as gamers and content creators showed off their room setups syncing to beats."
   },
@@ -866,25 +831,25 @@ export const products: Product[] = [
     date: "2026-03-27",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/cooling-gel-eye-mask?utm_source=aeo&utm_medium=content&utm_campaign=cooling-gel-eye-mask",
     questionHeadline: "Do Cooling Gel Eye Masks Actually Reduce Puffiness and Dark Circles?",
-    answerSnippet: "Yes for puffiness — the cold constricts blood vessels and reduces swelling noticeably in 15-20 minutes. For dark circles, it helps temporarily but isn't a permanent fix. Available in 6 colors with mask-only or suit options.",
+    answerSnippet: "Yes for puffiness â the cold constricts blood vessels and reduces swelling noticeably in 15-20 minutes. For dark circles, it helps temporarily but isn't a permanent fix. Available in 6 colors with mask-only or suit options.",
     problemSection: "Morning puffiness and tired eyes from screens, lack of sleep, or allergies",
     solutionSection: "Cold gel therapy constricts blood vessels around the eyes, reducing swelling and refreshing tired skin in minutes",
-    howToUse: ["Store in the fridge (not freezer) for 1-2 hours before use", "Place over closed eyes and adjust the strap", "Relax for 15-20 minutes — the gel stays cool the entire time", "Rinse with cool water after use and return to the fridge"],
+    howToUse: ["Store in the fridge (not freezer) for 1-2 hours before use", "Place over closed eyes and adjust the strap", "Relax for 15-20 minutes â the gel stays cool the entire time", "Rinse with cool water after use and return to the fridge"],
     testResults: [
       { category: "Cooling Effect", score: 78, summary: "Gel stays cold for ~20 minutes, noticeable depuffing after one use" },
       { category: "Comfort", score: 75, summary: "Soft gel conforms to face shape, lightweight and non-restrictive" },
       { category: "Build Quality", score: 68, summary: "Reusable gel holds up well but packaging and strap feel basic" },
-      { category: "Value", score: 72, summary: "Mid-range price but effective — cheaper than spa treatments" }
+      { category: "Value", score: 72, summary: "Mid-range price but effective â cheaper than spa treatments" }
     ],
-    pros: ["Noticeably reduces morning puffiness", "6 color options to match your aesthetic", "Reusable — just refrigerate and repeat", "Suit option includes extras for full face coverage", "Soft gel conforms to any face shape", "No chemicals or electricity needed"],
+    pros: ["Noticeably reduces morning puffiness", "6 color options to match your aesthetic", "Reusable â just refrigerate and repeat", "Suit option includes extras for full face coverage", "Soft gel conforms to any face shape", "No chemicals or electricity needed"],
     cons: ["Cooling effect lasts only ~20 minutes", "Won't permanently fix dark circles", "Strap feels basic/cheap", "Must pre-chill in fridge (not instant)", "Not suitable for freezer use", "Mask-only version doesn't cover full face"],
     finalVerdictSummary: "A hidden gem for anyone who wakes up puffy. Keep it in the fridge, use it for 15-20 minutes each morning, and you'll see a real difference. Just don't expect it to cure dark circles permanently.",
     faq: [
-      { question: "Can I put it in the freezer for extra cold?", answer: "Not recommended — freezer temperatures can make the gel too rigid and uncomfortable against skin. Refrigerator temperature (35-40°F) is the sweet spot for comfort and effectiveness." },
+      { question: "Can I put it in the freezer for extra cold?", answer: "Not recommended â freezer temperatures can make the gel too rigid and uncomfortable against skin. Refrigerator temperature (35-40Â°F) is the sweet spot for comfort and effectiveness." },
       { question: "How long does the cooling effect last?", answer: "About 15-20 minutes from a full refrigerator chill. After that, the gel warms to body temperature." },
-      { question: "What's the difference between the mask and suit options?", answer: "The mask is just the eye mask. The suit includes additional gel pads for broader face coverage — forehead, cheeks, and under-eye area." }
+      { question: "What's the difference between the mask and suit options?", answer: "The mask is just the eye mask. The suit includes additional gel pads for broader face coverage â forehead, cheeks, and under-eye area." }
     ],
-    viralReason: "Cooling gel masks went viral as the 'de-puff hack' on skincare TikTok — simple, cheap, and visibly effective in under 20 minutes."
+    viralReason: "Cooling gel masks went viral as the 'de-puff hack' on skincare TikTok â simple, cheap, and visibly effective in under 20 minutes."
   },
   {
     id: "p24",
@@ -908,25 +873,25 @@ export const products: Product[] = [
     date: "2026-03-27",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/fluffy-rabbit-plush-toy-soft-bunny-stuffed-animal?utm_source=aeo&utm_medium=content&utm_campaign=fluffy-rabbit-plush",
     questionHeadline: "Are Fluffy Bunny Plush Toys Worth It or Just Cute Clutter?",
-    answerSnippet: "Worth it if you want a genuinely soft, photogenic plush for gifting, room décor, or comfort. PP cotton fill is dense and huggable. Three sizes (25cm-55cm) cover any occasion.",
+    answerSnippet: "Worth it if you want a genuinely soft, photogenic plush for gifting, room dÃ©cor, or comfort. PP cotton fill is dense and huggable. Three sizes (25cm-55cm) cover any occasion.",
     problemSection: "Finding a plush toy that's actually soft, not scratchy or cheap-feeling",
     solutionSection: "Premium plush material with dense PP cotton fill delivers real softness you can feel instantly",
-    howToUse: ["Choose your size (25cm desk buddy, 40cm cuddle companion, 55cm statement piece)", "Fluff gently after unboxing to restore shape from shipping", "Place on bed, couch, shelf, or gift directly", "Spot-clean with damp cloth — hand wash for deeper cleaning"],
+    howToUse: ["Choose your size (25cm desk buddy, 40cm cuddle companion, 55cm statement piece)", "Fluff gently after unboxing to restore shape from shipping", "Place on bed, couch, shelf, or gift directly", "Spot-clean with damp cloth â hand wash for deeper cleaning"],
     testResults: [
-      { category: "Softness & Quality", score: 78, summary: "Premium plush material, PP cotton is dense and huggable — noticeably softer than budget alternatives" },
-      { category: "Design Appeal", score: 72, summary: "Cute minimal aesthetic, clean white design, very photogenic for room décor" },
+      { category: "Softness & Quality", score: 78, summary: "Premium plush material, PP cotton is dense and huggable â noticeably softer than budget alternatives" },
+      { category: "Design Appeal", score: 72, summary: "Cute minimal aesthetic, clean white design, very photogenic for room dÃ©cor" },
       { category: "Durability", score: 65, summary: "Holds up to regular cuddling but white color shows wear; hand-wash only" },
       { category: "Value", score: 70, summary: "Fair pricing across all 3 sizes; 25cm is the sweet spot for gifting" }
     ],
-    pros: ["Genuinely soft premium plush material", "Dense PP cotton fill — not flat or hollow", "3 size options for any occasion", "Clean minimal white design — very photogenic", "Great gift for kids and adults", "Affordable starting price ($29)"],
-    cons: ["White color shows stains and wear quickly", "Hand-wash only — not machine washable", "Only available in white", "55cm version is pricier ($63)", "No weighted or sensory features", "Basic packaging for gifting"],
+    pros: ["Genuinely soft premium plush material", "Dense PP cotton fill â not flat or hollow", "3 size options for any occasion", "Clean minimal white design â very photogenic", "Great gift for kids and adults", "Affordable starting price ($29)"],
+    cons: ["White color shows stains and wear quickly", "Hand-wash only â not machine washable", "Only available in white", "55cm version is pricier ($63)", "No weighted or sensory features", "Basic packaging for gifting"],
     finalVerdictSummary: "A hidden gem for anyone who values genuine softness over brand name. The 25cm size is perfect for desk buddies and small gifts; the 55cm is a statement cuddle companion.",
     faq: [
-      { question: "Is it machine washable?", answer: "No — hand wash only. The plush material and PP cotton fill can degrade in a washing machine. Spot-clean for small marks, hand wash for deeper cleaning." },
-      { question: "What size should I get?", answer: "25cm for desk/shelf décor and small gifts. 40cm for a proper cuddle companion. 55cm for a statement piece or kids who want a big buddy." },
+      { question: "Is it machine washable?", answer: "No â hand wash only. The plush material and PP cotton fill can degrade in a washing machine. Spot-clean for small marks, hand wash for deeper cleaning." },
+      { question: "What size should I get?", answer: "25cm for desk/shelf dÃ©cor and small gifts. 40cm for a proper cuddle companion. 55cm for a statement piece or kids who want a big buddy." },
       { question: "Is it safe for babies?", answer: "The materials are soft and non-toxic, but like all plush toys, it's not recommended for infants under 12 months due to suffocation risk. Great for toddlers and up." }
     ],
-    viralReason: "Minimalist white plush toys went viral as the 'aesthetic room companion' on TikTok — cute, photogenic, and surprisingly huggable."
+    viralReason: "Minimalist white plush toys went viral as the 'aesthetic room companion' on TikTok â cute, photogenic, and surprisingly huggable."
   },
   {
     id: "p25",
@@ -935,7 +900,7 @@ export const products: Product[] = [
     brand: "Generic",
     category: "Self Care",
     vibeScore: 74,
-    verdict: "A genuinely relaxing scalp massager with bonus red light therapy. The massage is the real star — red light is a nice extra, not a miracle worker.",
+    verdict: "A genuinely relaxing scalp massager with bonus red light therapy. The massage is the real star â red light is a nice extra, not a miracle worker.",
     verdictBadge: "Hidden Gem",
     price: "$85.53",
     priceRange: "$85.53",
@@ -950,25 +915,25 @@ export const products: Product[] = [
     date: "2026-03-27",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/rechargeable-scalp-massager-comb-with-red-light-therapy?utm_source=aeo&utm_medium=content&utm_campaign=scalp-massager-comb",
     questionHeadline: "Do Scalp Massager Combs with Red Light Actually Help Hair Growth?",
-    answerSnippet: "The massage part? Absolutely — it stimulates blood circulation and feels incredible. The red light? Limited clinical evidence at consumer-device levels. Buy it for the massage, consider the red light a bonus.",
+    answerSnippet: "The massage part? Absolutely â it stimulates blood circulation and feels incredible. The red light? Limited clinical evidence at consumer-device levels. Buy it for the massage, consider the red light a bonus.",
     problemSection: "Scalp tension, stress, and curiosity about red light therapy for hair",
     solutionSection: "High-frequency vibration massage relieves tension while red light therapy adds a potential wellness boost",
     howToUse: ["Charge fully via USB (about 2 hours)", "Apply hair tonic or serum to scalp (optional, enhances absorption)", "Select mode: Developmental (red light + vibration + micro current), Massage (vibration + micro current), or Rejuvenating (red light + micro current)", "Glide through hair for 10-15 minutes, focusing on tension areas"],
     testResults: [
       { category: "Massage Quality", score: 78, summary: "Vibrations feel genuinely relaxing with good pressure distribution across the scalp" },
-      { category: "Red Light Therapy", score: 70, summary: "Included and functional, but consumer-level irradiance — don't expect clinical results" },
+      { category: "Red Light Therapy", score: 70, summary: "Included and functional, but consumer-level irradiance â don't expect clinical results" },
       { category: "Build Quality", score: 75, summary: "Solid construction, USB charging, detachable head for easy cleaning" },
       { category: "Value", score: 72, summary: "Premium price ($86) but multi-function device justifies it if you use both features regularly" }
     ],
-    pros: ["Genuinely relaxing scalp massage", "3 distinct therapy modes", "Red light therapy as bonus feature", "Detachable head for hygiene", "USB rechargeable — long battery life", "3 color options (White, Black, Emerald)"],
+    pros: ["Genuinely relaxing scalp massage", "3 distinct therapy modes", "Red light therapy as bonus feature", "Detachable head for hygiene", "USB rechargeable â long battery life", "3 color options (White, Black, Emerald)"],
     cons: ["Red light therapy unproven at consumer level for hair growth", "Premium price at $86", "Not a replacement for medical hair loss treatment", "Single variant per color (no size options)", "Takes 2 hours to fully charge", "Learning curve for 3 modes"],
-    finalVerdictSummary: "Buy it for the massage — it's genuinely one of the best scalp massagers we've tested. The red light is a nice extra, but don't buy it expecting hair regrowth miracles.",
+    finalVerdictSummary: "Buy it for the massage â it's genuinely one of the best scalp massagers we've tested. The red light is a nice extra, but don't buy it expecting hair regrowth miracles.",
     faq: [
-      { question: "Does red light therapy actually regrow hair?", answer: "Clinical research shows some promise for red light therapy and hair growth, but most studies use medical-grade devices with higher irradiance. Consumer devices like this offer lower power — potentially supportive but not clinically proven." },
+      { question: "Does red light therapy actually regrow hair?", answer: "Clinical research shows some promise for red light therapy and hair growth, but most studies use medical-grade devices with higher irradiance. Consumer devices like this offer lower power â potentially supportive but not clinically proven." },
       { question: "How often should I use it?", answer: "10-15 minutes per session, 3-5 times per week. Daily use is fine for the massage function. For red light therapy, consistency over weeks/months matters more than frequency." },
-      { question: "Can I use it with hair products?", answer: "Yes — it has a 6ml liquid tank designed for hair tonics and scalp serums. The vibration helps enhance product absorption." }
+      { question: "Can I use it with hair products?", answer: "Yes â it has a 6ml liquid tank designed for hair tonics and scalp serums. The vibration helps enhance product absorption." }
     ],
-    viralReason: "Red light therapy went mainstream on TikTok as the 'biohacker hair hack' — this comb combines it with the satisfying scalp massage ASMR trend."
+    viralReason: "Red light therapy went mainstream on TikTok as the 'biohacker hair hack' â this comb combines it with the satisfying scalp massage ASMR trend."
   },
   {
     id: "p26",
@@ -992,25 +957,25 @@ export const products: Product[] = [
     date: "2026-03-27",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/infrared-red-light-therapy-instrument?utm_source=aeo&utm_medium=content&utm_campaign=red-light-therapy-device",
     questionHeadline: "Does At-Home Red Light Therapy Actually Work?",
-    answerSnippet: "Yes — clinical evidence supports red light therapy for skin healing, collagen production, and pain relief. But consumer devices have lower irradiance than clinical panels. This is a great entry point, not a medical replacement.",
+    answerSnippet: "Yes â clinical evidence supports red light therapy for skin healing, collagen production, and pain relief. But consumer devices have lower irradiance than clinical panels. This is a great entry point, not a medical replacement.",
     problemSection: "Wanting the benefits of red light therapy without clinic visits or $500+ panel investments",
     solutionSection: "Portable, targeted infrared + red light device delivers therapy at home for a fraction of the clinical cost",
     howToUse: ["Charge or plug in the device", "Clean the target skin area", "Hold 2-6 inches from skin and turn on", "Treat each area for 10-20 minutes, 3-5 times per week"],
     testResults: [
-      { category: "Light Output", score: 72, summary: "Adequate infrared/red light intensity for home use — lower than clinical panels but functional" },
+      { category: "Light Output", score: 72, summary: "Adequate infrared/red light intensity for home use â lower than clinical panels but functional" },
       { category: "Portability", score: 75, summary: "Removable design makes it easy to target specific body areas" },
-      { category: "Build Quality", score: 68, summary: "Functional but not medical-grade construction — adequate for home use" },
+      { category: "Build Quality", score: 68, summary: "Functional but not medical-grade construction â adequate for home use" },
       { category: "Value", score: 65, summary: "$108 is fair for entry-level; clinical panels cost $300-800+" }
     ],
     pros: ["Portable, targeted treatment", "Infrared + red light dual wavelengths", "Much cheaper than clinical panels ($300-800+)", "Non-invasive wellness approach", "Good entry point for red light therapy", "Removable design for versatile use"],
     cons: ["Lower irradiance than clinical-grade devices", "Not a replacement for medical treatment", "Single color variant only", "Limited coverage area per session", "Requires consistent use over weeks for visible results", "Build quality is adequate, not premium"],
-    finalVerdictSummary: "The best way to try red light therapy without a major investment. If it works for you, great — you saved hundreds over a clinical panel. If not, you're out $108 instead of $500+.",
+    finalVerdictSummary: "The best way to try red light therapy without a major investment. If it works for you, great â you saved hundreds over a clinical panel. If not, you're out $108 instead of $500+.",
     faq: [
-      { question: "Is red light therapy safe?", answer: "Yes — red and near-infrared light is non-ionizing and considered safe for home use. No UV exposure. The main risk is eye exposure — don't look directly into the LEDs." },
+      { question: "Is red light therapy safe?", answer: "Yes â red and near-infrared light is non-ionizing and considered safe for home use. No UV exposure. The main risk is eye exposure â don't look directly into the LEDs." },
       { question: "How long before I see results?", answer: "Most users report noticing skin improvements after 4-8 weeks of consistent use (3-5 sessions per week). Pain relief may be noticeable sooner." },
-      { question: "How does this compare to clinical red light panels?", answer: "Clinical panels ($300-800+) have higher irradiance and larger coverage areas. This device is portable and targeted — better for spot treatment, not full-body coverage." }
+      { question: "How does this compare to clinical red light panels?", answer: "Clinical panels ($300-800+) have higher irradiance and larger coverage areas. This device is portable and targeted â better for spot treatment, not full-body coverage." }
     ],
-    viralReason: "Red light therapy went mainstream as the 'anti-aging biohack' on TikTok — this device lets people try it without the dermatologist price tag."
+    viralReason: "Red light therapy went mainstream as the 'anti-aging biohack' on TikTok â this device lets people try it without the dermatologist price tag."
   },
   {
     id: "p27",
@@ -1031,25 +996,25 @@ export const products: Product[] = [
     date: "2026-03-27",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/douglas-baby-fox-teether-plush-stuffed-animal-toy?utm_source=aeo&utm_medium=content&utm_campaign=baby-fox-teether",
     questionHeadline: "Are Premium Baby Teether Toys Worth the Splurge?",
-    answerSnippet: "Yes — if safety and quality matter to you. The Douglas Fox Teether uses 100% silicone (BPA-free), baby-safe embroidery with no loose parts, and premium plush materials. At $88, it's a splurge vs. $8-15 generic teethers, but the dual comfort + teething function and Douglas brand quality justify it.",
-    problemSection: "Finding a teether that's both safe and comforting — most are plastic-only or plush-only",
+    answerSnippet: "Yes â if safety and quality matter to you. The Douglas Fox Teether uses 100% silicone (BPA-free), baby-safe embroidery with no loose parts, and premium plush materials. At $88, it's a splurge vs. $8-15 generic teethers, but the dual comfort + teething function and Douglas brand quality justify it.",
+    problemSection: "Finding a teether that's both safe and comforting â most are plastic-only or plush-only",
     solutionSection: "Douglas combines a cuddly plush companion with a 100% silicone teether ring in one product",
     howToUse: ["Inspect the teether for any packaging residue and wash silicone ring with warm soapy water", "Let baby explore the plush textures and silicone ring naturally", "Chill the silicone ring in the fridge (not freezer) for extra soothing on sore gums", "Spot-clean the plush; hand wash silicone ring regularly"],
     testResults: [
-      { category: "Safety & Materials", score: 85, summary: "100% silicone teether, baby-safe embroidery, no detachable small parts — top marks" },
-      { category: "Design Appeal", score: 78, summary: "Charming woodland fox design appeals to both babies and parents — gift-worthy" },
+      { category: "Safety & Materials", score: 85, summary: "100% silicone teether, baby-safe embroidery, no detachable small parts â top marks" },
+      { category: "Design Appeal", score: 78, summary: "Charming woodland fox design appeals to both babies and parents â gift-worthy" },
       { category: "Functionality", score: 72, summary: "Dual-purpose comfort + teething relief; lightweight enough for baby grip" },
       { category: "Value", score: 68, summary: "$88 is premium, but Douglas brand quality and safety features justify the investment" }
     ],
-    pros: ["100% silicone teether ring — BPA-free, safe", "Baby-safe embroidery — no loose parts", "Dual comfort + teething function", "Douglas brand quality and reputation", "Charming woodland fox design", "Part of Shy Little Fox collection"],
-    cons: ["$88 is expensive for a teether-plush", "Only one design/color option", "Not machine washable", "Silicone ring is small — some babies prefer larger surfaces", "Premium price vs. generic alternatives"],
+    pros: ["100% silicone teether ring â BPA-free, safe", "Baby-safe embroidery â no loose parts", "Dual comfort + teething function", "Douglas brand quality and reputation", "Charming woodland fox design", "Part of Shy Little Fox collection"],
+    cons: ["$88 is expensive for a teether-plush", "Only one design/color option", "Not machine washable", "Silicone ring is small â some babies prefer larger surfaces", "Premium price vs. generic alternatives"],
     finalVerdictSummary: "Worth the splurge for safety-conscious parents and gift-givers. The Douglas brand reputation, 100% silicone, and adorable design make it a standout.",
     faq: [
       { question: "Is the teether ring safe for newborns?", answer: "The silicone ring is safe from birth, but the plush should only be used under supervision for babies under 12 months due to standard suffocation risk." },
-      { question: "Can I refrigerate the teether?", answer: "Yes — chilling the silicone ring in the fridge provides extra soothing relief. Do not freeze it." },
+      { question: "Can I refrigerate the teether?", answer: "Yes â chilling the silicone ring in the fridge provides extra soothing relief. Do not freeze it." },
       { question: "How does Douglas compare to Sophie la Girafe?", answer: "Douglas focuses on plush + teether combos with premium materials. Sophie la Girafe ($25) is a standalone rubber teether. Different products for different needs." }
     ],
-    viralReason: "Premium baby teethers went viral on parent TikTok as the 'worth the splurge' baby registry item — safety + cuteness in one."
+    viralReason: "Premium baby teethers went viral on parent TikTok as the 'worth the splurge' baby registry item â safety + cuteness in one."
   },
   {
     id: "p28",
@@ -1058,7 +1023,7 @@ export const products: Product[] = [
     brand: "Generic",
     category: "Self Care",
     vibeScore: 76,
-    verdict: "The value pick for scalp therapy — EMS micro-current, red light, 10K vibrations/min, IPX5 waterproof, and Type-C fast charging for $24 less than the competition.",
+    verdict: "The value pick for scalp therapy â EMS micro-current, red light, 10K vibrations/min, IPX5 waterproof, and Type-C fast charging for $24 less than the competition.",
     verdictBadge: "Hidden Gem",
     price: "$61.76",
     priceRange: "$61.76",
@@ -1071,149 +1036,26 @@ export const products: Product[] = [
     date: "2026-03-27",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/electric-scalp-treatment-massager-with-red-light-therapy?utm_source=aeo&utm_medium=content&utm_campaign=ems-scalp-massager",
     questionHeadline: "Is an EMS Scalp Massager Worth It for Hair Health?",
-    answerSnippet: "Yes — the EMS micro-current + 10,000 vibrations/min combination genuinely stimulates blood circulation and feels therapeutic. At $62, it's the value pick over the $86 Scalp Massager Comb, adding IPX5 waterproofing and faster charging.",
+    answerSnippet: "Yes â the EMS micro-current + 10,000 vibrations/min combination genuinely stimulates blood circulation and feels therapeutic. At $62, it's the value pick over the $86 Scalp Massager Comb, adding IPX5 waterproofing and faster charging.",
     problemSection: "Scalp tension, poor blood circulation, and wanting to support hair health without clinic visits",
     solutionSection: "EMS micro-current + high-frequency vibration stimulate blood flow while the 6ml serum tank enhances product absorption",
     howToUse: ["Charge via Type-C (1 hour full charge)", "Optional: fill 6ml tank with scalp serum", "Select mode: Developmental (red light + vibration + EMS), Massage (vibration + EMS), or Rejuvenating (red light + EMS)", "Glide through hair 10-15 minutes, focusing on tension areas; rinse after use (IPX5 waterproof)"],
     testResults: [
       { category: "Massage Quality", score: 80, summary: "10,000 vibrations/min + EMS micro-current delivers genuinely therapeutic scalp stimulation" },
-      { category: "Feature Set", score: 78, summary: "3 modes, liquid tank, IPX5 waterproof, Type-C fast charge — packed for the price" },
+      { category: "Feature Set", score: 78, summary: "3 modes, liquid tank, IPX5 waterproof, Type-C fast charge â packed for the price" },
       { category: "Build Quality", score: 72, summary: "82g lightweight, detachable head for cleaning, solid construction" },
-      { category: "Value", score: 75, summary: "$62 for EMS + red light + vibration + serum tank is excellent — $24 less than the competition" }
+      { category: "Value", score: 75, summary: "$62 for EMS + red light + vibration + serum tank is excellent â $24 less than the competition" }
     ],
-    pros: ["EMS micro-current for deeper stimulation", "10,000 vibrations/min", "IPX5 waterproof — easy to clean", "Type-C fast charging (1 hour)", "6ml liquid tank for serums", "Only 82g — ultralight", "$24 cheaper than Scalp Massager Comb"],
-    cons: ["Red light therapy unproven at consumer level", "Only one color option (White)", "Not a medical hair loss treatment", "6ml tank is small — needs frequent refilling", "EMS micro-current can feel strange at first"],
+    pros: ["EMS micro-current for deeper stimulation", "10,000 vibrations/min", "IPX5 waterproof â easy to clean", "Type-C fast charging (1 hour)", "6ml liquid tank for serums", "Only 82g â ultralight", "$24 cheaper than Scalp Massager Comb"],
+    cons: ["Red light therapy unproven at consumer level", "Only one color option (White)", "Not a medical hair loss treatment", "6ml tank is small â needs frequent refilling", "EMS micro-current can feel strange at first"],
     finalVerdictSummary: "The best value scalp massager we've tested. Saves $24 vs. the Scalp Massager Comb while adding EMS and waterproofing. Buy this if you want the most features per dollar.",
     faq: [
       { question: "What does EMS micro-current feel like?", answer: "A gentle tingling or pulsing sensation on your scalp. It's unusual at first but most people find it pleasant after 2-3 uses." },
-      { question: "Is it waterproof enough to use in the shower?", answer: "IPX5 means it handles water jets — safe for rinsing under the tap and light shower use. Don't submerge it." },
+      { question: "Is it waterproof enough to use in the shower?", answer: "IPX5 means it handles water jets â safe for rinsing under the tap and light shower use. Don't submerge it." },
       { question: "How does this compare to the Scalp Massager Comb ($86)?", answer: "This device is $24 cheaper, adds EMS micro-current, has IPX5 waterproofing, and charges faster (1hr vs 2hr). The Comb has a larger 1200mAh battery and comes in 3 colors. Performance is comparable." }
     ],
-    viralReason: "EMS scalp massagers went viral as the 'budget biohacker' tool on TikTok — visible scalp stimulation at a fraction of clinical treatment costs."
+    viralReason: "EMS scalp massagers went viral as the 'budget biohacker' tool on TikTok â visible scalp stimulation at a fraction of clinical treatment costs."
   },
-  {
-    id: "p29",
-    slug: "flamefusion-aromatherapy-diffuser",
-    name: "FlameFusion 3D Aromatherapy Diffuser",
-    brand: "Vibe Test Lab",
-    category: "Room Vibes",
-    vibeScore: 76,
-    verdict: "A genuinely atmospheric diffuser that doubles as décor — the 3D flame effect is convincing from across the room and the humidifier output is solid for bedrooms. At $103.56 it's not cheap for a diffuser, but you're paying for the visual spectacle. Main downside: the 200ml tank needs refilling every 4-6 hours.",
-    verdictBadge: "Worth It",
-    price: "$103.56",
-    priceRange: "$103.56",
-    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/f41eed7e4da6a7b91b8b44c988b3.png?v=1774566851",
-    images: [
-      "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/9899d0c54454b16e9ad13b8bdf8b.png?v=1774566862",
-      "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/7b29583b4dcea726c8b212346dca.png?v=1774566872"
-    ],
-    trending: true,
-    date: "2026-03-27",
-    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/flamefusion-3d-aromatherapy-diffuser-humidifier-colorful-essential-oil-flame-machine?utm_source=aeo&utm_medium=content&utm_campaign=flamefusion-aromatherapy-diffuser",
-    questionHeadline: "Do Flame Diffusers Actually Make Your Room Smell Better (and Look Better)?",
-    answerSnippet: "Yes — flame diffusers combine ultrasonic mist with a realistic 3D fire effect, creating both aroma and ambiance from one device. The FlameFusion ($103.56) stood out for its convincing flame simulation, colorful LED modes, and quiet operation under 30dB.",
-    problemSection: "Traditional diffusers work but look boring — they don't add atmosphere",
-    solutionSection: "The 3D flame effect creates a fireplace-like glow while dispersing essential oils throughout the room",
-    howToUse: ["Fill the 200ml tank with water and add 3-5 drops of essential oil", "Select your LED color mode and flame intensity", "Set the auto-shutoff timer and enjoy the ambiance"],
-    testResults: [
-      { category: "Ambiance Impact", score: 84, summary: "Convincing flame effect from 4+ feet — genuinely atmospheric in dim lighting" },
-      { category: "Scent Quality", score: 72, summary: "Good room coverage for bedrooms up to 250 sq ft, but not as strong as a reed diffuser" },
-      { category: "Build Quality", score: 74, summary: "Solid construction, quiet motor under 30dB, 200ml tank lasts 4-6 hours" },
-      { category: "Ease of Use", score: 78, summary: "Remote control included, simple fill-and-go setup, auto shutoff when empty" }
-    ],
-    pros: ["Stunning 3D flame effect looks real from across the room", "Colorful LED modes for different moods", "Quiet operation under 30dB", "Auto shutoff when water runs out", "Remote control included", "Works as both diffuser and humidifier"],
-    cons: ["200ml tank needs refilling every 4-6 hours", "Flame effect less convincing up close", "At $103.56, expensive for a diffuser", "Scent throw not as strong as plug-in diffusers", "Only comes in black"],
-    finalVerdictSummary: "The FlameFusion is the best ambient diffuser we've tested if atmosphere matters as much as scent. The flame effect is genuinely impressive in dim rooms. Worth it for bedrooms and living rooms — skip it if you only care about scent strength.",
-    faq: [
-      { question: "Does the flame diffuser use real fire?", answer: "No. The FlameFusion uses ultrasonic mist and LED lights to simulate a 3D flame effect. There's no actual fire, heat, or combustion — it's completely safe around kids and pets." },
-      { question: "How long does the water tank last?", answer: "The 200ml tank lasts approximately 4-6 hours on continuous mode. It shuts off automatically when the water runs out." },
-      { question: "Can I use it without essential oils?", answer: "Yes. It works as a standalone humidifier and ambient light without any oils. The flame effect and LED modes function independently of the diffuser." },
-      { question: "How loud is the FlameFusion diffuser?", answer: "Under 30dB — roughly the volume of a whisper. It won't disturb sleep or conversation." },
-      { question: "How long does shipping take?", answer: "Standard shipping takes 7-12 business days. Express options are available at checkout." },
-      { question: "What is the return policy?", answer: "30-day return window from delivery date. Product must be in original condition with packaging." }
-    ],
-    viralReason: "Flame diffusers went viral on TikTok as the 'instant cozy room' hack — the fireplace-like glow without the fireplace price tag."
-  },
-  {
-    id: "p30",
-    slug: "wireless-led-face-mask",
-    name: "Wireless LED Red Light Face Mask",
-    brand: "Vibe Test Lab",
-    category: "Self Care",
-    vibeScore: 79,
-    verdict: "A solid entry-level LED mask with 7 color modes and fully wireless design. Clinical studies support red and blue light therapy for skin, but results take 4-8 weeks of consistent use. At $69.99 it's a fraction of professional treatments, though the light intensity is lower than clinical-grade devices.",
-    verdictBadge: "Worth It",
-    price: "$69.99",
-    priceRange: "$69.99",
-    image: "",
-    images: [],
-    trending: true,
-    date: "2026-03-27",
-    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/wireless-led-red-light-face-mask-7-color-at-home-light-therapy?utm_source=aeo&utm_medium=content&utm_campaign=wireless-led-face-mask",
-    questionHeadline: "Do LED Face Masks Actually Work for Skin? (What the Science Says)",
-    answerSnippet: "Yes — clinical studies show red light (630-660nm) and blue light (415-450nm) therapy can improve skin texture, reduce acne, and boost collagen production over 4-8 weeks of consistent use. This wireless LED mask ($69.99) offers 7 color modes with USB-C charging and a 10-minute auto-shutoff.",
-    problemSection: "Professional LED treatments cost $200-500 per session and require clinic visits",
-    solutionSection: "At-home LED masks deliver the same wavelengths for a one-time cost, with 10-minute sessions you can do while multitasking",
-    howToUse: ["Cleanse face and apply serum (optional — enhances absorption)", "Secure the mask with the adjustable strap and select your light mode", "Use for 10 minutes per session, 3-5 times per week for best results"],
-    testResults: [
-      { category: "Effectiveness", score: 78, summary: "Noticeable skin texture improvement after 6 weeks — comparable to other at-home devices in this range" },
-      { category: "Comfort", score: 82, summary: "Lightweight silicone sits comfortably, adjustable strap, no cord to deal with" },
-      { category: "Build & Design", score: 80, summary: "Full-face coverage, 7 color modes, USB-C charging, 10-min auto shutoff" },
-      { category: "Value", score: 76, summary: "At $69.99 it undercuts most wireless LED masks by $30-50 — solid bang for buck" }
-    ],
-    pros: ["Fully wireless — no cord during use", "7 light color modes for different skin concerns", "USB-C rechargeable", "10-minute auto-shutoff timer", "Full-face silicone coverage", "Fraction of the cost of professional treatments"],
-    cons: ["No product images available yet", "Results take 4-8 weeks of consistent use", "Lower light intensity than clinical-grade devices", "Not FDA-cleared for medical claims", "Silicone can feel warm after extended sessions"],
-    finalVerdictSummary: "A well-designed wireless LED mask that delivers real (if gradual) results at a very competitive price. Worth it for anyone curious about light therapy — just set realistic expectations and commit to consistent use.",
-    faq: [
-      { question: "How often should I use an LED face mask?", answer: "3-5 times per week, 10 minutes per session. Consistency matters more than duration — daily 10-minute sessions outperform occasional longer ones." },
-      { question: "Which LED color is best for acne?", answer: "Blue light (415-450nm) targets acne-causing bacteria. Red light (630-660nm) reduces inflammation. For active breakouts, alternate blue and red modes." },
-      { question: "How long until I see results?", answer: "Most users notice improved skin texture in 4-6 weeks with consistent use. Significant collagen and acne improvements typically appear after 8-12 weeks." },
-      { question: "Is LED light therapy safe for all skin types?", answer: "Yes — LED therapy is non-invasive and safe for all skin types and tones. Avoid if you're on photosensitizing medications or have epilepsy." },
-      { question: "How long does shipping take?", answer: "Standard shipping takes 7-12 business days. Express options are available at checkout." },
-      { question: "What is the return policy?", answer: "30-day return window from delivery date. Product must be in original condition with packaging." }
-    ],
-    viralReason: "LED face masks went viral as the 'spa treatment at home' trend — TikTok creators showing before/after results drove massive interest in affordable at-home devices."
-  },
-  {
-    id: "p31",
-    slug: "stainless-steel-face-roller",
-    name: "Stainless Steel Face Roller",
-    brand: "Vibe Test Lab",
-    category: "Self Care",
-    vibeScore: 74,
-    verdict: "A simple, effective tool for morning depuffing and post-skincare massage. The stainless steel stays cold longer than jade or rose quartz, and at $19.99 it's hard to argue with the price. Just know the results are temporary (2-4 hours) and it won't replace professional treatments.",
-    verdictBadge: "Hidden Gem",
-    price: "$19.99",
-    priceRange: "$19.99",
-    image: "",
-    images: [],
-    trending: false,
-    date: "2026-03-27",
-    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/stainless-steel-face-roller-cooling-depuff-tool-for-post-glow-routine?utm_source=aeo&utm_medium=content&utm_campaign=stainless-steel-face-roller",
-    questionHeadline: "Do Face Rollers Actually Reduce Puffiness? (Or Is It All Hype?)",
-    answerSnippet: "Partially — face rollers temporarily reduce puffiness through lymphatic drainage and cooling, but the effects last 2-4 hours, not permanently. This stainless steel roller ($19.99) holds cold better than jade and is easier to sanitize. Best used chilled after skincare application.",
-    problemSection: "Morning facial puffiness and sluggish circulation after sleeping",
-    solutionSection: "The cold stainless steel promotes lymphatic drainage and helps serums absorb — a 2-minute morning ritual that visibly depuffs",
-    howToUse: ["Refrigerate the roller for 15-30 minutes before use", "Apply your serum or moisturizer first", "Roll outward from the center of your face — forehead, cheeks, jawline, neck — 5-10 passes per area"],
-    testResults: [
-      { category: "Effectiveness", score: 72, summary: "Visible depuffing within 5 minutes, effects last 2-4 hours — consistent with dermatologist expectations" },
-      { category: "Cooling Effect", score: 80, summary: "Stainless steel retains cold 3x longer than jade — noticeably cooler after 2 minutes of use" },
-      { category: "Build Quality", score: 76, summary: "Solid 304 stainless steel, smooth rolling action, no squeaking or looseness" },
-      { category: "Value", score: 82, summary: "At $19.99 it's less than half the price of most branded jade rollers — exceptional value" }
-    ],
-    pros: ["Stays cold 3x longer than jade or rose quartz", "Easy to sanitize — just rinse with soap", "Ergonomic handle fits jawline and cheekbone contours", "Under $20 — exceptional value", "Pairs well with LED masks and serums"],
-    cons: ["Results are temporary (2-4 hours)", "Won't replace dermatological treatments", "Requires refrigeration for best results", "No carrying case included", "Metal feels intense if not warmed up first in cold weather"],
-    finalVerdictSummary: "The best value face roller we've tested. Stainless steel beats jade on cooling and hygiene, and at $19.99 it's a no-brainer addition to any skincare routine. Just keep expectations realistic — this is a daily ritual tool, not a miracle worker.",
-    faq: [
-      { question: "Is stainless steel better than jade for face rolling?", answer: "For cooling and hygiene, yes. Stainless steel retains cold 3x longer and can be fully sanitized. Jade has a more traditional feel and slight natural cooling, but it's porous and harder to keep clean." },
-      { question: "How long do face roller results last?", answer: "Depuffing effects typically last 2-4 hours. For best results, use every morning as part of your skincare routine. The effects are cumulative with consistent use." },
-      { question: "Can I use a face roller every day?", answer: "Yes — daily use is recommended. Roll gently (no heavy pressure needed) for 2-5 minutes per session." },
-      { question: "Should I use the face roller before or after moisturizer?", answer: "After. Apply your serum or moisturizer first, then roll. The roller helps push product deeper into the skin and improves absorption." },
-      { question: "How long does shipping take?", answer: "Standard shipping takes 7-12 business days. Express options are available at checkout." },
-      { question: "What is the return policy?", answer: "30-day return window from delivery date. Product must be in original condition with packaging." }
-    ],
-    viralReason: "Stainless steel face rollers went viral as the 'upgraded ice roller' on skincare TikTok — the satisfying cold metal + visible depuffing in real-time made them a morning routine staple."
-  }
-];
+      ];
 
 export const categories: string[] = ['All', 'Sleepmaxxing', 'Kitchen & Dining', 'Pets', 'Yard Tools', 'Room Vibes', 'Self Care', 'Gifts & Cozy'];
