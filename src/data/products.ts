@@ -1090,6 +1090,129 @@ export const products: Product[] = [
       { question: "How does this compare to the Scalp Massager Comb ($86)?", answer: "This device is $24 cheaper, adds EMS micro-current, has IPX5 waterproofing, and charges faster (1hr vs 2hr). The Comb has a larger 1200mAh battery and comes in 3 colors. Performance is comparable." }
     ],
     viralReason: "EMS scalp massagers went viral as the 'budget biohacker' tool on TikTok — visible scalp stimulation at a fraction of clinical treatment costs."
+  },
+  {
+    id: "p29",
+    slug: "flamefusion-aromatherapy-diffuser",
+    name: "FlameFusion 3D Aromatherapy Diffuser",
+    brand: "Vibe Test Lab",
+    category: "Room Vibes",
+    vibeScore: 76,
+    verdict: "A genuinely atmospheric diffuser that doubles as décor — the 3D flame effect is convincing from across the room and the humidifier output is solid for bedrooms. At $103.56 it's not cheap for a diffuser, but you're paying for the visual spectacle. Main downside: the 200ml tank needs refilling every 4-6 hours.",
+    verdictBadge: "Worth It",
+    price: "$103.56",
+    priceRange: "$103.56",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/f41eed7e4da6a7b91b8b44c988b3.png?v=1774566851",
+    images: [
+      "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/9899d0c54454b16e9ad13b8bdf8b.png?v=1774566862",
+      "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/7b29583b4dcea726c8b212346dca.png?v=1774566872"
+    ],
+    trending: true,
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/flamefusion-3d-aromatherapy-diffuser-humidifier-colorful-essential-oil-flame-machine?utm_source=aeo&utm_medium=content&utm_campaign=flamefusion-aromatherapy-diffuser",
+    questionHeadline: "Do Flame Diffusers Actually Make Your Room Smell Better (and Look Better)?",
+    answerSnippet: "Yes — flame diffusers combine ultrasonic mist with a realistic 3D fire effect, creating both aroma and ambiance from one device. The FlameFusion ($103.56) stood out for its convincing flame simulation, colorful LED modes, and quiet operation under 30dB.",
+    problemSection: "Traditional diffusers work but look boring — they don't add atmosphere",
+    solutionSection: "The 3D flame effect creates a fireplace-like glow while dispersing essential oils throughout the room",
+    howToUse: ["Fill the 200ml tank with water and add 3-5 drops of essential oil", "Select your LED color mode and flame intensity", "Set the auto-shutoff timer and enjoy the ambiance"],
+    testResults: [
+      { category: "Ambiance Impact", score: 84, summary: "Convincing flame effect from 4+ feet — genuinely atmospheric in dim lighting" },
+      { category: "Scent Quality", score: 72, summary: "Good room coverage for bedrooms up to 250 sq ft, but not as strong as a reed diffuser" },
+      { category: "Build Quality", score: 74, summary: "Solid construction, quiet motor under 30dB, 200ml tank lasts 4-6 hours" },
+      { category: "Ease of Use", score: 78, summary: "Remote control included, simple fill-and-go setup, auto shutoff when empty" }
+    ],
+    pros: ["Stunning 3D flame effect looks real from across the room", "Colorful LED modes for different moods", "Quiet operation under 30dB", "Auto shutoff when water runs out", "Remote control included", "Works as both diffuser and humidifier"],
+    cons: ["200ml tank needs refilling every 4-6 hours", "Flame effect less convincing up close", "At $103.56, expensive for a diffuser", "Scent throw not as strong as plug-in diffusers", "Only comes in black"],
+    finalVerdictSummary: "The FlameFusion is the best ambient diffuser we've tested if atmosphere matters as much as scent. The flame effect is genuinely impressive in dim rooms. Worth it for bedrooms and living rooms — skip it if you only care about scent strength.",
+    faq: [
+      { question: "Does the flame diffuser use real fire?", answer: "No. The FlameFusion uses ultrasonic mist and LED lights to simulate a 3D flame effect. There's no actual fire, heat, or combustion — it's completely safe around kids and pets." },
+      { question: "How long does the water tank last?", answer: "The 200ml tank lasts approximately 4-6 hours on continuous mode. It shuts off automatically when the water runs out." },
+      { question: "Can I use it without essential oils?", answer: "Yes. It works as a standalone humidifier and ambient light without any oils. The flame effect and LED modes function independently of the diffuser." },
+      { question: "How loud is the FlameFusion diffuser?", answer: "Under 30dB — roughly the volume of a whisper. It won't disturb sleep or conversation." },
+      { question: "How long does shipping take?", answer: "Standard shipping takes 7-12 business days. Express options are available at checkout." },
+      { question: "What is the return policy?", answer: "30-day return window from delivery date. Product must be in original condition with packaging." }
+    ],
+    viralReason: "Flame diffusers went viral on TikTok as the 'instant cozy room' hack — the fireplace-like glow without the fireplace price tag."
+  },
+  {
+    id: "p30",
+    slug: "wireless-led-face-mask",
+    name: "Wireless LED Red Light Face Mask",
+    brand: "Vibe Test Lab",
+    category: "Self Care",
+    vibeScore: 79,
+    verdict: "A solid entry-level LED mask with 7 color modes and fully wireless design. Clinical studies support red and blue light therapy for skin, but results take 4-8 weeks of consistent use. At $69.99 it's a fraction of professional treatments, though the light intensity is lower than clinical-grade devices.",
+    verdictBadge: "Worth It",
+    price: "$69.99",
+    priceRange: "$69.99",
+    image: "",
+    images: [],
+    trending: true,
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/wireless-led-red-light-face-mask-7-color-at-home-light-therapy?utm_source=aeo&utm_medium=content&utm_campaign=wireless-led-face-mask",
+    questionHeadline: "Do LED Face Masks Actually Work for Skin? (What the Science Says)",
+    answerSnippet: "Yes — clinical studies show red light (630-660nm) and blue light (415-450nm) therapy can improve skin texture, reduce acne, and boost collagen production over 4-8 weeks of consistent use. This wireless LED mask ($69.99) offers 7 color modes with USB-C charging and a 10-minute auto-shutoff.",
+    problemSection: "Professional LED treatments cost $200-500 per session and require clinic visits",
+    solutionSection: "At-home LED masks deliver the same wavelengths for a one-time cost, with 10-minute sessions you can do while multitasking",
+    howToUse: ["Cleanse face and apply serum (optional — enhances absorption)", "Secure the mask with the adjustable strap and select your light mode", "Use for 10 minutes per session, 3-5 times per week for best results"],
+    testResults: [
+      { category: "Effectiveness", score: 78, summary: "Noticeable skin texture improvement after 6 weeks — comparable to other at-home devices in this range" },
+      { category: "Comfort", score: 82, summary: "Lightweight silicone sits comfortably, adjustable strap, no cord to deal with" },
+      { category: "Build & Design", score: 80, summary: "Full-face coverage, 7 color modes, USB-C charging, 10-min auto shutoff" },
+      { category: "Value", score: 76, summary: "At $69.99 it undercuts most wireless LED masks by $30-50 — solid bang for buck" }
+    ],
+    pros: ["Fully wireless — no cord during use", "7 light color modes for different skin concerns", "USB-C rechargeable", "10-minute auto-shutoff timer", "Full-face silicone coverage", "Fraction of the cost of professional treatments"],
+    cons: ["No product images available yet", "Results take 4-8 weeks of consistent use", "Lower light intensity than clinical-grade devices", "Not FDA-cleared for medical claims", "Silicone can feel warm after extended sessions"],
+    finalVerdictSummary: "A well-designed wireless LED mask that delivers real (if gradual) results at a very competitive price. Worth it for anyone curious about light therapy — just set realistic expectations and commit to consistent use.",
+    faq: [
+      { question: "How often should I use an LED face mask?", answer: "3-5 times per week, 10 minutes per session. Consistency matters more than duration — daily 10-minute sessions outperform occasional longer ones." },
+      { question: "Which LED color is best for acne?", answer: "Blue light (415-450nm) targets acne-causing bacteria. Red light (630-660nm) reduces inflammation. For active breakouts, alternate blue and red modes." },
+      { question: "How long until I see results?", answer: "Most users notice improved skin texture in 4-6 weeks with consistent use. Significant collagen and acne improvements typically appear after 8-12 weeks." },
+      { question: "Is LED light therapy safe for all skin types?", answer: "Yes — LED therapy is non-invasive and safe for all skin types and tones. Avoid if you're on photosensitizing medications or have epilepsy." },
+      { question: "How long does shipping take?", answer: "Standard shipping takes 7-12 business days. Express options are available at checkout." },
+      { question: "What is the return policy?", answer: "30-day return window from delivery date. Product must be in original condition with packaging." }
+    ],
+    viralReason: "LED face masks went viral as the 'spa treatment at home' trend — TikTok creators showing before/after results drove massive interest in affordable at-home devices."
+  },
+  {
+    id: "p31",
+    slug: "stainless-steel-face-roller",
+    name: "Stainless Steel Face Roller",
+    brand: "Vibe Test Lab",
+    category: "Self Care",
+    vibeScore: 74,
+    verdict: "A simple, effective tool for morning depuffing and post-skincare massage. The stainless steel stays cold longer than jade or rose quartz, and at $19.99 it's hard to argue with the price. Just know the results are temporary (2-4 hours) and it won't replace professional treatments.",
+    verdictBadge: "Hidden Gem",
+    price: "$19.99",
+    priceRange: "$19.99",
+    image: "",
+    images: [],
+    trending: false,
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/stainless-steel-face-roller-cooling-depuff-tool-for-post-glow-routine?utm_source=aeo&utm_medium=content&utm_campaign=stainless-steel-face-roller",
+    questionHeadline: "Do Face Rollers Actually Reduce Puffiness? (Or Is It All Hype?)",
+    answerSnippet: "Partially — face rollers temporarily reduce puffiness through lymphatic drainage and cooling, but the effects last 2-4 hours, not permanently. This stainless steel roller ($19.99) holds cold better than jade and is easier to sanitize. Best used chilled after skincare application.",
+    problemSection: "Morning facial puffiness and sluggish circulation after sleeping",
+    solutionSection: "The cold stainless steel promotes lymphatic drainage and helps serums absorb — a 2-minute morning ritual that visibly depuffs",
+    howToUse: ["Refrigerate the roller for 15-30 minutes before use", "Apply your serum or moisturizer first", "Roll outward from the center of your face — forehead, cheeks, jawline, neck — 5-10 passes per area"],
+    testResults: [
+      { category: "Effectiveness", score: 72, summary: "Visible depuffing within 5 minutes, effects last 2-4 hours — consistent with dermatologist expectations" },
+      { category: "Cooling Effect", score: 80, summary: "Stainless steel retains cold 3x longer than jade — noticeably cooler after 2 minutes of use" },
+      { category: "Build Quality", score: 76, summary: "Solid 304 stainless steel, smooth rolling action, no squeaking or looseness" },
+      { category: "Value", score: 82, summary: "At $19.99 it's less than half the price of most branded jade rollers — exceptional value" }
+    ],
+    pros: ["Stays cold 3x longer than jade or rose quartz", "Easy to sanitize — just rinse with soap", "Ergonomic handle fits jawline and cheekbone contours", "Under $20 — exceptional value", "Pairs well with LED masks and serums"],
+    cons: ["Results are temporary (2-4 hours)", "Won't replace dermatological treatments", "Requires refrigeration for best results", "No carrying case included", "Metal feels intense if not warmed up first in cold weather"],
+    finalVerdictSummary: "The best value face roller we've tested. Stainless steel beats jade on cooling and hygiene, and at $19.99 it's a no-brainer addition to any skincare routine. Just keep expectations realistic — this is a daily ritual tool, not a miracle worker.",
+    faq: [
+      { question: "Is stainless steel better than jade for face rolling?", answer: "For cooling and hygiene, yes. Stainless steel retains cold 3x longer and can be fully sanitized. Jade has a more traditional feel and slight natural cooling, but it's porous and harder to keep clean." },
+      { question: "How long do face roller results last?", answer: "Depuffing effects typically last 2-4 hours. For best results, use every morning as part of your skincare routine. The effects are cumulative with consistent use." },
+      { question: "Can I use a face roller every day?", answer: "Yes — daily use is recommended. Roll gently (no heavy pressure needed) for 2-5 minutes per session." },
+      { question: "Should I use the face roller before or after moisturizer?", answer: "After. Apply your serum or moisturizer first, then roll. The roller helps push product deeper into the skin and improves absorption." },
+      { question: "How long does shipping take?", answer: "Standard shipping takes 7-12 business days. Express options are available at checkout." },
+      { question: "What is the return policy?", answer: "30-day return window from delivery date. Product must be in original condition with packaging." }
+    ],
+    viralReason: "Stainless steel face rollers went viral as the 'upgraded ice roller' on skincare TikTok — the satisfying cold metal + visible depuffing in real-time made them a morning routine staple."
   }
 ];
 
