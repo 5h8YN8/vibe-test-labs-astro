@@ -12,6 +12,53 @@ jobs:
       - uses: actions/checkout@v4
       - name: Apply gallery swipe and touch visibility fix
         run: |
+          python3 - << 'PYEOF'
+          import sys
+          path = 'src/layouts/BaseLayout.astro'
+          with open(path, 'r', encoding='utf-8') as f:
+              content = f.read()
+          changed = 0
+          old_css = '    .product-gallery-nav button:hover { background: rgba(0,0,0,.7); }'
+          new_css = old_css + '\n    /* Touch devices: always show nav arrows */\n    @media (hover: none) {\n      .product-gallery-nav button { opacity: 0.85; }\n    }'
+          if old_css in content and '@media (hover: none)' not in content:
+              content = content.replace(old_css, new_css, 1)
+              changed += 1
+              print('CSS patch applied')
+          else:
+              print('CSS: already patched or marker missing')
+          old_js = "        /* Click hero to open lightbox */\n        hero.addEventListener('click', function() {\n          openLightbox(allImages, heroIndex);\n        });"
+          new_js = "        /* Touch swipe on collapsed hero */\n        var swipeStartX = 0;\n        var swipeStartY = 0;\n        var swipeMoved = false;\n        hero.addEventListener('touchstart', function(e) {\n          swipeStartX = e.changedTouches[0].clientX;\n          swipeStartY = e.changedTouches[0].clientY;\n          swipeMoved = false;\n        }, { passive: true });\n        hero.addEventListener('touchmove', function(e) {\n          swipeMoved = true;\n        }, { passive: true });\n        hero.addEventListener('touchend', function(e) {\n          var dx = e.changedTouches[0].clientX - swipeStartX;\n          var dy = e.changedTouches[0].clientY - swipeStartY;\n          if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) {\n            e.preventDefault();\n            heroIndex = (heroIndex + (dx < 0 ? 1 : -1) + allImages.length) % allImages.length;\n            heroImg.src = allImages[heroIndex].src;\n            heroImg.alt = allImages[heroIndex].alt || '';\n            updateActiveThumb(thumbs, heroIndex);\n          }\n        });\n\n        /* Click hero to open lightbox (only when not swiping) */\n        hero.addEventListener('click', function() {\n          if (!swipeMoved) openLightbox(allImages, heroIndex);\n        });"
+          if old_js in content and 'swipeMoved' not in content:
+              content = content.replace(old_js, new_js, 1)
+              changed += 1
+              print('JS patch applied')
+          else:
+              print('JS: already patched or marker missing')
+          with open(path, 'w', encoding='utf-8') as f:
+              f.write(content)
+          print(f'Done - {changed} patches applied')
+          PYEOF
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/layouts/BaseLayout.astro
+          git diff --cached --quiet && echo "No changes to commit" && exit 0
+          git commit -m "Add swipe + touch nav to collapsed product gallery"
+          git pushname: Add Gallery Swipe Support
+
+on:
+  workflow_dispatch:
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply gallery swipe and touch visibility fix
+        run: |
           python3 << 'PYEOF'
 import sys
 path = 'src/layouts/BaseLayout.astro'
