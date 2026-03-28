@@ -285,6 +285,18 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
     .buy-box strong { color: var(--foreground); display: block; font-family: var(--font-mono); font-size: 1.05rem; margin-bottom: .2rem; }
     .disclaimer { font-size: .75rem; color: var(--muted-foreground); font-style: italic; }
 
+    /* ── Price callout + urgency + trust badges ── */
+    .price-urgency-block { max-width:400px;margin:0 auto 0.25rem;text-align:center; }
+    .price-callout { font-family:var(--font-sans);font-size:1.75rem;font-weight:800;color:var(--foreground);margin:0;line-height:1.2; }
+    .price-callout .price-orig { font-size:1rem;font-weight:400;color:var(--muted-foreground);text-decoration:line-through;margin-left:.5rem; }
+    .urgency-row { display:flex;align-items:center;justify-content:center;gap:.4rem;margin-top:.35rem; }
+    .urgency-dot { width:8px;height:8px;border-radius:50%;background:#22c55e;display:inline-block;animation:pulse-dot 2s infinite; }
+    @keyframes pulse-dot { 0%,100%{opacity:1} 50%{opacity:.4} }
+    .urgency-text { font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted-foreground); }
+    .trust-badges { display:flex;flex-wrap:wrap;justify-content:center;gap:.75rem;margin-top:.6rem; }
+    .trust-badge { display:flex;align-items:center;gap:.3rem;font-family:var(--font-mono);font-size:.65rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted-foreground); }
+    .trust-badge svg { width:14px;height:14px;flex-shrink:0; }
+
     /* ── Shopify Buy Button centering + wrapper ── */
     .buy-button-wrap { display:flex;justify-content:center;margin:2rem 0; }
     .buy-button-wrap > div { width:100%;max-width:400px; }
