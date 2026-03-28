@@ -209,10 +209,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       },
       "datePublished": "2026-03-27",
       "dateModified": "2026-03-27",
-      "author": {
-        "@type": "Organization",
-        "name": "Vibe Test Lab"
-      }
+      "author": { "@id": "https://vibe-test-labs.pages.dev#author" },
+      "reviewedBy": { "@id": "https://vibe-test-labs.pages.dev#author" }
     },
     {
       "@type": "Product",
@@ -308,8 +306,58 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             "@type": "Answer",
             "text": "If safety and quality are priorities, yes. Douglas brand toys meet rigorous safety standards. The 100% silicone teether and baby-safe construction justify the premium. You're not paying for hype—you're paying for durability, safety certifications, and a toy that evolves with your baby (teething + cuddle companion). Compare it to a $25 generic teether and a $35 plush bought separately ($60 total)—this is the quality upgrade."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I refrigerate it while in use by my baby?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Pre-chill the teether ring in the fridge before giving it to your baby. Once your baby is actively chewing, you don't need to keep returning it to the fridge—it will stay cool long enough for comfort. For extended use, you can rotate between one toy in use and another chilling in the fridge."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if my baby drops it or it gets dirty?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Simply hand-wash the silicone ring with warm soapy water and dry it thoroughly. The plush body is machine washable. A quick rinse is all you need. The sealed silicone teether doesn't trap bacteria, making it easy to keep clean and hygienic for regular use."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will the ring attachment break with teething?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The ring is securely attached and designed to withstand chewing. Douglas toys are built for durability. However, always inspect for damage before each use. The attachment is reinforced at stress points. With normal teething (not aggressive gnawing), the ring should last throughout the teething phase and beyond."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this a substitute for pediatric teething advice?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. This toy provides comfort and cold relief during teething, but it's not medical treatment. If your baby experiences extreme pain, fever, or unusual symptoms during teething, consult your pediatrician. This tool complements, not replaces, professional guidance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can older siblings use it too?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Many older toddlers and kids love it as a cuddle toy. Just ensure your older child understands it's a soft toy, not an aggressive chew toy. The 100% silicone ring is safe, but supervision is still recommended for all ages under 8."
+          }
         }
       ]
+    }
+  ,
+    {
+      "@type": "Person",
+      "@id": "https://vibe-test-labs.pages.dev#author",
+      "name": "Vibe Test Lab Team",
+      "url": "https://vibe-test-labs.pages.dev",
+      "sameAs": ["https://vibe-test-labs.pages.dev/methodology"],
+      "description": "Independent product testing team. We buy every product ourselves, test for minimum 7 days, and publish honest reviews with our proprietary Vibe Score (0-100).",
+      "knowsAbout": ["Product Testing", "Consumer Reviews", "Sleep Technology", "Home Products"]
     }
   ]
 }
@@ -810,6 +858,41 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <p style="margin: 0;">The "Shy Little Fox" is Douglas's collection of woodland fox products. This teether plush is the star piece—designed for teething. The collection likely includes matching plushes (without teether), clothing, or accessories featuring the same adorable fox character. It's part of Douglas's premium baby product line.</p>
     </div>
   </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Can I refrigerate it while in use by my baby?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">Yes. Pre-chill the teether ring in the fridge before giving it to your baby. Once your baby is actively chewing, you don't need to keep returning it to the fridge—it will stay cool long enough for comfort. For extended use, you can rotate between one toy in use and another chilling in the fridge.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">What if my baby drops it or it gets dirty?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">Simply hand-wash the silicone ring with warm soapy water and dry it thoroughly. The plush body is machine washable. A quick rinse is all you need. The sealed silicone teether doesn't trap bacteria, making it easy to keep clean and hygienic for regular use.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Will the ring attachment break with teething?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">The ring is securely attached and designed to withstand chewing. Douglas toys are built for durability. However, always inspect for damage before each use. The attachment is reinforced at stress points. With normal teething (not aggressive gnawing), the ring should last throughout the teething phase and beyond.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Is this a substitute for pediatric teething advice?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">No. This toy provides comfort and cold relief during teething, but it's not medical treatment. If your baby experiences extreme pain, fever, or unusual symptoms during teething, consult your pediatrician. This tool complements, not replaces, professional guidance.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Can older siblings use it too?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">Absolutely. Many older toddlers and kids love it as a cuddle toy. Just ensure your older child understands it's a soft toy, not an aggressive chew toy. The 100% silicone ring is safe, but supervision is still recommended for all ages under 8.</p>
+    </div>
+  </details>
 </div>
 
 <!-- Also Tested -->
@@ -817,7 +900,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 <p style="color: var(--foreground); line-height: 1.6; margin-bottom: 1.5rem;">Explore other products we've reviewed in the Gifts & Cozy category for more premium baby and comfort items.</p>
 
 <div class="related-products-grid">
-  <a href="/products/sophie-la-girafe-teether" class="related-product-card">
+  <a href="/products/3-in-1-cat-steam-brush" class="related-product-card">
     <img
       src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/658c81fc4e238c99cb52c5c1a142.jpg?v=1774566813"
       alt="Sophie la Girafe"
@@ -829,7 +912,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </div>
   </a>
 
-  <a href="/products/generic-silicone-teether" class="related-product-card">
+  <a href="/products/fluffy-rabbit-plush" class="related-product-card">
     <img
       src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/74fae0e24bbaaab23e737c3dcae4.jpg?v=1774566823"
       alt="Budget Silicone Teether"
@@ -841,7 +924,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </div>
   </a>
 
-  <a href="/products/premium-baby-plush" class="related-product-card">
+  <a href="/products/restnature-white-noise-machine" class="related-product-card">
     <img
       src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/658c81fc4e238c99cb52c5c1a142.jpg?v=1774566813"
       alt="Premium Baby Plush"

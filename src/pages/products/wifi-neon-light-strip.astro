@@ -217,10 +217,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       },
       "datePublished": "2026-03-27",
       "dateModified": "2026-03-27",
-      "author": {
-        "@type": "Organization",
-        "name": "Vibe Test Lab"
-      }
+      "author": { "@id": "https://vibe-test-labs.pages.dev#author" },
+      "reviewedBy": { "@id": "https://vibe-test-labs.pages.dev#author" }
     },
     {
       "@type": "Product",
@@ -337,8 +335,50 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             "@type": "Answer",
             "text": "Not directly (yet). You control it via the app. Some versions may integrate with smart home ecosystems in future updates. For now, rely on the mobile app for all customization and control. This is a limitation vs. fully smart lights."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I cut the strip to a specific length?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, most RGBIC strips can be cut at designated cut points marked on the strip. After cutting, you lose the portion beyond the last LED. Plan your layout carefully before cutting to avoid waste. Each cut section needs its own controller if you want independent control."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will the colors look vibrant on white vs. colored walls?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "White walls provide the best color clarity and reflection. Colored walls will blend with the LED colors—a blue wall with red LEDs looks purple. Dark walls absorb more light, so the same LEDs appear dimmer. Install on white surfaces or ceilings for maximum visual impact."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many presets and custom effects are available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Typically 50+ preset patterns (chasing, fading, strobing, color-breathing, etc.). The app lets you create custom gradients and color schemes. You can save your favorite setups. Music-responsive mode has multiple sensitivity settings. The possibilities are nearly endless with individual LED control."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if I want to control different wall sections separately?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can split and install multiple controllers for separate control zones. Each controller manages its own strip section independently. This requires purchasing additional controller units but gives maximum flexibility for complex multi-wall setups."
+          }
         }
       ]
+    }
+  ,
+    {
+      "@type": "Person",
+      "@id": "https://vibe-test-labs.pages.dev#author",
+      "name": "Vibe Test Lab Team",
+      "url": "https://vibe-test-labs.pages.dev",
+      "sameAs": ["https://vibe-test-labs.pages.dev/methodology"],
+      "description": "Independent product testing team. We buy every product ourselves, test for minimum 7 days, and publish honest reviews with our proprietary Vibe Score (0-100).",
+      "knowsAbout": ["Product Testing", "Consumer Reviews", "Sleep Technology", "Home Products"]
     }
   ]
 }
@@ -861,6 +901,34 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <summary style="font-weight: 600; color: var(--foreground); user-select: none;">How long does the adhesive last?</summary>
     <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
       <p style="margin: 0;">The adhesive is designed for permanent installation on clean, smooth surfaces. It typically lasts for years without peeling. However, if you need to remove or reposition the strip, the adhesive may not stick again. Plan your installation carefully before sticking. If the surface becomes dust-laden or the strip starts to lift, you can reinforce with additional adhesive strips or mounting hardware.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Can I cut the strip to a specific length?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">Yes, most RGBIC strips can be cut at designated cut points marked on the strip. After cutting, you lose the portion beyond the last LED. Plan your layout carefully before cutting to avoid waste. Each cut section needs its own controller if you want independent control.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Will the colors look vibrant on white vs. colored walls?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">White walls provide the best color clarity and reflection. Colored walls will blend with the LED colors—a blue wall with red LEDs looks purple. Dark walls absorb more light, so the same LEDs appear dimmer. Install on white surfaces or ceilings for maximum visual impact.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">How many presets and custom effects are available?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">Typically 50+ preset patterns (chasing, fading, strobing, color-breathing, etc.). The app lets you create custom gradients and color schemes. You can save your favorite setups. Music-responsive mode has multiple sensitivity settings. The possibilities are nearly endless with individual LED control.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">What if I want to control different wall sections separately?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">You can split and install multiple controllers for separate control zones. Each controller manages its own strip section independently. This requires purchasing additional controller units but gives maximum flexibility for complex multi-wall setups.</p>
     </div>
   </details>
 </div>

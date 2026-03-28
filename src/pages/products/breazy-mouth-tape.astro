@@ -45,6 +45,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       "name": "Does Mouth Tape Actually Help You Sleep Better?",
       "reviewBody": "Mouth taping is one of the cheapest, most effective sleepmaxxing hacks — and the Breazy strips do the job. They hold firmly without irritating skin, promote nasal breathing that reduces snoring and dry mouth, and at under $1/strip they're an easy nightly habit. Not a miracle cure, but a legit upgrade for mouth breathers.",
       "author": { "@id": "https://vibe-test-labs.pages.dev#author" },
+      "reviewedBy": { "@id": "https://vibe-test-labs.pages.dev#author" },
       "publisher": { "@id": "https://vibe-test-labs.pages.dev#organization" },
       "datePublished": "2026-03-27",
       "dateModified": "2026-03-27",
@@ -111,8 +112,53 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           "@type": "Question",
           "name": "Can I still open my mouth in an emergency?",
           "acceptedAnswer": { "@type": "Answer", "text": "Yes — the adhesive is firm enough to stay on during normal sleep but you can easily open your mouth or peel the tape off if needed." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is mouth tape effective for sleep apnea, or only for snoring?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Mouth tape helps with snoring caused by mouth breathing but won't treat obstructive sleep apnea (OSA). OSA requires a CPAP machine or medical intervention. Always get a sleep study to confirm your condition before relying on tape alone. It's a preventative tool, not a treatment." }
+        },
+        {
+          "@type": "Question",
+          "name": "What if my lips get dry from the adhesive?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Apply lip balm before putting on the tape to create a moisture barrier. Avoid overly waxy balms that might reduce adhesion. Most users with dry lips find lip balm solves the problem entirely." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use mouth tape if I have a beard or facial hair?",
+          "acceptedAnswer": { "@type": "Answer", "text": "It depends on thickness. Light facial hair usually works fine. Full beards may reduce adhesion since the tape can't grip skin directly. Trimming the area around your mouth or shaving helps the tape stick properly." }
+        },
+        {
+          "@type": "Question",
+          "name": "How does nasal breathing feel at first compared to mouth breathing?",
+          "acceptedAnswer": { "@type": "Answer", "text": "It takes 3-7 nights of adjustment. Your nose feels slightly blocked at first while nasal passages open up and adjust. Most people report breathing feels normal by the second week, with many noticing deeper, more regulated sleep." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is mouth tape worth using if I don't snore?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Even non-snorers benefit from nasal breathing during sleep — it promotes better oxygen intake, improves sleep quality, and supports healthy breathing patterns. Many people use mouth tape for wellness rather than snoring issues." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can children use mouth tape, or is it only for adults?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Mouth tape is generally designed for adults. Children should not use it without medical supervision. Consult a pediatrician if your child snores or has breathing issues — there may be underlying causes like enlarged adenoids that need treatment." }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I do if I have nasal congestion or allergies?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Don't use mouth tape when congested. If you have chronic congestion or allergies, treat those first with decongestants, antihistamines, or nasal sprays. Once nasal breathing is clear, mouth tape becomes effective and comfortable." }
         }
       ]
+    }
+  ,
+    {
+      "@type": "Person",
+      "@id": "https://vibe-test-labs.pages.dev#author",
+      "name": "Vibe Test Lab Team",
+      "url": "https://vibe-test-labs.pages.dev",
+      "sameAs": ["https://vibe-test-labs.pages.dev/methodology"],
+      "description": "Independent product testing team. We buy every product ourselves, test for minimum 7 days, and publish honest reviews with our proprietary Vibe Score (0-100).",
+      "knowsAbout": ["Product Testing", "Consumer Reviews", "Sleep Technology", "Home Products"]
     }
   ]
 }
@@ -398,6 +444,13 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <div class="faq-item"><h3>Will mouth tape stop my snoring?</h3><p>For most people who snore because of mouth breathing, yes. Mouth tape encourages nasal breathing which reduces vibration in the throat. If your snoring is caused by sleep apnea or nasal obstruction, mouth tape alone won't fix it.</p></div>
   <div class="faq-item"><h3>How long does one strip last?</h3><p>Each strip is single-use and lasts one full night of sleep. A 30-pack gives you a full month of use.</p></div>
   <div class="faq-item"><h3>Can I still open my mouth in an emergency?</h3><p>Yes — the adhesive is firm enough to stay on during normal sleep but you can easily open your mouth or peel the tape off if needed.</p></div>
+  <div class="faq-item"><h3>Is mouth tape effective for sleep apnea, or only for snoring?</h3><p>Mouth tape helps with snoring caused by mouth breathing but won't treat obstructive sleep apnea (OSA). OSA requires a CPAP machine or medical intervention. Always get a sleep study to confirm your condition before relying on tape alone. It's a preventative tool, not a treatment.</p></div>
+  <div class="faq-item"><h3>What if my lips get dry from the adhesive?</h3><p>Apply lip balm before putting on the tape to create a moisture barrier. Avoid overly waxy balms that might reduce adhesion. Most users with dry lips find lip balm solves the problem entirely.</p></div>
+  <div class="faq-item"><h3>Can I use mouth tape if I have a beard or facial hair?</h3><p>It depends on thickness. Light facial hair usually works fine. Full beards may reduce adhesion since the tape can't grip skin directly. Trimming the area around your mouth or shaving helps the tape stick properly.</p></div>
+  <div class="faq-item"><h3>How does nasal breathing feel at first compared to mouth breathing?</h3><p>It takes 3-7 nights of adjustment. Your nose feels slightly blocked at first while nasal passages open up and adjust. Most people report breathing feels normal by the second week, with many noticing deeper, more regulated sleep.</p></div>
+  <div class="faq-item"><h3>Is mouth tape worth using if I don't snore?</h3><p>Yes. Even non-snorers benefit from nasal breathing during sleep — it promotes better oxygen intake, improves sleep quality, and supports healthy breathing patterns. Many people use mouth tape for wellness rather than snoring issues.</p></div>
+  <div class="faq-item"><h3>Can children use mouth tape, or is it only for adults?</h3><p>Mouth tape is generally designed for adults. Children should not use it without medical supervision. Consult a pediatrician if your child snores or has breathing issues — there may be underlying causes like enlarged adenoids that need treatment.</p></div>
+  <div class="faq-item"><h3>What should I do if I have nasal congestion or allergies?</h3><p>Don't use mouth tape when congested. If you have chronic congestion or allergies, treat those first with decongestants, antihistamines, or nasal sprays. Once nasal breathing is clear, mouth tape becomes effective and comfortable.</p></div>
 </div>
 
 <!-- Also tested / related products -->

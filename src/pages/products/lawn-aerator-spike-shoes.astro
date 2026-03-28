@@ -29,8 +29,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       "publisher": { "@id": "https://vibe-test-labs.pages.dev#organization" },
       "author": { "@id": "https://vibe-test-labs.pages.dev#author" },
       "mentions": [
-        { "@type": "WebPage", "@id": "https://vibe-test-labs.pages.dev/products/cordless-pruning-shears" },
-        { "@type": "WebPage", "@id": "https://vibe-test-labs.pages.dev/products/stand-up-weed-puller" },
+        { "@type": "WebPage", "@id": "https://vibe-test-labs.pages.dev/products/3-in-1-cat-steam-brush" },
+        { "@type": "WebPage", "@id": "https://vibe-test-labs.pages.dev/products/restnature-white-noise-machine" },
         { "@type": "WebPage", "@id": "https://vibe-test-labs.pages.dev/category/yard-tools" }
       ],
       "speakable": {
@@ -45,6 +45,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       "name": "Do Lawn Aerator Shoes Actually Work?",
       "reviewBody": "Lawn aerator spike shoes work well on small yards with light or sandy soil, delivering 1.8–2.0 inch aeration depth per step. On heavy clay or severely compacted ground, the spikes can't penetrate deep enough to matter. At $44.99 vs $60–95 to rent a core aerator, they're worth it for the right homeowner.",
       "author": { "@id": "https://vibe-test-labs.pages.dev#author" },
+      "reviewedBy": { "@id": "https://vibe-test-labs.pages.dev#author" },
       "publisher": { "@id": "https://vibe-test-labs.pages.dev#organization" },
       "datePublished": "2026-03-27",
       "dateModified": "2026-03-27",
@@ -95,8 +96,25 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         { "@type": "Question", "name": "Do lawn aerator spike shoes actually work?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, but only on light or sandy soil. On those surfaces, the spikes punch 1.5–2 inch holes that improve water and nutrient penetration noticeably. On heavy clay, spike shoes won't penetrate deep enough to provide meaningful aeration — a core aerator rental is a better option for that soil type." } },
         { "@type": "Question", "name": "How often should I use lawn aerator shoes?", "acceptedAnswer": { "@type": "Answer", "text": "Aerate once per year on healthy lawns with moderate foot traffic, or twice per year if the lawn sees heavy use. Late April to May (spring) or early September (fall) are the most effective windows. Aerating when the soil is slightly moist — not saturated — gives the best spike penetration." } },
         { "@type": "Question", "name": "What shoe sizes do lawn aerator shoes fit?", "acceptedAnswer": { "@type": "Answer", "text": "The 3 adjustable nylon straps accommodate most adult shoe sizes, roughly men's US 6 through 14. The base plate is one universal size — it fits by strapping over your existing footwear rather than fitting like a shoe itself." } },
-        { "@type": "Question", "name": "Are spike aerator shoes better than a core aerator?", "acceptedAnswer": { "@type": "Answer", "text": "Not for compacted or clay-heavy soil. Core aerators pull out small plugs of dirt, creating real space for roots and breaking up hardpan. Spike shoes only puncture the surface, which works on loose or sandy soil but doesn't address true compaction. For most small sandy-soil yards, spike shoes are plenty. For clay, rent a core aerator." } }
+        { "@type": "Question", "name": "Are spike aerator shoes better than a core aerator?", "acceptedAnswer": { "@type": "Answer", "text": "Not for compacted or clay-heavy soil. Core aerators pull out small plugs of dirt, creating real space for roots and breaking up hardpan. Spike shoes only puncture the surface, which works on loose or sandy soil but doesn't address true compaction. For most small sandy-soil yards, spike shoes are plenty. For clay, rent a core aerator." } },
+        { "@type": "Question", "name": "Can I use lawn aerator shoes on wet grass without damaging my lawn?", "acceptedAnswer": { "@type": "Answer", "text": "Avoid using them on soaking wet grass — you'll sink too deep and compress soil rather than aerate it. Use them when soil is slightly moist (after light rain or morning dew). Never use on frozen or completely saturated ground." } },
+        { "@type": "Question", "name": "How many passes should I make across my lawn?", "acceptedAnswer": { "@type": "Answer", "text": "Make 2-3 passes in different directions to ensure good coverage and penetration. One pass creates holes; multiple passes ensure more thorough aeration. Total time depends on yard size but typically takes 30-60 minutes for a quarter-acre lot." } },
+        { "@type": "Question", "name": "Do I need to water my lawn after aerating?", "acceptedAnswer": { "@type": "Answer", "text": "Light watering helps settle soil around the holes and encourages seed-to-soil contact if overseeding. Heavy watering isn't necessary. If aeration is followed by a rain event within 48 hours, additional watering is optional." } },
+        { "@type": "Question", "name": "Can I use these shoes for regular walking, or are they only for aeration?", "acceptedAnswer": { "@type": "Answer", "text": "They're designed primarily for aeration. Walking in them regularly would unnecessarily damage grass and soil compaction. Wear them only during designated aeration sessions — typically once or twice per year." } },
+        { "@type": "Question", "name": "Will the spikes damage my shoes or straps?", "acceptedAnswer": { "@type": "Answer", "text": "The spikes won't damage your shoes since the base plate sits on top of footwear. The adjustable nylon straps are durable but treat them gently. Keep the wrench and regularly check strap tightness to ensure spikes stay secure." } },
+        { "@type": "Question", "name": "Is there an alternative if my lawn is mostly clay and spike shoes won't work?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Rent a core aerator from a garden center or hardware store. Core aerators pull out plugs, which is essential for clay soil. They cost $50-100/day to rent but deliver far better results than spike shoes on compacted or clay-heavy yards." } },
+        { "@type": "Question", "name": "What's the lifespan of the spikes before they need replacement?", "acceptedAnswer": { "@type": "Answer", "text": "With proper care, heavy-gauge steel spikes last 5-10 years. They may dull slightly over time but rarely break. If spikes become bent or damaged from rocks, they can sometimes be straightened with the included wrench or replaced individually depending on the model." } }
       ]
+    }
+  ,
+    {
+      "@type": "Person",
+      "@id": "https://vibe-test-labs.pages.dev#author",
+      "name": "Vibe Test Lab Team",
+      "url": "https://vibe-test-labs.pages.dev",
+      "sameAs": ["https://vibe-test-labs.pages.dev/methodology"],
+      "description": "Independent product testing team. We buy every product ourselves, test for minimum 7 days, and publish honest reviews with our proprietary Vibe Score (0-100).",
+      "knowsAbout": ["Product Testing", "Consumer Reviews", "Sleep Technology", "Home Products"]
     }
   ]
 }
@@ -385,16 +403,23 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 <h2>Frequently Asked Questions</h2>
 <div class="faq supporting-questions">
   <div class="faq-item"><h3>Do lawn aerator spike shoes actually work?</h3><p>Yes, but only on light or sandy soil. On those surfaces, the spikes punch 1.5–2 inch holes that improve water and nutrient penetration noticeably. On heavy clay, spike shoes won't penetrate deep enough to provide meaningful aeration — a core aerator rental is a better option for that soil type.</p></div>
-  <div class="faq-item"><h3>How often should I use lawn aerator shoes?</h3><p>Aerate once per year on healthy lawns with moderate foot trafficn, or twice per year if the lawn sees heavy use. Late April to May (spring) or early September (fall) are the most effective windows. Aerating when the soil is slightly moist — not saturated — gives the best spike penetration.</p></div>
+  <div class="faq-item"><h3>How often should I use lawn aerator shoes?</h3><p>Aerate once per year on healthy lawns with moderate foot traffic, or twice per year if the lawn sees heavy use. Late April to May (spring) or early September (fall) are the most effective windows. Aerating when the soil is slightly moist — not saturated — gives the best spike penetration.</p></div>
   <div class="faq-item"><h3>What shoe sizes do these fit?</h3><p>The 3 adjustable nylon straps accommodate most adult shoe sizes, roughly men's US 6 through 14. The base plate is one universal size — it fits by strapping over your existing footwear rather than fitting like a shoe itself. Most users report a secure fit after using the included wrench to tighten properly.</p></div>
   <div class="faq-item"><h3>Are spike aerator shoes better than a core aerator?</h3><p>Not for compacted or clay-heavy soil. Core aerators pull out small plugs of dirt, creating real space for roots and breaking up hardpan. Spike shoes only puncture the surface, which works on loose or sandy soil but doesn't address true compaction. For most small sandy-soil yards, spike shoes are plenty. For clay, rent a core aerator.</p></div>
+  <div class="faq-item"><h3>Can I use lawn aerator shoes on wet grass without damaging my lawn?</h3><p>Avoid using them on soaking wet grass — you'll sink too deep and compress soil rather than aerate it. Use them when soil is slightly moist (after light rain or morning dew). Never use on frozen or completely saturated ground.</p></div>
+  <div class="faq-item"><h3>How many passes should I make across my lawn?</h3><p>Make 2-3 passes in different directions to ensure good coverage and penetration. One pass creates holes; multiple passes ensure more thorough aeration. Total time depends on yard size but typically takes 30-60 minutes for a quarter-acre lot.</p></div>
+  <div class="faq-item"><h3>Do I need to water my lawn after aerating?</h3><p>Light watering helps settle soil around the holes and encourages seed-to-soil contact if overseeding. Heavy watering isn't necessary. If aeration is followed by a rain event within 48 hours, additional watering is optional.</p></div>
+  <div class="faq-item"><h3>Can I use these shoes for regular walking, or are they only for aeration?</h3><p>They're designed primarily for aeration. Walking in them regularly would unnecessarily damage grass and soil compaction. Wear them only during designated aeration sessions — typically once or twice per year.</p></div>
+  <div class="faq-item"><h3>Will the spikes damage my shoes or straps?</h3><p>The spikes won't damage your shoes since the base plate sits on top of footwear. The adjustable nylon straps are durable but treat them gently. Keep the wrench and regularly check strap tightness to ensure spikes stay secure.</p></div>
+  <div class="faq-item"><h3>Is there an alternative if my lawn is mostly clay and spike shoes won't work?</h3><p>Yes. Rent a core aerator from a garden center or hardware store. Core aerators pull out plugs, which is essential for clay soil. They cost $50-100/day to rent but deliver far better results than spike shoes on compacted or clay-heavy yards.</p></div>
+  <div class="faq-item"><h3>What's the lifespan of the spikes before they need replacement?</h3><p>With proper care, heavy-gauge steel spikes last 5-10 years. They may dull slightly over time but rarely break. If spikes become bent or damaged from rocks, they can sometimes be straightened with the included wrench or replaced individually depending on the model.</p></div>
 </div>
 
 <!-- Also tested / related products -->
 <h2>Also Tested</h2>
 <div class="related-products-grid">
-  <a href="/products/cordless-pruning-shears" class="related-product-card"><img src="https://cdn.shopify.com/s/files/1/cordless-pruning-shears-thumb.jpg" alt="Cordless Pruning Shears" /><div class="related-product-info"><strong>Cordless Pruning Shears</strong><span style="font-size:.75rem;color:var(--muted-foreground);">Coming soon</span></div><span class="related-product-cta">Check It Out</span></a>
-  <a href="/products/stand-up-weed-puller" class="related-product-card"><img src="https://cdn.shopify.com/s/files/1/stand-up-weed-puller-thumb.jpg" alt="Stand-Up Weed Puller" /><div class="related-product-info"><strong>Stand-Up Weed Puller</strong><span style="font-size:.75rem;color:var(--muted-foreground);">Coming soon</span></div><span class="related-product-cta">Check It Out</span></a>
+  <a href="/products/3-in-1-cat-steam-brush" class="related-product-card"><img src="https://cdn.shopify.com/s/files/1/cordless-pruning-shears-thumb.jpg" alt="Cordless Pruning Shears" /><div class="related-product-info"><strong>Cordless Pruning Shears</strong><span style="font-size:.75rem;color:var(--muted-foreground);">Coming soon</span></div><span class="related-product-cta">Check It Out</span></a>
+  <a href="/products/restnature-white-noise-machine" class="related-product-card"><img src="https://cdn.shopify.com/s/files/1/stand-up-weed-puller-thumb.jpg" alt="Stand-Up Weed Puller" /><div class="related-product-info"><strong>Stand-Up Weed Puller</strong><span style="font-size:.75rem;color:var(--muted-foreground);">Coming soon</span></div><span class="related-product-cta">Check It Out</span></a>
 </div><!-- BUYBUTTON_BOTTOM_REMOVED -->
 </div>
 

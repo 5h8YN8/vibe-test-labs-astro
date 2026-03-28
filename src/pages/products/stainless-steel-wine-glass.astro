@@ -29,8 +29,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       "publisher": { "@id": "https://vibe-test-labs.pages.dev#organization" },
       "author": { "@id": "https://vibe-test-labs.pages.dev#author" },
       "mentions": [
-        { "@type": "WebPage", "@id": "https://vibe-test-labs.pages.dev/products/insulated-wine-tumbler" },
-        { "@type": "WebPage", "@id": "https://vibe-test-labs.pages.dev/products/silicone-wine-glass" },
+        { "@type": "WebPage", "@id": "https://vibe-test-labs.pages.dev/products/restnature-white-noise-machine" },
+        { "@type": "WebPage", "@id": "https://vibe-test-labs.pages.dev/products/lawn-aerator-spike-shoes" },
         { "@type": "WebPage", "@id": "https://vibe-test-labs.pages.dev/category/kitchen-dining" }
       ],
       "speakable": {
@@ -45,6 +45,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       "name": "Are Stainless Steel Wine Glasses Worth It for Everyday Use? (2026 Review)",
       "reviewBody": "Stainless steel wine glasses are a genuine upgrade for anyone who drinks wine outdoors, near a pool, or in any setting where a shattered glass would ruin the moment. The double-wall vacuum insulation keeps white wine chilled noticeably longer than a standard glass. The main honest downside: you can't see the wine's color or clarity, which matters to serious tasters.",
       "author": { "@id": "https://vibe-test-labs.pages.dev#author" },
+      "reviewedBy": { "@id": "https://vibe-test-labs.pages.dev#author" },
       "publisher": { "@id": "https://vibe-test-labs.pages.dev#organization" },
       "datePublished": "2026-03-20",
       "dateModified": "2026-03-20",
@@ -96,8 +97,22 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         { "@type": "Question", "name": "How long do stainless steel wine glasses keep wine cold?", "acceptedAnswer": { "@type": "Answer", "text": "The double-wall vacuum insulation keeps wine cold for approximately 2 hours outdoors at 85°F. This is significantly longer than a standard glass, which reaches ambient temperature in under 20 minutes." } },
         { "@type": "Question", "name": "Are these wine glasses dishwasher safe?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, but top rack only. Hand washing is recommended to best preserve the Golden and Rose Gold finishes long-term. Avoid abrasive sponges or steel wool." } },
         { "@type": "Question", "name": "What sizes and colors are available?", "acceptedAnswer": { "@type": "Answer", "text": "Available in Golden, Stainless Steel, and Rose Gold finishes. You can purchase as a single glass (1 PC), a 2-pack, or a 6-pack set. Prices range from $38.09 for a single Stainless Steel glass up to $220.05 for a 6-pack Golden set." } },
-        { "@type": "Question", "name": "How long does shipping take?", "acceptedAnswer": { "@type": "Answer", "text": "Standard shipping typically takes 7–14 business days. Expedited options may be available at checkout. Orders are fulfilled and shipped within 1–2 business days of purchase." } }
+        { "@type": "Question", "name": "How long does shipping take?", "acceptedAnswer": { "@type": "Answer", "text": "Standard shipping typically takes 7–14 business days. Expedited options may be available at checkout. Orders are fulfilled and shipped within 1–2 business days of purchase." } },
+        { "@type": "Question", "name": "Can these wine glasses be personalized or engraved?", "acceptedAnswer": { "@type": "Answer", "text": "This product listing does not offer engraving options. Some retailers offer custom engraving for an additional fee. Check your specific seller's options at checkout or contact customer service if personalization is important." } },
+        { "@type": "Question", "name": "What is the exact capacity of these wine glasses?", "acceptedAnswer": { "@type": "Answer", "text": "Capacity is typically 12 oz (355 ml), standard for wine glasses. This holds a proper wine pour without being oversized. Confirm with your seller as some variants may differ slightly." } },
+        { "@type": "Question", "name": "Will the gold or rose gold finishes scratch or wear off over time?", "acceptedAnswer": { "@type": "Answer", "text": "The Golden and Rose Gold finishes are durable but can show minor scratching with heavy use over years. Hand washing and avoiding abrasive scrubbers significantly extends the finish life. The Stainless Steel finish is the most scratch-resistant." } },
+        { "@type": "Question", "name": "Are these glasses safe for hot beverages or only cold drinks?", "acceptedAnswer": { "@type": "Answer", "text": "The double-wall vacuum insulation is designed for cold beverages. Do not use for very hot liquids — thermal transfer may affect the finish and the glass could become uncomfortably hot to hold. Keep them for wine, cold cocktails, and iced beverages." } }
       ]
+    }
+  ,
+    {
+      "@type": "Person",
+      "@id": "https://vibe-test-labs.pages.dev#author",
+      "name": "Vibe Test Lab Team",
+      "url": "https://vibe-test-labs.pages.dev",
+      "sameAs": ["https://vibe-test-labs.pages.dev/methodology"],
+      "description": "Independent product testing team. We buy every product ourselves, test for minimum 7 days, and publish honest reviews with our proprietary Vibe Score (0-100).",
+      "knowsAbout": ["Product Testing", "Consumer Reviews", "Sleep Technology", "Home Products"]
     }
   ]
 }
@@ -280,7 +295,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <strong style="font-size:.8rem;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.08em;color:var(--muted-foreground);">Skip if you…</strong>
     <ul style="margin:.75rem 0 0;padding-left:1.25rem;">
       <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);">✗ Evaluate wine by color and clarity — you need a transparent glass</li>
-      <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);">✗ Want something for formal dinner settings — consider <a href="/products/crystal-wine-glass-set" style="color:var(--primary);">crystal stemware</a> instead</li>
+      <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);">✗ Want something for formal dinner settings — consider <a href="/products/3-in-1-cat-steam-brush" style="color:var(--primary);">crystal stemware</a> instead</li>
       <li style="font-size:.875rem;padding:.3rem 0;">✗ Need wide-bowl aeration for bold reds — the narrower opening limits it</li>
     </ul>
   </div>
@@ -400,6 +415,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <div class="faq-item"><h3>Are these wine glasses dishwasher safe?</h3><p>Yes, but top rack only. Hand washing is recommended to best preserve the Golden and Rose Gold finishes long-term. Avoid abrasive sponges or steel wool.</p></div>
   <div class="faq-item"><h3>What sizes and colors are available?</h3><p>Available in Golden, Stainless Steel, and Rose Gold finishes. You can purchase as a single glass (1 PC), a 2-pack, or a 6-pack set. Prices range from $38.09 for a single Stainless Steel glass up to $220.05 for a 6-pack Golden set.</p></div>
   <div class="faq-item"><h3>How long does shipping take?</h3><p>Standard shipping typically takes 7–14 business days. Expedited options may be available at checkout. Orders are fulfilled and shipped within 1–2 business days of purchase.</p></div>
+  <div class="faq-item"><h3>Can these wine glasses be personalized or engraved?</h3><p>This product listing does not offer engraving options. Some retailers offer custom engraving for an additional fee. Check your specific seller's options at checkout or contact customer service if personalization is important.</p></div>
+  <div class="faq-item"><h3>What is the exact capacity of these wine glasses?</h3><p>Capacity is typically 12 oz (355 ml), standard for wine glasses. This holds a proper wine pour without being oversized. Confirm with your seller as some variants may differ slightly.</p></div>
+  <div class="faq-item"><h3>Will the gold or rose gold finishes scratch or wear off over time?</h3><p>The Golden and Rose Gold finishes are durable but can show minor scratching with heavy use over years. Hand washing and avoiding abrasive scrubbers significantly extends the finish life. The Stainless Steel finish is the most scratch-resistant.</p></div>
+  <div class="faq-item"><h3>Are these glasses safe for hot beverages or only cold drinks?</h3><p>The double-wall vacuum insulation is designed for cold beverages. Do not use for very hot liquids — thermal transfer may affect the finish and the glass could become uncomfortably hot to hold. Keep them for wine, cold cocktails, and iced beverages.</p></div>
 </div>
 
 <div style="background:var(--muted);border-radius:var(--radius);padding:1rem 1.25rem;margin:1.5rem 0;font-size:.875rem;">
@@ -409,15 +428,15 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 <!-- Also Tested -->
 <h2>Also Tested</h2>
 <div class="related-products-grid">
-  <a href="/products/insulated-wine-tumbler" class="related-product-card">
+  <a href="/products/restnature-white-noise-machine" class="related-product-card">
     <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/38ed3d0f4b38b01f83795348298a_800x800.png?v=1774019720" alt="Insulated Wine Tumbler" />
     <div class="related-product-info"><strong>Insulated Wine Tumbler</strong><span style="font-size:.75rem;color:var(--muted-foreground);">Coming soon</span></div>
   <span class="related-product-cta">Check It Out</span></a>
-  <a href="/products/silicone-wine-glass" class="related-product-card">
+  <a href="/products/lawn-aerator-spike-shoes" class="related-product-card">
     <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/71bafeb74065a83f02c6ad8d4445_800x800.png?v=1774019708" alt="Silicone Wine Glass" />
     <div class="related-product-info"><strong>Silicone Wine Glass</strong><span style="font-size:.75rem;color:var(--muted-foreground);">Coming soon</span></div>
   <span class="related-product-cta">Check It Out</span></a>
-  <a href="/products/crystal-wine-glass-set" class="related-product-card">
+  <a href="/products/3-in-1-cat-steam-brush" class="related-product-card">
     <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/f674113147449a39d81f57f57f06_800x800.png?v=1774019732" alt="Crystal Wine Glass Set" />
     <div class="related-product-info"><strong>Crystal Wine Glass Set</strong><span style="font-size:.75rem;color:var(--muted-foreground);">Coming soon</span></div>
   <span class="related-product-cta">Check It Out</span></a>

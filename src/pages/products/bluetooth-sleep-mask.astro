@@ -29,7 +29,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       "publisher": { "@id": "https://vibe-test-labs.pages.dev#organization" },
       "author": { "@id": "https://vibe-test-labs.pages.dev#author" },
       "mentions": [
-        { "@type": "WebPage", "@id": "https://vibe-test-labs.pages.dev/products/white-noise-machine" },
+        { "@type": "WebPage", "@id": "https://vibe-test-labs.pages.dev/products/restnature-white-noise-machine" },
         { "@type": "WebPage", "@id": "https://vibe-test-labs.pages.dev/products/weighted-eye-mask" },
         { "@type": "WebPage", "@id": "https://vibe-test-labs.pages.dev/category/sleepmaxxing" }
       ],
@@ -45,6 +45,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       "name": "Do Bluetooth Sleep Masks Actually Work for Side Sleepers?",
       "reviewBody": "A genuinely useful sleep upgrade for side sleepers who listen to audio at night. The flat speakers solve the earbud pressure problem, and the 3D contoured eye cups deliver solid blackout. The 6-hour battery covers most sleep cycles. Sound quality is adequate for podcasts and white noise — not hi-fi audio. Hidden Gem at $32.88.",
       "author": { "@id": "https://vibe-test-labs.pages.dev#author" },
+      "reviewedBy": { "@id": "https://vibe-test-labs.pages.dev#author" },
       "publisher": { "@id": "https://vibe-test-labs.pages.dev#organization" },
       "datePublished": "2026-03-26",
       "dateModified": "2026-03-26",
@@ -121,8 +122,33 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           "@type": "Question",
           "name": "What is the sound quality like — is it good enough for music?",
           "acceptedAnswer": { "@type": "Answer", "text": "The sound quality is adequate for podcasts, white noise, and meditation audio — not audiophile-grade music. The ultra-thin speakers sacrifice bass and clarity for comfort. If hi-fi music is your priority, consider over-ear headphones instead. For sleep audio specifically, the quality is more than sufficient." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I control playback without touching my phone?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. The mask has onboard touch controls to play/pause, skip tracks, and adjust volume. You can operate everything without reaching for your phone, which is perfect for maintaining sleep." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the fabric hypoallergenic and safe for sensitive skin?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The mask uses hypoallergenic fabric suitable for most skin types. If you have extreme sensitivity or eczema, test it during the day first before wearing overnight. The padding is soft and breathable." }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it block light completely or just darken the room?",
+          "acceptedAnswer": { "@type": "Answer", "text": "It provides complete light blocking — not just dimming. The 3D contoured design creates a seal with minimal light leakage, ideal for daytime sleeping or bright bedrooms." }
         }
       ]
+    }
+  ,
+    {
+      "@type": "Person",
+      "@id": "https://vibe-test-labs.pages.dev#author",
+      "name": "Vibe Test Lab Team",
+      "url": "https://vibe-test-labs.pages.dev",
+      "sameAs": ["https://vibe-test-labs.pages.dev/methodology"],
+      "description": "Independent product testing team. We buy every product ourselves, test for minimum 7 days, and publish honest reviews with our proprietary Vibe Score (0-100).",
+      "knowsAbout": ["Product Testing", "Consumer Reviews", "Sleep Technology", "Home Products"]
     }
   ]
 }
@@ -294,7 +320,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <strong style="font-size:.8rem;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.08em;color:var(--muted-foreground);">Skip if you…</strong>
     <ul style="margin:.75rem 0 0;padding-left:1.25rem;">
       <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);">✗ Sleep 8+ hours and need audio all night — the 6h battery won't cover you</li>
-      <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);">✗ Want hi-fi music quality — consider <a href="/products/white-noise-machine" style="color:var(--primary);">a dedicated sound machine</a> instead</li>
+      <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);">✗ Want hi-fi music quality — consider <a href="/products/restnature-white-noise-machine" style="color:var(--primary);">a dedicated sound machine</a> instead</li>
       <li style="font-size:.875rem;padding:.3rem 0;">✗ Run very hot at night — any wearable electronic adds a little warmth</li>
     </ul>
   </div>
@@ -417,12 +443,15 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <div class="faq-item"><h3>How do I wash it?</h3><p>Hand wash the fabric shell in cold water with mild detergent. Do not submerge the speaker module in water. Spot-clean the areas around the speakers. Air dry completely before charging or using.</p></div>
   <div class="faq-item"><h3>Does it pair easily with iPhone and Android?</h3><p>Yes — Bluetooth 5.0 pairs with both iOS and Android in under 30 seconds. Once paired, the mask reconnects automatically when you power it on near your phone. No app required.</p></div>
   <div class="faq-item"><h3>What is the sound quality like — is it good enough for music?</h3><p>The sound quality is adequate for podcasts, white noise, and meditation audio — not audiophile-grade music. The ultra-thin speakers sacrifice bass and clarity for comfort. If hi-fi music is your priority, consider over-ear headphones instead. For sleep audio specifically, the quality is more than sufficient.</p></div>
+  <div class="faq-item"><h3>Can I control playback without touching my phone?</h3><p>Yes. The mask has onboard touch controls to play/pause, skip tracks, and adjust volume. You can operate everything without reaching for your phone, which is perfect for maintaining sleep.</p></div>
+  <div class="faq-item"><h3>Is the fabric hypoallergenic and safe for sensitive skin?</h3><p>The mask uses hypoallergenic fabric suitable for most skin types. If you have extreme sensitivity or eczema, test it during the day first before wearing overnight. The padding is soft and breathable.</p></div>
+  <div class="faq-item"><h3>Does it block light completely or just darken the room?</h3><p>It provides complete light blocking — not just dimming. The 3D contoured design creates a seal with minimal light leakage, ideal for daytime sleeping or bright bedrooms.</p></div>
 </div>
 
 <!-- Also tested -->
 <h2>Also Tested</h2>
 <div class="related-products-grid">
-  <a href="/products/white-noise-machine" class="related-product-card">
+  <a href="/products/restnature-white-noise-machine" class="related-product-card">
     <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/6d6c25a84009a3b892e2a7aff090.jpg" alt="Restnature White Noise Machine" />
     <div class="related-product-info"><strong>Restnature White Noise Machine</strong><span style="font-size:.75rem;color:var(--muted-foreground);">The travel sound companion</span></div>
   <span class="related-product-cta">Check It Out</span></a>
@@ -430,7 +459,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/405229eb4efbaf59d217291953ad.jpg" alt="Heart Weighted Eye Mask" />
     <div class="related-product-info"><strong>Heart Weighted Eye Mask</strong><span style="font-size:.75rem;color:var(--muted-foreground);">No-tech blackout + pressure relief</span></div>
   <span class="related-product-cta">Check It Out</span></a>
-  <a href="/products/sleep-spray" class="related-product-card">
+  <a href="/products/serene-sleep-spray" class="related-product-card">
     <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/b1eefa36441da1bc9f0214bd8a02.png" alt="Serene Sleep Spray" />
     <div class="related-product-info"><strong>Serene Sleep Spray</strong><span style="font-size:.75rem;color:var(--muted-foreground);">Lavender wind-down ritual</span></div>
   <span class="related-product-cta">Check It Out</span></a>

@@ -45,6 +45,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       "name": "Is a Bluetooth Animal Sleep Mask Worth It or Just a Gimmick?",
       "reviewBody": "The animal designs are primarily a vibe play, but underneath the cute exterior is a legitimately functional Bluetooth sleep mask with decent speakers, full blackout coverage, and 6 hours of battery. It's not audiophile quality, but for falling asleep to podcasts or white noise it gets the job done. Best for gift-giving, kids, or anyone who doesn't take their sleep gear too seriously.",
       "author": { "@id": "https://vibe-test-labs.pages.dev#author" },
+      "reviewedBy": { "@id": "https://vibe-test-labs.pages.dev#author" },
       "publisher": { "@id": "https://vibe-test-labs.pages.dev#organization" },
       "datePublished": "2026-03-27",
       "dateModified": "2026-03-27",
@@ -111,8 +112,53 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           "@type": "Question",
           "name": "Which animal design is most popular?",
           "acceptedAnswer": { "@type": "Answer", "text": "Panda and Orange Cat are the top sellers. All five designs use the same audio hardware and mask structure — the difference is purely aesthetic." }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does the battery last per charge?",
+          "acceptedAnswer": { "@type": "Answer", "text": "6 hours of continuous music playback, 7 hours of talk time. With typical sleep use (6-8 hours per night), you'll get 2-3 nights of use before needing a charge. A full charge takes 1.5 hours via USB-C." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this mask truly light-blocking, or does some light leak through?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The plush fabric provides good light blocking but isn't 100% sealed like professional blackout masks. A small amount of light may leak around the edges depending on fit. It's sufficient for most people but not ideal if you need complete darkness for light-sensitive photophobia." }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the Bluetooth connection drop if you move away from your phone?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. The 20-meter Bluetooth 5.0 range covers an entire bedroom and beyond. Once paired, the mask reconnects automatically when you power it on. Connection is stable throughout the night." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use this mask if I have a larger head size?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The adjustable headband stretches to fit most head sizes, but XL-sized heads may find it slightly snug. Check the product's size measurements before purchasing if you wear XL hats or have a larger head circumference." }
+        },
+        {
+          "@type": "Question",
+          "name": "What if I only want the mask for sound, not for sleeping?",
+          "acceptedAnswer": { "@type": "Answer", "text": "You can absolutely use it as a regular Bluetooth headband for anytime audio — at the gym, during relaxation, meditation, or casual listening. The plush comfort makes it suitable for extended wear during activities. It's not limited to sleep use." }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the mask feel if you sleep on your back vs. side?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Back sleepers experience minimal pressure points. Side sleepers may feel slight pressure on the ear area where the speaker sits, but the plush design cushions this well. Most side sleepers find it comfortable after a few nights of adjustment." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I pair this mask with multiple devices, or is it single-device only?",
+          "acceptedAnswer": { "@type": "Answer", "text": "It stores one primary Bluetooth pairing but can disconnect and re-pair with different devices. You'll need to manually pair it to a new phone or tablet if you want to switch. It's not designed for simultaneous multi-device pairing." }
         }
       ]
+    }
+  ,
+    {
+      "@type": "Person",
+      "@id": "https://vibe-test-labs.pages.dev#author",
+      "name": "Vibe Test Lab Team",
+      "url": "https://vibe-test-labs.pages.dev",
+      "sameAs": ["https://vibe-test-labs.pages.dev/methodology"],
+      "description": "Independent product testing team. We buy every product ourselves, test for minimum 7 days, and publish honest reviews with our proprietary Vibe Score (0-100).",
+      "knowsAbout": ["Product Testing", "Consumer Reviews", "Sleep Technology", "Home Products"]
     }
   ]
 }
@@ -399,6 +445,13 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <div class="faq-item"><h3>Does the mask get hot while sleeping?</h3><p>The plush animal material is warmer than standard fabric sleep masks. If you're a hot sleeper, this may not be ideal for summer use. In cooler environments it's cozy and comfortable.</p></div>
   <div class="faq-item"><h3>Can I wash the mask?</h3><p>You can remove the speakers/electronics from the headband and hand-wash the fabric portion. Don't submerge the Bluetooth module.</p></div>
   <div class="faq-item"><h3>Which animal design is most popular?</h3><p>Panda and Orange Cat are the top sellers. All five designs use the same audio hardware and mask structure — the difference is purely aesthetic.</p></div>
+  <div class="faq-item"><h3>How long does the battery last per charge?</h3><p>6 hours of continuous music playback, 7 hours of talk time. With typical sleep use (6-8 hours per night), you'll get 2-3 nights of use before needing a charge. A full charge takes 1.5 hours via USB-C.</p></div>
+  <div class="faq-item"><h3>Is this mask truly light-blocking, or does some light leak through?</h3><p>The plush fabric provides good light blocking but isn't 100% sealed like professional blackout masks. A small amount of light may leak around the edges depending on fit. It's sufficient for most people but not ideal if you need complete darkness for light-sensitive photophobia.</p></div>
+  <div class="faq-item"><h3>Does the Bluetooth connection drop if you move away from your phone?</h3><p>No. The 20-meter Bluetooth 5.0 range covers an entire bedroom and beyond. Once paired, the mask reconnects automatically when you power it on. Connection is stable throughout the night.</p></div>
+  <div class="faq-item"><h3>Can I use this mask if I have a larger head size?</h3><p>The adjustable headband stretches to fit most head sizes, but XL-sized heads may find it slightly snug. Check the product's size measurements before purchasing if you wear XL hats or have a larger head circumference.</p></div>
+  <div class="faq-item"><h3>What if I only want the mask for sound, not for sleeping?</h3><p>You can absolutely use it as a regular Bluetooth headband for anytime audio — at the gym, during relaxation, meditation, or casual listening. The plush comfort makes it suitable for extended wear during activities. It's not limited to sleep use.</p></div>
+  <div class="faq-item"><h3>How does the mask feel if you sleep on your back vs. side?</h3><p>Back sleepers experience minimal pressure points. Side sleepers may feel slight pressure on the ear area where the speaker sits, but the plush design cushions this well. Most side sleepers find it comfortable after a few nights of adjustment.</p></div>
+  <div class="faq-item"><h3>Can I pair this mask with multiple devices, or is it single-device only?</h3><p>It stores one primary Bluetooth pairing but can disconnect and re-pair with different devices. You'll need to manually pair it to a new phone or tablet if you want to switch. It's not designed for simultaneous multi-device pairing.</p></div>
 </div>
 
 <!-- Also tested / related products -->

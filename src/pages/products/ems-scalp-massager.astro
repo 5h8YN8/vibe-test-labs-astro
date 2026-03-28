@@ -191,10 +191,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       },
       "datePublished": "2026-03-27",
       "dateModified": "2026-03-27",
-      "author": {
-        "@type": "Organization",
-        "name": "Vibe Test Lab"
-      }
+      "author": { "@id": "https://vibe-test-labs.pages.dev#author" },
+      "reviewedBy": { "@id": "https://vibe-test-labs.pages.dev#author" }
     },
     {
       "@type": "Product",
@@ -295,8 +293,58 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             "@type": "Answer",
             "text": "Full charge takes 1 hour with Type-C fast charging. A single charge typically lasts for multiple 10-minute massage sessions—usually 3–5 sessions depending on intensity mode. Regular daily use means charging every few days."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this device FDA approved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Consumer wellness devices like this are typically classified as personal care or beauty tools. Check the product packaging or listing for specific regulatory certifications. While it may not require FDA approval as a medical device, it should meet safety standards for electrical devices and consumer products."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use this every day?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, daily use is fine. Many users incorporate it into their daily routine for 10-15 minute sessions. The device is designed for regular use. However, if you experience scalp irritation, start with 2-3 times per week and gradually increase. Listen to your scalp's needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the serum tank leak?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The 6ml serum tank is sealed and designed not to leak during normal use. The integrated design prevents spillage during massage. However, be careful not to overfill—follow the tank's maximum fill line. After use, ensure the tank is properly sealed before storing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if I miss a day?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Missing a day occasionally is fine. Consistency matters more than perfection. Benefits like improved scalp circulation are cumulative with regular use. If you skip multiple days, simply resume your routine without concern. There's no penalty for inconsistency."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can it help with dandruff?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The stimulation and improved circulation from massage can support scalp health, which may help manage dandruff. Pairing it with anti-dandruff serums or shampoos in the 6ml tank maximizes benefits. However, for severe dandruff, consult a dermatologist—this is a wellness tool, not a medical treatment."
+          }
         }
       ]
+    }
+  ,
+    {
+      "@type": "Person",
+      "@id": "https://vibe-test-labs.pages.dev#author",
+      "name": "Vibe Test Lab Team",
+      "url": "https://vibe-test-labs.pages.dev",
+      "sameAs": ["https://vibe-test-labs.pages.dev/methodology"],
+      "description": "Independent product testing team. We buy every product ourselves, test for minimum 7 days, and publish honest reviews with our proprietary Vibe Score (0-100).",
+      "knowsAbout": ["Product Testing", "Consumer Reviews", "Sleep Technology", "Home Products"]
     }
   ]
 }
@@ -854,6 +902,41 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <p style="margin: 0;">Light contact works better than pressure. Place the head gently against your scalp and let vibration + EMS do the work. Move in slow, circular motions: start at temples, move to crown, then back of head. Spend extra time on areas with tension or hair loss concern. 5–10 minutes per session is typical. You don't need to press hard—the device delivers the stimulus.</p>
     </div>
   </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Is this device FDA approved?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">Consumer wellness devices like this are typically classified as personal care or beauty tools. Check the product packaging or listing for specific regulatory certifications. While it may not require FDA approval as a medical device, it should meet safety standards for electrical devices and consumer products.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Can I use this every day?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">Yes, daily use is fine. Many users incorporate it into their daily routine for 10-15 minute sessions. The device is designed for regular use. However, if you experience scalp irritation, start with 2-3 times per week and gradually increase. Listen to your scalp's needs.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Does the serum tank leak?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">The 6ml serum tank is sealed and designed not to leak during normal use. The integrated design prevents spillage during massage. However, be careful not to overfill—follow the tank's maximum fill line. After use, ensure the tank is properly sealed before storing.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">What happens if I miss a day?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">Missing a day occasionally is fine. Consistency matters more than perfection. Benefits like improved scalp circulation are cumulative with regular use. If you skip multiple days, simply resume your routine without concern. There's no penalty for inconsistency.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Can it help with dandruff?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">The stimulation and improved circulation from massage can support scalp health, which may help manage dandruff. Pairing it with anti-dandruff serums or shampoos in the 6ml tank maximizes benefits. However, for severe dandruff, consult a dermatologist—this is a wellness tool, not a medical treatment.</p>
+    </div>
+  </details>
 </div>
 
 <!-- Also Tested -->
@@ -861,7 +944,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 <p style="color: var(--foreground); line-height: 1.6; margin-bottom: 1.5rem;">Explore other products we've reviewed in the Self Care category to build your wellness routine.</p>
 
 <div class="related-products-grid">
-  <a href="/products/rechargeable-scalp-massager-comb" class="related-product-card">
+  <a href="/products/scalp-massager-comb" class="related-product-card">
     <img
       src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/placeholder-scalp-comb.png?v=1"
       alt="Rechargeable Scalp Massager Comb"
@@ -873,7 +956,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </div>
   </a>
 
-  <a href="/products/scalp-massage-brush" class="related-product-card">
+  <a href="/products/3-in-1-cat-steam-brush" class="related-product-card">
     <img
       src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/placeholder-massage-brush.png?v=1"
       alt="Manual Scalp Massage Brush"
@@ -885,7 +968,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </div>
   </a>
 
-  <a href="/products/scalp-serum-treatment" class="related-product-card">
+  <a href="/products/red-light-therapy-device" class="related-product-card">
     <img
       src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/placeholder-scalp-serum.png?v=1"
       alt="Hair Growth Scalp Serum"

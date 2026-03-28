@@ -45,6 +45,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       "name": "Is the Restnature White Noise Machine Worth It for Travel?",
       "reviewBody": "The Restnature is the smallest white noise machine we've tested — pocket-sized at under 2 inches — and it punches way above its size. 16 sound options, 32 volume levels, USB-C charging, and a battery that lasts all night. Sound quality won't match a full-size Hatch or LectroFan, but for travel and small spaces it's the best balance of portability and performance we've found.",
       "author": { "@id": "https://vibe-test-labs.pages.dev#author" },
+      "reviewedBy": { "@id": "https://vibe-test-labs.pages.dev#author" },
       "publisher": { "@id": "https://vibe-test-labs.pages.dev#organization" },
       "datePublished": "2026-03-27",
       "dateModified": "2026-03-27",
@@ -111,8 +112,53 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           "@type": "Question",
           "name": "Does it have a headphone jack?",
           "acceptedAnswer": { "@type": "Answer", "text": "No — this is a speaker-only device. If you want personal audio while sleeping, pair it with our Bluetooth Sleep Mask instead." }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the 16 white noise sounds included?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The machine includes white noise, brown noise, pink noise, nature sounds (rain, thunderstorm, ocean waves, forest), fan sounds, and lullabies. Each sound is adjustable in volume and can be set to loop continuously or use a 30/60/90-minute timer." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use it to mask snoring or external noise?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. White noise and brown noise are specifically designed to mask environmental sounds. At medium-to-high volume levels, it effectively covers partner snoring, traffic noise, and neighbor sounds. Placement matters — put it between you and the sound source if possible." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the Restnature machine portable enough for camping or outdoor use?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. At 1.8x1.8x1.9 inches and weighing just 0.1 lb, it's pocket-sized and ultra-portable. The 6-8 hour battery lasts a full night's sleep. It's perfect for camping, glamping, or any travel scenario." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use a timer so it doesn't play all night?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. It has built-in timer modes: 30 minutes, 60 minutes, 90 minutes, or continuous play. This is great for falling asleep while conserving battery, or for naptime. The timer automatically shuts off the device when it expires." }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it remember my preferred sound and volume settings?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. The machine has a memory function that saves your last-used sound, volume level, and timer setting. When you turn it back on, it returns to those exact settings. This is helpful for consistent nightly routines." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the sound quality good enough for meditation or relaxation, or just sleep?",
+          "acceptedAnswer": { "@type": "Answer", "text": "It works well for both. The sounds are clear and natural-sounding, not compressed or distorted. Many users report using it during meditation, yoga, or work sessions as well as sleep. The smaller speaker is fine for personal use within 6-8 feet." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use the Restnature machine with earplugs for extra soundproofing?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Using low-volume white noise from the machine combined with earplugs creates an effective dual-approach to noise masking. The white noise penetrates earplugs better than sudden environmental sounds, providing smoother sound coverage for better sleep." }
         }
       ]
+    }
+  ,
+    {
+      "@type": "Person",
+      "@id": "https://vibe-test-labs.pages.dev#author",
+      "name": "Vibe Test Lab Team",
+      "url": "https://vibe-test-labs.pages.dev",
+      "sameAs": ["https://vibe-test-labs.pages.dev/methodology"],
+      "description": "Independent product testing team. We buy every product ourselves, test for minimum 7 days, and publish honest reviews with our proprietary Vibe Score (0-100).",
+      "knowsAbout": ["Product Testing", "Consumer Reviews", "Sleep Technology", "Home Products"]
     }
   ]
 }
@@ -399,6 +445,13 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <div class="faq-item"><h3>How long does the battery last?</h3><p>On a full charge, expect 6-8 hours of continuous play depending on volume. It charges via USB-C in about 2 hours and works plugged in as well.</p></div>
   <div class="faq-item"><h3>Is it good for babies?</h3><p>Yes — it includes 3 lullaby sounds specifically for babies, plus the white noise and nature sounds work well for nurseries. The small size makes it easy to clip to a stroller or place in a crib area.</p></div>
   <div class="faq-item"><h3>Does it have a headphone jack?</h3><p>No — this is a speaker-only device. If you want personal audio while sleeping, pair it with our Bluetooth Sleep Mask instead.</p></div>
+  <div class="faq-item"><h3>What are the 16 white noise sounds included?</h3><p>The machine includes white noise, brown noise, pink noise, nature sounds (rain, thunderstorm, ocean waves, forest), fan sounds, and lullabies. Each sound is adjustable in volume and can be set to loop continuously or use a 30/60/90-minute timer.</p></div>
+  <div class="faq-item"><h3>Can I use it to mask snoring or external noise?</h3><p>Absolutely. White noise and brown noise are specifically designed to mask environmental sounds. At medium-to-high volume levels, it effectively covers partner snoring, traffic noise, and neighbor sounds. Placement matters — put it between you and the sound source if possible.</p></div>
+  <div class="faq-item"><h3>Is the Restnature machine portable enough for camping or outdoor use?</h3><p>Yes. At 1.8x1.8x1.9 inches and weighing just 0.1 lb, it's pocket-sized and ultra-portable. The 6-8 hour battery lasts a full night's sleep. It's perfect for camping, glamping, or any travel scenario.</p></div>
+  <div class="faq-item"><h3>Can I use a timer so it doesn't play all night?</h3><p>Yes. It has built-in timer modes: 30 minutes, 60 minutes, 90 minutes, or continuous play. This is great for falling asleep while conserving battery, or for naptime. The timer automatically shuts off the device when it expires.</p></div>
+  <div class="faq-item"><h3>Does it remember my preferred sound and volume settings?</h3><p>Yes. The machine has a memory function that saves your last-used sound, volume level, and timer setting. When you turn it back on, it returns to those exact settings. This is helpful for consistent nightly routines.</p></div>
+  <div class="faq-item"><h3>Is the sound quality good enough for meditation or relaxation, or just sleep?</h3><p>It works well for both. The sounds are clear and natural-sounding, not compressed or distorted. Many users report using it during meditation, yoga, or work sessions as well as sleep. The smaller speaker is fine for personal use within 6-8 feet.</p></div>
+  <div class="faq-item"><h3>Can I use the Restnature machine with earplugs for extra soundproofing?</h3><p>Yes. Using low-volume white noise from the machine combined with earplugs creates an effective dual-approach to noise masking. The white noise penetrates earplugs better than sudden environmental sounds, providing smoother sound coverage for better sleep.</p></div>
 </div>
 
 <!-- Also tested / related products -->

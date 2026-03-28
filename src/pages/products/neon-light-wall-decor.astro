@@ -67,10 +67,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         },
         "datePublished": "2026-03-27",
         "dateModified": "2026-03-27",
-        "author": {
-          "@type": "Organization",
-          "name": "Vibe Test Lab"
-        },
+        "author": { "@id": "https://vibe-test-labs.pages.dev#author" },
+        "reviewedBy": { "@id": "https://vibe-test-labs.pages.dev#author" },
         "reviewBody": "LED transparent backboard neon signs ($49–57) create a floating-neon aesthetic with USB power, 500,000-hour lifespan, and IP42 protection. Only 3 preset styles available, so no customization. Great for dorms and small spaces; not ideal if you need a specific design.",
         "name": "LED Neon Light Wall Decor Review"
       },
@@ -185,8 +183,49 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
               "@type": "Answer",
               "text": "500,000 hours of operation = roughly 57 years at 24/7 continuous use. For normal use (4–8 hours/day), effectively permanent. You'll replace it because you want to, not because it broke."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the power requirements and does it need a special outlet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Standard AC outlet (100-240V, 50-60Hz). The sign draws minimal power (~5-10W depending on brightness and design). No special outlet, adapter, or installation required — plug and play."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I dim the brightness or change the color?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The brightness and color are fixed by design. You cannot dim it or change colors once purchased. The color scheme is determined by which preset design you select. Some variants may have a simple on/off switch; check your product listing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How should I mount this on my wall?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most neon-style LED signs come with adhesive strips or mounting brackets. Avoid drilling if using adhesive. For heavier signs (over 3 lbs), wall anchors or screws are recommended. Check your specific product for mounting hardware included."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will this work in a large room or only small spaces?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Neon-style LED wall decor is ambient accent lighting — it creates visual impact close-up and in direct line of sight. In a large room, you'll need to position it where it's visible. It won't brighten an entire room, but it will definitely catch eyes in a 10-15 foot radius."
+            }
           }
         ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://vibe-test-labs.pages.dev#author",
+        "name": "Vibe Test Lab Team",
+        "url": "https://vibe-test-labs.pages.dev",
+        "sameAs": ["https://vibe-test-labs.pages.dev/methodology"],
+        "description": "Independent product testing team. We buy every product ourselves, test for minimum 7 days, and publish honest reviews with our proprietary Vibe Score (0-100).",
+        "knowsAbout": ["Product Testing", "Consumer Reviews", "Sleep Technology", "Home Products"]
       }
     ]
   })} />
@@ -685,6 +724,34 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem;">How long does it last? Will it burn out?</h3>
       <p style="margin: 0; line-height: 1.6;">
         500,000 hours of operation. At 24/7 continuous use, that's roughly 57 years. For normal use (4–8 hours per day), it will outlive your interest in the design. Effectively permanent. You'll want to replace it for aesthetic reasons long before the LEDs fail.
+      </p>
+    </div>
+
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem;">What are the power requirements and does it need a special outlet?</h3>
+      <p style="margin: 0; line-height: 1.6;">
+        Standard AC outlet (100-240V, 50-60Hz). The sign draws minimal power (~5-10W depending on brightness and design). No special outlet, adapter, or installation required — plug and play.
+      </p>
+    </div>
+
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem;">Can I dim the brightness or change the color?</h3>
+      <p style="margin: 0; line-height: 1.6;">
+        The brightness and color are fixed by design. You cannot dim it or change colors once purchased. The color scheme is determined by which preset design you select. Some variants may have a simple on/off switch; check your product listing.
+      </p>
+    </div>
+
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem;">How should I mount this on my wall?</h3>
+      <p style="margin: 0; line-height: 1.6;">
+        Most neon-style LED signs come with adhesive strips or mounting brackets. Avoid drilling if using adhesive. For heavier signs (over 3 lbs), wall anchors or screws are recommended. Check your specific product for mounting hardware included.
+      </p>
+    </div>
+
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem;">Will this work in a large room or only small spaces?</h3>
+      <p style="margin: 0; line-height: 1.6;">
+        Neon-style LED wall decor is ambient accent lighting — it creates visual impact close-up and in direct line of sight. In a large room, you'll need to position it where it's visible. It won't brighten an entire room, but it will definitely catch eyes in a 10-15 foot radius.
       </p>
     </div>
   </div>

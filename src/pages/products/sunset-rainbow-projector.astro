@@ -212,10 +212,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       },
       "datePublished": "2026-03-27",
       "dateModified": "2026-03-27",
-      "author": {
-        "@type": "Organization",
-        "name": "Vibe Test Lab"
-      }
+      "author": { "@id": "https://vibe-test-labs.pages.dev#author" },
+      "reviewedBy": { "@id": "https://vibe-test-labs.pages.dev#author" }
     },
     {
       "@type": "Product",
@@ -232,7 +230,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       "offers": {
         "@type": "Offer",
         "@id": "https://vibe-test-labs.pages.dev/products/sunset-rainbow-projector#offer",
-        "url": "https://fwaqf1-er.myshopify.com/products/usb-sunset-rainbow-projector-led-night-light-decor?utm_source=aeo&utm_medium=content&utm_campaign=sunset-rainbow-projector",
+        "url": "https://fwaqf1-er.myshopify.com/products/sunset-rainbow-projector-led-night-light-decor?utm_source=aeo&utm_medium=content&utm_campaign=sunset-rainbow-projector",
         "priceCurrency": "USD",
         "price": "26",
         "availability": "https://schema.org/InStock"
@@ -311,8 +309,50 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             "@type": "Answer",
             "text": "USB Sunset Rainbow Projector, USB power cable, and basic instruction manual. No remote included unless specified in your listing variant."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "How long will the LED bulb last before it burns out?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "LED projectors typically last 50,000+ hours — roughly 20+ years of continuous operation. The LED is unlikely to be the limiting factor. The USB cable and electronic components are what might fail first."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use an extension cord with this projector?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. You can use any standard USB-A extension cord to extend the cable length. Since it operates at low voltage (safe), there are no electrical safety concerns with longer cables. A 10-15 foot extension is standard and works fine."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this better than a regular lamp for bedroom ambiance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on your goals. This projector creates dynamic, colorful ambient light that transforms a wall. A regular lamp provides more practical task lighting but less visual drama. For pure mood and aesthetics, this beats a standard lamp. For reading or daily tasks, you'll want both."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does this projector attract bugs or insects?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "LED light is less attractive to insects than incandescent bulbs, but it can still attract some bugs if used outdoors. For indoor use (bedroom, dorm), this is not a concern. If you use it near an open window, expect minor insect attention."
+          }
         }
       ]
+    }
+  ,
+    {
+      "@type": "Person",
+      "@id": "https://vibe-test-labs.pages.dev#author",
+      "name": "Vibe Test Lab Team",
+      "url": "https://vibe-test-labs.pages.dev",
+      "sameAs": ["https://vibe-test-labs.pages.dev/methodology"],
+      "description": "Independent product testing team. We buy every product ourselves, test for minimum 7 days, and publish honest reviews with our proprietary Vibe Score (0-100).",
+      "knowsAbout": ["Product Testing", "Consumer Reviews", "Sleep Technology", "Home Products"]
     }
   ]
 }
@@ -787,6 +827,34 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <summary style="font-weight: 600; color: var(--foreground); user-select: none;">What's included in the box?</summary>
     <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
       <p style="margin: 0;">USB Sunset Rainbow Projector, USB power cable (typically 1–2 meters), and a basic instruction manual. Some listings include a remote control; check the product variant to confirm. No batteries required.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">How long will the LED bulb last before it burns out?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">LED projectors typically last 50,000+ hours — roughly 20+ years of continuous operation. The LED is unlikely to be the limiting factor. The USB cable and electronic components are what might fail first. Treat it well and it should last for years.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Can I use an extension cord with this projector?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">Yes. You can use any standard USB-A extension cord to extend the cable length. Since it operates at low voltage (safe), there are no electrical safety concerns with longer cables. A 10-15 foot extension is standard and works fine.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Is this better than a regular lamp for bedroom ambiance?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">It depends on your goals. This projector creates dynamic, colorful ambient light that transforms a wall. A regular lamp provides more practical task lighting but less visual drama. For pure mood and aesthetics, this beats a standard lamp. For reading or daily tasks, you'll want both.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Does this projector attract bugs or insects?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">LED light is less attractive to insects than incandescent bulbs, but it can still attract some bugs if used outdoors. For indoor use (bedroom, dorm), this is not a concern. If you use it near an open window, expect minor insect attention.</p>
     </div>
   </details>
 </div>

@@ -186,7 +186,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       "mentions": [
         {
           "@type": "Thing",
-          "@id": "https://vibe-test-labs.pages.dev/products/electric-scalp-massager"
+          "@id": "https://vibe-test-labs.pages.dev/products/ems-scalp-massager"
         },
         {
           "@type": "Thing",
@@ -213,10 +213,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       },
       "datePublished": "2026-03-27",
       "dateModified": "2026-03-27",
-      "author": {
-        "@type": "Organization",
-        "name": "Vibe Test Lab"
-      }
+      "author": { "@id": "https://vibe-test-labs.pages.dev#author" },
+      "reviewedBy": { "@id": "https://vibe-test-labs.pages.dev#author" }
     },
     {
       "@type": "Product",
@@ -233,7 +231,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       "offers": {
         "@type": "Offer",
         "@id": "https://vibe-test-labs.pages.dev/products/scalp-massager-comb#offer",
-        "url": "https://fwaqf1-er.myshopify.com/products/rechargeable-scalp-massager-comb-with-red-light-therapy?utm_source=aeo&utm_medium=content&utm_campaign=scalp-massager-comb",
+        "url": "https://fwaqf1-er.myshopify.com/products/scalp-massager-comb-with-red-light-therapy?utm_source=aeo&utm_medium=content&utm_campaign=scalp-massager-comb",
         "priceCurrency": "USD",
         "price": "85.53",
         "availability": "https://schema.org/InStock"
@@ -317,8 +315,58 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             "@type": "Answer",
             "text": "Rechargeable Scalp Massager Comb, USB charging cable, instruction manual, and sometimes a carrying case. Detachable comb head is included. Check your specific variant for complete accessories list."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Will this help with my hair loss?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The massage can improve scalp circulation, which supports overall scalp health. However, this is not a hair loss treatment. For significant hair loss, consult a dermatologist. This device is best used as a wellness tool to complement your routine and support healthy scalp conditions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How loud is the vibration?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The vibration is relatively quiet—no louder than an electric toothbrush. You can use it while watching TV or in a quiet environment without disturbance. Some models include a noise dampening feature, but overall sound levels are minimal."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use this if I have a sensitive scalp?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, but start on lower intensity settings. The adjustable vibration levels let you control the strength. If your scalp is very sensitive or inflamed, consult a dermatologist first. Many users with sensitive scalps find gentle low-intensity massage actually helpful for relieving tension."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the USB charging port durable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "USB ports are typically reliable in this type of device. The connector should be sturdy and not prone to loosening. Avoid forcing the cable in at awkward angles. With gentle use and proper charging habits, the port should last the device's lifespan without issues."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I adjust the red light intensity?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most models don't allow red light adjustment—it operates at a fixed intensity. The red light activates automatically when you turn on the device. This keeps the design simple. If you want to control light intensity separately, look for specialized red light therapy devices instead."
+          }
         }
       ]
+    }
+  ,
+    {
+      "@type": "Person",
+      "@id": "https://vibe-test-labs.pages.dev#author",
+      "name": "Vibe Test Lab Team",
+      "url": "https://vibe-test-labs.pages.dev",
+      "sameAs": ["https://vibe-test-labs.pages.dev/methodology"],
+      "description": "Independent product testing team. We buy every product ourselves, test for minimum 7 days, and publish honest reviews with our proprietary Vibe Score (0-100).",
+      "knowsAbout": ["Product Testing", "Consumer Reviews", "Sleep Technology", "Home Products"]
     }
   ]
 }
@@ -822,6 +870,41 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <p style="margin: 0;">Rechargeable Scalp Massager Comb unit, USB charging cable, detachable comb head, instruction manual, and sometimes a carrying case depending on your variant. Batteries are not required. Available in White, Black, and Emerald colors.</p>
     </div>
   </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Will this help with my hair loss?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">The massage can improve scalp circulation, which supports overall scalp health. However, this is not a hair loss treatment. For significant hair loss, consult a dermatologist. This device is best used as a wellness tool to complement your routine and support healthy scalp conditions.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">How loud is the vibration?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">The vibration is relatively quiet—no louder than an electric toothbrush. You can use it while watching TV or in a quiet environment without disturbance. Some models include a noise dampening feature, but overall sound levels are minimal.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Can I use this if I have a sensitive scalp?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">Yes, but start on lower intensity settings. The adjustable vibration levels let you control the strength. If your scalp is very sensitive or inflamed, consult a dermatologist first. Many users with sensitive scalps find gentle low-intensity massage actually helpful for relieving tension.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Is the USB charging port durable?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">USB ports are typically reliable in this type of device. The connector should be sturdy and not prone to loosening. Avoid forcing the cable in at awkward angles. With gentle use and proper charging habits, the port should last the device's lifespan without issues.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Can I adjust the red light intensity?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">Most models don't allow red light adjustment—it operates at a fixed intensity. The red light activates automatically when you turn on the device. This keeps the design simple. If you want to control light intensity separately, look for specialized red light therapy devices instead.</p>
+    </div>
+  </details>
 </div>
 
 <!-- Also Tested -->
@@ -829,7 +912,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 <p style="color: var(--foreground); line-height: 1.6; margin-bottom: 1.5rem;">Explore other products we've reviewed in the Self Care category to build your complete wellness routine.</p>
 
 <div class="related-products-grid">
-  <a href="/products/electric-scalp-massager" class="related-product-card">
+  <a href="/products/ems-scalp-massager" class="related-product-card">
     <img
       src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/5dd2cb1d49a394569613c0827892.jpg?v=1774566829"
       alt="Electric Scalp Massager"
@@ -841,7 +924,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </div>
   </a>
 
-  <a href="/products/premium-face-roller" class="related-product-card">
+  <a href="/products/3-in-1-cat-steam-brush" class="related-product-card">
     <img
       src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/5dd2cb1d49a394569613c0827892.jpg?v=1774566829"
       alt="Premium Face Roller"
@@ -853,7 +936,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </div>
   </a>
 
-  <a href="/products/aromatherapy-diffuser" class="related-product-card">
+  <a href="/products/red-light-therapy-device" class="related-product-card">
     <img
       src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/5dd2cb1d49a394569613c0827892.jpg?v=1774566829"
       alt="Aromatherapy Diffuser"

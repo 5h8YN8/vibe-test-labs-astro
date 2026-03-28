@@ -45,6 +45,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       "name": "What's the Best Way to Help Kids Fall Asleep Naturally?",
       "reviewBody": "Good Day Chocolate Melatonin for Kids solves a real problem: kids refuse gummies and pills, but they'll take chocolate. The 1mg dose is appropriately low for children, the fair-trade chocolate is a genuine plus, and the chamomile blend is thoughtful. Yes, $1 per piece is pricey, and it contains sugar and dairy. But if bedtime has been a battle and taste matters more than cost, this works. Always check with your pediatrician before giving melatonin to children.",
       "author": { "@id": "https://vibe-test-labs.pages.dev#author" },
+      "reviewedBy": { "@id": "https://vibe-test-labs.pages.dev#author" },
       "publisher": { "@id": "https://vibe-test-labs.pages.dev#organization" },
       "datePublished": "2026-03-27",
       "dateModified": "2026-03-27",
@@ -121,8 +122,38 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           "@type": "Question",
           "name": "Will my kid get dependent on it?",
           "acceptedAnswer": { "@type": "Answer", "text": "Melatonin is non-habit forming, meaning your child won't develop a physical dependence. However, psychological dependence is possible if used every night for months. The best approach is to use it 2-4 times per week to support sleep habits while your child works on consistent bedtimes and wind-down routines. Once sleep improves, gradually reduce use." }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take for the melatonin to work?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Melatonin typically takes 20-40 minutes to take effect. Give it to your child 30 minutes before the target bedtime. The timing varies by individual — some children respond faster than others. Consistency with timing helps establish a routine." }
+        },
+        {
+          "@type": "Question",
+          "name": "Are there any side effects I should watch for?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Side effects are rare at low doses but can include morning grogginess, headaches, or dizziness. If your child experiences persistent side effects, discontinue and consult your pediatrician. Avoid using melatonin if your child is pregnant or nursing." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can this be given with other medications?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Melatonin can interact with certain medications including immunosuppressants, anticoagulants, and some seizure medications. Always inform your child's doctor about melatonin use before starting any new medications, and consult before combining with existing prescriptions." }
+        },
+        {
+          "@type": "Question",
+          "name": "How should I store these chocolates?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Store in a cool, dry place away from direct sunlight. Do not refrigerate or freeze. Most chocolate-based supplements remain effective for 1-2 years when stored properly. Keep out of reach of younger siblings." }
         }
       ]
+    }
+  ,
+    {
+      "@type": "Person",
+      "@id": "https://vibe-test-labs.pages.dev#author",
+      "name": "Vibe Test Lab Team",
+      "url": "https://vibe-test-labs.pages.dev",
+      "sameAs": ["https://vibe-test-labs.pages.dev/methodology"],
+      "description": "Independent product testing team. We buy every product ourselves, test for minimum 7 days, and publish honest reviews with our proprietary Vibe Score (0-100).",
+      "knowsAbout": ["Product Testing", "Consumer Reviews", "Sleep Technology", "Home Products"]
     }
   ]
 }
@@ -454,6 +485,26 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <div style="border-bottom:1px solid var(--border);padding-bottom:1rem;">
     <h3 style="margin:0 0 .5rem;font-size:.95rem;">Will my child become dependent on melatonin?</h3>
     <p style="margin:0;font-size:.875rem;color:var(--foreground);">Melatonin is non-habit forming at the chemical level, meaning your child won't develop a physical addiction. However, psychological dependence is possible if used every single night for months. A child might start to associate melatonin with sleep and feel they can't sleep without it, even though their body hasn't actually become dependent. The best practice is to use melatonin 2-4 nights per week at most, for 2-4 weeks at a time, rather than nightly long-term. Once sleep improves and good habits are established, taper down. Use it as a tool to help establish healthy sleep patterns, not as a permanent crutch.</p>
+  </div>
+
+  <div style="border-bottom:1px solid var(--border);padding-bottom:1rem;">
+    <h3 style="margin:0 0 .5rem;font-size:.95rem;">How long does it take for the melatonin to work?</h3>
+    <p style="margin:0;font-size:.875rem;color:var(--foreground);">Melatonin typically takes 20-40 minutes to take effect. Give it to your child 30 minutes before the target bedtime. The timing varies by individual — some children respond faster than others. Consistency with timing helps establish a routine. Keeping a log of when your child takes it and falls asleep can help you identify the optimal timing for your child.</p>
+  </div>
+
+  <div style="border-bottom:1px solid var(--border);padding-bottom:1rem;">
+    <h3 style="margin:0 0 .5rem;font-size:.95rem;">Are there any side effects I should watch for?</h3>
+    <p style="margin:0;font-size:.875rem;color:var(--foreground);">Side effects are rare at low doses but can include morning grogginess, headaches, dizziness, or vivid dreams. If your child experiences persistent side effects, discontinue and consult your pediatrician. Start with the smallest possible dose (half a piece) to test tolerance before using the full 1mg dose.</p>
+  </div>
+
+  <div style="border-bottom:1px solid var(--border);padding-bottom:1rem;">
+    <h3 style="margin:0 0 .5rem;font-size:.95rem;">Can this be given with other medications?</h3>
+    <p style="margin:0;font-size:.875rem;color:var(--foreground);">Melatonin can interact with certain medications including immunosuppressants, anticoagulants, and some seizure medications. Always inform your child's doctor about melatonin use before starting any new medications, and consult before combining with existing prescriptions. Your pediatrician can check for potential interactions.</p>
+  </div>
+
+  <div style="border-bottom:1px solid var(--border);padding-bottom:1rem;">
+    <h3 style="margin:0 0 .5rem;font-size:.95rem;">How should I store these chocolates?</h3>
+    <p style="margin:0;font-size:.875rem;color:var(--foreground);">Store in a cool, dry place away from direct sunlight. Do not refrigerate or freeze. Most chocolate-based supplements remain effective for 1-2 years when stored properly. Keep out of reach of younger siblings, as melatonin is not intended for children under 3.</p>
   </div>
 </div>
 

@@ -560,6 +560,21 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <h3>What's the return policy?</h3>
       <p>Check Shopify's customer return policy (typically 30 days). Most weighted blankets have return windows because some people find them uncomfortable. If it doesn't work for you after 2 weeks, you should be able to return it. Don't judge too early.</p>
     </div>
+
+    <div class="faq-item">
+      <h3>What's the actual size of this blanket?</h3>
+      <p>The LAGRATY Knitted Weighted Blanket measures 50" x 60" — suitable for one person on a full-size bed or two people on a queen. It's not large enough to completely cover a queen mattress for two people; it's designed for single-person or light couples use. Measure your bed before ordering.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Does this blanket have a strong smell or odor when new?</h3>
+      <p>Most knitted weighted blankets have minimal odor upon arrival, especially compared to bead-filled models. If there's any smell, it typically fades after one wash and 24 hours of airing out. Air dry flat or machine wash on gentle cycle — both work.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can I use a weighted blanket if I have back pain or injuries?</h3>
+      <p>Deep pressure can help some people with back pain by promoting relaxation. However, it can aggravate others — it depends on the cause of your pain. If you have serious back issues, consult your doctor before using. Lighter weights (5 lbs) are safer than 7+ lbs if you have concerns.</p>
+    </div>
   </section>
 
   <!-- §16 Also Tested Section -->
@@ -691,7 +706,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       },
       "datePublished": "2026-03-27",
       "dateModified": "2026-03-27",
-      "author": {
+      "author": {,
+      "reviewedBy": { "@id": "https://vibe-test-labs.pages.dev#author" },
         "@type": "Organization",
         "name": "Vibe Test Lab"
       }
@@ -804,8 +820,42 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             "@type": "Answer",
             "text": "Check Shopify's customer return policy (typically 30 days). Most weighted blankets have return windows because some people find them uncomfortable. Don't judge too early."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the actual size of this blanket?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The LAGRATY Knitted Weighted Blanket measures 50\" x 60\" — suitable for one person on a full-size bed or two people on a queen. It's designed for single-person or light couples use. Measure your bed before ordering."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does this blanket have a strong smell or odor when new?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most knitted weighted blankets have minimal odor upon arrival. If there's any smell, it typically fades after one wash and 24 hours of airing out. Air dry flat or machine wash on gentle cycle — both work."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use a weighted blanket if I have back pain or injuries?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Deep pressure can help some people with back pain by promoting relaxation. However, it can aggravate others — it depends on the cause. If you have serious back issues, consult your doctor first. Lighter weights (5 lbs) are safer than 7+ lbs if concerned."
+          }
         }
       ]
+    }
+  ,
+    {
+      "@type": "Person",
+      "@id": "https://vibe-test-labs.pages.dev#author",
+      "name": "Vibe Test Lab Team",
+      "url": "https://vibe-test-labs.pages.dev",
+      "sameAs": ["https://vibe-test-labs.pages.dev/methodology"],
+      "description": "Independent product testing team. We buy every product ourselves, test for minimum 7 days, and publish honest reviews with our proprietary Vibe Score (0-100).",
+      "knowsAbout": ["Product Testing", "Consumer Reviews", "Sleep Technology", "Home Products"]
     }
   ]
 }

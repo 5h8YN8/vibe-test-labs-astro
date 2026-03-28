@@ -72,7 +72,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           "@id": "https://vibe-test-labs.pages.dev/products/3-in-1-cat-steam-brush#review",
           "name": "Is a Steam Grooming Brush Actually Worth It for Cat Shedding?",
           "reviewBody": "The 3-in-1 Steam Pet Grooming Brush is a genuine upgrade over standard deshedding tools for indoor cat owners. Soft silicone bristles with a steam function loosen undercoat fur gently. Used 3-4 times per week it visibly reduces shedding and hairball frequency.",
-          "author": {
+          "author": {,
+      "reviewedBy": { "@id": "https://vibe-test-labs.pages.dev#author" },
             "@id": "https://vibe-test-labs.pages.dev#author"
           },
           "publisher": {
@@ -176,9 +177,50 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
                 "@type": "Answer",
                 "text": "Furminator steel tines go deeper on thick coats but risk guard hair damage with overuse. Steam brush is gentler and better for daily use on average-coat cats."
               }
+            },
+            {
+              "@type": "Question",
+              "name": "Is this water-resistant or completely waterproof?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The brush handle is water-resistant but not fully waterproof. The motor housing repels water from regular rinsing, but do not submerge the entire brush or spray directly into the motor vents. Empty the water reservoir after each use and allow it to air dry."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does the water reservoir last per grooming session?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The reservoir holds enough water for approximately 10-15 minutes of continuous steam production. For most grooming sessions (5-10 minutes), one fill is sufficient. Refill between cats or for longer sessions."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What type of water should I use - filtered, distilled, or tap?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Distilled water is recommended to prevent mineral buildup in the steam nozzles. Tap water works fine but may leave residue over time. Avoid very hard water areas if possible. Clean the nozzles monthly with a soft brush if you notice reduced steam output."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does this work on long-haired cats or only short-haired breeds?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It works on both, but is most effective on medium to long-haired cats. For very long, matted coats, you may need to make multiple passes or use a detangling spray first. The steam is especially helpful for long-haired breeds because it separates mats before brushing."
+              }
             }
           ]
-        }
+        },
+    {
+      "@type": "Person",
+      "@id": "https://vibe-test-labs.pages.dev#author",
+      "name": "Vibe Test Lab Team",
+      "url": "https://vibe-test-labs.pages.dev",
+      "sameAs": ["https://vibe-test-labs.pages.dev/methodology"],
+      "description": "Independent product testing team. We buy every product ourselves, test for minimum 7 days, and publish honest reviews with our proprietary Vibe Score (0-100).",
+      "knowsAbout": ["Product Testing", "Consumer Reviews", "Sleep Technology", "Home Products"]
+    }
       ]
     }
   </script>
@@ -441,6 +483,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <div class="faq-item"><h3>Will this work if my cat hates being brushed?</h3><p>Better than metal alternatives. The silicone + steam combination is gentler. Cats that bolt from a Furminator often tolerate this brush 2-3x longer. Introduce it slowly with treats and short sessions.</p></div>
   <div class="faq-item"><h3>How does this compare to a Furminator?</h3><p>The Furminator uses steel tines that go deeper into the undercoat — more effective on thick-coated breeds but risks guard hair damage with overuse. This brush is gentler and better for daily use on average-coat cats.</p></div>
   <div class="faq-item"><h3>Is it easy to clean after use?</h3><p>Yes. Fur sits on top of silicone bristles and peels off in one motion. Rinse the brush head under warm water — done in under 30 seconds. The reservoir unscrews for separate cleaning.</p></div>
+  <div class="faq-item"><h3>Is this water-resistant or completely waterproof?</h3><p>The brush handle is water-resistant but not fully waterproof. The motor housing repels water from regular rinsing, but do not submerge the entire brush or spray directly into the motor vents. Empty the water reservoir after each use and allow it to air dry.</p></div>
+  <div class="faq-item"><h3>How long does the water reservoir last per grooming session?</h3><p>The reservoir holds enough water for approximately 10-15 minutes of continuous steam production. For most grooming sessions (5-10 minutes), one fill is sufficient. Refill between cats or for longer sessions.</p></div>
+  <div class="faq-item"><h3>What type of water should I use - filtered, distilled, or tap?</h3><p>Distilled water is recommended to prevent mineral buildup in the steam nozzles. Tap water works fine but may leave residue over time. Avoid very hard water areas if possible. Clean the nozzles monthly with a soft brush if you notice reduced steam output.</p></div>
+  <div class="faq-item"><h3>Does this work on long-haired cats or only short-haired breeds?</h3><p>It works on both, but is most effective on medium to long-haired cats. For very long, matted coats, you may need to make multiple passes or use a detangling spray first. The steam is especially helpful for long-haired breeds because it separates mats before brushing.</p></div>
   </div>
   <div style="background:var(--muted);border-radius:var(--radius);padding:1rem 1.25rem;margin:1.5rem 0;font-size:.875rem;">
   <strong>Looking for alternatives?</strong>

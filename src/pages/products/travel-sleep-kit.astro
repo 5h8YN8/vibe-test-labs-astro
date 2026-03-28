@@ -46,6 +46,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       "name": "What's the Best Travel Sleep Kit for Flights and Hotels?",
       "reviewBody": "The Travel Sleep Kit combines a pocket-sized white noise machine, Bluetooth sleep mask, and mouth tape to solve the three biggest travel sleep problems: noise, light, and dry-air breathing. All three items fit in a carry-on pocket, and you save $24 versus buying separately. At $130, it's a solid investment for frequent travelers who are serious about sleep quality on the road.",
       "author": { "@id": "https://vibe-test-labs.pages.dev#author" },
+      "reviewedBy": { "@id": "https://vibe-test-labs.pages.dev#author" },
       "publisher": { "@id": "https://vibe-test-labs.pages.dev#organization" },
       "datePublished": "2026-03-27",
       "dateModified": "2026-03-27",
@@ -112,8 +113,53 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           "@type": "Question",
           "name": "How does this compare to the Deep Sleep Bundle?",
           "acceptedAnswer": { "@type": "Answer", "text": "The Travel Sleep Kit is optimized for portability — it swaps the sleep spray (which can leak in luggage) for mouth tape (travel-friendly). The Deep Sleep Bundle is better for a permanent home setup." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the sleep mask comfortable to wear on a plane pillow?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. The padded design works well with airline pillows and neck pillows. The eye area is fully contoured, so you get complete darkness even in the bright cabin environment. Most users find it more comfortable than the cheapo airplane eyemask." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can the white noise machine disturb a seatmate on a plane?",
+          "acceptedAnswer": { "@type": "Answer", "text": "It depends on volume. At low-to-medium volume (6-8 dB reduction), it's barely audible to someone in the next seat. At high volume, it might be noticeable. Use headphones or keep it on medium volume for plane use. The small speaker projects sound in a focused way, not diffusely." }
+        },
+        {
+          "@type": "Question",
+          "name": "How much luggage space does the full kit take up?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Minimal. The white noise machine is 1.8x1.8x1.9 inches (pocket-sized). The sleep mask rolls up to fit in a small compartment. A 30-pack of mouth tape is credit-card sized. Total pack weight is under 0.5 lbs. It's ultra-light for travel." }
+        },
+        {
+          "@type": "Question",
+          "name": "What voltage/outlet compatibility does the white noise machine have?",
+          "acceptedAnswer": { "@type": "Answer", "text": "It's USB-C rechargeable and works with any USB-C charger (most phone chargers work). It doesn't have a built-in power adapter for international outlets, but any USB-C travel adapter works globally. No voltage conversion needed — it's universal voltage." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use the mouth tape in a hotel with high humidity or air conditioning?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Air conditioning actually helps because it can dry nasal passages, making nasal breathing harder without the tape. The adhesive works fine in humid climates. If stuck in ultra-moist air, apply lip balm first to help the tape grip better." }
+        },
+        {
+          "@type": "Question",
+          "name": "What if I experience ear pressure or altitude discomfort on the plane?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The white noise machine won't help with ear pressure directly, but the sleep mask and white noise can help you relax and sleep through discomfort. The mouth tape promotes nasal breathing, which can actually help equalize ear pressure better than mouth breathing." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this kit suitable for road trips, or just air travel?",
+          "acceptedAnswer": { "@type": "Answer", "text": "It works great for road trips, train travel, or hotels anywhere. The portability and low weight make it ideal for all travel types. The sleep mask is especially useful for sleeping in moving vehicles or unfamiliar environments." }
         }
       ]
+    }
+  ,
+    {
+      "@type": "Person",
+      "@id": "https://vibe-test-labs.pages.dev#author",
+      "name": "Vibe Test Lab Team",
+      "url": "https://vibe-test-labs.pages.dev",
+      "sameAs": ["https://vibe-test-labs.pages.dev/methodology"],
+      "description": "Independent product testing team. We buy every product ourselves, test for minimum 7 days, and publish honest reviews with our proprietary Vibe Score (0-100).",
+      "knowsAbout": ["Product Testing", "Consumer Reviews", "Sleep Technology", "Home Products"]
     }
   ]
 }
@@ -399,6 +445,13 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <div class="faq-item"><h3>How long does the white noise machine battery last for travel?</h3><p>6-8 hours on a full charge, depending on volume. That covers a full night in a hotel. It also charges via USB-C, so you can top it up with any travel charger or laptop.</p></div>
   <div class="faq-item"><h3>Will TSA allow these items in carry-on?</h3><p>Yes — all three items are TSA-friendly. The white noise machine has a small lithium battery (allowed), the sleep mask has a small Bluetooth battery (allowed), and the mouth tape is just adhesive strips. No issues at security.</p></div>
   <div class="faq-item"><h3>How does this compare to the Deep Sleep Bundle?</h3><p>The Travel Sleep Kit is optimized for portability — it swaps the sleep spray (which can leak in luggage) for mouth tape (travel-friendly). The Deep Sleep Bundle is better for a permanent home setup.</p></div>
+  <div class="faq-item"><h3>Is the sleep mask comfortable to wear on a plane pillow?</h3><p>Yes. The padded design works well with airline pillows and neck pillows. The eye area is fully contoured, so you get complete darkness even in the bright cabin environment. Most users find it more comfortable than the cheapo airplane eyemask.</p></div>
+  <div class="faq-item"><h3>Can the white noise machine disturb a seatmate on a plane?</h3><p>It depends on volume. At low-to-medium volume (6-8 dB reduction), it's barely audible to someone in the next seat. At high volume, it might be noticeable. Use headphones or keep it on medium volume for plane use. The small speaker projects sound in a focused way, not diffusely.</p></div>
+  <div class="faq-item"><h3>How much luggage space does the full kit take up?</h3><p>Minimal. The white noise machine is 1.8x1.8x1.9 inches (pocket-sized). The sleep mask rolls up to fit in a small compartment. A 30-pack of mouth tape is credit-card sized. Total pack weight is under 0.5 lbs. It's ultra-light for travel.</p></div>
+  <div class="faq-item"><h3>What voltage/outlet compatibility does the white noise machine have?</h3><p>It's USB-C rechargeable and works with any USB-C charger (most phone chargers work). It doesn't have a built-in power adapter for international outlets, but any USB-C travel adapter works globally. No voltage conversion needed — it's universal voltage.</p></div>
+  <div class="faq-item"><h3>Can I use the mouth tape in a hotel with high humidity or air conditioning?</h3><p>Yes. Air conditioning actually helps because it can dry nasal passages, making nasal breathing harder without the tape. The adhesive works fine in humid climates. If stuck in ultra-moist air, apply lip balm first to help the tape grip better.</p></div>
+  <div class="faq-item"><h3>What if I experience ear pressure or altitude discomfort on the plane?</h3><p>The white noise machine won't help with ear pressure directly, but the sleep mask and white noise can help you relax and sleep through discomfort. The mouth tape promotes nasal breathing, which can actually help equalize ear pressure better than mouth breathing.</p></div>
+  <div class="faq-item"><h3>Is this kit suitable for road trips, or just air travel?</h3><p>It works great for road trips, train travel, or hotels anywhere. The portability and low weight make it ideal for all travel types. The sleep mask is especially useful for sleeping in moving vehicles or unfamiliar environments.</p></div>
 </div>
 
 <!-- Also tested / related products -->

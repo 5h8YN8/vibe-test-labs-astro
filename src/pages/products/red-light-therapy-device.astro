@@ -208,10 +208,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       },
       "datePublished": "2026-03-27",
       "dateModified": "2026-03-27",
-      "author": {
-        "@type": "Organization",
-        "name": "Vibe Test Lab"
-      }
+      "author": { "@id": "https://vibe-test-labs.pages.dev#author" },
+      "reviewedBy": { "@id": "https://vibe-test-labs.pages.dev#author" }
     },
     {
       "@type": "Product",
@@ -320,8 +318,58 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             "@type": "Answer",
             "text": "Red light (600–700nm) works primarily on skin surface and shallow tissues. Infrared (800–1100nm) penetrates deeper into muscles, joints, and ligaments. This device combines both for broader therapeutic range. Red light supports collagen and skin healing; infrared supports deeper muscle and joint recovery."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use it while on acne medication?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Consult your dermatologist first, especially if you're on retinoids, isotretinoin, or photosensitizing medications. Red light is generally gentle, but combined with certain treatments, it might cause unexpected reactions. Getting professional guidance ensures you can safely combine treatments without complications."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How far should I hold it from my face?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most consumer devices recommend 6–12 inches from skin. Check your specific device's manual for the optimal distance. Too close may cause discomfort; too far reduces intensity. The sweet spot is where you feel gentle warmth without heat stress. Some devices have adjustable distance recommendations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will it work on darker skin tones?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Red light penetrates through different skin tones similarly, though deeper skin tones may require slightly longer exposure for equivalent benefits. The wavelength (660nm) works universally. Individual skin types and sensitivities vary more than skin tone. If concerned, start with shorter sessions and gradually increase."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use it daily?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, daily use is safe. Many users use it 5-7 days per week for 10-20 minute sessions. Some people prefer daily use; others find 3-4 times weekly sufficient. Listen to your skin—if irritation occurs, reduce frequency. Most benefits are cumulative with consistent use over weeks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it work for anti-aging?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Red light may support skin health and potentially stimulate collagen production, which theoretically could help with fine lines and skin texture. However, this device isn't a substitute for retinoids, sunscreen, or professional treatments. Use it as a complementary wellness tool for overall skin support, not as primary anti-aging therapy."
+          }
         }
       ]
+    }
+  ,
+    {
+      "@type": "Person",
+      "@id": "https://vibe-test-labs.pages.dev#author",
+      "name": "Vibe Test Lab Team",
+      "url": "https://vibe-test-labs.pages.dev",
+      "sameAs": ["https://vibe-test-labs.pages.dev/methodology"],
+      "description": "Independent product testing team. We buy every product ourselves, test for minimum 7 days, and publish honest reviews with our proprietary Vibe Score (0-100).",
+      "knowsAbout": ["Product Testing", "Consumer Reviews", "Sleep Technology", "Home Products"]
     }
   ]
 }
@@ -773,6 +821,41 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Can I use this to replace dermatology or physical therapy?</summary>
     <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
       <p style="margin: 0;">No. Red light therapy is a supportive wellness tool, not a medical treatment. If you have serious skin conditions (eczema, psoriasis, acne requiring Accutane), joint injuries, or chronic pain, consult a dermatologist or physical therapist first. Red light therapy can complement professional treatment—many clinics use it alongside PT or dermatology—but it's not a replacement. Think of it as a recovery support tool, not a primary intervention.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Can I use it while on acne medication?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">Consult your dermatologist first, especially if you're on retinoids, isotretinoin, or photosensitizing medications. Red light is generally gentle, but combined with certain treatments, it might cause unexpected reactions. Getting professional guidance ensures you can safely combine treatments without complications.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">How far should I hold it from my face?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">Most consumer devices recommend 6–12 inches from skin. Check your specific device's manual for the optimal distance. Too close may cause discomfort; too far reduces intensity. The sweet spot is where you feel gentle warmth without heat stress. Some devices have adjustable distance recommendations.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Will it work on darker skin tones?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">Red light penetrates through different skin tones similarly, though deeper skin tones may require slightly longer exposure for equivalent benefits. The wavelength (660nm) works universally. Individual skin types and sensitivities vary more than skin tone. If concerned, start with shorter sessions and gradually increase.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Can I use it daily?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">Yes, daily use is safe. Many users use it 5-7 days per week for 10-20 minute sessions. Some people prefer daily use; others find 3-4 times weekly sufficient. Listen to your skin—if irritation occurs, reduce frequency. Most benefits are cumulative with consistent use over weeks.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Does it work for anti-aging?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">Red light may support skin health and potentially stimulate collagen production, which theoretically could help with fine lines and skin texture. However, this device isn't a substitute for retinoids, sunscreen, or professional treatments. Use it as a complementary wellness tool for overall skin support, not as primary anti-aging therapy.</p>
     </div>
   </details>
 </div>

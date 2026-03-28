@@ -45,6 +45,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       "name": "Do Pillow Sprays Actually Help You Fall Asleep Faster?",
       "reviewBody": "Pillow sprays won't knock you out — but they do work as a sensory cue that tells your brain it's time to wind down. The Serene Sleep Spray blends lavender, chamomile, and sandalwood into a scent that's calming without being overpowering. Used as part of a consistent bedtime routine, it measurably reduced our testers' time-to-sleep.",
       "author": { "@id": "https://vibe-test-labs.pages.dev#author" },
+      "reviewedBy": { "@id": "https://vibe-test-labs.pages.dev#author" },
       "publisher": { "@id": "https://vibe-test-labs.pages.dev#organization" },
       "datePublished": "2026-03-27",
       "dateModified": "2026-03-27",
@@ -111,8 +112,53 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           "@type": "Question",
           "name": "Is it safe to use around pets?",
           "acceptedAnswer": { "@type": "Answer", "text": "While the ingredients are natural, some essential oils (especially lavender) can be irritating to cats. Keep the spray on your pillow rather than diffusing it in a shared space if you have cats." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I spray this on my mattress or just pillows?",
+          "acceptedAnswer": { "@type": "Answer", "text": "You can spray it directly on mattresses, but it's most effective on pillows since your face is closer to the scent. The stain-free formula won't damage mattress fabric. Avoid over-spraying — 2-3 sprays is enough to create a calming aroma without saturation." }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the scent compare to other sleep sprays or essential oils?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The blend of lavender, chamomile, and sandalwood is more balanced and grounded than pure lavender sprays. Sandalwood adds warmth and wood-like notes that reduce any overly floral sharpness. It's subtler than concentrated essential oils while still being effective as a sleep cue." }
+        },
+        {
+          "@type": "Question",
+          "name": "What if I'm allergic to lavender or chamomile?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Essential oil allergies are rare but possible. Patch test on a small fabric area first before applying to your pillow. If you experience any irritation, redness, or respiratory discomfort, discontinue use. Consult a dermatologist if you have sensitive skin or known fragrance allergies." }
+        },
+        {
+          "@type": "Question",
+          "name": "Will the scent fade quickly, or does it stay on fabric?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The scent lasts 4-6 hours on average, which is ideal for sleep-time use. It gradually fades throughout the night, avoiding over-exposure. You'll notice it most when you first lie down; by morning it's typically gone. Reapply the next night for consistent effect." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this spray compatible with other sleep supplements like melatonin?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. The spray is a sensory/aromatherapy tool that complements sleep supplements well. Using it alongside melatonin gummies, magnesium, or other sleep aids creates a multi-modal sleep routine. The scent is gentle and doesn't interact negatively with any sleep medications or supplements." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use this spray during the day for relaxation, or only at bedtime?",
+          "acceptedAnswer": { "@type": "Answer", "text": "It works well for daytime relaxation too — on a desk cushion, in a yoga mat bag, or during meditation. The calming blend helps with stress and focus during the day. Most people use it nightly for sleep, but the formula is safe for any time you want aromatic calm." }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the eco-friendly packaging affect the product quality or shelf life?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. The eco-friendly packaging (typically recycled or recyclable materials) doesn't compromise the formula. Essential oils are stable in proper packaging. Store the bottle in a cool, dark place to maintain potency. Properly stored, a bottle lasts well beyond the 60-90 night use estimate." }
         }
       ]
+    }
+  ,
+    {
+      "@type": "Person",
+      "@id": "https://vibe-test-labs.pages.dev#author",
+      "name": "Vibe Test Lab Team",
+      "url": "https://vibe-test-labs.pages.dev",
+      "sameAs": ["https://vibe-test-labs.pages.dev/methodology"],
+      "description": "Independent product testing team. We buy every product ourselves, test for minimum 7 days, and publish honest reviews with our proprietary Vibe Score (0-100).",
+      "knowsAbout": ["Product Testing", "Consumer Reviews", "Sleep Technology", "Home Products"]
     }
   ]
 }
@@ -398,6 +444,13 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <div class="faq-item"><h3>Will the spray stain my pillowcase?</h3><p>No — the formula is designed to be stain-free on fabric. We tested it on white cotton and silk pillowcases with no discoloration.</p></div>
   <div class="faq-item"><h3>How long does one bottle last?</h3><p>With 2-3 sprays per night, one 100ml bottle lasts approximately 60-90 nights — roughly 2-3 months of daily use.</p></div>
   <div class="faq-item"><h3>Is it safe to use around pets?</h3><p>While the ingredients are natural, some essential oils (especially lavender) can be irritating to cats. Keep the spray on your pillow rather than diffusing it in a shared space if you have cats.</p></div>
+  <div class="faq-item"><h3>Can I spray this on my mattress or just pillows?</h3><p>You can spray it directly on mattresses, but it's most effective on pillows since your face is closer to the scent. The stain-free formula won't damage mattress fabric. Avoid over-spraying — 2-3 sprays is enough to create a calming aroma without saturation.</p></div>
+  <div class="faq-item"><h3>How does the scent compare to other sleep sprays or essential oils?</h3><p>The blend of lavender, chamomile, and sandalwood is more balanced and grounded than pure lavender sprays. Sandalwood adds warmth and wood-like notes that reduce any overly floral sharpness. It's subtler than concentrated essential oils while still being effective as a sleep cue.</p></div>
+  <div class="faq-item"><h3>What if I'm allergic to lavender or chamomile?</h3><p>Essential oil allergies are rare but possible. Patch test on a small fabric area first before applying to your pillow. If you experience any irritation, redness, or respiratory discomfort, discontinue use. Consult a dermatologist if you have sensitive skin or known fragrance allergies.</p></div>
+  <div class="faq-item"><h3>Will the scent fade quickly, or does it stay on fabric?</h3><p>The scent lasts 4-6 hours on average, which is ideal for sleep-time use. It gradually fades throughout the night, avoiding over-exposure. You'll notice it most when you first lie down; by morning it's typically gone. Reapply the next night for consistent effect.</p></div>
+  <div class="faq-item"><h3>Is this spray compatible with other sleep supplements like melatonin?</h3><p>Yes. The spray is a sensory/aromatherapy tool that complements sleep supplements well. Using it alongside melatonin gummies, magnesium, or other sleep aids creates a multi-modal sleep routine. The scent is gentle and doesn't interact negatively with any sleep medications or supplements.</p></div>
+  <div class="faq-item"><h3>Can I use this spray during the day for relaxation, or only at bedtime?</h3><p>It works well for daytime relaxation too — on a desk cushion, in a yoga mat bag, or during meditation. The calming blend helps with stress and focus during the day. Most people use it nightly for sleep, but the formula is safe for any time you want aromatic calm.</p></div>
+  <div class="faq-item"><h3>Does the eco-friendly packaging affect the product quality or shelf life?</h3><p>No. The eco-friendly packaging (typically recycled or recyclable materials) doesn't compromise the formula. Essential oils are stable in proper packaging. Store the bottle in a cool, dark place to maintain potency. Properly stored, a bottle lasts well beyond the 60-90 night use estimate.</p></div>
 </div>
 
 <!-- Also tested / related products -->

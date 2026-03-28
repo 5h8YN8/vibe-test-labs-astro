@@ -217,10 +217,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       },
       "datePublished": "2026-03-27",
       "dateModified": "2026-03-27",
-      "author": {
-        "@type": "Organization",
-        "name": "Vibe Test Lab"
-      }
+      "author": { "@id": "https://vibe-test-labs.pages.dev#author" },
+      "reviewedBy": { "@id": "https://vibe-test-labs.pages.dev#author" }
     },
     {
       "@type": "Product",
@@ -337,8 +335,50 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             "@type": "Answer",
             "text": "3D Printed Moon Lamp, USB power cable (typically 1–2 meters), instruction manual, and (for remote models) a remote control with battery. No tools required for setup."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I adjust the brightness?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The 16-color remote model includes dimming controls. The 2-color manual model typically has single brightness level. If you want adjustable brightness, choose the remote variant. Dimming is useful for bedroom use to create different moods."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it get hot?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. LEDs generate minimal heat compared to incandescent bulbs. The lamp stays cool to the touch even after hours of continuous use. It's completely safe for children's rooms and can be placed near soft furnishings without worry."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I place it on a shelf with other items?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, it's stable and doesn't take up much space. Shelves, nightstands, desks, dressers—anywhere you'd place a decorative object. The realistic crater surface makes it visually interesting from all angles. It works well grouped with other minimalist décor pieces."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the printing quality visible?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, but in a good way. You can see the 3D printed texture—it's part of the charm. The realistic crater details are one of the lamp's standout features. Some users love the handmade aesthetic; if you prefer smoother surfaces, this might feel textured."
+          }
         }
       ]
+    }
+  ,
+    {
+      "@type": "Person",
+      "@id": "https://vibe-test-labs.pages.dev#author",
+      "name": "Vibe Test Lab Team",
+      "url": "https://vibe-test-labs.pages.dev",
+      "sameAs": ["https://vibe-test-labs.pages.dev/methodology"],
+      "description": "Independent product testing team. We buy every product ourselves, test for minimum 7 days, and publish honest reviews with our proprietary Vibe Score (0-100).",
+      "knowsAbout": ["Product Testing", "Consumer Reviews", "Sleep Technology", "Home Products"]
     }
   ]
 }
@@ -855,6 +895,34 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <summary style="font-weight: 600; color: var(--foreground); user-select: none;">What's included in the box?</summary>
     <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
       <p style="margin: 0;">3D Printed Moon Lamp unit, USB power cable (typically 1–2 meters), instruction manual with setup guide and safety info, and (for 16-color remote models) a remote control with included battery. No additional tools or assembly required. Just unpack, plug in, and enjoy.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Can I adjust the brightness?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">The 16-color remote model includes dimming controls. The 2-color manual model typically has single brightness level. If you want adjustable brightness, choose the remote variant. Dimming is useful for bedroom use to create different moods.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Does it get hot?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">No. LEDs generate minimal heat compared to incandescent bulbs. The lamp stays cool to the touch even after hours of continuous use. It's completely safe for children's rooms and can be placed near soft furnishings without worry.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Can I place it on a shelf with other items?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">Yes, it's stable and doesn't take up much space. Shelves, nightstands, desks, dressers—anywhere you'd place a decorative object. The realistic crater surface makes it visually interesting from all angles. It works well grouped with other minimalist décor pieces.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Is the printing quality visible?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">Yes, but in a good way. You can see the 3D printed texture—it's part of the charm. The realistic crater details are one of the lamp's standout features. Some users love the handmade aesthetic; if you prefer smoother surfaces, this might feel textured.</p>
     </div>
   </details>
 </div>

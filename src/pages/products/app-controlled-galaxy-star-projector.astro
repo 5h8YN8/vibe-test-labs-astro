@@ -29,8 +29,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       "publisher": { "@id": "https://vibe-test-labs.pages.dev#organization" },
       "author": { "@id": "https://vibe-test-labs.pages.dev#author" },
       "mentions": [
-        { "@type": "WebPage", "@id": "https://vibe-test-labs.pages.dev/products/usb-sunset-rainbow-projector" },
-        { "@type": "WebPage", "@id": "https://vibe-test-labs.pages.dev/products/3d-moon-lamp-jupiter" },
+        { "@type": "WebPage", "@id": "https://vibe-test-labs.pages.dev/products/sunset-rainbow-projector" },
+        { "@type": "WebPage", "@id": "https://vibe-test-labs.pages.dev/products/3d-moon-lamp" },
         { "@type": "WebPage", "@id": "https://vibe-test-labs.pages.dev/category/room-vibes" }
       ],
       "speakable": {
@@ -45,6 +45,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       "name": "Is the App-Controlled Galaxy Star Projector Worth It?",
       "reviewBody": "The App-Controlled Galaxy Star Projector is worth it for anyone who wants a TikTok-ready bedroom atmosphere without paying $150 for an Encalife. The rotating star mechanism makes movement look genuinely realistic, the 16M color app is responsive over Wi-Fi, and setup takes under 5 minutes. At $62 it sits in an ideal mid-range spot.",
       "author": { "@id": "https://vibe-test-labs.pages.dev#author" },
+      "reviewedBy": { "@id": "https://vibe-test-labs.pages.dev#author" },
       "publisher": { "@id": "https://vibe-test-labs.pages.dev#organization" },
       "datePublished": "2026-03-27",
       "dateModified": "2026-03-27",
@@ -88,8 +89,22 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         { "@type": "Question", "name": "How large a room can the star projector cover?", "acceptedAnswer": { "@type": "Answer", "text": "The projector covers ceilings up to about 12 x 12 feet at a throw distance of 5-8 feet." } },
         { "@type": "Question", "name": "Can I use the star projector without the app?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The projector has a physical button that cycles through preset color modes without needing the app." } },
         { "@type": "Question", "name": "Is the rotation motor loud?", "acceptedAnswer": { "@type": "Answer", "text": "There is a very faint hum from the rotation motor — inaudible once any audio is playing." } },
-        { "@type": "Question", "name": "Is the galaxy projector safe for kids rooms?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — it uses LED light, not laser, so it is safe for children's rooms." } }
+        { "@type": "Question", "name": "Is the galaxy projector safe for kids rooms?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — it uses LED light, not laser, so it is safe for children's rooms." } },
+        { "@type": "Question", "name": "Can I use this projector without Wi-Fi?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The projector has a physical button that cycles through preset color modes and rotation speeds without needing Wi-Fi. However, the app unlocks full control with 16 million colors, music synchronization, and timer functions." } },
+        { "@type": "Question", "name": "How does the music sync feature work?", "acceptedAnswer": { "@type": "Answer", "text": "The app's music sync mode analyzes audio playing on your phone and adjusts the projector's colors and brightness in real-time to match the music's rhythm and frequency. It works with any audio app or music service." } },
+        { "@type": "Question", "name": "What is the brightness level and can it be adjusted?", "acceptedAnswer": { "@type": "Answer", "text": "The projector is bright enough for most rooms but not for task lighting. Brightness is fully adjustable via the app from very dim to full brightness. This makes it suitable for bedrooms, dorms, and accent lighting." } },
+        { "@type": "Question", "name": "Does it get hot or use a lot of electricity?", "acceptedAnswer": { "@type": "Answer", "text": "The projector runs cool with no heating issues. Power consumption is minimal — roughly equivalent to a standard LED bulb. Safe to run for extended periods without thermal concerns." } }
       ]
+    }
+  ,
+    {
+      "@type": "Person",
+      "@id": "https://vibe-test-labs.pages.dev#author",
+      "name": "Vibe Test Lab Team",
+      "url": "https://vibe-test-labs.pages.dev",
+      "sameAs": ["https://vibe-test-labs.pages.dev/methodology"],
+      "description": "Independent product testing team. We buy every product ourselves, test for minimum 7 days, and publish honest reviews with our proprietary Vibe Score (0-100).",
+      "knowsAbout": ["Product Testing", "Consumer Reviews", "Sleep Technology", "Home Products"]
     }
   ]
 }
@@ -420,12 +435,28 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <summary>Is the galaxy projector safe for kids' rooms?</summary>
     <p>Yes — it uses LED light, not laser, so it's safe for children's rooms. The rotating stars create a calming, low-stimulation light show that many parents use as a sleep aid. Keep it out of reach to avoid small parts contact.</p>
   </details>
+  <details>
+    <summary>Can I use this projector without Wi-Fi?</summary>
+    <p>Yes. The projector has a physical button that cycles through preset color modes and rotation speeds without needing Wi-Fi. However, the app unlocks full control with 16 million colors, music synchronization, and timer functions.</p>
+  </details>
+  <details>
+    <summary>How does the music sync feature work?</summary>
+    <p>The app's music sync mode analyzes audio playing on your phone and adjusts the projector's colors and brightness in real-time to match the music's rhythm and frequency. It works with any audio app or music service.</p>
+  </details>
+  <details>
+    <summary>What is the brightness level and can it be adjusted?</summary>
+    <p>The projector is bright enough for most rooms but not for task lighting. Brightness is fully adjustable via the app from very dim to full brightness. This makes it suitable for bedrooms, dorms, and accent lighting.</p>
+  </details>
+  <details>
+    <summary>Does it get hot or use a lot of electricity?</summary>
+    <p>The projector runs cool with no heating issues. Power consumption is minimal — roughly equivalent to a standard LED bulb. Safe to run for extended periods without thermal concerns.</p>
+  </details>
   <div style="margin-top:1.5rem;padding:1rem 1.25rem;background:var(--muted);border-radius:var(--radius);font-size:.875rem;">
     <strong>Looking for alternatives?</strong>
     <div style="display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.5rem;">
-      <a href="/products/usb-sunset-rainbow-projector" style="display:inline-block;padding:.3rem .75rem;background:var(--card);border:1px solid var(--border);border-radius:999px;font-size:.75rem;color:var(--primary);text-decoration:none;">Sunset Rainbow Projector</a>
-      <a href="/products/3d-moon-lamp-jupiter" style="display:inline-block;padding:.3rem .75rem;background:var(--card);border:1px solid var(--border);border-radius:999px;font-size:.75rem;color:var(--primary);text-decoration:none;">3D Moon Lamp</a>
-      <a href="/products/wifi-smart-led-neon-strip" style="display:inline-block;padding:.3rem .75rem;background:var(--card);border:1px solid var(--border);border-radius:999px;font-size:.75rem;color:var(--primary);text-decoration:none;">Smart LED Strip</a>
+      <a href="/products/sunset-rainbow-projector" style="display:inline-block;padding:.3rem .75rem;background:var(--card);border:1px solid var(--border);border-radius:999px;font-size:.75rem;color:var(--primary);text-decoration:none;">Sunset Rainbow Projector</a>
+      <a href="/products/3d-moon-lamp" style="display:inline-block;padding:.3rem .75rem;background:var(--card);border:1px solid var(--border);border-radius:999px;font-size:.75rem;color:var(--primary);text-decoration:none;">3D Moon Lamp</a>
+      <a href="/products/wifi-neon-light-strip" style="display:inline-block;padding:.3rem .75rem;background:var(--card);border:1px solid var(--border);border-radius:999px;font-size:.75rem;color:var(--primary);text-decoration:none;">Smart LED Strip</a>
     </div>
   </div>
 </div>
@@ -433,17 +464,17 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 <!-- Also Tested -->
 <h2 style="margin-top:3rem;">Also Tested</h2>
 <div class="related-products-grid">
-  <a href="/products/usb-sunset-rainbow-projector" class="related-product-card">
+  <a href="/products/sunset-rainbow-projector" class="related-product-card">
     <img src="/images/usb-sunset-rainbow-projector/hero.webp" alt="USB Sunset Rainbow Projector" loading="lazy" />
     <div class="related-product-info"><strong>Sunset Rainbow Projector</strong><span style="font-size:.75rem;color:var(--muted-foreground);">Warm gradient glow for a different kind of atmosphere</span></div>
     <span class="related-product-cta">Check It Out</span>
   </a>
-  <a href="/products/3d-moon-lamp-jupiter" class="related-product-card">
+  <a href="/products/3d-moon-lamp" class="related-product-card">
     <img src="/images/3d-moon-lamp-jupiter/hero.webp" alt="3D Moon Lamp Jupiter Night Light" loading="lazy" />
     <div class="related-product-info"><strong>3D Moon Lamp</strong><span style="font-size:.75rem;color:var(--muted-foreground);">Photorealistic planet surface in a bedside night light</span></div>
     <span class="related-product-cta">Check It Out</span>
   </a>
-  <a href="/products/wifi-smart-led-neon-strip" class="related-product-card">
+  <a href="/products/wifi-neon-light-strip" class="related-product-card">
     <img src="/images/wifi-smart-led-neon-strip/hero.webp" alt="WiFi Smart LED Neon Light Strip" loading="lazy" />
     <div class="related-product-info"><strong>Smart LED Neon Strip</strong><span style="font-size:.75rem;color:var(--muted-foreground);">Music-reactive LED strips to complete the vibe</span></div>
     <span class="related-product-cta">Check It Out</span>

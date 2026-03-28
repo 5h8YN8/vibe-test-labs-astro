@@ -75,7 +75,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           "@type": "Review",
           "@id": "https://vibe-test-labs.pages.dev/products/kids-weighted-blanket#review",
           "headline": "Are Weighted Blankets Safe for Kids — and Do They Actually Help?",
-          "author": {
+          "author": {,
+      "reviewedBy": { "@id": "https://vibe-test-labs.pages.dev#author" },
             "@type": "Organization",
             "name": "Vibe Test Lab"
           },
@@ -203,9 +204,50 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
                 "@type": "Answer",
                 "text": "Weighted blankets may reduce anxiety and improve sleep quality in some children, especially those with sensory sensitivities. The deep pressure stimulation mimics a calming hug. Results vary by child; this blanket works best for kids who seek comfort and proprioceptive input. It's not a cure for insomnia or diagnosed sleep disorders."
               }
+            },
+            {
+              "@type": "Question",
+              "name": "What weight should I choose for my child?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The rule of thumb is 10% of your child's body weight. For a 30-40 lb child, a 3-4 lb weighted blanket is appropriate. The Yescool Kids Weighted Blanket at 3 lbs is ideal for children 30-60 lbs. Avoid blankets heavier than 10% of body weight, as they may cause discomfort or safety concerns."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Will the blanket cause overheating in summer?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The cool microfiber side (on the Yescool's dual-sided design) is specifically chosen for warm seasons and helps prevent overheating. Its smooth, breathable material allows better airflow than typical weighted blankets. Pair with lightweight base sheets for maximum breathability."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is this blanket big enough to share between siblings?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Yescool Kids Weighted Blanket is approximately 48x40 inches. It's designed for a single child on a child-sized bed. For two children, it would be too small. Each child should have their own appropriately-weighted blanket."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does this blanket come with a removable cover?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. The Yescool blanket does not have a removable cover — the minky and microfiber sides are sewn directly to the weighted core. This makes it more durable but means you must hand wash the entire blanket. Avoid submerging; hand wash gently in cool water with mild detergent."
+              }
             }
           ]
-        }
+        },
+    {
+      "@type": "Person",
+      "@id": "https://vibe-test-labs.pages.dev#author",
+      "name": "Vibe Test Lab Team",
+      "url": "https://vibe-test-labs.pages.dev",
+      "sameAs": ["https://vibe-test-labs.pages.dev/methodology"],
+      "description": "Independent product testing team. We buy every product ourselves, test for minimum 7 days, and publish honest reviews with our proprietary Vibe Score (0-100).",
+      "knowsAbout": ["Product Testing", "Consumer Reviews", "Sleep Technology", "Home Products"]
+    }
       ]
     }
   </script>
@@ -788,6 +830,34 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <summary>Does the Yescool blanket help kids sleep better?</summary>
       <p>
         Weighted blankets may reduce anxiety and improve sleep quality in some children, especially those with sensory sensitivities, ADHD, or autism. The deep pressure stimulation (DPS) mimics a calming hug, activating the parasympathetic nervous system and promoting relaxation. However, results vary by child. This blanket works best for kids who seek comfort and proprioceptive input. It's not a cure for clinical insomnia, sleep apnea, or diagnosed sleep disorders. If your child has a diagnosed sleep condition, consult a pediatrician before using a weighted blanket. For healthy kids with anxiety or restlessness, this blanket can be a helpful sleep aid.
+      </p>
+    </details>
+
+    <details>
+      <summary>What weight should I choose for my child?</summary>
+      <p>
+        The rule of thumb is 10% of your child's body weight. For a 30-40 lb child, a 3-4 lb weighted blanket is appropriate. The Yescool Kids Weighted Blanket at 3 lbs is ideal for children 30-60 lbs. Avoid blankets heavier than 10% of body weight, as they may cause discomfort or safety concerns. If your child is at the edge of the weight range, start with the lighter option.
+      </p>
+    </details>
+
+    <details>
+      <summary>Will the blanket cause overheating in summer?</summary>
+      <p>
+        The cool microfiber side (on the Yescool's dual-sided design) is specifically chosen for warm seasons and helps prevent overheating. Its smooth, breathable material allows better airflow than typical weighted blankets. Pair with lightweight base sheets for maximum breathability. The blanket is NOT recommended for use in rooms consistently over 80°F.
+      </p>
+    </details>
+
+    <details>
+      <summary>Is this blanket big enough to share between siblings?</summary>
+      <p>
+        The Yescool Kids Weighted Blanket is approximately 48x40 inches. It's designed for a single child on a child-sized bed. For two children, it would be too small and wouldn't provide adequate weight distribution. Each child should have their own appropriately-weighted blanket for safety and comfort.
+      </p>
+    </details>
+
+    <details>
+      <summary>Does this blanket come with a removable cover?</summary>
+      <p>
+        No. The Yescool blanket does not have a removable cover — the minky and microfiber sides are sewn directly to the weighted core. This makes it more durable but means you must hand wash the entire blanket. Avoid submerging; hand wash gently in cool water with mild detergent and allow to air dry flat.
       </p>
     </details>
   </div>

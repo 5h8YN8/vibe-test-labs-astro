@@ -46,6 +46,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       "name": "Is Buying a Sleep Bundle Worth It or Should You Pick Products Separately?",
       "reviewBody": "The Deep Sleep Bundle is worth it if you're building a complete sleep stack from scratch. You save $24 versus buying individually, and the three products (Bluetooth sleep mask, white noise machine, and sleep spray) work together to create a multi-sensory wind-down routine. Each product pulls its weight independently, making this an excellent entry point for sleep optimization.",
       "author": { "@id": "https://vibe-test-labs.pages.dev#author" },
+      "reviewedBy": { "@id": "https://vibe-test-labs.pages.dev#author" },
       "publisher": { "@id": "https://vibe-test-labs.pages.dev#organization" },
       "datePublished": "2026-03-27",
       "dateModified": "2026-03-27",
@@ -112,8 +113,53 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           "@type": "Question",
           "name": "What if I already own a white noise machine?",
           "acceptedAnswer": { "@type": "Answer", "text": "If you already have one of the three items, it probably makes more sense to buy the other two individually. The bundle savings only make sense if you need all three." }
+        },
+        {
+          "@type": "Question",
+          "name": "Are the Bluetooth sleep mask speakers loud enough to hear music, or just for blocking sound?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The flat speakers deliver decent audio for sleep soundscapes, audiobooks, or meditation apps. They're not designed for loud music — sound quality is optimized for relaxation content rather than bass-heavy tracks. Volume range spans from barely audible to moderately loud, suitable for in-ear listening while lying down." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use all three products at the same time (mask, spray, and white noise)?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes, absolutely. That's actually the intended use case. Wearing the blackout mask with ambient sound + lavender spray creates a multi-sensory sleep environment: visual blackout, auditory masking, and olfactory cues. The combination is more powerful than any single element." }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does each item take to charge?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The Bluetooth Sleep Mask charges fully in about 1.5 hours via USB-C. The Restnature White Noise Machine also charges via USB-C in roughly 1.5 hours for a full charge. The Serene Sleep Spray doesn't require charging — it's a pump-dispenser bottle." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the bundle good for couples who have different sleep schedules?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Partially. Each person would need their own Bluetooth Sleep Mask to avoid disturbing the other. However, one white noise machine on a nightstand can benefit both if positioned centrally, and the spray can be applied to both sides of the bed. For ideal separate-but-together sleep, buying extra masks makes sense." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do the items travel well, or are they mostly for home use?",
+          "acceptedAnswer": { "@type": "Answer", "text": "All three are compact and travel-friendly. The white noise machine is ultra-portable (1.8x1.8 inches). The sleep mask is lightweight and packable. The spray is TSA-approved and small enough for carry-on luggage. This bundle is actually excellent for travel sleep routines." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the Serene Sleep Spray the same price if I buy it separately?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The Serene Sleep Spray is $30.99 as a standalone product, which is comparable to its bundled price contribution. You're getting genuine bundle savings on the mask and white noise machine, not price inflation on any individual items." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can the white noise machine be used to mask snoring from a partner?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. The white noise machine offers 16 sound options including brown noise, white noise, and nature sounds specifically designed to mask environmental noise. Place it on your nightstand or across the room for effective snoring suppression. The volume reaches levels sufficient to block partner snoring in most cases." }
         }
       ]
+    }
+  ,
+    {
+      "@type": "Person",
+      "@id": "https://vibe-test-labs.pages.dev#author",
+      "name": "Vibe Test Lab Team",
+      "url": "https://vibe-test-labs.pages.dev",
+      "sameAs": ["https://vibe-test-labs.pages.dev/methodology"],
+      "description": "Independent product testing team. We buy every product ourselves, test for minimum 7 days, and publish honest reviews with our proprietary Vibe Score (0-100).",
+      "knowsAbout": ["Product Testing", "Consumer Reviews", "Sleep Technology", "Home Products"]
     }
   ]
 }
@@ -398,6 +444,13 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <div class="faq-item"><h3>Can I return individual items from the bundle?</h3><p>The bundle is sold as a single product. If you need to return it, you return the entire bundle. Individual items have their own separate listings if you want to buy them individually.</p></div>
   <div class="faq-item"><h3>Do I need all three products to improve my sleep?</h3><p>No — each product works independently. But using all three together creates a multi-sensory routine (sound blocking, ambient noise, aromatherapy) that's more effective than any single product alone.</p></div>
   <div class="faq-item"><h3>What if I already own a white noise machine?</h3><p>If you already have one of the three items, it probably makes more sense to buy the other two individually. The bundle savings only make sense if you need all three.</p></div>
+  <div class="faq-item"><h3>Are the Bluetooth sleep mask speakers loud enough to hear music, or just for blocking sound?</h3><p>The flat speakers deliver decent audio for sleep soundscapes, audiobooks, or meditation apps. They're not designed for loud music — sound quality is optimized for relaxation content rather than bass-heavy tracks. Volume range spans from barely audible to moderately loud, suitable for in-ear listening while lying down.</p></div>
+  <div class="faq-item"><h3>Can I use all three products at the same time (mask, spray, and white noise)?</h3><p>Yes, absolutely. That's actually the intended use case. Wearing the blackout mask with ambient sound + lavender spray creates a multi-sensory sleep environment: visual blackout, auditory masking, and olfactory cues. The combination is more powerful than any single element.</p></div>
+  <div class="faq-item"><h3>How long does each item take to charge?</h3><p>The Bluetooth Sleep Mask charges fully in about 1.5 hours via USB-C. The Restnature White Noise Machine also charges via USB-C in roughly 1.5 hours for a full charge. The Serene Sleep Spray doesn't require charging — it's a pump-dispenser bottle.</p></div>
+  <div class="faq-item"><h3>Is the bundle good for couples who have different sleep schedules?</h3><p>Partially. Each person would need their own Bluetooth Sleep Mask to avoid disturbing the other. However, one white noise machine on a nightstand can benefit both if positioned centrally, and the spray can be applied to both sides of the bed. For ideal separate-but-together sleep, buying extra masks makes sense.</p></div>
+  <div class="faq-item"><h3>Do the items travel well, or are they mostly for home use?</h3><p>All three are compact and travel-friendly. The white noise machine is ultra-portable (1.8x1.8 inches). The sleep mask is lightweight and packable. The spray is TSA-approved and small enough for carry-on luggage. This bundle is actually excellent for travel sleep routines.</p></div>
+  <div class="faq-item"><h3>Is the Serene Sleep Spray the same price if I buy it separately?</h3><p>The Serene Sleep Spray is $30.99 as a standalone product, which is comparable to its bundled price contribution. You're getting genuine bundle savings on the mask and white noise machine, not price inflation on any individual items.</p></div>
+  <div class="faq-item"><h3>Can the white noise machine be used to mask snoring from a partner?</h3><p>Yes. The white noise machine offers 16 sound options including brown noise, white noise, and nature sounds specifically designed to mask environmental noise. Place it on your nightstand or across the room for effective snoring suppression. The volume reaches levels sufficient to block partner snoring in most cases.</p></div>
 </div>
 
 <!-- Also tested / related products -->

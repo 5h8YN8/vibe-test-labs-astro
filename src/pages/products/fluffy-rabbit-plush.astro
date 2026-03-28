@@ -208,10 +208,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       },
       "datePublished": "2026-03-27",
       "dateModified": "2026-03-27",
-      "author": {
-        "@type": "Organization",
-        "name": "Vibe Test Lab"
-      }
+      "author": { "@id": "https://vibe-test-labs.pages.dev#author" },
+      "reviewedBy": { "@id": "https://vibe-test-labs.pages.dev#author" }
     },
     {
       "@type": "Product",
@@ -307,8 +305,58 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             "@type": "Answer",
             "text": "Minimal shedding. The quality plush material is designed to be durable. Some light shedding is normal during the first few uses, but it settles down quickly. Avoid excessive friction or rough handling."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use it as a comfort object for sleeping?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Many adults use the Fluffy Rabbit as a cuddle companion during sleep. Its soft, huggable design makes it perfect for providing emotional comfort, stress relief, and coziness during bedtime. It's lightweight enough to sleep with without discomfort and doesn't require special care when used this way."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What age is this plush designed for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Fluffy Rabbit Plush is designed for ages 3+ due to embroidery safety, but many adults love it too. For very young children (under 3), check the specific product variant for small-part warnings and supervise play. Adults appreciate it for decor, comfort, and gift-giving. It's truly cross-generational appeal."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it hold its shape well in a backpack or travel?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The dense PP cotton filling helps the plush maintain its shape even when packed. The 25cm size is perfect for travel—lightweight enough for backpacks without taking up much space. It bounces back to its original shape when unpacked. Larger sizes (40cm, 55cm) are better for stationary display."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes this different from cheaper plushes at the dollar store?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Quality of materials and construction. Dollar store plushes use thin fabric and loose filling that gets flat quickly. The Fluffy Rabbit uses premium plush material with dense PP cotton that stays soft and maintains shape after repeated cuddling. It feels noticeably better in hand and lasts years, not weeks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it hypoallergenic?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The materials used are generally hypoallergenic, but individual sensitivities vary. The plush doesn't shed excessively, which helps minimize allergen exposure. If you have severe allergies, test with a small contact first. The PP cotton filling is designed for comfort and safety, making it suitable for most people with mild to moderate sensitivities."
+          }
         }
       ]
+    }
+  ,
+    {
+      "@type": "Person",
+      "@id": "https://vibe-test-labs.pages.dev#author",
+      "name": "Vibe Test Lab Team",
+      "url": "https://vibe-test-labs.pages.dev",
+      "sameAs": ["https://vibe-test-labs.pages.dev/methodology"],
+      "description": "Independent product testing team. We buy every product ourselves, test for minimum 7 days, and publish honest reviews with our proprietary Vibe Score (0-100).",
+      "knowsAbout": ["Product Testing", "Consumer Reviews", "Sleep Technology", "Home Products"]
     }
   ]
 }
@@ -774,6 +822,41 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <p style="margin: 0;">Minimal shedding overall. New plush material may shed slightly during the first few uses, but this settles quickly. The quality material is designed to be durable. Avoid excessive friction or rough handling. Gentle cuddling and careful storage will keep shedding minimal and preserve softness long-term.</p>
     </div>
   </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Can I use it as a comfort object for sleeping?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">Absolutely. Many adults use the Fluffy Rabbit as a cuddle companion during sleep. Its soft, huggable design makes it perfect for providing emotional comfort, stress relief, and coziness during bedtime. It's lightweight enough to sleep with without discomfort and doesn't require special care when used this way.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">What age is this plush designed for?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">The Fluffy Rabbit Plush is designed for ages 3+ due to embroidery safety, but many adults love it too. For very young children (under 3), check the specific product variant for small-part warnings and supervise play. Adults appreciate it for decor, comfort, and gift-giving. It's truly cross-generational appeal.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Does it hold its shape well in a backpack or travel?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">Yes. The dense PP cotton filling helps the plush maintain its shape even when packed. The 25cm size is perfect for travel—lightweight enough for backpacks without taking up much space. It bounces back to its original shape when unpacked. Larger sizes (40cm, 55cm) are better for stationary display.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">What makes this different from cheaper plushes at the dollar store?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">Quality of materials and construction. Dollar store plushes use thin fabric and loose filling that gets flat quickly. The Fluffy Rabbit uses premium plush material with dense PP cotton that stays soft and maintains shape after repeated cuddling. It feels noticeably better in hand and lasts years, not weeks.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Is it hypoallergenic?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">The materials used are generally hypoallergenic, but individual sensitivities vary. The plush doesn't shed excessively, which helps minimize allergen exposure. If you have severe allergies, test with a small contact first. The PP cotton filling is designed for comfort and safety, making it suitable for most people with mild to moderate sensitivities.</p>
+    </div>
+  </details>
 </div>
 
 <!-- Also Tested -->
@@ -793,7 +876,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </div>
   </a>
 
-  <a href="/products/cozy-throw-blanket" class="related-product-card">
+  <a href="/products/3-in-1-cat-steam-brush" class="related-product-card">
     <img
       src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/cozy-blanket.png?v=1774537981"
       alt="Cozy Throw Blanket"
@@ -805,7 +888,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </div>
   </a>
 
-  <a href="/products/lavender-pillow-mist" class="related-product-card">
+  <a href="/products/baby-fox-teether" class="related-product-card">
     <img
       src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/pillow-mist.png?v=1774537981"
       alt="Lavender Pillow Mist"

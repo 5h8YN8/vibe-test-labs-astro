@@ -217,10 +217,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       },
       "datePublished": "2026-03-27",
       "dateModified": "2026-03-27",
-      "author": {
-        "@type": "Organization",
-        "name": "Vibe Test Lab"
-      }
+      "author": { "@id": "https://vibe-test-labs.pages.dev#author" },
+      "reviewedBy": { "@id": "https://vibe-test-labs.pages.dev#author" }
     },
     {
       "@type": "Product",
@@ -329,8 +327,58 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             "@type": "Answer",
             "text": "The Cooling Gel Eye Mask comes in 6 color options: Dark Blue, White-A, Green, Pink, Purple, and Sky Blue. Choose between Face Mask or Suit options depending on your preference. Each purchase includes one mask and care instructions. No additional accessories needed—just refrigerate and use."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Will it work immediately when I put it on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The chilled gel provides immediate cooling sensation. Within 5-10 minutes, you'll notice visible depuffing as blood vessels constrict and fluid retention decreases. The full effect becomes apparent around the 15-20 minute mark. Results are temporary but effective for morning routines."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use it more than once a day?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Use it as many times as you need—morning, evening, or anytime for depuffing. Many users do morning and night sessions. Just return it to the fridge between uses. There's no limit to daily use. Some prefer to use it before important events for best appearance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it work for other body parts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "While designed for eyes, some users apply it to other facial areas for cooling relief. However, it's engineered specifically for the delicate under-eye area. Using it on other face areas may feel less effective due to different skin thicknesses. Stick to the eyes for best results."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if I wear makeup? Do I need to remove it first?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can use the mask over makeup, though some makeup may transfer onto the gel. For best results and to keep the mask clean, remove makeup first with a gentle cleanser, let skin dry, then apply the cold mask. If you wear the mask over makeup, gently clean the gel afterward with cool water."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it safe to use every single day?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Daily use is safe and encouraged. Cold therapy for under-eye depuffing is gentle and non-invasive. There are no known side effects from daily use. It's actually a preventive approach—consistent daily use can help manage puffiness before it becomes pronounced. No breaks needed."
+          }
         }
       ]
+    }
+  ,
+    {
+      "@type": "Person",
+      "@id": "https://vibe-test-labs.pages.dev#author",
+      "name": "Vibe Test Lab Team",
+      "url": "https://vibe-test-labs.pages.dev",
+      "sameAs": ["https://vibe-test-labs.pages.dev/methodology"],
+      "description": "Independent product testing team. We buy every product ourselves, test for minimum 7 days, and publish honest reviews with our proprietary Vibe Score (0-100).",
+      "knowsAbout": ["Product Testing", "Consumer Reviews", "Sleep Technology", "Home Products"]
     }
   ]
 }
@@ -845,6 +893,41 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Can I use this for travel or on-the-go?</summary>
     <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
       <p style="margin: 0;">Not ideal for travel without a fridge. The mask requires continuous refrigeration to maintain cold. Hotel mini-fridges work, but prep time is needed. If you travel frequently, an ice-pack eye mask or cold spoons are more portable. This is best for home use or routines with consistent fridge access.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Will it work immediately when I put it on?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">Yes. The chilled gel provides immediate cooling sensation. Within 5-10 minutes, you'll notice visible depuffing as blood vessels constrict and fluid retention decreases. The full effect becomes apparent around the 15-20 minute mark. Results are temporary but effective for morning routines.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Can I use it more than once a day?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">Yes. Use it as many times as you need—morning, evening, or anytime for depuffing. Many users do morning and night sessions. Just return it to the fridge between uses. There's no limit to daily use. Some prefer to use it before important events for best appearance.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Does it work for other body parts?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">While designed for eyes, some users apply it to other facial areas for cooling relief. However, it's engineered specifically for the delicate under-eye area. Using it on other face areas may feel less effective due to different skin thicknesses. Stick to the eyes for best results.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">What if I wear makeup? Do I need to remove it first?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">You can use the mask over makeup, though some makeup may transfer onto the gel. For best results and to keep the mask clean, remove makeup first with a gentle cleanser, let skin dry, then apply the cold mask. If you wear the mask over makeup, gently clean the gel afterward with cool water.</p>
+    </div>
+  </details>
+
+  <details style="padding: 1rem; background: var(--muted); border-radius: var(--radius); cursor: pointer;">
+    <summary style="font-weight: 600; color: var(--foreground); user-select: none;">Is it safe to use every single day?</summary>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--foreground); line-height: 1.6;">
+      <p style="margin: 0;">Absolutely. Daily use is safe and encouraged. Cold therapy for under-eye depuffing is gentle and non-invasive. There are no known side effects from daily use. It's actually a preventive approach—consistent daily use can help manage puffiness before it becomes pronounced. No breaks needed.</p>
     </div>
   </details>
 </div>

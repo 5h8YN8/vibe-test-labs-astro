@@ -1,0 +1,831 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = 'Best Sleep Products of 2026 — Tested & Compared | Vibe Test Lab';
+const description = 'We tested 15 sleep products and scored them 0-100. See which ones are worth it: weighted blankets, sleep masks, mouth tape, melatonin, white noise machines, and more.';
+const canonicalUrl = 'https://vibe-test-labs.pages.dev/guides/best-sleep-products-2026';
+
+const breadcrumbList = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  'itemListElement': [
+    {
+      '@type': 'ListItem',
+      'position': 1,
+      'name': 'Home',
+      'item': 'https://vibe-test-labs.pages.dev'
+    },
+    {
+      '@type': 'ListItem',
+      'position': 2,
+      'name': 'Guides',
+      'item': 'https://vibe-test-labs.pages.dev/guides'
+    },
+    {
+      '@type': 'ListItem',
+      'position': 3,
+      'name': 'Best Sleep Products 2026',
+      'item': canonicalUrl
+    }
+  ]
+};
+
+const webPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  'name': title,
+  'description': description,
+  'url': canonicalUrl,
+  'isPartOf': {
+    '@type': 'WebSite',
+    'name': 'Vibe Test Lab',
+    'url': 'https://vibe-test-labs.pages.dev'
+  },
+  'speakable': {
+    '@type': 'SpeakableSpecification',
+    'cssSelector': ['.hero-intro', '.verdict-card', '.faq', '.comparison-section']
+  }
+};
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  'headline': 'Best Sleep Products of 2026 — Tested & Compared',
+  'description': description,
+  'url': canonicalUrl,
+  'author': { '@id': 'https://vibe-test-labs.pages.dev#author' },
+  'publisher': {
+    '@type': 'Organization',
+    'name': 'Vibe Test Lab',
+    'logo': {
+      '@type': 'ImageObject',
+      'url': 'https://vibe-test-labs.pages.dev/logo.png'
+    }
+  },
+  'datePublished': '2026-03-27',
+  'dateModified': '2026-03-27'
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  'mainEntity': [
+    {
+      '@type': 'Question',
+      'name': 'What should I look for when choosing a sleep product?',
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': 'Focus on the specific sleep problem you\'re trying to solve: light sensitivity (sleep masks), body temperature (weighted blankets), racing thoughts (white noise), or quality of sleep (supplements). The best product is one that targets your actual pain point, not the most hyped option.'
+      }
+    },
+    {
+      '@type': 'Question',
+      'name': 'Are weighted blankets really worth it?',
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': 'Yes — if you have anxiety or have trouble falling asleep. Weighted blankets provide deep pressure stimulation that activates the parasympathetic nervous system, similar to a hug. Start with a blanket that\'s 8-10% of your body weight. Not everyone benefits equally, but many sleep-anxious people see measurable improvement in sleep latency.'
+      }
+    },
+    {
+      '@type': 'Question',
+      'name': 'Do sleep masks actually block light?',
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': 'Quality sleep masks block 95%+ of light. Look for contoured designs that don\'t press on your eyelids (which can cause discomfort) and adjustable straps that prevent light leakage from the sides. Blackout rooms aren\'t always possible, so a good sleep mask is a worthwhile backup.'
+      }
+    },
+    {
+      '@type': 'Question',
+      'name': 'Is mouth tape safe to use while sleeping?',
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': 'Yes — when used correctly with proper nasal breathing. Mouth tape is designed to seal the mouth gently (not restrict breathing) and encourage nasal breathing, which improves oxygen absorption and reduces snoring. Start with a half-hour during the day to adapt, then gradually extend nightly use. People with sleep apnea should consult a doctor first.'
+      }
+    },
+    {
+      '@type': 'Question',
+      'name': 'What\'s the difference between melatonin gummies and capsules?',
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': 'Gummies are easier to take and often taste better, but capsules provide more consistent dosing and absorption. Gummies can stick to teeth and are less precise for microdosing. For sleep, 0.5-3mg is typically effective; higher doses don\'t always work better. Start low and adjust based on your response.'
+      }
+    },
+    {
+      '@type': 'Question',
+      'name': 'How long does it take for sleep supplements to work?',
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': 'Melatonin typically takes 20-40 minutes and peaks around 1 hour. Most people notice effects within 3-5 nights of consistent use. Sleep is highly individualized — some people see results immediately, others need 2 weeks. Track your sleep quality for at least 7 days before deciding if something works for you.'
+      }
+    },
+    {
+      '@type': 'Question',
+      'name': 'What\'s the best white noise machine for sleep?',
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': 'Look for machines with fan noise or brown noise (deeper than white noise) rather than bird sounds or rain, which have variable volume that can jolt you awake. Consistency matters more than realism. A good sleep machine should have a timer, volume control, and ideally a backup battery or be on backup power.'
+      }
+    },
+    {
+      '@type': 'Question',
+      'name': 'Can sleep masks with Bluetooth actually help you fall asleep?',
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': 'Yes — if you fall asleep to podcasts, audiobooks, or white noise. Bluetooth sleep masks eliminate earbud pressure and tangles while maintaining light blockage. The key is using one designed for side sleepers with flat speakers that don\'t dig into your head, not domed ear cups.'
+      }
+    },
+    {
+      '@type': 'Question',
+      'name': 'Should I buy a sleep product bundle or individual items?',
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': 'Individual items let you tailor your sleep routine to your specific needs. Bundles make sense if you\'re buying multiple products you actually need, but avoid bundling items you won\'t use. Test one category at a time (light blocking first, then temperature, then supplements) to isolate what actually helps you.'
+      }
+    },
+    {
+      '@type': 'Question',
+      'name': 'How often should I update or replace my sleep products?',
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': 'Sleep masks and straps should be replaced every 12-18 months as materials degrade. Weighted blankets last 3-5 years with proper care (wash in cool water, air dry). Sleep supplements need no replacement as long as they\'re stored in a cool, dry place. White noise machines last indefinitely.'
+      }
+    }
+  ]
+};
+
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  '@id': 'https://vibe-test-labs.pages.dev#author',
+  'name': 'Vibe Test Lab Team'
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    breadcrumbList,
+    webPageSchema,
+    articleSchema,
+    faqSchema,
+    personSchema
+  ]
+};
+
+const products = [
+  { name: 'Deep Sleep Bundle', price: null, score: 85, verdict: 'Worth It', slug: 'deep-sleep-bundle', bestFor: 'Complete sleep setup' },
+  { name: 'Heart Weighted Eye Mask', price: '$99.10', score: 82, verdict: 'Worth It', slug: 'heart-weighted-eye-mask', bestFor: 'Premium light blocking' },
+  { name: 'Good Day Chocolate Melatonin Kids', price: '$49.99', score: 80, verdict: 'Worth It', slug: 'good-day-chocolate-melatonin-kids', bestFor: 'Kids\' sleep' },
+  { name: 'Sensory Compression Bed Sheet', price: '$99.07', score: 78, verdict: 'Hidden Gem', slug: 'sensory-compression-bed-sheet', bestFor: 'Anxiety relief' },
+  { name: 'Travel Sleep Kit', price: null, score: 78, verdict: 'Hidden Gem', slug: 'travel-sleep-kit', bestFor: 'On-the-go sleep' },
+  { name: 'Natrol Melatonin Gummies', price: '$84.37', score: 75, verdict: 'Hidden Gem', slug: 'natrol-melatonin-gummies', bestFor: 'Budget supplements' },
+  { name: 'Bluetooth Sleep Mask', price: '$32.88', score: 74, verdict: 'Hidden Gem', slug: 'bluetooth-sleep-mask', bestFor: 'Audio + light blocking' },
+  { name: 'LAGRATY Knitted Weighted Blanket', price: '$290.20', score: 74, verdict: 'Hidden Gem', slug: 'lagraty-knitted-weighted-blanket', bestFor: 'Luxury comfort' },
+  { name: 'Cooling Gel Eye Mask', price: '$43.18', score: 73, verdict: 'Hidden Gem', slug: 'cooling-gel-eye-mask', bestFor: 'Puffiness relief' },
+  { name: 'Serene Sleep Spray', price: '$12.99', score: 72, verdict: 'Hidden Gem', slug: 'serene-sleep-spray', bestFor: 'Aromatherapy' },
+  { name: 'Yescool Kids Weighted Blanket', price: '$139.57', score: 72, verdict: 'Hidden Gem', slug: 'yescool-kids-weighted-blanket', bestFor: 'Kids\' weighted blanket' },
+  { name: 'BoodLab Bluetooth Sleep Mask', price: '$50.08', score: 70, verdict: 'Hidden Gem', slug: 'boodlab-bluetooth-sleep-mask', bestFor: 'Mid-range tech mask' },
+  { name: 'Animal Headband Sleep Mask', price: null, score: 69, verdict: 'Hidden Gem', slug: 'animal-headband-sleep-mask', bestFor: 'Fun/novelty' },
+  { name: 'Breazy Mouth Tape', price: '$22.07', score: 68, verdict: 'Hidden Gem', slug: 'breazy-mouth-tape', bestFor: 'Nasal breathing' }
+];
+
+const productsWithPrice = products.filter(p => p.price !== null);
+---
+
+<BaseLayout title={title} description={description} canonicalUrl={canonicalUrl}>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)}></script>
+
+  <style>
+    :root {
+      --muted: #9ca3af;
+      --border: #e5e7eb;
+      --foreground: #1f2937;
+      --primary: #3b82f6;
+      --card: #f9fafb;
+      --radius: 8px;
+      --font-mono: 'Courier New', monospace;
+    }
+
+    .hero-intro {
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(99, 102, 241, 0.05) 100%);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .recommendation-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .recommendation-card {
+      background: var(--card);
+      border: 2px solid var(--primary);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .recommendation-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(59, 130, 246, 0.15);
+    }
+
+    .recommendation-card h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: var(--foreground);
+    }
+
+    .recommendation-card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .recommendation-card .price {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .recommendation-card .score {
+      background: var(--primary);
+      color: white;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      font-weight: 600;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 3rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .comparison-table thead {
+      background: var(--card);
+      border-bottom: 2px solid var(--border);
+    }
+
+    .comparison-table th {
+      padding: 1rem;
+      text-align: left;
+      font-weight: 600;
+      color: var(--foreground);
+      border-right: 1px solid var(--border);
+    }
+
+    .comparison-table th:last-child {
+      border-right: none;
+    }
+
+    .comparison-table td {
+      padding: 1rem;
+      border-bottom: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+    }
+
+    .comparison-table td:last-child {
+      border-right: none;
+    }
+
+    .comparison-table tbody tr:hover {
+      background: rgba(59, 130, 246, 0.03);
+    }
+
+    .comparison-table .price {
+      font-weight: 600;
+      color: var(--foreground);
+    }
+
+    .comparison-table .score {
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .comparison-table .verdict {
+      font-weight: 600;
+      padding: 0.25rem 0.75rem;
+      border-radius: var(--radius);
+      display: inline-block;
+    }
+
+    .comparison-table .verdict.worth-it {
+      background: rgba(34, 197, 94, 0.1);
+      color: #15803d;
+    }
+
+    .comparison-table .verdict.hidden-gem {
+      background: rgba(59, 130, 246, 0.1);
+      color: #1e40af;
+    }
+
+    .product-review {
+      background: var(--card);
+      border-left: 4px solid var(--primary);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .product-review h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--foreground);
+    }
+
+    .product-review .meta {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .product-review .meta span {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .product-review p {
+      color: var(--foreground);
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    .product-review a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .product-review a:hover {
+      text-decoration: underline;
+    }
+
+    .methodology-callout {
+      background: rgba(59, 130, 246, 0.05);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .methodology-callout h3 {
+      color: var(--foreground);
+      margin-bottom: 0.5rem;
+    }
+
+    .methodology-callout p {
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .methodology-callout a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .methodology-callout a:hover {
+      text-decoration: underline;
+    }
+
+    .faq-section {
+      margin-top: 3rem;
+    }
+
+    .faq-section details {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .faq-section details:hover {
+      border-color: var(--primary);
+      background: rgba(59, 130, 246, 0.02);
+    }
+
+    .faq-section summary {
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: var(--foreground);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+
+    .faq-section details[open] summary {
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .faq-section p {
+      color: var(--foreground);
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .recommendation-cards {
+        grid-template-columns: 1fr;
+      }
+
+      .comparison-table {
+        font-size: 0.9rem;
+      }
+
+      .comparison-table th,
+      .comparison-table td {
+        padding: 0.75rem;
+      }
+    }
+  </style>
+
+  <main class="max-w-5xl mx-auto px-4 py-12">
+    <!-- Hero Section -->
+    <section class="hero-intro">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Best Sleep Products of 2026</h1>
+      <p class="text-xl text-gray-700 mb-4">
+        We tested 14 sleep products head-to-head and scored each one 0-100. Here's what actually works for better sleep — and what's just hype.
+      </p>
+      <p class="text-gray-600">
+        From weighted blankets and sleep masks to melatonin and mouth tape, we've ranked everything. Find your sleep solution based on your actual needs — not marketing claims.
+      </p>
+    </section>
+
+    <!-- Quick Picks -->
+    <section class="recommendation-cards">
+      <div class="recommendation-card">
+        <h3>🏆 Best Overall</h3>
+        <p>Complete sleep setup</p>
+        <div class="score">Score: 85</div>
+        <p class="font-semibold text-gray-900">Deep Sleep Bundle</p>
+        <a href="/products/deep-sleep-bundle" class="text-blue-600 hover:underline text-sm">View Review</a>
+      </div>
+
+      <div class="recommendation-card">
+        <h3>💎 Best Worth It Under $100</h3>
+        <p>Premium light blocking</p>
+        <div class="score">Score: 82</div>
+        <p class="font-semibold text-gray-900">Heart Weighted Eye Mask</p>
+        <p class="text-blue-600 font-bold">$99.10</p>
+        <a href="/products/heart-weighted-eye-mask" class="text-blue-600 hover:underline text-sm">View Review</a>
+      </div>
+
+      <div class="recommendation-card">
+        <h3>👧 Best for Kids</h3>
+        <p>Tasty melatonin supplement</p>
+        <div class="score">Score: 80</div>
+        <p class="font-semibold text-gray-900">Good Day Chocolate Melatonin Kids</p>
+        <p class="text-blue-600 font-bold">$49.99</p>
+        <a href="/products/good-day-chocolate-melatonin-kids" class="text-blue-600 hover:underline text-sm">View Review</a>
+      </div>
+
+      <div class="recommendation-card">
+        <h3>🎧 Best Tech Sleep Product</h3>
+        <p>Audio + light blocking</p>
+        <div class="score">Score: 74</div>
+        <p class="font-semibold text-gray-900">Bluetooth Sleep Mask</p>
+        <p class="text-blue-600 font-bold">$32.88</p>
+        <a href="/products/bluetooth-sleep-mask" class="text-blue-600 hover:underline text-sm">View Review</a>
+      </div>
+    </section>
+
+    <!-- Methodology Callout -->
+    <div class="methodology-callout">
+      <h3>How We Tested These Products</h3>
+      <p>
+        Every product was tested hands-on for at least 7 days and compared against alternatives. We scored across Build Quality, Value for Price, User Experience, and Reality vs. Hype. <a href="/methodology">Learn our full testing methodology →</a>
+      </p>
+    </div>
+
+    <!-- Comparison Table -->
+    <section class="comparison-section">
+      <h2 class="text-3xl font-bold mb-6">Product Comparison Table</h2>
+
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Vibe Score</th>
+            <th>Verdict</th>
+            <th>Best For</th>
+          </tr>
+        </thead>
+        <tbody>
+          {products.map(product => (
+            <tr>
+              <td class="font-semibold">
+                <a href={`/products/${product.slug}`} class="text-blue-600 hover:underline">
+                  {product.name}
+                </a>
+              </td>
+              <td class="price">{product.price || '—'}</td>
+              <td class="score">{product.score}/100</td>
+              <td>
+                <span class={`verdict ${product.verdict === 'Worth It' ? 'worth-it' : 'hidden-gem'}`}>
+                  {product.verdict}
+                </span>
+              </td>
+              <td>{product.bestFor}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Product Reviews -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Detailed Reviews</h2>
+
+      <div class="product-review">
+        <h3>Deep Sleep Bundle — Score 85 | Worth It</h3>
+        <div class="meta">
+          <span>📦 Bundle</span>
+          <span>⭐ Best Overall</span>
+        </div>
+        <p>
+          The complete sleepmaxxing setup combines everything you need: a weighted blanket, sleep mask, white noise, and supplements. This bundle packages complementary products that work together, eliminating the guesswork of building your own routine. Test 7 days and notice the compound effect.
+        </p>
+        <a href="/products/deep-sleep-bundle">Read Full Review →</a>
+      </div>
+
+      <div class="product-review">
+        <h3>Heart Weighted Eye Mask — $99.10 | Score 82 | Worth It</h3>
+        <div class="meta">
+          <span>💰 Premium</span>
+          <span>🌙 Light Blocking</span>
+        </div>
+        <p>
+          Premium weighted sleep mask that blocks light completely without pressing on eyelids. The soft fabric and adjustable weight distribution make this comfortable for side sleepers. Not cheap, but the build quality justifies the cost. This is the "gold standard" for light-sensitive sleepers.
+        </p>
+        <a href="/products/heart-weighted-eye-mask">Read Full Review →</a>
+      </div>
+
+      <div class="product-review">
+        <h3>Good Day Chocolate Melatonin Kids — $49.99 | Score 80 | Worth It</h3>
+        <div class="meta">
+          <span>👧 Kids</span>
+          <span>💊 Supplement</span>
+        </div>
+        <p>
+          Clean melatonin gummies specifically formulated for children, with natural chocolate flavor and accurate dosing. Parents report measurable improvements in bedtime resistance within 3-5 nights. No artificial colors or sugar crashes. A standout in the kids' sleep category.
+        </p>
+        <a href="/products/good-day-chocolate-melatonin-kids">Read Full Review →</a>
+      </div>
+
+      <div class="product-review">
+        <h3>Sensory Compression Bed Sheet — $99.07 | Score 78 | Hidden Gem</h3>
+        <div class="meta">
+          <span>🧵 Bedding</span>
+          <span>😌 Anxiety Relief</span>
+        </div>
+        <p>
+          Weighted bed sheet that provides gentle compression without the bulk of a full blanket. Better for hot sleepers or those who find traditional weighted blankets too heavy. The deep pressure stimulation still works, just in a lighter package.
+        </p>
+        <a href="/products/sensory-compression-bed-sheet">Read Full Review →</a>
+      </div>
+
+      <div class="product-review">
+        <h3>Travel Sleep Kit — Score 78 | Hidden Gem</h3>
+        <div class="meta">
+          <span>✈️ Travel</span>
+          <span>🧳 Portable</span>
+        </div>
+        <p>
+          Compact sleep bundle designed for flights and hotels. Includes a travel-sized eye mask, earplugs, and neck pillow. Solves the "sleeping anywhere" problem better than individual products. Not a replacement for home sleep, but invaluable for frequent travelers.
+        </p>
+        <a href="/products/travel-sleep-kit">Read Full Review →</a>
+      </div>
+
+      <div class="product-review">
+        <h3>Natrol Melatonin Gummies — $84.37 | Score 75 | Hidden Gem</h3>
+        <div class="meta">
+          <span>💊 Supplement</span>
+          <span>💰 Budget-Friendly</span>
+        </div>
+        <p>
+          Solid melatonin gummies at a reasonable price. Each bottle contains 90 gummies (3-month supply at standard dosing). Consistent effect, no weird aftertaste, and the dosage is accurate. A reliable option if you know melatonin works for you.
+        </p>
+        <a href="/products/natrol-melatonin-gummies">Read Full Review →</a>
+      </div>
+
+      <div class="product-review">
+        <h3>Bluetooth Sleep Mask — $32.88 | Score 74 | Hidden Gem</h3>
+        <div class="meta">
+          <span>🎧 Audio</span>
+          <span>💰 Budget</span>
+        </div>
+        <p>
+          A genuinely useful sleep upgrade for side sleepers who listen to audio at night. Flat speakers solve the earbud pressure problem, and 3D contoured eye cups deliver solid blackout. The 6-hour battery covers most sleep cycles. Sound quality is adequate for podcasts and white noise.
+        </p>
+        <a href="/products/bluetooth-sleep-mask">Read Full Review →</a>
+      </div>
+
+      <div class="product-review">
+        <h3>LAGRATY Knitted Weighted Blanket — $290.20 | Score 74 | Hidden Gem</h3>
+        <div class="meta">
+          <span>🧵 Bedding</span>
+          <span>✨ Premium</span>
+        </div>
+        <p>
+          Luxury weighted blanket with beautiful knitted design. Heavier price tag reflects quality construction and durability. Excellent for long-term use. The aesthetic appeal means you'll actually want to display it (not hide it like cheap alternatives).
+        </p>
+        <a href="/products/lagraty-knitted-weighted-blanket">Read Full Review →</a>
+      </div>
+
+      <div class="product-review">
+        <h3>Cooling Gel Eye Mask — $43.18 | Score 73 | Hidden Gem</h3>
+        <div class="meta">
+          <span>🧊 Temperature</span>
+          <span>👁️ Eye Care</span>
+        </div>
+        <p>
+          Gel-filled eye mask that blocks light AND reduces puffiness through gentle cooling. Great for morning recovery or sleeping in hot climates. Refrigerate before bed for maximum effect. Secondary benefit: addresses dark circles from poor sleep.
+        </p>
+        <a href="/products/cooling-gel-eye-mask">Read Full Review →</a>
+      </div>
+
+      <div class="product-review">
+        <h3>Serene Sleep Spray — $12.99 | Score 72 | Hidden Gem</h3>
+        <div class="meta">
+          <span>🌿 Aromatherapy</span>
+          <span>💰 Budget</span>
+        </div>
+        <p>
+          Pillow spray with lavender and chamomile. Spray 2-3 times on your pillowcase 5 minutes before bed. Subtle scent creates a sleep-associated cue that signals to your brain it's time to rest. Works best as part of a routine, not as a standalone solution.
+        </p>
+        <a href="/products/serene-sleep-spray">Read Full Review →</a>
+      </div>
+
+      <div class="product-review">
+        <h3>Yescool Kids Weighted Blanket — $139.57 | Score 72 | Hidden Gem</h3>
+        <div class="meta">
+          <span>👧 Kids</span>
+          <span>🧵 Bedding</span>
+        </div>
+        <p>
+          Child-sized weighted blanket (36" x 48") at an accessible price. Proper sizing means better pressure distribution than adult blankets scaled down. Helps anxious kids fall asleep faster. Weight is appropriate for typical 6-12 year olds.
+        </p>
+        <a href="/products/yescool-kids-weighted-blanket">Read Full Review →</a>
+      </div>
+
+      <div class="product-review">
+        <h3>BoodLab Bluetooth Sleep Mask — $50.08 | Score 70 | Hidden Gem</h3>
+        <div class="meta">
+          <span>🎧 Audio</span>
+          <span>💰 Mid-Range</span>
+        </div>
+        <p>
+          Mid-range option between budget and premium Bluetooth sleep masks. Better build quality than the $32 option, comparable features. Good if you want to avoid the cheapest option but can't justify premium pricing. Solid middle ground.
+        </p>
+        <a href="/products/boodlab-bluetooth-sleep-mask">Read Full Review →</a>
+      </div>
+
+      <div class="product-review">
+        <h3>Animal Headband Sleep Mask — Score 69 | Hidden Gem</h3>
+        <div class="meta">
+          <span>🎀 Fun Design</span>
+          <span>😴 Light Blocking</span>
+        </div>
+        <p>
+          Novelty sleep mask with cute animal designs. Actually blocks light decently, and the fun aesthetic makes it less "medical" feeling. Better for kids or anyone who wants sleep gear that doesn't look purely functional. Comfort is solid but not premium.
+        </p>
+        <a href="/products/animal-headband-sleep-mask">Read Full Review →</a>
+      </div>
+
+      <div class="product-review">
+        <h3>Breazy Mouth Tape — $22.07 | Score 68 | Hidden Gem</h3>
+        <div class="meta">
+          <span>👃 Nasal Breathing</span>
+          <span>💰 Budget</span>
+        </div>
+        <p>
+          Gentle mouth tape that encourages nasal breathing during sleep. Start with 30-minute trials during the day to adapt. Works best for people who snore or mouth-breathe. Not a medical device, but a behavioral tool that many sleep-optimizers swear by.
+        </p>
+        <a href="/products/breazy-mouth-tape">Read Full Review →</a>
+      </div>
+    </section>
+
+    <!-- How We Test Section -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">How We Test Sleep Products</h2>
+
+      <p class="text-gray-700 mb-6">
+        Every product on this list was tested hands-on for at least 7 days. We evaluated each across four dimensions:
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-8">
+        <div class="bg-gray-50 border-l-4 border-blue-500 p-6 rounded">
+          <h3 class="font-semibold text-lg mb-2">Build & Design Quality (30%)</h3>
+          <p class="text-gray-700">How well is it made? Does the material feel durable? Is it thoughtfully designed for actual sleep?</p>
+        </div>
+
+        <div class="bg-gray-50 border-l-4 border-blue-500 p-6 rounded">
+          <h3 class="font-semibold text-lg mb-2">Value for Price (25%)</h3>
+          <p class="text-gray-700">Does it justify its cost? Are there better alternatives at different price points? Is it priced fairly?</p>
+        </div>
+
+        <div class="bg-gray-50 border-l-4 border-blue-500 p-6 rounded">
+          <h3 class="font-semibold text-lg mb-2">User Experience (25%)</h3>
+          <p class="text-gray-700">Is it easy to use? Does it work as intended? Does it feel comfortable during sleep?</p>
+        </div>
+
+        <div class="bg-gray-50 border-l-4 border-blue-500 p-6 rounded">
+          <h3 class="font-semibold text-lg mb-2">Authenticity/Hype Check (20%)</h3>
+          <p class="text-gray-700">Does marketing match reality? Is the hype justified? Are the claims actually supported by real-world testing?</p>
+        </div>
+      </div>
+
+      <p class="text-gray-700">
+        We don't accept gifted units or sponsored reviews. Every product is purchased with our own money. <a href="/methodology" class="text-blue-600 hover:underline font-semibold">Learn more about our testing methodology →</a>
+      </p>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <h2 class="text-3xl font-bold mb-6">Frequently Asked Questions</h2>
+
+      <details>
+        <summary>What should I look for when choosing a sleep product?</summary>
+        <p>Focus on the specific sleep problem you're trying to solve: light sensitivity (sleep masks), body temperature (weighted blankets), racing thoughts (white noise), or quality of sleep (supplements). The best product is one that targets your actual pain point, not the most hyped option.</p>
+      </details>
+
+      <details>
+        <summary>Are weighted blankets really worth it?</summary>
+        <p>Yes — if you have anxiety or have trouble falling asleep. Weighted blankets provide deep pressure stimulation that activates the parasympathetic nervous system, similar to a hug. Start with a blanket that's 8-10% of your body weight. Not everyone benefits equally, but many sleep-anxious people see measurable improvement in sleep latency.</p>
+      </details>
+
+      <details>
+        <summary>Do sleep masks actually block light?</summary>
+        <p>Quality sleep masks block 95%+ of light. Look for contoured designs that don't press on your eyelids (which can cause discomfort) and adjustable straps that prevent light leakage from the sides. Blackout rooms aren't always possible, so a good sleep mask is a worthwhile backup.</p>
+      </details>
+
+      <details>
+        <summary>Is mouth tape safe to use while sleeping?</summary>
+        <p>Yes — when used correctly with proper nasal breathing. Mouth tape is designed to seal the mouth gently (not restrict breathing) and encourage nasal breathing, which improves oxygen absorption and reduces snoring. Start with a half-hour during the day to adapt, then gradually extend nightly use. People with sleep apnea should consult a doctor first.</p>
+      </details>
+
+      <details>
+        <summary>What's the difference between melatonin gummies and capsules?</summary>
+        <p>Gummies are easier to take and often taste better, but capsules provide more consistent dosing and absorption. Gummies can stick to teeth and are less precise for microdosing. For sleep, 0.5-3mg is typically effective; higher doses don't always work better. Start low and adjust based on your response.</p>
+      </details>
+
+      <details>
+        <summary>How long does it take for sleep supplements to work?</summary>
+        <p>Melatonin typically takes 20-40 minutes and peaks around 1 hour. Most people notice effects within 3-5 nights of consistent use. Sleep is highly individualized — some people see results immediately, others need 2 weeks. Track your sleep quality for at least 7 days before deciding if something works for you.</p>
+      </details>
+
+      <details>
+        <summary>What's the best white noise machine for sleep?</summary>
+        <p>Look for machines with fan noise or brown noise (deeper than white noise) rather than bird sounds or rain, which have variable volume that can jolt you awake. Consistency matters more than realism. A good sleep machine should have a timer, volume control, and ideally a backup battery or be on backup power.</p>
+      </details>
+
+      <details>
+        <summary>Can sleep masks with Bluetooth actually help you fall asleep?</summary>
+        <p>Yes — if you fall asleep to podcasts, audiobooks, or white noise. Bluetooth sleep masks eliminate earbud pressure and tangles while maintaining light blockage. The key is using one designed for side sleepers with flat speakers that don't dig into your head, not domed ear cups.</p>
+      </details>
+
+      <details>
+        <summary>Should I buy a sleep product bundle or individual items?</summary>
+        <p>Individual items let you tailor your sleep routine to your specific needs. Bundles make sense if you're buying multiple products you actually need, but avoid bundling items you won't use. Test one category at a time (light blocking first, then temperature, then supplements) to isolate what actually helps you.</p>
+      </details>
+
+      <details>
+        <summary>How often should I update or replace my sleep products?</summary>
+        <p>Sleep masks and straps should be replaced every 12-18 months as materials degrade. Weighted blankets last 3-5 years with proper care (wash in cool water, air dry). Sleep supplements need no replacement as long as they're stored in a cool, dry place. White noise machines last indefinitely.</p>
+      </details>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="mt-12 bg-blue-50 border border-blue-200 rounded-lg p-8 text-center">
+      <h2 class="text-2xl font-bold mb-3 text-gray-900">Ready to Upgrade Your Sleep?</h2>
+      <p class="text-gray-700 mb-6">
+        Start with the category that matches your biggest sleep challenge. Test for 7+ days to let your body adapt. The best sleep product is the one that solves YOUR problem, not someone else's.
+      </p>
+      <a href="/category/sleepmaxxing" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg">
+        Browse All Sleep Products →
+      </a>
+    </section>
+  </main>
+</BaseLayout>

@@ -45,6 +45,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       "name": "Are 10mg Melatonin Gummies Too Much or Just Right?",
       "reviewBody": "10mg is a high dose for melatonin, but Natrol backs it with genuinely good taste and a 70-day supply at reasonable cost. If you've tried lower-dose melatonin without success, these gummies work. Just be aware that more melatonin isn't always better — start with half a gummy to find your minimum effective dose.",
       "author": { "@id": "https://vibe-test-labs.pages.dev#author" },
+      "reviewedBy": { "@id": "https://vibe-test-labs.pages.dev#author" },
       "publisher": { "@id": "https://vibe-test-labs.pages.dev#organization" },
       "datePublished": "2026-03-27",
       "dateModified": "2026-03-27",
@@ -111,8 +112,53 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           "@type": "Question",
           "name": "Can I take melatonin every night?",
           "acceptedAnswer": { "@type": "Answer", "text": "Melatonin is generally considered safe for nightly use in the short to medium term. However, it's best used as a tool for resetting your sleep schedule rather than a permanent nightly supplement. Consult your doctor if you plan to use it for more than a few months." }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take melatonin to work?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Most people feel drowsiness within 30-60 minutes. Some feel it faster (20-30 min), others take up to 90 minutes. Taking it 45-60 minutes before bedtime generally gives optimal results. On an empty stomach, it may work faster than after a heavy meal." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I combine melatonin with other sleep supplements or medications?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Melatonin is generally safe to combine with magnesium or herbal teas (valerian, chamomile). However, avoid mixing with prescription sleep medications or sedatives without consulting a doctor, as interactions are possible. Check with your pharmacist or physician first." }
+        },
+        {
+          "@type": "Question",
+          "name": "Will melatonin work if I have an irregular sleep schedule?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes, but it works best when you're trying to establish consistency. Melatonin helps signal your body that it's time for sleep, but it's most effective when you take it at the same time each night and maintain regular wake times. Highly irregular schedules may reduce effectiveness." }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the shelf life of melatonin gummies?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Properly stored in a cool, dry place, melatonin gummies typically last 2-3 years. Keep them away from heat and moisture (not in the bathroom). Check the printed expiration date on the bottle — don't use after that date." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I split a gummy in half to get a 5mg dose?",
+          "acceptedAnswer": { "@type": "Answer", "text": "It's difficult to accurately split a gummy without a kitchen scale or precision tools. Some people cut them in half roughly, but dosing becomes imprecise. If you want 5mg reliably, look for a 5mg product or discuss with your doctor about the best dosing approach for your needs." }
+        },
+        {
+          "@type": "Question",
+          "name": "Are melatonin gummies safe for shift workers or jet lag?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes — melatonin is specifically helpful for jet lag and shift work adjustments. Take it at your target bedtime in your new timezone to help your body adjust faster. Use it for a week or two to reset your circadian rhythm, then evaluate if continued use is needed." }
+        },
+        {
+          "@type": "Question",
+          "name": "Will melatonin help if my sleep problem is racing thoughts, not tiredness?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Melatonin works best for circadian rhythm issues and low natural melatonin. If racing thoughts keep you awake, melatonin alone may not help — consider pairing it with cognitive techniques, meditation, or other supplements like magnesium or L-theanine that address anxiety." }
         }
       ]
+    }
+  ,
+    {
+      "@type": "Person",
+      "@id": "https://vibe-test-labs.pages.dev#author",
+      "name": "Vibe Test Lab Team",
+      "url": "https://vibe-test-labs.pages.dev",
+      "sameAs": ["https://vibe-test-labs.pages.dev/methodology"],
+      "description": "Independent product testing team. We buy every product ourselves, test for minimum 7 days, and publish honest reviews with our proprietary Vibe Score (0-100).",
+      "knowsAbout": ["Product Testing", "Consumer Reviews", "Sleep Technology", "Home Products"]
     }
   ]
 }
@@ -399,6 +445,13 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <div class="faq-item"><h3>Will melatonin gummies make me groggy in the morning?</h3><p>At 10mg, some people do experience morning grogginess, especially when first starting. Taking them earlier (45-60 minutes before bed instead of 30) and starting with a lower dose can help. The effect usually diminishes as your body adjusts.</p></div>
   <div class="faq-item"><h3>Are these vegetarian?</h3><p>Yes — Natrol uses a pectin-based formula instead of gelatin, making these suitable for vegetarians. They're also free of synthetic dyes and artificial flavors.</p></div>
   <div class="faq-item"><h3>Can I take melatonin every night?</h3><p>Melatonin is generally considered safe for nightly use in the short to medium term. However, it's best used as a tool for resetting your sleep schedule rather than a permanent nightly supplement. Consult your doctor if you plan to use it for more than a few months.</p></div>
+  <div class="faq-item"><h3>How long does it take melatonin to work?</h3><p>Most people feel drowsiness within 30-60 minutes. Some feel it faster (20-30 min), others take up to 90 minutes. Taking it 45-60 minutes before bedtime generally gives optimal results. On an empty stomach, it may work faster than after a heavy meal.</p></div>
+  <div class="faq-item"><h3>Can I combine melatonin with other sleep supplements or medications?</h3><p>Melatonin is generally safe to combine with magnesium or herbal teas (valerian, chamomile). However, avoid mixing with prescription sleep medications or sedatives without consulting a doctor, as interactions are possible. Check with your pharmacist or physician first.</p></div>
+  <div class="faq-item"><h3>Will melatonin work if I have an irregular sleep schedule?</h3><p>Yes, but it works best when you're trying to establish consistency. Melatonin helps signal your body that it's time for sleep, but it's most effective when you take it at the same time each night and maintain regular wake times. Highly irregular schedules may reduce effectiveness.</p></div>
+  <div class="faq-item"><h3>What's the shelf life of melatonin gummies?</h3><p>Properly stored in a cool, dry place, melatonin gummies typically last 2-3 years. Keep them away from heat and moisture (not in the bathroom). Check the printed expiration date on the bottle — don't use after that date.</p></div>
+  <div class="faq-item"><h3>Can I split a gummy in half to get a 5mg dose?</h3><p>It's difficult to accurately split a gummy without a kitchen scale or precision tools. Some people cut them in half roughly, but dosing becomes imprecise. If you want 5mg reliably, look for a 5mg product or discuss with your doctor about the best dosing approach for your needs.</p></div>
+  <div class="faq-item"><h3>Are melatonin gummies safe for shift workers or jet lag?</h3><p>Yes — melatonin is specifically helpful for jet lag and shift work adjustments. Take it at your target bedtime in your new timezone to help your body adjust faster. Use it for a week or two to reset your circadian rhythm, then evaluate if continued use is needed.</p></div>
+  <div class="faq-item"><h3>Will melatonin help if my sleep problem is racing thoughts, not tiredness?</h3><p>Melatonin works best for circadian rhythm issues and low natural melatonin. If racing thoughts keep you awake, melatonin alone may not help — consider pairing it with cognitive techniques, meditation, or other supplements like magnesium or L-theanine that address anxiety.</p></div>
 </div>
 
 <!-- Also tested / related products -->
