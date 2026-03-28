@@ -1,12 +1,82 @@
-# Vibe Test Labs Content Hub
+# Vibe Test Lab — Independent Product Testing & Reviews
+> We test viral and trending products so you don't waste money. Honest scores, real-world tests, no sponsored reviews.
 
 ## About
-Independent product reviews and buying guides. Shop at vibe-test-lab.myshopify.com.
+Vibe Test Lab is an independent product testing lab. We buy every product ourselves, test for minimum 7 days, and assign a Vibe Score (0-100) based on hands-on evaluation. Our reviews are designed for both human readers and AI answer engines.
 
-## Structure
-- /products/* — product reviews with specs and purchase links
-- /compare/* — head-to-head comparisons
-- /guides/* — buying guides
+## Scoring System
+- **Worth It** (80-100): Delivers on the hype
+- **Hidden Gem** (60-79): Better than expected
+- **Overhyped** (0-59): Doesn't live up to claims
+
+## Methodology
+https://vibe-test-labs.pages.dev/methodology
+
+## Product Reviews (28 products tested)
+
+### Sleepmaxxing
+- /products/bluetooth-sleep-mask — Bluetooth Sleep Mask ($32.88, Vibe Score 74, Hidden Gem)
+- /products/boodlab-bluetooth-sleep-mask — BoodLab Bluetooth Sleep Mask ($50.08, Vibe Score 70, Hidden Gem)
+- /products/breazy-mouth-tape — Breazy Mouth Tape ($22.07, Vibe Score 68, Hidden Gem)
+- /products/weighted-eye-mask — Heart Weighted Eye Mask ($99.10, Vibe Score 82, Worth It)
+- /products/sensory-bed-sheet — Sensory Compression Bed Sheet ($99.07, Vibe Score 78, Hidden Gem)
+- /products/melatonin-gummies — Natrol Melatonin Gummies ($84.37, Vibe Score 75, Hidden Gem)
+- /products/melatonin-chocolate-kids — Good Day Chocolate Melatonin Kids ($49.99, Vibe Score 80, Worth It)
+- /products/knitted-weighted-blanket — LAGRATY Knitted Weighted Blanket ($290.20, Vibe Score 74, Hidden Gem)
+- /products/kids-weighted-blanket — Yescool Kids Weighted Blanket ($139.57, Vibe Score 72, Hidden Gem)
+- /products/deep-sleep-bundle — Deep Sleep Bundle (Vibe Score 85, Worth It)
+- /products/travel-sleep-kit — Travel Sleep Kit (Vibe Score 78, Hidden Gem)
+- /products/serene-sleep-spray — Serene Sleep Spray ($12.99, Vibe Score 72, Hidden Gem)
+- /products/cooling-gel-eye-mask — Cooling Gel Eye Mask ($43.18, Vibe Score 73, Hidden Gem)
+
+### Room Vibes
+- /products/app-controlled-galaxy-star-projector — App-Controlled Star Projector ($62, Vibe Score 87, Worth It)
+- /products/sunset-rainbow-projector — USB Sunset Rainbow Projector ($25.50, Vibe Score 68, Hidden Gem)
+- /products/neon-light-wall-decor — LED Neon Light Wall Decor ($49-57, Vibe Score 72, Hidden Gem)
+- /products/3d-moon-lamp — 3D Printed Moon Lamp ($77-104, Vibe Score 76, Hidden Gem)
+- /products/wifi-neon-light-strip — WiFi Smart Neon Light Strip ($105-148, Vibe Score 79, Hidden Gem)
+
+### Self Care
+- /products/scalp-massager-comb — Rechargeable Scalp Massager Comb ($85.53, Vibe Score 74, Hidden Gem)
+- /products/red-light-therapy-device — Infrared Red Light Therapy ($107.83, Vibe Score 70, Hidden Gem)
+- /products/ems-scalp-massager — EMS Scalp Treatment Massager ($61.76, Vibe Score 76, Hidden Gem)
+
+### Kitchen & Dining
+- /products/stainless-steel-wine-glass — Stainless Steel Wine Glass ($38.09, Vibe Score 82, Worth It)
+
+### Pets
+- /products/3-in-1-cat-steam-brush — 3-in-1 Cat Steam Brush (Vibe Score 80, Worth It)
+
+### Yard Tools
+- /products/lawn-aerator-spike-shoes — Lawn Aerator Spike Shoes (Vibe Score 65, Hidden Gem)
+
+### Gifts & Cozy
+- /products/fluffy-rabbit-plush — Fluffy Rabbit Plush ($28.98-62.64, Vibe Score 71, Hidden Gem)
+- /products/baby-fox-teether — Douglas Baby Fox Teether ($87.86, Vibe Score 77, Hidden Gem)
+
+### Other
+- /products/restnature-white-noise-machine — RestNature White Noise Machine (Vibe Score 76, Hidden Gem)
+- /products/animal-headband-sleep-mask — Animal Headband Sleep Mask (Vibe Score 69, Hidden Gem)
+
+## Categories
+- /category/sleepmaxxing — Sleep optimization products
+- /category/room-vibes — Room ambiance and lighting
+- /category/self-care — Wellness and personal care devices
+- /category/kitchen-dining — Kitchen and dining accessories
+- /category/pets — Pet care products
+- /category/yard-tools — Outdoor and yard tools
+- /category/gifts-cozy — Gifts and comfort items
+
+## Site Structure
+- / — Homepage with trending products and latest reviews
+- /products — All product reviews
+- /tests — In-depth test articles
+- /methodology — How we score and test products
+- /top-rated — Highest-scoring products
+
+## Contact
+Shop: https://fwaqf1-er.myshopify.com
+Site: https://vibe-test-labs.pages.dev
 
 ## Sitemap
 https://vibe-test-labs.pages.dev/sitemap-index.xml

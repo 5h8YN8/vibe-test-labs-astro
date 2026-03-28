@@ -1,0 +1,311 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = 'How We Test & Score Products | Vibe Test Lab Methodology';
+const description = 'Learn how Vibe Test Lab scores and reviews products. We test everything hands-on, compare alternatives, and assign transparent Vibe Scores based on real-world performance.';
+const canonicalUrl = 'https://vibe-test-labs.pages.dev/methodology';
+
+const breadcrumbList = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  'itemListElement': [
+    {
+      '@type': 'ListItem',
+      'position': 1,
+      'name': 'Home',
+      'item': 'https://vibe-test-labs.pages.dev'
+    },
+    {
+      '@type': 'ListItem',
+      'position': 2,
+      'name': 'Methodology',
+      'item': 'https://vibe-test-labs.pages.dev/methodology'
+    }
+  ]
+};
+
+const webPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  'name': title,
+  'description': description,
+  'url': canonicalUrl,
+  'isPartOf': {
+    '@type': 'WebSite',
+    'name': 'Vibe Test Lab',
+    'url': 'https://vibe-test-labs.pages.dev'
+  }
+};
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  'headline': 'How We Test & Score Products',
+  'description': description,
+  'url': canonicalUrl,
+  'author': {
+    '@type': 'Organization',
+    'name': 'Vibe Test Lab'
+  },
+  'publisher': {
+    '@type': 'Organization',
+    'name': 'Vibe Test Lab',
+    'logo': {
+      '@type': 'ImageObject',
+      'url': 'https://vibe-test-labs.pages.dev/logo.png'
+    }
+  }
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  'mainEntity': [
+    {
+      '@type': 'Question',
+      'name': 'How is the Vibe Score calculated?',
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': 'The Vibe Score is a weighted average of four category-specific dimensions, each scored 0-100 based on hands-on testing. Typical weightings are: Build & Design Quality (30%), Value for Price (25%), User Experience (25%), and Authenticity/Hype Check (20%). The exact dimensions vary by product category.'
+      }
+    },
+    {
+      '@type': 'Question',
+      'name': 'Do you accept sponsored reviews?',
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': 'No. We buy every product ourselves with our own money and do not accept sponsorships or gifted units. This ensures complete independence and honest scores. We do disclose affiliate relationships transparently when they exist.'
+      }
+    },
+    {
+      '@type': 'Question',
+      'name': 'How often do you update reviews?',
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': 'We update reviews when products change, new data emerges, or we discover issues with existing products. We also revisit top-performing products periodically to ensure they still deliver on their promises.'
+      }
+    },
+    {
+      '@type': 'Question',
+      'name': 'Why don\'t some products have a "Worth It" badge?',
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': 'Not every product deserves a "Worth It" badge. A product only gets this rating when it scores 80+ and truly delivers on its claims while justifying its price. Many solid products fall into the "Hidden Gem" category (60-79) because they\'re good but not exceptional, or they have trade-offs worth considering.'
+      }
+    },
+    {
+      '@type': 'Question',
+      'name': 'How do you choose which products to test?',
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': 'We source trending products from TikTok, social media signals, and customer demand. We focus on products that are genuinely viral, have strong hype, or generate customer questions. This helps us test the products people are actually interested in buying.'
+      }
+    }
+  ]
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    breadcrumbList,
+    webPageSchema,
+    articleSchema,
+    faqSchema
+  ]
+};
+---
+
+<BaseLayout title={title} description={description} canonicalUrl={canonicalUrl}>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)}></script>
+
+  <main class="max-w-4xl mx-auto px-4 py-12">
+    <h1 class="text-4xl font-bold mb-6">How We Test & Score Products</h1>
+
+    <p class="text-lg text-gray-600 mb-8">
+      At Vibe Test Lab, we believe transparency matters. Every product gets tested hands-on, compared against alternatives, and scored using a consistent methodology. No sponsored reviews. No gifted units. Just honest verdicts.
+    </p>
+
+    <!-- How We Score: The Vibe Score System -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-4">How We Score: The Vibe Score System</h2>
+
+      <p class="text-gray-700 mb-4">
+        The Vibe Score is a weighted average of four category-specific dimensions. Each dimension is scored 0-100 based on hands-on testing, then combined to create a final score that ranges from 0 to 100.
+      </p>
+
+      <div class="bg-gray-50 border-l-4 border-blue-500 p-6 mb-6 rounded">
+        <h3 class="text-xl font-semibold mb-3">Score Breakdown</h3>
+        <ul class="space-y-3 text-gray-700">
+          <li><strong>Build & Design Quality (30%):</strong> How well is it made? Does it feel durable and thoughtfully designed?</li>
+          <li><strong>Value for Price (25%):</strong> Does it justify its cost compared to alternatives?</li>
+          <li><strong>User Experience (25%):</strong> Is it easy to use? Does it work as intended?</li>
+          <li><strong>Authenticity/Hype Check (20%):</strong> Does marketing match reality? Is the hype justified?</li>
+        </ul>
+      </div>
+
+      <div class="space-y-3 mb-6">
+        <h3 class="text-xl font-semibold mb-3">What Your Vibe Score Means</h3>
+        <div class="border rounded-lg p-4 bg-green-50 border-green-200">
+          <p class="font-bold text-green-900">80-100: Worth It</p>
+          <p class="text-gray-700">Delivers on the hype. The product does what it claims and justifies its price.</p>
+        </div>
+        <div class="border rounded-lg p-4 bg-blue-50 border-blue-200">
+          <p class="font-bold text-blue-900">60-79: Hidden Gem</p>
+          <p class="text-gray-700">Better than expected. Solid product that outperforms its price point or has underrated features.</p>
+        </div>
+        <div class="border rounded-lg p-4 bg-red-50 border-red-200">
+          <p class="font-bold text-red-900">Below 60: Overhyped</p>
+          <p class="text-gray-700">Doesn't live up to the hype. Marketing exceeds reality, or better alternatives exist.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Testing Process -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Our Testing Process</h2>
+
+      <ol class="space-y-6">
+        <li class="flex gap-4">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-10 w-10 rounded-full bg-blue-500 text-white font-bold">
+              1
+            </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Product Selection</h3>
+            <p class="text-gray-700">Trending products sourced from TikTok, social media signals, and customer demand. We focus on products that are genuinely viral or have strong hype.</p>
+          </div>
+        </li>
+
+        <li class="flex gap-4">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-10 w-10 rounded-full bg-blue-500 text-white font-bold">
+              2
+            </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Hands-On Testing</h3>
+            <p class="text-gray-700">Each product is tested across four dimensions specific to its category. We spend minimum 7 days testing before publishing any review.</p>
+          </div>
+        </li>
+
+        <li class="flex gap-4">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-10 w-10 rounded-full bg-blue-500 text-white font-bold">
+              3
+            </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Comparative Analysis</h3>
+            <p class="text-gray-700">The product is compared against at least 2 alternatives at different price points. This helps us determine if it's truly the best choice or if something else might be better.</p>
+          </div>
+        </li>
+
+        <li class="flex gap-4">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-10 w-10 rounded-full bg-blue-500 text-white font-bold">
+              4
+            </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Honest Verdict</h3>
+            <p class="text-gray-700">A Vibe Score is assigned with complete transparency. We include clear pros, cons, and when it makes sense to buy alternatives instead.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Editorial Standards -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Our Editorial Standards</h2>
+
+      <p class="text-gray-700 mb-6">
+        Our reputation depends on honest reviews. Here's what we commit to:
+      </p>
+
+      <ul class="space-y-4">
+        <li class="flex items-start gap-3">
+          <svg class="h-6 w-6 text-green-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+          </svg>
+          <div>
+            <strong>We buy every product ourselves</strong>
+            <p class="text-gray-700">No gifted units. No sponsored reviews. We purchase products with our own money to ensure complete independence.</p>
+          </div>
+        </li>
+
+        <li class="flex items-start gap-3">
+          <svg class="h-6 w-6 text-green-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+          </svg>
+          <div>
+            <strong>We test for minimum 7 days</strong>
+            <p class="text-gray-700">Real-world usage reveals things that can't be discovered in a quick unboxing. We take time to fully understand each product.</p>
+          </div>
+        </li>
+
+        <li class="flex items-start gap-3">
+          <svg class="h-6 w-6 text-green-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+          </svg>
+          <div>
+            <strong>We always compare against at least 2 alternatives</strong>
+            <p class="text-gray-700">Context matters. We test products alongside competitors so you know if this is the best option or if something else might work better.</p>
+          </div>
+        </li>
+
+        <li class="flex items-start gap-3">
+          <svg class="h-6 w-6 text-green-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+          </svg>
+          <div>
+            <strong>We disclose affiliate relationships transparently</strong>
+            <p class="text-gray-700">If we earn commission from a purchase, you'll know about it. Transparency builds trust.</p>
+          </div>
+        </li>
+
+        <li class="flex items-start gap-3">
+          <svg class="h-6 w-6 text-green-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+          </svg>
+          <div>
+            <strong>We update reviews when products change</strong>
+            <p class="text-gray-700">Product updates, price drops, or new data can change our verdict. We keep reviews current.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- FAQ -->
+    <section>
+      <h2 class="text-3xl font-bold mb-6">Frequently Asked Questions</h2>
+
+      <div class="space-y-6">
+        <details class="border rounded-lg p-4 cursor-pointer hover:bg-gray-50">
+          <summary class="font-semibold text-lg">How is the Vibe Score calculated?</summary>
+          <p class="text-gray-700 mt-3">The Vibe Score is a weighted average of four category-specific dimensions, each scored 0-100 based on hands-on testing. Typical weightings are: Build & Design Quality (30%), Value for Price (25%), User Experience (25%), and Authenticity/Hype Check (20%). The exact dimensions vary by product category.</p>
+        </details>
+
+        <details class="border rounded-lg p-4 cursor-pointer hover:bg-gray-50">
+          <summary class="font-semibold text-lg">Do you accept sponsored reviews?</summary>
+          <p class="text-gray-700 mt-3">No. We buy every product ourselves with our own money and do not accept sponsorships or gifted units. This ensures complete independence and honest scores. We do disclose affiliate relationships transparently when they exist.</p>
+        </details>
+
+        <details class="border rounded-lg p-4 cursor-pointer hover:bg-gray-50">
+          <summary class="font-semibold text-lg">How often do you update reviews?</summary>
+          <p class="text-gray-700 mt-3">We update reviews when products change, new data emerges, or we discover issues with existing products. We also revisit top-performing products periodically to ensure they still deliver on their promises.</p>
+        </details>
+
+        <details class="border rounded-lg p-4 cursor-pointer hover:bg-gray-50">
+          <summary class="font-semibold text-lg">Why don't some products have a "Worth It" badge?</summary>
+          <p class="text-gray-700 mt-3">Not every product deserves a "Worth It" badge. A product only gets this rating when it scores 80+ and truly delivers on its claims while justifying its price. Many solid products fall into the "Hidden Gem" category (60-79) because they're good but not exceptional, or they have trade-offs worth considering.</p>
+        </details>
+
+        <details class="border rounded-lg p-4 cursor-pointer hover:bg-gray-50">
+          <summary class="font-semibold text-lg">How do you choose which products to test?</summary>
+          <p class="text-gray-700 mt-3">We source trending products from TikTok, social media signals, and customer demand. We focus on products that are genuinely viral, have strong hype, or generate customer questions. This helps us test the products people are actually interested in buying.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
