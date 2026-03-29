@@ -15,6 +15,31 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script is:inline>
+    // Google Consent Mode v2 - default all denied until user consents (GDPR/CCPA)
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied',
+      'wait_for_update': 2000
+    });
+    // Restore consent immediately on repeat visits
+    (function() {
+      try {
+        if (localStorage.getItem('vtl_cookie_consent') === 'accepted') {
+          gtag('consent', 'update', {
+            'ad_storage': 'granted',
+            'ad_user_data': 'granted',
+            'ad_personalization': 'granted',
+            'analytics_storage': 'granted'
+          });
+        }
+      } catch(e) {}
+    })();
+  </script>
   <!-- Google Tag Manager -->
   <script is:inline>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -851,5 +876,62 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
     }
   })();
   </script>
+
+  <!-- Cookie Consent Banner (GDPR + CCPA) -->
+  <div id="vtl-cookie-banner" role="dialog" aria-label="Cookie consent" aria-modal="false" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#1a1a2e;border-top:1px solid rgba(255,255,255,0.12);padding:1rem 1.5rem;box-shadow:0 -4px 24px rgba(0,0,0,0.4);">
+    <div style="max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:1rem;">
+      <div style="flex:1;min-width:260px;">
+        <p style="margin:0 0 0.25rem;font-size:0.9rem;line-height:1.5;color:#e0e0e0;">
+          We use cookies to improve your experience and for analytics. By clicking <strong>Accept All</strong>, you consent to our use of cookies as described in our <a href="/privacy" style="color:#a78bfa;text-decoration:underline;">Privacy Policy</a>.
+        </p>
+        <p style="margin:0;font-size:0.75rem;color:#888;">
+          We do not sell your personal information. <a href="/privacy" style="color:#888;text-decoration:underline;white-space:nowrap;">Do Not Sell or Share My Personal Information</a>
+        </p>
+      </div>
+      <div style="display:flex;gap:0.625rem;flex-shrink:0;flex-wrap:wrap;align-items:center;">
+        <button id="vtl-cookie-decline" style="padding:0.5rem 1.1rem;border-radius:0.5rem;border:1px solid rgba(255,255,255,0.2);background:transparent;color:#ccc;font-size:0.85rem;cursor:pointer;">
+          Decline
+        </button>
+        <button id="vtl-cookie-accept" style="padding:0.5rem 1.25rem;border-radius:0.5rem;border:none;background:linear-gradient(135deg,#7c3aed,#4f46e5);color:#fff;font-size:0.85rem;font-weight:600;cursor:pointer;">
+          Accept All
+        </button>
+      </div>
+    </div>
+  </div>
+  <script is:inline>
+    (function() {
+      var KEY = 'vtl_cookie_consent';
+      var banner = document.getElementById('vtl-cookie-banner');
+      var acceptBtn = document.getElementById('vtl-cookie-accept');
+      var declineBtn = document.getElementById('vtl-cookie-decline');
+      if (!banner) return;
+      try {
+        if (!localStorage.getItem(KEY)) banner.style.display = 'block';
+      } catch(e) { banner.style.display = 'block'; }
+      function updateConsent(granted) {
+        var val = granted ? 'granted' : 'denied';
+        if (typeof window.gtag === 'function') {
+          window.gtag('consent', 'update', {
+            'ad_storage': val, 'ad_user_data': val,
+            'ad_personalization': val, 'analytics_storage': val
+          });
+        }
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event: granted ? 'cookie_consent_accepted' : 'cookie_consent_declined' });
+      }
+      function setConsent(choice) {
+        try { localStorage.setItem(KEY, choice); } catch(e) {}
+        banner.style.display = 'none';
+        updateConsent(choice === 'accepted');
+      }
+      acceptBtn.addEventListener('click', function() { setConsent('accepted'); });
+      declineBtn.addEventListener('click', function() { setConsent('declined'); });
+      declineBtn.addEventListener('mouseenter', function() { this.style.background = 'rgba(255,255,255,0.08)'; });
+      declineBtn.addEventListener('mouseleave', function() { this.style.background = 'transparent'; });
+      acceptBtn.addEventListener('mouseenter', function() { this.style.opacity = '0.88'; });
+      acceptBtn.addEventListener('mouseleave', function() { this.style.opacity = '1'; });
+    })();
+  </script>
+  <!-- End Cookie Consent Banner -->
 </body>
 </html>
