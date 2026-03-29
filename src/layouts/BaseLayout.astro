@@ -349,11 +349,16 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
     /* ── Footer ── */
     .site-footer { padding: 0 1.5rem 2.5rem; }
     @media(min-width:768px){ .site-footer { padding: 0 4rem 2.5rem; } }
-    .site-footer-inner { display: flex; flex-direction: column; gap: 1rem; }
-    @media(min-width:768px){ .site-footer-inner { flex-direction: row; justify-content: space-between; align-items: center; } }
+    .site-footer-inner { display: flex; flex-direction: column; gap: 1.5rem; }
+    @media(min-width:768px){ .site-footer-inner { flex-direction: row; justify-content: space-between; align-items: flex-start; } }
     .footer-brand { display: flex; align-items: center; gap: .6rem; font-family: var(--font-mono); font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .15em; color: var(--foreground); }
     .footer-tagline { font-size: .75rem; color: var(--muted-foreground); margin: .2rem 0 0; }
-    .footer-copy { font-size: .75rem; color: var(--muted-foreground); }
+    .footer-copy { font-size: .75rem; color: var(--muted-foreground); margin: 0; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: .4rem 1.25rem; margin-top: .75rem; }
+    .footer-links a { font-size: .75rem; color: var(--muted-foreground); text-decoration: none; font-family: var(--font-sans); transition: color .15s; }
+    .footer-links a:hover { color: var(--primary); text-decoration: none; }
+    .footer-right { display: flex; flex-direction: column; align-items: flex-start; gap: .5rem; }
+    @media(min-width:768px){ .footer-right { align-items: flex-end; } }
 
     /* ── Product list card (horizontal) ── */
     .product-list-card { padding: 2rem 0; }

@@ -1,42 +1,107 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = 'Terms of Service | Vibe Test Lab';
+const description = 'Read the Terms of Service for Vibe Test Lab. Understand your rights and responsibilities when using our site and purchasing products.';
+const canonicalUrl = 'https://vibe-test-labs.pages.dev/terms';
+const lastUpdated = 'March 2025';
 ---
-<BaseLayout
-  title="Terms of Service | Vibe Test Labs"
-  description="Terms of Service for Vibe Test Labs. Read our policies on orders, shipping, returns, and use of our site."
->
-  <section style="max-width:800px;margin:0 auto;padding:2rem 1.5rem;line-height:1.8;">
-    <h1 style="font-size:2rem;margin-bottom:0.5rem;">Terms of Service</h1>
-    <p style="color:#888;margin-bottom:2rem;"><strong>Effective Date: March 28, 2026</strong></p>
 
-    <h2>1. Acceptance of Terms</h2>
-    <p>By accessing or using the Vibe Test Labs website (the "Site"), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our Site.</p>
+<BaseLayout title={title} description={description} canonical={canonicalUrl} noindex={false}>
+  <style>
+    .policy-page { max-width: 760px; margin: 0 auto; }
+    .policy-header { margin-bottom: 2.5rem; }
+    .policy-header h1 { margin-bottom: .5rem; }
+    .policy-meta { font-size: .8rem; font-family: var(--font-mono); color: var(--muted-foreground); text-transform: uppercase; letter-spacing: .1em; }
+    .policy-section { margin-bottom: 2rem; }
+    .policy-section h2 { font-size: 1rem; margin-bottom: .5rem; }
+    .policy-section p, .policy-section li { font-size: .95rem; line-height: 1.7; }
+    .policy-divider { height: 1px; background: var(--border); margin: 2rem 0; }
+  </style>
 
-    <h2>2. Use of Site</h2>
-    <p>You agree to use this Site only for lawful purposes and in a manner that does not infringe the rights of others. You may not use the Site to transmit any harmful, offensive, or disruptive content. We reserve the right to terminate access for violations of these terms.</p>
+  <div class="policy-page">
+    <div class="policy-header">
+      <span class="section-label">Legal</span>
+      <h1>Terms of Service</h1>
+      <p class="policy-meta">Last updated: {lastUpdated}</p>
+    </div>
 
-    <h2>3. Products &amp; Pricing</h2>
-    <p>All product descriptions, images, and pricing are provided in good faith and are subject to change without notice. We strive for accuracy but do not guarantee that all information is error-free. Prices are listed in USD and are subject to change at any time.</p>
+    <div class="policy-section">
+      <p>Welcome to Vibe Test Lab. By accessing or using our website at <a href="https://vibe-test-labs.pages.dev">vibe-test-labs.pages.dev</a> or making a purchase through our store, you agree to be bound by these Terms of Service. Please read them carefully before using our site.</p>
+    </div>
 
-    <h2>4. Orders &amp; Payment</h2>
-    <p>By placing an order, you represent that you are authorized to use the payment method provided. We reserve the right to cancel or refuse any order at our discretion. Payment is processed securely at checkout. You will receive an email confirmation once your order is placed.</p>
+    <div class="policy-divider"></div>
 
-    <h2>5. Shipping Policy</h2>
-    <p>We currently ship within the United States only. Orders are typically processed within 1 business day and delivered within <strong>2 business days</strong> via standard shipping. Shipping times may vary during peak periods. You will receive a tracking number by email once your order has shipped.</p>
+    <div class="policy-section">
+      <h2>1. Acceptance of Terms</h2>
+      <p>By visiting our site, browsing our content, or completing a purchase, you agree to these Terms of Service and our Privacy Policy. If you do not agree with any part of these terms, you may not use our site or services.</p>
+    </div>
 
-    <h2>6. Returns &amp; Refunds</h2>
-    <p>We stand behind every order. If you experience any issue with your order - including damaged items, incorrect products, or non-delivery - we will provide a <strong>full refund, no questions asked</strong>. Simply contact us at the email below within 30 days of your order date.</p>
+    <div class="policy-section">
+      <h2>2. Use of the Site</h2>
+      <p>Vibe Test Lab grants you a limited, non-exclusive, non-transferable right to access and use our website for personal, non-commercial purposes. You agree not to:</p>
+      <ul>
+        <li>Copy, reproduce, or redistribute any content without written permission</li>
+        <li>Use automated tools to scrape, crawl, or harvest data from our site</li>
+        <li>Attempt to gain unauthorized access to any part of our systems</li>
+        <li>Use our site for any unlawful purpose or in violation of any regulations</li>
+        <li>Post or transmit harmful, offensive, or misleading content</li>
+      </ul>
+    </div>
 
-    <h2>7. Intellectual Property</h2>
-    <p>All content on this Site, including text, graphics, logos, and product reviews, is the property of Vibe Test Labs or its content suppliers and is protected by applicable copyright laws. You may not reproduce or distribute any content without our express written permission.</p>
+    <div class="policy-section">
+      <h2>3. Products and Purchases</h2>
+      <p>All purchases made through our store are subject to product availability. We reserve the right to limit quantities and to refuse or cancel any order at our discretion. Prices are subject to change without notice. We make every effort to display product colors, descriptions, and images as accurately as possible, but we cannot guarantee that your device's display will be perfectly accurate.</p>
+    </div>
 
-    <h2>8. Limitation of Liability</h2>
-    <p>To the fullest extent permitted by law, Vibe Test Labs shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of the Site or products purchased through it. Our total liability shall not exceed the amount you paid for your order.</p>
+    <div class="policy-section">
+      <h2>4. Pricing and Payment</h2>
+      <p>All prices are listed in US dollars. We accept major credit cards and other payment methods as displayed at checkout. Payment is processed securely. By completing a purchase, you represent that you are authorized to use the payment method provided.</p>
+    </div>
 
-    <h2>9. Changes to Terms</h2>
-    <p>We may update these Terms of Service at any time. Changes will be posted on this page with an updated effective date. Continued use of the Site after changes constitutes acceptance of the revised terms.</p>
+    <div class="policy-section">
+      <h2>5. Shipping</h2>
+      <p>We currently ship to addresses within the United States only. Orders are fulfilled with 2-day shipping. Shipping costs, if any, are displayed at checkout. We are not responsible for delays caused by carriers, weather events, or circumstances beyond our control. For full shipping details, please see our <a href="/faq">FAQ page</a>.</p>
+    </div>
 
-    <h2>10. Contact</h2>
-    <p>If you have any questions about these Terms, please contact us at: <a href="mailto:support@vibetestlabs.com">support@vibetestlabs.com</a></p>
-  </section>
+    <div class="policy-section">
+      <h2>6. Returns and Refunds</h2>
+      <p>We stand behind every product we sell. If you experience any issue with your order -- wrong item, damaged product, or anything else -- we will make it right with a full refund, no questions asked. Please contact us and we'll resolve it promptly. For full details, visit our <a href="/faq">FAQ page</a>.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>7. Intellectual Property</h2>
+      <p>All content on this site -- including text, images, logos, reviews, scores, and graphics -- is the property of Vibe Test Lab and is protected by applicable intellectual property laws. Our review methodology and "Vibe Score" system are proprietary. Unauthorized use, reproduction, or distribution of any content is strictly prohibited.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>8. Disclaimer of Warranties</h2>
+      <p>Our site and content are provided "as is" without warranties of any kind, either express or implied. We do not warrant that our site will be uninterrupted, error-free, or free of viruses or other harmful components. Product reviews reflect our honest testing experience and are opinions, not guarantees of performance.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>9. Limitation of Liability</h2>
+      <p>To the fullest extent permitted by law, Vibe Test Lab shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of our site or products purchased through our store. Our total liability shall not exceed the amount paid for the specific product or service giving rise to the claim.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>10. Affiliate Disclosure</h2>
+      <p>Some links on our site may be affiliate links, meaning we may earn a commission if you make a purchase through them at no additional cost to you. Our editorial opinions and Vibe Scores are never influenced by affiliate relationships. We only recommend products we genuinely test and believe in.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>11. Changes to These Terms</h2>
+      <p>We reserve the right to update these Terms of Service at any time. Changes will be effective immediately upon posting to this page. Continued use of our site after any changes constitutes acceptance of the updated terms.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>12. Governing Law</h2>
+      <p>These Terms of Service are governed by the laws of the United States. Any disputes shall be resolved in the appropriate courts of jurisdiction.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>13. Contact Us</h2>
+      <p>If you have any questions about these Terms of Service, please reach out via our website. We're happy to help clarify anything.</p>
+    </div>
+  </div>
 </BaseLayout>

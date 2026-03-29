@@ -1,52 +1,75 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = 'Track Your Order | Vibe Test Lab';
+const description = 'Track your Vibe Test Lab order in real time. Enter your tracking number to get live shipping updates.';
+const canonicalUrl = 'https://vibe-test-labs.pages.dev/track-order';
 ---
-<BaseLayout
-  title="Track Your Order | Vibe Test Labs"
-  description="Track your Vibe Test Labs order in real time. Enter your tracking number to see the latest shipping updates."
->
-  <section style="max-width:700px;margin:0 auto;padding:3rem 1.5rem;text-align:center;">
-    <h1 style="font-size:2rem;margin-bottom:0.5rem;">Track Your Order</h1>
-    <p style="color:#888;margin-bottom:2.5rem;">Enter your tracking number below to get real-time shipping updates.</p>
 
-    <!-- 17track free widget -->
-    <div style="max-width:600px;margin:0 auto;">
-      <div id="yt-track-widget" style="min-height:200px;"></div>
+<BaseLayout title={title} description={description} canonical={canonicalUrl} noindex={false}>
+  <style>
+    .track-page { max-width: 800px; margin: 0 auto; }
+    .track-header { margin-bottom: 2.5rem; text-align: center; }
+    .track-header h1 { margin-bottom: .5rem; }
+    .track-header p { max-width: 480px; margin: 0 auto; }
+
+    .track-embed-wrap {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      min-height: 500px;
+    }
+
+    .track-info {
+      display: flex; gap: 1.5rem; flex-wrap: wrap;
+      justify-content: center; margin-top: 2rem;
+    }
+    .track-info-item {
+      display: flex; align-items: center; gap: .5rem;
+      font-size: .8rem; color: var(--muted-foreground);
+      font-family: var(--font-mono); text-transform: uppercase; letter-spacing: .08em;
+    }
+    .track-info-item span.icon { font-size: 1rem; }
+  </style>
+
+  <div class="track-page">
+    <div class="track-header">
+      <span class="section-label">Order Support</span>
+      <h1>Track Your Order</h1>
+      <p>Enter your tracking number below to get live updates on your shipment.</p>
     </div>
 
-    <div style="margin-top:2.5rem;padding:1.5rem;background:rgba(255,255,255,0.05);border-radius:0.75rem;text-align:left;">
-      <h2 style="font-size:1.1rem;margin-bottom:0.75rem;">Shipping Info</h2>
-      <ul style="list-style:none;padding:0;margin:0;line-height:2;">
-        <li>Ships within the <strong>United States only</strong></li>
-        <li>Orders processed within <strong>1 business day</strong></li>
-        <li>Standard delivery: <strong>2 business days</strong></li>
-        <li>Tracking number sent via <strong>email after shipment</strong></li>
-      </ul>
+    <div class="track-embed-wrap">
+      <iframe
+        src="https://t.17track.net/en#nums="
+        width="100%"
+        height="600"
+        frameborder="0"
+        scrolling="auto"
+        title="Order Tracking"
+        style="display:block; border:none; width:100%; min-height:600px;"
+        loading="lazy"
+      ></iframe>
     </div>
 
-    <p style="margin-top:2rem;color:#888;font-size:0.9rem;">
-      Issue with your order? Contact us at <a href="mailto:support@vibetestlabs.com">support@vibetestlabs.com</a> - we offer a full refund on any problem orders.
-    </p>
-  </section>
+    <div class="track-info">
+      <div class="track-info-item">
+        <span class="icon">[Shipping]</span>
+        <span>2-day US shipping</span>
+      </div>
+      <div class="track-info-item">
+        <span class="icon">[Package]</span>
+        <span>Tracking number in your confirmation email</span>
+      </div>
+      <div class="track-info-item">
+        <span class="icon">[Returns]</span>
+        <span>Issues? Full refund, no questions asked</span>
+      </div>
+    </div>
 
-  <script>
-    (function() {
-      var script = document.createElement('script');
-      script.src = 'https://embed.17track.net/en/embed.js';
-      script.async = true;
-      script.onload = function() {
-        if (window.YQV5) {
-          YQV5.trackSingle({
-            YQ_ContainerId: 'yt-track-widget',
-            YQ_Height: 300,
-            YQ_Fc: '0',
-            YQ_Lang: 'en',
-            YQ_NumShow: 1,
-            YQ_CutDate: ''
-          });
-        }
-      };
-      document.head.appendChild(script);
-    })();
-  </script>
+    <div style="text-align:center; margin-top:2.5rem;">
+      <p style="font-size:.85rem;">Don't have your tracking number? Check your order confirmation email.<br/>Still need help? See our <a href="/faq">FAQ</a> or contact us.</p>
+    </div>
+  </div>
 </BaseLayout>

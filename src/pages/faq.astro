@@ -1,61 +1,168 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = 'Shop FAQ -- Shipping, Returns & Refunds | Vibe Test Lab';
+const description = 'Frequently asked questions about Vibe Test Lab -- including shipping policy (US only, 2-day shipping), returns, refunds, and order support.';
+const canonicalUrl = 'https://vibe-test-labs.pages.dev/faq';
 ---
-<BaseLayout
-  title="FAQ | Vibe Test Labs"
-  description="Frequently asked questions about Vibe Test Labs - shipping, returns, orders, tracking, and more."
->
-  <section style="max-width:800px;margin:0 auto;padding:2rem 1.5rem;line-height:1.8;">
-    <h1 style="font-size:2rem;margin-bottom:0.5rem;">Frequently Asked Questions</h1>
-    <p style="color:#888;margin-bottom:2.5rem;">Got a question? We've got answers. If you don't see what you're looking for, reach out to us at <a href="mailto:support@vibetestlabs.com">support@vibetestlabs.com</a>.</p>
 
-    <div style="border-top:1px solid rgba(255,255,255,0.1);">
+<BaseLayout title={title} description={description} canonical={canonicalUrl} noindex={false}>
+  <style>
+    .faq-page { max-width: 760px; margin: 0 auto; }
+    .faq-header { margin-bottom: 2.5rem; }
+    .faq-header h1 { margin-bottom: .5rem; }
+    .faq-header p.lead { margin-bottom: 0; }
 
-      <details style="padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,0.1);">
-        <summary style="font-size:1.1rem;font-weight:600;cursor:pointer;list-style:none;">Where do you ship to?</summary>
-        <p style="margin-top:0.75rem;">We currently ship within the <strong>United States only</strong>. We hope to expand to international shipping in the future - stay tuned!</p>
-      </details>
+    .faq-section { margin-bottom: 3rem; }
+    .faq-section-title {
+      font-family: var(--font-mono); font-size: .7rem; text-transform: uppercase;
+      letter-spacing: .3em; color: var(--primary); font-weight: 700;
+      display: block; margin-bottom: 1.25rem;
+    }
+    .faq-divider { height: 1px; background: var(--border); margin: 2.5rem 0; }
 
-      <details style="padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,0.1);">
-        <summary style="font-size:1.1rem;font-weight:600;cursor:pointer;list-style:none;">How long does shipping take?</summary>
-        <p style="margin-top:0.75rem;">Orders are typically processed within <strong>1 business day</strong> and delivered within <strong>2 business days</strong> via standard shipping. You'll receive a tracking number by email once your order ships.</p>
-      </details>
+    .faq-item { margin-bottom: 1.5rem; }
+    .faq-item h3 {
+      font-family: var(--font-mono); font-size: .9rem; font-weight: 700;
+      color: var(--foreground); margin: 0 0 .5rem;
+    }
+    .faq-item p, .faq-item li { font-size: .95rem; line-height: 1.7; margin-bottom: .4rem; }
 
-      <details style="padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,0.1);">
-        <summary style="font-size:1.1rem;font-weight:600;cursor:pointer;list-style:none;">How do I track my order?</summary>
-        <p style="margin-top:0.75rem;">Once your order ships, you'll get a confirmation email with your tracking number. You can also visit our <a href="/track-order">Track Your Order</a> page and enter your tracking number to see real-time updates.</p>
-      </details>
+    .policy-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .policy-card-icon { font-size: 1.5rem; margin-bottom: .75rem; }
+    .policy-card h3 { font-family: var(--font-mono); font-size: .95rem; margin: 0 0 .5rem; }
+    .policy-card p { font-size: .9rem; margin: 0; }
+    .policy-cards { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+    @media(min-width: 600px) { .policy-cards { grid-template-columns: 1fr 1fr; } }
 
-      <details style="padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,0.1);">
-        <summary style="font-size:1.1rem;font-weight:600;cursor:pointer;list-style:none;">What is your return policy?</summary>
-        <p style="margin-top:0.75rem;">We want you to be completely happy with your purchase. If you experience <em>any</em> issue with your order - damaged items, wrong product, non-delivery, or anything else - we'll issue a <strong>full refund, no questions asked</strong>. Just contact us within 30 days of your order date.</p>
-      </details>
+    .highlight-pill {
+      display: inline-block; background: var(--secondary); color: var(--secondary-foreground);
+      font-family: var(--font-mono); font-size: .7rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: .08em;
+      padding: .2rem .7rem; border-radius: 999px; margin-bottom: .75rem;
+    }
+  </style>
 
-      <details style="padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,0.1);">
-        <summary style="font-size:1.1rem;font-weight:600;cursor:pointer;list-style:none;">How do I request a refund?</summary>
-        <p style="margin-top:0.75rem;">Just email us at <a href="mailto:support@vibetestlabs.com">support@vibetestlabs.com</a> with your order number and a brief description of the issue. We'll take care of it right away - usually within 1-2 business days.</p>
-      </details>
-
-      <details style="padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,0.1);">
-        <summary style="font-size:1.1rem;font-weight:600;cursor:pointer;list-style:none;">What payment methods do you accept?</summary>
-        <p style="margin-top:0.75rem;">We accept all major credit and debit cards (Visa, Mastercard, American Express, Discover), as well as PayPal, Apple Pay, and Google Pay. All payments are processed securely through Shopify.</p>
-      </details>
-
-      <details style="padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,0.1);">
-        <summary style="font-size:1.1rem;font-weight:600;cursor:pointer;list-style:none;">Are the products on Vibe Test Labs tested by real people?</summary>
-        <p style="margin-top:0.75rem;">Yes! Every product featured on our site has been reviewed and tested by our team. We score products on quality, value, design, and real-world performance. We only feature products we'd actually recommend.</p>
-      </details>
-
-      <details style="padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,0.1);">
-        <summary style="font-size:1.1rem;font-weight:600;cursor:pointer;list-style:none;">Can I cancel or change my order?</summary>
-        <p style="margin-top:0.75rem;">Orders are processed quickly, so cancellations or changes may not always be possible after placement. Please contact us at <a href="mailto:support@vibetestlabs.com">support@vibetestlabs.com</a> as soon as possible and we'll do our best to help.</p>
-      </details>
-
-      <details style="padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,0.1);">
-        <summary style="font-size:1.1rem;font-weight:600;cursor:pointer;list-style:none;">I have a question that's not listed here. How do I get in touch?</summary>
-        <p style="margin-top:0.75rem;">We're happy to help! Send us an email at <a href="mailto:support@vibetestlabs.com">support@vibetestlabs.com</a> and we'll get back to you within 1 business day.</p>
-      </details>
-
+  <div class="faq-page">
+    <div class="faq-header">
+      <span class="section-label">Support</span>
+      <h1>Shop FAQ</h1>
+      <p class="lead">Everything you need to know about ordering from Vibe Test Lab.</p>
     </div>
-  </section>
+
+    <div class="policy-cards" style="margin-bottom:3rem;">
+      <div class="policy-card">
+        <div class="policy-card-icon">[Shipping]</div>
+        <div class="highlight-pill">Shipping</div>
+        <h3>US Only - 2-Day Shipping</h3>
+        <p>We ship to all 50 US states. Every order ships with 2-day delivery so you get your products fast.</p>
+      </div>
+      <div class="policy-card">
+        <div class="policy-card-icon">[Returns]</div>
+        <div class="highlight-pill">Returns & Refunds</div>
+        <h3>Full Refund, No Questions Asked</h3>
+        <p>If anything is wrong with your order -- damaged, missing, or not what you expected -- we'll refund you in full. Zero hassle.</p>
+      </div>
+    </div>
+
+    <div class="faq-divider"></div>
+
+    <div class="faq-section">
+      <span class="faq-section-title">Shipping</span>
+
+      <div class="faq-item">
+        <h3>Where do you ship?</h3>
+        <p>We currently ship to addresses within the United States only, including all 50 states. We don't ship internationally at this time.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How fast is shipping?</h3>
+        <p>All orders ship with 2-day shipping. Once your order is placed and confirmed, you can expect delivery within 2 business days. Orders placed on weekends or holidays will begin processing the next business day.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How much does shipping cost?</h3>
+        <p>Shipping costs are calculated at checkout based on your order and location. We periodically offer free shipping promotions -- keep an eye on the site for those.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Will I get tracking information?</h3>
+        <p>Yes! Once your order ships, you'll receive a confirmation with your tracking number. You can also use our <a href="/track-order">Track Your Order</a> page to check your delivery status anytime.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What if my package is delayed or lost?</h3>
+        <p>If your package is significantly delayed or appears lost, contact us and we'll investigate and make it right. Carrier delays due to weather or high-volume periods are occasionally outside our control, but we'll do everything we can to resolve the situation.</p>
+      </div>
+    </div>
+
+    <div class="faq-divider"></div>
+
+    <div class="faq-section">
+      <span class="faq-section-title">Returns & Refunds</span>
+
+      <div class="faq-item">
+        <h3>What is your return policy?</h3>
+        <p>Simple: if there's any issue with your order, we'll refund you in full -- no questions asked. Whether your item arrived damaged, was the wrong product, or something else went wrong, just reach out and we'll take care of it immediately.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How do I request a refund?</h3>
+        <p>Contact us through our website with your order number and a brief description of the issue. We'll process your refund promptly -- typically within 3-5 business days back to your original payment method.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Do I need to return the item?</h3>
+        <p>In most cases, no. For damaged or defective items, we typically don't require a return -- we'll just issue the refund or send a replacement. If a return is needed, we'll provide a prepaid label at no cost to you.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How long does a refund take?</h3>
+        <p>Once approved, refunds are typically processed within 3-5 business days. Depending on your bank or card issuer, it may take a few additional days to appear on your statement.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What if I changed my mind about my purchase?</h3>
+        <p>If you've changed your mind and your order hasn't shipped yet, contact us immediately and we can cancel it for a full refund. Once an order has shipped, reach out and we'll work with you on a solution.</p>
+      </div>
+    </div>
+
+    <div class="faq-divider"></div>
+
+    <div class="faq-section">
+      <span class="faq-section-title">Orders</span>
+
+      <div class="faq-item">
+        <h3>How do I track my order?</h3>
+        <p>Use our <a href="/track-order">Track Your Order</a> page -- just enter your tracking number and you'll get real-time delivery status.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can I change or cancel my order?</h3>
+        <p>If your order hasn't shipped yet, we may be able to modify or cancel it. Contact us as soon as possible with your order number and we'll do our best to accommodate your request.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What payment methods do you accept?</h3>
+        <p>We accept all major credit and debit cards (Visa, Mastercard, American Express, Discover) as well as other payment options displayed at checkout.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Is my payment information secure?</h3>
+        <p>Absolutely. All payments are processed through PCI-compliant payment processors. We never store your credit card details on our servers.</p>
+      </div>
+    </div>
+
+    <div class="faq-divider"></div>
+
+    <div style="text-align:center; padding: 1.5rem 0 1rem;">
+      <h2 style="margin-bottom:.5rem;">Still have a question?</h2>
+      <p>Reach out and we'll get back to you quickly.</p>
+      <a href="/track-order" class="cta-button" style="margin-top:.5rem;">Track Your Order</a>
+    </div>
+  </div>
 </BaseLayout>
