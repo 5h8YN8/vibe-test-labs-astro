@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Track Your Order | Vibe Test Labs"
+  description="Track your Vibe Test Labs order in real time. Enter your tracking number to see the latest shipping updates."
+>
+  <section style="max-width:700px;margin:0 auto;padding:3rem 1.5rem;text-align:center;">
+    <h1 style="font-size:2rem;margin-bottom:0.5rem;">Track Your Order</h1>
+    <p style="color:#888;margin-bottom:2.5rem;">Enter your tracking number below to get real-time shipping updates.</p>
+
+    <!-- 17track free widget -->
+    <div style="max-width:600px;margin:0 auto;">
+      <div id="yt-track-widget" style="min-height:200px;"></div>
+    </div>
+
+    <div style="margin-top:2.5rem;padding:1.5rem;background:rgba(255,255,255,0.05);border-radius:0.75rem;text-align:left;">
+      <h2 style="font-size:1.1rem;margin-bottom:0.75rem;">Shipping Info</h2>
+      <ul style="list-style:none;padding:0;margin:0;line-height:2;">
+        <li>Ships within the <strong>United States only</strong></li>
+        <li>Orders processed within <strong>1 business day</strong></li>
+        <li>Standard delivery: <strong>2 business days</strong></li>
+        <li>Tracking number sent via <strong>email after shipment</strong></li>
+      </ul>
+    </div>
+
+    <p style="margin-top:2rem;color:#888;font-size:0.9rem;">
+      Issue with your order? Contact us at <a href="mailto:support@vibetestlabs.com">support@vibetestlabs.com</a> - we offer a full refund on any problem orders.
+    </p>
+  </section>
+
+  <script>
+    (function() {
+      var script = document.createElement('script');
+      script.src = 'https://embed.17track.net/en/embed.js';
+      script.async = true;
+      script.onload = function() {
+        if (window.YQV5) {
+          YQV5.trackSingle({
+            YQ_ContainerId: 'yt-track-widget',
+            YQ_Height: 300,
+            YQ_Fc: '0',
+            YQ_Lang: 'en',
+            YQ_NumShow: 1,
+            YQ_CutDate: ''
+          });
+        }
+      };
+      document.head.appendChild(script);
+    })();
+  </script>
+</BaseLayout>
