@@ -385,45 +385,6 @@ export const products: Product[] = [
     ],
     viralReason: "TikTok bedroom glow-up trend made galaxy projectors the must-have room vibe upgrade."
   },
-    {
-    id: "p27",
-    slug: "baby-fox-teether",
-    name: "Douglas Baby Fox Teether Plush Stuffed Animal Toy",
-    brand: "Douglas",
-    category: "Gifts & Cozy",
-    vibeScore: 77,
-    verdict: "A premium baby teether-plush combo that justifies its price through Douglas brand quality, 100% silicone safety, and genuinely adorable woodland design.",
-    verdictBadge: "Hidden Gem",
-    price: "$87.86",
-    priceRange: "$87.86",
-    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/658c81fc4e238c99cb52c5c1a142.jpg?v=1774566813",
-    images: [
-    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/74fae0e24bbaaab23e737c3dcae4.jpg?v=1774566823"
-  ],
-    trending: true,
-    date: "2026-03-27",
-    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/douglas-baby-fox-teether-plush-stuffed-animal-toy?utm_source=aeo&utm_medium=content&utm_campaign=baby-fox-teether",
-    questionHeadline: "Are Premium Baby Teether Toys Worth the Splurge?",
-    answerSnippet: "Yes Ã¢ÂÂ if safety and quality matter to you. The Douglas Fox Teether uses 100% silicone (BPA-free), baby-safe embroidery with no loose parts, and premium plush materials. At $88, it's a splurge vs. $8-15 generic teethers, but the dual comfort + teething function and Douglas brand quality justify it.",
-    problemSection: "Finding a teether that's both safe and comforting Ã¢ÂÂ most are plastic-only or plush-only",
-    solutionSection: "Douglas combines a cuddly plush companion with a 100% silicone teether ring in one product",
-    howToUse: ["Inspect the teether for any packaging residue and wash silicone ring with warm soapy water", "Let baby explore the plush textures and silicone ring naturally", "Chill the silicone ring in the fridge (not freezer) for extra soothing on sore gums", "Spot-clean the plush; hand wash silicone ring regularly"],
-    testResults: [
-      { category: "Safety & Materials", score: 85, summary: "100% silicone teether, baby-safe embroidery, no detachable small parts Ã¢ÂÂ top marks" },
-      { category: "Design Appeal", score: 78, summary: "Charming woodland fox design appeals to both babies and parents Ã¢ÂÂ gift-worthy" },
-      { category: "Functionality", score: 72, summary: "Dual-purpose comfort + teething relief; lightweight enough for baby grip" },
-      { category: "Value", score: 68, summary: "$88 is premium, but Douglas brand quality and safety features justify the investment" }
-    ],
-    pros: ["100% silicone teether ring Ã¢ÂÂ BPA-free, safe", "Baby-safe embroidery Ã¢ÂÂ no loose parts", "Dual comfort + teething function", "Douglas brand quality and reputation", "Charming woodland fox design", "Part of Shy Little Fox collection"],
-    cons: ["$88 is expensive for a teether-plush", "Only one design/color option", "Not machine washable", "Silicone ring is small Ã¢ÂÂ some babies prefer larger surfaces", "Premium price vs. generic alternatives"],
-    finalVerdictSummary: "Worth the splurge for safety-conscious parents and gift-givers. The Douglas brand reputation, 100% silicone, and adorable design make it a standout.",
-    faq: [
-      { question: "Is the teether ring safe for newborns?", answer: "The silicone ring is safe from birth, but the plush should only be used under supervision for babies under 12 months due to standard suffocation risk." },
-      { question: "Can I refrigerate the teether?", answer: "Yes Ã¢ÂÂ chilling the silicone ring in the fridge provides extra soothing relief. Do not freeze it." },
-      { question: "How does Douglas compare to Sophie la Girafe?", answer: "Douglas focuses on plush + teether combos with premium materials. Sophie la Girafe ($25) is a standalone rubber teether. Different products for different needs." }
-    ],
-    viralReason: "Premium baby teethers went viral on parent TikTok as the 'worth the splurge' baby registry item Ã¢ÂÂ safety + cuteness in one."
-  }
-  ];
+    ];
 
 export const categories: string[] = ['All', 'Sleepmaxxing', 'Kitchen & Dining', 'Pets', 'Yard Tools', 'Room Vibes', 'Self Care', 'Gifts & Cozy'];
