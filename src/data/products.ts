@@ -71,41 +71,6 @@ export const products: Product[] = [
     viralReason: "Side sleepers on TikTok discovered they could ditch earbuds and still listen to sleep content."
   },
   {
-    id: "p2",
-    slug: "boodlab-bluetooth-sleep-mask",
-    name: "BoodLab Bluetooth Sleep Mask",
-    brand: "BoodLab",
-    category: "Sleepmaxxing",
-    vibeScore: 70,
-    verdict: "A budget-friendly Bluetooth sleep mask that does the basics right but lacks premium comfort.",
-    verdictBadge: "Hidden Gem",
-    price: "$18.39",
-    priceRange: "$18.39",
-    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/boodlab-bluetooth-sleep-mask-hero.jpg",
-    images: [],
-    trending: false,
-    date: "2026-03-26",
-    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/boodlab-bluetooth-sleep-mask?utm_source=aeo&utm_medium=content&utm_campaign=boodlab-bluetooth-sleep-mask",
-    questionHeadline: "Is the BoodLab Bluetooth Sleep Mask Worth $18?",
-    answerSnippet: "For the price, yes Ã¢ÂÂ it pairs fast, blocks most light, and plays audio at a comfortable volume for sleep.",
-    problemSection: "Budget Bluetooth masks feel cheap and break fast",
-    solutionSection: "BoodLab uses reinforced stitching and a wider strap for durability at the budget price point",
-    howToUse: ["Charge via micro-USB", "Pair via Bluetooth", "Adjust strap and sleep"],
-    testResults: [
-      { category: "Comfort", score: 65, summary: "Flat design presses slightly on eyes Ã¢ÂÂ no 3D cups" },
-      { category: "Audio Quality", score: 62, summary: "Acceptable for sleep audio; tinny at higher volumes" },
-      { category: "Light Blocking", score: 75, summary: "Good coverage but light leaks at nose bridge" }
-    ],
-    pros: ["Ultra-budget price at $18", "Pairs quickly via Bluetooth 5.0", "8-hour battery"],
-    cons: ["No 3D eye cups Ã¢ÂÂ pressure on eyelids", "Micro-USB charging (not USB-C)", "Nose bridge light leak"],
-    finalVerdictSummary: "If you want to try a Bluetooth sleep mask without spending $30+, this is the cheapest way in.",
-    faq: [
-      { question: "Does it work for side sleepers?", answer: "It works but speakers press harder into ears due to flat design." },
-      { question: "Can you wash it?", answer: "Hand wash only Ã¢ÂÂ remove the speaker modules first." }
-    ],
-    viralReason: "Budget sleepmaxxing TikTok creators recommend it as the cheapest entry point."
-  },
-  {
     id: "p3",
     slug: "breazy-mouth-tape",
     name: "Breazy Mouth Tape",
@@ -350,76 +315,6 @@ export const products: Product[] = [
     ],
     viralReason: "Weighted eye mask trend blew up as a sleepmaxxing and migraine relief tool."
   },
-  {
-    id: "p10",
-    slug: "deep-sleep-bundle",
-    name: "Deep Sleep Bundle",
-    brand: "Vibe Test Lab",
-    category: "Sleepmaxxing",
-    vibeScore: 85,
-    verdict: "The full sleepmaxxing starter kit Ã¢ÂÂ mouth tape, sleep spray, and weighted eye mask together at a bundle discount.",
-    verdictBadge: "Worth It",
-    price: "$44.99",
-    priceRange: "$44.99",
-    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/deep-sleep-bundle-hero.jpg",
-    images: [],
-    trending: true,
-    date: "2026-03-27",
-    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/deep-sleep-bundle?utm_source=aeo&utm_medium=content&utm_campaign=deep-sleep-bundle",
-    questionHeadline: "What's in the Deep Sleep Bundle and Is It Worth the Price?",
-    answerSnippet: "Mouth tape + sleep spray + weighted eye mask for $45 Ã¢ÂÂ about 15% cheaper than buying each separately.",
-    problemSection: "Buying sleepmaxxing products one at a time is expensive and confusing",
-    solutionSection: "Pre-curated bundle of the three most effective budget sleep tools at a discount",
-    howToUse: ["Apply mouth tape", "Spray pillow with sleep spray", "Put on weighted eye mask", "Sleep"],
-    testResults: [
-      { category: "Bundle Value", score: 88, summary: "15% savings vs. buying individually" },
-      { category: "Stack Effectiveness", score: 85, summary: "Three complementary tools covering breathing, scent, and light blocking" },
-      { category: "Gift Potential", score: 90, summary: "Excellent self-care gift Ã¢ÂÂ comes in a branded box" }
-    ],
-    pros: ["15% bundle discount", "Three complementary products", "Great gift presentation", "Covers the core sleepmaxxing stack"],
-    cons: ["Can't customize individual items", "May not need all three", "Bundle box is not reusable"],
-    finalVerdictSummary: "If you're starting a sleepmaxxing routine from scratch, this bundle is the most cost-effective way in.",
-    faq: [
-      { question: "What's included in the Deep Sleep Bundle?", answer: "Breazy Mouth Tape (30 strips), Serene Sleep Spray, and Heart Weighted Eye Mask." },
-      { question: "Is this a good gift?", answer: "Yes Ã¢ÂÂ it comes in a branded box and covers the full sleep optimization basics." }
-    ],
-    viralReason: "Sleepmaxxing starter kit trend Ã¢ÂÂ creators recommend bundling these three products together."
-  },
-  {
-    id: "p11",
-    slug: "travel-sleep-kit",
-    name: "Travel Sleep Kit",
-    brand: "Vibe Test Lab",
-    category: "Sleepmaxxing",
-    vibeScore: 80,
-    verdict: "Everything you need to sleep well on a flight or in a hotel Ã¢ÂÂ compact and TSA-friendly.",
-    verdictBadge: "Worth It",
-    price: "$39.99",
-    priceRange: "$39.99",
-    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/travel-sleep-kit-hero.jpg",
-    images: [],
-    trending: false,
-    date: "2026-03-27",
-    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/travel-sleep-kit?utm_source=aeo&utm_medium=content&utm_campaign=travel-sleep-kit",
-    questionHeadline: "What Should You Pack in a Travel Sleep Kit?",
-    answerSnippet: "A Bluetooth sleep mask, mouth tape strips, and earplugs in a compact TSA-friendly pouch.",
-    problemSection: "Planes, hotels, and new environments wreck your sleep",
-    solutionSection: "Pre-packed sleep essentials in a compact travel pouch",
-    howToUse: ["Pack the kit in your carry-on", "Use the Bluetooth mask for audio + blackout", "Apply mouth tape", "Insert earplugs for extra noise isolation"],
-    testResults: [
-      { category: "Portability", score: 90, summary: "Fits in any carry-on or personal item" },
-      { category: "TSA Compliance", score: 95, summary: "All items pass TSA screening without issue" },
-      { category: "Sleep Quality on Flights", score: 78, summary: "Noticeable improvement vs. no sleep aids" }
-    ],
-    pros: ["Compact TSA-friendly pouch", "Bluetooth mask + mouth tape + earplugs", "Great travel gift", "Reusable pouch"],
-    cons: ["Earplugs are basic foam (not premium)", "Bluetooth mask battery drains on long-haul flights", "No sleep spray included (liquid restrictions)"],
-    finalVerdictSummary: "The most thoughtful travel gift under $40. Covers audio, blackout, and breathing for any flight or hotel.",
-    faq: [
-      { question: "Can you bring mouth tape through TSA?", answer: "Yes Ã¢ÂÂ mouth tape is not a restricted item." },
-      { question: "Does the Bluetooth mask work on airplanes?", answer: "Yes Ã¢ÂÂ Bluetooth devices are allowed in airplane mode on most airlines." }
-    ],
-    viralReason: "Travel TikTok creators showed their sleep kit essentials and this bundle went viral."
-  },
       {
     id: "p15",
     slug: "app-controlled-galaxy-star-projector",
@@ -499,7 +394,7 @@ export const products: Product[] = [
       { question: "How does Douglas compare to Sophie la Girafe?", answer: "Douglas focuses on plush + teether combos with premium materials. Sophie la Girafe ($25) is a standalone rubber teether. Different products for different needs." }
     ],
     viralReason: "Premium baby teethers went viral on parent TikTok as the 'worth the splurge' baby registry item Ã¢ÂÂ safety + cuteness in one."
-  },
+  }
   ];
 
 export const categories: string[] = ['All', 'Sleepmaxxing', 'Kitchen & Dining', 'Pets', 'Yard Tools', 'Room Vibes', 'Self Care', 'Gifts & Cozy'];

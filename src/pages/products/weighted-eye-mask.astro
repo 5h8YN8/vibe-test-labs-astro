@@ -29,7 +29,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       "publisher": { "@id": "https://vibe-test-labs.pages.dev#organization" },
       "author": { "@id": "https://vibe-test-labs.pages.dev#author" },
       "mentions": [
-        { "@type": "WebPage", "@id": "https://vibe-test-labs.pages.dev/products/boodlab-bluetooth-sleep-mask" },
+        { "@type": "WebPage", "@id": "https://vibe-test-labs.pages.dev/products/bluetooth-sleep-mask" },
         { "@type": "WebPage", "@id": "https://vibe-test-labs.pages.dev/products/sensory-bed-sheet" },
         { "@type": "WebPage", "@id": "https://vibe-test-labs.pages.dev/category/sleepmaxxing" }
       ],
@@ -218,9 +218,13 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 <!-- §6 Image gallery — uses .product-gallery classes from BaseLayout (1:1 square, mobile-first) -->
 <div class="product-gallery">
   <div class="product-gallery-hero">
-    <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/405229eb4efbaf59d217291953ad.jpg?v=1774539052" width="560" height="560" srcset="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/405229eb4efbaf59d217291953ad.jpg?v=1774539052&width=400 400w, https://cdn.shopify.com/s/files/1/0958/6710/9671/files/405229eb4efbaf59d217291953ad.jpg?v=1774539052&width=560 560w, https://cdn.shopify.com/s/files/1/0958/6710/9671/files/405229eb4efbaf59d217291953ad.jpg?v=1774539052&width=800 800w" sizes="(max-width: 768px) 100vw, 560px" alt="Heart Weighted Eye Mask" loading="eager" />
+    <img src="/images/products/weighted-eye-mask-hero.webp" width="560" height="560" srcset="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/405229eb4efbaf59d217291953ad.jpg?v=1774539052&width=400 400w, https://cdn.shopify.com/s/files/1/0958/6710/9671/files/405229eb4efbaf59d217291953ad.jpg?v=1774539052&width=560 560w, https://cdn.shopify.com/s/files/1/0958/6710/9671/files/405229eb4efbaf59d217291953ad.jpg?v=1774539052&width=800 800w" sizes="(max-width: 768px) 100vw, 560px" alt="Heart Weighted Eye Mask" loading="eager" />
   </div>
   <div class="product-gallery-thumbs">
+    <img src="/images/products/weighted-eye-mask-detail.webp" alt="Do Weighted Eye Masks Actually Help with Sleep and Migraines? detail close-up" loading="lazy"  width="160" height="160" />
+    <img src="/images/products/weighted-eye-mask-lifestyle.webp" alt="Do Weighted Eye Masks Actually Help with Sleep and Migraines? lifestyle shot" loading="lazy"  width="160" height="160" />
+    <img src="/images/products/weighted-eye-mask-flatlay.webp" alt="Do Weighted Eye Masks Actually Help with Sleep and Migraines? flat lay arrangement" loading="lazy"  width="160" height="160" />
+    <img src="/images/products/weighted-eye-mask-benefits.webp" alt="Do Weighted Eye Masks Actually Help with Sleep and Migraines? key benefits" loading="lazy"  width="160" height="160" />
   </div>
 </div>
 
@@ -275,7 +279,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <div>
     <strong style="font-size:.8rem;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.08em;color:var(--muted-foreground);">Skip if you…</strong>
     <ul style="margin:.75rem 0 0;padding-left:1.25rem;">
-      <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);">✗ Need Bluetooth audio in your mask — get the <a href="/products/boodlab-bluetooth-sleep-mask" style="color:var(--primary);">Boodlab Bluetooth Sleep Mask</a> instead</li>
+      <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);">✗ Need Bluetooth audio in your mask — get the <a href="/products/bluetooth-sleep-mask" style="color:var(--primary);">Bluetooth Sleep Mask</a> instead</li>
       <li style="font-size:.875rem;padding:.3rem 0;border-bottom:1px solid rgba(0,0,0,.06);">✗ Find anything touching your face uncomfortable while sleeping</li>
       <li style="font-size:.875rem;padding:.3rem 0;">✗ You're on a tight budget (this is $99 for an eye mask)</li>
     </ul>
@@ -380,7 +384,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 <!-- Also tested / related products -->
 <h2>Also Tested</h2>
 <div class="related-products-grid">
-  <a href="/products/boodlab-bluetooth-sleep-mask" class="related-product-card"><img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/boodlab-hero.jpg" alt="Boodlab Bluetooth Sleep Mask" /><div class="related-product-info"><strong>Boodlab Bluetooth Sleep Mask</strong><span class="verdict-badge verdict-badge-worth-it">Worth It</span></div><span class="related-product-cta">Check It Out</span></a>
   <a href="/products/sensory-bed-sheet" class="related-product-card"><img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/c8c964244033a56b6b83b9274a02.jpg?v=1774538531" alt="Sensory Bed Sheet" /><div class="related-product-info"><strong>Sensory Bed Sheet</strong><span class="verdict-badge verdict-badge-hidden-gem">Hidden Gem</span></div><span class="related-product-cta">Check It Out</span></a>
   <a href="/products/serene-sleep-spray" class="related-product-card"><img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/b1eefa36441da1bc9f0214bd8a02.png?v=1774537981" alt="Serene Sleep Spray" /><div class="related-product-info"><strong>Serene Sleep Spray</strong><span class="verdict-badge verdict-badge-worth-it">Worth It</span></div><span class="related-product-cta">Check It Out</span></a>
 </div><!-- BUYBUTTON_BOTTOM_REMOVED -->
