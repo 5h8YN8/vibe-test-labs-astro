@@ -32,6 +32,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   .verdict { background: #1a1a2e; color: #fff; border-radius: 0.75rem; padding: 1.5rem 1.75rem; margin-top: 2.5rem; }
   .verdict h2 { color: #fff; margin-top: 0; }
   .verdict p { color: rgba(255,255,255,0.85); margin: 0; }
+
+  a.pick-link { display: block; text-decoration: none; color: inherit; border-radius: 0.75rem; transition: transform 0.12s, box-shadow 0.12s; }
+  a.pick-link:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+  a.pick-link .pick { cursor: pointer; }
 </style>
 
 <div class="article-wrap">
@@ -66,6 +70,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
   <h2>The Top Picks</h2>
 
+  <a href="/products/app-controlled-galaxy-star-projector" class="pick-link">
   <div class="pick">
     <div class="pick-top">
       <span class="pick-name">1. App-Controlled Galaxy Star Projector<span class="badge badge-worth">Worth It</span></span>
@@ -74,7 +79,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <p class="pick-price">$62.11</p>
     <p class="pick-why">The highest-scoring birthday gift in the test — and the one that works for literally every age group. Fills any room with a full galaxy ceiling using stars, nebula, and color effects controlled by app or Alexa. Every person who received it set it up the same night. It’s dramatic in a good way, and the novelty sustains because the visuals vary with each use.</p>
   </div>
+  </a>
 
+  <a href="/products/baby-fox-teether" class="pick-link">
   <div class="pick">
     <div class="pick-top">
       <span class="pick-name">2. Baby Fox Teether Set<span class="badge badge-worth">Worth It</span></span>
@@ -83,7 +90,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <p class="pick-price">$87.86</p>
     <p class="pick-why">The best gift for a parent of a new baby. Cute, safe, and actually soothing for teething infants. The fox design photographs well (important for new parent culture), the silicone is food-grade and dishwasher-safe, and the set gives enough variety that parents aren’t reaching for the same teether every time. Also a strong baby shower gift.</p>
   </div>
+  </a>
 
+  <a href="/products/3d-moon-lamp" class="pick-link">
   <div class="pick">
     <div class="pick-top">
       <span class="pick-name">3. 3D Printed Moon Lamp<span class="badge badge-gem">Hidden Gem</span></span>
@@ -92,7 +101,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <p class="pick-price">$92.03</p>
     <p class="pick-why">A beautiful, functional object that gets displayed rather than stored. The 3D-printed lunar surface texture is convincing, the touch-control light cycles through three useful tones, and it works as a night light that’s actually pleasant to have on. Best for anyone who appreciates objects that are both interesting and useful. The price is high but this is a "keep forever" gift.</p>
   </div>
+  </a>
 
+  <a href="https://fwaqf1-er.myshopify.com" class="pick-link">
   <div class="pick">
     <div class="pick-top">
       <span class="pick-name">4. FlameFusion Aromatherapy Diffuser<span class="badge badge-gem">Hidden Gem</span></span>
@@ -101,7 +112,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <p class="pick-price">$103.56</p>
     <p class="pick-why">A candle that isn’t a candle. The flame effect is convincing, the diffuser function fills a room with scent, and the ambient light it produces is genuinely relaxing. Best for adults who like atmosphere but can’t (or won’t) use open flames. A strong pick for people who "have everything" because it’s genuinely something they probably don’t own already.</p>
   </div>
+  </a>
 
+  <a href="/products/stainless-steel-wine-glass" class="pick-link">
   <div class="pick">
     <div class="pick-top">
       <span class="pick-name">5. Stainless Steel Wine Glass<span class="badge badge-gem">Hidden Gem</span></span>
@@ -110,7 +123,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <p class="pick-price">$24.99</p>
     <p class="pick-why">The best budget gift for wine drinkers who spend time outdoors. Shatterproof, vacuum-insulated, and available in Golden, Stainless, and Rose Gold. Works as a practical gift because it solves a real problem (wine glasses break outdoors) with the kind of product people don’t typically buy for themselves. At $24.99 it’s an easy yes.</p>
   </div>
+  </a>
 
+  <a href="/products/bluetooth-sleep-mask" class="pick-link">
   <div class="pick">
     <div class="pick-top">
       <span class="pick-name">6. Bluetooth Sleep Mask<span class="badge badge-gem">Hidden Gem</span></span>
@@ -119,7 +134,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <p class="pick-price">$32.88</p>
     <p class="pick-why">A clever gift for frequent travelers or people who sleep light. Plays audio directly through built-in flat speakers — podcasts, sleep sounds, music — without earbuds. The functional blackout mask + audio device combo is genuinely useful. A good pick for anyone who complains about noise at home or in hotels.</p>
   </div>
+  </a>
 
+  <a href="/products/neon-light-wall-decor" class="pick-link">
   <div class="pick">
     <div class="pick-top">
       <span class="pick-name">7. LED Neon Light Wall Decor<span class="badge badge-gem">Hidden Gem</span></span>
@@ -128,7 +145,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <p class="pick-price">$49.42</p>
     <p class="pick-why">A strong gift for anyone in their teens, 20s, or who cares about their room aesthetic. Pre-shaped neon LED signs are eye-catching, easy to mount, and look good in photos — which matters. Good for college students, new apartment dwellers, and content creators. Limited customization in shape selection, but the price is fair for the atmosphere it creates.</p>
   </div>
+  </a>
 
+  <a href="/products/fluffy-rabbit-plush" class="pick-link">
   <div class="pick">
     <div class="pick-top">
       <span class="pick-name">8. Fluffy Rabbit Plush<span class="badge badge-gem">Hidden Gem</span></span>
@@ -137,6 +156,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <p class="pick-price">$28.98</p>
     <p class="pick-why">An unassuming gift that works for a wider age range than you’d expect. Ultra-soft, photogenic, and comforting. Best for kids (it’s beloved), but also popular with adults who appreciate a tactile comfort object — which describes more people than will admit it. At $28.98 it’s a safe fallback that still feels considered rather than generic.</p>
   </div>
+  </a>
 
   <h2>Who This Guide Is For</h2>
   <p>Anyone buying a birthday gift for someone who already owns "the basics." The Galaxy Projector works for ages 6–60. The Moon Lamp works for anyone who cares about their space. The wine glass and bluetooth sleep mask are practical for adults. And the baby gifts (Fox Teether, Fluffy Rabbit) fill the hardest category: what to give a parent who’s already overwhelmed. These aren’t safe gifts — they’re actually good ones.</p>
