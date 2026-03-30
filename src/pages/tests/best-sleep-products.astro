@@ -32,6 +32,11 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   .verdict { background: #1a1a2e; color: #fff; border-radius: 0.75rem; padding: 1.5rem 1.75rem; margin-top: 2.5rem; }
   .verdict h2 { color: #fff; margin-top: 0; }
   .verdict p { color: rgba(255,255,255,0.85); margin: 0; }
+
+  /* Clickable product picks */
+  a.pick-link { display: block; text-decoration: none; color: inherit; border-radius: 0.75rem; transition: transform 0.12s, box-shadow 0.12s; }
+  a.pick-link:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+  a.pick-link .pick { cursor: pointer; }
 </style>
 
 <div class="article-wrap">
@@ -66,6 +71,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
   <h2>The Top Picks</h2>
 
+  <a href="https://fwaqf1-er.myshopify.com" class="pick-link">
   <div class="pick">
     <div class="pick-top">
       <span class="pick-name">1. Deep Sleep Bundle<span class="badge badge-worth">Worth It</span></span>
@@ -74,7 +80,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <p class="pick-price">$44.99</p>
     <p class="pick-why">The most complete sleep solution we tested. Combines an eye mask, earplugs, and a calming roll-on into one kit — and the bundled routine is what makes it work. Most people see a difference by night three. Best for chronic light sleepers who need a full system, not a single fix.</p>
   </div>
+  </a>
 
+  <a href="/products/restnature-white-noise-machine" class="pick-link">
   <div class="pick">
     <div class="pick-top">
       <span class="pick-name">2. ResNature White Noise Machine<span class="badge badge-worth">Worth It</span></span>
@@ -83,7 +91,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <p class="pick-price">$29.99</p>
     <p class="pick-why">The most consistent performer of the entire test. Drowns out street noise, neighbor conversations, and the internal monologue that keeps you staring at the ceiling. 30 sound options but you'll use three of them. Compact enough for a bedside table or travel bag.</p>
   </div>
+  </a>
 
+  <a href="/products/breazy-mouth-tape" class="pick-link">
   <div class="pick">
     <div class="pick-top">
       <span class="pick-name">3. Breazy Mouth Tape<span class="badge badge-worth">Worth It</span></span>
@@ -92,7 +102,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <p class="pick-price">$22.07</p>
     <p class="pick-why">Sounds bizarre, works surprisingly well. Nasal breathing during sleep is objectively better for oxygen saturation and snoring reduction. The tape is gentle enough that you don’t panic waking up, and it peels off without ripping your lip skin. Give it 5 nights before judging.</p>
   </div>
+  </a>
 
+  <a href="https://fwaqf1-er.myshopify.com" class="pick-link">
   <div class="pick">
     <div class="pick-top">
       <span class="pick-name">4. Travel Sleep Kit<span class="badge badge-worth">Worth It</span></span>
@@ -101,7 +113,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <p class="pick-price">$39.99</p>
     <p class="pick-why">The best option for people who sleep terribly in hotels or on planes. Includes a contoured mask, earplugs, and a compact pouch. The mask design is the reason it scores this high — most cheap masks create pressure on your eyelids. This one doesn’t.</p>
   </div>
+  </a>
 
+  <a href="/products/melatonin-chocolate-kids" class="pick-link">
   <div class="pick">
     <div class="pick-top">
       <span class="pick-name">5. Melatonin Chocolate (Kids Formula)<span class="badge badge-worth">Worth It</span></span>
@@ -110,7 +124,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <p class="pick-price">$49.99</p>
     <p class="pick-why">Don’t let the "kids" label fool you — low-dose melatonin (1–2mg) is what sleep researchers actually recommend. Higher doses cause grogginess. These taste good, the dose is calibrated correctly, and they work within 45 minutes. Best used on a schedule, not randomly.</p>
   </div>
+  </a>
 
+  <a href="/products/sensory-bed-sheet" class="pick-link">
   <div class="pick">
     <div class="pick-top">
       <span class="pick-name">6. Sensory Compression Bed Sheet<span class="badge badge-worth">Worth It</span></span>
@@ -119,7 +135,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <p class="pick-price">$32.99</p>
     <p class="pick-why">A lighter alternative to a full weighted blanket. The gentle compression activates proprioceptive input — basically tells your nervous system to calm down. Excellent for people who run hot but still want the grounding effect of a weighted product.</p>
   </div>
+  </a>
 
+  <a href="/products/weighted-eye-mask" class="pick-link">
   <div class="pick">
     <div class="pick-top">
       <span class="pick-name">7. Weighted Eye Mask<span class="badge badge-worth">Worth It</span></span>
@@ -128,7 +146,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <p class="pick-price">$15.99</p>
     <p class="pick-why">The best $16 you can spend on sleep. The gentle pressure on your eye sockets triggers a calming response, and the total light blackout helps even through city light bleed. Works best combined with the white noise machine.</p>
   </div>
+  </a>
 
+  <a href="/products/serene-sleep-spray" class="pick-link">
   <div class="pick">
     <div class="pick-top">
       <span class="pick-name">8. Serene Sleep Spray<span class="badge badge-gem">Hidden Gem</span></span>
@@ -137,7 +157,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <p class="pick-price">$12.99</p>
     <p class="pick-why">Lavender and chamomile mist for your pillow. Sounds gimmicky, scores better than expected. The scent-triggered relaxation response is real science. At $12.99 it’s an easy add-on to any sleep routine. Doesn’t replace the bigger interventions but pairs well with everything else.</p>
   </div>
+  </a>
 
+  <a href="/products/bluetooth-sleep-mask" class="pick-link">
   <div class="pick">
     <div class="pick-top">
       <span class="pick-name">9. Bluetooth Sleep Mask<span class="badge badge-gem">Hidden Gem</span></span>
@@ -146,7 +168,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <p class="pick-price">$32.88</p>
     <p class="pick-why">Plays your sleep playlist or white noise directly through flat speakers inside the mask. Useful for people who hate earbuds but want audio feedback. The audio quality is mediocre but functional. Loses points for the charging hassle — you have to remember to charge it every few days.</p>
   </div>
+  </a>
 
+  <a href="/products/melatonin-gummies" class="pick-link">
   <div class="pick">
     <div class="pick-top">
       <span class="pick-name">10. Melatonin Gummies<span class="badge badge-gem">Hidden Gem</span></span>
@@ -155,6 +179,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <p class="pick-price">$13.49</p>
     <p class="pick-why">Standard melatonin gummies — they work but nothing special distinguishes them from any pharmacy version. Affordable entry point if you’ve never tried melatonin before. Step up to the Kids Chocolate formula once you confirm melatonin works for you.</p>
   </div>
+  </a>
 
   <h2>Who This Guide Is For</h2>
   <p>If you lie awake replaying conversations, scrolling doom-loops past midnight, or waking at 3am with your brain fully online — this guide is for you. These products work best as a layered system rather than individual silver bullets. Start with the white noise machine and weighted eye mask, add mouth tape week two, and build from there. Sleep hygiene compounds.</p>
