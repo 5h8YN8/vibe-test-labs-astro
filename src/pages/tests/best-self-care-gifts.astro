@@ -32,6 +32,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   .verdict { background: #1a1a2e; color: #fff; border-radius: 0.75rem; padding: 1.5rem 1.75rem; margin-top: 2.5rem; }
   .verdict h2 { color: #fff; margin-top: 0; }
   .verdict p { color: rgba(255,255,255,0.85); margin: 0; }
+
+  a.pick-link { display: block; text-decoration: none; color: inherit; border-radius: 0.75rem; transition: transform 0.12s, box-shadow 0.12s; }
+  a.pick-link:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+  a.pick-link .pick { cursor: pointer; }
 </style>
 
 <div class="article-wrap">
@@ -66,6 +70,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
   <h2>The Top Picks</h2>
 
+  <a href="https://fwaqf1-er.myshopify.com" class="pick-link">
   <div class="pick">
     <div class="pick-top">
       <span class="pick-name">1. Wireless LED Face Mask<span class="badge badge-worth">Worth It</span></span>
@@ -74,7 +79,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <p class="pick-price">$69.99</p>
     <p class="pick-why">The most gift-worthy product in the entire test. Red, blue, and infrared LED light therapy addresses acne, inflammation, and collagen production. It’s wireless, so you can use it while watching TV. The ritual of wearing it feels luxurious enough to maintain. Results on skin texture were measurable after two weeks of consistent use.</p>
   </div>
+  </a>
 
+  <a href="/products/weighted-eye-mask" class="pick-link">
   <div class="pick">
     <div class="pick-top">
       <span class="pick-name">2. Weighted Eye Mask<span class="badge badge-worth">Worth It</span></span>
@@ -83,7 +90,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <p class="pick-price">$15.99</p>
     <p class="pick-why">The best budget self-care gift in this guide. Gentle bead pressure on the eye area mimics the feel of a professional facial treatment and promotes relaxation. Works for meditation, napping, or post-screen eye tension. No batteries, no apps, nothing to charge. At $15.99 it’s the easiest yes in this list.</p>
   </div>
+  </a>
 
+  <a href="/products/ems-scalp-massager" class="pick-link">
   <div class="pick">
     <div class="pick-top">
       <span class="pick-name">3. EMS Scalp Massager<span class="badge badge-gem">Hidden Gem</span></span>
@@ -92,7 +101,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <p class="pick-price">$61.76</p>
     <p class="pick-why">Under-the-radar self-care tech. The electric scalp massage improves circulation and relieves tension in a way that feels unexpectedly good — almost meditative. Best gifted to someone who works at a desk all day. Visible hair growth improvement after consistent use is a bonus. The "hidden gem" designation is earned.</p>
   </div>
+  </a>
 
+  <a href="/products/cooling-gel-eye-mask" class="pick-link">
   <div class="pick">
     <div class="pick-top">
       <span class="pick-name">4. Cooling Gel Eye Mask<span class="badge badge-gem">Hidden Gem</span></span>
@@ -101,7 +112,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <p class="pick-price">$43.18</p>
     <p class="pick-why">A refrigerator staple for anyone who loves a spa facial. The cooling gel reduces puffiness fast and the eye contour shape fits comfortably. Loses points because it needs to be chilled to work at its best — which adds friction to the routine. That said, people who commit to keeping it cold love it.</p>
   </div>
+  </a>
 
+  <a href="/products/scalp-massager-comb" class="pick-link">
   <div class="pick">
     <div class="pick-top">
       <span class="pick-name">5. Scalp Massager Comb<span class="badge badge-gem">Hidden Gem</span></span>
@@ -110,7 +123,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <p class="pick-price">$85.53</p>
     <p class="pick-why">A more advanced version of the EMS massager — this one functions as both a scalp massager and a styling tool. The vibration nodes are deeper and the larger coverage area makes sessions faster. Priced higher than it needs to be, but the build quality justifies part of the premium. Best for someone already invested in a hair care routine.</p>
   </div>
+  </a>
 
+  <a href="/products/red-light-therapy-device" class="pick-link">
   <div class="pick">
     <div class="pick-top">
       <span class="pick-name">6. Red Light Therapy Device<span class="badge badge-gem">Hidden Gem</span></span>
@@ -119,6 +134,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <p class="pick-price">$107.83</p>
     <p class="pick-why">The science of red light therapy is legitimate. The results at home are slower and more subtle than clinical versions, which is the main drawback. At $107.83 the bar is high. Results require consistent use for 8+ weeks before they’re clearly visible. Gift this only to someone who will actually stick with a routine — it’s not instant-gratification self-care.</p>
   </div>
+  </a>
 
   <h2>Who This Guide Is For</h2>
   <p>These picks are for people who want self-care gifts that go beyond a bath set or candle — something that actually does something. The LED face mask and scalp massager are best for people who enjoy ritual and routine. The eye masks (weighted and cooling) work for anyone who deals with screen fatigue, insomnia, or tension. At every price point, the goal is the same: something that gets used, not shelved.</p>
