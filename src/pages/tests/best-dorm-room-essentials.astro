@@ -32,6 +32,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   .verdict { background: #1a1a2e; color: #fff; border-radius: 0.75rem; padding: 1.5rem 1.75rem; margin-top: 2.5rem; }
   .verdict h2 { color: #fff; margin-top: 0; }
   .verdict p { color: rgba(255,255,255,0.85); margin: 0; }
+
+  a.pick-link { display: block; text-decoration: none; color: inherit; border-radius: 0.75rem; transition: transform 0.12s, box-shadow 0.12s; }
+  a.pick-link:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+  a.pick-link .pick { cursor: pointer; }
 </style>
 
 <div class="article-wrap">
@@ -66,6 +70,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
   <h2>The Top Picks</h2>
 
+  <a href="/products/app-controlled-galaxy-star-projector" class="pick-link">
   <div class="pick">
     <div class="pick-top">
       <span class="pick-name">1. App-Controlled Galaxy Star Projector<span class="badge badge-worth">Worth It</span></span>
@@ -74,7 +79,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <p class="pick-price">$62.11</p>
     <p class="pick-why">The highest-scoring product in all our dorm room testing. Fills your ceiling with a full galaxy — stars, nebula clouds, and color-shifting effects — controlled via app or Alexa voice commands. The atmosphere impact is genuinely stunning. Setup takes five minutes. The novelty doesn’t wear off the way you’d expect, because the visuals are different every time you turn it on.</p>
   </div>
+  </a>
 
+  <a href="/products/wifi-neon-light-strip" class="pick-link">
   <div class="pick">
     <div class="pick-top">
       <span class="pick-name">2. WiFi Neon Light Strip<span class="badge badge-gem">Hidden Gem</span></span>
@@ -83,7 +90,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <p class="pick-price">$105.06</p>
     <p class="pick-why">The most versatile ambiance tool in the test. Runs along desk edges, bed frames, shelves — anywhere you can run a strip. App-controlled color and music sync means it reacts to what you’re playing. At $105 it’s the priciest strip on the market, but the build quality and color accuracy are noticeably better than cheaper alternatives.</p>
   </div>
+  </a>
 
+  <a href="/products/sensory-bed-sheet" class="pick-link">
   <div class="pick">
     <div class="pick-top">
       <span class="pick-name">3. Sensory Compression Bed Sheet<span class="badge badge-worth">Worth It</span></span>
@@ -92,7 +101,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <p class="pick-price">$32.99</p>
     <p class="pick-why">An underrated dorm essential. The gentle compression creates a grounding sensation that’s especially helpful during the anxiety-heavy early weeks of college. Doesn’t trap heat like a weighted blanket. Works as a regular fitted sheet so there’s no awkward setup. Most people who try it don’t want to switch back.</p>
   </div>
+  </a>
 
+  <a href="https://fwaqf1-er.myshopify.com" class="pick-link">
   <div class="pick">
     <div class="pick-top">
       <span class="pick-name">4. FlameFusion Aromatherapy Diffuser<span class="badge badge-worth">Worth It</span></span>
@@ -101,7 +112,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <p class="pick-price">$103.56</p>
     <p class="pick-why">A flame-effect diffuser that looks like a real candle but runs on water and essential oils. In a dorm where open flames are prohibited, this fills the gap. The ambient light it produces is warm and flickering — genuinely relaxing for study sessions. Loses a few points for the ongoing oil cost, but the base unit is a solid investment.</p>
   </div>
+  </a>
 
+  <a href="/products/3d-moon-lamp" class="pick-link">
   <div class="pick">
     <div class="pick-top">
       <span class="pick-name">5. 3D Printed Moon Lamp<span class="badge badge-gem">Hidden Gem</span></span>
@@ -110,7 +123,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <p class="pick-price">$92.03</p>
     <p class="pick-why">A beautiful object that doubles as functional lighting. Touch control cycles through warm white, cool white, and yellow tones. The 3D-printed lunar texture is convincing enough that guests consistently comment on it. At $92 it’s not cheap, but it’s also the kind of thing that follows you out of the dorm and into every apartment for the next decade.</p>
   </div>
+  </a>
 
+  <a href="/products/neon-light-wall-decor" class="pick-link">
   <div class="pick">
     <div class="pick-top">
       <span class="pick-name">6. LED Neon Light Wall Decor<span class="badge badge-gem">Hidden Gem</span></span>
@@ -119,7 +134,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <p class="pick-price">$49.42</p>
     <p class="pick-why">Pre-shaped neon LED signs are a dorm room staple — and this one has better color depth than most at the price. Multiple sign shapes available. Easy wall mounting with no drilling. Loses points for limited customization (you get what shape they offer) but at $49 it’s the most affordable way to add a neon aesthetic.</p>
   </div>
+  </a>
 
+  <a href="/products/sunset-rainbow-projector" class="pick-link">
   <div class="pick">
     <div class="pick-top">
       <span class="pick-name">7. USB Sunset Rainbow Projector<span class="badge badge-gem">Hidden Gem</span></span>
@@ -128,6 +145,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <p class="pick-price">$25.50</p>
     <p class="pick-why">The budget pick for anyone who wants a projector effect without the Galaxy Projector’s price. Projects a soft rainbow gradient across the room — pleasant for a study background, not as immersive as the star projector. Works via USB so there are no batteries to replace. The effect is atmospheric but limited. A solid starting point before upgrading.</p>
   </div>
+  </a>
 
   <h2>Who This Guide Is For</h2>
   <p>Incoming college students, people moving into their first apartment, and anyone who has stared at a beige wall long enough. These products don’t require permanent installation — they’re all plug-in, removable, and renter-friendly. The galaxy projector and WiFi strip do the most work per square foot. Start there and build outward.</p>
