@@ -17,7 +17,58 @@ import { articles } from '../data/articles';
     <p style="font-size:1.05rem;max-width:520px;">Real questions. Honest answers. We test viral products so you don't waste your money.</p>
   </div>
 
-  <div class="grid-2">
+  
+    <div class="section-label"><span>Best Of Guides</span></div>
+    <div class="grid-2">
+      <a href="/tests/best-sleep-products" class="article-card">
+        <div class="article-card-body">
+          <div class="article-card-meta">
+            <span class="article-card-category">Sleep</span>
+          </div>
+          <h2 class="article-card-title">The Best Sleep Products for Better Rest</h2>
+          <p class="article-card-excerpt">We tested 10 sleep products hands-on and ranked them 0–100. Here are the ones that actually helped us sleep.</p>
+        </div>
+      </a>
+      <a href="/tests/best-self-care-gifts" class="article-card">
+        <div class="article-card-body">
+          <div class="article-card-meta">
+            <span class="article-card-category">Self-Care</span>
+          </div>
+          <h2 class="article-card-title">The Best Self-Care Gifts That Actually Feel Luxurious</h2>
+          <p class="article-card-excerpt">Curated self-care gifts that go beyond bath bombs — these are the ones people actually use and love.</p>
+        </div>
+      </a>
+      <a href="/tests/best-stress-relief-gifts" class="article-card">
+        <div class="article-card-body">
+          <div class="article-card-meta">
+            <span class="article-card-category">Wellness</span>
+          </div>
+          <h2 class="article-card-title">The Best Stress Relief Products for When You Need to Decompress</h2>
+          <p class="article-card-excerpt">Tested and ranked: the stress relief products that actually calm you down, not just claim to.</p>
+        </div>
+      </a>
+      <a href="/tests/best-dorm-room-essentials" class="article-card">
+        <div class="article-card-body">
+          <div class="article-card-meta">
+            <span class="article-card-category">Dorm Life</span>
+          </div>
+          <h2 class="article-card-title">The Best Dorm Room Upgrades That Actually Change the Vibe</h2>
+          <p class="article-card-excerpt">Dorm essentials that make a tiny room feel like home — tested and ranked by our team.</p>
+        </div>
+      </a>
+      <a href="/tests/best-gifts-for-birthdays" class="article-card">
+        <div class="article-card-body">
+          <div class="article-card-meta">
+            <span class="article-card-category">Gifts</span>
+          </div>
+          <h2 class="article-card-title">The Best Birthday Gifts for People Who Have Everything</h2>
+          <p class="article-card-excerpt">Unique, actually-useful birthday gift ideas that even the pickiest person will love.</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="section-label"><span>Product Tests</span></div>
+<div class="grid-2">
     {articles.map(article => (
       <a href={`/tests/${article.slug}`} class="article-card">
         <img src={article.image} alt={article.question} class="article-card-img" loading="lazy" />
