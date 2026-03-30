@@ -46,8 +46,13 @@ export const products: Product[] = [
     verdictBadge: "Hidden Gem",
     price: "$32.88",
     priceRange: "$32.88",
-    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/bluetooth-sleep-mask-hero.jpg",
-    images: [],
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/7ef5c83e41dcb3fad36ea852e061.jpg?v=1774457697",
+    images: [
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/db93e7604fcb94a7c4cb4d049c06.jpg?v=1774457707",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/400603624f3f872b4b28ebb15680.jpg?v=1774457717",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/537c1a7945ceb34d79d0cd7f3427.jpg?v=1774457728",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/03172ec44cd89d89a10df57381fa.jpg?v=1774457738"
+  ],
     trending: true,
     date: "2026-03-26",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/bluetooth-sleep-mask?utm_source=aeo&utm_medium=content&utm_campaign=bluetooth-sleep-mask",
@@ -81,8 +86,13 @@ export const products: Product[] = [
     verdictBadge: "Worth It",
     price: "$22.07",
     priceRange: "$22.07",
-    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/06459f6b49a5ae647200169730bb.png",
-    images: [],
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/breazy-mouth-tape-for-sleep-packaging.webp?v=1774715707",
+    images: [
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/breazy-mouth-tape-for-sleep-hero.webp?v=1774715725",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/breazy-mouth-tape-for-sleep-benefits.webp?v=1774715725",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/breazy-mouth-tape-for-sleep-lifestyle.webp?v=1774715725",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/breazy-mouth-tape-for-sleep-scale.webp?v=1774715725"
+  ],
     trending: true,
     date: "2026-03-27",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/breazy-mouth-tape?utm_source=aeo&utm_medium=content&utm_campaign=breazy-mouth-tape",
@@ -116,8 +126,10 @@ export const products: Product[] = [
     verdictBadge: "Hidden Gem",
     price: "$12.99",
     priceRange: "$12.99",
-    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/serene-sleep-spray-hero.jpg",
-    images: [],
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/b1eefa36441da1bc9f0214bd8a02.png?v=1774537981",
+    images: [
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/4f2e20144be5bda42acf98a1f2fa.png?v=1774537992"
+  ],
     trending: false,
     date: "2026-03-27",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/serene-sleep-spray?utm_source=aeo&utm_medium=content&utm_campaign=serene-sleep-spray",
@@ -151,8 +163,10 @@ export const products: Product[] = [
     verdictBadge: "Worth It",
     price: "$29.99",
     priceRange: "$29.99",
-    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/restnature-white-noise-hero.jpg",
-    images: [],
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/6d6c25a84009a3b892e2a7aff090.jpg?v=1774538017",
+    images: [
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/0e5b039c4ec19b73d9016663c831.jpg?v=1774538028"
+  ],
     trending: true,
     date: "2026-03-27",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/restnature-white-noise-machine?utm_source=aeo&utm_medium=content&utm_campaign=restnature-white-noise-machine",
@@ -186,8 +200,10 @@ export const products: Product[] = [
     verdictBadge: "Worth It",
     price: "$32.99",
     priceRange: "$32.99",
-    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/sensory-bed-sheet-hero.jpg",
-    images: [],
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/c8c964244033a56b6b83b9274a02.jpg?v=1774538531",
+    images: [
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/2ad9132446f98af710c953940cf3.jpg?v=1774538532"
+  ],
     trending: true,
     date: "2026-03-27",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/sensory-bed-sheet?utm_source=aeo&utm_medium=content&utm_campaign=sensory-bed-sheet",
@@ -221,8 +237,10 @@ export const products: Product[] = [
     verdictBadge: "Hidden Gem",
     price: "$13.49",
     priceRange: "$13.49",
-    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/melatonin-gummies-hero.jpg",
-    images: [],
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/b9f913854dc5bb12350191234064.jpg?v=1774538918",
+    images: [
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/87b4fd5e46a888899d48a28a03c5.jpg?v=1774538930"
+  ],
     trending: false,
     date: "2026-03-27",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/melatonin-gummies?utm_source=aeo&utm_medium=content&utm_campaign=melatonin-gummies",
@@ -256,8 +274,12 @@ export const products: Product[] = [
     verdictBadge: "Hidden Gem",
     price: "$12.59",
     priceRange: "$12.59",
-    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/animal-headband-sleep-mask-hero.jpg",
-    images: [],
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/764e8f344d6496bd83f92900213d.png?v=1774539012",
+    images: [
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/35cfcbf84bc688c3745be7fffd40.png?v=1774539013",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/506270b7433e8ed2a7beb1db04fe.png?v=1774539023",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/e3b325b048f09fe67b204d4d30d9.png?v=1774539034"
+  ],
     trending: false,
     date: "2026-03-27",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/animal-headband-sleep-mask?utm_source=aeo&utm_medium=content&utm_campaign=animal-headband-sleep-mask",
@@ -291,8 +313,10 @@ export const products: Product[] = [
     verdictBadge: "Worth It",
     price: "$15.99",
     priceRange: "$15.99",
-    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/weighted-eye-mask-hero.jpg",
-    images: [],
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/405229eb4efbaf59d217291953ad.jpg?v=1774539052",
+    images: [
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/f75d50934b72a25c22dd2af33aae.jpg?v=1774539062"
+  ],
     trending: true,
     date: "2026-03-27",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/weighted-eye-mask?utm_source=aeo&utm_medium=content&utm_campaign=weighted-eye-mask",
@@ -326,8 +350,13 @@ export const products: Product[] = [
     verdictBadge: "Worth It",
     price: "$62.11",
     priceRange: "$62.11",
-    image: "/images/app-controlled-galaxy-star-projector/hero.webp",
-    images: [],
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/app-controlled-galaxy-star-projector-detail.webp?v=1774805933",
+    images: [
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/app-controlled-galaxy-star-projector-hero.webp?v=1774805933",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/app-controlled-galaxy-star-projector-benefits.webp?v=1774805933",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/app-controlled-galaxy-star-projector-flatlay.webp?v=1774805933",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/app-controlled-galaxy-star-projector-lifestyle.webp?v=1774805923"
+  ],
     trending: true,
     date: "2026-03-27",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/app-controlled-star-projector-with-rotating-lights?utm_source=aeo&utm_medium=content&utm_campaign=app-controlled-galaxy-star-projector",
@@ -369,8 +398,8 @@ export const products: Product[] = [
     priceRange: "$87.86",
     image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/658c81fc4e238c99cb52c5c1a142.jpg?v=1774566813",
     images: [
-      "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/74fae0e24bbaaab23e737c3dcae4.jpg?v=1774566823"
-    ],
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/74fae0e24bbaaab23e737c3dcae4.jpg?v=1774566823"
+  ],
     trending: true,
     date: "2026-03-27",
     affiliateUrl: "https://fwaqf1-er.myshopify.com/products/douglas-baby-fox-teether-plush-stuffed-animal-toy?utm_source=aeo&utm_medium=content&utm_campaign=baby-fox-teether",
