@@ -1,279 +1,73 @@
-export interface TestResult {
-  category: string;
-  score: number;
-  summary: string;
-}
-
 export interface Product {
   id: string;
   slug: string;
   name: string;
-  brand: string;
   category: string;
   vibeScore: number;
   verdict: string;
   verdictBadge: "Worth It" | "Overhyped" | "Hidden Gem";
   price: string;
-  priceRange: string;
   image: string;
   images: string[];
   trending: boolean;
   date: string;
+  brand: string;
   affiliateUrl: string;
-  // Detailed review fields
-  questionHeadline: string;
-  answerSnippet: string;
-  problemSection: string;
-  solutionSection: string;
-  howToUse: string[];
-  testResults: TestResult[];
-  pros: string[];
-  cons: string[];
-  finalVerdictSummary: string;
-  faq: { question: string; answer: string }[];
-  viralReason: string;
 }
 
 export const products: Product[] = [
   {
     id: "p1",
-    slug: "bluetooth-sleep-mask",
-    name: "Bluetooth Sleep Mask",
+    slug: "3-in-1-cat-steam-brush",
+    name: "3-in-1 Steam Pet Grooming Brush",
+    category: "Pets",
+    vibeScore: 86,
+    verdict: "The 3-in-1 Steam Pet Grooming Brush earns its price for indoor cat owners dealing with constant shedding and weekly hairballs. Soft silicone bristles and gentle steam loosen fur without scraping skin — a real upgrade over metal deshedding tools. Used 3-4 times a week it visibly reduces the fur your cat swallows. At $34.99, it delivers.",
+    verdictBadge: "Worth It",
+    price: "$34.00",
     brand: "Vibe Test Lab",
-    category: "Sleepmaxxing",
-    vibeScore: 74,
-    verdict: "A genuinely useful sleep upgrade for side sleepers who listen to audio at night.",
-    verdictBadge: "Hidden Gem",
-    price: "$32.88",
-    priceRange: "$32.88",
-    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/7ef5c83e41dcb3fad36ea852e061.jpg?v=1774457697",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/3-in-1-steam-pet-grooming-brush-detail.webp?v=1774715850",
     images: [
-    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/db93e7604fcb94a7c4cb4d049c06.jpg?v=1774457707",
-    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/400603624f3f872b4b28ebb15680.jpg?v=1774457717",
-    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/537c1a7945ceb34d79d0cd7f3427.jpg?v=1774457728",
-    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/03172ec44cd89d89a10df57381fa.jpg?v=1774457738"
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/3-in-1-steam-pet-grooming-brush-hero.webp?v=1774715850",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/3-in-1-steam-pet-grooming-brush-benefits.webp?v=1774715850",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/3-in-1-steam-pet-grooming-brush-flatlay.webp?v=1774715850",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/3-in-1-steam-pet-grooming-brush-lifestyle.webp?v=1774715850"
   ],
     trending: true,
-    date: "2026-03-26",
-    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/bluetooth-sleep-mask?utm_source=aeo&utm_medium=content&utm_campaign=bluetooth-sleep-mask",
-    questionHeadline: "Do Bluetooth Sleep Masks Actually Work for Side Sleepers?",
-    answerSnippet: "Yes Ã¢ÂÂ flat built-in speakers eliminate earbud pressure, 3D contoured cups block light without touching your eyelids.",
-    problemSection: "Side sleepers can't wear earbuds comfortably",
-    solutionSection: "Flat speakers sit flush against the mask Ã¢ÂÂ no pressure on ears when you roll over",
-    howToUse: ["Charge via USB-C", "Pair with your phone's Bluetooth", "Adjust strap and sleep"],
-    testResults: [
-      { category: "Comfort", score: 78, summary: "3D contoured cups avoid eye pressure; strap holds on side sleepers" },
-      { category: "Audio Quality", score: 68, summary: "Adequate for podcasts and white noise; lacks bass for music" },
-      { category: "Light Blocking", score: 82, summary: "Full blackout when nose bridge is adjusted correctly" }
-    ],
-    pros: ["No earbud pressure for side sleepers", "3D contoured cups block light fully", "10-hour battery life"],
-    cons: ["Audio quality is mediocre for music", "Strap loosens slightly after 6+ hours", "Hand wash only"],
-    finalVerdictSummary: "If you fall asleep to podcasts, white noise, or audiobooks, this mask solves the earbud-in-bed problem for $33.",
-    faq: [
-      { question: "Can you hear an alarm through the sleep mask?", answer: "Yes Ã¢ÂÂ the speakers are loud enough for alarms but quiet enough for a partner." },
-      { question: "Does it work with all phones?", answer: "Any phone with Bluetooth 5.0+ pairs reliably." }
-    ],
-    viralReason: "Side sleepers on TikTok discovered they could ditch earbuds and still listen to sleep content."
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/3-in-1-cat-steam-brush?utm_source=aeo&utm_medium=content&utm_campaign=3-in-1-cat-steam-brush"
+  },
+  {
+    id: "p2",
+    slug: "3d-moon-lamp",
+    name: "3D Printed Moon Lamp - Jupiter Night Light",
+    category: "Room Vibes",
+    vibeScore: 76,
+    verdict: "The 3D Printed Moon Lamp is absolutely worth it if you want a stunning, conversation-starting décor piece that also functions as a soft night light. This is no gimmick—it’s a thoughtfully designed accent piece with realistic crater texture that rivals premium decorative lighting costing twice as much. Available in multiple sizes (8–20cm) and two variant types: simple 2-color manual for minimalists, and versatile 16-color remote for those who want control. USB-powered, long-lasting (10,000+ hours), and fits any aesthetic. Perfect for space enthusiasts, bedroom makeovers, and thoughtful gifting.",
+    verdictBadge: "Hidden Gem",
+    price: "$90.00",
+    brand: "Vibe Test Lab",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/4f268f7748ab9a6ec26a5ae2e6df.jpg?v=1774566819",
+    images: [
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/3d4cbea843fbbfe0af3cc704dd71.jpg?v=1774566829",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/c87594614d79a65a7f21f565b7e0.jpg?v=1774566839",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/f3bd7bae4cc1b8ae573a7914984f.jpg?v=1774566849",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/7add1faa47f3a39391394be75326.jpg?v=1774566860"
+  ],
+    trending: true,
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/3d-printed-moon-lamp-jupiter-night-light?utm_source=aeo&utm_medium=content&utm_campaign=3d-moon-lamp"
   },
   {
     id: "p3",
-    slug: "breazy-mouth-tape",
-    name: "Breazy Mouth Tape",
-    brand: "Breazy",
-    category: "Sleepmaxxing",
-    vibeScore: 81,
-    verdict: "The simplest, cheapest sleepmaxxing hack that actually works Ã¢ÂÂ at under $1 per strip.",
-    verdictBadge: "Worth It",
-    price: "$22.07",
-    priceRange: "$22.07",
-    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/breazy-mouth-tape-for-sleep-packaging.webp?v=1774715707",
-    images: [
-    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/breazy-mouth-tape-for-sleep-hero.webp?v=1774715725",
-    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/breazy-mouth-tape-for-sleep-benefits.webp?v=1774715725",
-    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/breazy-mouth-tape-for-sleep-lifestyle.webp?v=1774715725",
-    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/breazy-mouth-tape-for-sleep-scale.webp?v=1774715725"
-  ],
-    trending: true,
-    date: "2026-03-27",
-    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/breazy-mouth-tape?utm_source=aeo&utm_medium=content&utm_campaign=breazy-mouth-tape",
-    questionHeadline: "Does Mouth Tape Actually Help You Sleep Better?",
-    answerSnippet: "Yes Ã¢ÂÂ forces nasal breathing which reduces snoring, dry mouth, and morning grogginess.",
-    problemSection: "Mouth breathing during sleep causes snoring and dry mouth",
-    solutionSection: "Gentle adhesive strips hold lips closed to promote nasal breathing all night",
-    howToUse: ["Clean and dry lips", "Peel strip from backing", "Apply vertically over closed lips", "Remove in morning"],
-    testResults: [
-      { category: "Adhesion", score: 85, summary: "Stays on all night without irritating skin" },
-      { category: "Comfort", score: 78, summary: "Gentle enough for sensitive skin but firm hold" },
-      { category: "Effectiveness", score: 82, summary: "Noticeably reduced snoring and dry mouth" }
-    ],
-    pros: ["Under $1 per strip", "Stays on all night", "Noticeably reduces snoring", "Gentle on sensitive skin"],
-    cons: ["Takes 2-3 nights to get used to", "Not for people with nasal congestion", "Single-use strips"],
-    finalVerdictSummary: "The cheapest sleepmaxxing upgrade that delivers real results. Under $1/night for better breathing.",
-    faq: [
-      { question: "Is mouth taping safe?", answer: "For healthy adults without breathing issues, yes. Consult a doctor if you have sleep apnea." },
-      { question: "Can you still breathe if you need to?", answer: "Yes Ã¢ÂÂ the strips are designed so you can open your mouth in an emergency." }
-    ],
-    viralReason: "TikTok sleepmaxxing trend made mouth taping mainstream."
-  },
-  {
-    id: "p4",
-    slug: "serene-sleep-spray",
-    name: "Serene Sleep Spray",
-    brand: "Serene",
-    category: "Sleepmaxxing",
-    vibeScore: 76,
-    verdict: "A calming lavender pillow spray that helps create a consistent wind-down ritual.",
-    verdictBadge: "Hidden Gem",
-    price: "$12.99",
-    priceRange: "$12.99",
-    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/b1eefa36441da1bc9f0214bd8a02.png?v=1774537981",
-    images: [
-    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/4f2e20144be5bda42acf98a1f2fa.png?v=1774537992"
-  ],
-    trending: false,
-    date: "2026-03-27",
-    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/serene-sleep-spray?utm_source=aeo&utm_medium=content&utm_campaign=serene-sleep-spray",
-    questionHeadline: "Do Pillow Sprays Actually Help You Fall Asleep?",
-    answerSnippet: "They help by anchoring a consistent bedtime cue Ã¢ÂÂ your brain associates the scent with sleep over time.",
-    problemSection: "No consistent signal telling your brain it's time to sleep",
-    solutionSection: "Lavender-chamomile scent creates a Pavlovian wind-down cue",
-    howToUse: ["Shake bottle", "Spray 2-3 pumps on pillow", "Let dry 30 seconds", "Lie down and breathe"],
-    testResults: [
-      { category: "Scent Quality", score: 82, summary: "Natural lavender, not synthetic Ã¢ÂÂ fades gently over 4 hours" },
-      { category: "Sleep Onset", score: 72, summary: "Subjectively faster sleep after 1 week of consistent use" },
-      { category: "Value", score: 78, summary: "~100 sprays per bottle at $0.13 per use" }
-    ],
-    pros: ["Natural lavender-chamomile blend", "~100 sprays per bottle", "Creates consistent bedtime ritual", "Non-staining formula"],
-    cons: ["Effects are subtle Ã¢ÂÂ not a sedative", "Scent preference is personal", "Takes a week of use to notice pattern"],
-    finalVerdictSummary: "Not magic Ã¢ÂÂ but as a bedtime ritual anchor, it genuinely helps over time. Great value at $0.13/night.",
-    faq: [
-      { question: "Does lavender spray actually work for sleep?", answer: "Research supports lavender aromatherapy as a mild sleep aid that reduces time to fall asleep." },
-      { question: "Will it stain my pillowcase?", answer: "No Ã¢ÂÂ the formula is clear and non-staining." }
-    ],
-    viralReason: "Sleepmaxxing creators stack it with mouth tape and sleep masks for the full routine."
-  },
-  {
-    id: "p5",
-    slug: "restnature-white-noise-machine",
-    name: "RestNature White Noise Machine",
-    brand: "RestNature",
-    category: "Sleepmaxxing",
-    vibeScore: 83,
-    verdict: "The best budget white noise machine with genuinely non-looping sounds.",
-    verdictBadge: "Worth It",
-    price: "$29.99",
-    priceRange: "$29.99",
-    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/6d6c25a84009a3b892e2a7aff090.jpg?v=1774538017",
-    images: [
-    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/0e5b039c4ec19b73d9016663c831.jpg?v=1774538028"
-  ],
-    trending: true,
-    date: "2026-03-27",
-    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/restnature-white-noise-machine?utm_source=aeo&utm_medium=content&utm_campaign=restnature-white-noise-machine",
-    questionHeadline: "What's the Best White Noise Machine Under $30?",
-    answerSnippet: "The RestNature Ã¢ÂÂ 30 non-looping sounds, memory function, and a compact design that travels well.",
-    problemSection: "City noise, partner snoring, and inconsistent sleep environment",
-    solutionSection: "Consistent sound masking that blocks disturbances without headphones",
-    howToUse: ["Plug in or use USB power", "Select one of 30 sounds", "Adjust volume", "Set optional timer"],
-    testResults: [
-      { category: "Sound Quality", score: 88, summary: "Non-looping sounds Ã¢ÂÂ no detectable repeat pattern" },
-      { category: "Volume Range", score: 80, summary: "Quiet enough for a baby room, loud enough to mask traffic" },
-      { category: "Build & Design", score: 78, summary: "Compact, minimal Ã¢ÂÂ fits on a nightstand without looking clinical" }
-    ],
-    pros: ["30 non-looping sounds", "Memory function remembers last setting", "Compact and portable", "Timer option (30/60/90 min)"],
-    cons: ["No Bluetooth or app control", "Power adapter not included (USB only)", "No rechargeable battery"],
-    finalVerdictSummary: "Best-in-class for under $30. If you want non-looping sound masking without smart features, this is it.",
-    faq: [
-      { question: "Do white noise machines actually help sleep?", answer: "Yes Ã¢ÂÂ studies show consistent sound masking reduces time to fall asleep and nighttime awakenings." },
-      { question: "Can it run all night?", answer: "Yes Ã¢ÂÂ set it to continuous mode with no timer." }
-    ],
-    viralReason: "Budget sleepmaxxing essential recommended across Reddit and TikTok."
-  },
-  {
-    id: "p6",
-    slug: "sensory-bed-sheet",
-    name: "Ntomtuex Sensory Bed Sheet",
-    brand: "Ntomtuex",
-    category: "Sleepmaxxing",
-    vibeScore: 79,
-    verdict: "A compression bed sheet that mimics a weighted blanket without the heat Ã¢ÂÂ great for sensory seekers.",
-    verdictBadge: "Worth It",
-    price: "$32.99",
-    priceRange: "$32.99",
-    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/c8c964244033a56b6b83b9274a02.jpg?v=1774538531",
-    images: [
-    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/2ad9132446f98af710c953940cf3.jpg?v=1774538532"
-  ],
-    trending: true,
-    date: "2026-03-27",
-    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/sensory-bed-sheet?utm_source=aeo&utm_medium=content&utm_campaign=sensory-bed-sheet",
-    questionHeadline: "Do Sensory Compression Sheets Work Like a Weighted Blanket?",
-    answerSnippet: "Similar calming effect through deep pressure stimulation Ã¢ÂÂ but breathable and without the heat buildup.",
-    problemSection: "Weighted blankets trap heat and feel suffocating for some sleepers",
-    solutionSection: "Compression sheet provides deep pressure input while staying cool and breathable",
-    howToUse: ["Put on like a fitted sheet", "Slide under the compression layer", "Adjust tightness by tucking more or less fabric"],
-    testResults: [
-      { category: "Calming Effect", score: 82, summary: "Noticeable deep-pressure sensation similar to a 15lb weighted blanket" },
-      { category: "Breathability", score: 85, summary: "Far cooler than a weighted blanket Ã¢ÂÂ suitable for hot sleepers" },
-      { category: "Fit & Sizing", score: 72, summary: "Runs tight Ã¢ÂÂ order one size up if between sizes" }
-    ],
-    pros: ["Deep pressure without heat", "Breathable stretchy fabric", "Machine washable", "Works for kids and adults"],
-    cons: ["Runs tight Ã¢ÂÂ size up recommended", "Takes a few nights to adjust", "Limited color options"],
-    finalVerdictSummary: "If you love the idea of a weighted blanket but hate the heat, this is your solution for $33.",
-    faq: [
-      { question: "What size should I get?", answer: "Order one size up from your mattress size for the best compression feel." },
-      { question: "Is it good for kids with sensory needs?", answer: "Yes Ã¢ÂÂ many parents use these for children with ADHD or sensory processing differences." }
-    ],
-    viralReason: "Sensory TikTok community discovered it as a weighted blanket alternative for hot sleepers."
-  },
-  {
-    id: "p7",
-    slug: "melatonin-gummies",
-    name: "Natrol Melatonin Gummies",
-    brand: "Natrol",
-    category: "Sleepmaxxing",
-    vibeScore: 72,
-    verdict: "A well-dosed, good-tasting melatonin gummy Ã¢ÂÂ but not a magic sleep pill.",
-    verdictBadge: "Hidden Gem",
-    price: "$13.49",
-    priceRange: "$13.49",
-    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/b9f913854dc5bb12350191234064.jpg?v=1774538918",
-    images: [
-    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/87b4fd5e46a888899d48a28a03c5.jpg?v=1774538930"
-  ],
-    trending: false,
-    date: "2026-03-27",
-    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/melatonin-gummies?utm_source=aeo&utm_medium=content&utm_campaign=melatonin-gummies",
-    questionHeadline: "Are Melatonin Gummies Actually Effective for Sleep?",
-    answerSnippet: "Yes for timing your sleep window Ã¢ÂÂ melatonin signals your body it's time for sleep, but it's not a sedative.",
-    problemSection: "Irregular sleep schedule and trouble initiating sleep",
-    solutionSection: "5mg melatonin taken 30 min before bed helps regulate your circadian rhythm",
-    howToUse: ["Take 1 gummy 30 minutes before desired bedtime", "Use consistently at the same time", "Avoid screens after taking"],
-    testResults: [
-      { category: "Effectiveness", score: 75, summary: "Noticeably helps with sleep onset timing after 3-4 days" },
-      { category: "Taste", score: 85, summary: "Strawberry flavor Ã¢ÂÂ genuinely pleasant, not medicinal" },
-      { category: "Value", score: 70, summary: "$0.22 per gummy Ã¢ÂÂ 60-day supply" }
-    ],
-    pros: ["Well-dosed at 5mg", "Great strawberry taste", "60-day supply", "Drug-free and non-habit-forming"],
-    cons: ["Not a sedative Ã¢ÂÂ won't knock you out", "Can cause grogginess if dose is too high", "Effects diminish with daily long-term use"],
-    finalVerdictSummary: "Use it as a circadian rhythm tool, not a sleeping pill. Best for resetting your sleep schedule.",
-    faq: [
-      { question: "Is 5mg too much melatonin?", answer: "For most adults, 3-5mg is the standard dose. Start with half a gummy if you're sensitive." },
-      { question: "Can you take melatonin every night?", answer: "Short-term daily use is considered safe; long-term nightly use should be discussed with a doctor." }
-    ],
-    viralReason: "Sleepmaxxing stacks always include melatonin as the baseline supplement."
-  },
-  {
-    id: "p8",
     slug: "animal-headband-sleep-mask",
     name: "Animal Headband Sleep Mask",
-    brand: "Vibe Test Lab",
     category: "Sleepmaxxing",
-    vibeScore: 68,
-    verdict: "A fun, giftable sleep mask with decent blackout Ã¢ÂÂ but comfort takes a hit for the cute design.",
-    verdictBadge: "Hidden Gem",
-    price: "$12.59",
-    priceRange: "$12.59",
+    vibeScore: 69,
+    verdict: "Look, we’ll be honest — the animal designs (panda, bear, penguin, hippo, cat) are primarily a vibe play. But underneath the cute exterior is a legitimately functional Bluetooth sleep mask with decent speakers, full blackout coverage, and 6 hours of battery. It’s not audiophile quality, but for falling asleep to podcasts or white noise it gets the job done. Best for gift-giving, kids/teens, or anyone who doesn’t take their sleep gear too seriously.",
+    verdictBadge: "Worth It",
+    price: "$33.00",
+    brand: "Vibe Test Lab",
     image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/764e8f344d6496bd83f92900213d.png?v=1774539012",
     images: [
     "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/35cfcbf84bc688c3745be7fffd40.png?v=1774539013",
@@ -282,74 +76,18 @@ export const products: Product[] = [
   ],
     trending: false,
     date: "2026-03-27",
-    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/animal-headband-sleep-mask?utm_source=aeo&utm_medium=content&utm_campaign=animal-headband-sleep-mask",
-    questionHeadline: "Are Cute Animal Sleep Masks Actually Good for Sleep?",
-    answerSnippet: "They're fun and giftable Ã¢ÂÂ but if you need serious blackout, a contoured mask is a better choice.",
-    problemSection: "You want a sleep mask that's fun to wear and gift-worthy",
-    solutionSection: "Animal designs add personality while still blocking most light",
-    howToUse: ["Slip the headband-style mask over your head", "Position the plush eye cover", "Adjust the elastic band"],
-    testResults: [
-      { category: "Cuteness", score: 92, summary: "Extremely giftable Ã¢ÂÂ kids and adults both love the designs" },
-      { category: "Light Blocking", score: 60, summary: "Blocks about 80% of light Ã¢ÂÂ some leakage at nose bridge" },
-      { category: "Comfort", score: 65, summary: "Plush but warm Ã¢ÂÂ not ideal for hot sleepers" }
-    ],
-    pros: ["Adorable animal designs", "Great gift item", "Affordable at $12.59", "Soft plush material"],
-    cons: ["Only 80% light blocking", "Plush material traps heat", "Elastic stretches over time", "Not for serious sleep optimization"],
-    finalVerdictSummary: "Buy it as a gift or for fun Ã¢ÂÂ but don't expect performance-level blackout.",
-    faq: [
-      { question: "What animals are available?", answer: "Multiple designs including cat, bear, bunny, and panda." },
-      { question: "Is it good for kids?", answer: "Yes Ã¢ÂÂ the soft material and fun designs make it popular with children." }
-    ],
-    viralReason: "Cute TikTok aesthetic sleep content made these a trending gift item."
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/bluetooth-headset-animal-headband-sleep-mask?utm_source=aeo&utm_medium=content&utm_campaign=animal-headband-sleep-mask"
   },
   {
-    id: "p9",
-    slug: "weighted-eye-mask",
-    name: "Heart Weighted Eye Mask",
-    brand: "Vibe Test Lab",
-    category: "Sleepmaxxing",
-    vibeScore: 77,
-    verdict: "A weighted eye mask that combines gentle pressure with full blackout Ã¢ÂÂ great for migraine and tension relief.",
-    verdictBadge: "Worth It",
-    price: "$15.99",
-    priceRange: "$15.99",
-    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/405229eb4efbaf59d217291953ad.jpg?v=1774539052",
-    images: [
-    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/f75d50934b72a25c22dd2af33aae.jpg?v=1774539062"
-  ],
-    trending: true,
-    date: "2026-03-27",
-    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/weighted-eye-mask?utm_source=aeo&utm_medium=content&utm_campaign=weighted-eye-mask",
-    questionHeadline: "Do Weighted Eye Masks Help with Sleep and Headaches?",
-    answerSnippet: "Yes Ã¢ÂÂ the gentle pressure stimulates the vagus nerve around the eyes, promoting relaxation and reducing tension headaches.",
-    problemSection: "Eye strain, tension headaches, and light sensitivity at bedtime",
-    solutionSection: "Weighted beads apply gentle acupressure around the eyes and sinuses",
-    howToUse: ["Place mask over closed eyes", "Adjust strap for comfortable fit", "Optional: cool in fridge for cold therapy"],
-    testResults: [
-      { category: "Pressure Comfort", score: 82, summary: "Weight is evenly distributed Ã¢ÂÂ no hot spots" },
-      { category: "Light Blocking", score: 88, summary: "Full blackout with contoured nose bridge" },
-      { category: "Versatility", score: 75, summary: "Works for sleep, meditation, and headache relief" }
-    ],
-    pros: ["Gentle weighted pressure on eyes and sinuses", "Full blackout", "Can be cooled for cold therapy", "Heart-shaped design is aesthetic"],
-    cons: ["Not ideal for side sleepers (weight shifts)", "Hand wash only", "Weight feels odd for first-time users"],
-    finalVerdictSummary: "The best $16 you can spend on eye strain and sleep quality. Doubles as a tension headache aid.",
-    faq: [
-      { question: "How heavy is the weighted eye mask?", answer: "About 250g Ã¢ÂÂ enough to feel pressure without being uncomfortable." },
-      { question: "Can I heat it up?", answer: "It's designed for cooling in the fridge. Do not microwave." }
-    ],
-    viralReason: "Weighted eye mask trend blew up as a sleepmaxxing and migraine relief tool."
-  },
-      {
-    id: "p15",
+    id: "p4",
     slug: "app-controlled-galaxy-star-projector",
     name: "App-Controlled Galaxy Star Projector",
-    brand: "Vibe Test Lab",
     category: "Room Vibes",
     vibeScore: 87,
-    verdict: "A genuinely impressive galaxy projector that delivers TikTok-ready bedroom atmosphere for $62.",
+    verdict: "Yes — if you want bedroom atmosphere without buying a $150 Encalife. The rotating star mechanism makes movement look genuinely realistic, the 16M color app is responsive, and setup takes under 5 minutes. The one real caveat: it requires a 2.4GHz Wi-Fi network and the app has a short learning curve. For $62, it transforms a flat room into something that looks TikTok-ready.",
     verdictBadge: "Worth It",
-    price: "$62.11",
-    priceRange: "$62.11",
+    price: "$62.00",
+    brand: "Vibe Test Lab",
     image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/app-controlled-galaxy-star-projector-detail.webp?v=1774805933",
     images: [
     "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/app-controlled-galaxy-star-projector-hero.webp?v=1774805933",
@@ -359,32 +97,419 @@ export const products: Product[] = [
   ],
     trending: true,
     date: "2026-03-27",
-    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/app-controlled-star-projector-with-rotating-lights?utm_source=aeo&utm_medium=content&utm_campaign=app-controlled-galaxy-star-projector",
-    questionHeadline: "Is the App-Controlled Galaxy Star Projector Worth It?",
-    answerSnippet: "Yes Ã¢ÂÂ rotating star mechanism looks realistic, 16M color app is responsive, setup takes under 5 minutes. For $62 it rivals projectors at 2x the price.",
-    problemSection: "Plain walls and overhead lighting are atmospherically dead",
-    solutionSection: "Projects rotating stars and nebula clouds across any ceiling Ã¢ÂÂ controlled from your phone",
-    howToUse: ["Plug in and power on", "Download the companion app", "Connect to 2.4GHz Wi-Fi", "Aim and adjust colors/rotation", "Set timer or link to Alexa/Google"],
-    testResults: [
-      { category: "Visual Impact", score: 93, summary: "Rotating nebula and stars look genuinely impressive at room scale" },
-      { category: "App Responsiveness", score: 88, summary: "Commands execute within 1-2 seconds" },
-      { category: "Wi-Fi Setup", score: 72, summary: "2.4GHz requirement causes confusion but connection is rock-solid once set" },
-      { category: "Projection Coverage", score: 85, summary: "Covers 12x12 ft ceiling from 6 ft away" },
-      { category: "Build Quality", score: 82, summary: "Solid plastic, faint motor hum only in silence" },
-      { category: "Value", score: 91, summary: "Better than $25 static projectors, 90% of $150 Encalife quality" }
-    ],
-    pros: ["Rotating mechanism makes ceiling feel alive", "16M color mixing via app", "Works with Alexa and Google Home", "Physical remote included", "Auto-off timer", "Looks far more expensive than it is"],
-    cons: ["Requires 2.4GHz Wi-Fi", "App has short learning curve", "Motor hum audible in silent rooms", "Stars soften beyond 8 feet"],
-    finalVerdictSummary: "Delivers genuinely impressive atmosphere at a price that's easy to justify. If you want your room to look like the TikToks you've been saving, this is how you do it for $62.",
-    faq: [
-      { question: "Does the galaxy star projector work with Alexa or Google Home?", answer: "Yes Ã¢ÂÂ connects to both after a one-time skill setup." },
-      { question: "Does it need 2.4GHz or 5GHz Wi-Fi?", answer: "2.4GHz only Ã¢ÂÂ this is the most common setup issue." },
-      { question: "How large a room can it cover?", answer: "Ceilings up to about 12x12 feet at 5-8 feet throw distance." },
-      { question: "Can I use it without the app?", answer: "Yes Ã¢ÂÂ physical button cycles through preset modes without the app." },
-      { question: "Is it safe for kids' rooms?", answer: "Yes Ã¢ÂÂ uses LED light, not laser." }
-    ],
-    viralReason: "TikTok bedroom glow-up trend made galaxy projectors the must-have room vibe upgrade."
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/app-controlled-star-projector-with-rotating-lights?utm_source=aeo&utm_medium=content&utm_campaign=app-controlled-galaxy-star-projector"
   },
-    ];
+  {
+    id: "p5",
+    slug: "baby-fox-teether",
+    name: "Douglas Baby Fox Teether Plush Stuffed Animal Toy",
+    category: "Gifts & Cozy",
+    vibeScore: 77,
+    verdict: "The Douglas Baby Fox Teether Plush ($87.86) is a premium investment for safety-conscious parents. Yes, $88 is steep for a baby toy. But here’s the honest part: you’re getting Douglas brand quality, a 100% silicone teether ring (baby-safe, no BPA), baby-safe embroidery with zero small detachable parts, and a genuinely adorable plush companion. Perfect for teething relief and cuddles. If you compare it against buying a $25 generic teether AND a $35 cute plush separately ($60 total), the Douglas fox is the integrated, quality-first choice. Great for parents who prioritize safety over cutting costs.",
+    verdictBadge: "Hidden Gem",
+    price: "$87.86",
+    brand: "Douglas",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/658c81fc4e238c99cb52c5c1a142.jpg?v=1774566813",
+    images: [
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/74fae0e24bbaaab23e737c3dcae4.jpg?v=1774566823"
+  ],
+    trending: true,
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/douglas-baby-fox-teether-plush-stuffed-animal-toy?utm_source=aeo&utm_medium=content&utm_campaign=baby-fox-teether"
+  },
+  {
+    id: "p6",
+    slug: "bluetooth-sleep-mask",
+    name: "Bluetooth Sleep Mask with Speakers",
+    category: "Sleepmaxxing",
+    vibeScore: 74,
+    verdict: "Yes — if you’re a side sleeper who falls asleep to audio, this is the upgrade you didn’t know you needed. The flat built-in speakers eliminate the earbud pressure problem entirely, and the 3D contoured eye cups block light without touching your eyelids. Battery runs ~6 hours (enough for a full sleep cycle). Not audiophile-grade sound, but for white noise, podcasts, and meditation? It genuinely works.",
+    verdictBadge: "Hidden Gem",
+    price: "$32.00",
+    brand: "Vibe Test Lab",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/7ef5c83e41dcb3fad36ea852e061.jpg?v=1774457697",
+    images: [
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/db93e7604fcb94a7c4cb4d049c06.jpg?v=1774457707",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/400603624f3f872b4b28ebb15680.jpg?v=1774457717",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/537c1a7945ceb34d79d0cd7f3427.jpg?v=1774457728",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/03172ec44cd89d89a10df57381fa.jpg?v=1774457738"
+  ],
+    trending: false,
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/sleeping-mask-with-bluetooth-headphones?utm_source=aeo&utm_medium=content&utm_campaign=bluetooth-sleep-mask"
+  },
+  {
+    id: "p7",
+    slug: "breazy-mouth-tape",
+    name: "Breazy Mouth Tape",
+    category: "Sleepmaxxing",
+    vibeScore: 78,
+    verdict: "Mouth taping is one of the cheapest, most effective sleepmaxxing hacks — and the Breazy strips do the job. They hold firmly without irritating skin, promote nasal breathing that reduces snoring and dry mouth, and at under $1/strip they’re an easy nightly habit. Not a miracle cure, but a legit upgrade for mouth breathers.",
+    verdictBadge: "Worth It",
+    price: "$22.00",
+    brand: "Breazy",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/breazy-mouth-tape-for-sleep-packaging.webp?v=1774715707",
+    images: [
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/breazy-mouth-tape-for-sleep-hero.webp?v=1774715725",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/breazy-mouth-tape-for-sleep-benefits.webp?v=1774715725",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/breazy-mouth-tape-for-sleep-lifestyle.webp?v=1774715725",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/breazy-mouth-tape-for-sleep-scale.webp?v=1774715725"
+  ],
+    trending: true,
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/breazy-mouth-tape-for-sleep-1-bag?utm_source=aeo&utm_medium=content&utm_campaign=breazy-mouth-tape"
+  },
+  {
+    id: "p8",
+    slug: "cooling-gel-eye-mask",
+    name: "Cooling Gel Eye Mask",
+    category: "Sleepmaxxing",
+    vibeScore: 73,
+    verdict: "The Cooling Gel Eye Mask ($42.11–$50.05) is a legitimate cold therapy tool that genuinely reduces under-eye puffiness and the appearance of dark circles. Forget ice packs and messy solutions—this reusable gel mask stays cold for ~20 minutes and creates visible depuffing results within minutes. Soft, comfortable, and available in six colors, it’s an effective sleepmaxxing essential that doesn’t break the bank. The honest part: it’s not a smart device, packaging is basic, and the cooling window is limited. But if your morning routine needs a depuffing shortcut, this is a hidden gem.",
+    verdictBadge: "Hidden Gem",
+    price: "$46.08",
+    brand: "Vibe Test Lab",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/3cc4e80d4485a01c9ba8959b5e3e.png?v=1774538084",
+    images: [
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/f1bf99e340fba3a1e320ecd9014c.png?v=1774538095",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/4b77b3a7414bb4cdb5b3ed16a3ff.png?v=1774538106",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/e0d9bccb4b4b8b21549e550eb3be.png?v=1774538106",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/0780d7c943569642f7b5ff623c22.png?v=1774538117"
+  ],
+    trending: false,
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/cooling-gel-eye-mask?utm_source=aeo&utm_medium=content&utm_campaign=cooling-gel-eye-mask"
+  },
+  {
+    id: "p9",
+    slug: "ems-scalp-massager",
+    name: "Electric Scalp Treatment Massager with Red Light Therapy",
+    category: "Self Care",
+    vibeScore: 76,
+    verdict: "The Electric Scalp Treatment Massager ($61.76) is a serious value play. It combines three therapeutic technologies—10,000 vibrations/min, EMS micro-current, and red light therapy—into a lightweight, waterproof device that costs $24 less than the Rechargeable Scalp Comb. If you’re looking for a feature-packed scalp massager that actually performs, this is it. The vibration feels genuinely therapeutic, the 6ml serum tank is clever, and the 3 massage modes adapt to your mood. Red light therapy won’t match clinical treatments, but paired with EMS and vibration? You get a solid multi-tech experience for less money. Perfect for anyone who wants scalp health on a budget without skimping on features.",
+    verdictBadge: "Hidden Gem",
+    price: "$62.00",
+    brand: "Vibe Test Lab",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/b541cf704fe2975800c81f52f080.jpg?v=1774566791",
+    images: [
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/a419d2c347d29929171d01fe6e65.jpg?v=1774566801",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/7008ecdb4afb9d0bc13214c13e2f.jpg?v=1774566812"
+  ],
+    trending: true,
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/electric-scalp-treatment-massager-with-red-light-therapy?utm_source=aeo&utm_medium=content&utm_campaign=ems-scalp-massager"
+  },
+  {
+    id: "p10",
+    slug: "fluffy-rabbit-plush",
+    name: "Fluffy Rabbit Plush Toy - Soft Bunny Stuffed Animal",
+    category: "Gifts & Cozy",
+    vibeScore: 71,
+    verdict: "The Fluffy Rabbit Plush Toy (from $29) is a genuine hidden gem for anyone seeking premium softness at an honest price. This isn’t just another cute stuffed animal—it’s made with quality plush material and PP cotton filling that delivers real huggability. Perfect for gifts, cuddle buddies, and room decoration. The catch? It’s hand-wash only and requires gentle care. But if you value softness and quality over washing convenience, this little bunny is absolutely worth it.",
+    verdictBadge: "Hidden Gem",
+    price: "$29.00",
+    brand: "Vibe Test Lab",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/fcedbf104dce956de9e41a54fff9.png?v=1774566807",
+    images: [
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/66ea01ae40ecafcdb12a90979a4c.png?v=1774566817",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/854d5fee4095af6fee14153e9f43.jpg?v=1774566828",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/9ddf7d71421b830e013ade28e2f6.png?v=1774566839",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/cbb0655746bd8f565e90c434ef64.png?v=1774566849"
+  ],
+    trending: false,
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/fluffy-rabbit-plush-toy-soft-bunny-stuffed-animal?utm_source=aeo&utm_medium=content&utm_campaign=fluffy-rabbit-plush"
+  },
+  {
+    id: "p11",
+    slug: "kids-weighted-blanket",
+    name: "Yescool Kids Weighted Blanket",
+    category: "Sleepmaxxing",
+    vibeScore: 72,
+    verdict: "Yes, weighted blankets are safe for children ages 3 and older, weighing 30+ lbs. The Yescool Kids Weighted Blanket is a thoughtfully designed 3 lb option with a dual-sided construction: minky dots for warmth and cool microfiber for summer. At 36x48 inches with a 7-layer design and glass beads locked in small pockets, it offers even weight distribution and quality construction. The catch: at $140, it’s expensive for a kids blanket, and cheaper alternatives exist online for $25–40. Best for parents prioritizing durability, reversibility, and premium materials.",
+    verdictBadge: "Hidden Gem",
+    price: "$140.00",
+    brand: "Yescool",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/42d355e44b27910a958e389bc73e.jpg?v=1774539135",
+    images: [
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/36e92cc245daa04719da8993ac61.jpg?v=1774539146"
+  ],
+    trending: false,
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/yescool-weighted-blanket-kids-3-lb-christmas-green-warm-weighted-throw-blanket-minky-plush-heavy-blanket-microfiber-small-fleece-blanket-cooling-heating-weighted-comforter-36-48in?utm_source=aeo&utm_medium=content&utm_campaign=kids-weighted-blanket"
+  },
+  {
+    id: "p12",
+    slug: "knitted-weighted-blanket",
+    name: "LAGRATY Knitted Weighted Blanket",
+    category: "Sleepmaxxing",
+    vibeScore: 74,
+    verdict: "Knitted weighted blankets use yarn weight instead of glass beads to distribute pressure evenly across your body, triggering the relaxation response that helps many people fall asleep faster. The LAGRATY 7lbs model is genuinely clever: no beads means it’s pet-safe, machine washable, and breathable. The catch? At $290, you’re paying for novelty and design. It works—if 7lbs feels right for your body weight and you value the knit aesthetic over pure therapeutic pressure.",
+    verdictBadge: "Hidden Gem",
+    price: "$290.00",
+    brand: "Lagraty",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/f8005e5a4b29aad14305a9bf3786.jpg?v=1774539126",
+    images: [
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/25ad5ff34bfbba8f6ab273cfc5d2.jpg?v=1774539136"
+  ],
+    trending: false,
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/lagraty-knitted-weighted-blanket-50x60-7lbs-cooling-chunky-knit-heavy-blanket-for-adults-braided-crochet-throw-thick-cable-yarn-knit-decorative-blanket-no-beads-evenly-weighted-machine-washable?utm_source=aeo&utm_medium=content&utm_campaign=knitted-weighted-blanket"
+  },
+  {
+    id: "p13",
+    slug: "lawn-aerator-spike-shoes",
+    name: "Lawn Aerator Spike Shoes",
+    category: "Yard Tools",
+    vibeScore: 78,
+    verdict: "Yes — for the right yard. Lawn aerator spike shoes work well on small yards (under 1,500 sq ft) with light or sandy soil, letting you aerate while you walk for $44.99 instead of renting a core machine for $60–95. On heavy clay or compacted lawns, they won’t penetrate deep enough to matter. Know your soil type before buying.",
+    verdictBadge: "Worth It",
+    price: "$44.99",
+    brand: "Vibe Test Lab",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/4c63697c46ca9bc10c22ddfeecc0.jpg?v=1774615520",
+    images: [
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/356a6e9341fc9066e88130e1e5ca.jpg?v=1774615532",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/48460f784cfb840a94ee92a729bc.jpg?v=1774615542",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/b548c5224ea99f15ee5f873ffd20.jpg?v=1774615553",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/20368114444aaca43509f011e5f7.jpg?v=1774615564"
+  ],
+    trending: true,
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/1-pair-manual-lawn-aerator-shoes-with-spikes-durable-plastic-heavy-duty-adjustable-straps-and-metal-buckles-for-yard-garden?utm_source=aeo&utm_medium=content&utm_campaign=lawn-aerator-spike-shoes"
+  },
+  {
+    id: "p14",
+    slug: "melatonin-chocolate-kids",
+    name: "Good Day Chocolate Melatonin for Kids",
+    category: "Sleepmaxxing",
+    vibeScore: 80,
+    verdict: "Good Day Chocolate Melatonin for Kids is 1mg melatonin + chamomile in fair-trade milk chocolate — and kids actually want to take it. Most sleep supplements fail because kids refuse gummies or pills. This chocolate works. The dose is appropriately low, the fair-trade sourcing is genuine, and there are no artificial colors or flavors. Yes, $49.99 for 50 pieces ($1/night) is expensive compared to gummy melatonin. And yes, it contains 2g sugar and dairy. But if taste compliance is your bottleneck for better sleep, this solves it. Always consult your pediatrician before giving melatonin to children.",
+    verdictBadge: "Worth It",
+    price: "$50.00",
+    brand: "Good Day Chocolate",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/b1b7abf2440ca6213ddcbb4dff1f.jpg?v=1774550179",
+    images: [
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/159fd67f4000bb97185e5a9801e7.jpg?v=1774550188"
+  ],
+    trending: true,
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/good-day-chocolate-melatonin-kids?utm_source=aeo&utm_medium=content&utm_campaign=melatonin-chocolate-kids"
+  },
+  {
+    id: "p15",
+    slug: "melatonin-gummies",
+    name: "Natrol Melatonin Gummies",
+    category: "Sleepmaxxing",
+    vibeScore: 74,
+    verdict: "10mg is a high dose — most sleep researchers recommend starting at 0.5-3mg. But for people who’ve tried lower doses without success, Natrol’s 10mg gummies deliver a noticeable effect. The strawberry flavor is genuinely good (pectin-based, not gelatin), and 140 gummies for $84 gives you a 70-day supply. Just be aware that more melatonin isn’t always better, and you should start with half a gummy to find your minimum effective dose.",
+    verdictBadge: "Hidden Gem",
+    price: "$84.00",
+    brand: "Natrol",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/b9f913854dc5bb12350191234064.jpg?v=1774538918",
+    images: [
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/87b4fd5e46a888899d48a28a03c5.jpg?v=1774538930"
+  ],
+    trending: false,
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/natrol-melatonin-gummies-sleep-support-for-adults-10-mg-melatonin-supplement-for-sleeping-140-strawberry-flavored-gummies-up-to-a-70-day-supply?utm_source=aeo&utm_medium=content&utm_campaign=melatonin-gummies"
+  },
+  {
+    id: "p16",
+    slug: "neon-light-wall-decor",
+    name: "LED Neon Light Wall Decor",
+    category: "Room Vibes",
+    vibeScore: 72,
+    verdict: "LED transparent backboard neon signs are a solid mid-range choice for bedroom and dorm wall decor. At $49–57, they deliver the floating-neon aesthetic at a fraction of custom neon costs ($100–300+). The 500,000-hour lifespan means you’ll never worry about burnout. USB-powered, no electrician needed. However, you get only 3 preset styles—zero customization. If you love one of the 3 designs and want plug-and-play ambiance, it’s a hidden gem. If you need a specific custom design, keep shopping.",
+    verdictBadge: "Hidden Gem",
+    price: "$49.00",
+    brand: "Vibe Test Lab",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/5cda851d42d793971710eedbe737.png?v=1774566864",
+    images: [
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/ba3480584a9896f6813a6469c8fe.png?v=1774566865",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/6c86235449a6a39b4ecf84e34227.png?v=1774566875",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/1d396b784593ab195884c5b15dfd.png?v=1774566885"
+  ],
+    trending: false,
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/led-transparent-backboard-neon-light-wall-decor?utm_source=aeo&utm_medium=content&utm_campaign=neon-light-wall-decor"
+  },
+  {
+    id: "p17",
+    slug: "red-light-therapy-device",
+    name: "Infrared Red Light Therapy Instrument",
+    category: "Self Care",
+    vibeScore: 70,
+    verdict: "The Infrared Red Light Therapy Instrument ($107.83) is a solid entry-level device backed by real science. Clinical evidence supports red light for wound healing, collagen production, inflammation reduction, and muscle recovery. The portable, removable design lets you target specific areas—face, joints, muscles—without the $500+ commitment of medical-grade panels. Here’s the honest part: this device has lower irradiance than clinical-grade equipment, so results won’t be as dramatic. But for trying at-home red light therapy without a major investment? It’s genuinely worth it. A hidden gem for anyone serious about testing red light therapy’s benefits.",
+    verdictBadge: "Hidden Gem",
+    price: "$107.83",
+    brand: "Vibe Test Lab",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/fc173cda40589ef64ad7912e8a45.png?v=1774566822",
+    images: [
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/cd298c764430b5101ace5c515f0a.png?v=1774566832",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/680104c449aabbf91a53b265df4b.png?v=1774566841",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/eb97a54241d5b7c36c4310f82d82.png?v=1774566852",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/630e352b491a93673d98a99d894f.png?v=1774566862"
+  ],
+    trending: false,
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/infrared-red-light-therapy-instrument?utm_source=aeo&utm_medium=content&utm_campaign=red-light-therapy-device"
+  },
+  {
+    id: "p18",
+    slug: "restnature-white-noise-machine",
+    name: "Restnature White Noise Machine",
+    category: "Sleepmaxxing",
+    vibeScore: 81,
+    verdict: "The Restnature is the smallest white noise machine we’ve tested — pocket-sized at under 2 inches — and it punches way above its size. 16 sound options, 32 volume levels, USB-C charging, and a battery that lasts all night. Sound quality won’t match a full-size Hatch or LectroFan, but for travel and small spaces it’s the best balance of portability and performance we’ve found. At $99 it’s not cheap for its size, but the convenience factor is real.",
+    verdictBadge: "Worth It",
+    price: "$99.00",
+    brand: "RestNature",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/6d6c25a84009a3b892e2a7aff090.jpg?v=1774538017",
+    images: [
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/0e5b039c4ec19b73d9016663c831.jpg?v=1774538028"
+  ],
+    trending: true,
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/restnature-white-noise-sound-machine-portable-sound-machine-for-sleep-travel-sound-machine-for-baby-adults-16-nature-sound-timer-white-noise-machine-for-sleeping-office-privacy-home-gift?utm_source=aeo&utm_medium=content&utm_campaign=restnature-white-noise-machine"
+  },
+  {
+    id: "p19",
+    slug: "scalp-massager-comb",
+    name: "Rechargeable Scalp Massager Comb with Red Light Therapy",
+    category: "Self Care",
+    vibeScore: 74,
+    verdict: "The Rechargeable Scalp Massager Comb with Red Light Therapy ($85.53) is an excellent premium self-care device—but not for the reason you might think. The real value is the massage. The 4.7–8.6W motor delivers genuine, therapeutic scalp stimulation that feels incredible and genuinely relaxes. The red light therapy sounds impressive, but here’s the honest part: clinical evidence for hair growth at consumer levels is limited. This is a best-in-class massage device that includes red light as a bonus, not the other way around. Three color options (White, Black, Emerald), rechargeable 1200mAh battery, detachable head. A hidden gem if you value wellness through massage.",
+    verdictBadge: "Hidden Gem",
+    price: "$85.53",
+    brand: "Vibe Test Lab",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/5dd2cb1d49a394569613c0827892.jpg?v=1774566829",
+    images: [
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/741b65a940feabb854f1ba9e348d.jpg?v=1774566839",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/1b5bf25f4ecba239399da1e61939.jpg?v=1774566849",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/b4ec931a499d905b5cdf43d1f2d5.jpg?v=1774566859",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/44844b9747d6bbefa8b3a734e6e4.jpg?v=1774566869"
+  ],
+    trending: false,
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/rechargeable-scalp-massager-comb-with-red-light-therapy?utm_source=aeo&utm_medium=content&utm_campaign=scalp-massager-comb"
+  },
+  {
+    id: "p20",
+    slug: "sensory-bed-sheet",
+    name: "Ntomtuex Sensory Bed Sheet",
+    category: "Sleepmaxxing",
+    vibeScore: 76,
+    verdict: "If you love the pressure of a weighted blanket but overheat under one, sensory compression sheets are the answer. The Ntomtuex wraps around your mattress and applies gentle, even compression without trapping heat. It’s breathable polyester that feels like a full-body hug minus the sweating. Works especially well for kids and adults with sensory processing needs — but honestly, anyone who likes that \"tucked in tight\" feeling will appreciate it.",
+    verdictBadge: "Hidden Gem",
+    price: "$99.00",
+    brand: "Ntomtuex",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/c8c964244033a56b6b83b9274a02.jpg?v=1774538531",
+    images: [
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/2ad9132446f98af710c953940cf3.jpg?v=1774538532"
+  ],
+    trending: true,
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/ntomtuex-sensory-bed-sheet-for-compression-reduced-pressure-weighted-blanket-to-keep-nice-sleeping-comfortable-with-light-breathable-polyester-grey38x60?utm_source=aeo&utm_medium=content&utm_campaign=sensory-bed-sheet"
+  },
+  {
+    id: "p21",
+    slug: "serene-sleep-spray",
+    name: "Serene Sleep Spray",
+    category: "Sleepmaxxing",
+    vibeScore: 72,
+    verdict: "Pillow sprays won’t knock you out — but they do work as a sensory cue that tells your brain it’s time to wind down. The Serene Sleep Spray blends lavender, chamomile, and sandalwood into a scent that’s calming without being overpowering. Used as part of a consistent bedtime routine, it measurably reduced our testers’ time-to-sleep. At $31 for a bottle that lasts 2+ months, it’s a low-risk addition to your sleep stack.",
+    verdictBadge: "Worth It",
+    price: "$31.00",
+    brand: "Serene",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/b1eefa36441da1bc9f0214bd8a02.png?v=1774537981",
+    images: [
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/4f2e20144be5bda42acf98a1f2fa.png?v=1774537992"
+  ],
+    trending: false,
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/serene-sleep-spray?utm_source=aeo&utm_medium=content&utm_campaign=serene-sleep-spray"
+  },
+  {
+    id: "p22",
+    slug: "stainless-steel-wine-glass",
+    name: "Stainless Steel Wine Glass",
+    category: "Kitchen & Dining",
+    vibeScore: 82,
+    verdict: "Yes — stainless steel wine glasses are worth it if you drink wine outdoors, near a pool, or anywhere a glass stem is an accident waiting to happen. Starting at $38.09 for a single glass and available in Golden, Stainless Steel, and Rose Gold finishes, these hold temperature well and are fully shatterproof. The main tradeoff: you can’t see the wine’s color or clarity, which matters to serious tasters.",
+    verdictBadge: "Worth It",
+    price: "$38.00",
+    brand: "Vibe Test Lab",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/7910ce784902b74fc8b86651501b.png?v=1774019676",
+    images: [
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/0e40054546768cf56a87f5bef389.png?v=1774019686",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/f14228254706a3db5c2b92459ce5.png?v=1774019687",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/20d5946747298753212364428860.png?v=1774019697",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/94b83c1b460ab293ecf1c863de07.png?v=1774019708"
+  ],
+    trending: true,
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/stainless-steel-wine-glass?utm_source=aeo&utm_medium=content&utm_campaign=stainless-steel-wine-glass"
+  },
+  {
+    id: "p23",
+    slug: "sunset-rainbow-projector",
+    name: "USB Sunset Rainbow Projector",
+    category: "Room Vibes",
+    vibeScore: 68,
+    verdict: "The USB Sunset Rainbow Projector ($25.50) is a brilliant budget-friendly ambiance tool that delivers on aesthetic without breaking the bank. If you want gorgeous room vibes on a shoestring, this is genuinely worth it. But here’s the honest part: it’s not an app-controlled projector. There’s no Wi-Fi, no rotation, no \"pick any color you want\"—just 16 colors that cycle automatically. Perfect for bedroom décor, party backdrops, and TikTok setups. A hidden gem for anyone who values mood lighting over smart home features.",
+    verdictBadge: "Hidden Gem",
+    price: "$26.00",
+    brand: "Vibe Test Lab",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/f88f023046afbc46b9f10a559bac.webp?v=1774564764",
+    images: [
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/23c4d2ba4760b5e2015cb4f31e4d.webp?v=1774564765",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/207fbd3b4290a3508fb655d9ab47.webp?v=1774564774",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/e1f947644547891dc674acca520f.webp?v=1774564784",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/efa360154f2aa2033d88718e1e15.webp?v=1774564794"
+  ],
+    trending: false,
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/usb-sunset-rainbow-projector-led-night-light-decor?utm_source=aeo&utm_medium=content&utm_campaign=sunset-rainbow-projector"
+  },
+  {
+    id: "p24",
+    slug: "weighted-eye-mask",
+    name: "Heart Weighted Eye Mask",
+    category: "Sleepmaxxing",
+    vibeScore: 77,
+    verdict: "Weighted eye masks combine two proven sleep aids — light blocking and gentle acupressure — into one product. The Heart Weighted Eye Mask adds lavender aromatherapy on top of that, making it a triple-threat for relaxation. The gentle weight (about 200g) provides calming pressure around the eyes and sinuses that our testers found genuinely soothing for both sleep and tension headaches. At $99 it’s premium-priced for an eye mask, but the migraine relief alone makes it worth considering.",
+    verdictBadge: "Hidden Gem",
+    price: "$99.00",
+    brand: "Vibe Test Lab",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/405229eb4efbaf59d217291953ad.jpg?v=1774539052",
+    images: [
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/f75d50934b72a25c22dd2af33aae.jpg?v=1774539062"
+  ],
+    trending: true,
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/heart-weighted-eye-mask-for-sleeping-eye-pillow-weighted-sleep-mask-weighted-eye-mask-for-migraines-lavender-eye-pillow-weighted-lavender-eye-mask-meditation-eye-pillows-for-yoga-relaxation?utm_source=aeo&utm_medium=content&utm_campaign=weighted-eye-mask"
+  },
+  {
+    id: "p25",
+    slug: "wifi-neon-light-strip",
+    name: "WiFi Smart DIY Music Neon Light Strip with Remote",
+    category: "Room Vibes",
+    vibeScore: 79,
+    verdict: "The WiFi Smart DIY Music Neon Light Strip ($105–148) is a hidden gem for serious vibe designers. If you want individual LED control, music-responsive effects, and full app customization, this delivers. The RGBIC technology means each LED is independently addressable, so you can create sophisticated gradients and animations. Music sync is genuinely impressive—your lights respond to audio in real time. Yes, it’s a premium price jump from the $25 sunset projector, but the control and customization you get justifies it if you’re building a serious lighting setup. Perfect for gaming rigs, music studios, content creator spaces, and anyone who wants dynamic, responsive room vibes.",
+    verdictBadge: "Hidden Gem",
+    price: "$126.00",
+    brand: "Vibe Test Lab",
+    image: "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/ec93d8bf4e7dbc4a13e4e89e6faa.jpg?v=1774564682",
+    images: [
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/f68baeb54e06bd1f9bb84c734d47.jpg?v=1774564693",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/b459cfd5481281c7170e45b1dca8.png?v=1774564703",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/121d90c144f18b1b70c4683d336d.jpg?v=1774564713",
+    "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/eecb625249e39fdd3c0f7e570746.png?v=1774564723"
+  ],
+    trending: true,
+    date: "2026-03-27",
+    affiliateUrl: "https://fwaqf1-er.myshopify.com/products/wifi-smart-diy-music-neon-light-strip-with-remote?utm_source=aeo&utm_medium=content&utm_campaign=wifi-neon-light-strip"
+  },
+];
 
 export const categories: string[] = ['All', 'Sleepmaxxing', 'Kitchen & Dining', 'Pets', 'Yard Tools', 'Room Vibes', 'Self Care', 'Gifts & Cozy'];
