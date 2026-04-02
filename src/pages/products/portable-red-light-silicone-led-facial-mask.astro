@@ -1,0 +1,1243 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = 'Portable Red Light LED Facial Mask | Vibe Test Labs';
+const description = 'Real science on red light therapy masks. Learn what at-home red light therapy delivers vs. clinical treatments, and whether the Portable Red Light LED Facial Mask is worth $198.20 for measurable collagen stimulation.';
+const canonical = 'https://vibetestlab.com/products/portable-red-light-silicone-led-facial-mask';
+
+const productName = 'Portable Red Light LED Facial Mask';
+const brand = 'Vibe Test Lab';
+const price = '$198.20';
+const shopifyId = '10154651681063';
+const slug = 'portable-red-light-silicone-led-facial-mask';
+const versionDate = '2026-04-01';
+---
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <style>
+    .breadcrumb {
+      display: flex;
+      gap: 8px;
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 24px;
+    }
+
+    .breadcrumb a {
+      color: #0a0a0a;
+      text-decoration: none;
+    }
+
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
+    .meta-row {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 24px;
+      font-size: 14px;
+      color: #666;
+      flex-wrap: wrap;
+    }
+
+    .vibe-score {
+      background: #f5f5f5;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-weight: 600;
+      color: #0a0a0a;
+    }
+
+    .verdict-badge {
+      background: #fef3c7;
+      color: #92400e;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    h1 {
+      font-size: 36px;
+      line-height: 1.2;
+      margin: 32px 0 24px 0;
+      color: #0a0a0a;
+    }
+
+    h2 {
+      font-size: 24px;
+      line-height: 1.3;
+      margin: 36px 0 16px 0;
+      color: #0a0a0a;
+    }
+
+    .lead {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #333;
+      margin-bottom: 32px;
+      max-width: 700px;
+    }
+
+    .answer-box {
+      background: #f9f9f9;
+      border-left: 4px solid #0a0a0a;
+      padding: 20px;
+      margin: 32px 0;
+      border-radius: 4px;
+    }
+
+    .answer-box p {
+      margin: 0;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .buy-button-container {
+      margin: 32px 0;
+      padding: 20px;
+      background: #fafafa;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .specs-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 32px 0;
+      border: 1px solid #ddd;
+    }
+
+    .specs-table th,
+    .specs-table td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .specs-table th {
+      background: #f5f5f5;
+      font-weight: 600;
+      color: #0a0a0a;
+    }
+
+    .specs-table tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .problem-solution-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 32px 0;
+    }
+
+    .problem-solution-table th,
+    .problem-solution-table td {
+      padding: 16px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+
+    .problem-solution-table th {
+      background: #f5f5f5;
+      font-weight: 600;
+      color: #0a0a0a;
+    }
+
+    .problem-solution-table tr:nth-child(odd) {
+      background: #fafafa;
+    }
+
+    .decision-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 32px 0;
+    }
+
+    .decision-table th,
+    .decision-table td {
+      padding: 16px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+
+    .decision-table th {
+      background: #0a0a0a;
+      color: white;
+      font-weight: 600;
+    }
+
+    .decision-table tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+
+    .tradeoffs-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 32px 0;
+    }
+
+    .tradeoffs-table th,
+    .tradeoffs-table td {
+      padding: 16px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+
+    .tradeoffs-table th {
+      background: #f5f5f5;
+      font-weight: 600;
+      color: #0a0a0a;
+    }
+
+    .tradeoffs-table .upside {
+      color: #166534;
+      font-weight: 500;
+    }
+
+    .tradeoffs-table .downside {
+      color: #991b1b;
+      font-weight: 500;
+    }
+
+    .comp-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 32px 0;
+      font-size: 14px;
+    }
+
+    .comp-table th,
+    .comp-table td {
+      padding: 12px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+
+    .comp-table th {
+      background: #0a0a0a;
+      color: white;
+      font-weight: 600;
+    }
+
+    .comp-table tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+
+    .comp-table .checkmark {
+      color: #166534;
+      font-weight: bold;
+    }
+
+    .comp-table .xmark {
+      color: #991b1b;
+    }
+
+    .related-products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin: 32px 0;
+    }
+
+    .product-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 16px;
+      text-align: center;
+    }
+
+    .product-card h3 {
+      font-size: 16px;
+      margin: 12px 0;
+      color: #0a0a0a;
+    }
+
+    .product-card .score {
+      background: #f5f5f5;
+      padding: 8px 12px;
+      border-radius: 4px;
+      margin: 12px 0;
+      font-weight: 600;
+      color: #0a0a0a;
+    }
+
+    .product-card a {
+      color: #0a0a0a;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .product-card a:hover {
+      text-decoration: underline;
+    }
+
+    .gallery-placeholder {
+      background: #f5f5f5;
+      border: 2px dashed #ddd;
+      border-radius: 8px;
+      padding: 40px;
+      text-align: center;
+      margin: 32px 0;
+      color: #999;
+    }
+
+    .image-gallery {
+      margin: 32px 0;
+    }
+
+    .image-gallery img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+
+    .pros-cons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin: 32px 0;
+    }
+
+    .pros,
+    .cons {
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .pros {
+      background: #f0fdf4;
+      border: 1px solid #dcfce7;
+    }
+
+    .cons {
+      background: #fef2f2;
+      border: 1px solid #fee2e2;
+    }
+
+    .pros h3,
+    .cons h3 {
+      margin-top: 0;
+      color: #0a0a0a;
+    }
+
+    .pros ul,
+    .cons ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .pros li,
+    .cons li {
+      padding: 8px 0;
+      line-height: 1.5;
+      color: #333;
+    }
+
+    .pros li:before {
+      content: '✓ ';
+      color: #166534;
+      font-weight: bold;
+      margin-right: 8px;
+    }
+
+    .cons li:before {
+      content: '✗ ';
+      color: #991b1b;
+      font-weight: bold;
+      margin-right: 8px;
+    }
+
+    .faq-section {
+      margin: 32px 0;
+    }
+
+    .faq-item {
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      margin-bottom: 12px;
+      padding: 16px;
+    }
+
+    .faq-item strong {
+      display: block;
+      color: #0a0a0a;
+      margin-bottom: 8px;
+    }
+
+    .faq-item p {
+      margin: 0;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .verdict-section {
+      background: #0a0a0a;
+      color: white;
+      padding: 32px;
+      border-radius: 8px;
+      margin: 32px 0;
+    }
+
+    .verdict-section h2 {
+      color: white;
+      margin-top: 0;
+    }
+
+    .verdict-section p {
+      line-height: 1.6;
+      margin: 12px 0;
+    }
+
+    .price-urgency-block {
+      background: #fff8e1;
+      border: 2px solid #fbbf24;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+
+    .price-callout {
+      font-size: 28px;
+      font-weight: 700;
+      color: #0a0a0a;
+      margin: 0 0 12px 0;
+    }
+
+    .urgency-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 12px;
+      font-weight: 500;
+      color: #92400e;
+    }
+
+    .urgency-dot {
+      width: 8px;
+      height: 8px;
+      background: #dc2626;
+      border-radius: 50%;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    .trust-badges {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      font-size: 12px;
+    }
+
+    .trust-badge {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: #666;
+    }
+
+    .trust-badge svg {
+      width: 16px;
+      height: 16px;
+      color: #166534;
+    }
+
+    .buy-button-wrap {
+      margin: 20px 0;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 28px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      .meta-row {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .pros-cons {
+        grid-template-columns: 1fr;
+      }
+
+      .related-products-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .comp-table {
+        font-size: 12px;
+      }
+
+      .comp-table th,
+      .comp-table td {
+        padding: 8px;
+      }
+    }
+  </style>
+
+  <div class="breadcrumb">
+    <a href="/">Home</a>
+    <span>/</span>
+    <a href="/categories/self-care">Self Care</a>
+    <span>/</span>
+    <span>{productName}</span>
+  </div>
+
+  <div class="meta-row">
+    <span>Last updated: {versionDate}</span>
+    <span class="vibe-score">Vibe Score: 76</span>
+    <span class="verdict-badge">Hidden Gem</span>
+  </div>
+
+  <h1>Is Portable Red Light Therapy as Effective as In-Office Treatments?</h1>
+
+  <p class="lead">
+    Red light therapy at home is surprisingly effective at triggering collagen production—clinical studies prove it works. The {productName} at {price} pairs clinical-grade wavelengths with soft silicone fit for daily use, but it still can't match the power of dermatologist treatments. Here's what science says about your expectations.
+  </p>
+
+  <div class="answer-box">
+    <p>
+      <strong>The Bottom Line:</strong> The Portable Red Light LED Facial Mask delivers measurable collagen stimulation through proven 630nm and 850nm wavelengths, with clinical evidence showing 34–47% improvements in wrinkles and skin density after 8–12 weeks. At-home masks consistently show results, just on a slower timeline than professional treatments. This mask's soft silicone conforms to your face for even light distribution—a key advantage over panels. Realistic expectation: subtle but real improvements over 2–3 months with consistent use, not overnight transformation.
+    </p>
+  </div>
+
+  <div class="buy-button-container">
+    <div class="price-urgency-block">
+      <p class="price-callout">{price}</p>
+      <div class="urgency-row">
+        <span class="urgency-dot"></span>
+        <span class="urgency-text">Selling fast — limited stock available</span>
+      </div>
+      <div class="trust-badges">
+        <span class="trust-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+          Free Shipping
+        </span>
+        <span class="trust-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Money-Back Guarantee
+        </span>
+        <span class="trust-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="22" height="18" rx="2"/><path d="M1 10h22"/></svg>
+          Secure Checkout
+        </span>
+      </div>
+    </div>
+    <div class="buy-button-wrap">
+      <div id="product-component-1015465168106301"></div>
+    </div>
+  </div>
+
+  <div class="image-gallery">
+    <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/55c0857245b3973d2b2888eb2309.jpg?v=1774965059" alt="Portable Red Light LED Facial Mask - Front View">
+    <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/acf1bcd1427a976dba74667934be.jpg?v=1774965071" alt="Portable Red Light LED Facial Mask - Wearing">
+    <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/c07cfa274d9ebd5438c9dd891fd5.jpg?v=1774965081" alt="Portable Red Light LED Facial Mask - Detail">
+    <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/fce987e94d4194d5bfbed41f2fd9.jpg?v=1774965092" alt="Portable Red Light LED Facial Mask - Silicone">
+    <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/b54f8d75464c9c5faea0c6964abd.jpg?v=1774965103" alt="Portable Red Light LED Facial Mask - Controls">
+  </div>
+
+  <h2>Product Specifications</h2>
+  <table class="specs-table">
+    <tr>
+      <th>Feature</th>
+      <th>Details</th>
+    </tr>
+    <tr>
+      <td>Brand</td>
+      <td>{brand}</td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td>Portable Red Light LED Facial Mask</td>
+    </tr>
+    <tr>
+      <td>Price</td>
+      <td>{price}</td>
+    </tr>
+    <tr>
+      <td>Light Wavelengths</td>
+      <td>Red (630nm) and Near-Infrared (850nm)</td>
+    </tr>
+    <tr>
+      <td>Coverage</td>
+      <td>Full-face soft silicone construction, adjustable for all face sizes</td>
+    </tr>
+    <tr>
+      <td>Material</td>
+      <td>Food-grade silicone, hypoallergenic</td>
+    </tr>
+    <tr>
+      <td>Power & Operation</td>
+      <td>USB-C rechargeable; one-touch control</td>
+    </tr>
+    <tr>
+      <td>Session Duration</td>
+      <td>Adjustable 10–20 minute sessions</td>
+    </tr>
+    <tr>
+      <td>Warranty</td>
+      <td>1-year manufacturer warranty; 60-day return</td>
+    </tr>
+  </table>
+
+  <h2>What Does Red Light Therapy Actually Do to Your Skin?</h2>
+  <p>
+    Red light at 630nm and near-infrared at 850nm penetrate the dermal layer where collagen lives. These wavelengths stimulate mitochondrial activity in fibroblasts—the cells responsible for making collagen and elastin. The result is measurable: clinical studies document 34.7% improvement in crow's feet after 56 days and 47.7% increase in dermal density after 12 weeks. This is not placebo.
+  </p>
+
+  <p>
+    The key difference between at-home masks and professional treatments is power output (measured in milliwatts per square centimeter). Clinical devices deliver 10–50 mW/cm², while most consumer masks deliver 5–15 mW/cm². Softer intensity means slower results, but the mechanism is identical.
+  </p>
+
+  <table class="problem-solution-table">
+    <tr>
+      <th>Skin Concern</th>
+      <th>Clinical Evidence</th>
+      <th>Timeline (At-Home Mask)</th>
+    </tr>
+    <tr>
+      <td>Fine lines and crow's feet</td>
+      <td>34.7% improvement at 56 days; 38.3% at 84 days (clinical studies)</td>
+      <td>8–12 weeks (5x weekly)</td>
+    </tr>
+    <tr>
+      <td>Skin elasticity</td>
+      <td>Significant improvement in skin elasticity metrics at 6–8 weeks</td>
+      <td>6–8 weeks (consistent use)</td>
+    </tr>
+    <tr>
+      <td>Collagen and dermal density</td>
+      <td>47.7% increase in dermal density after 84 days</td>
+      <td>8–12 weeks (5x weekly)</td>
+    </tr>
+    <tr>
+      <td>Redness and inflammation</td>
+      <td>Red light reduces inflammatory markers and promotes circulation</td>
+      <td>2–4 weeks</td>
+    </tr>
+    <tr>
+      <td>Acne (mild)</td>
+      <td>Less effective than blue light, but red light supports healing</td>
+      <td>4–6 weeks (combination approach)</td>
+    </tr>
+  </table>
+
+  <h2>How Does At-Home Red Light Compare to Dermatologist Treatments?</h2>
+  <table class="comp-table">
+    <tr>
+      <th>Aspect</th>
+      <th>Portable Red Light Mask ($198)</th>
+      <th>At-Home Red Light Panel ($150–300)</th>
+      <th>Professional LED Treatment ($250–500/session)</th>
+      <th>Laser/Radiofrequency ($1000+/session)</th>
+    </tr>
+    <tr>
+      <td>Light Intensity</td>
+      <td>Moderate (5–10 mW/cm²)</td>
+      <td>Moderate (5–12 mW/cm²)</td>
+      <td>High (15–50 mW/cm²)</td>
+      <td>Very High (100+ mW/cm²)</td>
+    </tr>
+    <tr>
+      <td>Portability</td>
+      <td class="checkmark">✓ Highly portable</td>
+      <td class="xmark">✗ Requires setup</td>
+      <td class="checkmark">✓ In-office only</td>
+      <td class="checkmark">✓ In-office only</td>
+    </tr>
+    <tr>
+      <td>Coverage Fit</td>
+      <td class="checkmark">✓ Conforms to face shape</td>
+      <td class="xmark">✗ One-size-fits-all</td>
+      <td class="checkmark">✓ Professional application</td>
+      <td class="checkmark">✓ Precise targeting</td>
+    </tr>
+    <tr>
+      <td>Results Timeline</td>
+      <td>8–12 weeks</td>
+      <td>8–12 weeks</td>
+      <td>6–8 weeks</td>
+      <td>4–6 weeks (faster)</td>
+    </tr>
+    <tr>
+      <td>Cost Per Session</td>
+      <td>~$0.50 (after initial purchase)</td>
+      <td>~$0.50 (after initial purchase)</td>
+      <td>$250–500</td>
+      <td>$1000+</td>
+    </tr>
+    <tr>
+      <td>User Convenience</td>
+      <td class="checkmark">✓ Home-based daily</td>
+      <td class="checkmark">✓ Home-based daily</td>
+      <td class="xmark">✗ Requires appointments</td>
+      <td class="xmark">✗ Requires appointments</td>
+    </tr>
+  </table>
+
+  <h2>Who Should Use a Portable Red Light Therapy Mask?</h2>
+  <table class="decision-table">
+    <tr>
+      <th>Good For</th>
+      <th>Not Ideal For</th>
+    </tr>
+    <tr>
+      <td>Anyone starting anti-aging prevention (30+) who wants measurable collagen support</td>
+      <td>Those expecting immediate results or dramatic wrinkle erasure</td>
+    </tr>
+    <tr>
+      <td>People who travel or want a device that goes anywhere (fully portable silicone mask)</td>
+      <td>Users who cannot commit to 3–5 weekly sessions for 8+ weeks</td>
+    </tr>
+    <tr>
+      <td>Those wanting to avoid in-office treatments but still seek clinical-grade wavelengths</td>
+      <td>Severe aging or advanced skin damage (needs professional intervention)</td>
+    </tr>
+    <tr>
+      <td>Budget-conscious buyers who understand gradual improvements over weeks</td>
+      <td>Anyone with photosensitivity, porphyria, or thyroid disease (consult doctor first)</td>
+    </tr>
+    <tr>
+      <td>All skin types, including sensitive skin (red light is non-ablative and gentle)</td>
+      <td>Pregnant women should consult a dermatologist before starting</td>
+    </tr>
+  </table>
+
+  <h2>How Often Should You Use a Red Light Mask for Results?</h2>
+  <p>
+    Clinical evidence supports 3–5 sessions per week at 10–20 minutes per session. Here's the science-backed schedule:
+  </p>
+  <ul>
+    <li><strong>3x per week (minimum):</strong> Shows results after 8–10 weeks. Slower but sustainable.</li>
+    <li><strong>5x per week (optimal):</strong> Results visible at 4–6 weeks for texture; 8 weeks for wrinkles. Fastest at-home results.</li>
+    <li><strong>Daily use:</strong> Safe but doesn't significantly speed results. Risk of minor irritation increases.</li>
+    <li><strong>1–2x per week:</strong> Too infrequent; won't generate measurable collagen stimulation.</li>
+  </ul>
+  <p>
+    The sweet spot is 4–5 times per week. This aligns with how collagen remodeling works: cells need repeated signals to upregulate synthesis.
+  </p>
+
+  <h2>What Should You Look for in an At-Home LED Mask?</h2>
+  <table class="problem-solution-table">
+    <tr>
+      <th>Feature</th>
+      <th>Why It Matters</th>
+      <th>This Mask</th>
+    </tr>
+    <tr>
+      <td>Wavelength accuracy (630nm & 850nm)</td>
+      <td>These specific wavelengths penetrate skin and drive collagen. Avoid masks with mismatched specs.</td>
+      <td class="checkmark">✓ Clinically validated wavelengths</td>
+    </tr>
+    <tr>
+      <td>Silicone construction</td>
+      <td>Soft, hypoallergenic, conforms to face shape for even light distribution. Better than rigid plastic.</td>
+      <td class="checkmark">✓ Food-grade silicone, fully conforming</td>
+    </tr>
+    <tr>
+      <td>Adjustable timing (10–20 min)</td>
+      <td>Too short = missed dose; too long = potential irritation. Flexibility matters.</td>
+      <td class="checkmark">✓ Adjustable sessions</td>
+    </tr>
+    <tr>
+      <td>One-touch operation</td>
+      <td>Simplicity drives consistency. If the mask is complicated, you'll skip sessions.</td>
+      <td class="checkmark">✓ Single-button control</td>
+    </tr>
+    <tr>
+      <td>Portability & durability</td>
+      <td>You'll use it more if it's lightweight and travels well. Silicone outlasts plastic.</td>
+      <td class="checkmark">✓ Lightweight, portable design</td>
+    </tr>
+  </table>
+
+  <h2>Is $200 Too Much for an At-Home Red Light Device?</h2>
+  <p>
+    At $198.20, this mask costs less than 2 professional LED sessions. Over 6 months of consistent use (roughly 90 sessions), your cost per session is $2.20. Compare that to $250–500 per professional session, and the ROI is clear.
+  </p>
+
+  <p>
+    The question isn't price—it's commitment. If you'll use it consistently 4–5 times weekly for at least 12 weeks, the $198 investment pays for itself against even one professional treatment. If you skip sessions or lose interest after 2 weeks, no device is worth it.
+  </p>
+
+  <div class="buy-button-container">
+    <div class="price-urgency-block">
+      <p class="price-callout">{price}</p>
+      <div class="urgency-row">
+        <span class="urgency-dot"></span>
+        <span class="urgency-text">Selling fast — limited stock available</span>
+      </div>
+      <div class="trust-badges">
+        <span class="trust-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+          Free Shipping
+        </span>
+        <span class="trust-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Money-Back Guarantee
+        </span>
+        <span class="trust-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="22" height="18" rx="2"/><path d="M1 10h22"/></svg>
+          Secure Checkout
+        </span>
+      </div>
+    </div>
+    <div class="buy-button-wrap">
+      <div id="product-component-1015465168106302"></div>
+    </div>
+  </div>
+
+  <h2>Pros and Cons</h2>
+  <div class="pros-cons">
+    <div class="pros">
+      <h3>Pros</h3>
+      <ul>
+        <li>Clinically validated 630nm and 850nm wavelengths proven to boost collagen</li>
+        <li>Food-grade silicone conforms perfectly to face shape for even light distribution</li>
+        <li>One-touch operation—genuinely simple to use daily</li>
+        <li>Portable and lightweight—use at home, travel, or office</li>
+        <li>USB-C rechargeable with multiple sessions per charge</li>
+        <li>Hypoallergenic and safe for all skin types including sensitive skin</li>
+        <li>Clinical results: 34–47% improvements in wrinkles and skin density</li>
+      </ul>
+    </div>
+    <div class="cons">
+      <h3>Cons</h3>
+      <ul>
+        <li>Results take 8–12 weeks; no shortcuts or overnight transformation</li>
+        <li>Requires commitment to 4–5 weekly sessions for clinical results</li>
+        <li>Silicone can retain heat; uncomfortable in warm weather or right after exercise</li>
+        <li>Not a replacement for professional treatments if you have severe aging</li>
+        <li>Light intensity is moderate, not as high as professional devices</li>
+        <li>Requires discipline and consistency; sporadic use won't show results</li>
+        <li>Higher price point ($198) than basic LED panels, though more portable</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Real Expectations: What You Will and Won't See</h2>
+  <table class="tradeoffs-table">
+    <tr>
+      <th>What You Will See</th>
+      <th>What You Won't See</th>
+    </tr>
+    <tr>
+      <td class="upside">Softer, smoother skin texture after 4–6 weeks</td>
+      <td class="downside">Dramatic wrinkle erasure in 2–3 weeks</td>
+    </tr>
+    <tr>
+      <td class="upside">Measurable reduction in fine lines by 8 weeks (34.7% clinical data)</td>
+      <td class="downside">Replacement for Botox or laser resurfacing</td>
+    </tr>
+    <tr>
+      <td class="upside">Improved skin firmness and elasticity over 8–12 weeks</td>
+      <td class="downside">Immediate glow or radiance (takes 4+ weeks)</td>
+    </tr>
+    <tr>
+      <td class="upside">Increased collagen density (47.7% at 12 weeks, clinically proven)</td>
+      <td class="downside">Deep wrinkle reduction without professional help</td>
+    </tr>
+    <tr>
+      <td class="upside">Reduced redness and better circulation</td>
+      <td class="downside">Results without consistent 4–5x weekly use</td>
+    </tr>
+  </table>
+
+  <h2>Portable Red Light Mask vs. Alternatives</h2>
+  <table class="comp-table">
+    <tr>
+      <th>Feature</th>
+      <th>Portable Red Light Mask ($198)</th>
+      <th>LED Light Panel ($100–200)</th>
+      <th>Premium Mask ($400–600)</th>
+      <th>Professional Treatment ($250–500/visit)</th>
+    </tr>
+    <tr>
+      <td>Portability</td>
+      <td class="checkmark">✓ Highly portable</td>
+      <td class="xmark">✗ Stationary</td>
+      <td class="checkmark">✓ Portable</td>
+      <td class="xmark">✗ In-office only</td>
+    </tr>
+    <tr>
+      <td>Wavelengths</td>
+      <td class="checkmark">✓ 630nm + 850nm</td>
+      <td class="checkmark">✓ Usually included</td>
+      <td class="checkmark">✓ Multi-wavelength</td>
+      <td class="checkmark">✓ Professional grade</td>
+    </tr>
+    <tr>
+      <td>Coverage Fit</td>
+      <td class="checkmark">✓ Conforms to face</td>
+      <td class="xmark">✗ Fixed angle</td>
+      <td class="checkmark">✓ Conforms to face</td>
+      <td class="checkmark">✓ Professional fit</td>
+    </tr>
+    <tr>
+      <td>Results Timeline</td>
+      <td>8–12 weeks</td>
+      <td>8–12 weeks</td>
+      <td>6–8 weeks</td>
+      <td>4–6 weeks</td>
+    </tr>
+    <tr>
+      <td>Cost Per Use (after purchase)</td>
+      <td>~$0.50</td>
+      <td>~$0.35</td>
+      <td>~$1.50</td>
+      <td>$250–500</td>
+    </tr>
+    <tr>
+      <td>User Convenience</td>
+      <td class="checkmark">✓ Travel-ready</td>
+      <td class="checkmark">✓ Home use</td>
+      <td class="checkmark">✓ Home use</td>
+      <td class="xmark">✗ Appointment needed</td>
+    </tr>
+  </table>
+
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-section">
+    <div class="faq-item">
+      <strong>How long does each red light therapy session take?</strong>
+      <p>Most sessions are 10–20 minutes. The mask's timer helps you stay consistent without overdoing it. Shorter sessions (10 min) are gentler for beginners; longer sessions (20 min) can be used 3–4x weekly for faster results.</p>
+    </div>
+
+    <div class="faq-item">
+      <strong>Can you use red light therapy with serums?</strong>
+      <p>Yes — applying a hyaluronic acid or vitamin C serum before your session can enhance absorption. Avoid retinol directly before LED use, as retinol can increase photosensitivity. Apply serum after the mask instead.</p>
+    </div>
+
+    <div class="faq-item">
+      <strong>Is red light therapy safe for sensitive skin?</strong>
+      <p>Red light is one of the gentlest wavelengths and doesn't cause UV damage. Most dermatologists consider it safe for all skin types, including sensitive skin. If you have active inflammation or compromised barrier, start with 10-minute sessions and increase gradually.</p>
+    </div>
+
+    <div class="faq-item">
+      <strong>How long until you see results from red light therapy?</strong>
+      <p>Clinical studies show visible improvement in 4–8 weeks with consistent use 3–5 times per week. Subtle changes in skin texture may appear sooner (2–3 weeks), but measurable collagen improvement takes 8–12 weeks. Patience is essential.</p>
+    </div>
+
+    <div class="faq-item">
+      <strong>Does this mask work on acne?</strong>
+      <p>This mask focuses on red light (collagen/anti-aging). For acne, you'd want a mask that also includes blue light therapy at 415nm. Red light supports healing and reduces inflammation, so it's complementary to acne treatment but not primary.</p>
+    </div>
+  </div>
+
+  <h2>Also Tested: Related Self-Care Products</h2>
+  <div class="related-products-grid">
+    <div class="product-card">
+      <h3>Wireless LED Red Light Face Mask</h3>
+      <p>Vibe Score: 79</p>
+      <div class="score">Worth It</div>
+      <p>Budget-friendly alternative with wireless convenience. Less collagen-focused wavelengths but excellent value at $69.99.</p>
+      <a href="/products/wireless-led-face-mask">View Product →</a>
+    </div>
+    <div class="product-card">
+      <h3>Red Light Therapy Device</h3>
+      <p>Vibe Score: 72</p>
+      <div class="score">Hidden Gem</div>
+      <p>Handheld red light therapy for targeted spot treatment. Better for specific areas than full-face coverage.</p>
+      <a href="/products/red-light-therapy-device">View Product →</a>
+    </div>
+    <div class="product-card">
+      <h3>Stainless Steel Face Roller</h3>
+      <p>Vibe Score: 70</p>
+      <div class="score">Hidden Gem</div>
+      <p>Non-electric massage tool that boosts circulation. Pairs well with red light therapy for enhanced skin vitality.</p>
+      <a href="/products/stainless-steel-face-roller">View Product →</a>
+    </div>
+  </div>
+
+  <div class="buy-button-container">
+    <div class="price-urgency-block">
+      <p class="price-callout">{price}</p>
+      <div class="urgency-row">
+        <span class="urgency-dot"></span>
+        <span class="urgency-text">Selling fast — limited stock available</span>
+      </div>
+      <div class="trust-badges">
+        <span class="trust-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+          Free Shipping
+        </span>
+        <span class="trust-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Money-Back Guarantee
+        </span>
+        <span class="trust-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="22" height="18" rx="2"/><path d="M1 10h22"/></svg>
+          Secure Checkout
+        </span>
+      </div>
+    </div>
+    <div class="buy-button-wrap">
+      <div id="product-component-1015465168106303"></div>
+    </div>
+  </div>
+
+  <div class="verdict-section">
+    <h2>Final Verdict: Is the Portable Red Light LED Facial Mask Worth It?</h2>
+    <p>
+      <strong>Yes—it's a surprisingly capable at-home red light mask that delivers measurable collagen stimulation.</strong>
+    </p>
+    <p>
+      At $198.20, the Portable Red Light LED Facial Mask combines clinical-grade wavelengths (630nm and 850nm) with the convenience of a wearable, portable design. The soft silicone conforms to your face for even light distribution—a real advantage over flat panels. If you commit to 4–5 sessions weekly for 8–12 weeks, clinical evidence supports 34–47% improvements in wrinkle depth and skin density. That's not subtle; that's measurable.
+    </p>
+    <p>
+      <strong>The catch:</strong> You won't see results after 2 weeks. Red light therapy is a slow play. Expect patience and discipline. Skip sessions, and the timeline stretches to 16+ weeks. But if you're serious about collagen building without professional treatments, this mask is one of the most effective at-home tools available.
+    </p>
+    <p>
+      <strong>Buy it if:</strong> You want clinical-grade red light therapy in a portable, easy-to-use format and you'll commit to consistent use for 2–3 months.
+    </p>
+    <p>
+      <strong>Skip it if:</strong> You expect overnight results, you can't commit to multiple weekly sessions, or you have severe aging that requires professional help.
+    </p>
+    <p>
+      <strong>Vibe Score: 76/100 | Verdict: Hidden Gem</strong>
+    </p>
+  </div>
+
+  <div class="buy-button-container">
+    <div class="price-urgency-block">
+      <p class="price-callout">{price}</p>
+      <div class="urgency-row">
+        <span class="urgency-dot"></span>
+        <span class="urgency-text">Selling fast — limited stock available</span>
+      </div>
+      <div class="trust-badges">
+        <span class="trust-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+          Free Shipping
+        </span>
+        <span class="trust-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Money-Back Guarantee
+        </span>
+        <span class="trust-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="22" height="18" rx="2"/><path d="M1 10h22"/></svg>
+          Secure Checkout
+        </span>
+      </div>
+    </div>
+    <div class="buy-button-wrap">
+      <div id="product-component-1015465168106304"></div>
+    </div>
+  </div>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://vibetestlab.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Self Care",
+          "item": "https://vibetestlab.com/categories/self-care"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Portable Red Light LED Facial Mask",
+          "item": "https://vibetestlab.com/products/portable-red-light-silicone-led-facial-mask"
+        }
+      ]
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "WebPage",
+      "name": "Is Portable Red Light Therapy as Effective as In-Office Treatments?",
+      "speakableSpecification": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".answer-box", ".verdict-section"]
+      }
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "76",
+        "bestRating": "100",
+        "worstRating": "1"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Vibe Test Lab"
+      },
+      "reviewBody": "The Portable Red Light LED Facial Mask delivers measurable collagen stimulation through proven 630nm and 850nm wavelengths. Clinical studies show 34–47% improvements in wrinkles and dermal density. At-home results are real but require 8–12 weeks of consistent 4–5x weekly use. This mask is a hidden gem for collagen building without professional treatments."
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "Portable Red Light LED Facial Mask",
+      "image": [
+        "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/55c0857245b3973d2b2888eb2309.jpg?v=1774965059",
+        "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/acf1bcd1427a976dba74667934be.jpg?v=1774965071",
+        "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/c07cfa274d9ebd5438c9dd891fd5.jpg?v=1774965081"
+      ],
+      "description": "Wearable red light therapy mask — boost collagen while you go about your day. Soft silicone conforms to your face for even light distribution. Red light wavelengths penetrate deep into the skin. One-touch operation.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Vibe Test Lab"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://fwaqf1-er.myshopify.com/products/portable-red-light-silicone-led-facial-mask?utm_source=aeo&utm_medium=content&utm_campaign=portable-red-light-mask",
+        "priceCurrency": "USD",
+        "price": "198.20",
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "76",
+        "bestRating": "100",
+        "worstRating": "1",
+        "ratingCount": "1"
+      }
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "HowTo",
+      "name": "How to Use the Portable Red Light LED Facial Mask",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Cleanse your face with a gentle cleanser and let it dry completely before use."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Charge the device fully via USB-C before first use (approximately 2 hours)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Adjust the silicone mask so it sits snugly on your face for even light distribution."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Press the one-touch button to start your session (10–20 minutes)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Use 4–5 times per week for best results."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Be patient — expect visible results after 8–12 weeks of consistent use."
+        }
+      ]
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long does each red light therapy session take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most sessions are 10–20 minutes. The mask's timer helps you stay consistent without overdoing it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you use red light therapy with serums?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — applying a hyaluronic acid or vitamin C serum before your session can enhance absorption. Avoid retinol directly before LED use."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is red light therapy safe for sensitive skin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Red light is one of the gentlest wavelengths and doesn't cause UV damage. Most dermatologists consider it safe for all skin types, including sensitive skin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long until you see results from red light therapy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Clinical studies show visible improvement in 4–8 weeks with consistent use 3–5 times per week. Measurable collagen improvement takes 8–12 weeks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does this mask work on acne?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This mask focuses on red light (collagen/anti-aging). For acne, you'd want a mask that also includes blue light therapy at 415nm."
+          }
+        }
+      ]
+    }
+  </script>
+
+  <script type="text/javascript" is:inline>
+    (function() {
+      var buttons = [
+        { node: 'product-component-1015465168106301', productId: '10154651681063' },
+        { node: 'product-component-1015465168106302', productId: '10154651681063' },
+        { node: 'product-component-1015465168106303', productId: '10154651681063' },
+        { node: 'product-component-1015465168106304', productId: '10154651681063' }
+      ];
+      var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+      var btnOpts = { "product": { "contents": { "img": false, "title": false, "price": false }, "styles": { "product": { "@media (min-width: 601px)": { "max-width": "100%", "margin-left": "auto", "margin-right": "auto" } }, "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "letter-spacing": "0.02em", "padding": "14px 28px", "border-radius": "10px", "width": "100%", "max-width": "400px", "margin-left": "auto", "margin-right": "auto", "display": "block", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "button": "Add to Cart" } }, "cart": { "styles": { "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "border-radius": "10px", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "total": "Subtotal", "button": "Checkout" } }, "toggle": { "styles": { "toggle": { "background-color": "#0a0a0a", ":hover": { "background-color": "#222222" }, ":focus": { "background-color": "#222222" } } } } };
+      function ShopifyBuyInit1() {
+        var client = ShopifyBuy.buildClient({ domain: 'fwaqf1-er.myshopify.com', storefrontAccessToken: '4706c336d25a9168835827f0170b56f0' });
+        ShopifyBuy.UI.onReady(client).then(function(ui) {
+          buttons.forEach(function(b) {
+            var el = document.getElementById(b.node);
+            if (el) ui.createComponent('product', { id: b.productId, node: el, moneyFormat: '%24%7B%7Bamount%7D%7D', options: btnOpts });
+          });
+        });
+      }
+      function loadScript1() {
+        var s = document.createElement('script');
+        s.async = true; s.defer = true; s.src = scriptURL;
+        s.onload = ShopifyBuyInit1;
+        document.body.appendChild(s);
+      }
+      if (window.ShopifyBuy && window.ShopifyBuy.UI) { ShopifyBuyInit1(); }
+      else { loadScript1(); }
+    })();
+  </script>
+</BaseLayout>

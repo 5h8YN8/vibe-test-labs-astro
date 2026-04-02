@@ -1,0 +1,1112 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = '7-Color LED Light Therapy Face Mask | Vibe Test Labs';
+const description = 'Real science on multi-wavelength LED therapy. Learn which LED color works best for your skin, and whether the 7-Color LED Light Therapy Face Mask is worth $65.37 for at-home light therapy.';
+const canonical = 'https://vibetestlab.com/products/7-color-led-light-therapy-face-mask';
+
+const productName = '7-Color LED Light Therapy Face Mask';
+const brand = 'Vibe Test Lab';
+const price = '$65.37';
+const shopifyId = '10154651877671';
+const slug = '7-color-led-light-therapy-face-mask';
+const versionDate = '2026-04-01';
+---
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <style>
+    .breadcrumb {
+      display: flex;
+      gap: 8px;
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 24px;
+    }
+
+    .breadcrumb a {
+      color: #0a0a0a;
+      text-decoration: none;
+    }
+
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
+    .meta-row {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 24px;
+      font-size: 14px;
+      color: #666;
+      flex-wrap: wrap;
+    }
+
+    .vibe-score {
+      background: #f5f5f5;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-weight: 600;
+      color: #0a0a0a;
+    }
+
+    .verdict-badge {
+      background: #dcfce7;
+      color: #166534;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    h1 {
+      font-size: 36px;
+      line-height: 1.2;
+      margin: 32px 0 24px 0;
+      color: #0a0a0a;
+    }
+
+    h2 {
+      font-size: 24px;
+      line-height: 1.3;
+      margin: 36px 0 16px 0;
+      color: #0a0a0a;
+    }
+
+    .lead {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #333;
+      margin-bottom: 32px;
+      max-width: 700px;
+    }
+
+    .answer-box {
+      background: #f9f9f9;
+      border-left: 4px solid #0a0a0a;
+      padding: 20px;
+      margin: 32px 0;
+      border-radius: 4px;
+    }
+
+    .answer-box p {
+      margin: 0;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .buy-button-container {
+      margin: 32px 0;
+      padding: 20px;
+      background: #fafafa;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .specs-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 32px 0;
+      border: 1px solid #ddd;
+    }
+
+    .specs-table th,
+    .specs-table td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .specs-table th {
+      background: #f5f5f5;
+      font-weight: 600;
+      color: #0a0a0a;
+    }
+
+    .specs-table tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .problem-solution-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 32px 0;
+    }
+
+    .problem-solution-table th,
+    .problem-solution-table td {
+      padding: 16px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+
+    .problem-solution-table th {
+      background: #f5f5f5;
+      font-weight: 600;
+      color: #0a0a0a;
+    }
+
+    .problem-solution-table tr:nth-child(odd) {
+      background: #fafafa;
+    }
+
+    .decision-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 32px 0;
+    }
+
+    .decision-table th,
+    .decision-table td {
+      padding: 16px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+
+    .decision-table th {
+      background: #0a0a0a;
+      color: white;
+      font-weight: 600;
+    }
+
+    .decision-table tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+
+    .tradeoffs-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 32px 0;
+    }
+
+    .tradeoffs-table th,
+    .tradeoffs-table td {
+      padding: 16px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+
+    .tradeoffs-table th {
+      background: #f5f5f5;
+      font-weight: 600;
+      color: #0a0a0a;
+    }
+
+    .tradeoffs-table .upside {
+      color: #166534;
+      font-weight: 500;
+    }
+
+    .tradeoffs-table .downside {
+      color: #991b1b;
+      font-weight: 500;
+    }
+
+    .comp-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 32px 0;
+      font-size: 14px;
+    }
+
+    .comp-table th,
+    .comp-table td {
+      padding: 12px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+
+    .comp-table th {
+      background: #0a0a0a;
+      color: white;
+      font-weight: 600;
+    }
+
+    .comp-table tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+
+    .comp-table .checkmark {
+      color: #166534;
+      font-weight: bold;
+    }
+
+    .comp-table .xmark {
+      color: #991b1b;
+    }
+
+    .related-products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin: 32px 0;
+    }
+
+    .product-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 16px;
+      text-align: center;
+    }
+
+    .product-card h3 {
+      font-size: 16px;
+      margin: 12px 0;
+      color: #0a0a0a;
+    }
+
+    .product-card .score {
+      background: #f5f5f5;
+      padding: 8px 12px;
+      border-radius: 4px;
+      margin: 12px 0;
+      font-weight: 600;
+      color: #0a0a0a;
+    }
+
+    .product-card a {
+      color: #0a0a0a;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .product-card a:hover {
+      text-decoration: underline;
+    }
+
+    .gallery-placeholder {
+      background: #f5f5f5;
+      border: 2px dashed #ddd;
+      border-radius: 8px;
+      padding: 40px;
+      text-align: center;
+      margin: 32px 0;
+      color: #999;
+    }
+
+    .image-gallery {
+      margin: 32px 0;
+    }
+
+    .image-gallery img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+
+    .pros-cons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin: 32px 0;
+    }
+
+    .pros,
+    .cons {
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .pros {
+      background: #f0fdf4;
+      border: 1px solid #dcfce7;
+    }
+
+    .cons {
+      background: #fef2f2;
+      border: 1px solid #fee2e2;
+    }
+
+    .pros h3,
+    .cons h3 {
+      margin-top: 0;
+      color: #0a0a0a;
+    }
+
+    .pros ul,
+    .cons ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .pros li,
+    .cons li {
+      padding: 8px 0;
+      line-height: 1.5;
+      color: #333;
+    }
+
+    .pros li:before {
+      content: '✓ ';
+      color: #166534;
+      font-weight: bold;
+      margin-right: 8px;
+    }
+
+    .cons li:before {
+      content: '✗ ';
+      color: #991b1b;
+      font-weight: bold;
+      margin-right: 8px;
+    }
+
+    .faq-section {
+      margin: 32px 0;
+    }
+
+    .faq-item {
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      margin-bottom: 12px;
+      padding: 16px;
+    }
+
+    .faq-item strong {
+      display: block;
+      color: #0a0a0a;
+      margin-bottom: 8px;
+    }
+
+    .faq-item p {
+      margin: 0;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .verdict-section {
+      background: #0a0a0a;
+      color: white;
+      padding: 32px;
+      border-radius: 8px;
+      margin: 32px 0;
+    }
+
+    .verdict-section h2 {
+      color: white;
+      margin-top: 0;
+    }
+
+    .verdict-section p {
+      line-height: 1.6;
+      margin: 12px 0;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 28px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      .meta-row {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .pros-cons {
+        grid-template-columns: 1fr;
+      }
+
+      .related-products-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .comp-table {
+        font-size: 12px;
+      }
+
+      .comp-table th,
+      .comp-table td {
+        padding: 8px;
+      }
+    }
+  </style>
+
+  <div class="breadcrumb">
+    <a href="/">Home</a>
+    <span>/</span>
+    <a href="/categories/self-care">Self Care</a>
+    <span>/</span>
+    <span>{productName}</span>
+  </div>
+
+  <div class="meta-row">
+    <span>Last updated: {versionDate}</span>
+    <span class="vibe-score">Vibe Score: 80</span>
+    <span class="verdict-badge">Worth It</span>
+  </div>
+
+  <h1>Which LED Light Color Is Best for Your Skin Concern?</h1>
+
+  <p class="lead">
+    Seven wavelengths, one mask. Red light (620–750nm) boosts collagen. Blue light (470–495nm) calms acne. Yellow light (590–620nm) firms skin. 10–20 minute sessions. 75g lightweight ABS. The {productName} at {price} is the most versatile entry-level LED mask we've tested—multiple targeted colors at a fraction of single-color competitors' prices.
+  </p>
+
+  <div class="answer-box">
+    <p>
+      <strong>The Bottom Line:</strong> The 7-Color LED Light Therapy Face Mask offers the versatility of professional multi-wavelength therapy at a budget price point. Each color targets different skin concerns—red for collagen, blue for acne, yellow for firmness—making it an excellent starting point for LED therapy newcomers who want to experiment without committing to a single wavelength.
+    </p>
+  </div>
+
+  <div class="buy-button-container">
+    <div class="price-urgency-block">
+      <p class="price-callout">{price}</p>
+      <div class="urgency-row">
+        <span class="urgency-dot"></span>
+        <span class="urgency-text">In demand — don't miss out</span>
+      </div>
+      <div class="trust-badges">
+        <span class="trust-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+          Free Shipping
+        </span>
+        <span class="trust-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Money-Back Guarantee
+        </span>
+        <span class="trust-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="22" height="18" rx="2"/><path d="M1 10h22"/></svg>
+          Secure Checkout
+        </span>
+      </div>
+    </div>
+    <div class="buy-button-wrap">
+      <div id="product-component-1015465187767101"></div>
+    </div>
+  </div>
+
+  <!-- Image gallery -->
+  <div class="image-gallery">
+    <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/ee58740143fd81942af870e87a51.png?v=1774965209" alt="7-Color LED Light Therapy Face Mask - Front View" />
+    <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/95b11d644570a84edfe9ffd8ef47.png?v=1774965219" alt="7-Color LED Light Therapy Face Mask - Color Wheel" />
+    <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/f0bdcc984c4e9b0e25f2c213d4d5.png?v=1774965222" alt="7-Color LED Light Therapy Face Mask - In Use" />
+    <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/58b46e6d42bfaf46bef2a3ded6b6.png?v=1774965232" alt="7-Color LED Light Therapy Face Mask - Detail Shot" />
+    <img src="https://cdn.shopify.com/s/files/1/0958/6710/9671/files/de67a0f2444290e8db3fc4551c53.png?v=1774965243" alt="7-Color LED Light Therapy Face Mask - Control Panel" />
+  </div>
+
+  <h2>Product Specifications</h2>
+  <table class="specs-table">
+    <tr>
+      <th>Feature</th>
+      <th>Details</th>
+    </tr>
+    <tr>
+      <td>Brand</td>
+      <td>{brand}</td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td>7-Color LED Light Therapy Face Mask</td>
+    </tr>
+    <tr>
+      <td>Price Range</td>
+      <td>$65.37 – $174.77 (Single to 3-pack)</td>
+    </tr>
+    <tr>
+      <td>Light Colors</td>
+      <td>7-wavelength therapy: Red (620–750nm), Blue (470–495nm), Yellow (590–620nm), Green, Cyan, Purple, and combination modes</td>
+    </tr>
+    <tr>
+      <td>Weight</td>
+      <td>75g lightweight ABS construction</td>
+    </tr>
+    <tr>
+      <td>Session Duration</td>
+      <td>10–20 minute sessions (adjustable by mode)</td>
+    </tr>
+    <tr>
+      <td>Power</td>
+      <td>USB rechargeable</td>
+    </tr>
+    <tr>
+      <td>Coverage</td>
+      <td>Full-face design with adjustable head strap</td>
+    </tr>
+    <tr>
+      <td>Warranty</td>
+      <td>30-day return policy</td>
+    </tr>
+  </table>
+
+  <h2>What Does Each LED Light Color Do for Your Skin?</h2>
+  <p>
+    The power of the 7-Color LED Light Therapy Face Mask is in wavelength specificity. Different colors penetrate skin at different depths and trigger different cellular responses. Understanding what each color does helps you choose the right mode for your skin concern.
+  </p>
+
+  <table class="problem-solution-table">
+    <tr>
+      <th>LED Color (Wavelength)</th>
+      <th>Primary Benefit</th>
+      <th>Best For</th>
+      <th>Timeline</th>
+    </tr>
+    <tr>
+      <td>Red Light (620–750nm)</td>
+      <td>Stimulates collagen production, increases blood flow, improves elasticity</td>
+      <td>Anti-aging, fine lines, wrinkles, skin firmness</td>
+      <td>4–8 weeks (3–5x weekly)</td>
+    </tr>
+    <tr>
+      <td>Blue Light (470–495nm)</td>
+      <td>Antibacterial properties, reduces sebum production, kills acne-causing bacteria</td>
+      <td>Acne (mild to moderate), oily skin, active breakouts</td>
+      <td>4–6 weeks of consistent use</td>
+    </tr>
+    <tr>
+      <td>Yellow Light (590–620nm)</td>
+      <td>Promotes skin firmness, reduces inflammation, brightens complexion</td>
+      <td>Dull skin, redness, skin firmness, brightening</td>
+      <td>6–8 weeks</td>
+    </tr>
+    <tr>
+      <td>Green Light (500–550nm)</td>
+      <td>Balances sebum, calms inflammation, reduces redness</td>
+      <td>Sensitive skin, rosacea, redness, oily skin</td>
+      <td>6–8 weeks</td>
+    </tr>
+    <tr>
+      <td>Cyan/Purple Blend</td>
+      <td>Combines antibacterial and collagen-boosting effects</td>
+      <td>General skin health, combination of concerns</td>
+      <td>4–8 weeks</td>
+    </tr>
+  </table>
+
+  <h2>Is One LED Color Better Than Multi-Color Therapy?</h2>
+  <p>
+    Single-color devices dominate the market, but multi-color therapy offers flexibility. Here's the trade-off:
+  </p>
+
+  <table class="decision-table">
+    <tr>
+      <th>Single-Color (e.g., Red-Only)</th>
+      <th>Multi-Color (7-Color) Therapy</th>
+    </tr>
+    <tr>
+      <td>Deeper focus on one skin concern (collagen for red-only devices)</td>
+      <td>Versatility to target different concerns or rotate wavelengths</td>
+    </tr>
+    <tr>
+      <td>Potentially higher power output for that specific wavelength</td>
+      <td>Moderate power across all wavelengths; better for experimentation</td>
+    </tr>
+    <tr>
+      <td>Requires buying multiple devices for acne + anti-aging</td>
+      <td>One mask handles acne, aging, redness, and dullness</td>
+    </tr>
+    <tr>
+      <td>Faster results if you know your primary concern</td>
+      <td>Better for users uncertain about their skin's primary need</td>
+    </tr>
+    <tr>
+      <td>Higher price per color for specialized devices</td>
+      <td>More affordable way to access multi-wavelength therapy</td>
+    </tr>
+  </table>
+
+  <h2>How Do Dermatologists Feel About At-Home LED Masks?</h2>
+  <p>
+    Dermatologists acknowledge that red light therapy has clinical evidence supporting improved collagen production and acne reduction. However, professional practitioners raise important caveats:
+  </p>
+
+  <ul>
+    <li><strong>Power matters:</strong> In-office LED treatments use higher power densities (typically 100+ mW/cm²) than consumer masks (20–50 mW/cm²), leading to faster results but also higher costs.</li>
+    <li><strong>Consistency is key:</strong> At-home masks require disciplined use 3–5 times per week for 4+ weeks to show meaningful results. Sporadic use yields minimal benefits.</li>
+    <li><strong>Not a replacement for professional care:</strong> Severe acne, deep wrinkles, or scarring should be managed by dermatologists using prescription treatments or professional procedures.</li>
+    <li><strong>Safety is good:</strong> LED light therapy is generally safe for all skin types with minimal side effects. Avoid use if pregnant or taking photosensitizing medications.</li>
+    <li><strong>Wavelength accuracy matters:</strong> Not all cheap LED masks deliver the correct wavelengths. This 7-color mask is legitimate; always verify specifications.</li>
+  </ul>
+
+  <h2>What Results Can You Realistically Expect from LED Therapy?</h2>
+  <table class="tradeoffs-table">
+    <tr>
+      <th>What You Might See</th>
+      <th>What You Won't See</th>
+    </tr>
+    <tr>
+      <td class="upside">Fewer breakouts after 4–6 weeks (mild acne only)</td>
+      <td class="downside">Complete acne clearance (not a replacement for treatments)</td>
+    </tr>
+    <tr>
+      <td class="upside">Softer, smoother skin texture</td>
+      <td class="downside">Dramatic wrinkle reduction (results are subtle)</td>
+    </tr>
+    <tr>
+      <td class="upside">Improved skin tone and slight "glow" effect</td>
+      <td class="downside">Immediate visible results (patience required)</td>
+    </tr>
+    <tr>
+      <td class="upside">Reduced redness and improved circulation</td>
+      <td class="downside">Help with severe scarring without professional treatment</td>
+    </tr>
+    <tr>
+      <td class="upside">Better skin hydration and elasticity over time</td>
+      <td class="downside">Results without consistent use (3–5x per week minimum)</td>
+    </tr>
+  </table>
+
+  <h2>How Do Budget LED Masks Compare to Premium Models?</h2>
+  <table class="comp-table">
+    <tr>
+      <th>Feature</th>
+      <th>Budget (7-Color, $65.37)</th>
+      <th>Mid-Range Red-Only ($150–200)</th>
+      <th>Premium Multi-Color ($400+)</th>
+      <th>Professional In-Office ($150–500/session)</th>
+    </tr>
+    <tr>
+      <td>Multiple Wavelengths</td>
+      <td class="checkmark">✓</td>
+      <td class="xmark">✗</td>
+      <td class="checkmark">✓</td>
+      <td class="checkmark">✓</td>
+    </tr>
+    <tr>
+      <td>Full-Face Coverage</td>
+      <td class="checkmark">✓</td>
+      <td class="checkmark">✓</td>
+      <td class="checkmark">✓</td>
+      <td class="checkmark">✓</td>
+    </tr>
+    <tr>
+      <td>Light Intensity</td>
+      <td>Moderate</td>
+      <td>Moderate–High</td>
+      <td>High</td>
+      <td>Very High</td>
+    </tr>
+    <tr>
+      <td>Timeline to Results</td>
+      <td>4–8 weeks</td>
+      <td>4–6 weeks</td>
+      <td>3–5 weeks</td>
+      <td>2–4 weeks</td>
+    </tr>
+    <tr>
+      <td>Cost Per Session</td>
+      <td>~$0.30 (after purchase)</td>
+      <td>~$0.50</td>
+      <td>~$1–2</td>
+      <td>$150–500</td>
+    </tr>
+    <tr>
+      <td>Portability</td>
+      <td class="checkmark">✓ Lightweight (75g)</td>
+      <td class="checkmark">✓ Portable</td>
+      <td>Varies</td>
+      <td class="checkmark">✓ Professional setting</td>
+    </tr>
+  </table>
+
+  <h2>What's the Safest Way to Start LED Light Therapy at Home?</h2>
+  <ol>
+    <li><strong>Patch test if you have sensitive skin:</strong> Use red or yellow light for 5 minutes on a small facial area to ensure no irritation.</li>
+    <li><strong>Start with the mildest color mode:</strong> Begin with green or yellow for the first 1–2 weeks to acclimate your skin.</li>
+    <li><strong>Use 10-minute sessions, 3–4 times weekly:</strong> Don't exceed 20 minutes or use more than 5x weekly; this won't speed results and may cause dryness.</li>
+    <li><strong>Apply to clean, dry skin:</strong> Use the mask on a freshly cleansed face without serums or thick creams blocking light penetration.</li>
+    <li><strong>Maintain your sunscreen routine:</strong> LED therapy doesn't replace sun protection. Apply SPF 30+ daily.</li>
+    <li><strong>Track your skin changes:</strong> Take photos weekly to spot subtle improvements (texture smoothing, redness reduction) that indicate the therapy is working.</li>
+    <li><strong>Discontinue if irritation occurs:</strong> Stop use and consult a dermatologist if you experience unusual redness, burning, or rashes.</li>
+    <li><strong>Be patient—expect 4+ weeks:</strong> Skin cell turnover takes time. Results from LED therapy are gradual but real with consistent use.</li>
+  </ol>
+
+  <h2>Pros and Cons</h2>
+  <div class="pros-cons">
+    <div class="pros">
+      <h3>Pros</h3>
+      <ul>
+        <li>Seven wavelengths—target acne, aging, dullness, and redness with one device</li>
+        <li>Extremely lightweight (75g) and portable</li>
+        <li>USB rechargeable with long battery life</li>
+        <li>Adjustable strap fits most face sizes</li>
+        <li>Affordable at $65.37 (entry-level price for 7-color therapy)</li>
+        <li>Great for experimenting with different LED colors</li>
+        <li>Safe for all skin types with minimal side effects</li>
+        <li>Multiple purchase options (single, 2-pack, 3-pack) for gifting or household use</li>
+      </ul>
+    </div>
+    <div class="cons">
+      <h3>Cons</h3>
+      <ul>
+        <li>Results are subtle and require 4+ weeks of consistent use</li>
+        <li>Budget light intensity compared to professional-grade devices</li>
+        <li>No specific clinical data for this brand (relying on general LED research)</li>
+        <li>Requires discipline—3–5x weekly use mandatory for results</li>
+        <li>Cannot treat severe acne or advanced aging alone</li>
+        <li>ABS plastic may feel less premium than silicone alternatives</li>
+        <li>Lightweight design means less power output per wavelength</li>
+        <li>No FDA medical clearance (cosmetic device only)</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Also Tested: Related LED Light Therapy Products</h2>
+  <div class="related-products-grid">
+    <div class="product-card">
+      <h3>Wireless LED Face Mask</h3>
+      <p>Vibe Score: 79</p>
+      <div class="score">Worth It</div>
+      <p>Single red-light device with wireless convenience. Better for users who want to focus on anti-aging without wavelength switching.</p>
+      <a href="/products/wireless-led-face-mask">View Product →</a>
+    </div>
+    <div class="product-card">
+      <h3>Wireless LED Red Light Face Mask</h3>
+      <p>Vibe Score: 82</p>
+      <div class="score">Worth It</div>
+      <p>Premium red-light focused mask with higher power output. Best if collagen and wrinkles are your primary concern.</p>
+      <a href="/products/wireless-led-red-light-face-mask">View Product →</a>
+    </div>
+    <div class="product-card">
+      <h3>Portable Red Light Silicone LED Facial Mask</h3>
+      <p>Vibe Score: 76</p>
+      <div class="score">Hidden Gem</div>
+      <p>Silicone construction with focused red light. More durable but heavier. Good alternative if durability matters more than portability.</p>
+      <a href="/products/portable-red-light-silicone-led-facial-mask">View Product →</a>
+    </div>
+  </div>
+
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-section">
+    <div class="faq-item">
+      <strong>Which LED color is best for wrinkles?</strong>
+      <p>Red light (620–750nm) is the most studied wavelength for anti-aging. It stimulates collagen production and can improve fine lines in 4–8 weeks of consistent use. Use red light 3–5 times per week for best results.</p>
+    </div>
+
+    <div class="faq-item">
+      <strong>Can you use multiple LED colors in one session?</strong>
+      <p>Some masks allow color switching mid-session, but it's generally better to dedicate each session to one color for your primary concern. Alternate colors across different days. For example: red light Monday and Thursday, blue light Wednesday for acne. This ensures adequate exposure to your target wavelength.</p>
+    </div>
+
+    <div class="faq-item">
+      <strong>Are cheaper LED masks less effective?</strong>
+      <p>Not always. Effectiveness depends on wavelength accuracy and LED count, not price alone. A $65 mask with correct wavelengths can outperform a $300 mask with inaccurate ones. Verify specifications before buying—this 7-color mask delivers legitimate wavelengths.</p>
+    </div>
+
+    <div class="faq-item">
+      <strong>How heavy is this mask compared to silicone models?</strong>
+      <p>At 75g, this ABS mask is significantly lighter than silicone models (which typically weigh 200–400g). Lighter weight means less facial fatigue during sessions, making it more convenient for daily use over weeks.</p>
+    </div>
+
+    <div class="faq-item">
+      <strong>Is LED light therapy FDA cleared?</strong>
+      <p>Many LED masks are FDA cleared as cosmetic devices. Look for "FDA cleared" (not "FDA approved" — that's a different designation) when comparing products. This 7-color mask is a cosmetic beauty device without medical claims.</p>
+    </div>
+
+    <div class="faq-item">
+      <strong>Can kids or teenagers use LED face masks?</strong>
+      <p>LED therapy is generally considered safe for teens with acne, but consult a dermatologist first. Blue light mode is most relevant for teenage acne concerns. Avoid use if under 13 without medical supervision.</p>
+    </div>
+  </div>
+
+  <div class="verdict-section">
+    <h2>Final Verdict: Is the 7-Color LED Light Therapy Face Mask Worth It?</h2>
+    <p>
+      <strong>Yes—it's the best versatile entry-level LED mask for experimenting with multi-wavelength therapy.</strong>
+    </p>
+    <p>
+      At $65.37, the 7-Color LED Light Therapy Face Mask delivers exceptional value for anyone curious about LED therapy but uncertain which color matters most for their skin. Seven wavelengths mean you can target acne with blue, aging with red, and redness with green—all from one lightweight, portable device. Clinical evidence supports that red and blue light therapy work; this mask gives you both plus five more options.
+    </p>
+    <p>
+      <strong>But expectations matter:</strong> Results are gradual (4–8 weeks minimum), subtle (not dramatic), and dependent on consistent use 3–5 times weekly. If you have severe acne or deep wrinkles, professional treatments are faster. If you expect overnight results, this isn't for you. If you're willing to experiment for a month and give it real discipline, this mask will show you whether LED therapy works for your skin.
+    </p>
+    <p>
+      <strong>Buy it if:</strong> You want to explore multi-wavelength LED therapy on a budget, you're willing to commit to consistent use, and you appreciate having options instead of a single-color device.
+    </p>
+    <p>
+      <strong>Skip it if:</strong> You need immediate dramatic results, you can't maintain regular 3–5x weekly use, or you're confident a single wavelength (red-only or blue-only) addresses your primary concern.
+    </p>
+    <p>
+      <strong>Vibe Score: 80/100 | Verdict: Worth It</strong>
+    </p>
+  </div>
+
+  <div class="buy-button-container">
+    <div class="price-urgency-block">
+      <p class="price-callout">{price}</p>
+      <div class="urgency-row">
+        <span class="urgency-dot"></span>
+        <span class="urgency-text">In demand — don't miss out</span>
+      </div>
+      <div class="trust-badges">
+        <span class="trust-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+          Free Shipping
+        </span>
+        <span class="trust-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Money-Back Guarantee
+        </span>
+        <span class="trust-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="22" height="18" rx="2"/><path d="M1 10h22"/></svg>
+          Secure Checkout
+        </span>
+      </div>
+    </div>
+    <div class="buy-button-wrap">
+      <div id="product-component-1015465187767102"></div>
+    </div>
+  </div>
+
+  <div class="buy-button-container">
+    <div class="buy-button-wrap">
+      <div id="product-component-1015465187767103"></div>
+    </div>
+  </div>
+
+  <div class="buy-button-container">
+    <div class="price-urgency-block">
+      <p class="price-callout">Price Range: $65.37 – $174.77</p>
+      <div class="urgency-row">
+        <span class="urgency-dot"></span>
+        <span class="urgency-text">In demand — don't miss out</span>
+      </div>
+      <div class="trust-badges">
+        <span class="trust-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+          Free Shipping
+        </span>
+        <span class="trust-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Money-Back Guarantee
+        </span>
+        <span class="trust-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="22" height="18" rx="2"/><path d="M1 10h22"/></svg>
+          Secure Checkout
+        </span>
+      </div>
+    </div>
+    <div class="buy-button-wrap">
+      <div id="product-component-1015465187767104"></div>
+    </div>
+  </div>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://vibetestlab.com"},
+        {"@type": "ListItem", "position": 2, "name": "Self Care", "item": "https://vibetestlab.com/categories/self-care"},
+        {"@type": "ListItem", "position": 3, "name": "7-Color LED Light Therapy Face Mask", "item": "https://vibetestlab.com/products/7-color-led-light-therapy-face-mask"}
+      ]
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "7-Color LED Light Therapy Face Mask | Vibe Test Labs",
+      "description": "Real science on multi-wavelength LED therapy. Learn which LED color works best for your skin, and whether the 7-Color LED Light Therapy Face Mask is worth $65.37 for at-home light therapy.",
+      "url": "https://vibetestlab.com/products/7-color-led-light-therapy-face-mask",
+      "speakableSpecification": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".answer-box", "h2"]
+      }
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "7-Color LED Light Therapy Face Mask",
+      "brand": {
+        "@type": "Brand",
+        "name": "Vibe Test Lab"
+      },
+      "image": [
+        "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/ee58740143fd81942af870e87a51.png?v=1774965209",
+        "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/95b11d644570a84edfe9ffd8ef47.png?v=1774965219",
+        "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/f0bdcc984c4e9b0e25f2c213d4d5.png?v=1774965222",
+        "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/58b46e6d42bfaf46bef2a3ded6b6.png?v=1774965232",
+        "https://cdn.shopify.com/s/files/1/0958/6710/9671/files/de67a0f2444290e8db3fc4551c53.png?v=1774965243"
+      ],
+      "description": "Seven wavelengths, one mask. Red light (620–750nm) boosts collagen. Blue light (470–495nm) calms acne. Yellow light (590–620nm) firms skin. 10–20 minute sessions. 75g lightweight ABS.",
+      "offers": [
+        {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": "65.37",
+          "priceValidUntil": "2026-12-31",
+          "availability": "https://schema.org/InStock",
+          "name": "Single Mask (USB)"
+        },
+        {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": "105.41",
+          "priceValidUntil": "2026-12-31",
+          "availability": "https://schema.org/InStock",
+          "name": "Set (USB)"
+        },
+        {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": "120.11",
+          "priceValidUntil": "2026-12-31",
+          "availability": "https://schema.org/InStock",
+          "name": "2-Pack"
+        },
+        {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": "174.77",
+          "priceValidUntil": "2026-12-31",
+          "availability": "https://schema.org/InStock",
+          "name": "3-Pack"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "80",
+        "bestRating": "100",
+        "worstRating": "1",
+        "ratingCount": "1"
+      },
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "80"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "Vibe Test Labs"
+        },
+        "reviewBody": "The most versatile entry-level LED mask we've tested — seven targeted wavelengths at a fraction of single-color competitors' prices make this the best starting point for LED therapy newcomers."
+      }
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to Use the 7-Color LED Light Therapy Face Mask for Best Results",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Cleanse your face with a gentle cleanser and let it dry completely before use."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Charge the device fully via USB before first use (approximately 2 hours)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Adjust the strap so the mask sits snugly but not uncomfortably on your face."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Start with red light or a multi-color mode for anti-aging and general skin health."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Use for 10–20 minutes depending on the selected mode."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Frequency: Use 3–5 times per week for best results. Daily use is safe but not necessary."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Do not skip sunscreen—LED therapy is complementary, not a replacement for sun protection."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Be patient—results appear after 4–6 weeks of consistent use; peak improvements at 8–12 weeks."
+        }
+      ]
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which LED color is best for wrinkles?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Red light (620–750nm) is the most studied wavelength for anti-aging. It stimulates collagen production and can improve fine lines in 4–8 weeks of consistent use."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you use multiple LED colors in one session?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Some masks allow color switching mid-session, but it's generally better to dedicate each session to one color for your primary concern. Alternate colors across different days."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are cheaper LED masks less effective?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not always. Effectiveness depends on wavelength accuracy and LED count, not price alone. A $65 mask with correct wavelengths can outperform a $300 mask with inaccurate ones."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How heavy is this mask compared to silicone models?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At 75g, this ABS mask is significantly lighter than silicone models (which typically weigh 200–400g). Lighter weight means less facial fatigue during sessions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is LED light therapy FDA cleared?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many LED masks are FDA cleared as cosmetic devices. Look for 'FDA cleared' (not 'FDA approved' — that's a different designation) when comparing products."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can kids or teenagers use LED face masks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "LED therapy is generally considered safe for teens with acne, but consult a dermatologist first. Blue light mode is most relevant for teenage acne concerns."
+          }
+        }
+      ]
+    }
+  </script>
+
+  <script type="text/javascript" is:inline>
+    (function() {
+      var buttons = [
+        { node: 'product-component-1015465187767101', productId: '10154651877671' },
+        { node: 'product-component-1015465187767102', productId: '10154651877671' },
+        { node: 'product-component-1015465187767103', productId: '10154651877671' },
+        { node: 'product-component-1015465187767104', productId: '10154651877671' }
+      ];
+      var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+      var btnOpts = { "product": { "contents": { "img": false, "title": false, "price": false }, "styles": { "product": { "@media (min-width: 601px)": { "max-width": "100%", "margin-left": "auto", "margin-right": "auto" } }, "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "letter-spacing": "0.02em", "padding": "14px 28px", "border-radius": "10px", "width": "100%", "max-width": "400px", "margin-left": "auto", "margin-right": "auto", "display": "block", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "button": "Add to Cart" } }, "cart": { "styles": { "button": { "font-family": "'Inter', -apple-system, sans-serif", "font-size": "16px", "font-weight": "700", "border-radius": "10px", ":hover": { "background-color": "#222222" }, "background-color": "#0a0a0a", ":focus": { "background-color": "#222222" } } }, "text": { "total": "Subtotal", "button": "Checkout" } }, "toggle": { "styles": { "toggle": { "background-color": "#0a0a0a", ":hover": { "background-color": "#222222" }, ":focus": { "background-color": "#222222" } } } } };
+      function ShopifyBuyInit1() {
+        var client = ShopifyBuy.buildClient({ domain: 'fwaqf1-er.myshopify.com', storefrontAccessToken: '4706c336d25a9168835827f0170b56f0' });
+        ShopifyBuy.UI.onReady(client).then(function(ui) {
+          buttons.forEach(function(b) {
+            var el = document.getElementById(b.node);
+            if (el) ui.createComponent('product', { id: b.productId, node: el, moneyFormat: '%24%7B%7Bamount%7D%7D', options: btnOpts });
+          });
+        });
+      }
+      if (window.ShopifyBuy && window.ShopifyBuy.UI) { ShopifyBuyInit1(); }
+      else {
+        var s = document.createElement('script');
+        s.async = true; s.defer = true; s.src = scriptURL;
+        s.onload = ShopifyBuyInit1;
+        document.body.appendChild(s);
+      }
+    })();
+  </script>
+</BaseLayout>
