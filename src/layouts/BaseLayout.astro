@@ -7,6 +7,7 @@ export interface Props {
   ogImage?: string;
   noindex?: boolean;
   fullWidth?: boolean
+}
 const { title, description, canonical, schema, ogImage, noindex = false, fullWidth = false } = Astro.props;
 const siteUrl = 'https://vibe-test-labs.pages.dev';
 const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
