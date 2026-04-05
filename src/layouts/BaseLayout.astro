@@ -7,7 +7,6 @@ export interface Props {
   ogImage?: string;
   noindex?: boolean;
   fullWidth?: boolean
-}
 const { title, description, canonical, schema, ogImage, noindex = false, fullWidth = false } = Astro.props;
 const siteUrl = 'https://vibe-test-labs.pages.dev';
 const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
@@ -303,10 +302,11 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
     /* ── Buy box ── */
     .buy-box {
       background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
-      padding: 1.75rem 2rem; display: flex; justify-content: space-between;
-      align-items: center; flex-wrap: wrap; gap: 1rem; margin: 2rem 0;
+      padding: 1.75rem 2rem; display: flex; flex-direction: column;
+      align-items: center; text-align: center; gap: 1rem; margin: 2rem auto;
+      max-width: 480px;
     }
-    @media(max-width:600px){ .buy-box { flex-direction: column; align-items: flex-start; } }
+    @media(max-width:600px){ .buy-box { flex-direction: column; align-items: center; } }
     .buy-box strong { color: var(--foreground); display: block; font-family: var(--font-mono); font-size: 1.05rem; margin-bottom: .2rem; }
     .disclaimer { font-size: .75rem; color: var(--muted-foreground); font-style: italic; }
 
